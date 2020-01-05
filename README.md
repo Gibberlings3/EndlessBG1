@@ -114,7 +114,9 @@ If you have installation problems or encounter any bugs, please post your bug re
 ## CREDITS
 
 Acifer: ideas.
+
 BeamDog / Overhaul Games: for creating SoD where most additional content ideas for this mod resulted from.
+
 Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)
 
 ## USED TOOLS AND RESSOURCES
