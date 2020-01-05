@@ -1,4 +1,4 @@
-# Endless BG1 (Includes Skip SoD Tweak) Mod 
+# Endless BG1 Mod 
 by jastey                                
 for BG:EE, BG:SoD, BGT, and EET         
 
@@ -84,6 +84,7 @@ When installing or uninstalling, do not close the DOS window by clicking on the 
 
 ### BG:EE
 If you use SoD from GOG or Steam, you need to prepare your game with DLC Merger or modmerge before installing any mods:
+
 [argent77's DLC Merger](https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game)
 
 [modmerge (if in doubt, use the DLC Merger instead)](https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1)
@@ -137,7 +138,7 @@ Modding communities, tutorials and technical assistance:
 [Spellhold Studios](http://www.shsforums.net/)
 
 ## LEGAL INFORMATION
-Endless BG1 (Includes Skip SoD Tweak) Mod is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+Endless BG1 Mod is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
 This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
 
-The mod uses BAM files from Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/). The Sarevok Unique Items from the Endless BG1 (Includes Skip SoD Tweak) Mod are therefore also licenced under "Creative Commons" von Nicolas Peters.
+The mod uses BAM files from Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/). The Sarevok Unique Items from the Endless BG1 Mod are therefore also licenced under "Creative Commons" von Nicolas Peters.
