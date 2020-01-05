@@ -1,0 +1,62 @@
+/* @0   =  */
+@1   = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection.  The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.  
+
+This armor belonged to Sarevok, and it is unusually heavy.
+
+STATISTICS:
+
+Armor Class: -1
+Weight: 70
+Requires: 15 Strength
+Not Usable By:
+ Bard
+ Druid
+ Thief~
+@2   = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection.  The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.  
+
+This armor belonged to Sarevok, and it is unusually heavy. It is enchanted to give protection against magic.
+
+STATISTICS:
+   +30% Magic Resistance
+
+Armor Class: -1
+Weight: 70
+Requires: 15 Strength
+Not Usable By:
+ Bard
+ Druid
+ Thief~
+@3   = ~Sarevok's Plate Mail Armor~
+@4   = ~Sarevok's Helmet~
+@5   = ~Sarevok's Sword~
+@6   = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.   
+
+This helmet belonged to Sarevok.
+
+STATISTICS:
+
+Armor Class Bonus:  None
+Special:  Protects Against Critical Hits
+Weight: 2
+Not Usable By:
+Mage
+Bard
+Thief~
+@7   = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.   
+
+This helmet belonged to Sarevok. It is enchanted to give protection against magic.
+
+STATISTICS:
+
+Special:  Protects Against Critical Hits
+   +5% Magic Resistance
+Weight: 2
+Not Usable By:
+Mage
+Bard
+Thief~
+@8   = ~This is Sarevok's sword. No matter what you try, noone seems to be able to wield it. It seems the magic of this sword was weakened and sealed when Sarevok died.~
+@9   = ~<CHARNAME>'s chest~
+@10   = ~Imoen's chest~
+
+

@@ -1,0 +1,16 @@
+/* Denkod in Thieves Guild will initiate dialogue */
+<<<<<<<< .../ar0153_denkod_add.baf
+IF
+	!Dead("DENKOD")  // Denkod
+	InMyArea("DENKOD")
+	InMyArea(Player1)
+	Dead("Sarevok")
+	Global("C#st_DenkodTalk","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_DenkodTalk","MYAREA",1)
+		ActionOverride("DENKOD",StartDialogueNoSet([PC]))
+		Continue()
+END
+>>>>>>>>
+EXTEND_TOP ~%EBaldursGate_ThievesGuild%.bcs~ ~.../ar0153_denkod_add.baf~ EVALUATE_BUFFER 

@@ -1,0 +1,17 @@
+/* remove journal entries in BGII */
+<<<<<<<< .../ar0602_remove_journalentries.baf
+
+IF
+	Global("C#st_EraseJournalRoamBG","MYAREA",0)
+THEN
+	RESPONSE #100
+		EraseJournalEntry(@10002)
+		EraseJournalEntry(@10003)
+		EraseJournalEntry(@10004)
+		EraseJournalEntry(@10005)
+		EraseJournalEntry(@10006)
+		SetGlobal("C#st_EraseJournalRoamBG","MYAREA",1)
+END
+
+>>>>>>>>
+EXTEND_BOTTOM ~AR0602.bcs~ ~.../ar0602_remove_journalentries.baf~ EVALUATE_BUFFER 

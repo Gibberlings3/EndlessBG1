@@ -1,0 +1,341 @@
+////////////////////////////////////////////////////////////////////////
+//////
+//////  Endless BG1 
+//////   by jastey
+////////////////////////////////////////////////////////////////////////
+
+BACKUP ~c#endlessbg1/backup~
+AUTHOR ~https://www.gibberlings3.net/forums/~ //jastey
+
+VERSION ~1~
+
+README ~c#endlessbg1/readme.c#endlessbg1.%LANGUAGE%.txt~ ~c#endlessbg1/readme.c#endlessbg1.english.txt~
+
+AUTO_TRA ~c#endlessbg1/translations/%s~
+
+ALWAYS
+
+/* check for a ready SoD */
+
+ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
+  FAIL @1002 /* ~Modmerge or Argent's DLC Merger is required before mods can be installed on this game.~ */
+END
+
+  OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
+  INCLUDE ~c#endlessbg1/lib/extra_regexp_vars.tph~
+
+/* read in general definitions */
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+  INCLUDE ~c#endlessbg1/lib/g3_bgee_cpmvars.tpa~
+  OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN~
+~IMOEN2~
+END
+
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+  INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
+  OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN2~
+END
+
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+  INCLUDE ~c#endlessbg1/lib/g3_bgt_cpmvars.tpa~
+  OUTER_SPRINT ~IMOEN_DV_SOD~ ~IMOEN2~
+END
+
+/* custom definitions: bgee */
+ACTION_IF (GAME_IS ~bgee~ AND NOT FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
+ OUTER_SPRINT ~bgee_only~ ~~
+ OUTER_SPRINT ~sod~ ~False()~
+ OUTER_SPRINT ~eet_only~ ~False()~
+ OUTER_SPRINT ~start_bg1end_sod_cutscene~ ~ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("c#stbgee")~
+ OUTER_SPRINT ~move_to_bg2~ ~~
+ OUTER_SPRINT ~bdresurr~ ~sppr712~ //resurrection
+ OUTER_SPRINT ~bddispel~ ~bpdispel~
+ OUTER_SPRINT ~clearcld~ ~sppr318~
+ OUTER_SPRINT ~BELT~ ~BELT~
+END
+
+/* custom definitions: sod */
+ACTION_IF (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
+ OUTER_SPRINT ~bgee_only~ ~False()~
+ OUTER_SPRINT ~sod~ ~~
+ OUTER_SPRINT ~eet_only~ ~False()~
+ OUTER_SPRINT ~start_bg1end_sod_cutscene~ ~ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("c#st2sod")~
+ OUTER_SPRINT ~move_to_bg2~ ~~
+ OUTER_SPRINT ~bdresurr~ ~bdresurr~
+ OUTER_SPRINT ~bddispel~ ~bddispel~
+ OUTER_SPRINT ~clearcld~ ~clearcld~
+ OUTER_SPRINT ~BELT~ ~BELT~
+END
+
+/* custom definitions: eet */
+ACTION_IF (GAME_IS ~eet~) THEN BEGIN
+ OUTER_SPRINT ~bgee_only~ ~False()~
+ OUTER_SPRINT ~sod~ ~~
+ OUTER_SPRINT ~eet_only~ ~~
+ OUTER_SPRINT ~start_bg1end_sod_cutscene~ ~ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("c#st2sod")~
+ OUTER_SPRINT ~move_to_bg2~ ~CreateCreatureObject("K#TELBGT",Player1,0,0,0)~
+ OUTER_SPRINT ~bdresurr~ ~bdresurr~
+ OUTER_SPRINT ~bddispel~ ~bddispel~
+ OUTER_SPRINT ~clearcld~ ~clearcld~
+ OUTER_SPRINT ~BELT~ ~BELT~
+END
+
+/* custom definitions: bgt */
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+ OUTER_SPRINT ~bgee_only~ ~False()~
+ OUTER_SPRINT ~sod~ ~False()~
+ OUTER_SPRINT ~eet_only~ ~False()~
+ OUTER_SPRINT ~start_bg1end_sod_cutscene~ ~False()~
+ OUTER_SPRINT ~move_to_bg2~ ~~
+ OUTER_SPRINT ~bdresurr~ ~sppr712~ //resurrection
+ OUTER_SPRINT ~bddispel~ ~spin866~
+ OUTER_SPRINT ~clearcld~ ~sppr318~
+ OUTER_SPRINT ~BELT~ ~BELTBRD~
+ OUTER_SPRINT ~belt_victory~ ~0~
+END
+
+
+
+    ACTION_DEFINE_ARRAY c#noconvert BEGIN setup END
+    ACTION_DEFINE_ARRAY c#reload BEGIN game journal END
+
+    LAF HANDLE_CHARSETS
+      INT_VAR
+        infer_charset = 1
+      STR_VAR
+        tra_path = EVAL ~c#endlessbg1/Translations~
+        noconvert_array = c#noconvert
+        reload_array = c#reload
+    END
+
+  LOAD_TRA ~c#endlessbg1/Translations/%LANGUAGE%/game_ee.tra~
+
+//CamDawgs CD_STATE_NOTVALID 
+    APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
+END
+
+
+LANGUAGE ~English~
+         ~english~   
+         ~c#endlessbg1/Translations/english/setup.tra~
+	 ~c#endlessbg1/Translations/english/game.tra~
+	 ~c#endlessbg1/Translations/english/journal.tra~
+
+LANGUAGE ~Deutsch~
+         ~german~   
+         ~c#endlessbg1/Translations/german/setup.tra~
+	 ~c#endlessbg1/Translations/german/game.tra~
+	 ~c#endlessbg1/Translations/german/journal.tra~
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5001 /* ~Endless BG1: Main Component~ */
+REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
+
+/* main component: required */
+/* Content for EE: 
+-prevent end of game/transition to SoD after Sarevok's death
+-Duke Belt will be alive and in the Palace
+-adds basic dialogue to Duke Belt and Duke Jannath (if Jannath is still alive)
+-erase references to Sarevok as new Duke etc. in dialogues of city folk after his death
+-door to Palace will be open after Sarevok's death
+
+For BGT, this adds some more cleanup of references to Sarevok in dialogues after his death
+ */
+
+/* add main dialogue to Duke Jannath - makes no real sense here for bgt but I need this later */
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/maincomponent/dialogues.d~
+
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+  /* prevent end of BG1, open up Palace etc. */
+  INCLUDE ~c#endlessbg1/maincomponent/general.tpa~
+  /* "clean up" of Sarevok references (is already included in BGT or not relevant) */
+  INCLUDE ~c#endlessbg1/maincomponent/sarevok_cleanup.tpa~
+  /* more cleanup not yet considered in BGT */
+  INCLUDE ~c#endlessbg1/maincomponent/sarevok_cleanup_more.tpa~
+  /* add dialogues to Duke Belt and Jannath */
+  COMPILE EVALUATE_BUFFER ~c#endlessbg1/maincomponent/dialogues_ee.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+END
+
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+  /* more cleanup not yet considered in BGT */
+  INCLUDE ~c#endlessbg1/maincomponent/sarevok_cleanup_more.tpa~
+/* I put the erase journals here so I don't have to split and add several script blocks. */
+  INCLUDE ~c#endlessbg1/maincomponent/journalerase_bgt.tpa~
+END
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5002   /* ~More Flavor to Hero of Baldur's Gate (includes PC's Residence inside Palace)~ */
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
+REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
+
+ADD_JOURNAL @10002 @10003 USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+INCLUDE ~c#endlessbg1/pc_palaceresidence/pc_palaceresidence.tpa~
+
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/pc_palaceresidence.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+/* short cutscene on rostrum for SoD/EET */
+ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) THEN BEGIN
+
+// Get state for BELT %victory% (in dialogues_ee.d)
+/* ~<CHARNAME>, you were successful! You defeated Sarevok who conspired against the city, the Sword Coast, even Amn - for his own dark goals and purpose.~ */
+OUTER_SET belt_victory = STATE_WHICH_SAYS 0 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
+
+// Get state for BELT %victory_01% (in dialogues_ee.d)
+/* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Six of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
+*/
+OUTER_SET belt_victory_01 = STATE_WHICH_SAYS 1 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
+
+  COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/ceremony_sod.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+END
+
+/* bgt: add more flavor to Belt's dialogue */
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+  COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/ceremony_bgt.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+END //bgt
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5008 /* ~Sarevok's Unique Items~ */
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
+REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
+
+ADD_JOURNAL TITLE (@10009) @10001 @10008 USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+INCLUDE ~c#endlessbg1/sarevok_items/sarevok_items.tpa~
+
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+// Get state for BELT %victory_01% (in dialogues_ee.d)
+/* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Six of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
+*/
+OUTER_SET belt_victory_01 = STATE_WHICH_SAYS 1 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
+// Get state for BELT %victory_02% (in dialogues_ee.d)
+/* ~<CHARNAME>, Hero of Baldur's Gate. Are you ready to combine forces with the Flaming Fist and go against the last followers of Sarevok?~ */
+OUTER_SET belt_victory_02 = STATE_WHICH_SAYS 2 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
+  COMPILE EVALUATE_BUFFER ~c#endlessbg1/sarevok_items/dialogues_sarevoksword_ee.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+END
+
+/* remove journal entry for SoD+EET */
+ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) THEN BEGIN
+/* erase journal entry about stolen Sword from Sarevok */
+<<<<<<<< .../erasejournal_sod.d
+ADD_TRANS_ACTION BDIMOEN BEGIN 10 END BEGIN END ~EraseJournalEntry(@10001)~
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~.../erasejournal_sod.d~
+END
+
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+  INCLUDE ~c#endlessbg1/sarevok_items/theft_sarevoksword_bgt.tpa~
+  COMPILE EVALUATE_BUFFER ~c#endlessbg1/sarevok_items/dialogues_sarevoksword_bgt.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+END //bgt
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5004   /* ~Imoen and Duke Jannath (Imoen gets Residence inside Palace)~ */
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
+REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
+
+ADD_JOURNAL @10004 @10005 USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+INCLUDE ~c#endlessbg1/imoen_jannath/imoen_jannath.tpa~
+
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+// Get state for BELT %victory% (dialogues_ee.d)
+/* ~<CHARNAME>, you were successful! You defeated Sarevok who conspired against the city, the Sword Coast, even Amn - for his own dark goals and purpose.~ */
+OUTER_SET belt_victory = STATE_WHICH_SAYS 0 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
+END
+
+// Get state for LIIA %victory% (dialogues_ee.d)
+/* ~Thank you for defeating Sarevok, <CHARNAME>!~ */
+OUTER_SET liia_victory = STATE_WHICH_SAYS 10 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~LIIA~
+
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/imoen_jannath/imoen_jannath.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5005 /* ~Duke Eltan is in the Palace~ */
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
+REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
+
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+// Get state for BELT %victory% (dialogues_ee.d)
+/* ~<CHARNAME>, you were successful! You defeated Sarevok who conspired against the city, the Sword Coast, even Amn - for his own dark goals and purpose.~ */
+OUTER_SET belt_victory = STATE_WHICH_SAYS 0 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
+END
+
+INCLUDE ~c#endlessbg1/duke_eltan/duke_eltan.tpa~
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/duke_eltan/duke_eltan.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5006 /* ~Flaming Fist Healer come into Undercity Temple~ */
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
+REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
+
+INCLUDE ~c#endlessbg1/ffhealer/ffhealer.tpa~
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/ffhealer/ffhealer.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5007 /* ~Elminster makes an Appearance~ */
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
+REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
+
+ADD_JOURNAL @10006 USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+INCLUDE ~c#endlessbg1/elminster/elminster.tpa~
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/elminster/elminster.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5009 /* ~First Refugees come to Baldur's Gate~ */
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) @5012 /* ~This mod is only compatible with SoD and EET.~ */
+
+ADD_JOURNAL @10007 USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+INCLUDE ~c#endlessbg1/refugees_sod/refugees_sod.tpa~
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/refugees_sod/refugees_sod.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5010 /* ~Ophyllis the Treasurer in inside Palace Dungeon~ */
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) @5012 /* ~This mod is only compatible with SoD and EET.~ */
+
+INCLUDE ~c#endlessbg1/ophyllis_sod/ophyllis_sod.tpa~
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/ophyllis_sod/ophyllis_sod.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5011 /* ~Denkod in Thieves Guild comments on Sarevok's Death~ */
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
+REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
+
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/denkod_add/denkod.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+  INCLUDE ~c#endlessbg1/denkod_add/denkod_ee.tpa~
+END
+
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+  INCLUDE ~c#endlessbg1/denkod_add/denkod_bgt.tpa~
+END //bgt
+

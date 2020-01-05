@@ -1,0 +1,31 @@
+/* djinni who takes Sarevok's sword */
+COPY_EXISTING ~WISH02.cre~ ~override/C#stdjin.cre~
+    WRITE_ASCII 0x280 ~C#stdjin~ #32 // set DV
+    WRITE_ASCII 0x2cc ~C#stdjin~ #8 // set dialogue file
+    WRITE_EVALUATED_ASCII 0x248 ~C#stdjin~ #8   // Override script
+    WRITE_EVALUATED_ASCII 0x250 ~~ #8   // Class script
+    WRITE_EVALUATED_ASCII 0x258 ~~ #8   // Race script
+    WRITE_EVALUATED_ASCII 0x260 ~~ #8   // General script
+    WRITE_EVALUATED_ASCII 0x268 ~~ #8   // Default script
+
+
+/* djinn will spawn in Thieves Guild */
+
+<<<<<<<< .../ar0153_djinni_add.baf
+IF
+//	Dead("Sarevok")
+	InMyArea(Player1)
+	PartyHasItem("c#stsrvs")
+	Global("C#st_DjinnTakesSword","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		StartCutSceneMode()
+		CreateCreatureObjectDoor("C#stdjin",Player1,1,1,1)
+		Wait(2)
+		SetGlobal("C#st_DjinnTakesSword","MYAREA",1)
+		SetInterrupt(TRUE)
+		ActionOverride("C#stdjin",StartDialogueNoSet(Player1))
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%EBaldursGate_ThievesGuild%.bcs~ ~.../ar0153_djinni_add.baf~ EVALUATE_BUFFER 

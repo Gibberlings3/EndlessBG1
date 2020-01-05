@@ -1,0 +1,75 @@
+/* Create cre for Duke Eltan in Palace after Sarevok's Death */
+COPY_EXISTING ~DELTAN.cre~ ~override/C#STELTA.cre~
+  WRITE_EVALUATED_ASCII 0x250 ~SHOUT~ #8   // class script
+  WRITE_EVALUATED_ASCII 0x268 ~WTASIGHT~ #8   // default script
+  WRITE_EVALUATED_ASCII 0x2cc ~DELTAN2~ #8   // dialogue
+
+/* spawn Duke Eltan in the Palace (ground floor) after Sarevok's death */
+<<<<<<<< .../ar0108_add_eltan.baf
+IF
+	Dead("Sarevok")
+	OR(2)
+		Dead("ELTAN")
+		Dead("ELTAN2")
+	Global("C#st_SpawnEltan","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SPRITE_IS_DEADELTAN","GLOBAL",0)
+		SetGlobal("SPRITE_IS_DEADELTAN2","GLOBAL",0)
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Dead("Sarevok")
+	Global("C#st_SpawnEltan","MYAREA",0)
+THEN
+	RESPONSE #100
+		CreateCreature("C#STELTA",[810.400],0) 
+		Continue()
+END
+
+
+IF
+	Dead("Sarevok")
+	Global("C#st_SpawnEltan","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_SpawnEltan","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L1%.bcs~ ~.../ar0108_add_eltan.baf~ EVALUATE_BUFFER 
+	
+/* compatibility with bg1ub and bg1re: remove Duke Eltan from the Harbormaster's Building after Sarevok's Death. Duke Eltan will be in the Palace, ground floor. Scar's appearance from "Scar's Return" will play there, too, if quest advanced to this point. */
+
+<<<<<<<< .../harbormaster_add.baf
+
+IF
+	Exists("C#RE1ELT")
+	InMyArea("C#RE1ELT")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+        	ActionOverride("C#RE1ELT",DestroySelf())
+END
+
+IF
+	Exists("ELTAN")
+	InMyArea("ELTAN")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+        	ActionOverride("ELTAN",DestroySelf())
+END
+
+IF
+	Exists("ELTAN2")
+	InMyArea("ELTAN2")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+        	ActionOverride("ELTAN2",DestroySelf())
+END
+
+>>>>>>>>
+EXTEND_BOTTOM ~%BaldursGateDocks_Harbormaster%.bcs~ ~.../harbormaster_add.baf~ EVALUATE_BUFFER 

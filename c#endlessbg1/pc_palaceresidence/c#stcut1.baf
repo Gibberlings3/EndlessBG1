@@ -1,0 +1,27 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([30.0],0)
+		Wait(2)
+		LeaveAreaLUAPanic("c#st35","",[614.734],0)
+		LeaveAreaLUA("c#st35","",[614.734],0)
+		AmbientActivate("Crowd",TRUE)
+		AmbientActivate("CrowdCheers",FALSE)
+		ActionOverride(Player2,LeaveAreaLUA("c#st35","",[707.689],0))
+		ActionOverride(Player3,LeaveAreaLUA("c#st35","",[745.722],0))
+		ActionOverride(Player4,LeaveAreaLUA("c#st35","",[773.700],0))
+		ActionOverride(Player5,LeaveAreaLUA("c#st35","",[786.734],0))
+		ActionOverride(Player6,LeaveAreaLUA("c#st35","",[793.707],0))
+		MultiPlayerSync()
+		CreateCreature("C#STBELT",[566.722],1)
+		Wait(1)
+		Explore()
+		MoveViewPoint([567.722],INSTANT)
+		FadeFromColor([30.0],0)
+		Wait(2)
+		EndCutSceneMode()
+		ActionOverride("BELT",StartDialogNoSet(Player1))
+END
+

@@ -1,0 +1,18 @@
+/* Ophyllis makes his first appearance (SoD+EET only) */
+COPY_EXISTING ~BDOPHYLL.cre~ ~override/c#stophl.cre~
+    WRITE_ASCII 0x280 ~c#stophl~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#stophl~ #8 // set dialogue file
+    WRITE_EVALUATED_ASCII 0x248 ~c#stophl~ #8   // Override script
+
+<<<<<<<< .../ar0111_ophyllis_add.baf
+/* spawn Ophyllis the Treasurer */
+IF
+  Global("C#st_HeroOfBG","GLOBAL",1)
+  Global("C#st_OphyllisSpawn", "MYAREA",0)
+THEN
+  RESPONSE #100
+        	CreateCreature("c#stophl",[1237.897],5)
+    		SetGlobal("C#st_OphyllisSpawn", "MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_Cellar%.bcs~ ~.../ar0111_ophyllis_add.baf~ EVALUATE_BUFFER 

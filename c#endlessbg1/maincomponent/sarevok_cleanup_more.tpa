@@ -1,0 +1,109 @@
+<<<<<<<< .../cleanup_more.d
+
+/* rumors: tagg rumors about chapter 7 ongoings */
+
+ADD_STATE_TRIGGER RBALDU 0 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RBALDU 1 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RBALDU 2 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RBALDU 4 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RBALDU 6 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RBALDU 7 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RBALDU 12 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RBALDU 13 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RBALDU 16 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RBALDU 17 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+
+
+ADD_STATE_TRIGGER RBEREG 1 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RBEREG 16 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RBEREG 18 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+
+
+ADD_STATE_TRIGGER RFRIEN 1 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RFRIEN 3 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER RFRIEN 4 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+
+/* new dialogues for commoners */
+
+ADD_STATE_TRIGGER FTOWBAS 1 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER FTOWBAS 3 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+
+APPEND FTOWBAS
+IF ~Global("C#st_HeroOfBG","GLOBAL",1)  RandomNum(4,2)
+~ THEN BEGIN sarevok_dead_01 
+  SAY ~That crummy Sarevok was an evil one, yes he was! He murdered Scar, and Entar and tried to kill lots of others! He deserved death, and thanks to <CHARNAME> it came to him quickly!~ 
+  IF ~~ THEN EXIT
+END
+IF ~Global("C#st_HeroOfBG","GLOBAL",1)  RandomNum(4,4)
+~ THEN BEGIN sarevok_dead_02
+  SAY ~It's so frightening! To think that Sarevok came so close to completing his murderous plans. I am glad <CHARNAME> tracked him down and brought him to justice. Let that be an example to other crazies so they don't try to do what he did.~ 
+  IF ~~ THEN EXIT
+END
+END //APPEND
+
+
+ADD_STATE_TRIGGER NOBLBAS 1 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+
+APPEND NOBLBAS
+IF ~Global("C#st_HeroOfBG","GLOBAL",1) RandomNum(4,2)
+~ THEN BEGIN sarevok_dead_01 
+  SAY ~What Sarevok did was unforgivable! I am glad <CHARNAME> went after the scum, before he could do any more hurt.~ 
+  IF ~~ THEN EXIT
+END
+END //APPEND
+
+ADD_STATE_TRIGGER NOBWBAS 0 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER NOBWBAS 2 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+ADD_STATE_TRIGGER NOBWBAS 3 ~Global("C#st_HeroOfBG","GLOBAL",0)~
+
+APPEND NOBWBAS
+
+IF ~Global("C#st_HeroOfBG","GLOBAL",1) RandomNum(4,1)
+~ THEN BEGIN sarevok_dead_01 
+  SAY ~Well, I never! Can you believe the nerve of that Sarevok fellow? After the trust we all placed in him, he turns out to be nothing but the basest of villains. I'm glad he was caught and punished.~ 
+  IF ~~ THEN EXIT
+END
+
+IF ~Global("C#st_HeroOfBG","GLOBAL",1) RandomNum(4,3)
+~ THEN BEGIN sarevok_dead_02
+  SAY ~Aren't you <CHARNAME>? It's pleasing to have a hero in the city! On behalf of everyone I know, I'd like to thank you for what you've done. If it weren't for your heroics... Well, I shudder to think how a war with Amn would have turned out. Thank you for catching that villainous Sarevok and putting an end to his trouble-making!~
+  IF ~~ THEN EXIT
+END
+
+IF ~Global("C#st_HeroOfBG","GLOBAL",1) RandomNum(4,4)
+~ THEN BEGIN sarevok_dead_03
+  SAY ~It's spreading like wildfire! Everyone's talking about what happened at the palace. From what I've heard, that Sarevok fellow wasn't as noble as he'd like us all to believe. He tried to have the other Dukes killed, so that he could take over the city.~ 
+  IF ~~ THEN EXIT
+END
+
+END //APPEND
+
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~.../cleanup_more.d~
+
+/* NBaldursGate: Bill FF who checks the invitations */
+<<<<<<<< .../ar0200_add.baf
+IF
+	Exists("BILL")  // Bill
+	InMyArea("BILL")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("BILL",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate%.bcs~ ~.../ar0200_add.baf~
+
+
+
+/* compatibility with Jarl's Adventure Pack - JA#IGNAT.cre doesn't have a DV */
+ACTION_IF FILE_EXISTS_IN_GAME ~JA#IGNAT.dlg~ THEN BEGIN
+  COPY_EXISTING ~JA#IGNAT.cre~ ~override~
+    WRITE_EVALUATED_ASCII 0x260 ~c#stdstr~ #8 // General Script 
+END
+
+/* compatibility with Jarl's Adventure Pack - Nila */
+ACTION_IF FILE_EXISTS_IN_GAME ~JA#NILA.bcs~ THEN BEGIN
+  EXTEND_BOTTOM ~JA#NILA.bcs~ ~override/c#stdstr.baf~
+END
+

@@ -1,0 +1,42 @@
+/* Sarevok gets his unique items. Thank you Tantalus for permission to use his beautiful BAMs! */
+COPY ~c#endlessbg1/sarevok_items/bam/.~ ~override~
+
+COPY ~c#endlessbg1/sarevok_items/itm/c#stsrva.itm~ ~override~
+SAY NAME1 @3 /* ~Sarevok's Plate Mail Armor~ */
+SAY NAME2 @3 /* ~Sarevok's Plate Mail Armor~ */
+SAY UNIDENTIFIED_DESC @1
+SAY IDENTIFIED_DESC @2 
+
+COPY ~c#endlessbg1/sarevok_items/itm/c#stsrvh.itm~ ~override~
+SAY NAME1 @4 /* ~Sarevok's Helm~ */
+SAY NAME2 @4 /* ~Sarevok's Helm~ */
+SAY UNIDENTIFIED_DESC @6
+SAY IDENTIFIED_DESC @7 
+
+COPY ~c#endlessbg1/sarevok_items/itm/c#stsrvs.itm~ ~override~
+SAY NAME1 @5 /* ~Sarevok's Sword~ */
+SAY NAME2 @5 /* ~Sarevok's Sword~ */
+SAY UNIDENTIFIED_DESC @8
+SAY IDENTIFIED_DESC @8 
+
+/* Place Sarvok's items after his death */
+
+<<<<<<<< .../ar0125_sarevokitems.baf
+
+IF
+	Dead("Sarevok")  // Armored Figure (Sarevok)
+	Global("C#st_SarevoksItems","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#st_SarevoksItems","MYAREA",1)
+		ActionOverride("Sarevok",CreateItem("c#stsrva",0,0,0))
+		ActionOverride("Sarevok",CreateItem("c#stsrvh",0,0,0))
+		ActionOverride("Sarevok",CreateItem("c#stsrvs",0,0,0))
+		ActionOverride("Sarevok",DropInventory())
+		SetInterrupt(TRUE)
+END
+
+>>>>>>>>
+
+EXTEND_TOP ~%Undercity_TempleofBhaal%.BCS~ ~.../ar0125_sarevokitems.baf~ EVALUATE_BUFFER

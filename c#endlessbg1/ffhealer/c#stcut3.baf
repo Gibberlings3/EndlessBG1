@@ -1,0 +1,53 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		SetGlobal("C#st_SarevokHealGroup","MYAREA",1)
+		Wait(2)
+		FadeToColor([30.0],0)
+		Wait(1)
+		ApplySpellRES("%clearcld%",Myself)
+		ActionOverride("Sarevok",DestroySelf())
+		ActionOverride("Galdor",DestroySelf())
+		ActionOverride("Semaj",DestroySelf())
+		ActionOverride("Tazok",DestroySelf())
+		TriggerActivation("Trap 1",FALSE)
+		TriggerActivation("Trap 2",FALSE)
+		TriggerActivation("Trap 3",FALSE)
+		TriggerActivation("Trap 4",FALSE)
+		TriggerActivation("Trap 5",FALSE)
+		TriggerActivation("Trap 10",FALSE)
+		TriggerActivation("Trap 11",FALSE)
+		TriggerActivation("Trap 12",FALSE)
+		TriggerActivation("Trap 13",FALSE)
+		TriggerActivation("Trap 14",FALSE)
+		TriggerActivation("Trap 15",FALSE)
+		TriggerActivation("Trap 16",FALSE)
+		TriggerActivation("Trap 17",FALSE)
+		ApplySpellRES("%bdresurr%",Player2)  // No such index
+		ApplySpellRES("%bdresurr%",Player3)  // No such index
+		ApplySpellRES("%bdresurr%",Player4)  // No such index
+		ApplySpellRES("%bdresurr%",Player5)  // No such index
+		ApplySpellRES("%bdresurr%",Player6)  // No such index
+		SmallWait(10)
+		ApplySpellRES("%bddispel%",Player1)  // No such index
+		ApplySpellRES("%bddispel%",Player2)  // No such index
+		ApplySpellRES("%bddispel%",Player3)  // No such index
+		ApplySpellRES("%bddispel%",Player4)  // No such index
+		ApplySpellRES("%bddispel%",Player5)  // No such index
+		ApplySpellRES("%bddispel%",Player6)  // No such index
+		SmallWait(10)
+		ApplySpellRES("sppr713",Player1)  // No such index
+		ApplySpellRES("sppr713",Player2)  // No such index
+		ApplySpellRES("sppr713",Player3)  // No such index
+		ApplySpellRES("sppr713",Player4)  // No such index
+		ApplySpellRES("sppr713",Player5)  // No such index
+		ApplySpellRES("sppr713",Player6)  // No such index
+		FadeToColor([1.0],0)
+		Wait(3)
+		MultiPlayerSync()
+		EndCutSceneMode()
+		ActionOverride("c#stsdpr",StartDialogueNoSet([PC]))
+END
+

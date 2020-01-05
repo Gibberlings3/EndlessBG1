@@ -1,0 +1,74 @@
+/* @0   = */
+
+@1   = ~Ein Prunkharnisch stellt die prächtigste Rüstung dar, die man sich als Krieger kaufen kann. Sie sieht nicht nur beeindruckend aus, sondern bietet auch den besten Schutz. Die perfekt gearbeiteten Metallplatten sind eng miteinander verbunden und wehren sowohl Schläge als auch Pfeile ab. Die ganze Rüstung ist mit Gravuren und Prägungen verziert. 
+
+Diese Rüstung gehörte Sarevok. Sie ist ungewöhnlich schwer.
+
+EIGENSCHAFTEN:
+
+Rüstungsklasse: -1
+RK-Bonus:
+ -4 gg. Klingenwaffen
+ -3 gg. Stichwaffen
+Mindeststärke: 15
+Gewicht: 70
+
+Kann nicht verwendet werden von:
+Barden
+Druiden
+Magiern
+Dieben~
+@2   = ~Ein Prunkharnisch stellt die prächtigste Rüstung dar, die man sich als Krieger kaufen kann. Sie sieht nicht nur beeindruckend aus, sondern bietet auch den besten Schutz. Die perfekt gearbeiteten Metallplatten sind eng miteinander verbunden und wehren sowohl Schläge als auch Pfeile ab. Die ganze Rüstung ist mit Gravuren und Prägungen verziert. 
+
+Diese Rüstung gehörte Sarevok. Sie ist ungewöhnlich schwer und mit Zaubern belegt, so dass die Magieresistenz des Trägers erhöht wird.
+
+EIGENSCHAFTEN:
+
+Magiewiderstand: +5 %
+
+Rüstungsklasse: -1
+RK-Bonus:
+ -4 gg. Klingenwaffen
+ -3 gg. Stichwaffen
+Mindeststärke: 15
+Gewicht: 70
+
+Kann nicht verwendet werden von:
+Barden
+Druiden
+Magiern
+Dieben~
+@3   = ~Sarevoks Rüstung~
+@4   = ~Sarevoks Helm~
+@5   = ~Sarevoks Schwert~
+@6   = ~Diese Art dekorativer Helme, die entweder aus verstärktem Leder oder Metall hergestellt sind, bedecken Gesicht und Kopf. Augenschlitze und Atemlöcher erweisen sich daher als äußerst nützlich.  
+
+Dieser Helm gehörte Sarevok.
+
+EIGENSCHAFTEN:
+
+Schützt vor kritischen Treffern
+Gewicht: 2
+
+Kann nicht verwendet werden von:
+Barden
+Magiern
+Dieben~
+@7   = ~Diese Art dekorativer Helme, die entweder aus verstärktem Leder oder Metall hergestellt sind, bedecken Gesicht und Kopf. Augenschlitze und Atemlöcher erweisen sich daher als äußerst nützlich.  
+
+Dieser Helm gehörte Sarevok. Er ist mit Zaubern belegt, so dass die Magieresistenz des Trägers erhöht wird.
+
+EIGENSCHAFTEN:
+
+Magiewiderstand: +5 %
+Schützt vor kritischen Treffern
+Gewicht: 2
+
+Kann nicht verwendet werden von:
+Barden
+Magiern
+Dieben~
+@8   = ~Dies ist Sarevoks Schwert. Egal was Ihr versucht, es kann von niemandem geführt werden. Es scheint, als wäre durch Sarevoks Tod die Magie, mit der es verzaubert wurde, geschwächt und versiegelt worden.~
+
+@9   = ~<CHARNAME>s Truhe~
+@10   = ~Imoens Truhe~

@@ -1,0 +1,27 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		AmbientActivate("Crowd",FALSE)
+		AmbientActivate("CrowdCheers",TRUE)
+		Wait(1)
+		FadeToColor([30.0],0)
+		Wait(2)
+		LeaveAreaLUAPanic("%NBaldursGate_DucalPalace_L1%","",[663.421],N)
+		LeaveAreaLUA("%NBaldursGate_DucalPalace_L1%","",[663.421],N)
+		ActionOverride(Player2,LeaveAreaLUA("%NBaldursGate_DucalPalace_L1%","",[728.436],N))
+		ActionOverride(Player3,LeaveAreaLUA("%NBaldursGate_DucalPalace_L1%","",[674.482],N))
+		ActionOverride(Player4,LeaveAreaLUA("%NBaldursGate_DucalPalace_L1%","",[735.486],N))
+		ActionOverride(Player5,LeaveAreaLUA("%NBaldursGate_DucalPalace_L1%","",[730.538],N))
+		ActionOverride(Player6,LeaveAreaLUA("%NBaldursGate_DucalPalace_L1%","",[807.549],N))
+		MultiPlayerSync()
+		Wait(1)
+		Explore()
+		MoveViewPoint([663.421],INSTANT)
+		FadeFromColor([30.0],0)
+		Wait(2)
+		EndCutSceneMode()
+		ActionOverride("BELT",StartDialogNoSet(Player1))
+END
+

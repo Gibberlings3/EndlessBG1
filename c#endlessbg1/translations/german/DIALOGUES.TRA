@@ -1,0 +1,106 @@
+/* dialogues.d */
+@0  = ~<CHARNAME>, Ihr wart erfolgreich! Ihr habt Sarevok besiegt, der für seine eigenen, düsteren Ziele gegen unsere Stadt intrigierte, gegen die Schwertküste - sogar gegen Amn!~
+@1  = ~Während wir uns an der Nase herumführen ließen, habt Ihr uns die Augen geöffnet und uns vor einem schrecklichen Übel bewahrt. Bei der Macht, die meine Stellung als Herzog und Mitglied des Konzils mir verleiht, ernenne ich Euch hiermit zum Helden von Baldurs Tor! Im Namen der Stadt spreche ich Euch unseren tiefsten Dank aus.~ ~Während wir uns an der Nase herumführen ließen, habt Ihr uns die Augen geöffnet und uns vor einem schrecklichen Übel bewahrt. Bei der Macht, die meine Stellung als Herzog und Mitglied des Konzils mir verleiht, ernenne ich Euch hiermit zur Heldin von Baldurs Tor! Im Namen der Stadt spreche ich Euch unseren tiefsten Dank aus.~
+@2  = ~<CHARNAME>, Held von Balurs Tor. Seid Ihr beeit, Euch mit der Flammenden Faust zusammenzuschließen und den letzten Anhängern Sarevoks nachzuspüren?~
+@3  = ~"Held von Balurs Tor", na das klingt doch mal nett. Sagt mir, was ich für Euch tun kann.~
+@4  = ~Ja, ich bin bereit und wir können sofort damit beginnen. Schickt mich wohin auch immer Ihr mich brauchen könnt.~
+@5  = ~Ehrlich gesagt habe ich genug davon eine Rolle zu erfüllen, und lasse mich von niemandem mehr einspannen. Ich werde jetzt Baldurs Tor verlassen und irgendwo anders mein Schicksal versuchen. Lebt wohl.~
+@6  = ~Nicht sofort. Ich muss erst noch ein paar Dinge erledigen.~
+@7  = ~Die Stadt steht tief in Eurer Schuld, Held von Baldurs Tor. Folgt mir bitte, ich werde Euch sagen, was wir wissen.~
+@8  = ~Ich verstehe. Dennoch steht die Stadt tief in Eurer Schuld. Lebt wohl, Held von Baldurs Tor.~
+@9  = ~Nun gut. Wir werden unsere Suche nach den letzten Anhängern von Sarevok intensivieren und hoffen, dass Ihr Euch uns bald anschließt. Bis dahin, genießt Euren Aufenthalt!~
+@10 = ~Wir danken Euch, dass Ihr Sarevok besiegt habt, <CHARNAME>!~
+
+/* pc_palaceresidence.d */
+@20  = ~Seid gegrüßt, <CHARNAME>. Bitte verlasst den Keller, Ihr solltet Euch hier nicht aufhalten.~
+@21  = ~Seid gegrüßt, <CHARNAME>.~
+@22  = ~Seid gegrüßt, Held von Baldurs Tor.~
+@23  = ~Geht einfach hinein, <CHARNAME>. Die Herzöge möchten mit Euch sprechen.~
+/* BG:EE: #7548 */
+@24  = ~Immer herein mit Euch!~
+/* BG:EE: #7550 */
+@25  = ~Nur zu, kommt herein! Aber wehe, Ihr macht Ärger!~ 
+/* BG:EE: #9010 */
+@26  = ~Ich muss mich jetzt anderen Dingen widmen. Guten Tag!~
+/* BG:EE: #5157 */
+@27  = ~Da seid Ihr ja wieder. Ich habe aber leider gar keine Zeit für ein Schwätzchen.~
+/* BG:EE: #7477 */
+@28  = ~Ihr könnt alles machen und Euch frei bewegen.~
+/* BG:EE: #9340 */
+@29  = ~Ich bin ein stolzes Mitglied der Flammenden Faust. Unser Hauptquartier ist in Baldurs Tor, obgleich wir auch von Beregost und vom Freundlichen Arm aus operieren. Wir sind recht besorgt über den plötzlichen Mangel an Eisen. Viele glauben, dass die Nation von Amn sich für einen Krieg gegen unsere große Stadt rüstet. Wenn dies der Fall ist, so weiß ich nicht, wie gut wir uns verteidigen können, wenn uns so ein wichtiger Rohstoff wie Eisen fehlt.~
+@30  = ~Willkommen, Held von Baldurs Tor! Dieser Raum wird als Eure Residenz dienen, solange Ihr Euch in der Stadt aufhaltet. Ich habe alles für Eure Ankunft vorbereitet und hoffe, dass Ihr es zu Eurer Zufriedenheit vorfindet. Im Namen der Herzöge soll ich Euch sagen, dass die Truhe ganz links hier im Raum Eure perönliche ist. Alles, was Ihr dort hineintut, wird darin verbleiben. Wir haben die Kisten und Schränke ausgeräumt und den Inhalt nach unten gebracht, solltet Ihr doch noch etwas darin finden, dann nehmt es ruhig, um Eure Vorräte aufzufüllen. Wir wünschen Euch einen angenehmen Aufenthalt und danke nochmal, dass Ihr die Stadt gerettet habt!~
+
+/* ceremony_sod.d */
+@40  = ~Bitte folgt mir!~
+@41  = ~<CHARNAME> aus Kerzenburg!~
+@42  = ~Mit dem Titel erhaltet Ihr offizielle Residenz im obersten Geschoss des Herzogspalasts! Die Dienerschaft wird Euch helfen, Euch einzurichten. Lasst uns alle den Helden von Baldurs Tor hochleben!~ ~Mit dem Titel erhaltet Ihr offizielle Residenz im obersten Geschoss des Herzgspalasts! Die Dienerschaft wird Euch helfen, Euch einzurichten. Lasst uns alle die Heldin von Baldurs Tor hochleben!~
+
+/* imoen_jannath.d */
+@50  = ~Wer hätte gedacht, dass er so üble Machenschaften gegen uns plant! Und wir haben ihn beinahe zum Herzog ernannt... Ihr habt uns alle gerettet, und wir stehen in Eurer Schuld, <CHARNAME>, Held von Baldurs Tor! Den Titel habt Ihr Euch wirklich verdient.~
+@51  = ~Das klingt so beeindruckend! "Held von Baldurs Tor".~
+@52  = ~Wenn ich nur Magie verwenden könnte, dann hätten wir ihn noch viel schneller erledigt!~
+@53  = ~Magie sagt Ihr? Hmm...~
+@54  = ~Imoen, ich denke, Ihr könntet ein Talent für Magie haben. Ich denke, ich möchte später nochmal mit Euch sprechen.~
+@55  = ~Mit mir? Öh... na gut!~
+@56  = ~Willkommen, Held von Baldurs Tor! Und willkommen, Imoen. Dieser Raum wird Euer sein, solange Ihr in Baldurs Tor verbleibt, Imoen - auf Geheiß von Herzogin Jannath.~
+@57  = ~...Meiner? Oh, Wahnsinn! Danke!~
+@58  = ~Ihr habt auch eine Truhe, die für Eure Besitztümer bereit steht. Es ist die ganz links hier im Raum. Alles, was Ihr da rein tut, wird da auch drin bleiben, solange Ihr hier seid. Habt einen angenehmen Aufenthalt!~
+@59  = ~<CHARNAME>! "Held von Baldurs Tor", hm? Beeindruckend! Herzogin Jannath hat mir diesen Raum angeboten, zusammen mit Magieunterricht! Kannst du dir das vorstellen? Wir wohnen jetzt nebeneinander, du und ich! Wobei ich ja viel lieber wieder mit dir rumziehen würde.~
+@60  = ~Die Truhe ganz links hier im Raum ist übrigens meine. Der Diener sagte, alles was ich da reintue wird da auch drinbleiben, solange ich hier wohne.~
+
+/* duke_eltan.d */
+@70  = ~Ihr habt uns vor großem Übel bewahrt, <CHARNAME>. Die Stadt steht in Eurer Schuld.~
+
+/* ffhealer.d */
+@80  = ~<CHARNAME>! Die Herzöge haben uns zu Euch geschickt um nach Eurem Befinden zu sehen. Wir werden die gefallenen Feinde mit zurück in den Palast nehmen.~
+@81  = ~Sollen wir Euch auch heilen und die Fallen entschärfen?~
+@82  = ~Ja, bitte tut das.~
+@83  = ~Nein danke, ich komme auch so zurecht.~
+@84  = ~Ihr habt der Stadt einen großen Dienst erwiesen. Kehrt in den Palast zurück, die Herzöge wollen mit Euch sprechen. Lebt wohl.~
+@85  = ~Gerne. Haltet einen Moment still...~
+@86  = ~So, das müsste reichen.~
+
+/* elminster.d */
+@90  = ~Erneut kreuzen sich unsere Wege, junger Freund. Ihr habt nun von Eurem göttlichen Erbe gehört, und musstet bereits einen Eurer "Halbbrüder" erschlagen. Damit habt Ihr die Schwertküste von einem großen Übel befreit. Die Frage ist, welchen Weg Ihr von hier aus einschlagen werdet. Werdet Ihr dem bösen Verlangen in Eurem Blute nachgeben? Seid Euch versichert, dass Ihr von vielen beobachtet und aus der Ferne begleitet werdet, <CHARNAME>, so gut in Eure Zukunft begleitet wie es uns möglich ist. Ich wünsche Euch alles Gute, <CHARNAME>, Kind des Bhaal. Mögen die Göter Euch beschützen.~ 
+~Erneut kreuzen sich unsere Wege, junge Freundin. Ihr habt nun von Eurem göttlichen Erbe gehört, und musstet bereits einen Eurer "Halbbrüder" erschlagen. Damit habt Ihr die Schwertküste von einem großen Übel befreit. Die Frage ist, welchen Weg Ihr von hier aus einschlagen werdet. Werdet Ihr dem bösen Verlangen in Eurem Blute nachgeben? Seid Euch versichert, dass Ihr von vielen beobachtet und aus der Ferne begleitet werdet, <CHARNAME>, so gut in Eure Zukunft begleitet wie es uns möglich ist. Ich wünsche Euch alles Gute, <CHARNAME>, Kind des Bhaal. Mögen die Göter Euch beschützen.~
+
+/* dialogues_sarevoksword_bgt.d */
+@100  = ~Es tut mir wirklich leid, aber ich muss meinem Meister gehorchen und Euch dieses Schwert abnehmen... Oh, ha, über den Zustand der Waffe werden sie aber nicht sehr begeistert sein. Na, da weiß ich doch jetzt schon, was ich als nächstes restauriren darf. Lebt wohl, <CHARNAME>, vielleicht treffen wir uns unter anderen Umständen wieder.~
+
+/* dialogues_sarevoksword_ee.d */
+@110  = ~Lasst mich Euch zuerst wie gefordert Sarevoks Schwert wiedergeben.~
+@111  = ~Wir haben Informationen, dass Sarevok einen magischen Bund mit seinem Schwert eingegangen war und es so zu einer sehr mächtigen Waffe machte.~
+@112  = ~Wie ich sehe, habt Ihr auch seine Rüstung mitgenommen. Ihr könnt sie behalten, aber ich kann Euch nur davon abraten, sie auch selbst zu verwenden. In derselben dunklen Erscheinung aufzutreten wie der, der gerade die Stadt bedrohte könnte leicht einen falschen Eindruck bei den Leuten erwecken.~
+@113  = ~Wir möchten das Schwert sicher verwahren. Bitte gebt es uns, wir werden Euch selbstverständlich entsprechend entlohnen.~
+@114  = ~In der Tat! Ich bin selbst neugierig, ein so mächtiges Schwert in den Händen zu halten, mächtig nicht nur im Kampf sondern auch als Symbol für Sarevoks Anhänger. Oh, wie ich sehe, hat es einen Großteil seiner Macht verloren und ist im jetzigen Zustand noch nicht einmal verwendbar. Nun, umso besser - wer auch immer dieses Schwert nutzen möchte, um in Sarevoks Fußstapfen zu treten, wird zuerst eine große Summe Gold ausgeben müssen.~
+@115  = ~Trotzdem hat es bei Sarevoks Anhängern einen hohen symbolischen Wert, den wir nicht unterschätzen sollten. Wir müssen dieses Schwert sicher verwahren, da es viele Diebe anziehen wird. Habt Dank, <CHARNAME>, dass Ihr uns diese Waffe überlasst und uns damit die Möglichkeit gebt, dieses Artefakt des Bösen aus den Landen zu entfernen. Lasst mich Euch zum Ausgleich dieses Schwert geben, und diese Summe Gold als Zeichen unserer Dankbarkeit.~
+
+/* refugees_sod.d */
+@120  = ~Wir sind den ganzen Weg vom Hohen Moor bis hierher geflohen, weil sie usere Höfe niedergebrannt haben. Wer sie waren, wissen wir nicht, nur dass sie noch immer dort ihr Unwesen treben und sie werden immer mehr. Wird Baldurs Tor uns helfen? Wir waren noch nie so weit im Süden, aber nur in der großen Stadt fühlen wir uns sicher.~
+@121  = ~Sie haben alles niedergebrannt - nachdem sie uns das ganze Vieh genommen hatten. Warum tut jemand sowas?~
+@122  = ~So viele wütende Männer, und sie haben alles zerstört, was ihnen im Weg stand. Ich hoffe wirklich, dass wir hier im Süden sicher sind.~
+@123  = ~Sie haben uns aufgefordert, uns ihnen anzuschließen, und dann haben sie mit Plündern und Morden begonnen... Wir sind geflohen mit allem, was wir tragen konnten.~
+@124  = ~Sie haben das ganze Dorf zerstört, und ich will gar nicht wissen, was sie mit denen gemacht haben, die nicht rechtzeitig geflohen sind!~
+@125  = ~Sich ihnen anschließen! Anschließen! Auf einem Raubzug wollten diese Räuber, dass wir uns ihnen anschließen! Ich bin so schnell wie möglich geflohen.~
+@126  = ~Mamaaaa! Der Fremde redet mit mir!!~ ~Mamaaaa! Die Fremde redet mit mir!!~
+@127  = ~Ich habe meine Puppe verloren.~
+@128  = ~Ich will nach hause.~
+
+/* denkod.d */
+@140  = ~Ihr seid wieder da!~
+@141  = ~Also ich muss schon sagen, seid vorsichtig beim Tragen von den Sachen. Ich dachte schon, Ihr seid er und wollte wirklich nach meinem Dolch greifen!~
+@142  = ~Ihr könnt Euch nicht vorstellen, was gerade geschehen ist. Soldaten der Flammenden Faust marschieren hier durch und beachten uns mit keinem Blick, erst nach unten und dann wieder raus.~
+@143  = ~Sieht so aus als wär die Party da unten beendet, oder kommt der große Typ auch nochmal wieder durch? Ist ja wie im Taubenschlag hier, ich gehe mal lieber woanders hin, wo es etwas ruhiger zugeht!~
+
+/* ophyllis_sod.d */
+@150 = ~Oh, <CHARNAME>! Ich bin hocherfreut, Euch persönlich kennen zu lernen. Ich bin Ophyllis, der Schatzmeister der Herzöge. Ich werde Euer Gold verwahren, wenn Ihr zusammen mit der Flammenden Faust die letzten Anhänger Sarevoks verfolgt.~
+@151 = ~Schatzmeister der Herzöge? Das klingt nach einer sehr verantwortungsvollen Position.~
+@152 = ~Mein Gold verwahren? Warum?~
+@153 = ~Und was, wenn ich Euch mein Gold nicht geben will?~
+@154 = ~Ich weiß, wer Ihr seid. Schönen Tag.~
+@155 = ~Oh, das ist es! Haha. Die Herzöge vertrauen mir. Sie wissen genau, dass ich mich niemals selbst am Gold anderer bereichern würde!~
+@156 = ~Es ist auf Anweisung der Herzöge, müsst Ihr wissen. Niemand, der im Namen der Stadt Verbrecher jagt soll sich um sein Gold sorgen müssen. Ehrlich gesagt glaube ich, dass es den Herzögen auch ganz recht ist zu wissen, das die Soldaten kein Gold dabei haben um es w#ährend eines Einsatzes in einer Spelunke zu versaufen, ahem.~
+@157 = ~Ich werde dann Euer Gold sicher verwahren, aber jetzt müsst Ihr Euch darüber noch nicht den Kopf zerbrechen, haha - ich muss die Aufbewahrung Eures Goldes erst vorbereiten, der Hinweis dazu hat mich gerade eben erst erreicht.~
+@158 = ~Wenn ich soweit bin sage ich Euch bescheid. Bis dahin lebt wohl!~
+@159 = ~Seid gegrüßt, <CHARNAME>. Wen Ihr Ophyllis sucht, der sollte im Büro sein.~
+

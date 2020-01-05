@@ -1,0 +1,174 @@
+/* Spawn Duke Liia after Sarevok's death */
+<<<<<<<< .../ar0108_liia.baf
+/* extended content: revive Duke Jannath too, and place Duke Eltan into the Palace */
+
+IF
+	Dead("Sarevok")
+	OR(2)
+		Dead("LIIA")
+		!Exists("LIIA")
+	Global("C#st_SpawnLiia","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SPRITE_IS_DEADLIIA","GLOBAL",0)
+		CreateCreature("LIIA",[680.356],0)
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Dead("Sarevok")
+	Global("C#st_SpawnLiia","MYAREA",0)
+THEN
+	RESPONSE #100
+		ApplySpellRES("%bddispel%","LIIA") 
+		SmallWait(1) 
+		ActionOverride("LIIA",JumpToPoint([680.356])
+		ActionOverride("LIIA",Face(0))
+		SmallWait(1) 
+		Continue()
+END
+
+IF
+	Dead("Sarevok")
+	Global("C#st_SpawnLiia","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_SpawnLiia","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L1%.bcs~ ~.../ar0108_liia.baf~ EVALUATE_BUFFER 
+
+
+/* Imoen's servant on the top floor of the palace */ 
+
+COPY_EXISTING ~servan.cre~ ~override/c#stsrv2.cre~
+    WRITE_ASCII 0x280 ~c#stsrv2~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#stsrv2~ #8 // set dialogue file
+    WRITE_EVALUATED_ASCII 0x258 ~INITDLG~ #8   // Race script
+
+<<<<<<<< .../ar0110_imoen.baf
+/* place Imoen's servant  if Imoen in party */
+IF
+	Global("C#st_HeroOfBG","GLOBAL",1)
+	InPartyAllowDead("%IMOEN_DV_SOD%")
+	Global("C#st_SpawnServant2","MYAREA",0)
+THEN
+	RESPONSE #100
+        	CreateCreature("c#stsrv2",[1016.704],14)
+		SetGlobal("C#st_ImoenGreetsHero","GLOBAL",1)
+		SetGlobal("C#st_SpawnServant2","MYAREA",2)
+END
+
+/* move Imoen here if not in party */
+IF
+	Global("C#st_HeroOfBG","GLOBAL",1)
+	!InPartyAllowDead("%IMOEN_DV_SOD%")
+	!Dead("%IMOEN_DV_SOD%")
+	Global("C#st_SpawnServant2","MYAREA",0)
+THEN
+	RESPONSE #100
+        	MoveGlobal("%NBaldursGate_DucalPalace_L3%","%IMOEN_DV_SOD%",[1016.704]) 
+		ApplySpellRES("%bddispel%","%IMOEN_DV_SOD%")  
+		SetGlobal("C#st_SpawnServant2","MYAREA",1)
+END
+
+/* AddMapNote */
+IF
+	Global("C#st_ImChestMN","MYAREA",0)
+THEN
+	RESPONSE #100		
+		AddMapNote([690.820],@10) 
+		SetGlobal("C#st_ImChestMN","MYAREA",1)
+END
+	
+
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L3%.bcs~ ~.../ar0110_imoen.baf~ EVALUATE_BUFFER 
+
+/* SoD: Erase journal entries after leaving BG */
+ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) THEN BEGIN
+<<<<<<<< .../bd1000_add_imoen.baf
+
+IF
+	Global("C#st_EraseJournalImoen","bd1000",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_EraseJournalImoen","bd1000",1)
+		EraseJournalEntry(@10004)
+		EraseJournalEntry(@10005)
+END
+
+>>>>>>>>
+EXTEND_BOTTOM ~bd1000.bcs~ ~.../bd1000_add_imoen.baf~ EVALUATE_BUFFER 
+END //SoD(+EET)
+
+ACTION_IF NOT GAME_IS ~bgt~ THEN BEGIN
+/* 2nd floor of Palace: move container content from 3rd level to here */
+<<<<<<<< .../ar0109_container_imoen.baf
+/* empty stuff out of Imoen's containers into level 2 drawer */
+IF
+  Global("C#st_HeroOfBG","GLOBAL",1)
+  Global("C#st_PrepareContainersIM", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    MoveContainerContents("AR0110*Container4","AR0109*Container2")
+    MoveContainerContents("AR0110*Container5","AR0109*Container2")
+    MoveContainerContents("AR0110*Container6","AR0109*Container2")
+//    MoveContainerContents("AR0110*Container7","AR0109*Container2")
+//    MoveContainerContents("AR0110*Container8","AR0109*Container2")
+    SetGlobal("C#st_PrepareContainersIM", "MYAREA", 1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L2%.bcs~ ~.../ar0109_container_imoen.baf~ EVALUATE_BUFFER 
+END //not bgt
+
+/* prepare 3d floor of palace for the hero of Baldur's Gate */
+/* can rest indoors */
+COPY_EXISTING "%NBaldursGate_DucalPalace_L3%.are" "override"	
+	WRITE_SHORT 0x48 (THIS BOR BIT7)	// This command will flag the area as "Can rest indoors" without editing existing flags (if any...)
+BUT_ONLY
+
+/* PC is not a thief if they open their chests */
+  COPY_EXISTING ~ACT03.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~Opened(\[ANYONE\])~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 OR(2) !AreaCheck("%NBaldursGate_DucalPalace_L3%") Global("C#st_HeroOfBG","GLOBAL",0)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+
+
+<<<<<<<< .../ar0110_add.baf
+/* unlock Imoen's container */
+IF
+	Global("C#st_HeroOfBG","GLOBAL",1)
+	Global("C#st_UnlockContainersIM","MYAREA",0)
+THEN
+	RESPONSE #100
+		Unlock("Container 4") 
+		SetGlobal("C#st_UnlockContainersIM","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L3%.bcs~ ~.../ar0110_add.baf~ EVALUATE_BUFFER 
+
+/* transfer content of Imoen's containers into Palace in SoD */
+ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) THEN BEGIN
+<<<<<<<< .../bd0103_im_add.baf
+  // Transferring items from BG1 area palace containers
+IF
+  Global("C#st_HeroOfBG","GLOBAL",1)
+  Global("C#st_HeroTransferItemsIM", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    MoveContainerContents("AR0110*Container4","BD0103*Imoen_equipment")
+    SetGlobal("C#st_TransferItemsIM", "MYAREA", 1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~bd0103.bcs~ ~.../bd0103_im_add.baf~ EVALUATE_BUFFER 
+END //SoD+EET

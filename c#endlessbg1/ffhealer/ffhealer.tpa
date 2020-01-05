@@ -1,0 +1,57 @@
+/* FF priests come to Undercity Temple */
+/* own script: FF healer should not walk over traps */
+<<<<<<<< .../c#stsdpr.baf
+IF
+	See([PC])
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~.../c#stsdpr.baf~
+
+COPY_EXISTING ~FLAM11.cre~ ~override/c#stsdpr.cre~
+    SAY NAME1 ~Flaming Fist Healer~
+    SAY NAME2 ~Flaming Fist Healer~
+    WRITE_ASCII 0x280 ~c#stsdpr~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#stsdpr~ #8   // dialogue
+  WRITE_EVALUATED_ASCII 0x250 ~c#stsdpr~ #8   // class script
+
+COPY_EXISTING ~FLAM11.cre~ ~override/c#stsdp2.cre~
+    SAY NAME1 ~Flaming Fist Scout~
+    SAY NAME2 ~Flaming Fist Scout~
+    WRITE_ASCII 0x280 ~c#stsdp2~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#stsdp2~ #8   // dialogue
+  WRITE_EVALUATED_ASCII 0x250 ~~ #8   // class script
+
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/ffhealer/c#stcut3.baf~
+
+<<<<<<<< .../undercity_temple_add.baf
+
+
+IF
+	Dead("Sarevok")  // Armored Figure (Sarevok)
+	OR(2)
+		Dead("GALDOR")   //Angelo
+		!Exists("GALDOR")   //Angelo
+	OR(2)
+		Dead("SEMAJ")   //Angelo
+		!Exists("SEMAJ")   //Angelo
+	OR(2)
+		Dead("Tazok")   //Angelo
+		!Exists("Tazok")   //Angelo
+	OR(2)
+		Global("C#st_BG1End","GLOBAL",1)
+		Global("ENDOFBG1","GLOBAL",1)
+	Global("C#st_FFHealerSpawn","GLOBAL",0) //global because I need this for the Denkod component
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_FFHealerSpawn","GLOBAL",1)
+		CreateCreature("c#stsdpr",[869.1097],8)
+		CreateCreature("c#stsdp2",[934.1101],8)
+END
+
+>>>>>>>>
+EXTEND_BOTTOM ~%Undercity_TempleofBhaal%.bcs~ ~.../undercity_temple_add.baf~ EVALUATE_BUFFER 

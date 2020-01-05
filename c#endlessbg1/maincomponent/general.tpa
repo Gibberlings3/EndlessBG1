@@ -1,0 +1,198 @@
+/* basic changes */
+
+/* prevent end of game / SoD transition */
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+  COPY_EXISTING ~%Undercity_TempleofBhaal%.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~Dead("Sarevok")[%newline%]*GlobalLT("EndOfBG1","GLOBAL",2)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~False()~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+END
+
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+  COPY_EXISTING ~%Undercity_TempleofBhaal%.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~Dead("Sarevok")[%newline%]*Global("EndOfBG1","GLOBAL",0)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~False()~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+END
+
+/* end movie should play after Sarevok is dead */
+<<<<<<<< .../ar0125-et.baf
+
+IF
+	Dead("Sarevok")  // Armored Figure (Sarevok)
+//	Dead("GALDOR")   //Angelo
+//	Dead("SEMAJ")    // Semaj
+//	Dead("Tazok")    //Tazok
+	Global("C#st_BG1End","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SaveGame(0)
+		SmallWait(1)
+		ClearAllActions()
+		StartCutSceneMode()
+		SetGlobal("C#st_BG1End","GLOBAL",1)
+		TriggerActivation("Door0123",TRUE)
+		Wait(2)
+		FadeToColor([30.0],0)
+		Wait(2)
+		StartMovie("ENDMOVIE")
+		FadeFromColor([30.0],0)
+		EndCutSceneMode()
+END
+
+>>>>>>>>
+
+EXTEND_TOP ~%Undercity_TempleofBhaal%.BCS~ ~.../ar0125-et.baf~ EVALUATE_BUFFER
+
+/* BG:EE: game ends - new cutscene */
+ACTION_IF (GAME_IS ~bgee~ AND NOT FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
+
+<<<<<<<< .../c#stbgee.baf
+
+IF
+	GlobalLT("EndOfBG1","GLOBAL",2)
+THEN
+	RESPONSE #100
+        	CutSceneId(Player1)
+		SaveGame(2)
+		SmallWait(1)
+		SetGlobal("EndOfBG1","GLOBAL",2)
+		Wait(4)
+		FadeToColor([1.0],0)
+		Wait(1)
+		StartMovie("endcrdit")
+		FadeToColor([1.0],0)
+		EndCutSceneMode()
+		GoToStartScreen()
+END
+
+>>>>>>>>
+
+COMPILE EVALUATE_BUFFER ~.../c#stbgee.baf~
+
+END //BG:EE
+
+/* SoD + EET: Transition to SoD - new cutscene */
+ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) THEN BEGIN
+
+<<<<<<<< .../c#st2sod.baf
+
+IF
+	True()
+THEN
+	RESPONSE #100
+        	CutSceneId(Player1)
+		SaveGame(2)
+		SmallWait(1)
+		StartCutSceneEx("BDSODTRN",TRUE)
+END
+
+>>>>>>>>
+
+COMPILE EVALUATE_BUFFER ~.../c#st2sod.baf~
+
+/* SoD + EET: patch bdsodtrn.bcs so the BG1 Endmovie doesn't show twice */
+
+COPY_EXISTING ~bdsodtrn.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~Wait(1)[%newline%]*StartMovie("ENDMOVIE")[%newline%]*FadeToColor(\[1\.0\],0)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+END //SoD + EET
+
+
+/* N Baldurs Gate: open entrance to Palace */
+<<<<<<<< .../ar0200_add.baf
+IF
+	Dead("Sarevok")
+	Global("C#st_SarevokDeadOpenGate","MYAREA",0)
+THEN
+	RESPONSE #100
+		OpenDoor("Door0108")
+		TriggerActivation("Dor0108",TRUE)
+		SetGlobal("C#st_SarevokDeadOpenGate","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate%.bcs~ ~.../ar0200_add.baf~ EVALUATE_BUFFER 
+
+
+/* prepare the Palace (ground floor) after Sarevok's death: Duke Belt should be alive */
+
+<<<<<<<< .../ar0108_add.baf
+/* Palace ground floor. revive Duke Belt and move him in the middle of the room */
+
+IF
+	Dead("Sarevok")
+	Dead("BELT")
+	Global("C#st_RearrangeDukes","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SPRITE_IS_DEADBELT","GLOBAL",0)
+		CreateCreature("BELT",[735.371],S)
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Dead("Sarevok")
+	Global("C#st_RearrangeDukes","MYAREA",0)
+THEN
+	RESPONSE #100
+		ApplySpellRES("%bddispel%","BELT")  
+		SmallWait(1)
+		ActionOverride("BELT",JumpToPoint([735.371])
+		ActionOverride("BELT",Face(0))
+		SmallWait(1)
+		Continue()
+END
+
+IF
+	Dead("Sarevok")
+	Global("C#st_RearrangeDukes","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_RearrangeDukes","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L1%.bcs~ ~.../ar0108_add.baf~ EVALUATE_BUFFER 
+
+/* define script for cres without DV: DestroySelf() after Sarevok's death */
+<<<<<<<< .../c#stdstr.baf
+
+IF
+	OR(2)
+	  Global("SarevokBehavior","GLOBAL",1)
+	  Dead("Sarevok")
+THEN
+	RESPONSE #100
+        	DestroySelf()
+END
+
+>>>>>>>>
+
+COMPILE EVALUATE_BUFFER ~.../c#stdstr.baf~
+

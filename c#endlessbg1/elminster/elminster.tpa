@@ -1,0 +1,16 @@
+/* Elminster talks to PC again in front of the palace */
+COPY_EXISTING ~ELMIN5.cre~ ~override/C#STLMST.cre~
+    WRITE_ASCII 0x280 ~C#STLMST~ #32 // set DV
+  WRITE_EVALUATED_ASCII 0x2cc ~C#STLMST~ #8   // dialogue
+
+<<<<<<<< .../ar0200_add_elminster.baf
+IF
+	Dead("Sarevok")
+	Global("C#st_SarevokElminster","MYAREA",0)
+THEN
+	RESPONSE #100
+        	CreateCreature("C#STLMST",[1962.2834],0)
+		SetGlobal("C#st_SarevokElminster","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate%.bcs~ ~.../ar0200_add_elminster.baf~ EVALUATE_BUFFER 

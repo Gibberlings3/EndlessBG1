@@ -1,0 +1,476 @@
+/* NW Baldur's Gate : Sugar */
+<<<<<<<< .../ar0100_add.baf
+IF
+	Exists("SUGAR")  // Sugar
+	InMyArea("SUGAR")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("SUGAR",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NWBaldursGate%.bcs~ ~.../ar0100_add.baf~
+
+
+/* NWBaldursGate_SilvershieldEstate_L1: Bip */
+  COPY_EXISTING ~%NWBaldursGate_SilvershieldEstate_L1%.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~!Exists("Bip")~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+<<<<<<<< .../ar0101_add.baf
+IF
+	Exists("BIP")  // Servant
+	InMyArea("BIP")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("BIP",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NWBaldursGate_SilvershieldEstate_L1%.bcs~ ~.../ar0101_add.baf~
+
+/* Undercellars: Slythe & Krystin */
+  COPY_EXISTING ~%BaldursGate_Undercellars%.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~!Exists("Slythe")~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~!Exists("Krystin")~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+<<<<<<<< .../ar0112_add.baf
+IF
+	Exists("SLYTHE")  // Slythe
+	InMyArea("SLYTHE")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("SLYTHE",DestroySelf())
+END
+
+IF
+	Exists("Krystin")  // Krystin
+	InMyArea("Krystin")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("Krystin",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%BaldursGate_Undercellars%.bcs~ ~.../ar0112_add.baf~
+
+/* Blushing Mermaid, ground floor: Ivanne */
+<<<<<<<< .../ar0114_add.baf
+IF
+	Exists("IVANNE")  // Ivanne
+	InMyArea("IVANNE")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("IVANNE",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NEBaldursGate_BlushingMermaid_L1%.bcs~ ~.../ar0114_add.baf~
+
+/* W Baldur's Gate: Hecito, Sir Lothtyran */
+<<<<<<<< .../ar0600_add.baf
+IF
+	Exists("HECITO")  // Hecito
+	InMyArea("HECITO")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("HECITO",DestroySelf())
+END
+
+IF
+	Exists("Lothtyran")  // Sir Lothtyran - Nobleman
+	InMyArea("Lothtyran")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("Lothtyran",DestroySelf())
+END
+
+>>>>>>>>
+EXTEND_BOTTOM ~%WBaldursGate%.bcs~ ~.../ar0600_add.baf~
+
+/* Thieves Guild, main area: prevent Denkod from apwning again. DestroySelf() or last dialogue will be added depending on install choice basic /flavor */
+  COPY_EXISTING ~%EBaldursGate_ThievesGuild%.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~!Exists("DENKOD")~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+
+
+/* Flaming Fist HQ, ground floor: Benjy */
+<<<<<<<< .../ar0607_add.baf
+IF
+	Exists("BENJY")  // Benjy
+	InMyArea("BENJY")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("BENJY",DestroySelf())
+END
+
+>>>>>>>>
+EXTEND_BOTTOM ~%SWBaldursGate_FlamingFistHQ_L1%.bcs~ ~.../ar0607_add.baf~
+
+/* SWBaldursGate_FlamingFistHQ_L2: Kent, Duke Eltan */
+<<<<<<<< .../ar0608_add.baf
+IF
+	Exists("KENT")  // Kent
+	InMyArea("KENT")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("KENT",DestroySelf())
+END
+
+IF
+	Exists("Eltan2")  // Duke Eltan
+	InMyArea("Eltan2") 
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("Eltan2",DestroySelf())
+		ActionOverride("RASHAD",DestroySelf())
+		ActionOverride("ELTAN",DestroySelf())
+END
+
+>>>>>>>>
+EXTEND_BOTTOM ~%SWBaldursGate_FlamingFistHQ_L2%.bcs~ ~.../ar0608_add.baf~
+
+/*  	Iron Throne, second floor: Gregor, Tralithan */
+<<<<<<<< .../ar0612_add.baf
+IF
+	Exists("GREGOR")  // Gregor
+	InMyArea("GREGOR")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("GREGOR",DestroySelf())
+END
+
+IF
+	Exists("TRALITHAN")  // Tralithan
+	InMyArea("TRALITHAN")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("TRALITHAN",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L2%.bcs~ ~.../ar0612_add.baf~
+
+/* Iron Throne, third floor: Kalessia */
+<<<<<<<< .../ar0613_add.baf
+IF
+	Exists("KALESSIA")  // Kalessia
+	InMyArea("KALESSIA")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("KALESSIA",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L3%.bcs~ ~.../ar0613_add.baf~
+
+/* Iron Throne, 4th floor: Wirthing */
+<<<<<<<< .../ar0614_add.baf
+IF
+	Exists("WIRTHING")  // Wirthing
+	InMyArea("WIRTHING")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("WIRTHING",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L4%.bcs~ ~.../ar0614_add.baf~
+
+/* Iron Throne, 5th floor: Wirthing */
+<<<<<<<< .../ar0615_add.baf
+IF
+	Exists("CYTHAN")  // Cythandria
+	InMyArea("CYTHAN")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("CYTHAN",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L5%.bcs~ ~.../ar0615_add.baf~
+
+/* Iron Throne, ground floor: Pang, Dhanial */
+<<<<<<<< .../ar0616_add.baf
+IF
+	Exists("PANG")  // Pang Wallen
+	InMyArea("PANG")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("PANG",DestroySelf())
+END
+
+IF
+	Exists("DHANIAL")  // Dhanial
+	InMyArea("DHANIAL")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("DHANIAL",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L1%.bcs~ ~.../ar0616_add.baf~
+
+
+/* Addy in Central Baldur's Gate */
+<<<<<<<< .../ar0700_add.baf
+IF
+	Exists("ADDY")
+	InMyArea("ADDY")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("ADDY",DestroySelf())
+		Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_add.baf~
+
+/* E Baldur's Gate : Delthyr, Herschel, Tamoko */
+  COPY_EXISTING ~%EBaldursGate%.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~!Exists("Tamoko")~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~!Exists("Husam2")~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+<<<<<<<< .../ar0800_add.baf
+IF
+	Exists("HERSCHEL")  // Herschel
+	InMyArea("HERSCHEL")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("HERSCHEL",DestroySelf())
+END
+
+IF
+	Exists("Delthyr")  // Delthyr
+	InMyArea("Delthyr")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("Delthyr",DestroySelf())
+END
+
+IF
+	Exists("Husam2")  // Husam
+	InMyArea("Husam2")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("Husam2",DestroySelf())
+END
+
+IF
+	Exists("Tamoko")  // Tamoko
+	InMyArea("TAMOKO")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("Tamoko",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%EBaldursGate%.bcs~ ~.../ar0800_add.baf~
+
+/* Wyrm's Crossing: smuggler */
+<<<<<<<< .../ar0900_add.baf
+IF
+	Exists("Smuggler")  // Smuggler
+	InMyArea("Smuggler")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("Smuggler",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%WyrmsCrossing%.bcs~ ~.../ar0900_add.baf~
+
+/* SW Baldur's Gate: */
+  COPY_EXISTING ~%EBaldursGate%.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~!Exists("Tamoko")~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+<<<<<<<< .../ar1100_add.baf
+IF
+	Exists("KAELLA")  // Kaella
+	InMyArea("KAELLA")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("KAELLA",DestroySelf())
+END
+
+IF
+	Exists("TAMOKO")  // Tamoko
+	InMyArea("TAMOKO")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("TAMOKO",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%SWBaldursGate%.bcs~ ~.../ar1100_add.baf~
+
+/* S Baldur's Gate (Docks): Brennan, Jonavin, Kolvar */
+
+<<<<<<<< .../ar1200_add.baf
+IF
+	Exists("BRENNA")  // Brennan Risling
+	InMyArea("BRENNA")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("BRENNA",DestroySelf())
+END
+
+IF
+	Exists("JONAVI")  // Jonavin
+	InMyArea("JONAVI")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("JONAVI",DestroySelf())
+END
+
+IF
+	Exists("KOLVAR")  // Kolvar
+	InMyArea("KOLVAR")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("KOLVAR",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%BaldursGateDocks%.bcs~ ~.../ar1200_add.baf~
+
+/* Alan Blackblade in SE Baldur's Gate */
+<<<<<<<< .../ar1300_add.baf
+IF
+	Exists("ALAN")
+	InMyArea("ALAN")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("ALAN",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%SEBaldursGate%.bcs~ ~.../ar1300_add.baf~
+
+
+
+/* three commoners inside hall of wonders - need to switch their dialogues (not in BGT) */
+COPY_EXISTING ~mtowwon1.CRE~ ~override~
+	~mtowwon2.CRE~ ~override~
+  WRITE_EVALUATED_ASCII 0x260 ~MTOWBAZ~ #8 // General Script 
+
+COPY_EXISTING ~mtowwon3.CRE~ ~override~
+  WRITE_EVALUATED_ASCII 0x260 ~FTOWBAZ~ #8 // General Script 
+
+COPY_EXISTING ~NOBBAX_A.CRE~ ~override~
+  WRITE_EVALUATED_ASCII 0x260 ~NOBLBAZ~ #8 // General Script 
+
+
+
+/* Nila.cre in Duke Palace: doesn't have a DV (not present in BGT) */
+COPY_EXISTING ~nila.cre~ ~override~
+ WRITE_EVALUATED_ASCII 0x260 ~c#stdstr~ #8 // General Script 
+
+/* Voleta in the Thieves Guild Maze: no DV (in BGT Voleta remains and gets another dialogue line) */
+COPY_EXISTING ~voleta.cre~ ~override~
+ WRITE_EVALUATED_ASCII 0x260 ~c#stdstr~ #8 // General Script 
+
+/* Flaming Fist mercenary in cellar of Flaming fist headquarters: no turning hostile after Sarevok's death */
+  COPY_EXISTING ~flam12.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~Global("Chapter","GLOBAL",7)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+
+/* Thieves Guild, main area: Denkod. This script block will not trigger if the "Denkod in Thieves Guild" component is installed */
+
+<<<<<<<< .../ar0153_add.baf
+IF
+	!Global("C#st_DenkodTalk","MYAREA",1)
+	Exists("DENKOD")  // Denkod
+	InMyArea("DENKOD")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("DENKOD",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%EBaldursGate_ThievesGuild%.bcs~ ~.../ar0153_add.baf~

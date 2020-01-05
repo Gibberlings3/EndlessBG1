@@ -1,0 +1,47 @@
+@1   = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail. 
+
+This armor belonged to Sarevok, and it is unusually heavy.
+
+STATISTICS:
+
+Armor Class: -1 (-5 vs. slashing, -4 vs. piercing and missile)
+Requires:
+ 15 Strength
+
+Weight: 70~
+@2   = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail. 
+
+This armor belonged to Sarevok, and it is unusually heavy. It is enchanted to give protection against magic.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +30%
+
+Armor Class: -1 (-5 vs. slashing, -4 vs. piercing and missile)
+Requires:
+ 15 Strength
+
+Weight: 70~
+
+@6   = ~This class of open-face helmet, made of reinforced leather or metal, covers most of the head, save the face and neck.  These helmets commonly provide protection for the nose.  
+
+This helm belonged to Sarevok.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects against critical hits
+
+Weight: 2~
+@7   = ~This class of open-face helmet, made of reinforced leather or metal, covers most of the head, save the face and neck.  These helmets commonly provide protection for the nose.  
+
+This helm belonged to Sarevok. It is enchanted to give protection against magic.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +5%
+– Protects against critical hits
+
+Weight: 2~
