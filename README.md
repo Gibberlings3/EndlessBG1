@@ -15,14 +15,6 @@ Note: If downloading from GitHub, make sure you download the latest release from
 
 [Read the Readme](https://gibberlings3.github.io/Documentation/readmes/readme.c%23endlessbg1.english.txt)
 
-[Read the German Readme](https://gibberlings3.github.io/Documentation/readmes/readme.c%23endlessbg1.german.txt)
-
-[Discussion Thread at GibbrlingsThree](https://www.gibberlings3.net/forums/topic/30958-endless-bg1-a-mod-for-bgee-bgsod-bgt-and-eet/)
-[German Discussion Thread at Kerzenburgforum](https://baldurs-gate.de/index.php?threads/endless-bg1-mod-nach-sarevoks-fall-in-bg1-verbleiben.44856/)
-
-[Mod Page at Kerzenburgforum](https://baldurs-gate.de/index.php?resources/endless-bg1.47/)
-endlessbg1.english.txt)
-
 [Read the German Readme](https://gibberlings3.github.io/Documentation/readmes/readme.c#endlessbg1.german.txt)
 
 [Discussion Thread at GibbrlingsThree](https://www.gibberlings3.net/forums/topic/30958-endless-bg1-a-mod-for-bgee-bgsod-bgt-and-eet/)
