@@ -183,17 +183,19 @@ Version 2
 -"Elminster makes an Appearance" has two install options now: additionally to jastey's version from v1, it also offers the possibility to restore the original Elminster lines unused in the game.
 -"Imoen and Duke Jannath": Imoen can be sent to the Palace upon kickout. This should be compatible with other "sent NPC to wait somewhere" mods (calls higher weighted dialogue which circles back to the normal one if the PC doesn't want her to wait at the Palace)
 -"Imoen and Duke Jannath": Duke Jannath will have some random dialogue lines if talked to by Imoen.
+-"Denkod in Thieves Guild comments on Sarevok's Death": Denkod should beinside the thieves guild if Sarevok is dead
 -"Flaming Fist Healer come into Undercity Temple": FF healer takes away the bodies also if PC doesn't want help with healing; FF soldiers do not walk into the temple whan they are leaving, FF healers do not do RandomWalk() while they can't see the PC.
 -Violeta in Thieves Maze should not be gone before Sarevok is dead.
 -(EE) Winski in Thieves Maze should be gone after Sarevok is dead.
 -EET: areas in Palace should not crash. Fixed container area names for EET (components "More Flavor to Hero of Baldur's Gate" and "Imoen and Duke Jannath")
--Exit from Undercity Temple will only reappear and movie will play if all 4 foes are either dead or no longer present in the area.
-- added dialogue lines to Dukes in case they are talked to not by the PC if the PC is not inside as well.
+-(EE) Exit from Undercity Temple will only reappear and movie will play if all 4 foes are either dead or no longer present in the area.
+-added dialogue lines to Dukes in case they are talked to not by the PC if the PC is not inside as well.
 -slight changes to the lines in setup.tra (error message should say "component" instead of "mod")
 -mod will set the variable "Global("C#EndlessBG1","GLOBAL",1)" in the thieves guild (chapter 7 after Palce fight) for compatibility with (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
+-all lines trayfied.
 -minor internal tp2 changes (definition of Imoen's death variable now uses the standard one out of the cpmvar.tpa files).
--added c#endlessbg1.ini with mod info
 -added folder libiconv-1.9.2-1-src.7z with iconv licence info
+-added c#endlessbg1.ini with mod info
 
 Version 1
 -first public release
