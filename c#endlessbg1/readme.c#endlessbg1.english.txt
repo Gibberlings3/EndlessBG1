@@ -70,8 +70,7 @@ With this component installed, Duke Jannath will be alive and inside the palace 
 
 On the third floor of the palace, Imoen will get the room in the southeast. If she is in party, a servant will welcome here and tell her about her personal chest: it's the one in the far west of Imoen's room ("Imoen's chest" in SoD). The chest will be unlocked. For all EE games, the content of most of the chests will be moved downstairs into the drawer on the 2nd level of the palace. For SoD and EET, the contents of this chest will be moved into the "same" one inside the SoD campaign automatically.
 In case Imoen is not in party, she will have taken residence in the Palace top ground and tell the PC about her chest herself.
-So far, the kickout dialogue of Imoen was not altered to reflect her new residence, because of compatibility issues with "Wait at Inn" component from Bg1NPC / Tweaks Anthology.
-
+Imoen's kickout dialogue was altered to reflect her new residence: after revceiving her room, Imoen can be send to the Palace upon kickout. This should be compatible with other "sent NPC to wait somewhere" mods (calls higher weighted dialogue which circles back to the normal one if the PC doesn't want her to wait at the Palace).
 
 6 Duke Eltan is in the Palace
 -----------------------------------

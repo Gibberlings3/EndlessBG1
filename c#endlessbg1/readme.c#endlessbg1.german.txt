@@ -66,7 +66,8 @@ Für die EE-Spiele kann Sarevoks Schwert den Herzögen überreicht werden. (Dies is
 -----------------------------------
 Mit dieser Komponente wird Herzogin Liia Jannath am Leben und im Palast sein. Sie wird Imoens Anwesenheit bemerken und eine Bemerkung machen, dass sie mit Imoen über Magie sprechen möchte.
 
-Im dritten Geschoss des Palastes wird Imoen den Raum im Südosten erhalten. Sollte sie nicht in der Gruppe sein, wird sie nun ihr Quartier hier aufgeschlagen haben, wenn der HC das Stockwerk betritt. Die Truhe ganz links in diesem Raum wird als Imoens Truhe bezeichnet und ist nun entriegelt. Für SoD und EET wird der Inhalt dieser Truhe automatisch in "dieselbe" Truhe in SoD verschoben. Für alle EE-Spiele sind diese Truhe und die meisten anderen aus dem Raum geleert, der Inhalt befindet sich nun im Schrank ein Stockwerk tiefer. Der Kickout-Dialog von Imoen wird von der Komponente nicht verändert, wegen Kompatibilitätsproblemen mit der "Wait at Inn" Komponente von BG1NPC / Tweaks Anthology.
+Im dritten Geschoss des Palastes wird Imoen den Raum im Südosten erhalten. Sollte sie nicht in der Gruppe sein, wird sie nun ihr Quartier hier aufgeschlagen haben, wenn der HC das Stockwerk betritt. Die Truhe ganz links in diesem Raum wird als Imoens Truhe bezeichnet und ist nun entriegelt. Für SoD und EET wird der Inhalt dieser Truhe automatisch in "dieselbe" Truhe in SoD verschoben. Für alle EE-Spiele sind diese Truhe und die meisten anderen aus dem Raum geleert, der Inhalt befindet sich nun im Schrank ein Stockwerk tiefer. 
+Der Kickout-Dialog von Imoen wird von der Komponente verändert, und sollte aber mit der "Wait at Inn" Komponente von BG1NPC / Tweaks Anthology kompatibel sein.
 
 
 6. Herzog Eltan ist im Palast
