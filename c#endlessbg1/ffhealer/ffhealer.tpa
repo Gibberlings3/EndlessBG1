@@ -17,6 +17,7 @@ COPY_EXISTING ~FLAM11.cre~ ~override/c#stsdpr.cre~
     WRITE_ASCII 0x280 ~c#stsdpr~ #32 // set DV
     WRITE_ASCII 0x2cc ~c#stsdpr~ #8   // dialogue
   WRITE_EVALUATED_ASCII 0x250 ~c#stsdpr~ #8   // class script
+  WRITE_EVALUATED_ASCII 0x260 ~WTASIGHT~ #8   // general script
 
 COPY_EXISTING ~FLAM11.cre~ ~override/c#stsdp2.cre~
     SAY NAME1 ~Flaming Fist Scout~
@@ -24,6 +25,7 @@ COPY_EXISTING ~FLAM11.cre~ ~override/c#stsdp2.cre~
     WRITE_ASCII 0x280 ~c#stsdp2~ #32 // set DV
     WRITE_ASCII 0x2cc ~c#stsdp2~ #8   // dialogue
   WRITE_EVALUATED_ASCII 0x250 ~~ #8   // class script
+  WRITE_EVALUATED_ASCII 0x260 ~WTASIGHT~ #8   // general script
 
 COMPILE EVALUATE_BUFFER ~c#endlessbg1/ffhealer/c#stcut3.baf~
 
