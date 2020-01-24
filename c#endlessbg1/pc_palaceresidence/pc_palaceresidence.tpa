@@ -83,9 +83,9 @@ IF
   Global("C#st_PrepareContainersPC", "MYAREA", 0)
 THEN
   RESPONSE #100
-    MoveContainerContents("AR0110*Container1","AR0109*Container2")
-    MoveContainerContents("AR0110*Container2","AR0109*Container2")
-    MoveContainerContents("AR0110*Container3","AR0109*Container2")
+    MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container1","%NBaldursGate_DucalPalace_L2%*Container2")
+    MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container2","%NBaldursGate_DucalPalace_L2%*Container2")
+    MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container3","%NBaldursGate_DucalPalace_L2%*Container2")
     SetGlobal("C#st_PrepareContainersPC", "MYAREA", 1)
 END
 >>>>>>>>
@@ -135,7 +135,7 @@ IF
   Global("C#st_HeroTransferItemsPC", "MYAREA", 0)
 THEN
   RESPONSE #100
-    MoveContainerContents("AR0110*Container1","BD0103*PlayerChest00")
+    MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container1","BD0103*PlayerChest00")
     SetGlobal("C#st_TransferItemsPC", "MYAREA", 1)
 END
 >>>>>>>>
