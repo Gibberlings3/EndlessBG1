@@ -13,11 +13,7 @@ SAY NAME2 @4 /* ~Sarevok's Helm~ */
 SAY UNIDENTIFIED_DESC @6
 SAY IDENTIFIED_DESC @7 
 
-COPY ~c#endlessbg1/sarevok_items/itm/c#stsrvs.itm~ ~override~
-SAY NAME1 @5 /* ~Sarevok's Sword~ */
-SAY NAME2 @5 /* ~Sarevok's Sword~ */
-SAY UNIDENTIFIED_DESC @8
-SAY IDENTIFIED_DESC @8 
+
 
 /* Place Sarvok's items after his death */
 
@@ -32,7 +28,6 @@ THEN
 		SetGlobal("C#st_SarevoksItems","MYAREA",1)
 		ActionOverride("Sarevok",CreateItem("c#stsrva",0,0,0))
 		ActionOverride("Sarevok",CreateItem("c#stsrvh",0,0,0))
-		ActionOverride("Sarevok",CreateItem("c#stsrvs",0,0,0))
 		ActionOverride("Sarevok",DropInventory())
 		SetInterrupt(TRUE)
 END

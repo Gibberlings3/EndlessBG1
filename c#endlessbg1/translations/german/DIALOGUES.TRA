@@ -11,6 +11,10 @@
 @9  = ~Nun gut. Wir werden unsere Suche nach den letzten Anhängern von Sarevok intensivieren und hoffen, dass Ihr Euch uns bald anschließt. Bis dahin, genießt Euren Aufenthalt!~
 @10 = ~Wir danken Euch, dass Ihr Sarevok besiegt habt, <CHARNAME>!~
 
+/* new for v2 */
+@11 = ~Seid gegrüßt, Kampfgefährte von <CHARNAME>. Auch Euch gilt unser Dank.~
+@11 = ~Seid gegrüßt, Kampfgefährte von <CHARNAME>.~
+
 /* pc_palaceresidence.d */
 @20  = ~Seid gegrüßt, <CHARNAME>. Bitte verlasst den Keller, Ihr solltet Euch hier nicht aufhalten.~
 @21  = ~Seid gegrüßt, <CHARNAME>.~
@@ -48,8 +52,19 @@
 @59  = ~<CHARNAME>! "Held von Baldurs Tor", hm? Beeindruckend! Herzogin Jannath hat mir diesen Raum angeboten, zusammen mit Magieunterricht! Kannst du dir das vorstellen? Wir wohnen jetzt nebeneinander, du und ich! Wobei ich ja viel lieber wieder mit dir rumziehen würde.~
 @60  = ~Die Truhe ganz links hier im Raum ist übrigens meine. Der Diener sagte, alles was ich da reintue wird da auch drinbleiben, solange ich hier wohne.~
 
+/* new for v2 */
+@61  = ~Seid gegrüßt, Imoen. Wenn Ihr Zeit für Magieübungen habt, dann lasst es mich wissen, ja?~
+@62  = ~Hallo, Imoen. Kommt später nochmal zu mir, ja?~
+@63  = ~Ich grüße Euch, Imoen. Mein Angebot für Magieübungen steht noch, sobald <CHARNAME> Euch mal entbehren kann.~
+@64  = ~Bist du sicher? Dann könnte ich solange im Herzogspalast bleiben und Herzogin Jannaths Angebot annehmen.~
+@65  = ~Ja, Imoen, warte im Herzogspalast auf mich.~
+@66  = ~Ehrlich gesagt hätte ich dich gerne woanders.~
+@67  = ~Mein Fehler, komm weiter mit.~
+@68  = ~Das mache ich! Herzogin Janath wird es sicher bald bereuen... Bleib nicht zu lange weg, ja?~
+
+
 /* duke_eltan.d */
-@70  = ~Ihr habt uns vor großem Übel bewahrt, <CHARNAME>. Die Stadt steht in Eurer Schuld.~
+@70  = ~Ihr habt uns vor großem Übel bewahrt. Die Stadt steht in Eurer Schuld.~
 
 /* ffhealer.d */
 @80  = ~<CHARNAME>! Die Herzöge haben uns zu Euch geschickt um nach Eurem Befinden zu sehen. Wir werden die gefallenen Feinde mit zurück in den Palast nehmen.~
@@ -63,6 +78,14 @@
 /* elminster.d */
 @90  = ~Erneut kreuzen sich unsere Wege, junger Freund. Ihr habt nun von Eurem göttlichen Erbe gehört, und musstet bereits einen Eurer "Halbbrüder" erschlagen. Damit habt Ihr die Schwertküste von einem großen Übel befreit. Die Frage ist, welchen Weg Ihr von hier aus einschlagen werdet. Werdet Ihr dem bösen Verlangen in Eurem Blute nachgeben? Seid Euch versichert, dass Ihr von vielen beobachtet und aus der Ferne begleitet werdet, <CHARNAME>, so gut in Eure Zukunft begleitet wie es uns möglich ist. Ich wünsche Euch alles Gute, <CHARNAME>, Kind des Bhaal. Mögen die Göter Euch beschützen.~ 
 ~Erneut kreuzen sich unsere Wege, junge Freundin. Ihr habt nun von Eurem göttlichen Erbe gehört, und musstet bereits einen Eurer "Halbbrüder" erschlagen. Damit habt Ihr die Schwertküste von einem großen Übel befreit. Die Frage ist, welchen Weg Ihr von hier aus einschlagen werdet. Werdet Ihr dem bösen Verlangen in Eurem Blute nachgeben? Seid Euch versichert, dass Ihr von vielen beobachtet und aus der Ferne begleitet werdet, <CHARNAME>, so gut in Eure Zukunft begleitet wie es uns möglich ist. Ich wünsche Euch alles Gute, <CHARNAME>, Kind des Bhaal. Mögen die Göter Euch beschützen.~
+
+/* new for v2 */
+//#12741
+@91  = ~Hallo, mein Freund! Mir scheint, Eure Reisen haben sich doch noch zum Guten gewendet. Ich würde jedoch nicht allzu viele Lobgesänge für den Tod von Sarevok erwarten. Ich schätze, über die ganze Affäre wird schnell ein Mantel des Schweigens gelegt werden. Doch ich kann Euch versichern, viele der bekannten Bürger der Reiche wissen von Eurer Tat und sind Euch dankbar. Eine wohlgemeinte Warnung jedoch. Dieselben Bürger beobachten Euch. Achtet darauf, dass Ihr keine solche Bedrohung darstellt, wie es Euer Bruder war. Sonst wird eine neue Gruppe junger Helden losgeschickt werden müssen, um sich mit Euch zu befassen. Das Glück sei mit Euch.~
+//#12742
+@92  = ~Ich sehe, dass Ihr die Prüfungen und Widrigkeiten, die Euch in den Weg gelegt wurden, überlebt habt. Ich muss sagen, dass mich das nicht gerade freut, wenn man Euer Benehmen im Allgemeinen betrachtet. Die Vernichtung Sarevoks bietet keine rechte Genugtuung, wenn Ihr darauf besteht, Eure mörderischen Gewohnheiten beizubehalten. Bedenket wohl Euren Weg und Euer Ziel. Es wäre schade, Euch ebenso enden zu sehen wie Euren Bruder.~
+//#12743
+@93  = ~Oh, hallo! Das war doch ein glorioses Ende dieses unangenehmen Unterfangens, oder etwa nicht! Ich würde jedoch keine großen Auszeichnungen für Eure Anstrengungen erwarten. Diese Sache wird wohl so schnell wie möglich unter den Teppich gekehrt. Dennoch, viele hier wissen von Eurer Schlacht und haben eine hohe Meinung von Euch. Ein großes Übel wurde ausgerottet. So lasst uns hoffen, dass andere mit dieser unglückseligen Herkunft nicht demselben Weg folgen werden.~
 
 /* dialogues_sarevoksword_bgt.d */
 @100  = ~Es tut mir wirklich leid, aber ich muss meinem Meister gehorchen und Euch dieses Schwert abnehmen... Oh, ha, über den Zustand der Waffe werden sie aber nicht sehr begeistert sein. Na, da weiß ich doch jetzt schon, was ich als nächstes restauriren darf. Lebt wohl, <CHARNAME>, vielleicht treffen wir uns unter anderen Umständen wieder.~

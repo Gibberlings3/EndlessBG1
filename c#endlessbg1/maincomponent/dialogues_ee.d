@@ -1,7 +1,10 @@
 APPEND BELT
 IF WEIGHT #-1
 ~Dead("Sarevok") Global("C#st_HeroOfBG","GLOBAL",0)
-Global("C#st_HeroCutScene","GLOBAL",0)~ victory
+Global("C#st_HeroCutScene","GLOBAL",0)
+OR(2)
+InMyArea(Player1)
+IsGabber(Player1)~ victory
 SAY @0 /* ~<CHARNAME>, you were successful! You defeated Sarevok who conspired against the city, the Sword Coast, even Amn - for his own dark goals and purpose.~ */
 IF ~~ THEN + victory_01
 END
@@ -32,6 +35,14 @@ END
 
 IF ~~ THEN roam_bg1
 SAY @9 /* ~Very well. We will concentrate our forces on finding all of Sarevok's followers and will hope you will join our efforts soon. Until then, enjoy your stay.~ */
+IF ~~ THEN EXIT
+END
+
+IF WEIGHT #-1
+~%BGT_VAR%
+Dead("Sarevok")
+!IsGabber(Player1) !InMyArea(Player1)~ victory_npc
+SAY @12 /* ~Greetings to you as well, companion of <CHARNAME>.~ */
 IF ~~ THEN EXIT
 END
 

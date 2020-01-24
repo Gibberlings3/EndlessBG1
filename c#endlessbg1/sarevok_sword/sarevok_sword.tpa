@@ -1,0 +1,26 @@
+/* Sarevok gets a sword */
+
+COPY ~c#endlessbg1/sarevok_sword/itm/c#stsrvs.itm~ ~override~
+SAY NAME1 @5 /* ~Sarevok's Sword~ */
+SAY NAME2 @5 /* ~Sarevok's Sword~ */
+SAY UNIDENTIFIED_DESC @8
+SAY IDENTIFIED_DESC @8 
+
+<<<<<<<< .../ar0125_sarevoksword.baf
+
+IF
+	Dead("Sarevok")  // Armored Figure (Sarevok)
+	Global("C#st_SarevoksPlaceSword","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#st_SarevoksPlaceSword","MYAREA",1)
+		ActionOverride("Sarevok",CreateItem("c#stsrvs",0,0,0))
+		ActionOverride("Sarevok",DropInventory())
+		SetInterrupt(TRUE)
+END
+
+>>>>>>>>
+
+EXTEND_TOP ~%Undercity_TempleofBhaal%.BCS~ ~.../ar0125_sarevoksword.baf~ EVALUATE_BUFFER
+

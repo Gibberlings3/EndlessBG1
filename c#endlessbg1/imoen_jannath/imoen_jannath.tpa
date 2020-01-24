@@ -51,7 +51,7 @@ COPY_EXISTING ~servan.cre~ ~override/c#stsrv2.cre~
 /* place Imoen's servant  if Imoen in party */
 IF
 	Global("C#st_HeroOfBG","GLOBAL",1)
-	InPartyAllowDead("%IMOEN_DV_SOD%")
+	InPartyAllowDead("%IMOEN_DV%")
 	Global("C#st_SpawnServant2","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -63,13 +63,13 @@ END
 /* move Imoen here if not in party */
 IF
 	Global("C#st_HeroOfBG","GLOBAL",1)
-	!InPartyAllowDead("%IMOEN_DV_SOD%")
-	!Dead("%IMOEN_DV_SOD%")
+	!InPartyAllowDead("%IMOEN_DV%")
+	!Dead("%IMOEN_DV%")
 	Global("C#st_SpawnServant2","MYAREA",0)
 THEN
 	RESPONSE #100
-        	MoveGlobal("%NBaldursGate_DucalPalace_L3%","%IMOEN_DV_SOD%",[1016.704]) 
-		ApplySpellRES("%bddispel%","%IMOEN_DV_SOD%")  
+        	MoveGlobal("%NBaldursGate_DucalPalace_L3%","%IMOEN_DV%",[1016.704]) 
+		ApplySpellRES("%bddispel%","%IMOEN_DV%")  
 		SetGlobal("C#st_SpawnServant2","MYAREA",1)
 END
 
@@ -112,11 +112,11 @@ IF
   Global("C#st_PrepareContainersIM", "MYAREA", 0)
 THEN
   RESPONSE #100
-    MoveContainerContents("AR0110*Container4","AR0109*Container2")
-    MoveContainerContents("AR0110*Container5","AR0109*Container2")
-    MoveContainerContents("AR0110*Container6","AR0109*Container2")
-//    MoveContainerContents("AR0110*Container7","AR0109*Container2")
-//    MoveContainerContents("AR0110*Container8","AR0109*Container2")
+    MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container4","%NBaldursGate_DucalPalace_L2%*Container2")
+    MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container5","%NBaldursGate_DucalPalace_L2%*Container2")
+    MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container6","%NBaldursGate_DucalPalace_L2%*Container2")
+//    MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container7","%NBaldursGate_DucalPalace_L2%*Container2")
+//    MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container8","%NBaldursGate_DucalPalace_L2%*Container2")
     SetGlobal("C#st_PrepareContainersIM", "MYAREA", 1)
 END
 >>>>>>>>
@@ -166,7 +166,7 @@ IF
   Global("C#st_HeroTransferItemsIM", "MYAREA", 0)
 THEN
   RESPONSE #100
-    MoveContainerContents("AR0110*Container4","BD0103*Imoen_equipment")
+    MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container4","BD0103*Imoen_equipment")
     SetGlobal("C#st_TransferItemsIM", "MYAREA", 1)
 END
 >>>>>>>>

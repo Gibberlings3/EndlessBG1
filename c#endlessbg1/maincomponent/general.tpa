@@ -36,9 +36,15 @@ END
 
 IF
 	Dead("Sarevok")  // Armored Figure (Sarevok)
-//	Dead("GALDOR")   //Angelo
-//	Dead("SEMAJ")    // Semaj
-//	Dead("Tazok")    //Tazok
+	OR(2)
+		Dead("GALDOR")   //Angelo
+		!Exists("GALDOR")   //Angelo
+	OR(2)
+		Dead("SEMAJ")    // Semaj
+		!Exists("SEMAJ")    // Semaj
+	OR(2)
+		Dead("Tazok")    //Tazok
+		!Exists("Tazok")    //Tazok
 	Global("C#st_BG1End","GLOBAL",0)
 THEN
 	RESPONSE #100
@@ -184,9 +190,10 @@ EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L1%.bcs~ ~.../ar0108_add.baf~ EVALUATE_
 <<<<<<<< .../c#stdstr.baf
 
 IF
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 	OR(2)
-	  Global("SarevokBehavior","GLOBAL",1)
 	  Dead("Sarevok")
+	  !AreaCheck("%ThievesMaze%")
 THEN
 	RESPONSE #100
         	DestroySelf()
@@ -196,3 +203,18 @@ END
 
 COMPILE EVALUATE_BUFFER ~.../c#stdstr.baf~
 
+/* detection variable for other mods (e.g. NPC mods) that EBG1 will kick in after Sarevok's death. Will be set in Thieves Guild after the Palace Fight */
+<<<<<<<< .../ar0146_detection_add.baf
+IF
+	Global("C#EndlessBG1","GLOBAL",0)
+	GlobalGT("SarevokBehavior","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#EndlessBG1","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%EBaldursGate_ThievesGuild%.bcs~ ~.../ar0146_detection_add.baf~ EVALUATE_BUFFER 
+
+/* give winski2.cre DV (same as Bg1NPC Project) */
+COPY_EXISTING ~winski2.cre~ ~override~
+  WRITE_ASCII 0x280 ~winski2~ #32

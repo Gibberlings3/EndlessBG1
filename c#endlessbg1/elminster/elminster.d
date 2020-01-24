@@ -1,4 +1,4 @@
-
+/* jastey's version */
 /* Elminster makes his appearance */
 BEGIN C#STLMST
 IF ~True()~ THEN elminster_sarevok_death

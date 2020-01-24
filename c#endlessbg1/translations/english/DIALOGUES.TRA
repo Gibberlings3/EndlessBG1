@@ -1,6 +1,6 @@
 /* dialogues.d */
 @0  = ~<CHARNAME>, you were successful! You defeated Sarevok who conspired against the city, the Sword Coast, even Amn - for his own dark goals and purpose.~
-@1  = ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Six of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
+@1  = ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Four of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
 @2  = ~<CHARNAME>, Hero of Baldur's Gate. Are you ready to combine forces with the Flaming Fist and go against the last followers of Sarevok?~
 @3  = ~"Hero of Baldur's Gate", now that has a pleasant ring to it. Tell me what you need me to do.~
 @4  = ~Yes, I am ready and I will start right away. Send me wherever you need me.~
@@ -10,6 +10,10 @@
 @8  = ~I see. Still, the city is in your debt. Fare well, Hero of Baldur's Gate.~
 @9  = ~Very well. We will concentrate our forces on finding all of Sarevok's followers and will hope you will join our efforts soon. Until then, enjoy your stay.~
 @10 = ~Thank you for defeating Sarevok, <CHARNAME>!~
+
+/* new for v2 */
+@11 = ~My thanks to you as well, companion of <CHARNAME>.~
+@12 = ~Greetings to you as well, companion of <CHARNAME>.~
 
 /* pc_palaceresidence.d */
 @20  = ~Greetings, <CHARNAME>. Please leave the cellar, you should not be here.~
@@ -48,8 +52,20 @@
 @59  = ~<CHARNAME>! "Hero of Baldur's Gate", huh? Impressive! Duke Jannath offered me this room, together with lessons in magic! Can you imagine? We will be living room by room, you and I! But I'd much prefer just travelling with you again.~
 @60  = ~The chest at the far left of the room is mine, by the way. In case you need more room to store your things - they said the chest will be mine as long as we stay here.~
 
+/* new for v2 */
+@61  = ~Greetings, Imoen. If you find the time for magic training, let me know.~
+@62  = ~Hello, Imoen. Come to me later, will you?~
+@63  = ~Hello there, Imoen. My offer for magic lessons still stands, as soon as <CHARNAME> can spare you.~
+@64  = ~Are you sure? I could stay at the Palace and take Duke Jannath up on her offer.~
+@65  = ~Yes, Imoen, do that.~
+@66  = ~Actually, I'd like to have you wait elsewhere.~
+@67  = ~My bad, stay with me.~
+@68  = ~I'll do that! Duke Jannath will regret it in no time... Don't stay away too long, will ya?~
+
+
+
 /* duke_eltan.d */
-@70  = ~You saved us, <CHARNAME>. The gratitude of the city is yours.~
+@70  = ~You saved us. The gratitude of the city is yours.~
 
 /* ffhealer.d */
 @80  = ~<CHARNAME>! The Dukes sent us to see to your well-being. We will take care of the bodies of Sarevok and his minions.~
@@ -62,6 +78,14 @@
 
 /* elminster.d */
 @90  = ~Our paths cross once more, young one. Thou learned about thine godly heritage, and not only that, but had to kill one of thine godly brethren. Thou rid the Sword Coast from a great evil. The question is, what path will thee go from here? Will thee give in to the evil in thine blood? Be assured that there are good people watching, <CHARNAME>, watching over thee as well as being ready for whatever thou will turn out in the future, as best we can. I wish thee well, <CHARNAME>, child of Bhaal. May the gods bless thee.~
+
+/* new for v2 */
+//#12741
+@91  = ~Well, hello, friend! 'Twould seem thy journeys turned out for the best after all. I would not expect many great accolades for the killing of Sarevok, however. I imagine that the whole incident shall be hushed rather immediately. Rest assured, though, that many of the prominent citizens of the realms know of thy service and are grateful. A friendly word of warning, however. Those same citizens are watching. See that thou dost not pose as much a threat as thy brother did lest another group of young heroes need be dispatched to deal with thee. Luck be with thee.~
+//#12742
+@92  = ~I see that thou hast survived the trials and tribulations set before thee. I cannot say that I am overly pleased with that, what with thy behavior as a whole. The destruction of Sarevok is a small consolation if thou art determined to follow in his murderous stead. Consider well thy course and destination. 'Twould be a shame to see thee end thy life in the same manner as thy brother.~
+//#12743
+@93  = ~Why, hello! A glorious end to this bit of unpleasant business, was it not? I would not expect great accolades for your efforts, however, as this matter is likely to be hushed as soon as possible. Still, many of the realm know of thy battle and think highly of thee for it. A great evil has been routed. Let us hope that others of this unfortunate heritage do not seek the same path.~
 
 /* dialogues_sarevoksword_bgt.d */
 @100  = ~I am awfully sorry, but I have to obey my master, and take this sword from you... Ah, haha, they will not be overly happy to see the state it is in. Oh well, Guess I know what I will spend my time with next. Fare well, <CHARNAME>, maybe we will met again under different circumstances.~

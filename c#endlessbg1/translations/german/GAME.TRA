@@ -72,3 +72,17 @@ Dieben~
 
 @9   = ~<CHARNAME>s Truhe~
 @10   = ~Imoens Truhe~
+
+/* new for v2 */
+//#9774 changed
+@12 = ~Dieser lausige Sarevok war schlecht, jawohl, das war er! Er hat Scar und Entar ermordet und wollte noch viele andere umbringen! Er hatte den Tod verdient und dank <CHARNAME> auch gefunden!~
+//#9778 changed
+@13 = ~Das macht mir richtig Angst! Der Gedanke, dass Sarevok um Haaresbreite seine mörderischen Pläne ausgeführt hätte. Wie gut, dass <CHARNAME> ihn so schnell erwischt hat! Ich hoffe das genügt, damit andere Verrückte gar nicht erst auf solche krummen Ideen kommen.~ 
+//#9781 changed
+@14 = ~Was Sarevok getan hat ist unverzeihlich! Ich bin froh, dass <CHARNAME> diesen Abschaum verfolgt hat, bevor er noch mehr Schaden anrichten konnte.~
+//#9852 changed
+@15 = ~Niemals hätte ich das gedacht! Könnt Ihr das glauben? Dieser Typ von Sarevok hat vielleicht Nerven. Wir alle haben ihm blind vertraut, und dann stellt sich am Ende heraus, dass er nicht besser als der niederträchtigste Schurke ist! Gut, dass er erwischt und bestraft wurde.~ 
+//#9854 changed
+@16 = ~Seid Ihr nicht <CHARNAME>? Ihr und Eure Begleiter passen wirklich genau auf die Beschreibung. In diesem Fall möchte ich Euch im Auftrag aller, die ich kenne, für das danken, was Ihr getan habt. Wärt Ihr nicht so heldenhaft aufgetreten ... Oh, ich mag gar nicht dran denken, wie ein Krieg gegen Amn ausgegangen wäre. Habt Dank, dass Ihr diesem Unruhestifter Sarevok ein Ende bereitet habt!~
+//#9855 changed
+@17 = ~Es breitet sich wie ein Lauffeuer aus! Alle reden davon, was im Palast geschehen ist. Es wird gesagt, dass dieser Sarevok doch nicht so edel war, wie er uns glauben machen wollte. Er hat versucht, die anderen Herzöge zu töten, um die Herrschaft über die Stadt an sich zu reißen.~

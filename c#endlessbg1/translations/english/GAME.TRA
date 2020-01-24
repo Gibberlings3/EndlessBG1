@@ -59,4 +59,17 @@ Thief~
 @9   = ~<CHARNAME>'s chest~
 @10   = ~Imoen's chest~
 
+/* new for v2 */
+//#9774 changed
+@12 = ~That crummy Sarevok was an evil one, yes he was! He murdered Scar, and Entar and tried to kill lots of others! He deserved death, and thanks to <CHARNAME> it came to him quickly!~
+//#9778 changed
+@13 = ~It's so frightening! To think that Sarevok came so close to completing his murderous plans. I am glad <CHARNAME> tracked him down and brought him to justice. Let that be an example to other crazies so they don't try to do what he did.~ 
+//#9781 changed
+@14 = ~What Sarevok did was unforgivable! I am glad <CHARNAME> went after the scum, before he could do any more hurt.~
+//#9852 changed
+@15 = ~Well, I never! Can you believe the nerve of that Sarevok fellow? After the trust we all placed in him, he turns out to be nothing but the basest of villains. I'm glad he was caught and punished.~ 
+//#9854 changed
+@16 = ~Aren't you <CHARNAME>? It's pleasing to have a hero in the city! On behalf of everyone I know, I'd like to thank you for what you've done. If it weren't for your heroics... Well, I shudder to think how a war with Amn would have turned out. Thank you for catching that villainous Sarevok and putting an end to his trouble-making!~
+//#9855 changed
+@17 = ~It's spreading like wildfire! Everyone's talking about what happened at the palace. From what I've heard, that Sarevok fellow wasn't as noble as he'd like us all to believe. He tried to have the other Dukes killed, so that he could take over the city.~
 

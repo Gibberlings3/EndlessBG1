@@ -442,9 +442,29 @@ COPY_EXISTING ~NOBBAX_A.CRE~ ~override~
 COPY_EXISTING ~nila.cre~ ~override~
  WRITE_EVALUATED_ASCII 0x260 ~c#stdstr~ #8 // General Script 
 
+
 /* Voleta in the Thieves Guild Maze: no DV (in BGT Voleta remains and gets another dialogue line) */
 COPY_EXISTING ~voleta.cre~ ~override~
  WRITE_EVALUATED_ASCII 0x260 ~c#stdstr~ #8 // General Script 
+
+/* Thieves Maze: Winski */
+
+<<<<<<<< .../ar0146_winski.baf
+IF
+	Exists("WINSKI2")  // Winski
+	InMyArea("WINSKI2")
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		ActionOverride("WINSKI2",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%ThievesMaze%.bcs~ ~.../ar0146_winski.baf~
+
+
+
+
+
 
 /* Flaming Fist mercenary in cellar of Flaming fist headquarters: no turning hostile after Sarevok's death */
   COPY_EXISTING ~flam12.bcs~ ~override~
@@ -474,3 +494,59 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~%EBaldursGate_ThievesGuild%.bcs~ ~.../ar0153_add.baf~
+
+
+
+/* make sure the townspeople have the right dialogue after Sarevok's death (if player rushed through the city, the scripts will not stay at the correct one but revert to the one from the beginning of chapter 7 with references to the murder accsuations - bug in BG:EE 2.5 + EET ) */
+
+  COPY_EXISTING ~MTOWBAZ.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~Global("DukeThanks","GLOBAL",1)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 Global("oh_dialog_set_2","locals",1)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+
+  COPY_EXISTING ~FTOWBAZ.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~Global("DukeThanks","GLOBAL",1)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 Global("oh_dialog_set_2","locals",1)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+
+  COPY_EXISTING ~NOBLBAZ.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~Global("DukeThanks","GLOBAL",1)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 Global("oh_dialog_set_2","locals",1)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY
+
+  COPY_EXISTING ~NOBWBAZ.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~Global("DukeThanks","GLOBAL",1)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 Global("oh_dialog_set_2","locals",1)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+  BUT_ONLY

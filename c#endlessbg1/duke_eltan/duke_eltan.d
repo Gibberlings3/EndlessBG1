@@ -25,7 +25,7 @@ OR(5)
 !Global("C#RE1_ScarRetrieval","GLOBAL",14) //compatibility: do not block Scar's Return from bg1re
 Global("C#st_HeroOfBG","GLOBAL",0)
 ~ eltan_thanks
-SAY @70 /* ~You saved us, <CHARNAME>. The gratitude of the city is yours.~ */
+SAY @70 /* ~You saved us. The gratitude of the city is yours.~ */
 IF ~~ THEN EXIT
 IF ~Global("C#st_HeroOfBG","GLOBAL",0)~ THEN EXTERN %BELT% %belt_victory%
 END
