@@ -1,3 +1,19 @@
+
+/* Denkod should stay so he can say his piece */
+COPY_EXISTING ~%EBaldursGate_ThievesGuild%.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~!Global("C#st_DenkodTalk","MYAREA",1)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~False()~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+
 /* Denkod in Thieves Guild will initiate dialogue */
 <<<<<<<< .../ar0153_denkod_add.baf
 IF
