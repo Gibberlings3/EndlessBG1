@@ -32,7 +32,7 @@ A - remain in the BG1 world
 B - leave the BG1 world and move on with the game (BG:EE: end of game, SoD/EET: SoD campaign starts)
 C - (EET only) skip SoD completely and start BGII directly.
 
-For BGT, some oversights with regard to references to Sarevok are removed.
+For BGT, this component adds more lines to Duke Belt's dialogue after defeating Sarevok, reflecting the PC to be the "Hero of Baldur's Gate". It also removes some oversights with regard to references to Sarevok after his death.
 
 
 2 More Flavor to Hero of Baldur's Gate (includes PC's Residence inside Palace)
@@ -47,17 +47,24 @@ This component also changes the dialogues of the guards inside the palace to som
 
 3 Sarevok's Unique Items
 -----------------------------------
-This component adds unique items to Sarevok that he will drop upon his death: special armor, helmet, and sword.
-The sword will not be usable. It is a story item only.
+This component adds unique items to Sarevok that he will drop upon his death: special armor and helmet.
 The armor will have AC -1, 30 % magic resistance bonus, and weights 70 pounds.
 The helmet has 5 % magic resistance bonus.
 The custom BAMs for armor and helmet were created by Tantalus for his Mod "Sarevok Recovery Mod" ( http://www.baldursgate-refugium.de/mods/sarevok-wiederherstellung/ ), licensed under "Creative Commons" von Nicolas Peters. License: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ ). 
 
+Sarevok will drop the items upon his death. They can be looted then.
+
+
+4 Sarevok's Sword
+-----------------------------------
+This component adds a sword to Sarevok that he will drop upon his death.
+The sword will not be usable. It is a story item only.
+ 
 For BGT, the sword of Sarevok will be stolen at Labyrinth exit by someone the PC will meet again in BGII. (This is in accordance to what the Djinni tells about the sword in BGII.)
-For EE games, Sarevok's sword can be handed to the Dukes. (This is in accordance to SoD where Imoen tells if asked that the sword was stolen from the palace.)
+For EE games, Sarevok's sword can be handed to the Dukes. (This is in accordance to SoD where sources tell that the sword was stolen from the palace.)
 
 
-4 Imoen and Duke Jannath (Imoen gets Residence inside Palace)
+5 Imoen and Duke Jannath (Imoen gets Residence inside Palace)
 -----------------------------------
 With this component installed, Duke Jannath will be alive and inside the palace and talk to Imoen a little about possible magic training later.
 
@@ -66,7 +73,7 @@ In case Imoen is not in party, she will have taken residence in the Palace top g
 So far, the kickout dialogue of Imoen was not altered to reflect her new residence, because of compatibility issues with "Wait at Inn" component from Bg1NPC / Tweaks Anthology.
 
 
-5 Duke Eltan is in the Palace
+6 Duke Eltan is in the Palace
 -----------------------------------
 With this component installed, Duke Eltan will also be alive and in the palace. This component also removes Duke Eltan from the Harbormaster's Building in case he was introduced there e.g. by bg1re and/or bg1ub mods.
 
@@ -75,27 +82,30 @@ For compatibility with bg1re's "Scar's Return" bonus quest, please note: this co
 Note for compatibility: this component introduces a cre file "C#STELTA.cre" which has the DV "DELTAN" and the dialogue "DELTAN2.dlg".
 
 
-6 Flaming Fist Healer come into Undercity Temple
+7 Flaming Fist Healer come into Undercity Temple
 -----------------------------------
 After Sarevok and his three minions inside the Undercity Temple are defeated, a Flaming Fist Healer and a FF Scout will come into the temple to take away their bodies. They also offer to heal and resurrect all party members and disarm the traps on the Bhaal symbol (note: this does not include the trigger points at the sides for the Battle Horrors). The player can chose not to benefit from this offer.
 
 
-7 Elminster makes an Appearance
+8 Elminster makes an Appearance
 -----------------------------------
 Elminster will turn up once again in front of the palace.
+There are two install choices: 
+1 - jastey's version (as in Version 1 of EBG1)
+2 - Restored BG1 Text (This version restores original lines unused in BG1.)
 
 
-8 First Refugees come to Baldur's Gate (SoD/EET only)
+9 First Refugees come to Baldur's Gate (SoD/EET only)
 -----------------------------------
 Time and again, refugees will arrive in BG in front of the palace and talk about trouble far up in the north. There are three waves with a timer of ten ingame days to increase the number, but all are in front of the palace so overall, this is more of a cosmetic thing and will by no means swamp the city with refugees as it is in SoD.
 
 
-9 Ophyllis the Treasurer in inside Palace Dungeon (SoD/EET only)
+10 Ophyllis the Treasurer in inside Palace Dungeon (SoD/EET only)
 -----------------------------------
 Ophyllis the Treasurer from SoD can be met in the Palace dungeon. He will be inside the small office and prepare to take in the PC's gold for safekeeping as per the Duke's request. This will not actually happen as long as the game is in BG1, though.
 
 
-10 Denkod in Thieves Guild comments on Sarevok's Death
+11 Denkod in Thieves Guild comments on Sarevok's Death
 -----------------------------------
 Denkod in Thieves Guild who told the PC where Sarevok went will still be there when the group comes back and will talk to PC again before leaving.
 
@@ -140,6 +150,12 @@ If you have installation problems or encounter any bugs, please post your bug re
 
 
 
+COMPATIBILITY
+
+The Endless BG1 Mod will set the variable "Global"C#EndlessBG1","GLOBAL",1)" in the thieves guild (after the Palace fight) for (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
+
+
+
 CREDITS
 
 Acifer: ideas.
@@ -165,6 +181,26 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 2
+-splitted former component "Sarevok's Items" into two and made the dropping and quest about Sarevok's Sword an own component "Sarevok's Sword" (for compatibility with other mods adding a sword to Sarevok, e.g. BGTTweaks). Component "Sarevok's Items" now only contains his armor and helmet.
+-"Elminster makes an Appearance" has two install options now: additionally to jastey's version from v1, it also offers the possibility to restore the original Elminster lines unused in the game.
+-"Imoen and Duke Jannath": Imoen can be sent to the Palace upon kickout. This should be compatible with other "sent NPC to wait somewhere" mods (calls higher weighted dialogue which circles back to the normal one if the PC doesn't want her to wait at the Palace)
+-"Imoen and Duke Jannath": Duke Jannath will have some random dialogue lines if talked to by Imoen.
+-"Flaming Fist Healer come into Undercity Temple": FF healer takes away the bodies also if PC doesn't want help with healing; FF soldiers do not walk into the temple whan they are leaving, FF healers do not do RandomWalk() while they can't see the PC.
+-Violeta in Thieves Maze should not be gone before Sarevok is dead.
+-(EE) Winski in Thieves Maze should be gone after Sarevok is dead.
+-EET: areas in Palace should not crash. Fixed container area names for EET (components "More Flavor to Hero of Baldur's Gate" and "Imoen and Duke Jannath")
+-(EE) Exit from Undercity Temple will only reappear and movie will play if all 4 foes are either dead or no longer present in the area.
+-added dialogue lines to Dukes in case they are talked to not by the PC if the PC is not inside as well.
+-slight changes to the lines in setup.tra (error message should say "component" instead of "mod")
+-mod will set the variable "Global("C#EndlessBG1","GLOBAL",1)" in the thieves guild (chapter 7 after Palce fight) for compatibility with (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
+-"Denkod in Thieves Guild comments on Sarevok's Death": Denkod should beinside the thieves guild if Sarevok is dead
+-minor internal tp2 changes (definition of Imoen's death variable now uses the standard one out of the cpmvar.tpa files).
+-added c#endlessbg1.ini with mod info
+-added folder libiconv-1.9.2-1-src.7z with iconv licence info
+
+
 
 Version 1
 -first public release
