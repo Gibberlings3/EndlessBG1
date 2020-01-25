@@ -181,6 +181,9 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 2.1
+-fixed German tra bug
+
 Version 2
 -splitted former component "Sarevok's Items" into two and made the dropping and quest about Sarevok's Sword an own component "Sarevok's Sword" (for compatibility with other mods adding a sword to Sarevok, e.g. BGTTweaks). Component "Sarevok's Items" now only contains his armor and helmet.
 -"Elminster makes an Appearance" has two install options now: additionally to jastey's version from v1, it also offers the possibility to restore the original Elminster lines unused in the game.
