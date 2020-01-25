@@ -13,7 +13,7 @@
 
 /* new for v2 */
 @11 = ~Seid gegrüßt, Kampfgefährte von <CHARNAME>. Auch Euch gilt unser Dank.~
-@11 = ~Seid gegrüßt, Kampfgefährte von <CHARNAME>.~
+@12 = ~Seid gegrüßt, Kampfgefährte von <CHARNAME>.~
 
 /* pc_palaceresidence.d */
 @20  = ~Seid gegrüßt, <CHARNAME>. Bitte verlasst den Keller, Ihr solltet Euch hier nicht aufhalten.~
