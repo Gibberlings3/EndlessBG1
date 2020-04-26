@@ -32,12 +32,14 @@ A - in BG1 verbleiben
 B - BG1 verlassen und den normalen Gang des Spiels weitergehen (BG:EE: Spiel endet, BG:SoD und EET: SoD-Kampagne startet)
 C - (nur EET) SoD komplett überspringen und direkt BGII starten.
 
-Für BGT entfernt diese Komponente ein paar Referenzen zu Sarevok, die ich noch gefunden hatte, und fügt ein paar weitere salbungsvolle Zeilen zu seinem Dialog nach Sarevoks Tod.
+Für BGT entfernt diese Komponente ein paar Referenzen zu Sarevok, die ich noch gefunden hatte.
 
 
 2. Dem Status "Held von Baldurs Tor" mehr Inhalt geben (beinhaltet Quartier des HC im Herzogspalast)
 -----------------------------------
 Nur für SoD und EET wird die Ehrung des/der HC auf dem aus SoD bekannten Podest geschehen (in einer wirklich kurzen Szene).
+
+Für BGT fügt diese Komponente ein paar weitere salbungsvolle Zeilen zu Herzog Belts Dialog nach Sarevoks Tod.
 
 Der Raum im Nordwesten des obersten Stockwerks des Palastes wird dem HC als Residenz zugewiesen. Ein Diener wird den/die HC im Spiel entsprechend einweisen und auch auf die "persönliche Truhe" des/der HC hinweisen. Bei der Truhe handelt es sich um "dieselbe", die auch in SoD als Truhe des HC ausgewiesen ist: die ganz links im Raum. Diese Truhe wird nun unverschlossen sein. Für SoD und EET wird der Inhalt dieser Truhe automatisch in "dieselbe" in SoD transferiert, ohne dass der Spieler sich darum kümmern muss.
 Für die EE-Spiele sind nun auch alle Kisten und Schränke im Raum des HC leer (alle Gegenstände sind nun im Schrank ein Stockwerk tiefer). 
@@ -105,6 +107,11 @@ Ophyllis der Schatzmeister kann im Keller des Palastes angetroffen werden, wo er
 11. Denkod in der Diebesgilde kommentiert Sarevoks Tod
 -----------------------------------
 Denkod in der Diebesgilde, der auf dem Weg in die Unterstadt dem/der HC sagte, welchen Weg Sarevok genommen hatte, wird auf dem Rückweg des HC noch dort sein und noch einmal mit dem HC sprechen.
+
+
+12 Nach Sarevoks Tod einmal das Labyrinth auslassen
+-----------------------------------
+Nachdem Sarevok besiegt ist, wird mit dieser Komponente der Ausgang aus der Unterstdt so verändert, dass er beim Verlassen sofort in die Diebesgilde führt. Dies ist nur einmal, danach werden die normalen Wege wieder freigeschaltet, so dass das Labyrinth danach wieder normal besucht werden kann.
 
 
 
@@ -178,6 +185,13 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 3
+-all nobles from coronation ceremony should be gone after Sarevok's death (added DestroySelf() to sarrun.bcs)
+-English version proof read by Lauriel
+-new component: "Skip Thieves Maze once after Sarevok's Death"
+-corrected component descriptions for BGT (1st & 2nd component)
+-added DESIGNATED and LABEL taggs
 
 Version 2.1
 -fixed German tra bug

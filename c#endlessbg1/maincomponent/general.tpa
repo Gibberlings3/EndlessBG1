@@ -146,8 +146,20 @@ END
 EXTEND_BOTTOM ~%NBaldursGate%.bcs~ ~.../ar0200_add.baf~ EVALUATE_BUFFER 
 
 
-/* prepare the Palace (ground floor) after Sarevok's death: Duke Belt should be alive */
+/* prepare the Palace (ground floor) after Sarevok's death */
 
+/* remove any nobles who might not have heard the call */
+<<<<<<<< .../sarrun_add.baf
+IF
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~SARRUN.bcs~ ~.../sarrun_add.baf~ EVALUATE_BUFFER 
+
+/* Palace (ground floor): Duke Belt should be alive */
 <<<<<<<< .../ar0108_add.baf
 /* Palace ground floor. revive Duke Belt and move him in the middle of the room */
 

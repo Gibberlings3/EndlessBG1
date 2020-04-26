@@ -32,14 +32,16 @@ A - remain in the BG1 world
 B - leave the BG1 world and move on with the game (BG:EE: end of game, SoD/EET: SoD campaign starts)
 C - (EET only) skip SoD completely and start BGII directly.
 
-For BGT, this component adds more lines to Duke Belt's dialogue after defeating Sarevok, reflecting the PC to be the "Hero of Baldur's Gate". It also removes some oversights with regard to references to Sarevok after his death.
+For BGT, this component removes some oversights with regard to references to Sarevok after his death.
 
 
 2 More Flavor to Hero of Baldur's Gate (includes PC's Residence inside Palace)
 -----------------------------------
 For SoD and EET only, naming of the PC "Hero of BG" will happen on rostrum we all know from SoD (in a really short cutscene).
 
-Room in the northwest of the 3rd level in the palace will be assigned to the PC. A servant will be there to instruct about the PC's personal chest: it is the "same" one that is used in SoD to transfer the items to the first camp. This chest (at the far west of the room) will now be unlocked. For SoD/EET the content will be moved to the "same" chest inside the SoD campaign (in bd0103.are) automatically.
+For BGT, this component adds more lines to Duke Belt's dialogue after defeating Sarevok, reflecting the PC to be the "Hero of Baldur's Gate".
+
+The room in the northwest of the 3rd level in the palace will be assigned to the PC. A servant will be there to instruct about the PC's personal chest: it is the "same" one that is used in SoD to transfer the items to the first camp. This chest (at the far west of the room) will now be unlocked. For SoD/EET the content will be moved to the "same" chest inside the SoD campaign (in bd0103.are) automatically.
 For all EE games, all chests inside the PC's room will be emptied, the contents will now be inside the drawer on the 2nd level of the palace.
 
 This component also changes the dialogues of the guards inside the palace to something more friendly (guards in the cellar will not turn hostile any more) and adds friendly guards in front of the palace, as well.
@@ -107,6 +109,11 @@ Ophyllis the Treasurer from SoD can be met in the Palace dungeon. He will be ins
 11 Denkod in Thieves Guild comments on Sarevok's Death
 -----------------------------------
 Denkod in Thieves Guild who told the PC where Sarevok went will still be there when the group comes back and will talk to PC again before leaving.
+
+
+12 Skip Thieves Maze once after Sarevok's Death
+-----------------------------------
+After Sarevok's Death, the exit of the Undercity will skip the Thieves' Maze once and lead directly into the thieves Guild. After going into that direction once, the noremal entrances will be reactivated so that the Thieves' Maze can be visited normally after that.
 
 
 
@@ -180,6 +187,13 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 3
+-all nobles from coronation ceremony should be gone after Sarevok's death (added DestroySelf() to sarrun.bcs)
+-English version proof read by Lauriel
+-new component: "Skip Thieves Maze once after Sarevok's Death"
+-corrected component descriptions for BGT (1st & 2nd component)
+-added DESIGNATED and LABEL taggs
 
 Version 2.1
 -fixed German tra bug

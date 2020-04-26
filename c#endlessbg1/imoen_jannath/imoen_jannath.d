@@ -1,6 +1,6 @@
 /* extended content: Duke Jannath notices Imoen */
 INTERJECT LIIA %liia_victory% c#st_LiiaThanks
-== LIIA @50 /* ~Who would have thought that he is such an evil conspirator! And we nearly made him Duke... You saved us all, and we are in your dept, <CHARNAME>, Hero of Baldur's Gate! You deserve the title.~ */
+== LIIA @50 /* ~Who would have thought that he was such an evil conspirator! And we nearly made him Duke... You saved us all, and we are in your debt, <CHARNAME>, Hero of Baldur's Gate! You deserve the title.~ */
 == ~%IMOEN_JOINED%~ IF ~InParty("%IMOEN_DV%") See("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @51 /* ~This sounds so impressive! "Hero of Baldur's Gate".~ */
 == ~%IMOEN_JOINED%~ IF ~InParty("%IMOEN_DV%") See("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID) !Class("%IMOEN_DV%",MAGE_ALL)~ THEN @52 /* ~If only I could have wielded magic, then we would have taken him down even faster!~ */
 == LIIA IF ~InParty("%IMOEN_DV%") See("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID) !Class("%IMOEN_DV%",MAGE_ALL)~ THEN @53 /* ~Magic, you say? Hmm...~ */
