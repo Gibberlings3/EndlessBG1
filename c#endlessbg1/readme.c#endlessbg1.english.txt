@@ -37,9 +37,9 @@ For BGT, this component removes some oversights with regard to references to Sar
 
 2 More Flavor to Hero of Baldur's Gate (includes PC's Residence inside Palace)
 -----------------------------------
-For SoD and EET only, naming of the PC "Hero of BG" will happen on rostrum we all know from SoD (in a really short cutscene).
+For all games, Duke Belt gives the PC quarters on the third floor of the palace.
 
-For BGT, this component adds more lines to Duke Belt's dialogue after defeating Sarevok, reflecting the PC to be the "Hero of Baldur's Gate".
+For BGT, this component also adds more lines to Duke Belt's dialogue after defeating Sarevok, reflecting the PC to be the "Hero of Baldur's Gate".
 
 The room in the northwest of the 3rd level in the palace will be assigned to the PC. A servant will be there to instruct about the PC's personal chest: it is the "same" one that is used in SoD to transfer the items to the first camp. This chest (at the far west of the room) will now be unlocked. For SoD/EET the content will be moved to the "same" chest inside the SoD campaign (in bd0103.are) automatically.
 For all EE games, all chests inside the PC's room will be emptied, the contents will now be inside the drawer on the 2nd level of the palace.
@@ -47,7 +47,14 @@ For all EE games, all chests inside the PC's room will be emptied, the contents 
 This component also changes the dialogues of the guards inside the palace to something more friendly (guards in the cellar will not turn hostile any more) and adds friendly guards in front of the palace, as well.
 
 
-3 Sarevok's Unique Items
+3 Short Public Hero Tribute (SoD/EET only)
+-----------------------------------
+This component was split in v3 from the component "More Flavor to Hero of Baldur's Gate" into an optional choice and is for SoD/EET only. The component "More Flavor to Hero of Baldur's Gate" has to be installed.
+
+With this component, the naming of the PC "Hero of BG" will happen in public on the rostrum we all know from SoD (in a really short cutscene).
+
+
+4 Sarevok's Unique Items
 -----------------------------------
 This component adds unique items to Sarevok that he will drop upon his death: special armor and helmet.
 The armor will have AC -1, 30 % magic resistance bonus, and weights 70 pounds.
@@ -57,7 +64,7 @@ The custom BAMs for armor and helmet were created by Tantalus for his Mod "Sarev
 Sarevok will drop the items upon his death. They can be looted then.
 
 
-4 Sarevok's Sword
+5 Sarevok's Sword
 -----------------------------------
 This component adds a sword to Sarevok that he will drop upon his death.
 The sword will not be usable. It is a story item only.
@@ -66,7 +73,7 @@ For BGT, the sword of Sarevok will be stolen at Labyrinth exit by someone the PC
 For EE games, Sarevok's sword can be handed to the Dukes. (This is in accordance to SoD where sources tell that the sword was stolen from the palace.)
 
 
-5 Imoen and Duke Jannath (Imoen gets Residence inside Palace)
+6 Imoen and Duke Jannath (Imoen gets Residence inside Palace)
 -----------------------------------
 With this component installed, Duke Jannath will be alive and inside the palace and talk to Imoen a little about possible magic training later.
 
@@ -74,21 +81,31 @@ On the third floor of the palace, Imoen will get the room in the southeast. If s
 In case Imoen is not in party, she will have taken residence in the Palace top ground and tell the PC about her chest herself.
 Imoen's kickout dialogue was altered to reflect her new residence: after revceiving her room, Imoen can be send to the Palace upon kickout. This should be compatible with other "sent NPC to wait somewhere" mods (calls higher weighted dialogue which circles back to the normal one if the PC doesn't want her to wait at the Palace).
 
-6 Duke Eltan is in the Palace
+
+7 Duke Eltan is in the Palace
 -----------------------------------
-With this component installed, Duke Eltan will also be alive and in the palace. This component also removes Duke Eltan from the Harbormaster's Building in case he was introduced there e.g. by bg1re and/or bg1ub mods.
+With this component installed, Duke Eltan will also be alive and in the palace. This component also removes Duke Eltan from the Harbormaster's Building in case he was introduced there e.g. by older versions of bg1re and/or by bg1ub.
 
-For compatibility with bg1re's "Scar's Return" bonus quest, please note: this component will enable the final appearance of resurrected Scar, but nothing more. As in the original bg1re component, you need to have gathered all needed items and spoken to Duke Eltan up to the point where he will see to Scar's resurrection before killing Sarevok. Then you will be able to prolong Scar's appearance until after Sarevok is killed by talking to Duke Eltan inside the Palace.
+For compatibility with bg1re's "Scar's Return" bonus quest, please note: EBG1 is completely compatible with this component from bg1re v3.0 or higher. You can complete and even start the whole Scar's Return Bonus Quest from bg1re after Sarevok's death by talking to Duke Eltan inside the Palace. There is no need to start the quest before Sarevok's death any more.
 
-Note for compatibility: this component introduces a cre file "C#STELTA.cre" which has the DV "DELTAN" and the dialogue "DELTAN2.dlg".
+Note to modders for compatibility: this component introduces a cre file "C#STELTA.cre" which has the DV "ELTAN" and the dialogue "DELTAN2.dlg" with an "always true" dialogue state with the line "~You saved us. You have the gratitude of the city.~", triggered by ~Dead("Sarevok")~.
+Do NOT introduce a line that says "~You saved us. You have the gratitude of the city.~" with your own mod for Duke Eltan, or compatibility will be lost.
+You can add reply options to this line of EBG1 if your mod gets installed after. To determine the state number of this line in DELTAN2.dlg, use the following code in the tp2, with %deltan2_70% being the variable number of the dialogue state:
+
+//----code to determine a state number---
+// Get state for DELTAN2 %deltan2_70% 
+/* ~You saved us. You have the gratitude of the city.~ */
+OUTER_SET deltan2_70 = STATE_WHICH_SAYS 70 IN ~c#endlessbg1/translations/%s/DIALOGUES.TRA~ FROM ~DELTAN2~
+//---------------------------------------
 
 
-7 Flaming Fist Healer come into Undercity Temple
+
+8 Flaming Fist Healer come into Undercity Temple
 -----------------------------------
 After Sarevok and his three minions inside the Undercity Temple are defeated, a Flaming Fist Healer and a FF Scout will come into the temple to take away their bodies. They also offer to heal and resurrect all party members and disarm the traps on the Bhaal symbol (note: this does not include the trigger points at the sides for the Battle Horrors). The player can chose not to benefit from this offer.
 
 
-8 Elminster makes an Appearance
+9 Elminster makes an Appearance
 -----------------------------------
 Elminster will turn up once again in front of the palace.
 There are two install choices: 
@@ -96,22 +113,22 @@ There are two install choices:
 2 - Restored BG1 Text (This version restores original lines unused in BG1.)
 
 
-9 First Refugees come to Baldur's Gate (SoD/EET only)
+10 First Refugees come to Baldur's Gate (SoD/EET only)
 -----------------------------------
 Time and again, refugees will arrive in BG in front of the palace and talk about trouble far up in the north. There are three waves with a timer of ten ingame days to increase the number, but all are in front of the palace so overall, this is more of a cosmetic thing and will by no means swamp the city with refugees as it is in SoD.
 
 
-10 Ophyllis the Treasurer in inside Palace Dungeon (SoD/EET only)
+11 Ophyllis the Treasurer in inside Palace Dungeon (SoD/EET only)
 -----------------------------------
 Ophyllis the Treasurer from SoD can be met in the Palace dungeon. He will be inside the small office and prepare to take in the PC's gold for safekeeping as per the Duke's request. This will not actually happen as long as the game is in BG1, though.
 
 
-11 Denkod in Thieves Guild comments on Sarevok's Death
+12 Denkod in Thieves Guild comments on Sarevok's Death
 -----------------------------------
 Denkod in Thieves Guild who told the PC where Sarevok went will still be there when the group comes back and will talk to PC again before leaving.
 
 
-12 Skip Thieves Maze once after Sarevok's Death
+13 Skip Thieves Maze once after Sarevok's Death
 -----------------------------------
 After Sarevok's Death, the exit of the Undercity will skip the Thieves' Maze once and lead directly into the thieves Guild. After going into that direction once, the noremal entrances will be reactivated so that the Thieves' Maze can be visited normally after that.
 
@@ -189,11 +206,14 @@ Spellhold Studios			http://www.shsforums.net/
 HISTORY
 
 Version 3
--all nobles from coronation ceremony should be gone after Sarevok's death (added DestroySelf() to sarrun.bcs)
 -English version proof read by Lauriel
 -new component: "Skip Thieves Maze once after Sarevok's Death"
--corrected component descriptions for BGT (1st & 2nd component)
--added DESIGNATED and LABEL taggs
+-new component "Short Public Hero Tribute" splitted from "More Flavor to Hero of Baldur's Gate"
+-"Main component": upon transition to SoD, Duke Belt will not only tell the PC to follow him but also mention that the PC will seek out the last of Sarevok's followers; all nobles from coronation ceremony should be gone after Sarevok's death (added DestroySelf() to sarrun.bcs); quicker Fade To Black upon transition to SoD.
+-"Sarevok's Sword": Sword will be removed from PC's chest and inventory upon transition to SoD to simulate the theft; journal entries get properly applied to journal (EE); additional journal entries when PC hears about the stolen sword (SoD/EET) and when it is found in Irenicus Dungeon (BGT/EET).
+-"Duke Eltan is in the Palace": added full compatibility with bg1re's bonus quest "Scar's Return" (bg1re v3.0 or higher).
+-corrected component descriptions for BGT (1st & 2nd component).
+-added DESIGNATED and LABEL taggs.
 
 Version 2.1
 -fixed German tra bug

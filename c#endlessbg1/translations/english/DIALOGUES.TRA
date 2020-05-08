@@ -15,6 +15,9 @@
 @11 = ~My thanks to you as well, companion of <CHARNAME>.~
 @12 = ~Greetings to you as well, companion of <CHARNAME>.~
 
+/* new for v3: changed line 7 */
+@13  = ~The city is in your debt, Hero of Baldur's Gate. Please follow me, the Flaming Fist soldiers will guide you to the hide-out of Sarevok's last follower.~
+
 /* pc_palaceresidence.d */
 @20  = ~Greetings, <CHARNAME>. Please leave the cellar, you should not be here.~
 @21  = ~Greetings, <CHARNAME>.~
@@ -88,7 +91,7 @@
 @93  = ~Why, hello! A glorious end to this bit of unpleasant business, was it not? I would not expect great accolades for your efforts, however, as this matter is likely to be hushed as soon as possible. Still, many of the realm know of thy battle and think highly of thee for it. A great evil has been routed. Let us hope that others of this unfortunate heritage do not seek the same path.~
 
 /* dialogues_sarevoksword_bgt.d */
-@100  = ~I am awfully sorry, but I have to obey my master, and take this sword from you... Ah, haha, they will not be overly happy to see the state it is in. Oh well, Guess I know what I will spend my time with next. Fare well, <CHARNAME>, maybe we will met again under different circumstances.~
+@100  = ~I am awfully sorry, but I have to obey my master, and take this sword from you... Ah, haha, they will not be overly happy to see the state it is in. Oh well, Guess I know what I will spend my time with next. Fare well, <CHARNAME>, maybe we will meet again under different circumstances.~
 
 /* dialogues_sarevoksword_ee.d */
 @110  = ~First off, let me give you Sarevok's sword, as requested.~

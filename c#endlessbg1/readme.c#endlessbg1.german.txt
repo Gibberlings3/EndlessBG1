@@ -37,7 +37,7 @@ Für BGT entfernt diese Komponente ein paar Referenzen zu Sarevok, die ich noch g
 
 2. Dem Status "Held von Baldurs Tor" mehr Inhalt geben (beinhaltet Quartier des HC im Herzogspalast)
 -----------------------------------
-Nur für SoD und EET wird die Ehrung des/der HC auf dem aus SoD bekannten Podest geschehen (in einer wirklich kurzen Szene).
+Nur für SoD und EET wird .
 
 Für BGT fügt diese Komponente ein paar weitere salbungsvolle Zeilen zu Herzog Belts Dialog nach Sarevoks Tod.
 
@@ -47,7 +47,14 @@ Für die EE-Spiele sind nun auch alle Kisten und Schränke im Raum des HC leer (al
 Diese Komponente ändert auch die Dialoge der Wachen im Palast zu etwas freundlicheren Zeilen (Wachen im Keller werden damit nicht mehr feindlich) und platziert freundliche Wachen außen vor das Tor.
 
 
-3.  Sarevoks spezielle Ausrüstung
+3 Kurze öffentliche Heldenehrung (nur SoD/EET)
+-----------------------------------
+Der Inhalt wurde in v3 von der Komponente "Dem Status "Held von Baldurs Tor" mehr Inhalt geben" in eine eigene optionale Komponente abgeteilt. Die Komponente "Dem Status "Held von Baldurs Tor" mehr Inhalt geben" muss installiert sein.
+
+Mit dieser Komponente findet die Ehrung des/der HC öffentlich auf dem aus SoD bekannten Podest statt (in einer wirklich kurzen Szene).
+
+
+4.  Sarevoks spezielle Ausrüstung
 -----------------------------------
 Diese Komponente fügt spezielle Ausrüstung für Sarevok in das Spiel, die man nach seinem Tod einsammeln kann: Rüstung und Helm.
 Die Rüstung gewährt eine RK von -1, einen Bonus von 30 % auf Magiewiderstand und wiegt 70 Pfund.
@@ -55,7 +62,7 @@ Der Helm gewährt einen Bonus von 5 % auf Magiewiderstand.
 Die speziellen Graphiken (BAMs) für Rüstung und Helm wurden von Tantalus erstellt und stammen aus seiner "Sarevok Wiederherstellung" Mod ( http://www.baldursgate-refugium.de/mods/sarevok-wiederherstellung/ ), lizensiert unter der "Creative Commons" von Nicolas Peters. License: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ ). 
 
 
-4.  Sarevoks Schwert
+5.  Sarevoks Schwert
 -----------------------------------
 Diese Komponente fügt ein spezielles Schwert für Sarevok in das Spiel, das man nach seinem Tod einsammeln kann.
 Das Schwert kann nicht verwendet werden und ist ein reiner Questgegenstand.
@@ -64,7 +71,7 @@ Für BGT wird das Schwert am Ausgang des Labyrinths von einer Gestalt aus BGII ge
 Für die EE-Spiele kann Sarevoks Schwert den Herzögen überreicht werden. (Dies ist in Übereinstimmung mit dem, was Imoen in SoD auf Nachfrage erzählt.)
 
 
-5. Imoen und Herzogin Jannath (Imoen erhält Quartier im Herzogspalast)
+6. Imoen und Herzogin Jannath (Imoen erhält Quartier im Herzogspalast)
 -----------------------------------
 Mit dieser Komponente wird Herzogin Liia Jannath am Leben und im Palast sein. Sie wird Imoens Anwesenheit bemerken und eine Bemerkung machen, dass sie mit Imoen über Magie sprechen möchte.
 
@@ -72,21 +79,31 @@ Im dritten Geschoss des Palastes wird Imoen den Raum im Südosten erhalten. Sollt
 Der Kickout-Dialog von Imoen wird von der Komponente verändert, und sollte aber mit der "Wait at Inn" Komponente von BG1NPC / Tweaks Anthology kompatibel sein.
 
 
-6. Herzog Eltan ist im Palast
+7. Herzog Eltan ist im Palast
 -----------------------------------
 Mit dieser Komponente wird Herzog Eltan ebenfalls am Leben und im Palast sein. Gleichzeitig wird er aus dem Haus des Hafenmeisters verschwinden, sofern er hier durch bg1ub oder bg1re eingefügt wurde.
 
-Für Kompatibilität mit bg1res "Scar's Return" Bonus Quest ist folgendes zu beachten: sofern der Quest entsprechend weit fortgeschritten ist (wie es auch nötig ist, um ihn vor Ende des Spiels abzuschließen) und Herzog Eltan im Haus des Hafenmeisters angekündigt hat, dass er sich um die Wiedererweckung Scars kümmern wird, dann kann mit dieser Komponente das Auftauchen Scars auch nach Sarevoks Tod im Herzogspalast ausgelöst werden.
+Für Kompatibilität mit bg1res "Scar's Return" Bonus Quest ist folgendes zu beachten: EBG1 ist komplett mit diesem Quest kompatibel für bg1re v3.0 oder höher. Ihr könnt den Bonusquest "Scars Rückkehr" nach dem Tod Sarevoks starten oder weiterspielen, indem Ihr im Palast mit Herzog Eltan sprecht. Mit EBG1 gibt es keinen Grund mehr, den Quest aus der bg1re vor Sarevoks Tod zu beginnen.
 
-Kompatibilitätshinweis: die verwendete cre-Datei "C#STELTA.cre" hat die DV "DELTAN" und den Dialog "DELTAN2.dlg".
+Kompatibilitätshinweis für Modder: die verwendete cre-Datei "C#STELTA.cre" hat die DV "ELTAN" und den Dialog "DELTAN2.dlg"
+mit einem "immer wahren" dialogue state mit der Zeile "~Ihr habt uns vor großem Übel bewahrt. Die Stadt steht in Eurer Schuld.~", mit dem Trigger ~Dead("Sarevok")~.
+Fügt mit Eurer Mod NICHT eine solche Zeile mit demselben Text zu Herzog Eltans dlg ein, oder die Kompatibilität wird zerstört.
+Ihr könnt zu dieser Zeile aus EBG1 Antwortoptionen einfügen wenn Eure Mod nach EBG1 installiert wird. Um die dazugehörige Statenummer zu identifizieren, verwendet diesen Code in Eurer tp2, wobei %deltan2_70% die Statenummer des dialogue states ist:
+
+//----code to determine a state number---
+// Get state for DELTAN2 %deltan2_70% 
+/* ~You saved us. You have the gratitude of the city.~ */
+OUTER_SET deltan2_70 = STATE_WHICH_SAYS 70 IN ~c#endlessbg1/translations/%s/DIALOGUES.TRA~ FROM ~DELTAN2~
+//---------------------------------------
 
 
-7. Heiler der Flammenden Faust nach Sarevoks Tod
+
+8. Heiler der Flammenden Faust nach Sarevoks Tod
 -----------------------------------
 Nachdem Sarevok und seine drei Helfer im Tempel der Unterstadt besiegt sind, werden ein Heiler und ein Späher der Flammenden Faust auftauchen, um die Körper mitzunehmen. Zusätzlich bieten sie an, die Gruppe vollständig zu  Gruppe zu heilen und die Fallen zu entschärfen. (Hinweis: dadurch werden nicht die Triggerpunkte für die Battle Horrors entschärft). Das Angebot kann ausgeschlagen werden.
 
 
-8. Elminster taucht erneut auf
+9. Elminster taucht erneut auf
 -----------------------------------
 Elminster taucht noch einmal vor dem Herzogspalst auf.
 Es gibt zwei Installationsmöglichkeiten: 
@@ -94,22 +111,22 @@ Es gibt zwei Installationsmöglichkeiten:
 2. - Wiederhergestellter Originaltext aus BG1 (verwendet ungenutzte Originalzeilen für Elminster.)
 
 
-9. Erste Flüchtlinge erreichen Baldurs Tor (nur SoD/EET)
+10. Erste Flüchtlinge erreichen Baldurs Tor (nur SoD/EET)
 -----------------------------------
 Mit dieser Komponente werden die ersten Flüchtlinge in Baldurs Tor auftauchen. Dies geschieht drei mal mit einem Timer von zehn Tagen jeweils dazwischen. Alle Flüchtlinge werden vor dem Palast stehen. Es handelt sich insgesamt nur um ein kleines Häufchen und soll nur eine erste Vorahnung geben. 
 
 
-10. Ophyllis der Schatzmeister ist im Palastkeller (nur SoD/EET)
+11. Ophyllis der Schatzmeister ist im Palastkeller (nur SoD/EET)
 -----------------------------------
 Ophyllis der Schatzmeister kann im Keller des Palastes angetroffen werden, wo er sich darauf vorbereitet, auf Geheiß der Herzöge das Gold des/der HC zu verwahren. Wirklich dazu kommen wird es aber vor Ende von BG1 nicht.
 
 
-11. Denkod in der Diebesgilde kommentiert Sarevoks Tod
+12. Denkod in der Diebesgilde kommentiert Sarevoks Tod
 -----------------------------------
 Denkod in der Diebesgilde, der auf dem Weg in die Unterstadt dem/der HC sagte, welchen Weg Sarevok genommen hatte, wird auf dem Rückweg des HC noch dort sein und noch einmal mit dem HC sprechen.
 
 
-12 Nach Sarevoks Tod einmal das Labyrinth auslassen
+13. Nach Sarevoks Tod einmal das Labyrinth auslassen
 -----------------------------------
 Nachdem Sarevok besiegt ist, wird mit dieser Komponente der Ausgang aus der Unterstdt so verändert, dass er beim Verlassen sofort in die Diebesgilde führt. Dies ist nur einmal, danach werden die normalen Wege wieder freigeschaltet, so dass das Labyrinth danach wieder normal besucht werden kann.
 
@@ -187,11 +204,14 @@ Spellhold Studios			http://www.shsforums.net/
 HISTORY
 
 Version 3
--all nobles from coronation ceremony should be gone after Sarevok's death (added DestroySelf() to sarrun.bcs)
 -English version proof read by Lauriel
 -new component: "Skip Thieves Maze once after Sarevok's Death"
--corrected component descriptions for BGT (1st & 2nd component)
--added DESIGNATED and LABEL taggs
+-new component "Short Public Hero Tribute" splitted from "More Flavor to Hero of Baldur's Gate"
+-"Main component": upon transition to SoD, Duke Belt will not only tell the PC to follow him but also mention that the PC will seek out the last of Sarevok's followers; all nobles from coronation ceremony should be gone after Sarevok's death (added DestroySelf() to sarrun.bcs); quicker Fade To Black upon transition to SoD.
+-"Sarevok's Sword": Sword will be removed from PC's chest and inventory upon transition to SoD to simulate the theft; journal entries get properly applied to journal (EE); additional journal entries when PC hears about the stolen sword (SoD/EET) and when it is found in Irenicus Dungeon (BGT/EET).
+-"Duke Eltan is in the Palace": added full compatibility with bg1re's bonus quest "Scar's Return" (bg1re v3.0 or higher).
+-corrected component descriptions for BGT (1st & 2nd component).
+-added DESIGNATED and LABEL taggs.
 
 Version 2.1
 -fixed German tra bug

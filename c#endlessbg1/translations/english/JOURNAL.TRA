@@ -1,8 +1,8 @@
 /* journal entries */
-@10000   = ~Sarevok's Sword was taken from me
+@10000   = ~Sarevok's Sword
 
 A Djinn manifested right after I left the Undercity and took Sarevok's sword from me! He said he has to obey "his master". Who could have an interest in taking Sarevok's sword? Seems there are still people who follow him - or want to profit from his power.~
-@10001   = ~Give Sarevok's Sword to the Dukes
+@10001   = ~Sarevok's Sword
 
 I handed Sarevok's Sword to the Dukes. They see it as a symbol of his power and want to keep it away from any followers who might see it as an item of symbolic value of their fallen leader Sarevok.~
 @10002   = ~My Quarters in the Ducal Palace
@@ -24,8 +24,16 @@ And again Elminster made an appearance after Sarevok's death, and finally I see 
 @10007   = ~Refugees from the Far North
 
 Refugees are arriving in Baldur's Gate, telling about some brutal movement far up north in High Moor, burning down farms and little villages.~
-@10008   = ~Give Sarevok's Sword to the Dukes
+@10008   = ~Sarevok's Sword
 
 Duke Belt requested that I give Sarevok's Sword to him. The Dukes see it as a symbol of Sarevok's power and want to keep it away from any followers who might see it as an item of symbolic value of their fallen leader.~
 
-@10009   = ~Give Sarevok's Sword to the Dukes~
+@10009   = ~Sarevok's Sword~
+
+/* new for v3 */
+@10010   = ~Sarevok's Sword
+
+Appearently, Sarevok's Sword was stolen out of the Ducal Palace by his last followers and sold to Athkatla! So much for guarding it well. Bummer.~
+@10011   = ~Sarevok's Sword
+
+I obtained Sarevok's Sword again. It still misses most of its former power, but at least I can wield it now.~

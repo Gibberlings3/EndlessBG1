@@ -15,5 +15,8 @@
 @5014   = ~Sarevok's Sword~
 @5015   = ~jastey's Version~
 @5016   = ~Restored BG1 Text~
-@5017   = ~Skip Thieves Maze once after Sarevok's Death~
 
+/* new for v3 */
+@5017   = ~Skip Thieves Maze once after Sarevok's Death~
+@5018   = ~Short Public Hero Tribute~
+@5019   = ~Endless BG1: "More Flavor to Hero of Baldur's Gate" Component is required for this component~

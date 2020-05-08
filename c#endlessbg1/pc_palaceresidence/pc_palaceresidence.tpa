@@ -1,19 +1,5 @@
 /* more flavor to PC being Hero of Baldur's Gate (includes Residence in the Palace) */
 
-/* SoD: cutscene on rostrum */
-ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) THEN BEGIN
-
-COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/c#stcut1.baf~
-COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/c#stcut2.baf~
-
-/* Duke Belt for cutscene */
-  COPY_EXISTING ~BELT.cre~ ~override/C#STBELT.cre~
-    WRITE_EVALUATED_ASCII 0x248 ~~ #8   // Override Skript
-
-/* area for celebration - bd0035 reused (SoD/EET only) */
-  COPY ~c#endlessbg1/pc_palaceresidence/c#st35.are~ ~override~
-END // SoD/EET
-
 /* PC servant on the top floor of the palace and mapnote */
 
 COPY_EXISTING ~servan.cre~ ~override/c#stsrv1.cre~
@@ -136,7 +122,16 @@ IF
 THEN
   RESPONSE #100
     MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container1","BD0103*PlayerChest00")
-    SetGlobal("C#st_TransferItemsPC", "MYAREA", 1)
+    SetGlobal("C#st_HeroTransferItemsPC", "MYAREA", 1)
+END
+
+/* Sarevok's Sword will be stolen */
+IF
+  Global("C#st_HeroTransferItemsPC", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    ActionOverride("PlayerChest00",DestroyItem("c#stsrvs"))
+    SetGlobal("C#st_HeroTransferItemsPC", "MYAREA", 2)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~bd0103.bcs~ ~.../bd0103_container_pc.baf~ EVALUATE_BUFFER 

@@ -40,7 +40,8 @@ END
 >>>>>>>>
 EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L1%.bcs~ ~.../ar0108_add_eltan.baf~ EVALUATE_BUFFER 
 	
-/* compatibility with bg1ub and bg1re: remove Duke Eltan from the Harbormaster's Building after Sarevok's Death. Duke Eltan will be in the Palace, ground floor. Scar's appearance from "Scar's Return" will play there, too, if quest advanced to this point. */
+/* compatibility with bg1ub and bg1re: remove Duke Eltan from the Harbormaster's Building after Sarevok's Death. Duke Eltan will be in the Palace, ground floor. Scar's appearance from "Scar's Return" will play there, too, if quest advanced to this point. 
+This is probably no longer necessary for bg1re v3.0 */
 
 <<<<<<<< .../harbormaster_add.baf
 
