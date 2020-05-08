@@ -1,19 +1,22 @@
 /* dialogues.d */
 @0  = ~<CHARNAME>, you were successful! You defeated Sarevok who conspired against the city, the Sword Coast, even Amn - for his own dark goals and purpose.~
-@1  = ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Four of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
-@2  = ~<CHARNAME>, Hero of Baldur's Gate. Are you ready to combine forces with the Flaming Fist and go against the last followers of Sarevok?~
+@1  = ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Four of this city I herewith name you "Hero of Baldur's Gate"! On behalf of the city let me express our deepest gratitude!~
+@2  = ~<CHARNAME>, Hero of Baldur's Gate, are you ready to combine forces with the Flaming Fist and go against the last followers of Sarevok?~
 @3  = ~"Hero of Baldur's Gate", now that has a pleasant ring to it. Tell me what you need me to do.~
 @4  = ~Yes, I am ready and I will start right away. Send me wherever you need me.~
-@5  = ~Actually, I had enough of fulfilling a role. I won't be a lackey to you or anyone. I'll leave Baldur's Gate and look for my fate elsewhere. Fare well.~
+@5  = ~Actually, I had enough of fulfilling a role. I won't be a lackey to you or anyone. I'm leaving Baldur's Gate to look for my fate elsewhere. Fare well.~
 @6  = ~Not right away. I have a few things to finish first.~
 @7  = ~The city is in your debt, Hero of Baldur's Gate. Please follow me, I will tell you what we know.~
 @8  = ~I see. Still, the city is in your debt. Fare well, Hero of Baldur's Gate.~
-@9  = ~Very well. We will concentrate our forces on finding all of Sarevok's followers and will hope you will join our efforts soon. Until then, enjoy your stay.~
+@9  = ~Very well. We will concentrate our forces on finding all of Sarevok's followers and hope you will join our efforts soon. Until then, enjoy your stay.~
 @10 = ~Thank you for defeating Sarevok, <CHARNAME>!~
 
 /* new for v2 */
 @11 = ~My thanks to you as well, companion of <CHARNAME>.~
 @12 = ~Greetings to you as well, companion of <CHARNAME>.~
+
+/* new for v3: changed line 7 */
+@13  = ~The city is in your debt, Hero of Baldur's Gate. Please follow me, the Flaming Fist soldiers will guide you to the hide-out of Sarevok's last follower.~
 
 /* pc_palaceresidence.d */
 @20  = ~Greetings, <CHARNAME>. Please leave the cellar, you should not be here.~
@@ -31,8 +34,8 @@
 /* BG:EE: #7477 */
 @28  = ~Do as you want, and go where you please.~
 /* BG:EE: #9340 */
-@29  = ~I am a proud member of the Flaming Fist. Our headquarters is in Baldur's Gate, though we also operate in Beregost and the Friendly Arm Inn. We are quite concerned about the sudden rarity of iron. Many think that the nation of Amn is gearing up for war against our great city. If this were the case, I don't know how well we would do, lacking a resource as important as iron.~
-@30  = ~Welcome, Hero of Baldur's Gate! This room will serve as your residence as long as you will stay in the city. I prepared everything and hope you will find it to your pleasing! The Dukes want me to tell you that the chest on the far left of the room will be your personal one, and everything you will put inside shall stay there as long as you take residence here. We cleared out the chests and moved verything downstairs, but if we left things in feel free to stock up your supplies with them. Have a good stay and thank you for saving the city!~
+@29  = ~I am a proud member of the Flaming Fist. Our headquarters are in Baldur's Gate, though we also operate in Beregost and the Friendly Arm. We are quite concerned about the sudden rarity of iron. Many think that the nation of Amn is gearing up for war against our great city. If this were the case, I don't know how well we would do, lacking a resource as important as iron.~
+@30  = ~Welcome, Hero of Baldur's Gate! This room will serve as your residence as long as you will stay in the city. I've prepared everything and hope you will find it to your pleasing! The Dukes want me to tell you that the chest on the far left of the room will be for your personal use, and everything you put inside shall stay there as long as you take residence here. We cleared out the chests and moved everything downstairs, but if we've overlooked anything, feel free to treat them as your own. Have a good stay and thank you for saving the city!~
 
 /* ceremony_sod.d */
 @40  = ~Please follow me!~
@@ -40,16 +43,16 @@
 @42  = ~With the title come official quarters for you on the third level of the Ducal Palace! The servants will help you settle in as soon as you are ready. Everyone, praise our Hero of Baldur's Gate!~
 
 /* imoen_jannath.d */
-@50  = ~Who would have thought that he is such an evil conspirator! And we nearly made him Duke... You saved us all, and we are in your dept, <CHARNAME>, Hero of Baldur's Gate! You deserve the title.~
-@51  = ~This sounds so impressive! "Hero of Baldur's Gate".~
+@50  = ~Who would have thought that he was such an evil conspirator! And we nearly made him Duke... You saved us all, and we are in your debt, <CHARNAME>, Hero of Baldur's Gate! You deserve the title.~
+@51  = ~That sounds so impressive! "Hero of Baldur's Gate".~
 @52  = ~If only I could have wielded magic, then we would have taken him down even faster!~
 @53  = ~Magic, you say? Hmm...~
 @54  = ~Imoen, I think you have a talent for magic. I might want to talk to you later, young friend.~
 @55  = ~Me? Uhm... fine!~
-@56  = ~Welcome, Hero of Baldur's Gate! And welcome, Imoen. This room will serve as your residence as long as you will stay in the city, Imoen - with greetings from Duke Jannath.~
+@56  = ~Welcome, Hero of Baldur's Gate! And welcome, Imoen. This room will serve as your residence as long as you stay in the city, Imoen - with greetings from Duke Jannath.~
 @57  = ~...Mine? Oh, wow! Thank you!~
-@58  = ~You also have a chest of your own, Imoen. It is the one at the far left of the room. Everything you will put inside shall stay there as long as you take residence here. Have a good stay!~
-@59  = ~<CHARNAME>! "Hero of Baldur's Gate", huh? Impressive! Duke Jannath offered me this room, together with lessons in magic! Can you imagine? We will be living room by room, you and I! But I'd much prefer just travelling with you again.~
+@58  = ~You also have a chest of your own, Imoen. It is the one at the far left of the room. Everything you put inside shall stay there as long as you take residence here. Have a good stay!~
+@59  = ~<CHARNAME>! "Hero of Baldur's Gate", huh? Impressive! Duke Jannath offered me this room, together with lessons in magic! Can you imagine? We will be in the same suite, you and I! But I'd much prefer just travelling with you again.~
 @60  = ~The chest at the far left of the room is mine, by the way. In case you need more room to store your things - they said the chest will be mine as long as we stay here.~
 
 /* new for v2 */
@@ -65,7 +68,7 @@
 
 
 /* duke_eltan.d */
-@70  = ~You saved us. The gratitude of the city is yours.~
+@70  = ~You saved us. You have the gratitude of the city.~
 
 /* ffhealer.d */
 @80  = ~<CHARNAME>! The Dukes sent us to see to your well-being. We will take care of the bodies of Sarevok and his minions.~
@@ -77,7 +80,7 @@
 @86  = ~That should do it.~
 
 /* elminster.d */
-@90  = ~Our paths cross once more, young one. Thou learned about thine godly heritage, and not only that, but had to kill one of thine godly brethren. Thou rid the Sword Coast from a great evil. The question is, what path will thee go from here? Will thee give in to the evil in thine blood? Be assured that there are good people watching, <CHARNAME>, watching over thee as well as being ready for whatever thou will turn out in the future, as best we can. I wish thee well, <CHARNAME>, child of Bhaal. May the gods bless thee.~
+@90  = ~Our paths cross once more, young one. Thou hast learned of thine godly heritage, and not only that, but had to kill one of thy godly brethren. Thou rid the Sword Coast from a great evil. The question is, upon what path will thee go from here? Will thee give in to the evil in thine blood? Be assured that there are good people watching, <CHARNAME>, watching over thee as well as ready for whatever thou will turn out in the future, as best we can. I wish thee well, <CHARNAME>, child of Bhaal. May the gods bless thee.~
 
 /* new for v2 */
 //#12741
@@ -88,23 +91,23 @@
 @93  = ~Why, hello! A glorious end to this bit of unpleasant business, was it not? I would not expect great accolades for your efforts, however, as this matter is likely to be hushed as soon as possible. Still, many of the realm know of thy battle and think highly of thee for it. A great evil has been routed. Let us hope that others of this unfortunate heritage do not seek the same path.~
 
 /* dialogues_sarevoksword_bgt.d */
-@100  = ~I am awfully sorry, but I have to obey my master, and take this sword from you... Ah, haha, they will not be overly happy to see the state it is in. Oh well, Guess I know what I will spend my time with next. Fare well, <CHARNAME>, maybe we will met again under different circumstances.~
+@100  = ~I am awfully sorry, but I have to obey my master, and take this sword from you... Ah, haha, they will not be overly happy to see the state it is in. Oh well, Guess I know what I will spend my time with next. Fare well, <CHARNAME>, maybe we will meet again under different circumstances.~
 
 /* dialogues_sarevoksword_ee.d */
-@110  = ~Firt off, let me give you Sarevok's sword, as requested.~
-@111  = ~We have note that Sarevok bonded with his sword and made it a very powerful weapon.~
+@110  = ~First off, let me give you Sarevok's sword, as requested.~
+@111  = ~We have noted that Sarevok bonded with his sword and made it a very powerful weapon.~
 @112  = ~I see that you also took his armor. It shall remain yours, although I can only warn you from using it - appearing in the same dark and threatening outfit might raise unfortunate suspicion in people.~
 @113  = ~We would like to take the sword and keep safe. If you would give it to us, we would be grateful. We will reward you accordingly, of course.~
-@114  = ~Indeed! I am curious myself to see such a weapon, powerful both in magic and also in symbolic value to his followers. Oh - but I see it lost a lot of its power, and is not usable in the current state. The better - anyone wanting to wield this to step into Sarevok's footsteps will have to pay a lot of gold to get it restored to some of its power.~
-@115  = ~Nevertheless, it is of high emotional value to his last followers. We need to guard this well, as it will attract many thieves. Thank you, <CHARNAME>, for bestowing this weapon on us and giving us the chance to remove this evil symbol from the lands. Let me give you this sword as a compensation, as well as this small sum of gold as a small token of our gratitude.~
+@114  = ~Indeed! I am curious myself to see such a weapon, powerful both in magic and also in symbolic value to his followers. Oh - but I see it lost a lot of its power, and is not usable in the current state. The better - anyone wanting to wield this and step into Sarevok's shoes will have to pay dearly in gold to get it restored to even some of its former power.~
+@115  = ~Nevertheless, it is of high symbolic value to his last followers. We need to guard this well, as it will attract many thieves. Thank you, <CHARNAME>, for bestowing this weapon on us and giving us the chance to remove this evil symbol from the lands. Let me give you this sword as a compensation, as well as this small sum of gold as a small token of our gratitude.~
 
 /* refugees_sod.d */
-@120  = ~We travelled all the way here from High Moor because they burnt down our farms. Who they are we do not know, only that they are still out there, and their number is growing. Will Baldur's Gate help us? We never came this far into the south, but we do not feel save outside a big city.~
+@120  = ~We travelled all the way here from High Moor because they burnt down our farms. Who they are we do not know, only that they are still out there, and their number is growing. Will Baldur's Gate help us? We never came this far into the south, but we do not feel safe outside a big city.~
 @121  = ~They burnt everything down - after taking all our livestock. Why would anyone do that?~
-@122  = ~So many angry men, and they destroy everything in their wake. I really hope we are save here in the south.~
-@123  = ~They asked us to join them, and then they started rampaging and killing... We fled with little property we could carry.~
-@124  = ~They destroyed the whole village - and I don't want to know what they did to the villagers who didn't flee soon enough!~
-@125  = ~Join them! Join them! On a crusade of plundering and killing those murderers requested we'd join them! I fled as soon as I could.~
+@122  = ~So many angry men, and they destroy everything in their wake. I really hope we are safe here in the south.~
+@123  = ~They asked us to join them, and then they started rampaging and killing... We fled with what little property we could carry.~
+@124  = ~They destroyed the whole village - and I don't even want to know what they did to the villagers who didn't flee soon enough!~
+@125  = ~Join them! Join them! On a crusade of plundering and killing!  Those murderers requested we'd join them! I fled as soon as I could.~
 @126  = ~Mooooooom! The stranger is talking to me!!~
 @127  = ~I lost my puppa on the way here.~
 @128  = ~I want to go home.~
@@ -112,8 +115,8 @@
 /* denkod.d */
 @140  = ~You came back!~
 @141  = ~I have to say, be careful with wearing that. For a short moment I thought you're him! Nearly got out my dagger, I did.~
-@142  = ~You can't believe what happened here only minutes ago. Flaming Fist Mercenaries, stomping through the guild and ignoring all of us, first in and then back out.~
-@143  = ~Seems the party down there is finished, eh? Did you finish off that armored guy, or will he come through here again, too? I will go to a quieter place for now, way too much traffic for my taste!~
+@142  = ~You won't believe what happened here only minutes ago. Flaming Fist Mercenaries, stomping through the guild and ignoring all of us, first in and then back out.~
+@143  = ~Seems the party down there is finished, eh? Did you finish off that armored guy, or will he come through here again, too? I'm going some place quieter, for now, way too much traffic here for my taste!~
 
 /* ophyllis_sod.d */
 @150 = ~Oh, <CHARNAME>! It is so nice to meet you. I am Ophyllis, the Palace Treasurer. I will hold on to your gold for you when you combine forces with the Flaming Fist on the pursuit of the last of Sarevok's followers.~
@@ -121,8 +124,8 @@
 @152 = ~Store my gold? Why?~
 @153 = ~What if I do not want to give my gold to you?~
 @154 = ~I know who you are. Have a nice day.~
-@155 = ~Oh, it is! Haha. The Dukes trust me blindly. They know I would never take any riches for my own profit!~
-@156 = ~It is at the Dukes' order, I am afraid - no one marching with the Flaming Fist should have to worry about their riches - and to be honest, I think the Dukes like the idea of the men not having spare coins for inofficial pub visits, ahem.~
+@155 = ~Oh, it is! Haha. The Dukes trust me explicitly. They know I would never take any riches for my own profit!~
+@156 = ~It is at the Dukes' order, I am afraid - no one marching with the Flaming Fist should have to worry about their wealth - and to be honest, I think the Dukes like the idea of the men not having spare coins for inofficial pub visits, ahem.~
 @157 = ~I will keep your gold safe then, but no reason for worry now, haha - I need to prepare for your gold's safekeeping, the note about it reached me only moments ago.~
 @158 = ~I will approach you once you will have joined the Flaming Fist in their pursuit. Fare well until then!~
 @159 = ~Greetings, <CHARNAME>. If you are here for Ophyllis, he should be in the office.~

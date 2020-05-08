@@ -15,6 +15,9 @@
 @11 = ~Seid gegrüßt, Kampfgefährte von <CHARNAME>. Auch Euch gilt unser Dank.~
 @12 = ~Seid gegrüßt, Kampfgefährte von <CHARNAME>.~
 
+/* new for v3: changed line 7 */
+@13  = ~Die Stadt steht tief in Eurer Schuld, Held von Baldurs Tor. Folgt mir bitte, die Soldaten der Flammenden Faust werden Euch zum Versteck von Sarevoks letztem Anhänger führen.~
+
 /* pc_palaceresidence.d */
 @20  = ~Seid gegrüßt, <CHARNAME>. Bitte verlasst den Keller, Ihr solltet Euch hier nicht aufhalten.~
 @21  = ~Seid gegrüßt, <CHARNAME>.~

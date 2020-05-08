@@ -1,8 +1,8 @@
 /* journal entries */
-@10000   = ~Sarevoks Schwert wurde mir genommen
+@10000   = ~Sarevoks Schwert
 
 Ein Dschinn tauchte genau in dem Augenblick auf, in dem ich das Labyrinth zur Unterstadt verlassen habe und nahm mir Sarevoks Schwert weg! Er sagte, er müsse es im Auftrag seines "Meisters" tun, dem er gehorchen müsse. Wer könnte denn an Sarevoks Schwert Interesse haben? Es scheint so, als gäbe es noch immer Leute, die Sarevok verehren - oder von seiner Macht profitieren wollen.~
-@10001   = ~Die Herzöge wollen Sarevoks Schwert haben
+@10001   = ~Sarevoks Schwert
 
 Ich habe Sarevoks Schwert den Herzögen von Baldurs Tor gegeben. Sie sehen es als Symbol für seine Macht und werden es unter Verschluss halten, damit Sarevok keine Nachahmer findet.~
 @10002   = ~Mein Quartier im Herzogspalast
@@ -24,8 +24,16 @@ Elminster ist nach Sarevoks Tod noch einmal aufgetaucht, und nun weiß ich defini
 @10007   = ~Flüchtlinge aus dem fernen Norden
 
 In Baldurs Tor erscheinen Flüchtlinge, die von einem brutalen Zusammenschluss im nördlichen Hohen Moor erzählen, der Höfe und kleine Dörfer verwüstet.~
-@10008   = ~Die Herzöge wollen Sarevoks Schwert haben
+@10008   = ~Sarevoks Schwert
 
 Herzog Belt hat mich gebeten, Sarevoks Schwert den Herzögen zu überlassen. Sie sehen es als Symbol für seine Macht und wollen es unter Verschluss nehmen, damit Sarevok keine Nachahmer findet.~
 
-@10009   = ~Die Herzöge wollen Sarevoks Schwert haben~
+@10009   = ~Sarevoks Schwert~
+
+/* new for v3 */
+@10010   = ~Sarevoks Schwert
+
+Offensichtlich wurde Sarevoks Schwert von seinen Anhängern aus dem Palast gestohlen und nach Atkatla verkauft. Soviel zum Thema "gut bewachen". Sowas aber auch!~
+@10011   = ~Sarevoks Schwert
+
+Ich habe Sarevoks Schwert wieder. Es ist weiterhin weit entfernt von der Macht, die es unter Sarevok hatte, aber zumindest kann ich es nun wieder benutzen.~

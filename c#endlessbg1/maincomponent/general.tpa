@@ -48,6 +48,7 @@ IF
 	Global("C#st_BG1End","GLOBAL",0)
 THEN
 	RESPONSE #100
+		SetInterrupt(FALSE)
 		SaveGame(0)
 		SmallWait(1)
 		ClearAllActions()
@@ -60,6 +61,7 @@ THEN
 		StartMovie("ENDMOVIE")
 		FadeFromColor([30.0],0)
 		EndCutSceneMode()
+		SetInterrupt(TRUE)
 END
 
 >>>>>>>>
@@ -75,6 +77,7 @@ IF
 	GlobalLT("EndOfBG1","GLOBAL",2)
 THEN
 	RESPONSE #100
+		SetInterrupt(FALSE)
         	CutSceneId(Player1)
 		SaveGame(2)
 		SmallWait(1)
@@ -86,6 +89,7 @@ THEN
 		FadeToColor([1.0],0)
 		EndCutSceneMode()
 		GoToStartScreen()
+		SetInterrupt(TRUE)
 END
 
 >>>>>>>>
@@ -103,10 +107,13 @@ IF
 	True()
 THEN
 	RESPONSE #100
+		SetInterrupt(FALSE)
         	CutSceneId(Player1)
+		FadeToColor([1.0],0)
 		SaveGame(2)
 		SmallWait(1)
 		StartCutSceneEx("BDSODTRN",TRUE)
+		SetInterrupt(TRUE)
 END
 
 >>>>>>>>
@@ -146,8 +153,20 @@ END
 EXTEND_BOTTOM ~%NBaldursGate%.bcs~ ~.../ar0200_add.baf~ EVALUATE_BUFFER 
 
 
-/* prepare the Palace (ground floor) after Sarevok's death: Duke Belt should be alive */
+/* prepare the Palace (ground floor) after Sarevok's death */
 
+/* remove any nobles who might not have heard the call */
+<<<<<<<< .../sarrun_add.baf
+IF
+	Dead("Sarevok")
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~SARRUN.bcs~ ~.../sarrun_add.baf~ EVALUATE_BUFFER 
+
+/* Palace (ground floor): Duke Belt should be alive */
 <<<<<<<< .../ar0108_add.baf
 /* Palace ground floor. revive Duke Belt and move him in the middle of the room */
 

@@ -14,8 +14,9 @@ END
 
 END
 
-INTERJECT BELT %belt_victory_01% c#st_belt_victory_01
-== BELT @42 /* ~With the title come official quarters for you on the third level of the Ducal Palace! The servants will help you settle in as soon as you are ready. Everyone, praise our Hero of Baldur's Gate!~ */
-END
+ADD_TRANS_TRIGGER BELT %belt_victory_42% ~False()~ DO 0
+
+EXTEND_BOTTOM BELT %belt_victory_42% 
 IF ~~ THEN DO ~SetGlobal("C#st_HeroOfBG","GLOBAL",1)
 ClearAllActions() StartCutSceneMode() StartCutScene("c#stcut2")~ EXIT
+END

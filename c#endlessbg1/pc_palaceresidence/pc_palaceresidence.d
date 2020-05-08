@@ -117,7 +117,7 @@ END
 BEGIN c#stsrv1
 
 IF ~True()~ THEN servant1
-SAY @30 /* ~Welcome, Hero of Baldur's Gate! This room will serve as your residence as long as you will stay in the city. I prepared everything and hope you will find it to your pleasing! The Dukes want me to tell you that the chest on the far left of the room will be your personal one, and everything you will put inside shall stay there as long as you take residence here. We cleared out the chests and moved verything downstairs, but if we left things in feel free to stock up your supplies with them. Have a good stay and thank you for saving the city!~ */
+SAY @30 /* ~Welcome, Hero of Baldur's Gate! This room will serve as your residence as long as you will stay in the city. I prepared everything and hope you will find it to your pleasing! The Dukes want me to tell you that the chest on the far left of the room will be your personal one, and everything you will put inside shall stay there as long as you take residence here. We cleared out the chests and moved everything downstairs, but if we left things in feel free to stock up your supplies with them. Have a good stay and thank you for saving the city!~ */
 IF ~~ THEN DO ~AddJournalEntry(@10002,INFO)
 EscapeArea()~ JOURNAL @10003/* ~My Personal Chest in the Ducal Palace 
 

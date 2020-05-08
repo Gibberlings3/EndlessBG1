@@ -1,7 +1,7 @@
 /* @0   =  */
 @1   = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection.  The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.  
 
-This armor belonged to Sarevok, and it is unusually heavy.
+This unusually heavy armor belonged to Sarevok.
 
 STATISTICS:
 
@@ -14,7 +14,7 @@ Not Usable By:
  Thief~
 @2   = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection.  The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.  
 
-This armor belonged to Sarevok, and it is unusually heavy. It is enchanted to give protection against magic.
+This unusually heavy armor belonged to Sarevok. It is enchanted to give protection against magic.
 
 STATISTICS:
    +30% Magic Resistance
@@ -55,7 +55,7 @@ Not Usable By:
 Mage
 Bard
 Thief~
-@8   = ~This is Sarevok's sword. No matter what you try, noone seems to be able to wield it. It seems the magic of this sword was weakened and sealed when Sarevok died.~
+@8   = ~This is Sarevok's sword. No matter what you try, you are unable to wield it. It seems the magic of this sword was weakened and sealed when Sarevok died.~
 @9   = ~<CHARNAME>'s chest~
 @10   = ~Imoen's chest~
 

@@ -8,7 +8,7 @@
 @5007   = ~Elminster makes an Appearance~
 @5008   = ~Sarevok's Unique Items~
 @5009   = ~First Refugees come to Baldur's Gate~
-@5010   = ~Ophyllis the Treasurer in inside Palace Dungeon~
+@5010   = ~Ophyllis the Treasurer is inside Palace Dungeon~
 @5011   = ~Denkod in Thieves Guild comments on Sarevok's Death~
 @5012   = ~This component is only compatible with SoD and EET.~
 @5013   = ~This component is only compatible with BG:EE, SoD, BGT, and EET.~
@@ -16,3 +16,7 @@
 @5015   = ~jastey's Version~
 @5016   = ~Restored BG1 Text~
 
+/* new for v3 */
+@5017   = ~Skip Thieves Maze once after Sarevok's Death~
+@5018   = ~Short Public Hero Tribute~
+@5019   = ~Endless BG1: "More Flavor to Hero of Baldur's Gate" Component is required for this component~

@@ -8,7 +8,7 @@
 BACKUP ~c#endlessbg1/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/~ //jastey
 
-VERSION ~2.1~
+VERSION ~3~
 
 README ~c#endlessbg1/readme.c#endlessbg1.%LANGUAGE%.txt~ ~c#endlessbg1/readme.c#endlessbg1.english.txt~
 
@@ -142,7 +142,7 @@ LANGUAGE ~Deutsch~
 
 ////////////////////////////////////////////////////////////////////////
 //////
-BEGIN @5001 /* ~Endless BG1: Main Component~ */
+BEGIN @5001 /* ~Endless BG1: Main Component~ */ DESIGNATED 0 LABEL EBG1_MainComponent
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
 
 /* main component: required */
@@ -180,7 +180,7 @@ END
 
 ////////////////////////////////////////////////////////////////////////
 //////
-BEGIN @5002   /* ~More Flavor to Hero of Baldur's Gate (includes PC's Residence inside Palace)~ */
+BEGIN @5002   /* ~More Flavor to Hero of Baldur's Gate (includes PC's Residence inside Palace)~ */ DESIGNATED 1 LABEL EBG1_MoreFlavor
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
 
@@ -190,8 +190,29 @@ INCLUDE ~c#endlessbg1/pc_palaceresidence/pc_palaceresidence.tpa~
 
 COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/pc_palaceresidence.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
-/* short cutscene on rostrum for SoD/EET */
-ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) THEN BEGIN
+// Get state for BELT %victory_01% (in dialogues_ee.d)
+/* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Six of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
+*/
+OUTER_SET belt_victory_01 = STATE_WHICH_SAYS 1 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
+
+/* ee: add announcement of PC's quarters inside the palace */
+ACTION_IF NOT GAME_IS ~bgt~ THEN BEGIN
+  COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/add_ee.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+END //bgt
+
+
+/* bgt: add more flavor to Belt's dialogue */
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+  COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/ceremony_bgt.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+END //bgt
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5018 /* Short Public Hero Tribute */ DESIGNATED 2 LABEL EBG1_HeroCutscene
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~1~ @5019
+REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) @5012 /* ~This mod is only compatible with SoD and EET.~ */
 
 // Get state for BELT %victory% (in dialogues_ee.d)
 /* ~<CHARNAME>, you were successful! You defeated Sarevok who conspired against the city, the Sword Coast, even Amn - for his own dark goals and purpose.~ */
@@ -202,23 +223,30 @@ OUTER_SET belt_victory = STATE_WHICH_SAYS 0 IN ~c#endlessbg1/translations/%s/dia
 */
 OUTER_SET belt_victory_01 = STATE_WHICH_SAYS 1 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
 
-  COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/ceremony_sod.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
-END
+// Get state for BELT %victory_42% (in add_ee.d)
+/* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Six of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
+*/
+OUTER_SET belt_victory_42 = STATE_WHICH_SAYS 42 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
 
-/* bgt: add more flavor to Belt's dialogue */
-ACTION_IF GAME_IS ~bgt~ THEN BEGIN
-  COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/ceremony_bgt.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
-END //bgt
+  COMPILE EVALUATE_BUFFER ~c#endlessbg1/hero_cutscene/ceremony_sod.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/hero_cutscene/c#stcut1.baf~
+COMPILE EVALUATE_BUFFER ~c#endlessbg1/hero_cutscene/c#stcut2.baf~
+
+/* Duke Belt for cutscene */
+  COPY_EXISTING ~BELT.cre~ ~override/C#STBELT.cre~
+    WRITE_EVALUATED_ASCII 0x248 ~~ #8   // Override Skript
+
+/* area for celebration - bd0035 reused (SoD/EET only) */
+  COPY ~c#endlessbg1/hero_cutscene/c#st35.are~ ~override~
 
 
 
 ////////////////////////////////////////////////////////////////////////
 //////
-BEGIN @5008 /* ~Sarevok's Unique Items~ */
+BEGIN @5008 /* ~Sarevok's Unique Items~ */ DESIGNATED 3 LABEL EBG1_SarevokItems
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
-
-ADD_JOURNAL TITLE (@10009) @10001 @10008 USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
 INCLUDE ~c#endlessbg1/sarevok_items/sarevok_items.tpa~
 
@@ -227,9 +255,11 @@ INCLUDE ~c#endlessbg1/sarevok_items/sarevok_items.tpa~
 
 ////////////////////////////////////////////////////////////////////////
 //////
-BEGIN @5014 /* ~Sarevok's Sword~ */
+BEGIN @5014 /* ~Sarevok's Sword~ */ DESIGNATED 4 LABEL EBG1_SarevokSword
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
+
+ADD_JOURNAL TITLE (@10009) @10001 @10008 @10010 @10011 USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
 INCLUDE ~c#endlessbg1/sarevok_sword/sarevok_sword.tpa~
 
@@ -248,7 +278,7 @@ END
 ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) THEN BEGIN
 /* erase journal entry about stolen Sword from Sarevok */
 <<<<<<<< .../erasejournal_sod.d
-ADD_TRANS_ACTION BDIMOEN BEGIN 10 END BEGIN END ~EraseJournalEntry(@10001)~
+ADD_TRANS_ACTION BDIMOEN BEGIN 10 END BEGIN END ~EraseJournalEntry(@10001) AddJournalEntry(@10010,QUEST_DONE)~
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~.../erasejournal_sod.d~
 END
@@ -258,11 +288,29 @@ ACTION_IF GAME_IS ~bgt~ THEN BEGIN
   COMPILE EVALUATE_BUFFER ~c#endlessbg1/sarevok_sword/dialogues_sarevoksword_bgt.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
 END //bgt
 
+/* remove journal entry for BGT+EET */
+ACTION_IF GAME_IS ~bgt eet~ THEN BEGIN
+/* erase journal entry about stolen Sword from Sarevok and set new one */
+<<<<<<<< .../erasejournal_id.baf
+IF
+	PartyHasItem("SW2H16")  // Sarevok's Chaor Sword
+	Global("C#st_SarevoksSwordID","GLOBAL",0)
+THEN
+	RESPONSE #100
+		EraseJournalEntry(@10000)
+		EraseJournalEntry(@10008)
+		EraseJournalEntry(@10010) 
+		AddJournalEntry(@10011,QUEST_DONE)
+		SetGlobal("C#st_SarevoksSwordID","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~AR0602.bcs~ ~.../erasejournal_id.baf~ EVALUATE_BUFFER
+END
 
 
 ////////////////////////////////////////////////////////////////////////
 //////
-BEGIN @5004   /* ~Imoen and Duke Jannath (Imoen gets Residence inside Palace)~ */
+BEGIN @5004   /* ~Imoen and Duke Jannath (Imoen gets Residence inside Palace)~ */ DESIGNATED 5 LABEL EBG1_ImoenJannath
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
 
@@ -285,7 +333,7 @@ COMPILE EVALUATE_BUFFER ~c#endlessbg1/imoen_jannath/imoen_jannath.d~ USING ~c#en
 
 ////////////////////////////////////////////////////////////////////////
 //////
-BEGIN @5005 /* ~Duke Eltan is in the Palace~ */
+BEGIN @5005 /* ~Duke Eltan is in the Palace~ */ DESIGNATED 6 LABEL EBG1_EltanInPalace
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
 
@@ -301,7 +349,7 @@ COMPILE EVALUATE_BUFFER ~c#endlessbg1/duke_eltan/duke_eltan.d~ USING ~c#endlessb
 
 ////////////////////////////////////////////////////////////////////////
 //////
-BEGIN @5006 /* ~Flaming Fist Healer come into Undercity Temple~ */
+BEGIN @5006 /* ~Flaming Fist Healer come into Undercity Temple~ */ DESIGNATED 7 LABEL EBG1_FFHealerInBhaalTemple
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
 
@@ -312,7 +360,7 @@ COMPILE EVALUATE_BUFFER ~c#endlessbg1/ffhealer/ffhealer.d~ USING ~c#endlessbg1/t
 ///////////////////////////////////////////////////////////////////////
 ////// /* ~Elminster makes an Appearance~ */
 
-BEGIN @5015 /* ~jastey's Version~ */
+BEGIN @5015 /* ~jastey's Version~ */ DESIGNATED 8 LABEL  EBG1_ElminsterAppearance_jastey
 SUBCOMPONENT @5007 /* ~Elminster makes an Appearance~ */
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
@@ -322,7 +370,7 @@ ADD_JOURNAL @10006 USING ~c#endlessbg1/translations/%s/dialogues.tra~
 INCLUDE ~c#endlessbg1/elminster/elminster.tpa~
 COMPILE EVALUATE_BUFFER ~c#endlessbg1/elminster/elminster.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
-BEGIN @5016 /* ~Restored BG1 Text~ */
+BEGIN @5016 /* ~Restored BG1 Text~ */ DESIGNATED 9 LABEL EBG1_ElminsterAppearance_restored
 SUBCOMPONENT @5007 /* ~Elminster makes an Appearance~ */
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
@@ -333,7 +381,7 @@ COMPILE EVALUATE_BUFFER ~c#endlessbg1/elminster/elminster_bg.d~ USING ~c#endless
 
 ////////////////////////////////////////////////////////////////////////
 //////
-BEGIN @5009 /* ~First Refugees come to Baldur's Gate~ */
+BEGIN @5009 /* ~First Refugees come to Baldur's Gate~ */ DESIGNATED 10 LABEL EBG1_RefugeesInBGCity
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) @5012 /* ~This mod is only compatible with SoD and EET.~ */
 
@@ -345,7 +393,7 @@ COMPILE EVALUATE_BUFFER ~c#endlessbg1/refugees_sod/refugees_sod.d~ USING ~c#endl
 
 ////////////////////////////////////////////////////////////////////////
 //////
-BEGIN @5010 /* ~Ophyllis the Treasurer in inside Palace Dungeon~ */
+BEGIN @5010 /* ~Ophyllis the Treasurer in inside Palace Dungeon~ */ DESIGNATED 11 LABEL EBG1_TreasurerInPalaceDungeon
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) @5012 /* ~This mod is only compatible with SoD and EET.~ */
 
@@ -355,7 +403,7 @@ COMPILE EVALUATE_BUFFER ~c#endlessbg1/ophyllis_sod/ophyllis_sod.d~ USING ~c#endl
 
 ////////////////////////////////////////////////////////////////////////
 //////
-BEGIN @5011 /* ~Denkod in Thieves Guild comments on Sarevok's Death~ */
+BEGIN @5011 /* ~Denkod in Thieves Guild comments on Sarevok's Death~ */ DESIGNATED 12 LABEL EBG1_DenkodCommentsOnSarevoksDeath
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
 
@@ -369,3 +417,90 @@ ACTION_IF GAME_IS ~bgt~ THEN BEGIN
   INCLUDE ~c#endlessbg1/denkod_add/denkod_bgt.tpa~
 END //bgt
 
+
+
+////////////////////////////////////////////////////////////////////////
+//////
+BEGIN @5017 /* ~Skip Thieves Maze once after Sarevok's Death~ */ DESIGNATED 13 LABEL EBG1_SkipThievesMazeOnce
+REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
+REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
+
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+  OUTER_SPRINT ~exit7246~ ~exit0146~
+  OUTER_SPRINT ~Door7246~ ~Door0146~
+END
+
+ACTION_IF GAME_IS ~bgt~ THEN BEGIN
+  OUTER_SPRINT ~exit7246~ ~exit7246~
+  OUTER_SPRINT ~Door7246~ ~Door7246~
+END
+
+
+
+
+/* add travel trigger directly into Thieves Guild */
+COPY_EXISTING ~%Undercity%.are~ ~override~
+  LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
+    INT_VAR
+    fj_type         = 2    //travel
+    fj_box_left     = 5088  //kleinstes x
+    fj_box_top      = 787  //kleinstes y
+    fj_box_right    = 5118  //größtes x
+    fj_box_bottom   = 1130   //größtes y
+    fj_cursor_idx   = 34   //door
+    fj_vertex_0     = 5088 + (787 << 16)   //kleinstes x +  kleinstes y
+    fj_vertex_1     = 5088 + (1130 << 16)   //größtes x + kleinstes y
+    fj_vertex_2     = 5118 + (1130 << 16)   //größtes x + größtes y
+    fj_vertex_3     = 5118 + (787 << 16)   //kleinstes x + größtes y
+    fj_flags        = 0b0000000000000100  //full party required, autosave
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = c#ebg101
+    fj_destination_area = EVAL ~%EBaldursGate_ThievesGuild%~
+    fj_destination_name = EVAL ~%exit7246%~
+  END
+
+/* Sarevok dead: deactivate Trigger Door7246 in Undercity once */
+
+<<<<<<<< .../ar0123_12_add.baf
+IF
+	Global("C#st_SarevokDeadSkipMaze","GLOBAL",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("c#ebg101",FALSE)
+		SetGlobal("C#st_SarevokDeadSkipMaze","GLOBAL",1)
+END
+
+IF
+	Dead("Sarevok")
+	GlobalLT("C#st_SarevokDeadSkipMaze","GLOBAL",2)
+THEN
+	RESPONSE #100
+		TriggerActivation("%Door7246%",FALSE)
+		TriggerActivation("c#ebg101",TRUE)
+		SetGlobal("C#st_SarevokDeadSkipMaze","GLOBAL",2)
+END
+
+/* set back normal exit after PC was in Thieves Guild */
+IF
+	Dead("Sarevok")
+	Global("C#st_SarevokDeadSkipMaze","GLOBAL",3)
+THEN
+	RESPONSE #100
+		TriggerActivation("c#ebg101",FALSE)
+		TriggerActivation("%Door7246%",TRUE)
+		SetGlobal("C#st_SarevokDeadSkipMaze","GLOBAL",4)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%Undercity%.bcs~ ~.../ar0123_12_add.baf~ EVALUATE_BUFFER
+
+<<<<<<<< .../ar0146_12_add.baf
+IF
+	InMyArea(Player1)
+	Global("C#st_SarevokDeadSkipMaze","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_SarevokDeadSkipMaze","GLOBAL",3)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%EBaldursGate_ThievesGuild%.bcs~ ~.../ar0146_12_add.baf~ EVALUATE_BUFFER  
