@@ -203,6 +203,9 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 3.1
+-fixed install error for some BGT installs
+
 Version 3
 -English version proof read by Lauriel
 -new component: "Skip Thieves Maze once after Sarevok's Death"
