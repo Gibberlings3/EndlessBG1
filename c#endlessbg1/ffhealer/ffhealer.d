@@ -3,7 +3,7 @@ BEGIN c#stsdpr
 
 IF ~Global("C#st_SarevokHealGroup","MYAREA",0)~ THEN duke_priest
 SAY @80 /* ~<CHARNAME>! The Dukes sent us to see to your well-being. We will take care of the bodies of Sarevok and his minions.~ */
-= @81 /* ~Do you want us to heal you and disarm the traps as well?~ */
+= @81 /* ~Do you want us to heal you and disarm any remaining traps as well?~ */
 ++ @82 /* ~Yes, please do.~ */ + duke_priest_02
 ++ @83 /* ~No thanks, I'll manage on my own.~ */ DO ~
 		ActionOverride("Sarevok",DestroySelf())
@@ -28,3 +28,4 @@ IF ~Global("C#st_SarevokHealGroup","MYAREA",1)~ THEN duke_priest_03
 SAY @86 /* ~That should do it.~ */
 IF ~~ THEN + duke_priest_01
 END
+

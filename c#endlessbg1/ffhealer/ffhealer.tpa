@@ -11,7 +11,7 @@ END
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~.../c#stsdpr.baf~
 
-COPY_EXISTING ~FLAM11.cre~ ~override/c#stsdpr.cre~
+COPY ~c#endlessbg1/ffhealer/c#stsdpr.cre~ ~override/c#stsdpr.cre~
     SAY NAME1 ~Flaming Fist Healer~
     SAY NAME2 ~Flaming Fist Healer~
     WRITE_ASCII 0x280 ~c#stsdpr~ #32 // set DV
@@ -19,7 +19,7 @@ COPY_EXISTING ~FLAM11.cre~ ~override/c#stsdpr.cre~
   WRITE_EVALUATED_ASCII 0x250 ~c#stsdpr~ #8   // class script
   WRITE_EVALUATED_ASCII 0x260 ~WTASIGHT~ #8   // general script
 
-COPY_EXISTING ~FLAM11.cre~ ~override/c#stsdp2.cre~
+COPY ~c#endlessbg1/ffhealer/c#stsdpr.cre~ ~override/c#stsdp2.cre~
     SAY NAME1 ~Flaming Fist Scout~
     SAY NAME2 ~Flaming Fist Scout~
     WRITE_ASCII 0x280 ~c#stsdp2~ #32 // set DV
