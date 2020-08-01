@@ -8,7 +8,7 @@
 BACKUP ~c#endlessbg1/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/~ //jastey
 
-VERSION ~3.1~
+VERSION ~4.0~
 
 README ~c#endlessbg1/readme.c#endlessbg1.%LANGUAGE%.txt~ ~c#endlessbg1/readme.c#endlessbg1.english.txt~
 
@@ -139,6 +139,12 @@ LANGUAGE ~Deutsch~
          ~c#endlessbg1/Translations/german/setup.tra~
 	 ~c#endlessbg1/Translations/german/game.tra~
 	 ~c#endlessbg1/Translations/german/journal.tra~
+
+LANGUAGE ~Russian (by Austin, Arkie & Arcanecoast.ru)~
+         ~russian~   
+         ~c#endlessbg1/Translations/russian/setup.tra~
+	 ~c#endlessbg1/Translations/russian/game.tra~
+	 ~c#endlessbg1/Translations/russian/journal.tra~
 
 ////////////////////////////////////////////////////////////////////////
 //////

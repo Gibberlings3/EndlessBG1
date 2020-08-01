@@ -71,7 +71,7 @@
 
 /* ffhealer.d */
 @80  = ~<CHARNAME>! Die Herzöge haben uns zu Euch geschickt um nach Eurem Befinden zu sehen. Wir werden die gefallenen Feinde mit zurück in den Palast nehmen.~
-@81  = ~Sollen wir Euch auch heilen und die Fallen entschärfen?~
+@81  = ~Sollen wir Euch auch heilen und eventuell noch vorhandene Fallen entschärfen?~
 @82  = ~Ja, bitte tut das.~
 @83  = ~Nein danke, ich komme auch so zurecht.~
 @84  = ~Ihr habt der Stadt einen großen Dienst erwiesen. Kehrt in den Palast zurück, die Herzöge wollen mit Euch sprechen. Lebt wohl.~

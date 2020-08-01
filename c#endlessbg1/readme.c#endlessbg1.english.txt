@@ -205,6 +205,10 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 4:
+-Russian translation added by Austin, Arkie & Arcanecoast.ru
+-Component "Flaming Fist Healer come into Undercity Temple": FF should not die if area effects are still active, changed text slightly for compatibility with "remove traps" tweak mods.
+
 Version 3.1
 -fixed install error for some BGT installs
 
