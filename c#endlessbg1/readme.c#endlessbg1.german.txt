@@ -203,6 +203,10 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 5:
+-compatibility with Transitions
+-typo corrections in readme and setup.tra by Mike1072
+
 Version 4:
 -Russian translation added by Austin, Arkie & Arcanecoast.ru
 -Component "Flaming Fist Healer come into Undercity Temple": FF should not die if area effects are still active, changed text slightly for compatibility with "remove traps" tweak mods.

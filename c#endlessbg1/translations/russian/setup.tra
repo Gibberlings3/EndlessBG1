@@ -20,3 +20,6 @@
 @5017   = ~Skip Thieves Maze once after Sarevok's Death~
 @5018   = ~Short Public Hero Tribute~
 @5019   = ~Endless BG1: "More Flavor to Hero of Baldur's Gate" Component is required for this component~
+
+/* new for v5 */
+@5020  = ~bg1re's component "Duke Eltan's Spare Minute" needs to be installed after ebg1.~
