@@ -175,6 +175,8 @@ COMPATIBILITY
 
 The Endless BG1 Mod will set the variable "Global"C#EndlessBG1","GLOBAL",1)" in the thieves maze for (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
 
+Die Mod ist kompatibel mit Transitions. Endless BG1 Mod muss vor Transitions installiert werden.
+
 
 
 CREDITS
@@ -205,6 +207,7 @@ HISTORY
 
 Version 5:
 -compatibility with Transitions
+-ebg1 considers Transitions' versions of Sarevok Items in Duke Belt's and Denkod's dialogue
 -typo corrections in readme and setup.tra by Mike1072
 
 Version 4:
