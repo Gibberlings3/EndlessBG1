@@ -21,3 +21,7 @@
 @5018   = ~Kurze oeffentliche Heldenehrung~
 @5019   = ~Endless BG1: "Dem Status "Held von Baldurs Tor" mehr Inhalt geben" muss fuer diese Komponente installiert sein.~
 
+/* new for v5 */
+@5020  = ~Die Komponente "Duke Eltan's Spare Minute" von bg1re muss nach ebg1 installiert werden.~
+@5021  = ~ebg1 muss vor Transitions installiert werden.~
+@5022  = ~Diese Komponente von ebg1 wird bereits von Transitions ersetzt.~
