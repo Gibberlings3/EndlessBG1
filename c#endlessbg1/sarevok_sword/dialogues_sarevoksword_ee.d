@@ -16,9 +16,11 @@ CHAIN
 IF WEIGHT #-1
 ~Dead("Sarevok") Global("C#st_HeroOfBG","GLOBAL",1) Global("C#st_DukesAskedSword","GLOBAL",0)~ THEN BELT asks_sword
 @111 /* ~We have note that Sarevok bonded with his sword and made it a very powerful weapon.~ */
-== BELT IF ~OR(2)
+== BELT IF ~OR(4)
 PartyHasItem("c#stsrva")
-PartyHasItem("c#stsrvh")~ THEN @112 /* ~I see that you also took his armor. It shall remain yours, although I can only warn you from using it - appearing in the same dark and threatening outfit might raise unfortunate suspicion in people.~ */
+PartyHasItem("c#stsrvh")
+PartyHasItem("#LSrvArm")
+PartyHasItem("#LSrvHlm")~ THEN @112 /* ~I see that you also took his armor. It shall remain yours, although I can only warn you from using it - appearing in the same dark and threatening outfit might raise unfortunate suspicion in people.~ */
 == BELT @113 /* ~We would like to have the sword and keep it safe. If you would give it to us, we would be grateful. We will reward you accordingly, of course.~ */
 END
 IF ~~ THEN DO ~SetGlobal("C#st_DukesAskedSword","GLOBAL",1)~ UNSOLVED_JOURNAL @10008 + %belt_victory_02%
