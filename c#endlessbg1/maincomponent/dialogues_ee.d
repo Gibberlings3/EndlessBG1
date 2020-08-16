@@ -15,7 +15,8 @@ IF ~~ THEN DO ~SetGlobal("C#st_HeroOfBG","GLOBAL",1)~ + victory_02
 END
 
 IF WEIGHT #-1
-~Dead("Sarevok") Global("C#st_HeroOfBG","GLOBAL",1)~ THEN victory_02
+~Dead("Sarevok") Global("C#st_HeroOfBG","GLOBAL",1)
+OR(2) PartyHasItem("c#stsrvs") !Global("#L_BG1SarevokDead","GLOBAL",1)~ THEN victory_02
 SAY @2 /* ~<CHARNAME>, Hero of Baldur's Gate. Are you ready to combine forces with the Flaming Fist and go against the last followers of Sarevok?~ */
 + ~%bgee_only%~ + @3 /* ~"Hero of Baldur's Gate", now that has a pleasant ring to it. Tell me what you need me to do.~ */ + bg1_end
 + ~%sod% !Global("#L_BG1SarevokDead","GLOBAL",1)~ + @4 /* ~Yes, I am ready and I will start right away. Send me wherever you need me.~ */ + sod

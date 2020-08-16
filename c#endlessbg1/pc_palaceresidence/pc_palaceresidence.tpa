@@ -11,6 +11,7 @@ COPY_EXISTING ~servan.cre~ ~override/c#stsrv1.cre~
 
 IF
 	Global("C#st_HeroOfBG","GLOBAL",1)
+	!Global("#L_BG1SarevokDead","GLOBAL",1)
 	Global("C#st_SpawnServant","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -66,6 +67,7 @@ ACTION_IF NOT GAME_IS ~bgt~ THEN BEGIN
 /* empty stuff out of PC's containers into level 2 drawer */
 IF
   Global("C#st_HeroOfBG","GLOBAL",1)
+  !Global("#L_BG1SarevokDead","GLOBAL",1)
   Global("C#st_PrepareContainersPC", "MYAREA", 0)
 THEN
   RESPONSE #100
@@ -103,6 +105,7 @@ BUT_ONLY
 /* unlock PC'scontainer */
 IF
 	Global("C#st_HeroOfBG","GLOBAL",1)
+	!Global("#L_BG1SarevokDead","GLOBAL",1)
 	Global("C#st_UnlockContainersPC","MYAREA",0)
 THEN
 	RESPONSE #100
@@ -118,6 +121,7 @@ ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.ar
   // Transferring items from BG1 area palace containers
 IF
   Global("C#st_HeroOfBG","GLOBAL",1)
+  !Global("#L_BG1SarevokDead","GLOBAL",1)
   Global("C#st_HeroTransferItemsPC", "MYAREA", 0)
 THEN
   RESPONSE #100

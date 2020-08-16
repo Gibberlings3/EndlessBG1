@@ -23,3 +23,5 @@
 
 /* new for v5 */
 @5020  = ~bg1re's component "Duke Eltan's Spare Minute" needs to be installed after ebg1.~
+@5021  = ~ebg1 needs to be installed before Transitions.~
+@5022  = ~This component of ebg1 is already replaced by Transitions.~
