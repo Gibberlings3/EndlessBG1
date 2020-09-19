@@ -205,6 +205,9 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 6:
+-compatibility with Transitions beta 0.4
+
 Version 5:
 -compatibility with Transitions
 -ebg1 considers Transitions' versions of Sarevok Items in Duke Belt's and Denkod's dialogue
