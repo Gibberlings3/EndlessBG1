@@ -12,16 +12,16 @@ END
 COMPILE EVALUATE_BUFFER ~.../c#stsdpr.baf~
 
 COPY ~c#endlessbg1/ffhealer/c#stsdpr.cre~ ~override/c#stsdpr.cre~
-    SAY NAME1 ~Flaming Fist Healer~
-    SAY NAME2 ~Flaming Fist Healer~
+    SAY NAME1 @22 // ~Flaming Fist Healer~
+    SAY NAME2 @22 // ~Flaming Fist Healer~
     WRITE_ASCII 0x280 ~c#stsdpr~ #32 // set DV
     WRITE_ASCII 0x2cc ~c#stsdpr~ #8   // dialogue
   WRITE_EVALUATED_ASCII 0x250 ~c#stsdpr~ #8   // class script
   WRITE_EVALUATED_ASCII 0x260 ~WTASIGHT~ #8   // general script
 
 COPY ~c#endlessbg1/ffhealer/c#stsdpr.cre~ ~override/c#stsdp2.cre~
-    SAY NAME1 ~Flaming Fist Scout~
-    SAY NAME2 ~Flaming Fist Scout~
+    SAY NAME1 @23 // ~Flaming Fist Scout~
+    SAY NAME2 @23 // ~Flaming Fist Scout~
     WRITE_ASCII 0x280 ~c#stsdp2~ #32 // set DV
     WRITE_ASCII 0x2cc ~c#stsdp2~ #8   // dialogue
   WRITE_EVALUATED_ASCII 0x250 ~~ #8   // class script

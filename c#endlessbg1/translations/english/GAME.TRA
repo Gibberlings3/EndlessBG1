@@ -73,3 +73,9 @@ Thief~
 //#9855 changed
 @17 = ~It's spreading like wildfire! Everyone's talking about what happened at the palace. From what I've heard, that Sarevok fellow wasn't as noble as he'd like us all to believe. He tried to have the other Dukes killed, so that he could take over the city.~
 
+/* new for v7 */
+@20 = ~Refugee~ /* female*/
+@21 = ~Refugee~ /* male*/
+@22 = ~Flaming Fist Healer~ /* male*/
+@23 = ~Flaming Fist Scout~ /* male*/
+

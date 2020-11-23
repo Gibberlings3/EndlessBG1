@@ -86,3 +86,10 @@ Dieben~
 @16 = ~Seid Ihr nicht <CHARNAME>? Ihr und Eure Begleiter passen wirklich genau auf die Beschreibung. In diesem Fall möchte ich Euch im Auftrag aller, die ich kenne, für das danken, was Ihr getan habt. Wärt Ihr nicht so heldenhaft aufgetreten ... Oh, ich mag gar nicht dran denken, wie ein Krieg gegen Amn ausgegangen wäre. Habt Dank, dass Ihr diesem Unruhestifter Sarevok ein Ende bereitet habt!~
 //#9855 changed
 @17 = ~Es breitet sich wie ein Lauffeuer aus! Alle reden davon, was im Palast geschehen ist. Es wird gesagt, dass dieser Sarevok doch nicht so edel war, wie er uns glauben machen wollte. Er hat versucht, die anderen Herzöge zu töten, um die Herrschaft über die Stadt an sich zu reißen.~
+
+
+/* new for v7 */
+@20 = ~Flüchtling~ /* female*/
+@21 = ~Flüchtling~ /* male*/
+@22 = ~Heiler der Flammenden Faust~ /* male*/
+@23 = ~Späher der Flammenden Faust~ /* male*/
