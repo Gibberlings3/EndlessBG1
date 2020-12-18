@@ -88,8 +88,8 @@
 
 
 /* new for v7 */
-@20 = ~Refugee~ /* female*/
-@21 = ~Refugee~ /* male*/
-@22 = ~Flaming Fist Healer~ /* male*/
-@23 = ~Flaming Fist Scout~ /* male*/
+@20 = ~Беженка~ /* female*/
+@21 = ~Беженец~ /* male*/
+@22 = ~Целитель Пламенного Кулака~ /* male*/
+@23 = ~Разведчик Пламенного Кулака~ /* male*/
 
