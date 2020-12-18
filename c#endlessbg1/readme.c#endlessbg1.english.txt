@@ -215,6 +215,10 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 6.1:
+-Lines in ffhealer.tpa and refugees_sod.tpa traified. Russian text by yota13.
+-added install order syntax to support Project Infinity
+
 Version 6:
 -compatibility with Transitions beta 0.4
 

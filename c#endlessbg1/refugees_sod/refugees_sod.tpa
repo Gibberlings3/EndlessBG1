@@ -1,42 +1,42 @@
 
 /* refugees arrive in the city (SoD only) */
 COPY_EXISTING ~FTOBE2.cre~ ~override/c#strfg1.cre~
-    SAY NAME1 ~Refugee~ /* female*/
-    SAY NAME2 ~Refugee~ /* female*/
+    SAY NAME1 @20 // ~Refugee~ /* female*/
+    SAY NAME2 @20 // ~Refugee~ /* female*/
     WRITE_ASCII 0x280 ~c#strfg1~ #32 // set DV
     WRITE_ASCII 0x2cc ~c#strfg1~ #8 // set dialogue file
     WRITE_EVALUATED_ASCII 0x268 ~~ #8   // Default script
 
 COPY_EXISTING ~FTOBE5.cre~ ~override/c#strfg2.cre~
-    SAY NAME1 ~Refugee~ /* female*/
-    SAY NAME2 ~Refugee~ /* female*/
+    SAY NAME1 @20 // ~Refugee~ /* female*/
+    SAY NAME2 @20 // ~Refugee~ /* female*/
     WRITE_ASCII 0x280 ~c#strfg2~ #32 // set DV
     WRITE_ASCII 0x2cc ~c#strfg1~ #8 // set dialogue file
     WRITE_EVALUATED_ASCII 0x268 ~~ #8   // Default script
 
 COPY_EXISTING ~MTBE3.cre~ ~override/c#strfg3.cre~
-    SAY NAME1 ~Refugee~ /* male*/
-    SAY NAME2 ~Refugee~ /* male*/
+    SAY NAME1 @21 // ~Refugee~ /* male*/
+    SAY NAME2 @21 // ~Refugee~ /* male*/
     WRITE_ASCII 0x280 ~c#strfg3~ #32 // set DV
     WRITE_ASCII 0x2cc ~c#strfg1~ #8 // set dialogue file
     WRITE_EVALUATED_ASCII 0x260 ~~ #8   // General script
 
 COPY_EXISTING ~MTBE4.cre~ ~override/c#strfg4.cre~
-    SAY NAME1 ~Refugee~ /* male*/
-    SAY NAME2 ~Refugee~ /* male*/
+    SAY NAME1 @21 // ~Refugee~ /* male*/
+    SAY NAME2 @21 // ~Refugee~ /* male*/
     WRITE_ASCII 0x280 ~c#strfg4~ #32 // set DV
     WRITE_ASCII 0x2cc ~c#strfg1~ #8 // set dialogue file
 
 COPY_EXISTING ~BOYBA1.cre~ ~override/c#strfg5.cre~
-    SAY NAME1 ~Refugee~ /* male*/
-    SAY NAME2 ~Refugee~ /* male*/
+    SAY NAME1 @21 // ~Refugee~ /* male*/
+    SAY NAME2 @21 // ~Refugee~ /* male*/
     WRITE_ASCII 0x280 ~c#strfg5~ #32 // set DV
     WRITE_ASCII 0x2cc ~c#strfg5~ #8 // set dialogue file
     WRITE_EVALUATED_ASCII 0x268 ~~ #8   // Default script
 
 COPY_EXISTING ~GIRBA1.cre~ ~override/c#strfg6.cre~
-    SAY NAME1 ~Refugee~ /* female*/
-    SAY NAME2 ~Refugee~ /* female*/
+    SAY NAME1 @20 // ~Refugee~ /* female*/
+    SAY NAME2 @20 // ~Refugee~ /* female*/
     WRITE_ASCII 0x280 ~c#strfg6~ #32 // set DV
     WRITE_ASCII 0x2cc ~c#strfg5~ #8 // set dialogue file
     WRITE_EVALUATED_ASCII 0x268 ~~ #8   // Default script
