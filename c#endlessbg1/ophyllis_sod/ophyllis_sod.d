@@ -10,7 +10,7 @@ SAY @150 /* ~Oh, <CHARNAME>! It is so nice to meet you. I am Ophyllis, the Palac
 END
 
 IF ~~ THEN ophyllis_01
-SAY @155 /* ~Oh, it is! Haha. The Dukes trust me blindly. They know I would never take any riches for my own profit!~ */
+SAY @155 /* ~Oh, it is! Haha. The Dukes trust me explicitly. They know I would never take any riches for my own profit!~ */
 ++ @152 /* ~Store my gold? Why?~ */ + ophyllis_02
 ++ @153 /* ~What if I do not want to give my gold to you?~ */ + ophyllis_02
 ++ @154 /* ~I know who you are. Have a nice day.~ */ + ophyllis_03

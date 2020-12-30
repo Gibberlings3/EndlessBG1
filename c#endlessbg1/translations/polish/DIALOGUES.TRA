@@ -1,0 +1,160 @@
+/* dialogues.d */
+@0  = ~<CHARNAME>, powiod³o ci siê! Pokona³eœ Sarevoka, który spiskowa³ przeciwko miastu, Wybrze¿u Mieczy, a nawet przeciwko Amn - wszystko to dla jego w³asnych mrocznych celów.~
+      ~<CHARNAME>, powiod³o ci siê! Pokona³aœ Sarevoka, który spiskowa³ przeciwko miastu, Wybrze¿u Mieczy, a nawet przeciwko Amn - wszystko to dla jego w³asnych mrocznych celów.~
+@1  = ~Otworzy³eœ nasze oczy na podstêp i uchroni³eœ nas przed wielkim niebezpieczeñstwem kiedy my byliœmy œlepi na zagro¿enie. Korzystaj¹c z udzielonej mi przez Radê Czworga w³adzy, niniejszym og³aszam ciê „Bohaterem Wrót Baldura”! W imieniu ca³ego miasta chcê wyraziæ nasz¹ ogromn¹ wdziêcznoœæ!~
+      ~Otworzy³aœ nasze oczy na podstêp i uchroni³aœ nas przed wielkim niebezpieczeñstwem kiedy my byliœmy œlepi na zagro¿enie. Korzystaj¹c z udzielonej mi przez Radê Czworga w³adzy, niniejszym og³aszam ciê „Bohaterk¹ Wrót Baldura”! W imieniu ca³ego miasta chcê wyraziæ nasz¹ ogromn¹ wdziêcznoœæ!~
+@2  = ~<CHARNAME>, bohaterze Wrót Baldura, czy jesteœ gotowy, aby po³¹czyæ si³y z P³omienn¹ Piêœci¹ i odnaleŸæ pozosta³ych zwolenników Sarevoka?~
+      ~<CHARNAME>, bohaterko Wrót Baldura, czy jesteœ gotowa, aby po³¹czyæ si³y z P³omienn¹ Piêœci¹ i odnaleŸæ pozosta³ych zwolenników Sarevoka?~
+@3  = ~„Bohater Wrót Baldura”, brzmi to naprawdê dobrze. Powiedz mi, czego oczekujesz ode mnie?~
+      ~„Bohaterka Wrót Baldura”, brzmi to naprawdê dobrze. Powiedz mi, czego oczekujesz ode mnie?~
+@4  = ~Tak, jestem gotowy i mogê zaczynaæ od zaraz. Poœlij mnie gdzie tylko mnie potrzebujesz.~
+      ~Tak, jestem gotowa i mogê zaczynaæ od zaraz. Poœlij mnie gdzie tylko mnie potrzebujesz.~
+@5  = ~W³aœciwie to mam doœæ spe³niania cudzych zachcianek. Nie bêdê twoim lokajem ani nikogo innego. Opuszczam Wrota Baldura poszukaæ swojego przeznaczenia gdzieœ indziej. ¯egnam.~
+      ~W³aœciwie to mam doœæ spe³niania cudzych zachcianek. Nie bêdê twoj¹ s³u¿¹c¹ ani nikogo innego. Opuszczam Wrota Baldura poszukaæ swojego przeznaczenia gdzieœ indziej. ¯egnam.~
+@6  = ~Nie w tej chwili. Muszê najpierw poza³atwiaæ kilka spraw.~
+@7  = ~Miasto jest ci d³u¿ne, bohaterze Wrót Baldura. Proszê za mn¹, powiem ci wszystko co wiemy.~
+      ~Miasto jest ci d³u¿ne, bohaterko Wrót Baldura. Proszê za mn¹, powiem ci wszystko co wiemy.~
+@8  = ~Rozumiem. Mimo wszystko miasto ma u ciebie d³ug. Bywaj zdrów, bohaterze Wrót Baldura.~
+      ~Rozumiem. Mimo wszystko miasto ma u ciebie d³ug. Bywaj zdrów, bohaterko Wrót Baldura.~
+@9  = ~Bardzo dobrze, w tym czasie skoncentrujemy nasze si³y na szukaniu pozosta³ych zwolenników Sarevoka. Mam nadziejê, ¿e do³¹czysz do nas nied³ugo. Do tego czasu, korzystaj ze swojego pobytu tutaj.~
+@10 = ~Dziêkujê ci za pokonanie Sarevoka, <CHARNAME>!~
+
+/* new for v2 */
+@11 = ~Dziêkujê tobie równie¿, <GABBER>.~
+@12 = ~Pozdrawiam równie¿ ciebie, <GABBER>.~
+
+/* new for v3: changed line 7 */
+@13  = ~Miasto jest ci d³u¿ne, bohaterze Wrót Baldura. Proszê za mn¹, ¿o³nierze P³omiennej Piêœci poprowadz¹ ciê do kryjówki jednego ze zwolenników Sarevoka.~
+       ~Miasto jest ci d³u¿ne, bohaterko Wrót Baldura. Proszê za mn¹, ¿o³nierze P³omiennej Piêœci poprowadz¹ ciê do kryjówki jednego ze zwolenników Sarevoka.~
+
+/* pc_palaceresidence.d */
+@20  = ~Witaj, <CHARNAME>. Proszê opuœciæ piwnicê, nie powinienieœ tutaj schodziæ.~ ~Witaj, <CHARNAME>. Proszê opuœciæ piwnicê, nie powinnaœ tutaj schodziæ.~
+@21  = ~Witaj, <CHARNAME>.~
+@22  = ~Uszanowanie, bohaterze Wrót Baldura.~ ~Uszanowanie, bohaterko Wrót Baldura.~
+@23  = ~<CHARNAME>, wejdŸ do œrodka. Ksi¹¿êta chc¹ z tob¹ porozmawiaæ.~
+
+/* BG:EE: #7548 */
+@24  = ~WchodŸcie.~
+/* BG:EE: #7550 */
+@25  = ~Ruszajcie siê, przyjaciele. Pamiêtajcie, ¿ebyœcie nie sprawiali nam ¿adnych problemów.~ 
+/* BG:EE: #9010 */
+@26  = ~S¹ inne sprawy, którymi muszê siê zaj¹æ. Dobrego dnia.~
+/* BG:EE: #5157 */
+@27  = ~Znowu siê spotykamy. Przykro mi, ale nie mam czasu na rozmowê.~
+/* BG:EE: #7477 */
+@28  = ~Róbcie, co chcecie i idŸcie, gdzie chcecie.~
+/* BG:EE: #9340 */
+@29  = ~Jestem dumny, ¿e nale¿ê do P³omiennej Piêœci. Nasza g³ówna siedziba jest we Wrotach Baldura, ale dzia³amy te¿ w Beregoœcie i gospodzie „Pod Pomocn¹ D³oni¹”. Jesteœmy zaniepokojeni nag³ymi k³opotami z zaopatrzeniem w ¿elazo. Wielu s¹dzi, ¿e Amn szykuje siê do wojny przeciwko naszemu wielkiemu miastu. Nie wiem, co zrobimy w takim wypadku, skoro brakuje nam tak wa¿nego surowca, jak ¿elazo.~
+@30  = ~Witaj, bohaterze Wrót Baldura! Ten pokój pos³u¿y jako twoja rezydencja na czas pobytu w mieœcie. Przygotowa³em wszystko i mam nadziejê, ¿e bêdzie ci siê podobaæ! Ksi¹¿êta prosili mnie, abym przekaza³ ci, i¿ skrzynia w tym pokoju, znajduj¹ca siê najbardziej na lewo, jest do twojego u¿ytku. Wszystko co schowasz w swojej skrzyni pozostanie tutaj tak d³ugo, jak d³ugo bêdziesz zajmowa³ ten pokój. Posprz¹taliœmy skrzynie i wszelkie rzeczy zosta³y przeniesione na dó³. Jeœli jednak coœ pominêliœmy, nie krêpuj siê potraktowaæ to jak swoje. Mi³ego pobytu ¿yczê i dziêkujê ci za uratowanie miasta!~
+       ~Witaj, bohaterko Wrót Baldura! Ten pokój pos³u¿y jako twoja rezydencja na czas pobytu w mieœcie. Przygotowa³em wszystko i mam nadziejê, ¿e bêdzie ci siê podobaæ! Ksi¹¿êta prosili mnie, abym przekaza³ ci, i¿ skrzynia w tym pokoju, znajduj¹ca siê najbardziej na lewo, jest do twojego u¿ytku. Wszystko co schowasz w swojej skrzyni pozostanie tutaj tak d³ugo, jak d³ugo bêdziesz zajmowa³a ten pokój. Posprz¹taliœmy skrzynie i wszelkie rzeczy zosta³y przeniesione na dó³. Jeœli jednak coœ pominêliœmy, nie krêpuj siê potraktowaæ to jak swoje. Mi³ego pobytu ¿yczê i dziêkujê ci za uratowanie miasta!~
+
+/* ceremony_sod.d */
+@40  = ~Proszê za mn¹.~
+@41  = ~<CHARNAME> z Candlekeep!~
+@42  = ~Wraz z tytu³em, otrzymujesz tak¿e s³u¿bow¹ komnatê na trzecim poziomie Pa³acu Ksi¹¿êcego! S³u¿ba pomo¿e ci siê wprowadziæ jak tylko bêdziesz gotowy. A teraz wszyscy razem wychwalajmy naszego bohatera Wrót Baldura!~
+       ~Wraz z tytu³em, otrzymujesz tak¿e s³u¿bow¹ komnatê na trzecim poziomie Pa³acu Ksi¹¿êcego! S³u¿ba pomo¿e ci siê wprowadziæ jak tylko bêdziesz gotowa. A teraz wszyscy razem wychwalajmy nasz¹ bohaterkê Wrót Baldura!~
+
+/* imoen_jannath.d */
+@50  = ~Kto by pomyœla³, ¿e by³ z niego taki paskudny spiskowiec! A my prawie zrobiliœmy z niego ksiêcia... To ty uratowa³eœ nas wszystkich i mamy u ciebie, bohaterze Wrót Baldura, wielki d³ug! Zas³u¿y³eœ na ten tytu³.~
+       ~Kto by pomyœla³, ¿e by³ z niego taki paskudny spiskowiec! A my prawie zrobiliœmy z niego ksiêcia... To ty uratowa³aœ nas wszystkich i mamy u ciebie, bohaterko Wrót Baldura, wielki d³ug! Zas³u¿y³aœ na ten tytu³.~
+@51  = ~To brzmi tak imponuj¹co! „Bohater Wrót Baldura”.~
+       ~To brzmi tak imponuj¹co! „Bohaterka Wrót Baldura”.~
+@52  = ~Gdybym tylko mog³a u¿ywaæ magii, wtedy po³o¿ylibyœmy go na ³opatki jeszcze szybciej!~
+       ~Gdybym tylko mog³a u¿ywaæ magii, wtedy po³o¿y³ybyœmy go na ³opatki jeszcze szybciej!~
+@53  = ~Magia, mówisz? Hmm...~
+@54  = ~Imoen, myœlê, ¿e masz talent do magii. Chcia³abym z tob¹ póŸniej porozmawiaæ, m³oda przyjació³ko.~
+@55  = ~Ze mn¹? Uhm... dobrze!~
+@56  = ~Witaj, bohaterze Wrót Baldura! Witaj, Imoen. Ten pokój pos³u¿y ci jako twoja rezydencja na czas pobytu w mieœcie, Imoen. Z pozdrowieniami od ksiê¿nej Jannath.~
+       ~Witaj, bohaterko Wrót Baldura! Witaj, Imoen. Ten pokój pos³u¿y ci jako twoja rezydencja na czas pobytu w mieœcie, Imoen. Z pozdrowieniami od ksiê¿nej Jannath.~
+@57  = ~To... dla mnie? Oh, fajowo! Dziêkujê!~
+@58  = ~Ty tak¿e masz skrytkê dla siebie, Imoen. To ta znajduj¹ca siê najbardziej na lewo w tym pokoju. Wszystko co schowasz w swojej skrzyni pozostanie tutaj tak d³ugo, jak d³ugo bêdziesz zajmowa³a ten pokój. ¯yczê mi³ego pobytu!~
+@59  = ~<CHARNAME>! „Bohater Wrót Baldura”, co? Imponuj¹ce! Ksiê¿na Jannath zaoferowa³a mi ten pokój wraz z lekcjami magii! Wyobra¿asz to sobie? Bêdziemy mieszkaæ w tym samym miejscu, ty i ja! Choæ i tak bardziej preferujê podró¿e z tob¹, po prostu.~
+       ~<CHARNAME>! „Bohaterka Wrót Baldura”, co? Imponuj¹ce! Ksiê¿na Jannath zaoferowa³a mi ten pokój wraz z lekcjami magii! Wyobra¿asz to sobie? Bêdziemy mieszkaæ w tym samym miejscu, ty i ja! Choæ i tak bardziej preferujê podró¿e z tob¹, po prostu.~
+@60  = ~Tak po za tym to skrzynia najbardziej na lewo w tym pokoju jest moja. Gdybyœ potrzebowa³ wiêcej miejsca na swoje rzeczy... Powiedzieli mi, ¿e skrytka jest do mojej dyspozycji tak d³ugo jak bêdziemy tu mieszkaæ.~
+       ~Tak po za tym to skrzynia najbardziej na lewo w tym pokoju jest moja. Gdybyœ potrzebowa³a wiêcej miejsca na swoje rzeczy... Powiedzieli mi, ¿e skrytka jest do mojej dyspozycji tak d³ugo jak bêdziemy tu mieszkaæ.~
+
+/* new for v2 */
+@61  = ~Pozdrowienia, Imoen. Daj mi znaæ, jeœli znajdziesz czas, aby pouczyæ siê magii.~
+@62  = ~Witaj, Imoen. PrzyjdŸ do mnie póŸniej, dobrze?~
+@63  = ~Witam, Imoen. Moja oferta nauczania magii jest wci¹¿ aktualna, jeœli tylko <CHARNAME> u¿yczy ciê.~
+@64  = ~Jesteœ tego pewny? Mog³abym zostaæ w pa³acu i przyj¹æ ofertê ksiê¿nej Jannath.~
+       ~Jesteœ tego pewna? Mog³abym zostaæ w pa³acu i przyj¹æ ofertê ksiê¿nej Jannath.~
+@65  = ~Tak, Imoen, zrób to.~
+@66  = ~W³aœciwie to chcia³bym, abyœ poczeka³a gdzie indziej.~
+       ~W³aœciwie to chcia³abym, abyœ poczeka³a gdzie indziej.~
+@67  = ~Mój b³¹d, zostañ ze mn¹.~
+@68  = ~Pewnie, ¿e zrobiê! Ksiê¿na Jannath pewnie bêdzie tego ¿a³owaæ... Nie szwendaj siê beze mnie za d³ugo, dobrze?~
+
+/* duke_eltan.d */
+@70  = ~Uratowa³eœ nas. Miasto jest ci wdziêczne.~ ~Uratowa³aœ nas. Miasto jest ci wdziêczne.~
+/* new for v7 */
+@71  = ~Mi³ego dnia ¿yczê.~
+
+/* ffhealer.d */
+@80  = ~<CHARNAME>! Ksi¹¿êta przys³ali nas, abyœmy sprawdzili jak ci idzie. Zajmiemy siê te¿ cia³em Sarevoka i jego s³ugusów.~
+@81  = ~Czy chcesz, abym ciê uleczy³? Mogê równie¿ rozbroiæ pozosta³e pu³apki.~
+@82  = ~Tak, zrób to proszê.~
+@83  = ~Nie dziêki, sam sobie z tym poradzê.~
+       ~Nie dziêki, sama sobie z tym poradzê.~
+@84  = ~To by³ wspania³y czyn dla miasta. Wróæ do pa³acu i porozmawiaj z Ksiêciem, na pewno chce ci podziêkowaæ. Bywaj zdrów.~
+@85  = ~Z przyjemnoœci¹. Nie ruszaj siê przez chwilê...~
+@86  = ~To powinno za³atwiæ sprawê.~
+
+/* elminster.d */
+@90  = ~Nasze drogi krzy¿uj¹ siê raz jeszcze, m³odzie¿y. Dowiedzia³eœ siê o swoim boskim pochodzeniu, ale nie tylko... Musia³eœ tak¿e zabiæ swojego brata. Tym samym uwolni³eœ Wybrze¿e Mieczy od wielkiego z³a. Pytanie brzmi, jak¹ teraz œcie¿kê obierzesz? Czy poddasz siê z³u swojej krwi? B¹dŸ pewny, ¿e s¹ dobrzy ludzie, którzy obserwuj¹ to co siê dzieje. Obserwuj¹ oni tak¿e ciebie, <CHARNAME>, i s¹ gotowi na wszystko, co przyniesie przysz³oœæ. ¯yczê ci jak najlepiej, dzieciê Bhaala. Niech bogowie ciê b³ogos³awi¹.~
+       ~Nasze drogi krzy¿uj¹ siê raz jeszcze, m³odzie¿y. Dowiedzia³aœ siê o swoim boskim pochodzeniu, ale nie tylko... Musia³aœ tak¿e zabiæ swojego brata. Tym samym uwolni³aœ Wybrze¿e Mieczy od wielkiego z³a. Pytanie brzmi, jak¹ teraz œcie¿kê obierzesz? Czy poddasz siê z³u swojej krwi? B¹dŸ pewna, ¿e s¹ dobrzy ludzie, którzy obserwuj¹ to co siê dzieje. Obserwuj¹ oni tak¿e ciebie, <CHARNAME>, i s¹ gotowi na wszystko, co przyniesie przysz³oœæ. ¯yczê ci jak najlepiej, dzieciê Bhaala. Niech bogowie ciê b³ogos³awi¹.~
+
+/* new for v2 */
+// #12741
+@91  = ~Witaj! Wydaje siê, ¿e twoje podró¿e obróci³y siê mimo wszystko na dobre. Jednak¿e nie oczekiwa³bym wielu pochwa³ za zabicie Sarevoka. S¹dzê, ¿e ca³y ten incydent zostanie raczej jak najszybciej wyciszony. Jednak wielu znanych i szanowanych obywateli Krain wie o twych zas³ugach i jest ci wdziêczna. Muszê ciê jednak przestrzec, przyjacielu. Ci sami szacowni obywatele uwa¿nie ciê obserwuj¹. Postaraj siê nie sprawiæ takich k³opotów jak twój brat, gdy¿ w takim wypadku inna grupa m³odych bohaterów bêdzie musia³a zaj¹æ siê w³aœnie tob¹. Niech szczêœcie ci sprzyja.~
+       ~Witaj! Wydaje siê, ¿e twoje podró¿e obróci³y siê mimo wszystko na dobre. Jednak¿e nie oczekiwa³bym wielu pochwa³ za zabicie Sarevoka. S¹dzê, ¿e ca³y ten incydent zostanie raczej jak najszybciej wyciszony. Jednak wielu znanych i szanowanych obywateli Krain wie o twych zas³ugach i jest ci wdziêczna. Muszê ciê jednak przestrzec, przyjació³ko. Ci sami szacowni obywatele uwa¿nie ciê obserwuj¹. Postaraj siê nie sprawiæ takich k³opotów jak twój brat, gdy¿ w takim wypadku inna grupa m³odych bohaterów bêdzie musia³a zaj¹æ siê w³aœnie tob¹. Niech szczêœcie ci sprzyja.~
+// #12742
+@92  = ~Widzê, ¿e przebrn¹³eœ przez zastawione na ciebie pu³apki i podo³a³eœ próbom. Nie mogê jednak powiedzieæ, bym by³ ca³kowicie zadowolony z twojego postêpowania. Zniszczenie Sarevoka to ma³e pocieszenie, jeœli zamierzasz pójœæ w jego œlady. Rozwa¿ dok³adnie, co zamierzasz uczyniæ. Nie chcia³bym widzieæ, ¿e koñczysz tak samo, jak twój nies³awnej pamiêci brat.~
+       ~Widzê, ¿e przebrnê³aœ przez zastawione na ciebie pu³apki i podo³a³aœ próbom. Nie mogê jednak powiedzieæ, bym by³ ca³kowicie zadowolony z twojego postêpowania. Zniszczenie Sarevoka to ma³e pocieszenie, jeœli zamierzasz pójœæ w jego œlady. Rozwa¿ dok³adnie, co zamierzasz uczyniæ. Nie chcia³bym widzieæ, ¿e koñczysz tak samo, jak twój nies³awnej pamiêci brat.~
+// #12743
+@93  = ~Witaj! S³awetny koniec tak nieprzyjemnej przygody, nieprawda¿? Na twoim miejscu nie spodziewa³bym siê podziêkowañ za w³o¿ony wysi³ek, bo sprawa zostanie wyciszona najszybciej jak to tylko mo¿liwe. Jednak wielu mieszkañców Krain wie o bitwie, która siê rozegra³a, i œledzi twe kroki. Wielkie z³o zosta³o wyplenione i pozwól nam cieszyæ siê nadziej¹, ¿e inni obarczeni tym nieszczêsnym dziedzictwem nie wybior¹ podobnej drogi.~
+
+/* dialogues_sarevoksword_bgt.d */
+@100  = ~Jest mi potwornie przykro ale muszê byæ pos³uszny mojemu panu i zabraæ ten miecz od ciebie... Ah, haha, mój pan nie bêdzie zbytnio zadowolony widz¹c miecz w tym stanie. Dobrze wiêc, chyba ju¿ wiem nad czym spêdzê mój najbli¿szy czas. <CHARNAME>, mo¿liwe, ¿e spotkamy siê kiedyœ w innych okolicznoœciach. Bywaj.~
+
+/* dialogues_sarevoksword_ee.d */
+@110  = ~Na pocz¹tek, zgodnie z proœb¹, pozwól mi oddaæ miecz Sarevoka.~
+@111  = ~Wygl¹da na to, ¿e Sarevok by³ mocno przywi¹zany do swojego miecza i zrobi³ z niego bardzo potê¿ny orê¿.~
+@112  = ~Widzê tak¿e, ¿e zabra³eœ jego zbrojê. Powinna pozostaæ twoja, jednak chcia³bym ciê tylko ostrzec przed u¿ywaniem jej. Pokazywanie siê publicznie w tak mrocznej i groŸnej zbroi mo¿e wywo³aæ niefortunne podejrzenia wœród ludu.~
+        ~Widzê tak¿e, ¿e zabra³aœ jego zbrojê. Powinna pozostaæ twoja, jednak chcia³bym ciê tylko ostrzec przed u¿ywaniem jej. Pokazywanie siê publicznie w tak mrocznej i groŸnej zbroi mo¿e wywo³aæ niefortunne podejrzenia wœród ludu.~
+@113  = ~Chcielibyœmy zatrzymaæ i zabezpieczyæ miecz. Jeœli odda³byœ go nam, bylibyœmy wdziêczni. W zamian odpowiednio ciê wynagrodzimy.~
+        ~Chcielibyœmy zatrzymaæ i zabezpieczyæ miecz. Jeœli odda³abyœ go nam, bylibyœmy wdziêczni. W zamian odpowiednio ciê wynagrodzimy.~
+@114  = ~W rzeczy samej! Sam jestem ciekaw tej potê¿nie umagicznionej broni ale tak¿e o du¿ym znaczeniu symbolicznym dla jego zwolenników. Zaczekaj... teraz widzê, ¿e miecz straci³ znaczn¹ czêœæ swojej mocy i w obecnym stanie nie jest ju¿ do u¿ytku. Tym lepiej, gdy¿ ktokolwiek kto chcia³by w³adaæ tym mieczem i wejœæ w buty Sarevoka bêdzie musia³ zap³aciæ sporo z³ota, a¿eby przywróciæ choæ trochê jego dawnej mocy.~
+@115  = ~Niemniej jednak, ma on wielkie znaczenie symboliczne dla jego pozosta³ych zwolenników. Musimy go dobrze strzec, gdy¿ z pewnoœci¹ bedzie atrakcyjny dla wielu z³odziei. Dziêkujê ci, <CHARNAME>, ¿e obdarowa³eœ nas tym mieczem i da³eœ szansê, ¿eby usun¹æ ten z³owrogi symbol z Krain. W zamian, pozwól mi wrêczyæ ci ten oto miecz, jak równie¿ tê ma³¹ sumkê w z³ocie. Niech to bêdzie symbol naszej wdziêcznoœci.~
+        ~Niemniej jednak, ma on wielkie znaczenie symboliczne dla jego pozosta³ych zwolenników. Musimy go dobrze strzec, gdy¿ z pewnoœci¹ bedzie atrakcyjny dla wielu z³odziei. Dziêkujê ci, <CHARNAME>, ¿e obdarowa³aœ nas tym mieczem i da³aœ szansê, ¿eby usun¹æ ten z³owrogi symbol z Krain. W zamian, pozwól mi wrêczyæ ci ten oto miecz, jak równie¿ tê ma³¹ sumkê w z³ocie. Niech to bêdzie symbol naszej wdziêcznoœci.~
+
+/* refugees_sod.d */
+@120  = ~Pokonaliœmy ca³¹ tê drogê z Wysokiego Wrzosowiska a¿ tutaj, poniewa¿ oni spalili nasze farmy. Nie wiemy kim oni s¹ ale wiemy, ¿e wci¹¿ gdzieœ tam s¹, a ich liczba ci¹gle roœnie. Czy ktoœ we Wrotach nam pomo¿e? Nigdy nie podró¿owaliœmy a¿ tak dalego na po³udnie, ale nie czujemy siê bezpiecznie poza murami wielkiego miasta.~
+@121  = ~Po tym jak zabrali nam ca³y dobytek, oni wszystko spalili. Dlaczego ktoœ mia³by to robiæ?~
+@122  = ~Tak wielu z³ych ludzi, którzy zniszczyli wszystko na swojej drodze. Mam nadziejê, ¿e jesteœmy bezpieczni tutaj na po³udniu.~
+@123  = ~Zapytali nas czy do³¹czymy do nich, po czym zaczêli szaleæ i zabijaæ... Uciekliœmy bior¹æ ze sob¹ co tylko uda³o nam siê unieœæ.~
+@124  = ~Oni zniszczyli ca³¹ wioskê... i nawet nie chcê wiedzieæ co zrobili mieszkañcom, którym nie uda³o sie uciec na czas!~
+@125  = ~Do³¹cz do nich! Do³¹cz do nich! Do krucjaty grabie¿y i zabijania! Ci mordercy chcieli, abyœmy do nich do³¹czyli! Uciekaliœmy tak szybko jak tylko mogliœmy.~
+@126  = ~Mamooooo! Ten obcy mówi coœ do mnie!~ ~Mamooooo! Ta obca mówi coœ do mnie!~
+@127  = ~Moja lalka zgubi³a siê po drodze.~
+@128  = ~Chcê do domu.~
+
+/* denkod.d */
+@140  = ~Wróci³eœ!~ ~Wróci³aœ!~
+@141  = ~Muszê to powiedzieæ ale uwa¿aj z noszeniem tego. Przez chwilê pomyœla³em, ¿e to by³ on! Prawie wyci¹gn¹³em mój sztylet, nie k³amiê.~
+@142  = ~Z reszt¹ nie uwierzysz co tu siê wydarzy³o kilka minut temu. Najemnicy P³omiennej Piêœci najpierw przeszli przez gildiê, ignoruj¹c nas wszystkich, a nastêpnie tak samo szybko wyszli.~
+@143  = ~Wygl¹da na to, ¿e impreza na dole siê skoñczy³a, hê? Wykoñczy³eœ tego uzbrojonego jegomoœcia, czy on te¿ zaraz tu przyjdzie? Zamierzam zmieniæ miejscówkê na spokojniejsz¹, przynajmniej na razie. Za du¿y tutaj ruch jak na mój gust.~
+        ~Wygl¹da na to, ¿e impreza na dole siê skoñczy³a, hê? Wykoñczy³aœ tego uzbrojonego jegomoœcia, czy on te¿ zaraz tu przyjdzie? Zamierzam zmieniæ miejscówkê na spokojniejsz¹, przynajmniej na razie. Za du¿y tutaj ruch jak na mój gust.~
+
+/* ophyllis_sod.d */
+@150 = ~O, <CHARNAME>! Bardzo mi mi³o ciê poznaæ. Jestem Ophyllis, ksi¹¿êcy skarbnik. Przechowam twoje z³oto, kiedy po³¹czysz si³y z P³omienn¹ Piêœci¹ w pogoni za pozosta³ymi zwolennikami Sarevoka.~
+@151 = ~Ksi¹¿êcy skarbnik? Brzmi jakby to by³a praca z wielk¹ odpowiedzialnoœci¹.~
+@152 = ~Przechowasz moje z³oto? Dlaczego?~
+@153 = ~Co jeœli nie zechcê oddaæ tobie mojego z³ota?~
+@154 = ~Wiem kim jesteœ. Mi³ego dnia.~
+@155 = ~O, jest w rzeczy samej. Haha. Ksi¹¿êta ufaj¹ mi bezgranicznie. Wiedz¹, ¿e nigdy nie wzi¹³bym czegokolwiek ze skarbca dla w³aœnej korzyœci!~
+@156 = ~Obawiam siê, ¿e to rozkaz Ksi¹¿¹t. Po za tym, nikt maszeruj¹cy u boku P³omiennej Piêœci nie powinien martwiæ siê o swoje bagactwa. Jeœli mam byæ szczery, to myœlê, ¿e Ksi¹¿êtom spodoba³ siê pomys³ ograniczenia wydawania z³ota na nieoficjalne wizyty w knajpach, ekhm.~
+@157 = ~W takim razie przechowam twoje z³oto. Nie ma na tê chwilê powodów do zmartwienia. Haha, muszê przygotowaæ siê na przyjêcie twojego z³ota, gdy¿ informacja o tym przysz³a do mnie dos³ownie chwilê temu.~
+@158 = ~Porozmawiamy, gdy ju¿ do³¹czysz do P³omiennej Piêœci. Do tego czasu, ¿yczê zdrowia.~
+@159 = ~Pozdrowienia, <CHARNAME>. Jeœli szukasz Ophyllisa, to powinien byæ w swoim biurze.~
+

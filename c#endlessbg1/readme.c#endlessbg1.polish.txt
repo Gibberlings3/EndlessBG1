@@ -1,0 +1,299 @@
+-------------------------------------------------
+---         Baldur's Gate 1 Bez Koñca         ---
+---             Autorstwa jastey              ---
+---          T³umaczenie Roberciiik           ---
+---    Dla gier BG:EE, BG:SoD, BGT oraz EET   ---
+-------------------------------------------------
+
+INFORMACJE OGÓLNE:
+
+
+Dla gier na silniku Enhanced Edition, g³ównym zadaniem tej modyfikacji jest umo¿liwienie pozostania w œwiecie BG1 po œmierci Sarevoka. W³aœciwa kontynuacja lub zakoñczenie gry odbywa siê po rozmowie z Ksiêciem Beltem w Pa³acu Ksi¹¿êcym.
+
+Dla EET, mod pozwala na przejœcie do BGII z ca³kowitym pominiêciem dodatku Oblê¿enie Smoczej W³óczni/SoD. Opcja ta zosta³a dodana, poniewa¿ by³a ³atwa do dodania a nie dlatego, ¿e powinno siê pomin¹æ dodatek. (Nale¿y mieæ na uwadze to, i¿ mog¹ byæ mody, które oczekuj¹ jakiœ zdarzeñ z dodatku, aby móc je kontynuowaæ w BGII.)
+
+Dla BGT, g³ówny komponent modyfikacji dodaje do dialogu Ksiêcia Belta kilka pochwa³ dla gracza i usuwa pewne niedopatrzenia dialogów w odniesieniu do Sarevoka po jego œmierci.
+
+Modyfikacja oferuje tak¿e kilka opcjonalnych komponentów, które dodaj¹ wiêcej smaczków co do sytuacji we Wrotach i przygotowuj¹ œwiat do wydarzeñ z Oblê¿enia Smoczej W³óczni. Dodatkowa zawartoœæ jest inspirowana tym jak wygl¹daj¹ Wrota Baldura w SoD. Te komponenty s¹ dostêpne tylko dla wersji SoD/EET.
+
+
+OPIS KOMPNENTÓW:
+
+1. BG1 Bez Koñca: komponent g³ówny (wymagany)
+-----------------------------------
+
+Dla BG:EE, BG:SoD oraz EET, ten komponent dodaje nastêpuj¹ce elementy:
+
+- Gra nie koñczy siê/nie przenosi do SoD po œmierci Sarevoka. Po filmie prezentuj¹cym œmieræ Sarevoka, gra jest kontynuowana w œwi¹tyni w Podziemnym Mieœcie.
+- Dodaje dodatkowe dialogi dla Ksiê¿nej Jannath (jeœli wci¹¿ ¿yje).
+- Usuwa odniesienia do Sarevoka w rozmowach z mieszkañcami Wrót po jego œmierci. Treœci s¹ delikatn¹ modyfikacj¹ ju¿ istniej¹cych odpowiedzi jednak w odniesieniu do œmierci Sarevoka.
+- Drzwi Pa³acu Ksi¹¿êcego pozostan¹ otwarte.
+- Ksi¹¿ê Belt pozostanie ¿ywy i bêdzie w Pa³acu Ksi¹¿êcym.
+- Ksi¹¿ê Belt og³osi gracza jako Bohatera Wrót Baldura.
+- Podczas rozmowy z Ksiêciem Beltem, gracz mo¿e zdecydowaæ czy:
+    - Pozostanie w œwiecie BG1
+    - Opuœci œwiat BG1 i pójdzie dalej zgodnie z instancj¹ gry (dla BG:EE bêdzie to koniec gry; dla SoD/EET: rozpocznie siê kampania SoD).
+    - Pominie ca³kowicie dodatek SoD i zacznie BGII (tylko dla EET).
+
+Dla BGT, ten komponent usuwa pewne niedopatrzenia dalogów w odniesieniu do Sarevoka po jego œmierci.
+
+
+2. Uk³on dla bohatera Wrot Baldura (rezydencja w pa³acu)
+-----------------------------------
+
+Dla wszystkich gier: Ksi¹¿ê Belt oferuje bohaterowi prywatny pokój na trzecim piêtrze pa³acu.
+
+Dla BGT: komponent dodatkowo dodaje kilka nowych linijek do dialogu z Ksiêciem Beltem okreœlaj¹cych gracza jako bohatera Wrót Baldura.
+
+Pokój na trzecim piêtrze pa³acu, po³o¿ony na pó³nocno-zachodniej stronie, zostanie przypisany dla g³ównego bohatera.
+
+S³u¿ba w pa³acu poinstruuje gracza jak korzystaæ z prywatnej skrzyni (jest to ta sama skrzynia wykorzystywana w SoD przed wyruszeniem do pierwszego obozu). Ta skrzynia (znajduj¹ca siê najbardziej na lewo) nie bêdzie ju¿ zamkniêta. W przypadku SoD/EET, zawartoœæ zostanie automatycznie przeniesiona do "tej samej" skrzyni podczas kampanii SoD (na obszarze bd0103.are). Dla gier na silniku EE, wszystkie skrzynie w pokoju g³ównego bohatera zostan¹ opró¿nione a zawartoœæ bêdzie w szafce na drugim poziomie pa³acu.
+
+Ten komponent zmienia tak¿e wypowiedzi stra¿ników wewn¹trz pa³acu na coœ bardziej przyjaznego (ochrona w piwnicy nie bêdzie atakowaæ gracza) oraz dodaje przyjaznego stra¿nika przed wejœciem do pa³acu.
+
+
+3. Krótki publiczny ho³d dla bohatera Wrót Baldura (tylko dla SoD/EET)
+-----------------------------------
+
+Ten komponent w wersji v3 zosta³ wydzielony z komponentu "Uk³on dla bohatera Wrot Baldura" jako opcjonalny i jest tylko dla gier SoD/EET. Komponent "Uk³on dla bohatera Wrót Baldura" jest wymagany.
+
+Wraz z tym komponentem, og³oszenie g³ównego bohatera jako "bohatera Wrót Baldura" odbêdzie siê publicznie na mównicy znanej z SoD (jest to naprawdê krótka cutscenka).
+
+
+4. Unikatowe wyposa¿enie Sarevoka
+-----------------------------------
+
+Ten komponent dodaje unikalne przedmioty do podniesienia po œmierci Sarevoka - jego zbroja i he³m.
+
+Zbroja zapewnia KP -1 oraz 30% do odpornoœci na magiê. Waga zbroi to 70.
+
+He³m zapewnia nastêpne 5% odpornoœci na magiê.
+
+Po zabiciu Sarevoka przedmioty bêd¹ mo¿liwe do podniesienia. 
+
+Pliki BAM dla zbroi oraz he³mu zosta³y stworzone przez Tantalus dla modyfikacji "Sarevok Recovery Mod", na licencji "Creative Commons".
+Licencja: CC BY-NC-SA 3.0. ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
+Link do modyfikacji "Sarevok Recovery Mod": http://www.baldursgate-refugium.de/mods/sarevok-wiederherstellung/
+
+
+5. Miecz Sarevoka
+-----------------------------------
+
+Ten komponent dodaje miecz Sarevoka. Miecz jest mo¿liwy do podniesienia po œmierci Sarevoka. Nie mo¿na w³adaæ tym mieczem, jest to tylko przedmiot fabularny.
+
+Dla BGT, miecz Sarevoka zostanie skradziony na koniec labiryntu przez kogoœ, kogo bêdzie mo¿na spotkaæ powtórnie w BGII. (W odniesieniu do tego co mówi d¿in o mieczu w BGII.)
+
+Dla gier EE, miecz Sarevoka mo¿e zostaæ przekazany dla Ksi¹¿¹t. (W odniesieniu do SoD, gdzie zostaniemy poinformowani o kradzie¿y miecza z pa³acu.)
+
+
+6. Imoen i Ksiê¿na Liia Jannath (Imoen otrzymuje rezydencje w palacu) 
+-----------------------------------
+
+Ten komponent spowoduje, ¿e Ksiê¿na Jannath bêdzie ¿ywa i dostêpna w pa³acu. Ponadto porozmawia trochê z Imoen o mo¿liwoœci rozpoczêcia treningu magicznego.
+
+Na trzecim piêtrze pa³acu, Imoen otrzyma swój pokój, znajduj¹cy siê w po³udniowo-wschodniej czêœci. Jeœli jest w dru¿ynie, s³u¿ba powita j¹ i powie o w³asnej skrytce, tej najbardziej na lewo w pokoju Imoen ("Skrytka Imoen" w SoD). Skrzynia nie bêdzie zamkniêta. Dla gier EE, zawartoœæ pozosta³ych skrytek zostanie przeniesiona do szafki na drugim poziomie pa³acu. W przypadku SoD/EET, zawartoœæ zostanie automatycznie przeniesiona do "tej samej" skrzyni podczas kampanii SoD.
+
+W przypadku gdy Imoen nie by³a w dru¿ynie, bêdzie ona zajmowaæ pokój w Pa³acu Ksi¹¿êcym i powie g³ównemu bohaterowi o swojej skrytce osobiœcie.
+
+OdpowiedŸ Imoen w przypadku wyrzucenia z dru¿yny zosta³a zmieniona w kontekœcie zajmowanej przez ni¹ rezydencji. Po otrzymaniu swojego pokoju, mo¿na wys³aæ Imoen do pa³acu w momencie wyrzucenia jej z dru¿yny. Powinno to byæ kompatybilne z innymi modami typu "wyœij NPC, aby czeka³ gdzieœ tam". Mo¿na wybraæ równie¿ tradycyjne opcje dialogowe, jeœli gracz nie chce wysy³aæ jej do pa³acu.
+
+
+7. Ksi¹¿ê Eltan w pa³acu 
+-----------------------------------
+
+Po zainstalowaniu tego komponentu, Ksi¹¿ê Eltan tak¿e bêdzie ¿ywy oraz w pa³acu. Ten komponent usuwa tak¿e Ksiêcia Eltana z budynku kapitanatu w przypadku gdyby by³ tam z powodu innych modów tj. bg1re czy bg1ub.
+
+Aby zapewniæ kompatybilnoœæ z komponentem "Powrót Scara" modyfikacji bg1re, nale¿y zainstalowaæ bg1re w wersji v3.0 lub nowszej. W takim przypadku mo¿na ukoñczyæ a nawet rozpocz¹æ ca³e bonusowe zadanie z bg1re po œmierci Sarevoka poprzez porozmaiwanie z Ksiêciem Eltanem w pa³acu. Nie ma ju¿ wymogu dotycz¹cego rozpoczêcia zadania przed œmierci¹ Sarevoka.
+
+Informacja o kompatybilnoœci dla modderów: ten komponent wprowadza nowy plik "C#STELTA.cre", który posiada DV "ELTAN" i plik dialogu "DELATAN2.dlg" z ustawionym stanem na "always true" z linijk¹ "~Uratowa³eœ nas. Miasto jest ci wdziêczne.~" wywo³ywan¹ przez ~Dead("Sarevok")~.
+
+NIE DODAWAJ w swojej modyfikacji opcji dialogowych dla Ksiêcia Eltana mówi¹cych "~Uratowa³eœ nas. Miasto jest ci wdziêczne.~" albo kompatybilnoœæ zostanie zepsuta.
+
+Mo¿esz dodaæ odpowiedzi na to zdanie z EBG1 jeœli nowa modyfikacja bêdzie zainstalowana póŸniej.
+W celu okreœlenia jaki jest numer stanu tego zdania w DELTAN2.dlg, mo¿na wykorzystaæ poni¿szy kod w pliku tp2, wraz ze zmienn¹ %deltan2_70%, która jest wartoœci¹ stanu dialogowego: 
+
+//----code to determine a state number---
+// Get state for DELTAN2 %deltan2_70% 
+/* ~You saved us. You have the gratitude of the city.~ */
+OUTER_SET deltan2_70 = STATE_WHICH_SAYS 70 IN ~c#endlessbg1/translations/%s/DIALOGUES.TRA~ FROM ~DELTAN2~
+//---------------------------------------
+
+
+8. Uzdrowiciel P³omiennej Piêœci przyjdzie do œwiatyni w Podziemnym Mieœcie
+-----------------------------------
+
+Po pokonaniu Sarevoka i jego trzech pomocników w œwi¹tyni Bhaala, Uzdrowiciel i Zwiadowca P³omiennej Piêœci przyjd¹ do œwi¹tyni w celu zabrania cia³. Oferuj¹ równie¿ uzdrowienie i wskrzeszenie cz³onków dru¿yny a tak¿e rozbrojenie pu³apek na symbolu Bhaala. Nale¿y zauwa¿yæ, ¿e nie wp³ywa to na pojawianie siê Horrorów Bitewnych aktywowanych przez wyzwalacz. Gracz mo¿e zrezygnowaæ z ich oferty.
+
+
+9. Spotkanie z Elminsterem
+-----------------------------------
+
+Elminster jeszcze raz pojawi na drodze gracza przy pa³acu.
+S¹ dwie opcje instalacyjne:
+1 - Wersja od jastey (to¿sama z wersj¹ 1 modyfikacji EBG1)
+2 - Wersja przywrócona z dialogów BG1 (przywraca oryginalne i nieu¿ywane wypowiedzi z BG1)
+
+
+10. UchodŸcy z pó³nocy przybêd¹ do Wrót Baldura (tylko SoD/EET)
+-----------------------------------
+
+UchodŸcy zaczn¹ przybywaæ do Wrót przed Pa³ac Ksi¹¿êcy i opowiedz¹ o problemach na pó³nocy. Bêd¹ trzy fale uchodŸców, co dziesiêæ dni w grze. Wszyscy bêd¹ pojawiaæ siê przy pa³acu, wiêc jest to bardziej kosmetyczna zmiana i nie spowoduje zalania ulicy uchodŸcami tak jak ma to miejsce w SoD.
+
+
+11. Skarbnik Ophyllis bêdzie w podziemiach pa³acu (tylko SoD/EET)
+-----------------------------------
+
+Skarbnik Ophyllis, znany z SoD, bêdzie znajdowaæ sie w pa³acowych piwnicach. Bêdzie w swoim ma³ym biurze i bêdzie przygotowywa³ siê do przejêcia z³ota nale¿¹cego do gracza zgodnie z rozkazami Ksi¹¿¹t. Przekazanie z³ota nie nast¹pi dopóki gracz znajduje siê w BG1.
+
+
+12. Komentarz Denkoda w Gildii Z³odziei Cienia o œmierci Sarevoka
+-----------------------------------
+
+Denkod w Gildii Z³odziei Cienia, który powiedzia³ wczeœniej gdzie poszed³ Sarevok, wci¹¿ bêdzie na miejscu i porozmawia z g³ównym bohaterem po jego powrocie z Podziemnego Miasta.
+
+
+13. Pomiñ labirynt z³odziei w drodze powrotnej po zabiciu Sarevoka
+-----------------------------------
+
+Po zabiciu Sarevoka, wyjœcie z Podziemnego Miasta pominie labirynt z³odziei i pozwoli na przejœcie bezpoœrednio do Gildii Z³odziei. Przejœcie do labiryntu zostanie przywrócone po powrotnym wejœciu tamt¹ drog¹.
+
+
+INSTALACJA:
+
+Uwaga: jeœli masz ju¿ zainstalowany ten mod, usuñ go przed rozpakowaniem nowej wersji. W tym celu nale¿y odinstalowaæ wszystkie poprzednie komponenty i usun¹æ folder z modem z folderu gry.
+
+Podczas instalowania/odinstalowania nie nale¿y zamykaæ okienka DOS poprzez przycisk X. Zamiast tego nale¿y wcisn¹æ Enter w momencie gdy proœba o to pojawi siê na ekranie.
+
+BG:EE
+Jeœli u¿ywasz dodatku SoD z platformy GOG lub Steam, nale¿y przygotowaæ swoj¹ grê przed instalacj¹ modyfikacji. W tym celu nale¿y zainstalwaæ DLC Merger lub Modmerge.
+DLC Merger od argent77:
+https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game
+
+modmerge (w razie w¹tpliwoœci skorzystaj z DLC Merger):
+https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1
+
+Instrukcje ogólne (dla systemu Windows, Mac OS X i Linux)
+
+Wypakuj zawartoœæ archiwum z modyfikacj¹ do g³ównego katalogu z gr¹.
+Uwaga: w przypadku Enhanced Edition wa¿ne jest, aby zainstalowaæ modyfikacjê w jêzyku w którym bêdziesz graæ. W innym wypadku, dialogi w grze nie bêd¹ siê pojawiaæ tylko bêd¹ pokazywaæ b³êdy.
+
+
+Windows
+Po udanym wypakowaniu, pojawi siê folder c#endlessbg1 i plik setup-c#endlessbg1.exe w folderze z gr¹.
+¯eby rozpocz¹æ instalacjê wystarczy uruchomiæ setup-c#endlessbg1.exe i postêpowaæ zgodnie z instrukcjami na ekranie.
+Uruchom ponownie setup-c#endlessbg1.exe z poziomu folderu z gr¹, aby przeinstalowaæ modyfikacjê, odinstalowaæ lub zmieniæ komponenty.
+
+Mac OS X
+Tweak Pack jest do³¹czony i zainstalowany wraz z WeiDU. Aby zainstalowaæ, wypakuj zawartoœæ archiwum z modyfikacj¹ do g³ównego katalogu z gr¹ (folder zawieraj¹cy plik CHITIN.KEY).
+Po udanym wypakowaniu, pojawi siê folder c#endlessbg1 i pliki setup-c#endlessbg1 oraz setup-c#endlessbg1.command w folderze z gr¹.
+¯eby rozpocz¹æ instalacjê wystarczy uruchomiæ setup-c#endlessbg1.command i postêpowaæ zgodnie z instrukcjami na ekranie.
+
+Linux
+Wypakuj zawartoœæ archiwum z modyfikacj¹ do g³ównego katalogu z gr¹, któr¹ ¿yczysz sobie modyfikowaæ. Pobierz najnowsz¹ wersjê WeiDU dla Linuxa ze strony https://github.com/WeiDUorg/weidu/releases nastêpnie skopiuj WeiDU i WeInstall do katalogu /usr/bin. Nastêpnie otwórz terminal i przejdŸ komend¹ "cd" do katalogu z gr¹. Uruchom 'tolower' i odpowiedz 'Y' na oba zapytania. Mo¿esz omin¹æ drug¹ opcjê (linux.ini) jeœli choæ raz uruchomi³eœ j¹ w tym samym katalogu. Jeœli nie wiesz, po prostu uruchom tolower i wybierz obie opcje.
+Uruchom WeInstall c#endlessbg1 w folderze z gr¹, aby zainstalowaæ modyfikacjê. Nastêpnie uruchom wine BGMain.exe i zacznij graæ.
+ 
+
+Uwaga: Gry BG(II):EE s¹ wci¹¿ aktywnie rozwijane. Nale¿y pamiêtaæ, ¿e ka¿dy patch lub aktualizacja gry zepsuje aktualn¹ instalacjê modyfikacji!
+Jeœli w trakcie gry postanowisz zainstalowaæ aktualizacjê gry a nastêpnie przeinstalowaæ modyfikacje, stare zapisy gry mog¹ nie dzia³aæ poprawnie.
+Jeœli masz problem z instalacj¹ lub znalaz³eœ/aœ b³¹d, proszê zg³oœ to w jednym z w¹tków na forum.
+
+
+KOMPATYBILNOŒÆ:
+
+Modyfikacja BG1 Bez Koñca (Endless BG1) ustawia zmienn¹ "Global("C#EndlessBG1","GLOBAL",1)" w Gildii Z³odziei (po walce w pa³acu) dla modyfikacji (np. tych dodaj¹cych NPC) tak aby wiedzia³y, ¿e gra pozostanie w œwiecie BG1 po œmierci Sarevoka.
+
+Modyfikacja jest w pe³ni kompatybilna z modyfikacj¹ Transitions jeœli zosta³a zainstalowana przed Transitions.
+
+
+CREDITS:
+
+Acifer: pomys³y.
+BeamDog / Overhaul Games: za stworzenie SoD sk¹d czerpano pomys³y na now¹ zawartoœæ dla tego moda.
+Tantalus: pliki BAM przedmiotów Sarevoka. Pliki BAM wziête z modyfikacji Tantalus o nazwie "Sarevok Recovery Mod", na licencji "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
+
+
+WYKORZYSTANE NARZÊDZIA I ZASOBY:
+
+
+Modyfikacja BG1 Bez Koñca (Endless BG1) zosta³a stworzona za pomoc¹ zasobów dostêpnych dziêki IESDP (https://gibberlings3.github.io/iesdp/index.htm) i za pomoc¹ nastêuj¹cego oprogramowania:
+
+Near Infinity - https://github.com/Argent77/NearInfinity/releases/latest
+WeiDU - http://www.weidu.org
+grepWin - http://tools.stefankueng.com/grepWin.html
+
+Modding communities, tutorials and technical assistance:
+
+Kerzenburgforum - https://www.baldurs-gate.de/index.php
+The Gibberlings Three - http://gibberlings3.net
+Pocket Plane Group - http://pocketplane.net
+Spellhold Studios - http://www.shsforums.net/
+
+
+HISTORIA ZMIAN:
+
+Version 6.1:
+-Lines in ffhealer.tpa and refugees_sod.tpa traified
+-added install order syntax to support Project Infinity
+
+Version 6:
+-compatibility with Transitions beta 0.4
+
+Version 5:
+-compatibility with Transitions
+-ebg1 considers Transitions' versions of Sarevok Items in Duke Belt's and Denkod's dialogue
+-typo corrections in readme and setup.tra by Mike1072
+
+Version 4:
+-Russian translation added by Austin, Arkie & Arcanecoast.ru
+-Component "Flaming Fist Healer come into Undercity Temple": FF should not die if area effects are still active, changed text slightly for compatibility with "remove traps" tweak mods.
+
+Version 3.1
+-fixed install error for some BGT installs
+
+Version 3
+-English version proof read by Lauriel
+-new component: "Skip Thieves Maze once after Sarevok's Death"
+-new component "Short Public Hero Tribute" splitted from "More Flavor to Hero of Baldur's Gate"
+-"Main component": upon transition to SoD, Duke Belt will not only tell the PC to follow him but also mention that the PC will seek out the last of Sarevok's followers; all nobles from coronation ceremony should be gone after Sarevok's death (added DestroySelf() to sarrun.bcs); quicker Fade To Black upon transition to SoD.
+-"Sarevok's Sword": Sword will be removed from PC's chest and inventory upon transition to SoD to simulate the theft; journal entries get properly applied to journal (EE); additional journal entries when PC hears about the stolen sword (SoD/EET) and when it is found in Irenicus Dungeon (BGT/EET).
+-"Duke Eltan is in the Palace": added full compatibility with bg1re's bonus quest "Scar's Return" (bg1re v3.0 or higher).
+-corrected component descriptions for BGT (1st & 2nd component).
+-added DESIGNATED and LABEL taggs.
+
+Version 2.1
+-fixed German tra bug
+
+Version 2
+-splitted former component "Sarevok's Items" into two and made the dropping and quest about Sarevok's Sword an own component "Sarevok's Sword" (for compatibility with other mods adding a sword to Sarevok, e.g. BGTTweaks). Component "Sarevok's Items" now only contains his armor and helmet.
+-"Elminster makes an Appearance" has two install options now: additionally to jastey's version from v1, it also offers the possibility to restore the original Elminster lines unused in the game.
+-"Imoen and Duke Jannath": Imoen can be sent to the Palace upon kickout. This should be compatible with other "sent NPC to wait somewhere" mods (calls higher weighted dialogue which circles back to the normal one if the PC doesn't want her to wait at the Palace)
+-"Imoen and Duke Jannath": Duke Jannath will have some random dialogue lines if talked to by Imoen.
+-"Denkod in Thieves Guild comments on Sarevok's Death": Denkod should be inside the thieves guild if Sarevok is dead
+-"Flaming Fist Healer come into Undercity Temple": FF healer takes away the bodies also if PC doesn't want help with healing; FF soldiers do not walk into the temple when they are leaving, FF healers do not do RandomWalk() while they can't see the PC.
+-Violeta in Thieves Maze should not be gone before Sarevok is dead.
+-(EE) Winski in Thieves Maze should be gone after Sarevok is dead.
+-EET: areas in Palace should not crash. Fixed container area names for EET (components "More Flavor to Hero of Baldur's Gate" and "Imoen and Duke Jannath")
+-(EE) Exit from Undercity Temple will only reappear and movie will play if all 4 foes are either dead or no longer present in the area.
+-added dialogue lines to Dukes in case they are talked to not by the PC if the PC is not inside as well.
+-slight changes to the lines in setup.tra (error message should say "component" instead of "mod")
+-mod will set the variable "Global("C#EndlessBG1","GLOBAL",1)" in the thieves guild (chapter 7 after Palce fight) for compatibility with (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
+-all lines trayfied.
+-minor internal tp2 changes (definition of Imoen's death variable now uses the standard one out of the cpmvar.tpa files).
+-added folder libiconv-1.9.2-1-src.7z with iconv licence info
+-added c#endlessbg1.ini with mod info
+
+
+Version 1
+-first public release
+
+
+INFORMACJE O LICENCJI
+
+============================================================================
+Endless BG1 Mod is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
+
+The mod uses BAM files from Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ ). The Sarevok Unique Items from the Endless BG1 Mod are therefore licensed under "Creative Commons" von Nicolas Peters.
+============================================================================
+
+
