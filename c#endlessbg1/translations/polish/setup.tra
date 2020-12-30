@@ -2,7 +2,7 @@
 @5001   = ~BG1 Bez Konca: komponent glowny (wymagany)~
 @5002   = ~Uklon dla bohatera Wrot Baldura (rezydencja w palacu)~
 @5003   = ~BG1 Bez Konca: wymagany jest komponent glowny~
-@5004   = ~Imoen i Ksiê¿na Liia Jannath (Imoen otrzymuje rezydencje w palacu)~
+@5004   = ~Imoen i Ksiezna Liia Jannath (Imoen otrzymuje rezydencje w palacu)~
 @5005   = ~Ksiaze Eltan w palacu~
 @5006   = ~Uzdrowiciel Plomiennej Piesci przyjdzie do swiatyni w Podziemnym Miescie~
 @5007   = ~Spotkanie z Elminsterem~
@@ -22,6 +22,6 @@
 @5019   = ~Komponent "BG1 Bez Konca: Uklon dla bohatera Wrot Baldura" jest wymagany przez ten komponent~
 
 /* new for v5 */
-@5020  = ~Komponent "Duke Eltan's Spare Minute" modyfikacji bg1re musi byæ zainstalowany po EBG1.~
-@5021  = ~Musisz zainstalowaæ EBG1 przed modem Transitions.~
-@5022  = ~Ten komponent EBG1 jest ju¿ zast¹piony przez mod Transitions.~
+@5020  = ~Komponent "Duke Eltan's Spare Minute" modyfikacji bg1re musi byc zainstalowany po EBG1.~
+@5021  = ~Musisz zainstalowac EBG1 przed modem Transitions.~
+@5022  = ~Ten komponent EBG1 jest juz zastapiony przez mod Transitions.~
