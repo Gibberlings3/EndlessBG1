@@ -68,6 +68,8 @@
 
 /* duke_eltan.d */
 @70  = ~Ihr habt uns vor großem Übel bewahrt. Die Stadt steht in Eurer Schuld.~
+/* new for v7 */
+@71  = ~Einen schönen Tag wünsche ich Euch allen.~
 
 /* ffhealer.d */
 @80  = ~<CHARNAME>! Die Herzöge haben uns zu Euch geschickt um nach Eurem Befinden zu sehen. Wir werden die gefallenen Feinde mit zurück in den Palast nehmen.~
