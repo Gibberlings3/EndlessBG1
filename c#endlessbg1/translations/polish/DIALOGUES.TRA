@@ -28,7 +28,7 @@
        ~Miasto jest ci d³u¿ne, bohaterko Wrót Baldura. Proszê za mn¹, ¿o³nierze P³omiennej Piêœci poprowadz¹ ciê do kryjówki jednego ze zwolenników Sarevoka.~
 
 /* pc_palaceresidence.d */
-@20  = ~Witaj, <CHARNAME>. Proszê opuœciæ piwnicê, nie powinienieœ tutaj schodziæ.~ ~Witaj, <CHARNAME>. Proszê opuœciæ piwnicê, nie powinnaœ tutaj schodziæ.~
+@20  = ~Witaj, <CHARNAME>. Proszê opuœciæ piwnicê, nie powinieneœ tutaj schodziæ.~ ~Witaj, <CHARNAME>. Proszê opuœciæ piwnicê, nie powinnaœ tutaj schodziæ.~
 @21  = ~Witaj, <CHARNAME>.~
 @22  = ~Uszanowanie, bohaterze Wrót Baldura.~ ~Uszanowanie, bohaterko Wrót Baldura.~
 @23  = ~<CHARNAME>, wejdŸ do œrodka. Ksi¹¿êta chc¹ z tob¹ porozmawiaæ.~
@@ -125,15 +125,15 @@
 @113  = ~Chcielibyœmy zatrzymaæ i zabezpieczyæ miecz. Jeœli odda³byœ go nam, bylibyœmy wdziêczni. W zamian odpowiednio ciê wynagrodzimy.~
         ~Chcielibyœmy zatrzymaæ i zabezpieczyæ miecz. Jeœli odda³abyœ go nam, bylibyœmy wdziêczni. W zamian odpowiednio ciê wynagrodzimy.~
 @114  = ~W rzeczy samej! Sam jestem ciekaw tej potê¿nie umagicznionej broni ale tak¿e o du¿ym znaczeniu symbolicznym dla jego zwolenników. Zaczekaj... teraz widzê, ¿e miecz straci³ znaczn¹ czêœæ swojej mocy i w obecnym stanie nie jest ju¿ do u¿ytku. Tym lepiej, gdy¿ ktokolwiek kto chcia³by w³adaæ tym mieczem i wejœæ w buty Sarevoka bêdzie musia³ zap³aciæ sporo z³ota, a¿eby przywróciæ choæ trochê jego dawnej mocy.~
-@115  = ~Niemniej jednak, ma on wielkie znaczenie symboliczne dla jego pozosta³ych zwolenników. Musimy go dobrze strzec, gdy¿ z pewnoœci¹ bedzie atrakcyjny dla wielu z³odziei. Dziêkujê ci, <CHARNAME>, ¿e obdarowa³eœ nas tym mieczem i da³eœ szansê, ¿eby usun¹æ ten z³owrogi symbol z Krain. W zamian, pozwól mi wrêczyæ ci ten oto miecz, jak równie¿ tê ma³¹ sumkê w z³ocie. Niech to bêdzie symbol naszej wdziêcznoœci.~
-        ~Niemniej jednak, ma on wielkie znaczenie symboliczne dla jego pozosta³ych zwolenników. Musimy go dobrze strzec, gdy¿ z pewnoœci¹ bedzie atrakcyjny dla wielu z³odziei. Dziêkujê ci, <CHARNAME>, ¿e obdarowa³aœ nas tym mieczem i da³aœ szansê, ¿eby usun¹æ ten z³owrogi symbol z Krain. W zamian, pozwól mi wrêczyæ ci ten oto miecz, jak równie¿ tê ma³¹ sumkê w z³ocie. Niech to bêdzie symbol naszej wdziêcznoœci.~
+@115  = ~Niemniej jednak, ma on wielkie znaczenie symboliczne dla jego pozosta³ych zwolenników. Musimy go dobrze strzec, gdy¿ z pewnoœci¹ bêdzie atrakcyjny dla wielu z³odziei. Dziêkujê ci, <CHARNAME>, ¿e obdarowa³eœ nas tym mieczem i da³eœ szansê, ¿eby usun¹æ ten z³owrogi symbol z Krain. W zamian, pozwól mi wrêczyæ ci ten oto miecz, jak równie¿ tê ma³¹ sumkê w z³ocie. Niech to bêdzie symbol naszej wdziêcznoœci.~
+        ~Niemniej jednak, ma on wielkie znaczenie symboliczne dla jego pozosta³ych zwolenników. Musimy go dobrze strzec, gdy¿ z pewnoœci¹ bêdzie atrakcyjny dla wielu z³odziei. Dziêkujê ci, <CHARNAME>, ¿e obdarowa³aœ nas tym mieczem i da³aœ szansê, ¿eby usun¹æ ten z³owrogi symbol z Krain. W zamian, pozwól mi wrêczyæ ci ten oto miecz, jak równie¿ tê ma³¹ sumkê w z³ocie. Niech to bêdzie symbol naszej wdziêcznoœci.~
 
 /* refugees_sod.d */
-@120  = ~Pokonaliœmy ca³¹ tê drogê z Wysokiego Wrzosowiska a¿ tutaj, poniewa¿ oni spalili nasze farmy. Nie wiemy kim oni s¹ ale wiemy, ¿e wci¹¿ gdzieœ tam s¹, a ich liczba ci¹gle roœnie. Czy ktoœ we Wrotach nam pomo¿e? Nigdy nie podró¿owaliœmy a¿ tak dalego na po³udnie, ale nie czujemy siê bezpiecznie poza murami wielkiego miasta.~
+@120  = ~Pokonaliœmy ca³¹ tê drogê z Wysokiego Wrzosowiska a¿ tutaj, poniewa¿ oni spalili nasze farmy. Nie wiemy kim oni s¹ ale wiemy, ¿e wci¹¿ gdzieœ tam s¹, a ich liczba ci¹gle roœnie. Czy ktoœ we Wrotach nam pomo¿e? Nigdy nie podró¿owaliœmy a¿ tak daleko na po³udnie, ale nie czujemy siê bezpiecznie poza murami wielkiego miasta.~
 @121  = ~Po tym jak zabrali nam ca³y dobytek, oni wszystko spalili. Dlaczego ktoœ mia³by to robiæ?~
 @122  = ~Tak wielu z³ych ludzi, którzy zniszczyli wszystko na swojej drodze. Mam nadziejê, ¿e jesteœmy bezpieczni tutaj na po³udniu.~
-@123  = ~Zapytali nas czy do³¹czymy do nich, po czym zaczêli szaleæ i zabijaæ... Uciekliœmy bior¹æ ze sob¹ co tylko uda³o nam siê unieœæ.~
-@124  = ~Oni zniszczyli ca³¹ wioskê... i nawet nie chcê wiedzieæ co zrobili mieszkañcom, którym nie uda³o sie uciec na czas!~
+@123  = ~Zapytali nas czy do³¹czymy do nich, po czym zaczêli szaleæ i zabijaæ... Uciekliœmy bior¹c ze sob¹ co tylko uda³o nam siê unieœæ.~
+@124  = ~Oni zniszczyli ca³¹ wioskê... i nawet nie chcê wiedzieæ co zrobili mieszkañcom, którym nie uda³o siê uciec na czas!~
 @125  = ~Do³¹cz do nich! Do³¹cz do nich! Do krucjaty grabie¿y i zabijania! Ci mordercy chcieli, abyœmy do nich do³¹czyli! Uciekaliœmy tak szybko jak tylko mogliœmy.~
 @126  = ~Mamooooo! Ten obcy mówi coœ do mnie!~ ~Mamooooo! Ta obca mówi coœ do mnie!~
 @127  = ~Moja lalka zgubi³a siê po drodze.~
@@ -152,7 +152,7 @@
 @152 = ~Przechowasz moje z³oto? Dlaczego?~
 @153 = ~Co jeœli nie zechcê oddaæ tobie mojego z³ota?~
 @154 = ~Wiem kim jesteœ. Mi³ego dnia.~
-@155 = ~O, jest w rzeczy samej. Haha. Ksi¹¿êta ufaj¹ mi bezgranicznie. Wiedz¹, ¿e nigdy nie wzi¹³bym czegokolwiek ze skarbca dla w³aœnej korzyœci!~
+@155 = ~O, jest w rzeczy samej. Haha. Ksi¹¿êta ufaj¹ mi bezgranicznie. Wiedz¹, ¿e nigdy nie wzi¹³bym czegokolwiek ze skarbca dla w³asnej korzyœci!~
 @156 = ~Obawiam siê, ¿e to rozkaz Ksi¹¿¹t. Po za tym, nikt maszeruj¹cy u boku P³omiennej Piêœci nie powinien martwiæ siê o swoje bagactwa. Jeœli mam byæ szczery, to myœlê, ¿e Ksi¹¿êtom spodoba³ siê pomys³ ograniczenia wydawania z³ota na nieoficjalne wizyty w knajpach, ekhm.~
 @157 = ~W takim razie przechowam twoje z³oto. Nie ma na tê chwilê powodów do zmartwienia. Haha, muszê przygotowaæ siê na przyjêcie twojego z³ota, gdy¿ informacja o tym przysz³a do mnie dos³ownie chwilê temu.~
 @158 = ~Porozmawiamy, gdy ju¿ do³¹czysz do P³omiennej Piêœci. Do tego czasu, ¿yczê zdrowia.~
