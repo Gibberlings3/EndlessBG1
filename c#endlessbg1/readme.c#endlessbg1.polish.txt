@@ -35,10 +35,10 @@ Dla BG:EE, BG:SoD oraz EET, ten komponent dodaje nastêpuj¹ce elementy:
     - Opuœci œwiat BG1 i pójdzie dalej zgodnie z instancj¹ gry (dla BG:EE bêdzie to koniec gry; dla SoD/EET: rozpocznie siê kampania SoD).
     - Pominie ca³kowicie dodatek SoD i zacznie BGII (tylko dla EET).
 
-Dla BGT, ten komponent usuwa pewne niedopatrzenia dalogów w odniesieniu do Sarevoka po jego œmierci.
+Dla BGT, ten komponent usuwa pewne niedopatrzenia dialogów w odniesieniu do Sarevoka po jego œmierci.
 
 
-2. Uk³on dla bohatera Wrot Baldura (rezydencja w pa³acu)
+2. Uk³on dla bohatera Wrót Baldura (rezydencja w pa³acu)
 -----------------------------------
 
 Dla wszystkich gier: Ksi¹¿ê Belt oferuje bohaterowi prywatny pokój na trzecim piêtrze pa³acu.
@@ -55,7 +55,7 @@ Ten komponent zmienia tak¿e wypowiedzi stra¿ników wewn¹trz pa³acu na coœ bardzie
 3. Krótki publiczny ho³d dla bohatera Wrót Baldura (tylko dla SoD/EET)
 -----------------------------------
 
-Ten komponent w wersji v3 zosta³ wydzielony z komponentu "Uk³on dla bohatera Wrot Baldura" jako opcjonalny i jest tylko dla gier SoD/EET. Komponent "Uk³on dla bohatera Wrót Baldura" jest wymagany.
+Ten komponent w wersji v3 zosta³ wydzielony z komponentu "Uk³on dla bohatera Wrót Baldura" jako opcjonalny i jest tylko dla gier SoD/EET. Komponent "Uk³on dla bohatera Wrót Baldura" jest wymagany.
 
 Wraz z tym komponentem, og³oszenie g³ównego bohatera jako "bohatera Wrót Baldura" odbêdzie siê publicznie na mównicy znanej z SoD (jest to naprawdê krótka cutscenka).
 
@@ -86,7 +86,7 @@ Dla BGT, miecz Sarevoka zostanie skradziony na koniec labiryntu przez kogoœ, kog
 Dla gier EE, miecz Sarevoka mo¿e zostaæ przekazany dla Ksi¹¿¹t. (W odniesieniu do SoD, gdzie zostaniemy poinformowani o kradzie¿y miecza z pa³acu.)
 
 
-6. Imoen i Ksiê¿na Liia Jannath (Imoen otrzymuje rezydencje w palacu) 
+6. Imoen i Ksiê¿na Liia Jannath (Imoen otrzymuje rezydencje w pa³acu) 
 -----------------------------------
 
 Ten komponent spowoduje, ¿e Ksiê¿na Jannath bêdzie ¿ywa i dostêpna w pa³acu. Ponadto porozmawia trochê z Imoen o mo¿liwoœci rozpoczêcia treningu magicznego.
@@ -95,7 +95,7 @@ Na trzecim piêtrze pa³acu, Imoen otrzyma swój pokój, znajduj¹cy siê w po³udniowo
 
 W przypadku gdy Imoen nie by³a w dru¿ynie, bêdzie ona zajmowaæ pokój w Pa³acu Ksi¹¿êcym i powie g³ównemu bohaterowi o swojej skrytce osobiœcie.
 
-OdpowiedŸ Imoen w przypadku wyrzucenia z dru¿yny zosta³a zmieniona w kontekœcie zajmowanej przez ni¹ rezydencji. Po otrzymaniu swojego pokoju, mo¿na wys³aæ Imoen do pa³acu w momencie wyrzucenia jej z dru¿yny. Powinno to byæ kompatybilne z innymi modami typu "wyœij NPC, aby czeka³ gdzieœ tam". Mo¿na wybraæ równie¿ tradycyjne opcje dialogowe, jeœli gracz nie chce wysy³aæ jej do pa³acu.
+OdpowiedŸ Imoen w przypadku wyrzucenia z dru¿yny zosta³a zmieniona w kontekœcie zajmowanej przez ni¹ rezydencji. Po otrzymaniu swojego pokoju, mo¿na wys³aæ Imoen do pa³acu w momencie wyrzucenia jej z dru¿yny. Powinno to byæ kompatybilne z innymi modami typu "wyœlij NPC, aby czeka³ gdzieœ tam". Mo¿na wybraæ równie¿ tradycyjne opcje dialogowe, jeœli gracz nie chce wysy³aæ jej do pa³acu.
 
 
 7. Ksi¹¿ê Eltan w pa³acu 
@@ -103,9 +103,9 @@ OdpowiedŸ Imoen w przypadku wyrzucenia z dru¿yny zosta³a zmieniona w kontekœcie 
 
 Po zainstalowaniu tego komponentu, Ksi¹¿ê Eltan tak¿e bêdzie ¿ywy oraz w pa³acu. Ten komponent usuwa tak¿e Ksiêcia Eltana z budynku kapitanatu w przypadku gdyby by³ tam z powodu innych modów tj. bg1re czy bg1ub.
 
-Aby zapewniæ kompatybilnoœæ z komponentem "Powrót Scara" modyfikacji bg1re, nale¿y zainstalowaæ bg1re w wersji v3.0 lub nowszej. W takim przypadku mo¿na ukoñczyæ a nawet rozpocz¹æ ca³e bonusowe zadanie z bg1re po œmierci Sarevoka poprzez porozmaiwanie z Ksiêciem Eltanem w pa³acu. Nie ma ju¿ wymogu dotycz¹cego rozpoczêcia zadania przed œmierci¹ Sarevoka.
+Aby zapewniæ kompatybilnoœæ z komponentem "Powrót Scara" modyfikacji bg1re, nale¿y zainstalowaæ bg1re w wersji v3.0 lub nowszej. W takim przypadku mo¿na ukoñczyæ a nawet rozpocz¹æ ca³e bonusowe zadanie z bg1re po œmierci Sarevoka poprzez porozmawianie z Ksiêciem Eltanem w pa³acu. Nie ma ju¿ wymogu dotycz¹cego rozpoczêcia zadania przed œmierci¹ Sarevoka.
 
-Informacja o kompatybilnoœci dla modderów: ten komponent wprowadza nowy plik "C#STELTA.cre", który posiada DV "ELTAN" i plik dialogu "DELATAN2.dlg" z ustawionym stanem na "always true" z linijk¹ "~Uratowa³eœ nas. Miasto jest ci wdziêczne.~" wywo³ywan¹ przez ~Dead("Sarevok")~.
+Informacja o kompatybilnoœci dla moderów: ten komponent wprowadza nowy plik "C#STELTA.cre", który posiada DV "ELTAN" i plik dialogu "DELATAN2.dlg" z ustawionym stanem na "always true" z linijk¹ "~Uratowa³eœ nas. Miasto jest ci wdziêczne.~" wywo³ywan¹ przez ~Dead("Sarevok")~.
 
 NIE DODAWAJ w swojej modyfikacji opcji dialogowych dla Ksiêcia Eltana mówi¹cych "~Uratowa³eœ nas. Miasto jest ci wdziêczne.~" albo kompatybilnoœæ zostanie zepsuta.
 
@@ -119,7 +119,7 @@ OUTER_SET deltan2_70 = STATE_WHICH_SAYS 70 IN ~c#endlessbg1/translations/%s/DIAL
 //---------------------------------------
 
 
-8. Uzdrowiciel P³omiennej Piêœci przyjdzie do œwiatyni w Podziemnym Mieœcie
+8. Uzdrowiciel P³omiennej Piêœci przyjdzie do œwi¹tyni w Podziemnym Mieœcie
 -----------------------------------
 
 Po pokonaniu Sarevoka i jego trzech pomocników w œwi¹tyni Bhaala, Uzdrowiciel i Zwiadowca P³omiennej Piêœci przyjd¹ do œwi¹tyni w celu zabrania cia³. Oferuj¹ równie¿ uzdrowienie i wskrzeszenie cz³onków dru¿yny a tak¿e rozbrojenie pu³apek na symbolu Bhaala. Nale¿y zauwa¿yæ, ¿e nie wp³ywa to na pojawianie siê Horrorów Bitewnych aktywowanych przez wyzwalacz. Gracz mo¿e zrezygnowaæ z ich oferty.
@@ -143,7 +143,7 @@ UchodŸcy zaczn¹ przybywaæ do Wrót przed Pa³ac Ksi¹¿êcy i opowiedz¹ o problemach 
 11. Skarbnik Ophyllis bêdzie w podziemiach pa³acu (tylko SoD/EET)
 -----------------------------------
 
-Skarbnik Ophyllis, znany z SoD, bêdzie znajdowaæ sie w pa³acowych piwnicach. Bêdzie w swoim ma³ym biurze i bêdzie przygotowywa³ siê do przejêcia z³ota nale¿¹cego do gracza zgodnie z rozkazami Ksi¹¿¹t. Przekazanie z³ota nie nast¹pi dopóki gracz znajduje siê w BG1.
+Skarbnik Ophyllis, znany z SoD, bêdzie w pa³acowych piwnicach. Bêdzie w swoim ma³ym biurze i bêdzie przygotowywa³ siê do przejêcia z³ota nale¿¹cego do gracza zgodnie z rozkazami Ksi¹¿¹t. Przekazanie z³ota nie nast¹pi dopóki gracz znajduje siê w BG1.
 
 
 12. Komentarz Denkoda w Gildii Z³odziei Cienia o œmierci Sarevoka
@@ -165,7 +165,7 @@ Uwaga: jeœli masz ju¿ zainstalowany ten mod, usuñ go przed rozpakowaniem nowej w
 Podczas instalowania/odinstalowania nie nale¿y zamykaæ okienka DOS poprzez przycisk X. Zamiast tego nale¿y wcisn¹æ Enter w momencie gdy proœba o to pojawi siê na ekranie.
 
 BG:EE
-Jeœli u¿ywasz dodatku SoD z platformy GOG lub Steam, nale¿y przygotowaæ swoj¹ grê przed instalacj¹ modyfikacji. W tym celu nale¿y zainstalwaæ DLC Merger lub Modmerge.
+Jeœli u¿ywasz dodatku SoD z platformy GOG lub Steam, nale¿y przygotowaæ swoj¹ grê przed instalacj¹ modyfikacji. W tym celu nale¿y zainstalowaæ DLC Merger lub Modmerge.
 DLC Merger od argent77:
 https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game
 
