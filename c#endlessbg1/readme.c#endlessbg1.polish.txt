@@ -1,5 +1,5 @@
 -------------------------------------------------
----         Baldur's Gate 1 Bez Koñca         ---
+---          Endless Baldur's Gate 1          ---
 ---             Autorstwa jastey              ---
 ---          T³umaczenie Roberciiik           ---
 ---    Dla gier BG:EE, BG:SoD, BGT oraz EET   ---
@@ -19,7 +19,7 @@ Modyfikacja oferuje tak¿e kilka opcjonalnych komponentów, które dodaj¹ wiêcej sm
 
 OPIS KOMPNENTÓW:
 
-1. BG1 Bez Koñca: komponent g³ówny (wymagany)
+1. Endless BG1: komponent g³ówny (wymagany)
 -----------------------------------
 
 Dla BG:EE, BG:SoD oraz EET, ten komponent dodaje nastêpuj¹ce elementy:
@@ -200,7 +200,7 @@ Jeœli masz problem z instalacj¹ lub znalaz³eœ/aœ b³¹d, proszê zg³oœ to w jednym 
 
 KOMPATYBILNOŒÆ:
 
-Modyfikacja BG1 Bez Koñca (Endless BG1) ustawia zmienn¹ "Global("C#EndlessBG1","GLOBAL",1)" w Gildii Z³odziei (po walce w pa³acu) dla modyfikacji (np. tych dodaj¹cych NPC) tak aby wiedzia³y, ¿e gra pozostanie w œwiecie BG1 po œmierci Sarevoka.
+Modyfikacja Endless BG1 ustawia zmienn¹ "Global("C#EndlessBG1","GLOBAL",1)" w Gildii Z³odziei (po walce w pa³acu) dla modyfikacji (np. tych dodaj¹cych NPC) tak aby wiedzia³y, ¿e gra pozostanie w œwiecie BG1 po œmierci Sarevoka.
 
 Modyfikacja jest w pe³ni kompatybilna z modyfikacj¹ Transitions jeœli zosta³a zainstalowana przed Transitions.
 
@@ -215,7 +215,7 @@ Tantalus: pliki BAM przedmiotów Sarevoka. Pliki BAM wziête z modyfikacji Tantalu
 WYKORZYSTANE NARZÊDZIA I ZASOBY:
 
 
-Modyfikacja BG1 Bez Koñca (Endless BG1) zosta³a stworzona za pomoc¹ zasobów dostêpnych dziêki IESDP (https://gibberlings3.github.io/iesdp/index.htm) i za pomoc¹ nastêuj¹cego oprogramowania:
+Modyfikacja Endless BG1 zosta³a stworzona za pomoc¹ zasobów dostêpnych dziêki IESDP (https://gibberlings3.github.io/iesdp/index.htm) i za pomoc¹ nastêuj¹cego oprogramowania:
 
 Near Infinity - https://github.com/Argent77/NearInfinity/releases/latest
 WeiDU - http://www.weidu.org

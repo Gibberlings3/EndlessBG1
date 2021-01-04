@@ -1,7 +1,7 @@
 @5000   = ~Ten mod jest kompatybilny tylko z BG:EE, SoD, BGT, i EET.~
-@5001   = ~BG1 Bez Konca: komponent glowny (wymagany)~
+@5001   = ~Endless BG1: komponent glowny (wymagany)~
 @5002   = ~Uklon dla bohatera Wrot Baldura (rezydencja w palacu)~
-@5003   = ~BG1 Bez Konca: wymagany jest komponent glowny~
+@5003   = ~Endless BG1: wymagany jest komponent glowny~
 @5004   = ~Imoen i Ksiezna Liia Jannath (Imoen otrzymuje rezydencje w palacu)~
 @5005   = ~Ksiaze Eltan w palacu~
 @5006   = ~Uzdrowiciel Plomiennej Piesci przyjdzie do swiatyni w Podziemnym Miescie~
@@ -19,7 +19,7 @@
 /* new for v3 */
 @5017   = ~Pomin labirynt zlodziei w drodze powrotnej po zabiciu Sarevoka~
 @5018   = ~Krotki publiczny hold dla bohatera Wrot Baldura~
-@5019   = ~Komponent "BG1 Bez Konca: Uklon dla bohatera Wrot Baldura" jest wymagany przez ten komponent~
+@5019   = ~Komponent "Endless BG1: Uklon dla bohatera Wrot Baldura" jest wymagany przez ten komponent~
 
 /* new for v5 */
 @5020  = ~Komponent "Duke Eltan's Spare Minute" modyfikacji bg1re musi byc zainstalowany po EBG1.~
