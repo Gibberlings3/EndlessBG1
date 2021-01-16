@@ -146,6 +146,12 @@ LANGUAGE ~Russian (by Austin, Arkie & Arcanecoast.ru)~
 	 ~c#endlessbg1/Translations/russian/game.tra~
 	 ~c#endlessbg1/Translations/russian/journal.tra~
 
+LANGUAGE ~Polski~
+         ~polish~   
+         ~c#endlessbg1/Translations/polish/setup.tra~
+	 ~c#endlessbg1/Translations/polish/game.tra~
+	 ~c#endlessbg1/Translations/polish/journal.tra~
+
 ////////////////////////////////////////////////////////////////////////
 //////
 BEGIN @5001 /* ~Endless BG1: Main Component (Required)~ */ DESIGNATED 0 LABEL EBG1_MainComponent
@@ -199,7 +205,7 @@ COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/pc_palaceresidence.d~ U
 
 ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
 // Get state for BELT %victory_01% (in dialogues_ee.d)
-/* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Six of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
+/* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Four of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
 */
 OUTER_SET belt_victory_01 = STATE_WHICH_SAYS 1 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
 
@@ -226,12 +232,12 @@ REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~b
 OUTER_SET belt_victory = STATE_WHICH_SAYS 0 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
 
 // Get state for BELT %victory_01% (in dialogues_ee.d)
-/* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Six of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
+/* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Four of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
 */
 OUTER_SET belt_victory_01 = STATE_WHICH_SAYS 1 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
 
 // Get state for BELT %victory_42% (in add_ee.d)
-/* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Six of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
+/* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Four of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
 */
 OUTER_SET belt_victory_42 = STATE_WHICH_SAYS 42 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
 

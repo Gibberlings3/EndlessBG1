@@ -1,0 +1,50 @@
+/* journal entries */
+@10000   = ~Miecz Sarevoka
+
+Jakiœ d¿in ujawni³ siê zaraz po wyjœciu z Podziemnego Miasta i zabra³ mi miecz Sarevoka! Powiedzia³, ¿e musi byæ pos³uszny swojemu „panu”. Kto mo¿e mieæ interes w pozyskaniu miecza Sarevoka? NajwyraŸniej wci¹¿ ma swoich zwolenników albo ktoœ chce siê wzbogaciæ na mocy jak¹ posiada ten miecz.~
+@10001   = ~Miecz Sarevoka
+
+Przekaza³em miecz Sarevoka do r¹k Wielkich Ksi¹¿¹t. Uwa¿aj¹ go za symbol si³y Sarevoka i chc¹ schowaæ go przed jego naœladowcami, którzy mogliby widzieæ w nim jak¹œ wartoœæ symboliczn¹ swojego by³ego przywódcy.~
+~Miecz Sarevoka
+
+Przekaza³am miecz Sarevoka do r¹k Wielkich Ksi¹¿¹t. Uwa¿aj¹ go za symbol si³y Sarevoka i chc¹ schowaæ go przed jego naœladowcami, którzy mogliby widzieæ w nim jak¹œ wartoœæ symboliczn¹ swojego by³ego przywódcy.~
+@10002   = ~W³asna komnata w Pa³acu Ksi¹¿êcym
+
+Og³oszono mnie „bohaterem Wrót Baldura” a tak¿e zaoferowano mi komnatê na najwy¿szym piêtrze Pa³acu Ksi¹¿êcego.~
+~W³asna komnata w Pa³acu Ksi¹¿êcym
+
+Og³oszono mnie „bohaterk¹ Wrót Baldura” a tak¿e zaoferowano mi komnatê na najwy¿szym piêtrze Pa³acu Ksi¹¿êcego.~
+@10003   = ~Moja prywatna skrytka w Pa³acu Ksi¹¿êcym 
+
+Skrzynia znajduj¹ca siê najbardziej na lewo w pó³nocno-zachodnim pokoju na najwy¿szym piêtrze Pa³acu Ksi¹¿êcego od teraz nale¿y do mnie. Wszystko co tam zostawiê pozostanie na miejscu dopóki bêdê zajmowa³ ten pokój.~
+~Moja prywatna skrytka w Pa³acu Ksi¹¿êcym 
+
+Skrzynia znajduj¹ca siê najbardziej na lewo w pó³nocno-zachodnim pokoju na najwy¿szym piêtrze Pa³acu Ksi¹¿êcego od teraz nale¿y do mnie. Wszystko co tam zostawiê pozostanie na miejscu dopóki bêdê zajmowa³a ten pokój.~
+@10004   = ~Skrytka Imoen w Pa³acu Ksi¹¿êcym
+
+Skrzynia znajduj¹ca siê najbardziej na lewo w po³udniowo-wschodnim pokoju na najwy¿szym piêtrze Pa³acu Ksi¹¿êcego nale¿y do Imoen. Wszystko co tam zostawimy pozostanie na miejscu dopóki bêdziemy zajmowaæ ten pokój.~
+@10005   = ~Imoen jest w Pa³acu Ksi¹¿êcym
+
+Imoen zajê³a jeden z pokoi na najwy¿szym piêtrze Pa³acu Ksi¹¿êcego. Znajdê j¹ tam jeœli zechcê ponownie z ni¹ podró¿owaæ.~
+@10006   = ~Kolejne spotkanie z Elminsterem
+
+A wiêc znowu Elminster pojawi³ siê, tym razem po œmierci Sarevoka. W koñcu wyraŸnie widzê, ¿e od dawna wiedzia³ o moim pochodzeniu. Nie wiem dlaczego Elminster, jak równie¿ Gorion, uznali, ¿e mówienie zagadkami to lepszy pomys³ ni¿ powiedzenie mi tego wprost. Elminster wydawa³ siê byæ bardzo zainteresowany tym jak poradzê sobie z moim dziedzictwem, jak siê zmieniê i co to przyniesie w przysz³oœci.~
+@10007   = ~UchodŸcy z dalekiej pó³nocy
+
+Do Wrót Baldura przybyli uchodŸcy. Opowiedzieli o jakiœ brutalnych ruchach maj¹cych miejsce gdzieœ na pó³nocy, w pobli¿u Wysokiego Wrzosowiska. Podobno palone s¹ farmy i ma³e wioski.~
+@10008   = ~Miecz Sarevoka
+
+Ksi¹¿ê Belt poprosi³ mnie o oddanie miecza Sarevoka. Wielcy Ksi¹¿êta widz¹ w nim symbol si³y Sarevoka i chc¹ schowaæ go przed jego naœladowcami, którzy mogliby widzieæ w nim jak¹œ wartoœæ symboliczn¹ swojego by³ego przywódcy.~
+
+@10009   = ~Miecz Sarevoka~
+
+/* new for v3 */
+@10010   = ~Miecz Sarevoka
+
+Wygl¹da na to, ¿e miecz Sarevoka zosta³ skradziony z Pa³acu Ksi¹¿êcego przez jego ostatnich zwolenników i sprzedany do Athkatli! A mia³ byæ tak dobrze strze¿ony. Pora¿ka.~
+@10011   = ~Miecz Sarevoka
+
+Odzyska³em ponownie miecz Sarevoka. Wci¹¿ brakuje mu dawnej mocy, ale przynajmniej mogê ju¿ nim w³adaæ.~
+~Miecz Sarevoka
+
+Odzyska³am ponownie miecz Sarevoka. Wci¹¿ brakuje mu dawnej mocy, ale przynajmniej mogê ju¿ nim w³adaæ.~

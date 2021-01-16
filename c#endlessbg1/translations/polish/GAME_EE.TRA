@@ -1,0 +1,51 @@
+@1   = ~Pe³na zbroja p³ytowa to najlepszy pancerz, jaki mo¿e kupiæ wojownik, zarówno pod wzglêdem wygl¹du, jak i ochrony. Idealnie dopasowane zachodz¹ce na siebie p³ytki u³o¿one s¹ pod specjalnym k¹tem, dziêki czemu s¹ w stanie odbijaæ strza³y i uderzenia, a ca³a zbroja jest starannie ozdobiona bogatymi grawiurami oraz szczegó³owymi t³oczeniami.
+
+Ten niezwykle ciê¿ki pancerz nale¿a³ do Sarevoka.
+
+PARAMETRY:
+
+Klasa Pancerza: -1 (-5 przeciw broniom siecznym, -4 przeciw broniom k³utym i pociskom)
+
+Wymagania:
+– Si³a: 15
+
+Waga: 70~
+
+@2   = ~Pe³na zbroja p³ytowa to najlepszy pancerz, jaki mo¿e kupiæ wojownik, zarówno pod wzglêdem wygl¹du, jak i ochrony. Idealnie dopasowane zachodz¹ce na siebie p³ytki u³o¿one s¹ pod specjalnym k¹tem, dziêki czemu s¹ w stanie odbijaæ strza³y i uderzenia, a ca³a zbroja jest starannie ozdobiona bogatymi grawiurami oraz szczegó³owymi t³oczeniami.
+
+Ten niezwykle ciê¿ki pancerz nale¿a³ do Sarevoka. Magiczne ulepszenia zapewniaj¹ ochronê przeciwko magii.
+
+PARAMETRY:
+
+Specjalne:
+– Odpornoœæ na magiê: +30%
+
+Klasa Pancerza: -1 (-5 przeciw broniom siecznym, -4 przeciw broniom k³utym i pociskom)
+
+Wymagania:
+– Si³a: 15
+
+Waga: 70~
+
+@6   = ~Ozdobny typ he³mu, wykonany z utwardzanej skóry lub ¿elaza, zakrywaj¹cy twarz i g³owê. Zaleca siê równie¿ umieszczenie otworów na oczy i do oddychania.
+
+Ten he³m nale¿a³ do Sarevoka.
+
+PARAMETRY:
+
+Specjalne:
+– Chroni przez trafieniami krytycznymi
+
+Waga: 2~
+
+@7   = ~Ozdobny typ he³mu, wykonany z utwardzanej skóry lub ¿elaza, zakrywaj¹cy twarz i g³owê. Zaleca siê równie¿ umieszczenie otworów na oczy i do oddychania.
+
+Ten he³m nale¿a³ do Sarevoka. Magiczne ulepszenia zapewniaj¹ ochronê przeciwko magii.
+
+PARAMETRY:
+
+Specjalne:
+– Odpornoœæ na magiê: +5%
+– Chroni przez trafieniami krytycznymi
+
+Waga: 2~

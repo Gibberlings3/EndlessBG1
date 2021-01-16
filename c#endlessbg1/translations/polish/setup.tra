@@ -1,0 +1,27 @@
+@5000   = ~Ten mod jest kompatybilny tylko z BG:EE, SoD, BGT, i EET.~
+@5001   = ~Endless BG1: komponent glowny (wymagany)~
+@5002   = ~Uklon dla bohatera Wrot Baldura (rezydencja w palacu)~
+@5003   = ~Endless BG1: wymagany jest komponent glowny~
+@5004   = ~Imoen i Ksiezna Liia Jannath (Imoen otrzymuje rezydencje w palacu)~
+@5005   = ~Ksiaze Eltan w palacu~
+@5006   = ~Uzdrowiciel Plomiennej Piesci przyjdzie do swiatyni w Podziemnym Miescie~
+@5007   = ~Spotkanie z Elminsterem~
+@5008   = ~Unikatowe wyposazenie Sarevoka~
+@5009   = ~Uchodzcy z polnocy przybeda do Wrot Baldura~
+@5010   = ~Skarbnik Ophyllis bedzie w podziemiach palacu~
+@5011   = ~Komentarz Denkoda w Gildii Zlodziei Cienia o smierci Sarevoka~
+@5012   = ~Ten komponent jest kompatybilny tylko z SoD i EET.~
+@5013   = ~Ten komponent jest kompatybilny tylko z BG:EE, SoD, BGT, i EET.~
+@5014   = ~Miecz Sarevoka~
+@5015   = ~Wersja od jastey~
+@5016   = ~Wersja przywrocona z dialogow BG1~
+
+/* new for v3 */
+@5017   = ~Pomin labirynt zlodziei w drodze powrotnej po zabiciu Sarevoka~
+@5018   = ~Krotki publiczny hold dla bohatera Wrot Baldura~
+@5019   = ~Komponent "Endless BG1: Uklon dla bohatera Wrot Baldura" jest wymagany przez ten komponent~
+
+/* new for v5 */
+@5020  = ~Komponent "Duke Eltan's Spare Minute" modyfikacji bg1re musi byc zainstalowany po EBG1.~
+@5021  = ~Musisz zainstalowac EBG1 przed modem Transitions.~
+@5022  = ~Ten komponent EBG1 jest juz zastapiony przez mod Transitions.~

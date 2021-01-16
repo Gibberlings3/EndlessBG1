@@ -57,7 +57,7 @@ With this component, the naming of the PC "Hero of BG" will happen in public on 
 
 4 Sarevok's Unique Items
 -----------------------------------
- This component adds unique items to Sarevok that he will drop upon his death: special armor and helmet.
+This component adds unique items to Sarevok that he will drop upon his death: special armor and helmet.
 
 The armor has AC -1, a 30% magic resistance bonus, and weighs 70 pounds.
 
@@ -86,7 +86,7 @@ With this component installed, Duke Jannath will be alive and inside the palace 
 On the third floor of the palace, Imoen will get the room in the southeast. If she is in party, a servant will welcome her there and tell her about her personal chest: it's the one in the far west of Imoen's room ("Imoen's chest" in SoD). The chest will be unlocked. For all EE games, the content of most of the chests will be moved downstairs into the drawer on the 2nd level of the palace. For SoD and EET, the contents of this chest will be moved into the "same" one inside the SoD campaign automatically.
 
 In case Imoen is not in party, she will have taken residence in the Palace top ground and tell the PC about her chest herself.
-Imoen's kickout dialogue was altered to reflect her new residence: after receiving her room, Imoen can be sent to the Palace upon kickout. This should be compatible with other "send NPC to wait somewhere" mods (calls higher weighted dialogue which circles back to the normal one if the PC doesn't want her to wait at the Palace). 
+Imoen's kickout dialogue was altered to reflect her new residence: after receiving her room, Imoen can be sent to the Palace upon kickout. This should be compatible with other "send NPC to wait somewhere" mods (calls higher weighted dialogue which circles back to the normal one if the PC doesn't want her to wait at the Palace).
 
 
 7 Duke Eltan Is in the Palace
@@ -162,7 +162,7 @@ https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-ba
 General (Windows, Mac OS X, and Linux)
 
 Extract the contents of the mod archive to your game's main directory. 
-NOTE: For Enhanced Edition it is important that you istall the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+NOTE: For Enhanced Edition it is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
 
 
 Windows
@@ -184,7 +184,7 @@ If you have installation problems or encounter any bugs, please post your bug re
 
 COMPATIBILITY
 
-The Endless BG1 Mod will set the variable "Global"C#EndlessBG1","GLOBAL",1)" in the thieves guild (after the Palace fight) for (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
+The Endless BG1 Mod will set the variable "Global("C#EndlessBG1","GLOBAL",1)" in the thieves guild (after the Palace fight) for (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
 
 The mod is full compatible with Transitions Mod if Endless BG1 is installed first.
 
@@ -196,7 +196,7 @@ BeamDog / Overhaul Games: for creating SoD where most additional content ideas f
 Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
 
-USED TOOLS AND RESSOURCES
+USED TOOLS AND RESOURCES
 
 The Endless BG1 Mod was created using the resources provided by the IESDP (https://gibberlings3.github.io/iesdp/index.htm) and with the following software:
 
@@ -252,8 +252,8 @@ Version 2
 -"Elminster makes an Appearance" has two install options now: additionally to jastey's version from v1, it also offers the possibility to restore the original Elminster lines unused in the game.
 -"Imoen and Duke Jannath": Imoen can be sent to the Palace upon kickout. This should be compatible with other "sent NPC to wait somewhere" mods (calls higher weighted dialogue which circles back to the normal one if the PC doesn't want her to wait at the Palace)
 -"Imoen and Duke Jannath": Duke Jannath will have some random dialogue lines if talked to by Imoen.
--"Denkod in Thieves Guild comments on Sarevok's Death": Denkod should beinside the thieves guild if Sarevok is dead
--"Flaming Fist Healer come into Undercity Temple": FF healer takes away the bodies also if PC doesn't want help with healing; FF soldiers do not walk into the temple whan they are leaving, FF healers do not do RandomWalk() while they can't see the PC.
+-"Denkod in Thieves Guild comments on Sarevok's Death": Denkod should be inside the thieves guild if Sarevok is dead
+-"Flaming Fist Healer come into Undercity Temple": FF healer takes away the bodies also if PC doesn't want help with healing; FF soldiers do not walk into the temple when they are leaving, FF healers do not do RandomWalk() while they can't see the PC.
 -Violeta in Thieves Maze should not be gone before Sarevok is dead.
 -(EE) Winski in Thieves Maze should be gone after Sarevok is dead.
 -EET: areas in Palace should not crash. Fixed container area names for EET (components "More Flavor to Hero of Baldur's Gate" and "Imoen and Duke Jannath")
@@ -277,5 +277,5 @@ LEGAL INFORMATION
 Endless BG1 Mod is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
 This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
 
-The mod uses BAM files from Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ ). The Sarevok Unique Items from the Endless BG1 Mod are therefore licenced under "Creative Commons" von Nicolas Peters.
+The mod uses BAM files from Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ ). The Sarevok Unique Items from the Endless BG1 Mod are therefore licensed under "Creative Commons" von Nicolas Peters.
 ============================================================================
