@@ -69,6 +69,8 @@
 
 /* duke_eltan.d */
 @70  = ~You saved us. You have the gratitude of the city.~
+/* new for v7 */
+@71  = ~Good day to you.~
 
 /* ffhealer.d */
 @80  = ~<CHARNAME>! The Dukes sent us to see to your well-being. We will take care of the bodies of Sarevok and his minions.~
