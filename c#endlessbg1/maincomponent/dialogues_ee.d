@@ -10,7 +10,7 @@ IF ~~ THEN + victory_01
 END
 
 IF ~~ THEN victory_01
-SAY @1 /* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Six of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~ */
+SAY @1 /* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Four of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~ */
 IF ~~ THEN DO ~SetGlobal("C#st_HeroOfBG","GLOBAL",1)~ + victory_02
 END
 

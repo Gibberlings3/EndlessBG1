@@ -1,6 +1,6 @@
 /* HC can give Sarevok's sword to the Dukes */
 
-/* in case "hero cutscene" doesn'tplay */
+/* in case "hero cutscene" doesn't play */
 EXTEND_BOTTOM BELT %belt_victory_01%
 IF ~Global("C#st_HeroCutScene","GLOBAL",0)~ THEN DO ~SetGlobal("C#st_HeroOfBG","GLOBAL",1)~ + asks_sword
 END

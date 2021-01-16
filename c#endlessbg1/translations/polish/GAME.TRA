@@ -1,0 +1,91 @@
+/* @0   =  */
+@1   = ~Najlepsza (i najciê¿sza) zbroja, jak¹ wojownik mo¿e zdobyæ - zarówno pod wzglêdem wygl¹du, jak i ochrony, któr¹ zapewnia. Jej znakomicie dopasowane, po³¹czone elementy z litego metalu s¹ specjalnie modelowane, by jak najlepiej odbija³y tak uderzenia broni ró¿nego typu, jak i strza³y. Zwykle zbroja tego rodzaju jest bogato zdobiona - artystycznie grawerowana i upiêkszana ró¿nymi dodatkami.
+
+Ten niezwykle ciê¿ki pancerz nale¿a³ do Sarevoka.
+
+PARAMETRY:
+
+Klasa Pancerza: -1
+Waga: 70
+Wymagana si³a: 15
+Nie mo¿e u¿ywaæ:
+ Bard
+ Druid
+ Z³odziej~
+@2   = ~Najlepsza (i najciê¿sza) zbroja, jak¹ wojownik mo¿e zdobyæ - zarówno pod wzglêdem wygl¹du, jak i ochrony, któr¹ zapewnia. Jej znakomicie dopasowane, po³¹czone elementy z litego metalu s¹ specjalnie modelowane, by jak najlepiej odbija³y tak uderzenia broni ró¿nego typu, jak i strza³y. Zwykle zbroja tego rodzaju jest bogato zdobiona - artystycznie grawerowana i upiêkszana ró¿nymi dodatkami.
+
+Ten niezwykle ciê¿ki pancerz nale¿a³ do Sarevoka. Magiczne ulepszenia zapewniaj¹ ochronê przeciwko magii.
+
+PARAMETRY:
+
+Klasa Pancerza: -1
+Specjalne:
+ +30% do odpornoœci na magiê
+Waga: 70
+Wymagana si³a: 15
+Nie mo¿e u¿ywaæ:
+ Bard
+ Druid
+ Z³odziej~
+@3   = ~Pe³na zbroja p³ytowa Sarevoka~
+@4   = ~He³m Sarevoka~
+@5   = ~Miecz Chaosu Sarevoka~
+@6   = ~Ten ozdobny typ he³mu wykonany jest z utwardzanej skóry lub ¿elaza i zakrywa twarz i g³owê. Zazwyczaj jest równie¿ wyposa¿ony w ochronê nosa.
+
+Ten he³m nale¿a³ do Sarevoka.
+
+PARAMETRY:
+
+Klasa Pancerza: bez zmian
+Specjalne:
+ Chroni przez trafieniami krytycznymi
+Waga: 2
+Nie mo¿e u¿ywaæ:
+ Mag
+ Bard
+ Z³odziej~
+@7   = ~Ten ozdobny typ he³mu wykonany jest z utwardzanej skóry lub ¿elaza i zakrywa twarz i g³owê. Zazwyczaj jest równie¿ wyposa¿ony w ochronê nosa.
+
+Ten he³m nale¿a³ do Sarevoka. Magiczne ulepszenia zapewniaj¹ ochronê przeciwko magii.
+
+PARAMETRY:
+
+Klasa Pancerza: bez zmian
+Specjalne:
+ Chroni przez trafieniami krytycznymi
+ +5% do odpornoœci na magiê
+Waga: 2
+Nie mo¿e u¿ywaæ:
+ Mag
+ Bard
+ Z³odziej~
+
+@8   = ~Jest to miecz Sarevoka. Jakkolwiek próbujesz, nie jesteœ w stanie nim w³adaæ. Wygl¹da na to, ¿e miecz zosta³ magicznie zapieczêtowany po œmierci Sarevoka.~
+@9   = ~Twoja skrytka~
+@10  = ~Skrytka Imoen~
+
+/* new for v2 */
+// #9774 changed
+@12 = ~Ten wstrêtny Sarevok by³ wcielonym z³em! O tak. Zamordowa³ Scara, Entara i usi³owa³ zabiæ wielu innych. Zas³u¿y³ na œmieræ i nied³ugo mu przysz³o na ni¹ czekaæ!~
+// #9778 changed
+@13 = ~To przera¿aj¹ce! Pomyœleæ, ¿e tak niewiele brakowa³o, by Sarevok ziœci³ swe mordercze plany. Cieszê siê, ¿e <CHARNAME> dopad³ go i przywiód³ przed oblicze sprawiedliwoœci. Niech to bêdzie przyk³ad, by inni szaleñcy nigdy ju¿ nie oœmielili siê pójœæ w jego œlady.~
+      ~To przera¿aj¹ce! Pomyœleæ, ¿e tak niewiele brakowa³o, by Sarevok ziœci³ swe mordercze plany. Cieszê siê, ¿e <CHARNAME> dopad³a go i przywiod³a przed oblicze sprawiedliwoœci. Niech to bêdzie przyk³ad, by inni szaleñcy nigdy ju¿ nie oœmielili siê pójœæ w jego œlady.~
+// #9781 changed
+@14 = ~To, co zrobi³ Sarevok, jest nie do wybaczenia! Cieszê siê, ¿e <CHARNAME> ruszy³ za nim w poœcig, zanim tamten zdo³a³ narobiæ wiêkszych szkód.~
+      ~To, co zrobi³ Sarevok, jest nie do wybaczenia! Cieszê siê, ¿e <CHARNAME> ruszy³a za nim w poœcig, zanim tamten zdo³a³ narobiæ wiêkszych szkód.~
+// #9852 changed
+@15 = ~A niech mnie! Czy mo¿ecie uwierzyæ w zuchwa³oœæ tego Sarevoka? Po ca³ym zaufaniu, jakie w nim z³o¿yliœmy, on okaza³ siê najwiêkszym z ³ajdaków! Cieszê siê, ¿e zosta³ schwytany i ukarany.~
+// #9854 changed
+@16 = ~Nie jesteœ przypadkiem <CHARNAME>? To wspania³e mieæ takiego bohatera w mieœcie! W imieniu wszystkich moich znajomych chcia³abym podziêkowaæ wam za to, co zrobiliœcie. Gdyby nie wasze bohaterstwo... dr¿ê ca³a na myœl o tym, co mog³oby siê staæ z miastem w wyniku wojny z Amnem. Dziêkujê ci za schwytanie tego ³otra Sarevoka i po³o¿enie kresu jego matactwom!~
+// #9855 changed
+@17 = ~To siê szerzy niczym po¿ar lasu! Wszyscy gadaj¹ o tym, co siê wydarzy³o w pa³acu. Z tego, co s³ysza³am, ten ca³y Sarevok nie jest tak szlachetny, jak z pocz¹tku mniemaliœmy. Knu³ spiski w celu wymordowania ksi¹¿¹t, ¿eby przej¹æ w³adzê w mieœcie.~
+
+/* new for v7 */
+// #52888
+@20 = ~UchodŸca~ /* kobieta */
+// #52888
+@21 = ~UchodŸca~ /* mê¿czyzna */
+// #40868
+@22 = ~Uzdrowiciel P³omiennej Piêœci~
+// #11540
+@23 = ~Zwiadowca P³omiennej Piêœci~
