@@ -195,6 +195,11 @@ Acifer: ideas.
 BeamDog / Overhaul Games: for creating SoD where most additional content ideas for this mod resulted from.
 Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
+Translations:
+Austin, Arkie & Arcanecoast.ru and yota13: Russian
+Roberciiik: Polish
+Proofreading of English version & readme: Lauriel, Mike1072, Roberciiik
+
 
 USED TOOLS AND RESOURCES
 
@@ -214,6 +219,14 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 7:
+- Polish translation added by Roberciiik.
+- missed line in duke_eltan.d traified.
+- typo corrections in readme (English).
+- corrected charset to charsets in tp2.
+- changes to tp2 organization (use of install.mrk so text transformation to utf-8 is only done once); Russian version now uses english setup.tra out of English language folder; added forbid checks for EET_End.
+- corrected doubled cpmvars.tpa entry for "Beregost_House08".
 
 Version 6.1:
 -Lines in ffhealer.tpa and refugees_sod.tpa traified. Russian text by yota13.
