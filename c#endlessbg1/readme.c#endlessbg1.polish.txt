@@ -85,6 +85,7 @@ Dla BGT, miecz Sarevoka zostanie skradziony na koniec labiryntu przez kogoœ, kog
 
 Dla gier EE, miecz Sarevoka mo¿e zostaæ przekazany dla Ksi¹¿¹t. (W odniesieniu do SoD, gdzie zostaniemy poinformowani o kradzie¿y miecza z pa³acu.)
 
+Uwaga: jeœli zainstalujesz ten komponent i komponent "Umieœæ Miecz Chaosu +2 w ekwipunku Sarevoka" z modyfikacji "BGT Tweaks" to Sarevok upuœci dwa miecze.
 
 6. Imoen i Ksiê¿na Liia Jannath (Imoen otrzymuje rezydencje w pa³acu) 
 -----------------------------------
