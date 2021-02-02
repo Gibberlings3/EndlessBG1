@@ -37,7 +37,9 @@ Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' [S
 
 ## LEGAL INFORMATION
 This mod is copyright (c) 2020 jastey.
+
 This mod accepts bug fixes, compatibility fixes, and translation updates from the community.
+
 This mod is additionally licensed under [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
 The mod uses BAM files from [Sarevok Wiederherstellung](http://www.baldursgate-refugium.de/mods/sarevok-wiederherstellung/) (the Sarevok Recovery Mod) by Nicolas Peters, licensed under CC BY-NC-SA 3.0.
