@@ -106,3 +106,11 @@ ACTION_IF FILE_EXISTS_IN_GAME ~JA#NILA.bcs~ THEN BEGIN
   EXTEND_BOTTOM ~JA#NILA.bcs~ ~override/c#stdstr.baf~
 END
 
+
+/* afte Sarevok is dead: Duke Eltan is no longer searched for, so the Harbormaster shouldn't refer to him. */
+
+<<<<<<<< ...inlined/harbor_eltan.d
+ADD_STATE_TRIGGER HARBOR 10 ~OR(2) Dead("Sarevok")~ UNLESS ~Dead("Sarevok")~
+ADD_STATE_TRIGGER HARBOR 11 ~!Dead("Sarevok")~
+>>>>>>>>
+COMPILE ~...inlined/harbor_eltan.d~

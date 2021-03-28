@@ -25,3 +25,6 @@
 @5020  = ~Komponent "Duke Eltan's Spare Minute" modyfikacji bg1re musi byc zainstalowany po EBG1.~
 @5021  = ~Musisz zainstalowac EBG1 przed modem Transitions.~
 @5022  = ~Ten komponent EBG1 jest juz zastapiony przez mod Transitions.~
+
+/* new for v7 */
+@5023  = ~Ten mod musi zostac zainstalowany przed EET_End w przypadku instalacji EET.~

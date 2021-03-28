@@ -8,7 +8,7 @@
 BACKUP ~c#endlessbg1/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/~ //jastey
 
-VERSION ~6.1~
+VERSION ~7~
 
 README ~c#endlessbg1/readme.c#endlessbg1.%LANGUAGE%.txt~ ~c#endlessbg1/readme.c#endlessbg1.english.txt~
 
@@ -106,26 +106,41 @@ ACTION_IF GAME_IS ~bgt~ THEN BEGIN
   OUTER_SET BGTIMOENPState4 = 20
 END
 
+//////////////////////////////////////////////////////////////////////
+/* all following actions are only processed ONCE for the whole mod, independent of un- and reinstalling of single components */
 
+ACTION_IF !FILE_EXISTS ~c#endlessbg1/install/c#endlessbg1install.mrk~ BEGIN
 
-    ACTION_DEFINE_ARRAY c#noconvert BEGIN setup END
-    ACTION_DEFINE_ARRAY c#reload BEGIN game journal END
+  ACTION_DEFINE_ARRAY c#noconvert BEGIN setup END
+  ACTION_DEFINE_ARRAY c#reload BEGIN game journal END
 
-    LAF HANDLE_CHARSETS
-      INT_VAR
-        infer_charset = 1
-      STR_VAR
-        tra_path = EVAL ~c#endlessbg1/Translations~
-        noconvert_array = c#noconvert
-        reload_array = c#reload
-    END
-
-  LOAD_TRA ~c#endlessbg1/Translations/%LANGUAGE%/game_ee.tra~
+  LAF HANDLE_CHARSETS
+    INT_VAR
+      infer_charsets = 1
+    STR_VAR
+      tra_path = EVAL ~c#endlessbg1/Translations~
+      noconvert_array = c#noconvert
+      reload_array = c#reload
+  END
 
 //CamDawgs CD_STATE_NOTVALID 
     APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 
-END
+  COPY ~c#endlessbg1/Install/component.xx~ ~c#endlessbg1/install/c#endlessbg1install.mrk~
+
+  END // c#endlessbg1install.mrk
+
+ //reloading of tras:
+  LOAD_TRA ~c#endlessbg1/Translations/english/game.tra~
+  LOAD_TRA ~c#endlessbg1/Translations/%LANGUAGE%/game.tra~
+ACTION_IF (GAME_IS ~bgee eet~) THEN BEGIN
+  LOAD_TRA ~c#endlessbg1/Translations/english/game_ee.tra~
+  LOAD_TRA ~c#endlessbg1/Translations/%LANGUAGE%/game_ee.tra~
+END //bgee eet
+  LOAD_TRA ~c#endlessbg1/Translations/english/journal.tra~
+  LOAD_TRA ~c#endlessbg1/Translations/%LANGUAGE%/journal.tra~
+
+END //ALWAYS
 
 
 LANGUAGE ~English~
@@ -142,7 +157,7 @@ LANGUAGE ~Deutsch~
 
 LANGUAGE ~Russian (by Austin, Arkie & Arcanecoast.ru)~
          ~russian~   
-         ~c#endlessbg1/Translations/russian/setup.tra~
+         ~c#endlessbg1/Translations/english/setup.tra~
 	 ~c#endlessbg1/Translations/russian/game.tra~
 	 ~c#endlessbg1/Translations/russian/journal.tra~
 
@@ -155,8 +170,10 @@ LANGUAGE ~Polski~
 ////////////////////////////////////////////////////////////////////////
 //////
 BEGIN @5001 /* ~Endless BG1: Main Component (Required)~ */ DESIGNATED 0 LABEL EBG1_MainComponent
-FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 0 @5021 /* ~ebg1 needs to be installed before Transitions.~ */
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
+FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 0 @5021 /* ~ebg1 needs to be installed before Transitions.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 /* main component: required */
 /* Content for EE: 
@@ -196,6 +213,8 @@ END
 BEGIN @5002   /* ~More Flavor to Hero of Baldur's Gate (Includes PC's Residence Inside Palace)~ */ DESIGNATED 1 LABEL EBG1_MoreFlavor
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 ADD_JOURNAL @10002 @10003 USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
@@ -204,7 +223,7 @@ INCLUDE ~c#endlessbg1/pc_palaceresidence/pc_palaceresidence.tpa~
 COMPILE EVALUATE_BUFFER ~c#endlessbg1/pc_palaceresidence/pc_palaceresidence.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
 ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
-// Get state for BELT %victory_01% (in dialogues_ee.d)
+// Get state for BELT %belt_victory_01% (in dialogues_ee.d)
 /* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Four of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~
 */
 OUTER_SET belt_victory_01 = STATE_WHICH_SAYS 1 IN ~c#endlessbg1/translations/%s/dialogues.tra~ FROM ~BELT~
@@ -226,6 +245,8 @@ BEGIN @5018 /* Short Public Hero Tribute */ DESIGNATED 2 LABEL EBG1_HeroCutscene
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~1~ @5019
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) @5012 /* ~This mod is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 // Get state for BELT %victory% (in dialogues_ee.d)
 /* ~<CHARNAME>, you were successful! You defeated Sarevok who conspired against the city, the Sword Coast, even Amn - for his own dark goals and purpose.~ */
@@ -262,6 +283,8 @@ REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 20 @5022 /* ~This component of ebg1 is already replaced by Transitions.~ */
 FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 21 @5022 /* ~This component of ebg1 is already replaced by Transitions.~ */
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 INCLUDE ~c#endlessbg1/sarevok_items/sarevok_items.tpa~
 
@@ -275,6 +298,8 @@ REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 20 @5022 /* ~This component of ebg1 is already replaced by Transitions.~ */
 FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 21 @5022 /* ~This component of ebg1 is already replaced by Transitions.~ */
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 ADD_JOURNAL TITLE (@10009) @10001 @10008 @10010 @10011 USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
@@ -331,6 +356,8 @@ BEGIN @5004   /* ~Imoen and Duke Jannath (Imoen Gets Residence Inside Palace)~ *
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 0 @5022 /* ~This component of ebg1 is already replaced by Transitions.~ */
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 ADD_JOURNAL @10004 @10005 USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
@@ -358,6 +385,8 @@ FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 71 @5022 /* ~This component
 FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 72 @5022 /* ~This component of ebg1 is already replaced by Transitions.~ */
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
 FORBID_COMPONENT ~bg1re/bg1re.tp2~ 6 @5020 
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
 // Get state for BELT %victory% (dialogues_ee.d)
@@ -377,19 +406,23 @@ REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 20 @5022 /* ~This component of ebg1 is already replaced by Transitions.~ */
 FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 21 @5022 /* ~This component of ebg1 is already replaced by Transitions.~ */
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5000 /* ~This mod is only compatible with BG:EE, SoD, BGT, and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 INCLUDE ~c#endlessbg1/ffhealer/ffhealer.tpa~
 COMPILE EVALUATE_BUFFER ~c#endlessbg1/ffhealer/ffhealer.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
 
 ///////////////////////////////////////////////////////////////////////
-////// /* ~Elminster Makes an Appearance~ */
+////// /* ~Elminster makes an Appearance~ */
 
 BEGIN @5015 /* ~jastey's Version~ */ DESIGNATED 8 LABEL  EBG1_ElminsterAppearance_jastey
 SUBCOMPONENT @5007 /* ~Elminster makes an Appearance~ */
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 60 @5022 /* ~This component of ebg1 is already replaced by Transitions.~ */
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 ADD_JOURNAL @10006 USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
@@ -412,6 +445,8 @@ BEGIN @5009 /* ~First Refugees Come to Baldur's Gate~ */ DESIGNATED 10 LABEL EBG
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 80 @5022 /* ~This component of ebg1 is already replaced by Transitions.~ */
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) @5012 /* ~This mod is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 ADD_JOURNAL @10007 USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
@@ -424,6 +459,8 @@ COMPILE EVALUATE_BUFFER ~c#endlessbg1/refugees_sod/refugees_sod.d~ USING ~c#endl
 BEGIN @5010 /* ~Ophyllis the Treasurer is Inside Palace Dungeon~ */ DESIGNATED 11 LABEL EBG1_TreasurerInPalaceDungeon
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) @5012 /* ~This mod is only compatible with SoD and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 INCLUDE ~c#endlessbg1/ophyllis_sod/ophyllis_sod.tpa~
 COMPILE EVALUATE_BUFFER ~c#endlessbg1/ophyllis_sod/ophyllis_sod.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
@@ -435,6 +472,8 @@ BEGIN @5011 /* ~Denkod in Thieves' Guild Comments on Sarevok's Death~ */ DESIGNA
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 FORBID_COMPONENT ~transitions/setup-transitions.tp2~ 50 @5022 /* ~This component of ebg1 is already replaced by Transitions.~ */
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 COMPILE EVALUATE_BUFFER ~c#endlessbg1/denkod_add/denkod.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
 
@@ -453,6 +492,8 @@ END //bgt
 BEGIN @5017 /* ~Skip Thieves' Maze Once After Sarevok's Death~ */ DESIGNATED 13 LABEL EBG1_SkipThievesMazeOnce
 REQUIRE_COMPONENT ~c#endlessbg1.tp2~ ~0~ @5003
 REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only compatible with BG:EE, SoD, BGT, and EET.~ */
+FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
+FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
   OUTER_SPRINT ~exit7246~ ~exit0146~
