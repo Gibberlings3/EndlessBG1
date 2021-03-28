@@ -54,6 +54,7 @@ THEN
 		ClearAllActions()
 		StartCutSceneMode()
 		SetGlobal("C#st_BG1End","GLOBAL",1)
+		SetGlobal("SarevokBehavior","GLOBAL",5)
 		TriggerActivation("Door0123",TRUE)
 		Wait(2)
 		FadeToColor([30.0],0)
