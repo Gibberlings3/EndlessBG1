@@ -51,6 +51,8 @@ S³u¿ba w pa³acu poinstruuje gracza jak korzystaæ z prywatnej skrzyni (jest to ta
 
 Ten komponent zmienia tak¿e wypowiedzi stra¿ników wewn¹trz pa³acu na coœ bardziej przyjaznego (ochrona w piwnicy nie bêdzie atakowaæ gracza) oraz dodaje przyjaznego stra¿nika przed wejœciem do pa³acu.
 
+Note: if Jarl's Adventure Pack v0.8.0 is installed after Endless BG1, opening the chests will be counted as a theft - in this case, the chests on the 3rd floor of the Palace cannot be used by the group despite the servants stating otherwise.
+
 
 3. Krótki publiczny ho³d dla bohatera Wrót Baldura (tylko dla SoD/EET)
 -----------------------------------
@@ -202,8 +204,14 @@ Jeœli masz problem z instalacj¹ lub znalaz³eœ/aœ b³¹d, proszê zg³oœ to w jednym 
 KOMPATYBILNOŒÆ:
 
 Modyfikacja Endless BG1 ustawia zmienn¹ "Global("C#EndlessBG1","GLOBAL",1)" w Gildii Z³odziei (po walce w pa³acu) dla modyfikacji (np. tych dodaj¹cych NPC) tak aby wiedzia³y, ¿e gra pozostanie w œwiecie BG1 po œmierci Sarevoka.
+Also, from v7 it will set "Global("SarevokBehavior","GLOBAL",5)" to 5 after Sarevok is dead.
 
-Modyfikacja jest w pe³ni kompatybilna z modyfikacj¹ Transitions jeœli zosta³a zainstalowana przed Transitions.
+Modyfikacja jest w pe³ni kompatybilna z modyfikacj¹ Transitions jeœli zosta³a zainstalowana przed Transitions. Note: Transitions Mod overwrites a lot of components of BG1 with own versions of the content, if considering EBG1's content is not explicitely offered as an install choice. The Imoen-Duke Jannath interaction from EBG1 will always be overwritten by Transitions' main component.
+
+The bonus quest "Scar's Return" from bg1re is fully playable after Sarevok's death.
+
+If Jarl's Adventure Pack v0.8.0 is installed, opening the chests on the 3rd floor of the Palace will be counted as a theft - in this case, the chests cannot be used by the group despite the servants stating otherwise.
+
 
 
 CREDITS:
@@ -239,11 +247,15 @@ HISTORIA ZMIAN:
 
 Version 7:
 - Polish translation added by Roberciiik.
+- Sarevok's armor should not be usable by Mages/sorcerers.
 - missed line in duke_eltan.d traified.
+- Dukes should not turn hostile when PC returns into Palace after killing Sarevok on EE patch 2.6 beta.
+- afte Sarevok is dead: Duke Eltan is no longer searched for, so the Harbormaster shouldn't refer to him.
 - typo corrections in readme (English).
-- corrected charset to charsets in tp2.
-- changes to tp2 organization (use of install.mrk so text transformation to utf-8 is only done once); Russian version now uses english setup.tra out of English language folder; added forbid checks for EET_End.
+- corrected "charset" to "charsets" in tp2.
+- changes to tp2 organization: use of install.mrk so text transformation to utf-8 is only done once; Russian version now uses english setup.tra out of English language folder; added forbid checks for EET_End.
 - corrected doubled cpmvars.tpa entry for "Beregost_House08".
+- clearified the copyright license the mod is published under and provided a link to Tantalus' Mod "Sarevok Recovery Mod".
 
 Version 6.1:
 -Lines in ffhealer.tpa and refugees_sod.tpa traified
@@ -303,11 +315,24 @@ Version 1
 
 INFORMACJE O LICENCJI
 
-============================================================================
-Endless BG1 Mod is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+==========================================================================
+
+This mod is copyright (c) jastey.
+
+This mod accepts bug fixes, compatibility fixes, and translation updates from the community.
+
+This mod is additionally licensed under CC BY-NC-SA 3.0.
+
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+The mod uses BAM files from Sarevok Wiederherstellung (the Sarevok Recovery Mod) by Nicolas Peters, licensed under CC BY-NC-SA 3.0.
+
+http://www.baldursgate-refugium.de/mods/sarevok-wiederherstellung/
+
+Endless BG1 is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. (c) Wizards of the Coast LLC.
+
 This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
 
-The mod uses BAM files from Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ ). The Sarevok Unique Items from the Endless BG1 Mod are therefore licensed under "Creative Commons" von Nicolas Peters.
-============================================================================
+==========================================================================
 
 

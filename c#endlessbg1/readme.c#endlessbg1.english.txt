@@ -43,9 +43,11 @@ For all games, Duke Belt gives the PC quarters on the third floor of the palace.
 
 For BGT, this component also adds more lines to Duke Belt's dialogue after defeating Sarevok, reflecting the PC to be the "Hero of Baldur's Gate".
 
-The room in the northwest of the 3rd level in the palace will be assigned to the PC. A servant will be there to instruct about the PC's personal chest: it is the "same" one that is used in SoD to transfer the items to the first camp. This chest (at the far west of the room) will now be unlocked. For SoD/EET the content will be moved to the "same" chest inside the SoD campaign (in bd0103.are) automatically.  For all EE games, all chests inside the PC's room will be emptied, the contents will now be inside the drawer on the 2nd level of the palace.
+The room in the northwest of the 3rd level in the palace will be assigned to the PC. A servant will be there to instruct about the PC's personal chest: it is the "same" one that is used in SoD to transfer the items to the first camp. This chest (at the far west of the room) will now be unlocked. For SoD/EET the content will be moved to the "same" chest inside the SoD campaign (in bd0103.are) automatically. For all EE games, all chests inside the PC's room will be emptied, the contents will now be inside the drawer on the 2nd level of the palace.
 
 This component also changes the dialogues of the guards inside the palace to something more friendly (guards in the cellar will not turn hostile any more) and adds friendly guards in front of the palace, as well. 
+
+Note: if Jarl's Adventure Pack v0.8.0 is installed after Endless BG1, opening the chests will be counted as a theft - in this case, the chests on the 3rd floor of the Palace cannot be used by the group despite the servants stating otherwise. Install Jarl's Adventure Pack before Endless BG1 to prevent this.
 
 
 3 Short Public Hero Tribute (SoD/EET Only)
@@ -65,9 +67,8 @@ The helmet has a 5% magic resistance bonus.
 
 Sarevok will drop the items upon his death. They can be looted then. 
 
-The custom BAMs for armor and helmet were created by Tantalus for his Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. 
-License: CC BY-NC-SA 3.0. ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
-Link to "Sarevok Recovery Mod" : http://www.baldursgate-refugium.de/mods/sarevok-wiederherstellung/ 
+The custom BAMs for armor and helmet were created by Tantalus for his Mod "Sarevok Recovery Mod", licensed under "Creative Commons": CC BY-NC-SA 3.0. ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
+Link to "Sarevok Recovery Mod" by Tantalus: http://www.baldursgate-refugium.de/mods/sarevok-wiederherstellung/ 
 
 
 5 Sarevok's Sword
@@ -77,6 +78,8 @@ This component adds a sword to Sarevok that he will drop upon his death.  The sw
 For BGT, the sword of Sarevok will be stolen at Labyrinth exit by someone the PC will meet again in BGII. (This is in accordance to what the Djinni tells about the sword in BGII.)
 
 For EE games, Sarevok's sword can be handed to the Dukes. (This is in accordance to SoD where sources tell that the sword was stolen from the palace.) 
+
+Note: If you install this component and "Put Sword of Chaos +2 in Sarevok's inventory" from BGT Tweaks, Sarevok will drop two swords.
 
 
 6 Imoen and Duke Jannath (Imoen Gets Residence Inside Palace)
@@ -185,15 +188,20 @@ If you have installation problems or encounter any bugs, please post your bug re
 COMPATIBILITY
 
 The Endless BG1 Mod will set the variable "Global("C#EndlessBG1","GLOBAL",1)" in the thieves guild (after the Palace fight) for (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
+Also, from v7 it will set "Global("SarevokBehavior","GLOBAL",5)" to 5 after Sarevok is dead.
 
-The mod is full compatible with Transitions Mod if Endless BG1 is installed first.
+The mod is full compatible with Transitions Mod if Endless BG1 is installed first. Note: Transitions Mod overwrites a lot of components of BG1 with own versions of the content, if considering EBG1's content is not explicitely offered as an install choice. The Imoen-Duke Jannath interaction from EBG1 will always be overwritten by Transitions' main component.
+
+The bonus quest "Scar's Return" from bg1re is fully playable after Sarevok's death.
+
+If Jarl's Adventure Pack v0.8.0 is installed, opening the chests on the 3rd floor of the Palace will be counted as a theft - in this case, the chests cannot be used by the group despite the servants stating otherwise.
 
 
 CREDITS
 
 Acifer: ideas.
 BeamDog / Overhaul Games: for creating SoD where most additional content ideas for this mod resulted from.
-Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
+Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons": CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
 Translations:
 Austin, Arkie & Arcanecoast.ru and yota13: Russian
@@ -222,11 +230,16 @@ HISTORY
 
 Version 7:
 - Polish translation added by Roberciiik.
+- Sarevok's armor should not be usable by Mages/sorcerers.
 - missed line in duke_eltan.d traified.
+- Dukes should not turn hostile when PC returns into Palace after killing Sarevok on EE patch 2.6 beta.
+- afte Sarevok is dead: Duke Eltan is no longer searched for, so the Harbormaster shouldn't refer to him.
 - typo corrections in readme (English).
-- corrected charset to charsets in tp2.
-- changes to tp2 organization (use of install.mrk so text transformation to utf-8 is only done once); Russian version now uses english setup.tra out of English language folder; added forbid checks for EET_End.
+- corrected "charset" to "charsets" in tp2.
+- changes to tp2 organization: use of install.mrk so text transformation to utf-8 is only done once; Russian version now uses english setup.tra out of English language folder; added forbid checks for EET_End.
 - corrected doubled cpmvars.tpa entry for "Beregost_House08".
+- updated links and install order info in endlessbg1.ini.
+- clearified the copyright license the mod is published under and provided a link to Tantalus' Mod "Sarevok Recovery Mod".
 
 Version 6.1:
 -Lines in ffhealer.tpa and refugees_sod.tpa traified. Russian text by yota13.
@@ -285,10 +298,23 @@ Version 1
 
 
 
-LEGAL INFORMATION
-============================================================================
-Endless BG1 Mod is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+LEGAL INFORMATION & COPYRIGHT
+==========================================================================
+
+This mod is copyright (c) jastey.
+
+This mod accepts bug fixes, compatibility fixes, and translation updates from the community.
+
+This mod is additionally licensed under CC BY-NC-SA 3.0.
+
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+The mod uses BAM files from Sarevok Wiederherstellung (the Sarevok Recovery Mod) by Nicolas Peters, licensed under CC BY-NC-SA 3.0.
+
+http://www.baldursgate-refugium.de/mods/sarevok-wiederherstellung/
+
+Endless BG1 is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. (c) Wizards of the Coast LLC.
+
 This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
 
-The mod uses BAM files from Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ ). The Sarevok Unique Items from the Endless BG1 Mod are therefore licensed under "Creative Commons" von Nicolas Peters.
-============================================================================
+==========================================================================
