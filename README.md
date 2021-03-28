@@ -36,7 +36,13 @@ Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' [S
 
 
 ## LEGAL INFORMATION
-Endless BG1 Mod is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
-This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
+This mod is copyright (c) 2020 jastey.
 
-The mod uses BAM files from Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/). The Sarevok Unique Items from the Endless BG1 Mod are therefore also licenced under "Creative Commons" von Nicolas Peters.
+This mod accepts bug fixes, compatibility fixes, and translation updates from the community.
+
+This mod is additionally licensed under [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+
+The mod uses BAM files from [Sarevok Wiederherstellung](http://www.baldursgate-refugium.de/mods/sarevok-wiederherstellung/) (the Sarevok Recovery Mod) by Nicolas Peters, licensed under CC BY-NC-SA 3.0.
+
+Endless BG1 Mod is unofficial Fan Content permitted under the Fan Content Policy. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
