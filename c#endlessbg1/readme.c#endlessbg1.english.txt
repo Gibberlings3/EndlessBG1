@@ -204,8 +204,9 @@ BeamDog / Overhaul Games: for creating SoD where most additional content ideas f
 Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons": CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
 Translations:
-Austin, Arkie & Arcanecoast.ru and yota13: Russian
+Austin, Arkie & Arcanecoast.ru, and yota13: Russian
 Roberciiik: Polish
+Gwendolyne, Machiavélique, and Shodead: French
 Proofreading of English version & readme: Lauriel, Mike1072, Roberciiik
 
 
@@ -227,6 +228,13 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 8:
+-French translation added.
+-hostile FF soldiers will no longer be hostile or disappear after Sarevok is defeated in the palace.
+-changed most checks for after Sarevok events from "!Dead("Sarevok")" to after the confrontation at the coronation event.
+-removed unneeded variable check from Transitions mod for item transfer to PC's chest.
+-added globally unique LABELs to support Project Infinity
 
 Version 7:
 - Polish translation added by Roberciiik.

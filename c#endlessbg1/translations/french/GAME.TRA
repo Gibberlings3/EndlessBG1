@@ -1,0 +1,83 @@
+/* @0 = */
+@1 = ~L'armure de plates complète est la meilleure armure qu'un guerrier puisse acheter, autant d'un point de vue esthétique que pratique. Les plaques parfaitement fixées et imbriquées les unes dans les autres sont inclinées de façon à détourner les flèches et les coups et l'ensemble de la tunique est soigneusement ornée de riches gravures et de détails en reliefs.
+
+Cette intrigante armure lourde appartenait à Sarevok.
+
+PARAMÈTRES :
+
+Classe d'armure : -1
+Poids : 70
+Nécessite : 15 en Force
+Non utilisable par :
+ Barde
+ Druide
+ Voleur~
+@2 = ~L'armure de plates complète est la meilleure armure qu'un guerrier puisse acheter, autant d'un point de vue esthétique que pratique. Les plaques parfaitement fixées et imbriquées les unes dans les autres sont inclinées de façon à détourner les flèches et les coups et l'ensemble de la tunique est soigneusement ornée de riches gravures et de détails en reliefs.
+
+Cette intrigante armure lourde appartenait à Sarevok. Elle est enchantée de manière à protéger son porteur contre la magie.
+
+PARAMÈTRES :
+
+Résistance à la magie : +30%
+Classe d'armure : -1
+Poids : 70
+Nécessite : 15 en Force
+Non utilisable par :
+ Barde
+ Druide
+ Voleur~
+@3 = ~Armure de plates de Sarevok~
+@4 = ~Casque de Sarevok~
+@5 = ~Épée de Sarevok~
+@6 = ~Ce type de casque d'apparat, fait de cuir ou de métal renforcé, couvre le visage et le crâne. Les trous pour les yeux et le nez ne sont pas de trop.
+
+Ce casque appartenait à Sarevok.
+
+PARAMÈTRES :
+
+Bonus à la classe d'armure : aucun
+Capacités d'équipement :
+- Protège contre les coups critiques
+Poids : 2
+Non utilisable par:
+ Mage
+ Barde
+ Voleur~
+@7 = ~Ce type de casque d'apparat, fait de cuir ou de métal renforcé, couvre le visage et le crâne. Les trous pour les yeux et le nez ne sont pas de trop.
+
+Ce casque appartenait à Sarevok. Il est enchanté de manière à protéger son porteur contre la magie.
+
+PARAMÈTRES :
+
+Bonus à la classe d'armure : aucun
+Capacités d'équipement :
+- Protège contre les coups critiques
+- Résistance à la magie : +5 %
+Poids : 2
+Non utilisable par :
+ Mage
+ Barde
+ Voleur~
+@8 = ~C'est l'épée de Sarevok. Peu importe ce que vous tentez, vous ne parvenez pas à la manier. On dirait que la magie contenue à l'intérieur de cette épée a été affaiblie et scellée quand Sarevok est mort.~
+@9 = ~Coffre de <CHARNAME>~
+@10 = ~Coffre d'Imoen~
+
+/* new for v2 */
+//#9774 changed
+@12 = ~Ce minable de Sarevok était une véritable enflure ! Il a assassiné la Balafre, Entar et plein d'autres ! Il ne méritait que la mort, et grâce à <CHARNAME>, c'est chose faite !~
+//#9778 changed
+@13 = ~C'est tellement effrayant ! Et dire que Sarevok était si proche d'accomplir ses plans... Je suis heureux que <CHARNAME> lui ai fait subir le courroux de la justice ! J'espère qu'il fera un bon exemple aux autres fous furieux dans son genre.~
+//#9781 changed
+@14 = ~Ce que Sarevok a fait est impardonnable ! Je suis content que <CHARNAME> se soit chargé de lui avant qu'il ne fasse plus de mal.~ ~Ce que Sarevok a fait est impardonnable ! Je suis content que <CHARNAME> se soit chargée de lui avant qu'il ne fasse plus de mal.~
+//#9852 changed
+@15 = ~C'est incroyable ! Vous avez vu le culot de ce Sarevok ? Après la confiance que nous avons tous placée en lui, il s'avère n'être rien d'autre qu'un vil mécréant. Je suis content qu'il ait été attrapé et puni.~
+//#9854 changed
+@16 = ~Ne seriez-vous pas <CHARNAME> ? Hé, ça fait plaisir d'avoir un héros en ville ! Au nom de tout ceux que je connais, j'aimerais vous remercier pour ce que vous avez fait. Si vous n'aviez pas été là... Hé bien, je tremble déjà en imaginant à quel point la guerre contre l'Amn aurait été horrible. Encore merci pour l'avoir mis hors d'état de nuire et avoir mis fin à ses plans !~ ~Ne seriez-vous pas <CHARNAME> ? Hé, ça fait plaisir d'avoir une héroïne en ville ! Au nom de tout ceux que je connais, j'aimerais vous remercier pour ce que vous avez fait. Si vous n'aviez pas été là... Hé bien, je tremble déjà en imaginant à quel point la guerre contre l'Amn aurait été horrible. Encore merci pour l'avoir mis hors d'état de nuire et avoir mis fin à ses plans !~
+//#9855 changed
+@17 = ~Ça se répand comme une traînée de poudre ! Tout le monde parle de ce qui s'est passé au palais. De ce que j'ai entendu, Sarevok n'était pas le noble qu'il paraissait. Il a tenté de tuer les autres ducs pour prendre le contrôle de la ville.~
+
+/* new for v7 */
+@20 = ~Réfugiée~ /* femelle*/
+@21 = ~Réfugié~ /* mâle*/
+@22 = ~Soigneur du Poing Enflammé~ /* mâle*/
+@23 = ~Éclaireur du Poing Enflammé~ /* mâle*/

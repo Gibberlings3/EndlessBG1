@@ -223,6 +223,20 @@ END
 
 COMPILE EVALUATE_BUFFER ~.../c#stdstr.baf~
 
+/* define script for cres without DV: DestroySelf() after Sarevok's demasking in the Ducal Palace */
+<<<<<<<< .../c#stdst2.baf
+
+IF
+	GlobalGT("DukeThanks","GLOBAL",0)
+THEN
+	RESPONSE #100
+        	DestroySelf()
+END
+
+>>>>>>>>
+
+COMPILE EVALUATE_BUFFER ~.../c#stdst2.baf~
+
 /* detection variable for other mods (e.g. NPC mods) that EBG1 will kick in after Sarevok's death. Will be set in Thieves Guild after the Palace Fight */
 <<<<<<<< .../ar0146_detection_add.baf
 IF

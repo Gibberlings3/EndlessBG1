@@ -78,6 +78,10 @@ END
 
 END //APPEND
 
+/* Benjy and Dilos in FF Headquarters: do not turn hostile after scene in Ducal Palace */
+REPLACE_STATE_TRIGGER BENJY 0 ~Global("DukeThanks","GLOBAL",0)~
+ADD_STATE_TRIGGER FLAMBG 5 ~Global("DukeThanks","GLOBAL",0)~
+
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~.../cleanup_more.d~
 
@@ -94,6 +98,31 @@ END
 >>>>>>>>
 EXTEND_BOTTOM ~%NBaldursGate%.bcs~ ~.../ar0200_add.baf~
 
+/* Benjy and Dilos in FF Headquarters: turn friendly after scene in Ducal Palace */
+<<<<<<<< .../ar0706_add.baf
+IF
+	Exists("BENJY")  // Benjy
+	GlobalGT("DukeThanks","GLOBAL",0)
+	Allegiance("BENJY",ENEMY)
+THEN
+	RESPONSE #100
+		ActionOverride("BENJY",ChangeEnemyAlly(Myself,NEUTRAL))
+END
+
+IF
+	Exists("DICKSMOK")  // Dilos
+	GlobalGT("DukeThanks","GLOBAL",0)
+	Allegiance("DICKSMOK",ENEMY)
+THEN
+	RESPONSE #100
+		ActionOverride("DICKSMOK",ChangeEnemyAlly(Myself,NEUTRAL))
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%SWBaldursGate_FlamingFistHQ_L1%.bcs~ ~.../ar0706_add.baf~
+
+/* in case FLAMANG.cre was spawned in Flaming Fist HQ (hostile FF mercenaries): make them despawn after Sarevok is demasked */
+COPY_EXISTING ~FLAMANG.cre~ ~override~
+  WRITE_EVALUATED_ASCII 0x260 ~c#stdst2~ #8 // General Script 
 
 /* compatibility with Jarl's Adventure Pack - JA#IGNAT.cre doesn't have a DV */
 ACTION_IF FILE_EXISTS_IN_GAME ~JA#IGNAT.dlg~ THEN BEGIN

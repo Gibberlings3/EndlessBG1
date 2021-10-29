@@ -1,0 +1,133 @@
+/* dialogues.d */
+@0 = ~<CHARNAME>, vous avez réussi ! Vous avez vaincu Sarevok et réduit à néant ses complots contre la ville, contre l'Amn, et même contre toute la Côte des Épées !~
+@1 = ~Vous avez révélé les tromperies de Sarevok aux yeux de tous, et nous avez sauvés d'un grand danger alors que nous restions aveugles face à la menace. Par le pouvoir qui m'est conféré en tant que duc du conseil des quatre de la ville, je vous nomme « Héros de la Porte de Baldur » ! De la part de toute la ville, laissez-moi vous exprimer notre plus profonde gratitude !~ ~Vous avez révélé les tromperies de Sarevok aux yeux de tous, et nous avez sauvés d'un grand danger alors que nous restions aveugles face à la menace. Par le pouvoir qui m'est conféré en tant que duc du conseil des quatre de la ville, je vous nomme « Héroïne de la Porte de Baldur » ! De la part de toute la ville, laissez-moi vous exprimer notre plus profonde gratitude !~
+@2 = ~<CHARNAME>, Héros de la Porte de Baldur, êtes-vous prêt à unir vos forces à celles du Poing Enflammé, et chasser les derniers serviteurs de Sarevok ?~ ~<CHARNAME>, Héroïne de la Porte de Baldur, êtes-vous prête à unir vos forces à celles du Poing Enflammé, et chasser les derniers serviteurs de Sarevok ?~
+@3 = ~« Héros de la Porte de Baldur », voilà un nom qui fait plaisir à entendre. Dites-moi ce que je dois faire.~ ~« Héroïne de la Porte de Baldur », voilà un nom qui fait plaisir à entendre. Dites-moi ce que je dois faire.~
+@4 = ~Oui je suis prêt et nous pouvons commencer dès maintenant. Envoyez-moi là où vous avez besoin de moi.~ ~Oui je suis prête et nous pouvons commencer dès maintenant. Envoyez-moi là où vous avez besoin de moi.~
+@5 = ~À vrai dire, j'en ai assez de devoir jouer les héros. Je ne serai plus le laquais de qui que ce soit. Je quitte la Porte de Baldur pour aller à la rencontre de mon destin. Adieu.~ ~À vrai dire, j'en ai assez de devoir jouer les héroïnes. Je ne serai plus le laquais de qui que ce soit. Je quitte la Porte de Baldur pour aller à la rencontre de mon destin. Adieu.~
+@6 = ~Pas maintenant. Je dois d'abord terminer quelque chose.~
+@7 = ~La ville vous doit une fière chandelle, Héros de la Porte de Baldur. Suivez-moi s'il vous plaît, nous allons vous dire tout ce que nous savons.~ ~La ville vous doit une fière chandelle, Héroïne de la Porte de Baldur. Suivez-moi s'il vous plaît, nous allons vous dire tout ce que nous savons.~
+@8 = ~Je vois. Toutefois, sachez que la ville vous doit une fière chandelle. Adieu, Héros de la Porte de Baldur.~ ~Je vois. Toutefois, sachez que la ville vous doit une fière chandelle. Adieu, Héroïne de la Porte de Baldur.~
+@9 = ~Très bien. Nous allons consacrer nos efforts à la recherche des derniers serviteurs de Sarevok et nous espérons que vous nous rejoindrez bientôt. Jusque-là, profitez de votre séjour au palais.~
+@10 = ~Merci d'avoir vaincu Sarevok, <CHARNAME> !~
+
+/* new for v2 */
+@11 = ~Merci à vous aussi, compagnons de <CHARNAME>.~
+@12 = ~Salutations à vous aussi, compagnons de <CHARNAME>.~
+
+/* new for v3: changed line 7 */
+@13 = ~La ville vous doit une fière chandelle, Héros. Suivez-moi s'il vous plaît, les soldats du Poing Enflammé vont vous guider à la cachette des derniers serviteurs de Sarevok.~ ~La ville vous doit une fière chandelle, Héroïne. Suivez-moi s'il vous plaît, les soldats du Poing Enflammé vont vous guider à la cachette des derniers serviteurs de Sarevok.~
+
+/* pc_palaceresidence.d */
+@20 = ~Salutations, <CHARNAME>. Je dois vous demander de quitter le cellier, vous ne devriez pas être ici.~
+@21 = ~Salutations, <CHARNAME>.~
+@22 = ~Salutations, Héros.~ ~Salutations, Héroïne.~
+@23 = ~Allez-y, <CHARNAME>. Les ducs souhaitent vous parler.~
+/* BG:EE: #7548 */
+@24 = ~Entrez.~
+/* BG:EE: #7550 */
+@25 = ~Passez votre chemin, et ne faites pas de grabuge.~
+/* BG:EE: #9010 */
+@26 = ~D'autres affaires requièrent mon attention ailleurs. Bonne journée.~
+/* BG:EE: #5157 */
+@27 = ~Ainsi, nous nous rencontrons de nouveau. Je suis désolé mais je n'ai pas le temps de discuter.~
+/* BG:EE: #7477 */
+@28 = ~Faites ce que bon vous semble, je n'en ai rien à faire.~
+/* BG:EE: #9340 */
+@29 = ~Je suis un fier membre du Poing Enflammé. Notre quartier général se trouve à la Porte de Baldur, mais nous opérons aussi à Bérégost et dans les alentours de l'Auberge de Bras-Amical. Nous sommes au courant de la subite pénurie du fer de bonne qualité. Nombreux sont ceux qui pensent que l'Amn se prépare à la guerre contre notre grande ville. Si c'est le cas, je ne sais pas comment nous ferons si nous continuons à manquer de fer pour nous équiper.~
+@30 = ~Bienvenue, Héros de la Porte de Baldur ! Cette pièce vous servira de résidence, aussi longtemps que vous le souhaitez. J'ai déjà tout installé, et j'espère que cela vous plaira ! Les ducs souhaitent que je vous prévienne que le coffre à gauche de la pièce est à votre entière disposition, et tout ce que vous placerez à l'intérieur y restera aussi longtemps que cette résidence vous appartiendra. Nous avons vidé les contenus des coffres et avons tout placé à l'étage inférieur, mais si nous avons oublié quelque chose, cette chose vous appartiendra désormais. Je vous souhaite un bon séjour, et vous remercie encore d'avoir sauvé notre ville !~ ~Bienvenue, Héroïne de la Porte de Baldur ! Cette pièce vous servira de résidence, aussi longtemps que vous le souhaitez. J'ai déjà tout installé, et j'espère que cela vous plaira ! Les ducs souhaitent que je vous prévienne que le coffre à gauche de la pièce est à votre entière disposition, et tout ce que vous placerez à l'intérieur y restera aussi longtemps que cette résidence vous appartiendra. Nous avons vidé les contenus des coffres et avons tout placé à l'étage inférieur, mais si nous avons oublié quelque chose, cette chose vous appartiendra désormais. Je vous souhaite un bon séjour, et vous remercie encore d'avoir sauvé notre ville !~
+
+/* ceremony_sod.d */
+@40 = ~Suivez-moi je vous prie.~
+@41 = ~<CHARNAME> de Château-Suif !~
+@42 = ~Avec ce titre, des quartiers officiels vous sont attribués au dernier étage du Palais ducal. Les domestiques vont vous aider à vous installer dès que vous serez prêt. Je demande une ovation pour le Héros de la Porte de Baldur !~ ~Avec ce titre, des quartiers officiels vous sont attribués au dernier étage du Palais ducal ! Les domestiques vont vous aider à vous installer dès que vous serez prête. Je demande une ovation pour l'Héroïne de la Porte de Baldur !~
+
+/* imoen_jannath.d */
+@50 = ~Qui aurait cru que cet homme était un cruel manipulateur ! Et dire que nous l'avions presque nommé Duc... Vous nous avez tous sauvés, et nous vous sommes redevables, <CHARNAME>, Héros de la Porte de Baldur ! Vous méritez ce titre.~ ~Qui aurait cru que cet homme était un cruel manipulateur ! Et dire que nous l'avions presque nommé Duc... Vous nous avez tous sauvés, et nous vous sommes redevables, <CHARNAME>, Héroïne de la Porte de Baldur ! Vous méritez ce titre.~
+@51 = ~C'est impressionnant comme titre ! « Héros de la Porte de Baldur ».~ ~C'est impressionnant comme titre ! « Héroïne de la Porte de Baldur ».~
+@52 = ~Si seulement je savais utiliser la magie, on l'aurait vaincu encore plus vite !~
+@53 = ~Utiliser la magie ? Hmm...~
+@54 = ~Imoen, je crois détecter en vous une certaine prédisposition à la magie. Je souhaiterai m'entretenir avec vous un peu plus tard, ma jeune amie.~
+@55 = ~Moi ? Euh... D'accord !~
+@56 = ~Bienvenue, Héros de la Porte de Baldur ! Et bienvenue, Imoen. Cette pièce vous servira de résidence aussi longtemps que vous le souhaitez, Imoen. Avec les sincères salutations de la duchesse Jannath.~ ~Bienvenue, Héroïne de la Porte de Baldur ! Et bienvenue, Imoen. Cette pièce vous servira de résidence aussi longtemps que vous le souhaitez, Imoen. Avec les sincères salutations de la duchesse Jannath.~
+@57 = ~Cette chambre est pour moi ? Génial ! Merci !~
+@58 = ~Vous avez également votre propre coffre, Imoen. C'est celui tout à gauche de la pièce. Tout ce que vous y placez y restera aussi longtemps que vous résiderez ici. Je vous souhaite un bon séjour !~
+@59 = ~<CHARNAME> ! Tu as été nommé « Héros de la Porte de Baldur », hein ? C'est impressionnant ! La duchesse Jannath m'a offert cette chambre, en plus de me proposer d'étudier la magie ! Tu imagines ? On va avoir nos propres chambres, l'une à côté de l'autre ! Même si je préférerais qu'on continue à voyager ensemble comme avant.~ ~<CHARNAME> ! Tu as été nommée « Héroïne de la Porte de Baldur », hein ? C'est impressionnant ! La duchesse Jannath m'a offert cette chambre, en plus de me proposer d'étudier la magie ! Tu imagines ? On va avoir nos propres chambres, l'une à côté de l'autre ! Même si je préférerais qu'on continue à voyager ensemble comme avant.~
+@60 = ~Le coffre à gauche de la pièce est à moi, d'ailleurs. Tu peux l'utiliser, au cas où tu as besoin de plus de place pour ranger tes affaires. On m'a dit que le coffre sera à moi aussi longtemps qu'on résidera ici.~
+
+/* new for v2 */
+@61 = ~Bonjour, Imoen. Lorsque vous aurez le temps pour commencer votre entraînement à la magie, faites-le-moi savoir.~
+@62 = ~Bonjour, Imoen. Reviens me voir plus tard, d'accord ?~
+@63 = ~Bonjour, Imoen. Mon offre pour vous apprendre à utiliser la magie tient toujours, dès que <CHARNAME> vous le permettra.~
+@64 = ~Tu es sûr de toi ? Je pourrais rester au Palais ducal et accepter l'offre de la duchesse Jannath.~ ~Tu es sûre de toi ? Je pourrais rester au Palais ducal et accepter l'offre de la duchesse Jannath.~
+@65 = ~Ça me va. Je te retrouverai au palais.~
+@66 = ~À vrai dire, je voudrais que tu m'attendes ici.~
+@67 = ~Je me suis trompé, reste avec moi.~ ~Je me suis trompée, reste avec moi.~
+@68 = ~D'accord ! La duchesse Jannath va vite regretter de m'avoir prise comme apprentie... Ne pars pas trop longtemps, d'accord ?~
+
+
+
+/* duke_eltan.d */
+@70 = ~Vous nous avez sauvés. La ville entière vous est reconnaissante.~
+/* new for v7 */
+@71 = ~Ce fut un plaisir. Bonne journée à vous.~
+
+/* ffhealer.d */
+@80 = ~<CHARNAME> ! Les ducs nous ont envoyés vous aider. Nous allons nous occuper des corps de Sarevok et de ses sbires.~
+@81 = ~Souhaitez-vous que nous désamorcions les pièges qui pourraient se trouver dans la zone et recevoir des soins ?~
+@82 = ~Oui, ce serait bien.~
+@83 = ~Non merci, je n'en ai pas besoin.~
+@84 = ~Vous avez rendu un grand service à la ville. Retournez au Palais ducal et parlez aux ducs. Ils souhaiteront certainement vous remercier en bonne et due forme.~
+@85 = ~Avec plaisir, ça ne prendra qu'un instant...~
+@86 = ~Ça devrait être bon.~
+
+/* elminster.d */
+@90 = ~Nos chemins se croisent de nouveau, mon jeune ami. Non seulement vous avez appris pour votre héritage divin, mais vous avez également assassiné l'un de vos frères. Vous avez rendu un fier service à la Côte des Épées en nous débarrassant de ce mal. Une question se pose toutefois : quelle voie suivrez-vous ? Céderez-vous face au mal qui coule dans vos veines ? Ou parviendrez-vous à y résister ? Soyez assuré que des gens bien vous observent, <CHARNAME>. Ils vous observent et se tiennent prêts à agir en fonction de vos actions. Tout dépend de vous. Je vous souhaite bonne chance, <CHARNAME>, fils de Bhaal. Que les dieux vous bénissent.~ ~Nos chemins se croisent de nouveau, ma jeune amie. Non seulement vous avez appris pour votre héritage divin, mais vous avez également assassiné l'un de vos frères. Vous avez rendu un fier service à la Côte des Épées en nous débarrassant de ce mal. Une question se pose toutefois : quelle voie suivrez-vous ? Céderez-vous face au mal qui coule dans vos veines ? Ou parviendrez-vous à y résister ? Soyez assurée que des gens bien vous observent, <CHARNAME>. Ils vous observent et se tiennent prêts à agir en fonction de vos actions. Tout dépend de vous. Je vous souhaite bonne chance, <CHARNAME>, fille de Bhaal. Que les dieux vous bénissent.~
+
+/* new for v2 */
+//#12741
+@91 = ~Je vous salue ! On dirait qu'les voyages ont réussi à tout le monde. Je ne m'attendrais cependant pas à des effusions pour le meurtre de Sarevok. J'imagine que l'incident sera immédiatement étouffé. Mais sachez que de nombreux citoyens éminents des Royaumes sont conscients du service que vous avez rendu et vous en sont reconnaissants. Un avertissement amical, toutefois. Ces mêmes citoyens sont à l'écoute. Veillez à ne pas devenir une menace comme votre frère, sinon un autre groupe de jeunes héros sera envoyé pour s'occuper de vous. Bonne chance.~
+//#12742
+@92 = ~Je vois que vous avez survécu aux épreuves et aux tribulations qui vous ont été imposées. Je ne dirai pas que cela me réjouit outre mesure, de même que votre conduite en général. L'élimination de Sarevok est une maigre consolation si vous avez dans l'idée de continuer dans cette voie criminelle. Réfléchissez bien à votre parcours et à votre destination. Il serait dommage que vous connaissiez le même sort que votre frère.~
+//#12743
+@93 = ~Eh bien, salut ! Une fin glorieuse pour ce petit travail désagréable, n'est-ce pas ? Je ne m'attendrais cependant pas à des effusions pour le meurtre de Sarevok, car l'incident sera probablement étouffé dès que possible. Pourtant, beaucoup de gens dans les Royaumes sont au courant de votre combat et vous portent en haute estime pour cela. Une créature des plus maléfiques a été éliminée ; espérons que d'autres ne suivront pas la même voie.~
+
+/* dialogues_sarevoksword_bgt.d */
+@100 = ~Je suis vraiment désolé, mais je dois obéir à mon maître et vous prendre cette épée... Ah, ha ha, ils ne vont pas être très heureux de voir l'état dans lequel est cette arme. Bon, je sais à quoi je vais devoir employer mon temps maintenant. Au revoir, <CHARNAME>, peut-être nous reverrons nous dans d'autres circonstances.~
+
+/* dialogues_sarevoksword_ee.d */
+@110 = ~Tout d'abord, laissez-moi vous donner l'épée de Sarevok comme vous me l'avez demandé.~
+@111 = ~Nous avons remarqué que l'âme de Sarevok est liée à son épée et en fait ainsi une arme très puissante.~
+@112 = ~Je vois que vous avez également pris son armure. Elle est à vous maintenant, mais je ne peux que vous déconseiller de l'utiliser. Vous montrer dans cette armure sombre et menaçante pourrait éveiller les soupçons parmi la population...~
+@113 = ~Nous aimerions toutefois garder son épée en sécurité. Nous vous serions reconnaissants de nous la donner. Bien évidemment, nous vous récompenserons en conséquence.~
+@114 = ~En effet ! Je suis moi-même curieux de voir cet objet. Elle semble être à la fois une arme très puissante, ainsi qu'un fort symbole d'inspiration parmi les serviteurs de Sarevok. Oh, mais je vois qu'elle a perdu énormément de ses pouvoirs et qu'elle n'est pas utilisable dans son état actuel. Ce n'est pas plus mal, car quiconque souhaiterait manier cette épée et suivre les pas de Sarevok devrait payer une grande quantité d'or pour restaurer ne serait-ce qu'une partie de son pouvoir.~
+@115 = ~Elle garde toutefois une importante valeur symbolique pour ses derniers serviteurs. Nous allons devoir la garder précieusement car elle pourrait attirer de nombreux voleurs. Merci, <CHARNAME>, pour nous avoir donné cette arme et ainsi nous donner la possibilité de faire disparaître de notre ville ce symbole du mal. Laissez-moi vous donner cette épée en compensation, ainsi que cette modeste somme d'argent pour vous prouver notre gratitude.~
+
+/* refugees_sod.d */
+@120 = ~Nous avons voyagé jusqu'ici depuis la Haute-Lande. Une nouvelle faction est apparue et a commencé à piller et brûler nos fermes. Nous ne savons pas qui ils sont, mais ils sont toujours là-bas et leur nombre grandit de jour en jour. Est-ce que la Porte de Baldur va nous aider ? Nous ne sommes jamais venus aussi loin dans le sud, mais nous ne nous sentons plus en sécurité à l'extérieur des grandes villes...~
+@121 = ~Ils ont tout brûlé... après avoir pris toutes nos provisions. Pourquoi ont-ils fait ça ?~
+@122 = ~Ces gens avaient l'air tellement en colère, ils ont tout détruit dans leur passage. J'espère que nous sommes en sécurité ici dans le sud.~
+@123 = ~Ils nous ont demandé de les rejoindre, et ensuite ils ont commencé à tout saccager... Nous avons fui avec le peu que nous pouvions emporter.~
+@124 = ~Ils ont entièrement détruit le village – et je ne veux même pas imaginer ce qu'ils ont fait aux villageois qui n'ont pas eu le temps de fuir !~
+@125 = ~« Rejoignez-nous ! Rejoignez-nous, dans une croisade pleine de pillage et de meurtres ! » Ces meurtriers voulaient qu'on les rejoigne ! Je me suis enfui aussi vite que j'ai pu.~
+@126 = ~Mamaaaaaaaan ! Un étranger me parle !!~
+@127 = ~J'ai perdu ma poupée sur le chemin...~
+@128 = ~Je veux rentrer à la maison.~
+
+/* denkod.d */
+@140 = ~Vous êtes revenu !~ ~Vous êtes revenue !~
+@141 = ~Il faut que je vous dise, faites attention en portant ça. Pendant un court instant, j'ai cru que vous étiez lui ! J'ai failli sortir ma dague pour me défendre.~
+@142 = ~Vous n'allez pas croire ce qui s'est passé il y a quelques minutes. Des mercenaires du Poing Enflammé ont débarqué dans la guilde en dégageant tout ce qui se trouvait sur leur passage. Ils ont descendu les escaliers, puis sont ressortis quelques instants plus tard, aussi brutalement que lorsqu'ils sont entrés.~
+@143 = ~Quoi qu'il en soit, on dirait que la fête est finie. Vous l'avez achevé ce type en armure ? Ou va-t-il revenir ? De toute façon, je me tire. Je vais chercher un endroit plus tranquille, il y a trop d'agitation à mon goût par ici !~
+
+/* ophyllis_sod.d */
+@150 = ~Oh, <CHARNAME> ! C'est un plaisir de vous rencontrer. Je suis Ophyllis, le trésorier du palais. Je m'occuperai de garder votre or pendant que vous partez en chasse avec le Poing Enflammé contre les derniers serviteurs de Sarevok.~
+@151 = ~Le trésorier du palais ? Ça a l'air d'être un rôle avec de grandes responsabilités.~
+@152 = ~Garder mon or ? Pourquoi ?~
+@153 = ~Et si je ne veux pas vous donner mon or ?~
+@154 = ~Je sais déjà qui vous êtes. Bonne journée.~
+@155 = ~Oh, que oui ! Hahaha. Les ducs me font entièrement confiance. Ils savent que je suis très sérieux dans mes tâches et que je n'utiliserai jamais l'or que je dois garder pour mon intérêt personnel !~
+@156 = ~À vrai dire, il s'agit d'un ordre des ducs. « Aucune personne qui marche avec le Poing Enflammé ne devrait s'inquiéter à propos de ses possessions », et pour être tout à fait honnête, je crois que les ducs apprécient l'idée que les hommes ne dépensent pas leur argent inutilement pendant qu'ils sont en mission, comme dans des paris par exemple.~
+@157 = ~Je vais garder votre or en sécurité. Aucune raison de s'inquiéter, je maîtrise parfaitement la situation ! Je vais préparer l'endroit où sera gardé votre or, j'ai reçu les informations à ce propos il y a quelques instants.~
+@158 = ~Je viendrai vous voir une fois que vous vous serez décidé à rejoindre le Poing Enflammé dans leur chasse. Au revoir !~ ~Je viendrai vous voir une fois que vous vous serez décidée à rejoindre le Poing Enflammé dans leur chasse. Au revoir !~
+@159 = ~Salutations, <CHARNAME>. Si vous cherchez Ophyllis, il doit être dans le bureau.~
