@@ -3,7 +3,7 @@
 IF
 	Exists("SUGAR")  // Sugar
 	InMyArea("SUGAR")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("SUGAR",DestroySelf())
@@ -18,7 +18,7 @@ EXTEND_BOTTOM ~%NWBaldursGate%.bcs~ ~.../ar0100_add.baf~
 		SPRINT textToReplace ~!Exists("Bip")~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN
-			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 Global("SarevokBehavior","GLOBAL",0)~
 			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
 		END ELSE BEGIN
 			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
@@ -43,7 +43,7 @@ EXTEND_BOTTOM ~%NWBaldursGate_SilvershieldEstate_L1%.bcs~ ~.../ar0101_add.baf~
 		SPRINT textToReplace ~!Exists("Slythe")~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN
-			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 Global("SarevokBehavior","GLOBAL",0)~
 			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
 		END ELSE BEGIN
 			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
@@ -53,7 +53,7 @@ EXTEND_BOTTOM ~%NWBaldursGate_SilvershieldEstate_L1%.bcs~ ~.../ar0101_add.baf~
 		SPRINT textToReplace ~!Exists("Krystin")~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN
-			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 Global("SarevokBehavior","GLOBAL",0)~
 			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
 		END ELSE BEGIN
 			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
@@ -64,7 +64,7 @@ EXTEND_BOTTOM ~%NWBaldursGate_SilvershieldEstate_L1%.bcs~ ~.../ar0101_add.baf~
 IF
 	Exists("SLYTHE")  // Slythe
 	InMyArea("SLYTHE")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("SLYTHE",DestroySelf())
@@ -73,7 +73,7 @@ END
 IF
 	Exists("Krystin")  // Krystin
 	InMyArea("Krystin")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("Krystin",DestroySelf())
@@ -86,7 +86,7 @@ EXTEND_BOTTOM ~%BaldursGate_Undercellars%.bcs~ ~.../ar0112_add.baf~
 IF
 	Exists("IVANNE")  // Ivanne
 	InMyArea("IVANNE")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("IVANNE",DestroySelf())
@@ -99,7 +99,7 @@ EXTEND_BOTTOM ~%NEBaldursGate_BlushingMermaid_L1%.bcs~ ~.../ar0114_add.baf~
 IF
 	Exists("HECITO")  // Hecito
 	InMyArea("HECITO")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("HECITO",DestroySelf())
@@ -108,7 +108,7 @@ END
 IF
 	Exists("Lothtyran")  // Sir Lothtyran - Nobleman
 	InMyArea("Lothtyran")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("Lothtyran",DestroySelf())
@@ -151,7 +151,7 @@ EXTEND_BOTTOM ~%SWBaldursGate_FlamingFistHQ_L1%.bcs~ ~.../ar0607_add.baf~
 IF
 	Exists("KENT")  // Kent
 	InMyArea("KENT")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("KENT",DestroySelf())
@@ -160,7 +160,7 @@ END
 IF
 	Exists("Eltan2")  // Duke Eltan
 	InMyArea("Eltan2") 
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("Eltan2",DestroySelf())
@@ -176,7 +176,7 @@ EXTEND_BOTTOM ~%SWBaldursGate_FlamingFistHQ_L2%.bcs~ ~.../ar0608_add.baf~
 IF
 	Exists("GREGOR")  // Gregor
 	InMyArea("GREGOR")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("GREGOR",DestroySelf())
@@ -185,7 +185,7 @@ END
 IF
 	Exists("TRALITHAN")  // Tralithan
 	InMyArea("TRALITHAN")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("TRALITHAN",DestroySelf())
@@ -198,7 +198,7 @@ EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L2%.bcs~ ~.../ar0612_add.baf~
 IF
 	Exists("KALESSIA")  // Kalessia
 	InMyArea("KALESSIA")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("KALESSIA",DestroySelf())
@@ -211,7 +211,7 @@ EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L3%.bcs~ ~.../ar0613_add.baf~
 IF
 	Exists("WIRTHING")  // Wirthing
 	InMyArea("WIRTHING")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("WIRTHING",DestroySelf())
@@ -224,7 +224,7 @@ EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L4%.bcs~ ~.../ar0614_add.baf~
 IF
 	Exists("CYTHAN")  // Cythandria
 	InMyArea("CYTHAN")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("CYTHAN",DestroySelf())
@@ -237,7 +237,7 @@ EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L5%.bcs~ ~.../ar0615_add.baf~
 IF
 	Exists("PANG")  // Pang Wallen
 	InMyArea("PANG")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("PANG",DestroySelf())
@@ -246,7 +246,7 @@ END
 IF
 	Exists("DHANIAL")  // Dhanial
 	InMyArea("DHANIAL")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("DHANIAL",DestroySelf())
@@ -260,7 +260,7 @@ EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L1%.bcs~ ~.../ar0616_add.baf~
 IF
 	Exists("ADDY")
 	InMyArea("ADDY")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("ADDY",DestroySelf())
@@ -275,7 +275,7 @@ EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_add.baf~
 		SPRINT textToReplace ~!Exists("Tamoko")~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN
-			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 Global("SarevokBehavior","GLOBAL",0)~
 			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
 		END ELSE BEGIN
 			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
@@ -285,7 +285,7 @@ EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_add.baf~
 		SPRINT textToReplace ~!Exists("Husam2")~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN
-			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 Global("SarevokBehavior","GLOBAL",0)~
 			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
 		END ELSE BEGIN
 			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
@@ -296,7 +296,7 @@ EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_add.baf~
 IF
 	Exists("HERSCHEL")  // Herschel
 	InMyArea("HERSCHEL")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("HERSCHEL",DestroySelf())
@@ -305,7 +305,7 @@ END
 IF
 	Exists("Delthyr")  // Delthyr
 	InMyArea("Delthyr")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("Delthyr",DestroySelf())
@@ -314,7 +314,7 @@ END
 IF
 	Exists("Husam2")  // Husam
 	InMyArea("Husam2")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("Husam2",DestroySelf())
@@ -323,7 +323,7 @@ END
 IF
 	Exists("Tamoko")  // Tamoko
 	InMyArea("TAMOKO")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("Tamoko",DestroySelf())
@@ -336,7 +336,7 @@ EXTEND_BOTTOM ~%EBaldursGate%.bcs~ ~.../ar0800_add.baf~
 IF
 	Exists("Smuggler")  // Smuggler
 	InMyArea("Smuggler")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("Smuggler",DestroySelf())
@@ -350,7 +350,7 @@ EXTEND_BOTTOM ~%WyrmsCrossing%.bcs~ ~.../ar0900_add.baf~
 		SPRINT textToReplace ~!Exists("Tamoko")~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN
-			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 Global("SarevokBehavior","GLOBAL",0)~
 			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
 		END ELSE BEGIN
 			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
@@ -361,7 +361,7 @@ EXTEND_BOTTOM ~%WyrmsCrossing%.bcs~ ~.../ar0900_add.baf~
 IF
 	Exists("KAELLA")  // Kaella
 	InMyArea("KAELLA")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("KAELLA",DestroySelf())
@@ -370,7 +370,7 @@ END
 IF
 	Exists("TAMOKO")  // Tamoko
 	InMyArea("TAMOKO")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("TAMOKO",DestroySelf())
@@ -384,7 +384,7 @@ EXTEND_BOTTOM ~%SWBaldursGate%.bcs~ ~.../ar1100_add.baf~
 IF
 	Exists("BRENNA")  // Brennan Risling
 	InMyArea("BRENNA")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("BRENNA",DestroySelf())
@@ -393,7 +393,7 @@ END
 IF
 	Exists("JONAVI")  // Jonavin
 	InMyArea("JONAVI")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("JONAVI",DestroySelf())
@@ -402,7 +402,7 @@ END
 IF
 	Exists("KOLVAR")  // Kolvar
 	InMyArea("KOLVAR")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("KOLVAR",DestroySelf())
@@ -415,7 +415,7 @@ EXTEND_BOTTOM ~%BaldursGateDocks%.bcs~ ~.../ar1200_add.baf~
 IF
 	Exists("ALAN")
 	InMyArea("ALAN")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("ALAN",DestroySelf())
@@ -453,7 +453,7 @@ COPY_EXISTING ~voleta.cre~ ~override~
 IF
 	Exists("WINSKI2")  // Winski
 	InMyArea("WINSKI2")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("WINSKI2",DestroySelf())
@@ -472,7 +472,7 @@ EXTEND_BOTTOM ~%ThievesMaze%.bcs~ ~.../ar0146_winski.baf~
 		SPRINT textToReplace ~Global("Chapter","GLOBAL",7)~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN
-			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 !Dead("Sarevok")~
+			REPLACE_TEXTUALLY ~\(%textToReplace%\)~ ~\1 Global("SarevokBehavior","GLOBAL",0)~
 			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
 		END ELSE BEGIN
 			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
@@ -487,7 +487,7 @@ IF
 	!Global("C#st_DenkodTalk","MYAREA",1)
 	Exists("DENKOD")  // Denkod
 	InMyArea("DENKOD")
-	Dead("Sarevok")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
 THEN
 	RESPONSE #100
 		ActionOverride("DENKOD",DestroySelf())
@@ -550,6 +550,3 @@ EXTEND_BOTTOM ~%EBaldursGate_ThievesGuild%.bcs~ ~.../ar0153_add.baf~
 		END
 	END
   BUT_ONLY
-
-
-
