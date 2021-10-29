@@ -1,0 +1,39 @@
+/* journal entries */
+@10000 = ~L'épée de Sarevok
+
+Un Djinn est apparu juste après mon départ d'Ombreville et m'a pris l'épée de Sarevok ! Il a dit qu'il devait « obéir à son maître ». Qui peut bien avoir un intérêt à voler l'épée de Sarevok ? On dirait qu'il lui reste des serviteurs – ou que des personnes souhaitent s'approprier ses pouvoirs.~
+@10001 = ~L'épée de Sarevok
+
+J'ai donné l'épée de Sarevok aux ducs. Cette arme reste un puissant symbole d'inspiration parmi les derniers serviteurs de Sarevok, en plus d'avoir une grande valeur. Les ducs souhaitent personnellement maintenir cet objet à distance de ces fanatiques.~
+@10002 = ~Mes quartiers dans le Palais ducal
+
+J'ai été nommé « Héros de la porte de Baldur » et des quartiers m'ont été attribués au dernier étage du Palais ducal.~
+@10003 = ~Mon coffre personnel dans le Palais ducal 
+
+Le coffre le plus à gauche de la pièce nord-ouest du dernier étage du Palais ducal est mon coffre personnel. Tout ce que j'y déposerai y restera aussi longtemps que je résiderai dans le palais.~
+@10004 = ~Le coffre d'Imoen dans le Palais ducal 
+
+Le coffre le plus à gauche de la pièce sud-est du dernier étage du Palais ducal est le coffre d'Imoen. Tout ce que nous y déposerons y restera aussi longtemps que nous résiderons dans le palais.~
+@10005 = ~Imoen réside dans le Palais ducal
+
+Imoen s'est installée au dernier étage du palais ducal. Je la retrouverai là-bas si j'ai besoin d'elle.~
+@10006 = ~Une autre rencontre avec Elminster
+
+
+À nouveau, Elminster est venu me voir, juste après la mort de Sarevok. Apparemment, il savait déjà tout de mon héritage divin. Mais pourquoi est-ce que Gorion et Elminster ont pensé que c'était une bonne idée de me le cacher ou d'en parler par des énigmes plutôt que de me le dire directement ? Elminster a l'air très intéressé de savoir comment je vais réagir face à la révélation de mon héritage, et de ce que je vais en faire.~
+@10007 = ~Des réfugiés arrivent depuis le nord
+
+Des réfugiés se rassemblent à la Porte de Baldur, en rapportant qu'une nouvelle faction est apparue dans la Haute-Lande, qui pille et brûle des fermes et des villages au nord.~
+@10008 = ~L'épée de Sarevok
+
+Le duc Belt m'a demandé que je lui donne l'épée de Sarevok. Cette arme pourrait être vue comme un symbole de puissance parmi les derniers serviteurs de Sarevok, en plus d'avoir une grande valeur. Les ducs souhaitent personnellement maintenir cet objet à distance de ces fanatiques.~
+
+@10009 = ~L'épée de Sarevok~
+
+/* new for v3 */
+@10010 = ~L'épée de Sarevok
+
+Apparemment, l'épée de Sarevok a été volée dans le Palais ducal par ses derniers serviteurs qui l'auraient vendue à Athkatla en Amn ! Tout ça pour rien... Quel gâchis.~
+@10011 = ~L'épée de Sarevok
+
+J'ai récupéré l'épée de Sarevok. Il lui manque encore la majorité de ses pouvoirs, mais au moins, elle est désormais maniable.~

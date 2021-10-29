@@ -1,0 +1,47 @@
+@1 = ~L'armure de plates complète est la meilleure armure qu'un guerrier puisse acheter, autant d'un point de vue esthétique que pratique. Les plaques parfaitement fixées et imbriquées les unes dans les autres sont inclinées de façon à détourner les flèches et les coups et l'ensemble de la tunique est soigneusement ornée de riches gravures et de détails en reliefs.
+
+Cette intrigante armure lourde appartenait à Sarevok.
+
+PARAMÈTRES :
+
+Classe d'armure : -1 (-5 contre les armes tranchantes, -4 contre les armes perforantes et les projectiles)
+Nécessite :
+15 en Force
+
+Poids : 70~
+@2 = ~L'armure de plates complète est la meilleure armure qu'un guerrier puisse acheter, autant d'un point de vue esthétique que pratique. Les plaques parfaitement fixées et imbriquées les unes dans les autres sont inclinées de façon à détourner les flèches et les coups et l'ensemble de la tunique est soigneusement ornée de riches gravures et de détails en reliefs.
+
+Cette intrigante armure lourde appartenait à Sarevok. Elle est enchantée de manière à protéger son porteur contre la magie.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Résistance à la magie : +30%
+
+Classe d'armure : -1 (-5 contre les armes tranchantes, -4 contre les armes perforantes et les projectiles)
+Nécessite :
+15 en Force
+
+Poids : 70~
+
+@6 = ~Cette catégorie de cabasset, fabriquée en cuir ou en métal renforcé, couvre presque l'ensemble de la tête, à l'exception du visage et du cou. Ces casques protègent bien le nez.
+
+Ce casque appartenait à Sarevok.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Protège contre les coups critiques
+
+Poids : 2~
+@7 = ~Cette catégorie de cabasset, fabriquée en cuir ou en métal renforcé, couvre presque l'ensemble de la tête, à l'exception du visage et du cou. Ces casques protègent bien le nez.
+
+Ce casque appartenait à Sarevok. Il est enchanté de manière à protéger son porteur contre la magie.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+– Résistance à la magie : +5 %
+– Protège contre les coups critiques
+
+Poids : 2~
