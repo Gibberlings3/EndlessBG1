@@ -30,7 +30,7 @@ IF ~~ THEN DO ~%start_bg1end_sod_cutscene%~ EXIT
 END
 
 IF ~~ THEN sod
-SAY @13 /* ~The city is in your debt, Hero of Baldur's Gate. Please follow me, I will tell you what we know.~ */
+SAY @13 /* ~The city is in your debt, Hero of Baldur's Gate. Please follow me, the Flaming Fist soldiers will guide you to the hide-out of Sarevok's last follower.~ */
 IF ~~ THEN DO ~TakePartyItem("c#stsrvs") DestroyItem("c#stsrvs") %start_bg1end_sod_cutscene%~ EXIT
 END
 
