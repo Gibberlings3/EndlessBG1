@@ -197,6 +197,7 @@ Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mo
 Translations:
 Austin, Arkie & Arcanecoast.ru and yota13: Russian
 Roberciiik: Polish
+Gwendolyne, Machiavélique, and Shodead: French
 Proofreading of English version & readme: Lauriel, Mike1072, Roberciiik
 
 
@@ -218,6 +219,13 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 8:
+-French translation added.
+-hostile FF soldiers will no longer be hostile or disappear after Sarevok is defeated in the palace.
+-removed unneeded variable check from Transitions mod for item transfer to PC's chest.
+-changed most checks for after Sarevok events from "!Dead("Sarevok")" to after the confrontation at the coronation event.
+-added globally unique LABELs to support Project Infinity
 
 Version 7:
 - Polish translation added by Roberciiik.
