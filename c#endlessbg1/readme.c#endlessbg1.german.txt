@@ -135,6 +135,24 @@ Denkod in der Diebesgilde, der auf dem Weg in die Unterstadt dem/der HC sagte, w
 Nachdem Sarevok besiegt ist, wird mit dieser Komponente der Ausgang aus der Unterstdt so verändert, dass er beim Verlassen sofort in die Diebesgilde führt. Dies ist nur einmal, danach werden die normalen Wege wieder freigeschaltet, so dass das Labyrinth danach wieder normal besucht werden kann.
 
 
+14 Korlasz' Dungeon ist in BG1
+-----------------------------------
+Diese Komponente verschiebt Korlasz' Krypta in den BG1-Teil des Spiels. Die Gruppe wird in den Dungeon transferiert, wenn der HC im Gespräch mit Herzog Belt bereit ist, Sarevoks letzte Anhängerin zu stellen. Der Dungeon kann dann nach Belieben verlassen und wieder betreten werden, und ist auch in SoD erreichbar (in der Gegend mit dem Eisenthrongebäude). 
+Imoen bleibt im Dungeon in der Gruppe, wenn sie ein Gruppenmitglied ist, und spricht ihre originalen Dialoge im Dungeon wie im Originalspiel. Wenn sie nicht in der Gruppe ist, dann wird sie wie im originalen SoD als Guide im Dungeon anwesend sein. 
+Der Übergang zu SoD ist dann nach dem Bekämpfen von Korlasz im Dialog mit Herzog Belt, wenn der HC ihm sagt, dass er nun einen Zehntag gar nichts machen wird, um für das nächste Problem, dass einen Helden benötigt, bereit zu sein.
+
+
+15 Fenster der Palastheiler ist im Palast
+-----------------------------------
+Fenster wird im Erdgeschoss des Palastes sein, und ähnliche Tempeldienste wie die Klerikerin in Kolrasz' Krypta anbieten. 
+
+
+16 Captain Corwin Is in the Palace
+-----------------------------------
+Diese Komponente platziert Corwin ins Erdgeschoss des Palastes mit absolut keinem erwähnenswerten Inhalt.
+
+
+
 
 INSTALLATION
 
@@ -192,6 +210,7 @@ CREDITS
 
 Acifer: ideas.
 BeamDog / Overhaul Games: for creating SoD where most additional content ideas for this mod resulted from.
+Lauriel: ideas to move Korlasz' Dungeon into BG1 and place Fenster into the palace, from her mod Transitions.
 Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
 Translations:
@@ -219,6 +238,13 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 9:
+-New optional component "Korlasz' Dungeon is in BG1": moves Koralsz' Tomb into BG1 after Sarevok's death. Transition to SoD / BGII after it is done.
+-New optional component "Fenster the Palace Healer Is in the Palace": Places Fenster into the palace ground floor who will offer temple services.
+-New optional component "Captain Corwin Is in the Palace": Places Corwin into palace ground floor with no notable content.
+-Main component: transition to BGII happens via the end cutscene in teh wilderness (like in the original).
+-cutsom cres other than dukes will be removed in SoD / BGII (for compatibility with mods that reopen the areas).
 
 Version 8:
 -French translation added.

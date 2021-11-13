@@ -16,12 +16,12 @@ END
 
 IF WEIGHT #-1
 ~Dead("Sarevok") Global("C#st_HeroOfBG","GLOBAL",1)
-OR(2) PartyHasItem("c#stsrvs") !Global("#L_BG1SarevokDead","GLOBAL",1)~ THEN victory_02
+Global("C#EBG1_KorlaszQuest","GLOBAL",0)~ THEN victory_02
 SAY @2 /* ~<CHARNAME>, Hero of Baldur's Gate. Are you ready to combine forces with the Flaming Fist and go against the last followers of Sarevok?~ */
 + ~%bgee_only%~ + @3 /* ~"Hero of Baldur's Gate", now that has a pleasant ring to it. Tell me what you need me to do.~ */ + bg1_end
-+ ~%sod% !Global("#L_BG1SarevokDead","GLOBAL",1)~ + @4 /* ~Yes, I am ready and I will start right away. Send me wherever you need me.~ */ + sod
-+ ~%eet_only% !Global("#L_BG1SarevokDead","GLOBAL",1)~ + @5 /* ~Actually, I had enough of fulfilling a role. I won't be a lackey to you or anyone. I'll leave Baldur's Gate and look for my fate elsewhere. Fare well.~ */ + start_bg2
-+ ~!Global("#L_BG1SarevokDead","GLOBAL",1)~ + @6 /* ~Not right away. I have a few things to finish first.~ */ + roam_bg1
++ ~%sod%~ + @4 /* ~Yes, I am ready and I will start right away. Send me wherever you need me.~ */ DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",1)~ + sod
++ ~%eet_only%~ + @5 /* ~Actually, I had enough of fulfilling a role. I won't be a lackey to you or anyone. I'll leave Baldur's Gate and look for my fate elsewhere. Fare well.~ */ DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",99)~ + start_bg2
+++ @6 /* ~Not right away. I have a few things to finish first.~ */ + roam_bg1
 END
 
 IF ~~ THEN bg1_end
@@ -30,13 +30,14 @@ IF ~~ THEN DO ~%start_bg1end_sod_cutscene%~ EXIT
 END
 
 IF ~~ THEN sod
-SAY @13 /* ~The city is in your debt, Hero of Baldur's Gate. Please follow me, the Flaming Fist soldiers will guide you to the hide-out of Sarevok's last follower.~ */
+SAY @13 /* ~The city is in your debt, Hero of Baldur's Gate.~  */ 
+= @14 /* ~Please follow me, the Flaming Fist soldiers will guide you to the hide-out of Sarevok's last follower.~ */
 IF ~~ THEN DO ~TakePartyItem("c#stsrvs") DestroyItem("c#stsrvs") %start_bg1end_sod_cutscene%~ EXIT
 END
 
 IF ~~ THEN start_bg2
 SAY @8 /* ~I see. Still, the city is in your debt. Fare well, Hero of Baldur's Gate.~ */
-IF ~~ THEN DO ~%move_to_bg2%~ EXIT
+IF ~~ THEN DO ~SetGlobal("C#EBG1_DirectBG2Transition","GLOBAL",1) TakePartyItem("c#stsrvs") DestroyItem("c#stsrvs") %move_to_bg2%~ EXIT
 END
 
 IF ~~ THEN roam_bg1

@@ -93,3 +93,12 @@
 @22 = ~Целитель Пламенного Кулака~ /* male*/
 @23 = ~Разведчик Пламенного Кулака~ /* male*/
 
+/* new for v9 */
+@24 = ~The name craftfully caved into ornamented flagstones identifies this as the Korlasz family crypt entrance. It is well closed and magically protected.~
+@25 = ~Greetings, hero. I am Fenster, the palace cleric.~
+@26 = ~How can I be of service?~
+@27 = ~Let me see what you have.~
+@28 = ~Nothing right now.~
+@29 = ~With pleasure.~
+@30 = ~I am not available for services while I tend to Imoen. Please ask for divine help elsewhere.~
+

@@ -29,6 +29,10 @@
 /* new for v7 */
 @5023 = ~Ce mod doit etre installe avant EET_End sur une installation EET.~
 
+/* new for v9 */
+@5024  = ~Korlasz' Dungeon is in BG1~
+@5025  = ~Imoen4Ever's "Imoen remains in the group in Korlasz' dungeon" needs to be deinstalled for this.~
+
 
 // WeiDU prompts
 @-1000= "Le mod %TP2_FILE_NAME% contient"

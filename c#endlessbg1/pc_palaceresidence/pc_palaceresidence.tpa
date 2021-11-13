@@ -18,6 +18,17 @@ THEN
 		AddMapNote([80.440],@9)
 		SetGlobal("C#st_SpawnServant","MYAREA",1)
 END
+
+IF
+	OR(2) GlobalGT("ENDOFBG1","GLOBAL",0) GlobalGT("bd_plot","global",40)
+	Exists("c#stsrv1")
+	GlobalLT("C#st_SpawnServant","MYAREA",2)
+THEN
+	RESPONSE #100
+		ActionOverride("c#stsrv1",DestroySelf())
+		SmallWait(1)
+		SetGlobal("C#st_SpawnServant","MYAREA",2)
+END
 >>>>>>>>
 EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L3%.bcs~ ~.../ar0110_add_extended.baf~ EVALUATE_BUFFER 
 

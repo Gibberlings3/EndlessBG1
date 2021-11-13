@@ -145,6 +145,24 @@ Denkod in the Thieves' Guild, who told the PC where Sarevok went, will still be 
 After Sarevok's Death, the exit of the Undercity will skip the Thieves' Maze once and lead directly into the Thieves' Guild. After going in that direction once, the normal entrances will be reactivated so that the Thieves' Maze can be visited normally after that. 
 
 
+14 Korlasz' Dungeon is in BG1
+-----------------------------------
+This component moves Korlasz' Tomb into the BG1 part of the game. It transports the group into the dungeon after Belt told the PC to come along to hear the details of pursuing Sarevok last follower. 
+The dungeon can be left and entered after that at will, and is also available in SoD (Iron Throne building area).
+Imoen will remain in the group if she is a party member and will have her original SoD dialogues inside the tomb. If she is not in the group, Imoen will be inside the dungeon as a guide like she is in original SoD.
+Transition to SoD is done afterwards in the dialogue with Duke Belt, when the PC can say that they will do nothing for a tenday to rest before the next problem needing a hero will surface.
+
+
+15 Fenster the Palace Healer Is in the Palace
+-----------------------------------
+Fenster will be inside the palace ground floor, offering similar healing services like the cleric inside Korlasz' Dungeon.
+
+
+16 Captain Corwin Is in the Palace
+-----------------------------------
+Corwin will be inside the palace ground floor with the Dukes, and has no notable content whatsoever.
+
+
 
 INSTALLATION
 
@@ -201,6 +219,7 @@ CREDITS
 
 Acifer: ideas.
 BeamDog / Overhaul Games: for creating SoD where most additional content ideas for this mod resulted from.
+Lauriel: ideas to move Korlasz' Dungeon into BG1 and place Fenster into the palace, from her mod Transitions.
 Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons": CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
 Translations:
@@ -228,6 +247,13 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 9:
+-New optional component "Korlasz' Dungeon is in BG1": moves Koralsz' Tomb into BG1 after Sarevok's death. Transition to SoD / BGII after it is done.
+-New optional component "Fenster the Palace Healer Is in the Palace": Places Fenster into the palace ground floor who will offer temple services.
+-New optional component "Captain Corwin Is in the Palace": Places Corwin into palace ground floor with no notable content.
+-Main component: transition to BGII happens via the end cutscene in teh wilderness (like in the original).
+-cutsom cres other than dukes will be removed in SoD / BGII (for compatibility with mods that reopen the areas).
 
 Version 8:
 -French translation added.

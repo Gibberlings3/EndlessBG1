@@ -1,0 +1,21 @@
+/* lines @0 - @17 are the same as in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@0    = ~Schon gut, guck nich' so! Ich wollte schon immer mal so klingen, als wüsste ich mehr als du. Das hat die Herzogin Jannath mir halt gesagt, als du grad nicht dabei warst, so als wüsstest du das nicht.~
+@1    = ~Was hat es mit dir und Herzogin Jannath eigentlich auf sich?~
+@2    = ~Naja, öhm... Irgendwie hat sie einen Narren an mir gefressen, seitdem wir die Herzöge bei Sarevoks Krönung gerettet haben ... oder bei seiner Nicht-Krönung, besser gesagt.~
+@3    = ~Und dann hat sie mich ein bisschen Magie ausprobieren lassen und ... das macht total Spaß! Ich konnte es! Magie anwenden, meine ich. Es hat tatsächlich geklappt!~
+@4    = ~Sie meinte, sie würde mir dabei helfen, meine magischen Fähigkeiten weiter zu entwickeln. Und naja... ich habe entschieden, dass ich ihr Angebot annehmen werde. Also, wenn das hier alles vorbei ist, meine ich.~
+@5    = ~Oh, nur damit du es weißt. Ich habe ihr versprochen, dass ich ihr alle arkanen Schriften und Schriftrollen bringen werde, die wir hier unten finden könnten.~
+@6    = ~Du hast es geschafft! War mir von Anfang an klar.~
+@7    = ~Ich kann nicht glauben, dass es tatsächlich ein Ende gefunden haben könnte.~
+@8    = ~Wir haben das zusammen gemacht, Imoen.~
+@9    = ~Du warst dabei keine große Hilfe.~
+@10   = ~Ich weiß genau, was du meinst!~
+@11   = ~Ist mir recht. Jetzt gibt's hier ja nicht mehr viel, wovor man Angst haben müsste.~
+@12   = ~Die Söldner der Flammenden Faust gehen schon mal zurück zum Eingang und benutzen dafür dieses Seil, was da hinten hängt, südlich von hier.~
+@13   = ~Schau nur diese ganzen Schriften und Bücher über Bhaal! Herzogin Jannath würde vor Freude in Kreis hüpfen, wenn sie die bekäme. Naja, ne, würde sie natürlich nicht. Aber sie würde sich auf alle Fälle freuen! Kann ich ihr die mitbringen? Ja?~
+@14   = ~Sicher. Ich wüsste nicht, was ich damit tun soll.~
+@15   = ~Nein, ich möchte sie erstmal behalten.~
+@16   = ~Na schön, aber sag' bescheid, wenn du deine Meinung änderst, ja?~
+@17   = ~Nimm die ganzen Unterlagen über Bhaal und gib sie Herzogin Jannath, Imoen.~
+
+@200 = ~Climb the rope whenever you are ready to return to the Palace. We will be right behind you.~

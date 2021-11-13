@@ -60,8 +60,22 @@ THEN
 		SetGlobal("C#st_SpawnServant2","MYAREA",2)
 END
 
+/* despawn servant in SoD / BGII */
+IF
+	OR(2) GlobalGT("ENDOFBG1","GLOBAL",0) GlobalGT("bd_plot","global",40)
+	Exists("c#stsrv2")
+	GlobalLT("C#st_SpawnServant2","MYAREA",3)
+THEN
+	RESPONSE #100
+		ActionOverride("c#stsrv2",DestroySelf())
+		SmallWait(1)
+		SetGlobal("C#st_SpawnServant2","MYAREA",3)
+		Continue()
+END
+
 /* move Imoen here if not in party */
 IF
+	!GlobalGT("ENDOFBG1","GLOBAL",0) !GlobalGT("bd_plot","global",40) //not in SoD/BGII
 	Global("C#st_HeroOfBG","GLOBAL",1)
 	!InPartyAllowDead("%IMOEN_DV%")
 	!Dead("%IMOEN_DV%")

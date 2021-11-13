@@ -24,8 +24,11 @@
 @12 = ~Pozdrawiam równie¿ ciebie, <GABBER>.~
 
 /* new for v3: changed line 7 */
-@13  = ~Miasto jest ci d³u¿ne, bohaterze Wrót Baldura. Proszê za mn¹, ¿o³nierze P³omiennej Piêœci poprowadz¹ ciê do kryjówki jednego ze zwolenników Sarevoka.~
-       ~Miasto jest ci d³u¿ne, bohaterko Wrót Baldura. Proszê za mn¹, ¿o³nierze P³omiennej Piêœci poprowadz¹ ciê do kryjówki jednego ze zwolenników Sarevoka.~
+@13  = ~Miasto jest ci d³u¿ne, bohaterze Wrót Baldura.~ ~Miasto jest ci d³u¿ne, bohaterko Wrót Baldura.~
+
+/* new for v9: splitted line 13 */
+@14  = ~Proszê za mn¹, ¿o³nierze P³omiennej Piêœci poprowadz¹ ciê do kryjówki jednego ze zwolenników Sarevoka.~
+       ~Proszê za mn¹, ¿o³nierze P³omiennej Piêœci poprowadz¹ ciê do kryjówki jednego ze zwolenników Sarevoka.~
 
 /* pc_palaceresidence.d */
 @20  = ~Witaj, <CHARNAME>. Proszê opuœciæ piwnicê, nie powinieneœ tutaj schodziæ.~ ~Witaj, <CHARNAME>. Proszê opuœciæ piwnicê, nie powinnaœ tutaj schodziæ.~
@@ -158,3 +161,46 @@
 @158 = ~Porozmawiamy, gdy ju¿ do³¹czysz do P³omiennej Piêœci. Do tego czasu, ¿yczê zdrowia.~
 @159 = ~Pozdrowienia, <CHARNAME>. Jeœli szukasz Ophyllisa, to powinien byæ w swoim biurze.~
 
+
+/* korlasz_dungeon_bg1.d */
+/* lines @200 - @202 are the same as  @0 - @2 from ajantisbg1/.../ajantisbg1_transitions.tra */
+@200  = ~It was an honor to cleanse this place from the bandit threat and the rising war with you. My task here is done. I shall return home to call on the Order of the Radiant Heart. I will report the happenings and your part in it. I, ahem, will also mention my part in it, and hope I will be found worthy to receive knighthood. I thank you for combining forces with me. Farewell!~
+@201  = ~<CHARNAME>, I fear time has come to say good bye. The war is stopped, Sarevok is defeated, the task the Order gave me is done. It is time for me to report back, but I will travel to Waterdeep first, as we already agreed upon. Nothing will detain me from seeking my parents' answer concerning our plans for marriage, now that our foe is defeated and peace has come back to the lands, at last. I am so looking foreward to talking to them, <CHARNAME>, my love. Talking to them and telling them of the love I hold for you.~
+@202  = ~My heart aches to leave you. I will send you messages about my whereabouts as often as I can. And be it Waterdeep, Athkatla, or here that we meet again, be assured I will come for you - or await you, no matter where we are destined to be reunited. Farewell, 'Heroine of Baldur's Gate' (smiles). Relish the people's gratitude and praise while they are still willing to give it, <CHARNAME>. You earned it.~
+@203  = ~Imoen - Duke Jannath wants to talk to you before you go.~
+@204  = ~Imoen, child, I will talk to you before you go. Come here for a moment.~
+@205  = ~Me? Okay!~
+@206  = ~Duke Jannath is determined to see Imoen before you go. I am sure she will also take care of your friend's current condition.~
+@207  = ~I need to talk to Imoen before you go. I will call for Fenster to see to her current... condition.~
+@208  = ~Imoen, your childhood friend, was prepared by Duke Jannath to guide you as best as possible. She will await you there.~
+@209  = ~Please, return to the family crypt of Korlasz and help defeat the last follower of Sarevok.~
+@210  = ~<CHARNAME>, Hero of Baldur's Gate. You return victorious! Not only Sarevok himself, but also all of Sarevok's followers are dealt with.~
+@211  = ~Honestly, I need a break. I can feel the next problem brooding. I'll just go rest and do nothing for a tenday so I'll be prepared for whatever is coming.~
+@212  = ~There is still a lot to do and discover. I'll be around.~
+@213  = ~I will take my leave from the city and the Sword Coast before the next world threatening desaster arises. I'll try going south, away from whatever the city of Baldur's Gate might ail in the near or further future.~
+@214  = ~A hero is always busy. Whoever receives your aid can call themselves lucky. Enjoy your time, hero.~
+@215  = ~A well earned rest. Make yourself at home on the top floor of the palace as much as you like.~
+@216  = ~I will make my own path now. Fare well, <CHARNAME>.~
+@217  = ~I'll be off, <CHARNAME>. It was great and all, but I'll go for a time of luxury for a while.~
+@218  = ~I've endured your idiosyncrasies quite long enough, <CHARNAME>, but this was the last tomb you, or anyone, lured me into.~
+@219  = ~I will depart and see what tasks my patron has in store for me.~
+@220  = ~Ooh yes, sleeping and doing *nothing*, that sounds great! Although... I think I'll take Duke Jannath up on her offer to train me in magic, <CHARNAME>. You go and take your well-earned rest, sleepyhead!~
+@221  = ~You have proven to be the city's hero, and we are in your debt forever. What will you do now?~
+/* @222 - @225 are the same as in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@222  = ~<CHARNAME> found a lot of old tomes and research and stuff!~
+@223  = ~Here it is, Duke Liia. Look at the size of that pile!~
+@224  = ~I thank you for the tomes Imoen gave me. Here, take these for compensation.~
+@225  = ~I am very interested in these old tomes you found in Korlasz' family crypt for my research. Please hand them to me as soon as you can spare them, <CHARNAME>.~
+
+@226  = ~You found tomes about Bhaal in Korlasz' possessions. May I have them for my own research?~
+@227  = ~Of course. Here you are.~
+@228  = ~No, I'd like to hold on to them myself.~
+
+/* @229 is the same as @229 in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@229  = ~I thank you. Take these for compensation.~
+
+@230  = ~I see. Please give them to me as soon as you can spare them.~
+@231  = ~I am very interested in studying these kind of old tomes.~
+
+/* @232 is the same as @232 in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@232  = ~Here is resaerch about necromancy and Bhaal I found in Korlasz' family crypt. I believe you would have an interest in these.~

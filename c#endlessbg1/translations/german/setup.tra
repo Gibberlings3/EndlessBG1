@@ -28,3 +28,7 @@
 
 /* new for v7 */
 @5023  = ~Die Mod muss vor EET_End installiert werden.~
+
+/* new for v9 */
+@5024  = ~Korlasz' Dungeon ist in BG1~
+@5025  = ~Imoen4Evers "Imoen bleibt in Korlasz' Crypta in der Gruppe" darf (und muss) nicht installiert sein.~
