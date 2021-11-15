@@ -99,3 +99,9 @@ Nie mo¿e u¿ywaæ:
 @29 = ~With pleasure.~
 @30 = ~I am not available for services while I tend to Imoen. Please ask for divine help elsewhere.~
 
+/* sarevok_cleanup_more.tpa */
+/* #18345 changed */
+@50  = ~There's quite a bit to say, I don't really know if I have the time to go into all of the details. I used to live at Candlekeep with my father Gorion. A little while back we were forced to flee. Someone was out there who really wanted me dead. In trying to kill me, he... killed my dad.~
+/* #18351 changed */
+@51  = ~I am sorry to bring back such painful memories. I wish to help you, and in doing so, end these dreams that plague me. Here, take this. Goodbye now. Perhaps we shall meet again.~
+

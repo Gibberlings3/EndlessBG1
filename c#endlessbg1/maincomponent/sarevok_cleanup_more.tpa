@@ -142,4 +142,61 @@ END
 ADD_STATE_TRIGGER HARBOR 10 ~OR(2) Dead("Sarevok")~ UNLESS ~Dead("Sarevok")~
 ADD_STATE_TRIGGER HARBOR 11 ~!Dead("Sarevok")~
 >>>>>>>>
-COMPILE ~...inlined/harbor_eltan.d~
+COMPILE EVALUATE_BUFFER ~...inlined/harbor_eltan.d~
+
+
+/* Hafiz */
+
+/* preparing patching of Hafiz: use correct reply option. For BGT I'll just assume the state was not altered because I don't know the transaction's str.ref number. */
+ACTION_IF NOT GAME_IS ~bgt~ BEGIN
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  ~%eet_2%18345~ => 1
+END
+  
+COPY_EXISTING ~HAFIZ.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 3 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_3
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+END ELSE BEGIN
+OUTER_SET responses_3 = 2
+END
+
+/* PC should not talk like Sarevok is still out there, looking for him */
+<<<<<<<< ...inlined/hafiz_cleanup.d
+/* #18345 ~There's quite a bit to say, I don't really know if I have the time to go into all of the details. I used to live at Candlekeep with my father Gorion. A little while back we were forced to flee. Seems like there's someone out there who really wants me dead. In trying to kill me, he... killed my dad.~ */
+ADD_TRANS_TRIGGER HAFIZ 3 ~!Dead("Sarevok")~ DO %responses_3% //2
+
+//18345 changed
+EXTEND_BOTTOM HAFIZ 3
++ ~Dead("Sarevok")~ + @50 /* ~There's quite a bit to say, I don't really know if I have the time to go into all of the details. I used to live at Candlekeep with my father Gorion. A little while back we were forced to flee. Someone was out there who really wanted me dead. In trying to kill me, he... killed my dad.~ */ + 6_altered
+END
+
+//18351 changed
+APPEND HAFIZ
+IF ~~ THEN 6_altered
+  SAY @51 /* ~I am sorry to bring back such painful memories. I wish to help you, and in doing so, end these dreams that plague me. Here, take this. Goodbye now. Perhaps we shall meet again.~ */
+COPY_TRANS HAFIZ 6
+END
+END //APPEND
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~...inlined/hafiz_cleanup.d~
+

@@ -102,3 +102,9 @@ Dieben~
 @28 = ~Nothing right now.~
 @29 = ~With pleasure.~
 @30 = ~I am not available for services while I tend to Imoen. Please ask for divine help elsewhere.~
+
+/* sarevok_cleanup_more.tpa */
+/* #18345 changed */
+@50  = ~Es gibt einiges zu sagen. Ich weiß nicht recht, ob ich die Zeit habe, auf alle Einzelheiten einzugehen. Ich lebte früher mit meinem Vater Gorion in Kerzenburg. Vor einiger Zeit mussten wir fliehen. Es gab jemanden, der unbedingt meinen Tod wollte. Bei dem Versuch, mich zu töten … tötete er meinen Vater.~
+/* #18351 changed */
+@51  = ~Es tut mir leid, dass ich solch schmerzliche Erinnerungen wachrufe. Ich möchte Euch helfen und gleichzeitig diesen Träumen, die mich plagen, ein Ende setzen. Hier, nehmt das. Nun lebt wohl. Vielleicht werden wir uns wieder treffen.~
