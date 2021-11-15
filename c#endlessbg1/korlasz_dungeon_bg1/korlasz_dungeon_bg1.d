@@ -13,8 +13,8 @@ END
 
 EXTEND_BOTTOM BELT %belt_ebg1_14%
 IF ~~ THEN DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",1)
-TakePartyItem("c#stsrvs")
-DestroyItem("c#stsrvs")
+ActionOverride("BELT",TakePartyItem("c#stsrvs"))
+ActionOverride("BELT",DestroyItem("c#stsrvs"))
 ClearAllActions()
 StartCutSceneMode()
 StartCutSceneEx("c#st2kd",FALSE)~ EXIT

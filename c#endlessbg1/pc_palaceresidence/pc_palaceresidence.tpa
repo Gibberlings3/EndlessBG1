@@ -136,15 +136,6 @@ THEN
     MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container1","BD0103*PlayerChest00")
     SetGlobal("C#st_HeroTransferItemsPC", "MYAREA", 1)
 END
-
-/* Sarevok's Sword will be stolen */
-IF
-  Global("C#st_HeroTransferItemsPC", "MYAREA", 1)
-THEN
-  RESPONSE #100
-    ActionOverride("PlayerChest00",DestroyItem("c#stsrvs"))
-    SetGlobal("C#st_HeroTransferItemsPC", "MYAREA", 2)
-END
 >>>>>>>>
 EXTEND_BOTTOM ~bd0103.bcs~ ~.../bd0103_container_pc.baf~ EVALUATE_BUFFER 
 END //SoD+EET

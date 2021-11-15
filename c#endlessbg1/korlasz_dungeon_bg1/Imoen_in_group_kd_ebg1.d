@@ -173,22 +173,17 @@ END
 
 /* after Korlasz' dungeon is done */
 
-/* prevent bdcut00z.bcs from running */
-/*
+/* prevent bdcut00z.bcs from running if we are in BG1 */
+
 EXTEND_BOTTOM bdimoen 53
-IF ~~ THEN DO ~SetGlobal("bd_Imoen_farewell","bd0120",2)
+IF ~GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)~ THEN DO ~SetGlobal("bd_Imoen_farewell","bd0120",2) SetGlobal("C#EBG1_ImoenFinalDialog","GLOBAL",2)
+SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",2)
 AddJournalEntry(%eet_2%69028,QUEST_DONE)~ EXIT
 END
 
-EXTEND_BOTZOM bdimoen 54
-IF ~~ THEN DO ~SetGlobal("bd_Imoen_farewell","bd0120",2)
+EXTEND_BOTTOM bdimoen 54
+IF ~GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)~ THEN DO ~SetGlobal("bd_Imoen_farewell","bd0120",2) SetGlobal("C#EBG1_ImoenFinalDialog","GLOBAL",2)
+SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",2)
 AddJournalEntry(%eet_2%69028,QUEST_DONE)~ EXIT
 END
-*/
-REPLACE_TRANS_ACTION bdimoen BEGIN 53 END BEGIN 0 END ~StartCutSceneEx("bdcut00z",FALSE)~ ~SetGlobal("C#EBG1_ImoenFinalDialog","GLOBAL",2)
-SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",2)~
-REPLACE_TRANS_ACTION bdimoen BEGIN 53 END BEGIN 0 END ~SetCutSceneLite(TRUE)~ ~~
-REPLACE_TRANS_ACTION bdimoen BEGIN 54 END BEGIN 0 END ~StartCutSceneEx("bdcut00z",FALSE)~ ~SetGlobal("C#EBG1_ImoenFinalDialog","GLOBAL",2)
-SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",2)~
-REPLACE_TRANS_ACTION bdimoen BEGIN 54 END BEGIN 0 END ~SetCutSceneLite(TRUE)~ ~~
 

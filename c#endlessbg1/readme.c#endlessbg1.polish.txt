@@ -19,6 +19,8 @@ Modyfikacja oferuje tak¿e kilka opcjonalnych komponentów, które dodaj¹ wiêcej sm
 
 OPIS KOMPNENTÓW:
 
+Note: although most components are optional, it is assumed that components get installed in the correct order of their appearance. Do not install later components before earlier ones, as it might mess up functionality.
+
 1. Endless BG1: komponent g³ówny (wymagany)
 -----------------------------------
 
@@ -167,6 +169,7 @@ This component moves Korlasz' Tomb into the BG1 part of the game. It transports 
 The dungeon can be left and entered after that at will, and is also available in SoD (Iron Throne building area).
 Imoen will remain in the group if she is a party member and will have her original SoD dialogues inside the tomb. If she is not in the group, Imoen will be inside the dungeon as a guide like she is in original SoD.
 Transition to SoD is done afterwards in the dialogue with Duke Belt, when the PC can say that they will do nothing for a tenday to rest before the next problem needing a hero will surface.
+Changes do not apply to a new SoD game.
 
 
 15 Fenster the Palace Healer Is in the Palace

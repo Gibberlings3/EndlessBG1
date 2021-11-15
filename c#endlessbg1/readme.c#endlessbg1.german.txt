@@ -18,6 +18,8 @@ Dazu gibt es mehrere optionale Komponenten, die der ganzen Situation mehr Leben 
 
 BESCHREIBUNG
 
+Wichtiger Hinweis: Auch wenn die meisten Komponenten optional sind, geht der Inhalt davon aus, dass Komponenten in der entsprechenden Reihenfolge installiert werden, wie sie in der Mod angeboten werden. Instaliert nie spätere Komponenten vor früheren, da es die Funktionalität im Spiel zerstören könnte.
+
 1. Hauptkomponente (muss für alle anderen installiert sein)
 -----------------------------------
 Für BG:EE, BG:SoD und EET fügt diese Komponente folgendes ein:
@@ -140,14 +142,15 @@ Nachdem Sarevok besiegt ist, wird mit dieser Komponente der Ausgang aus der Unte
 Diese Komponente verschiebt Korlasz' Krypta in den BG1-Teil des Spiels. Die Gruppe wird in den Dungeon transferiert, wenn der HC im Gespräch mit Herzog Belt bereit ist, Sarevoks letzte Anhängerin zu stellen. Der Dungeon kann dann nach Belieben verlassen und wieder betreten werden, und ist auch in SoD erreichbar (in der Gegend mit dem Eisenthrongebäude). 
 Imoen bleibt im Dungeon in der Gruppe, wenn sie ein Gruppenmitglied ist, und spricht ihre originalen Dialoge im Dungeon wie im Originalspiel. Wenn sie nicht in der Gruppe ist, dann wird sie wie im originalen SoD als Guide im Dungeon anwesend sein. 
 Der Übergang zu SoD ist dann nach dem Bekämpfen von Korlasz im Dialog mit Herzog Belt, wenn der HC ihm sagt, dass er nun einen Zehntag gar nichts machen wird, um für das nächste Problem, dass einen Helden benötigt, bereit zu sein.
+Ein neu gestartetes SoD-Spiel ist nicht von den Änderungen betroffen.
 
 
-15 Fenster der Palastheiler ist im Palast
+15 Fester der Palastkleriker ist im Palast
 -----------------------------------
-Fenster wird im Erdgeschoss des Palastes sein, und ähnliche Tempeldienste wie die Klerikerin in Kolrasz' Krypta anbieten. 
+Fester wird im Erdgeschoss des Palastes sein, und ähnliche Tempeldienste wie die Klerikerin in Korlasz' Krypta anbieten. 
 
 
-16 Captain Corwin Is in the Palace
+16 Hauptmann Corwin ist im Palast
 -----------------------------------
 Diese Komponente platziert Corwin ins Erdgeschoss des Palastes mit absolut keinem erwähnenswerten Inhalt.
 

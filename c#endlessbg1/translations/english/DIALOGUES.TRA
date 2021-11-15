@@ -1,4 +1,4 @@
-/* dialogues.d */
+/* dialogues_ee.d */
 @0  = ~<CHARNAME>, you were successful! You defeated Sarevok who conspired against the city, the Sword Coast, even Amn - for his own dark goals and purpose.~
 @1  = ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Four of this city I herewith name you "Hero of Baldur's Gate"! On behalf of the city let me express our deepest gratitude!~
 @2  = ~<CHARNAME>, Hero of Baldur's Gate, are you ready to combine forces with the Flaming Fist and go against the last followers of Sarevok?~
@@ -9,10 +9,15 @@
 @7  = ~The city is in your debt, Hero of Baldur's Gate. Please follow me, I will tell you what we know.~
 @8  = ~I see. Still, the city is in your debt. Fare well, Hero of Baldur's Gate.~
 @9  = ~Very well. We will concentrate our forces on finding all of Sarevok's followers and hope you will join our efforts soon. Until then, enjoy your stay.~
+
+/* dialogues.d */
 @10 = ~Thank you for defeating Sarevok, <CHARNAME>!~
 
 /* new for v2 */
+/* dialogues.d */
 @11 = ~My thanks to you as well, companion of <CHARNAME>.~
+
+/* dialogues_ee.d */
 @12 = ~Greetings to you as well, companion of <CHARNAME>.~
 
 /* new for v3: changed line 7 for SoD [again splitted in v9] */
@@ -177,3 +182,9 @@
 
 /* @232 is the same as @232 in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
 @232  = ~Here is resaerch about necromancy and Bhaal I found in Korlasz' family crypt. I believe you would have an interest in these.~
+
+@233  = ~[Dynaheir]A mighty Bhaalspawn you became. Your journey is not over, and so is not ours, either.~
+@234  = ~[Minsc]There will be more evil to kick, and Boo said that this is something Minsc should look foreward to.~
+@235  = ~[Jaheira]You came a long way. We promised Gorion to watch over you, and you outgrew any help we could give you to fight your foes. From now on, it will be we watching you so you will not succumb to your heritage.~
+@236  = ~[Khalid]G-Gorion would be proud of your achievements. We will come with you and help with any t-task that may arise.~
+@237  = ~Ooh yes, sleeping and doing *nothing*, that sounds great! Although... talking from experience, I don't think the gods will let us!~

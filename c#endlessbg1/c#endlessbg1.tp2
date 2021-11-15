@@ -436,6 +436,21 @@ END
 EXTEND_BOTTOM ~AR0602.bcs~ ~.../erasejournal_id.baf~ EVALUATE_BUFFER
 END
 
+ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.are~)) THEN BEGIN
+<<<<<<<< .../bd0103_remove_Sarevoks_sword.baf
+/* Sarevok's Sword will be stolen after PC returns from Korlasz' Dungeon */
+IF
+  Global("C#st_HeroTransferItemsPC","MYAREA",1)
+  Global("C#st_RemoveSwordPCChest","MYAREA",0)
+  HasItem("c#stsrvs","PlayerChest00")
+THEN
+  RESPONSE #100
+    ActionOverride("PlayerChest00",DestroyItem("c#stsrvs"))
+    SetGlobal("C#st_RemoveSwordPCChest","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~bd0103.bcs~ ~.../bd0103_remove_Sarevoks_sword.baf~ EVALUATE_BUFFER 
+END //SoD+EET
 
 ////////////////////////////////////////////////////////////////////////
 //////
@@ -1055,6 +1070,22 @@ COPY_EXISTING ~bd0120.BCS~ ~override~
 	END
 BUT_ONLY
 
+ACTION_IF GAME_IS ~eet~ BEGIN
+/* more patching if it's EET */
+COPY_EXISTING ~bd0120.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(Global("K#NewGame","BD0120",0)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 !Global("SOD_fromimport","global",2)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+END
+
 
 EXTEND_TOP ~bd0120.BCS~ ~c#endlessbg1/korlasz_dungeon_bg1/c#ebg1_kd_bg1_bd0120.baf~ EVALUATE_BUFFER
 
@@ -1135,13 +1166,13 @@ END
 /* change rope trigger so player can leave the dungeon */
 /* exit to AR0700.are */
 IF
+	GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)
 	GlobalGT("bd_plot","global",2)
 	GlobalLT("bd_plot","global",50)
 	GlobalLT("C#EBG1_ChangeRopeTrigger","MYAREA",2)
 THEN
 	RESPONSE #100
-		DisplayStringPoint([790.1630],%eet_2%59576)  // A sturdy rope hanging down into the tomb offers the only viable exit from the house of the dead.
-		DisplayString(%eet_2%59576)
+		DisplayStringHead("C#EBG1_TranAR0700",%eet_2%59576)  // A sturdy rope hanging down into the tomb offers the only viable exit from the house of the dead.
 		TriggerActivation("Rope",FALSE)
 		TriggerActivation("C#EBG1_TranAR0700",TRUE)
 		SetGlobal("C#EBG1_ChangeRopeTrigger","MYAREA",2)
@@ -1149,6 +1180,7 @@ END
 
 /* exit to bd0050.are */
 IF
+	GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)
 	GlobalGT("bd_plot","global",49)
 	GlobalLT("C#EBG1_ChangeRopeTrigger","MYAREA",3)
 THEN
@@ -1160,6 +1192,7 @@ END
 
 /* exit to bd0700.are in EET, assuming it's the BG1 city areas that's reinstalled in BGII */
 IF
+	GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)
 	GlobalGT("bd_plot","global",670)
 	GlobalLT("C#EBG1_ChangeRopeTrigger","MYAREA",4)
 THEN
@@ -1171,6 +1204,7 @@ END
 >>>>>>>>
 
 EXTEND_TOP ~bd0120.BCS~ ~.../bd0120-et.baf~ EVALUATE_BUFFER
+
 
 /* Korlasz should no longer be in Korlasz crypt if it's done */
 <<<<<<<< .../bdshkorl-et.baf
@@ -1287,7 +1321,7 @@ EXTEND_TOP ~bdintro.BCS~ ~.../bdintro-et.baf~ EVALUATE_BUFFER
 //cutskip.bcs
 COPY_EXISTING ~cutskip.BCS~ ~override~
 	DECOMPILE_AND_PATCH BEGIN
-		SPRINT textToReplace ~\(OpenDoor("door07")[%newline%]*SmallWait(11)[%newline%]*FadeFromColor(\[10\.0\],0)[%newline%]*ActionOverride("IMOEN",StartDialogNoSet(Player1))\)~
+		SPRINT textToReplace ~\(OpenDoor("door07")[%newline%]*SmallWait(11)[%newline%]*FadeFromColor(\[10\.0\],0)[%newline%]*ActionOverride("IMOEN2?",StartDialogNoSet(Player1))\)~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
 		PATCH_IF (num_matches > 0) BEGIN
 			REPLACE_TEXTUALLY ~%textToReplace%~ ~
@@ -1436,6 +1470,23 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_deactivate.baf~ EVALUATE_BUFFER 
+
+
+/* SoD part: Ironthrone HQ area bd0050 */
+/* travel trigger should only be available if Korlasz' Dungeon was done in BG1 */
+<<<<<<<< .../bd0050_traveltrigger.baf
+/* deactivate travel trigger for new SoD game */
+IF
+	Global("C#EBG1_KorlaszQuest","GLOBAL",0)
+	Global("C#EBG1_CloseKorlaszDungeon","MYAREA",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("C#EBG1_TranBD0120",FALSE)
+		TriggerActivation("c#ebg1korlasz",FALSE)
+		SetGlobal("C#EBG1_CloseKorlaszDungeon","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~bd0050.bcs~ ~.../bd0050_traveltrigger.baf~ EVALUATE_BUFFER
 
 /* failsafe: set variables in Palace area, too */
 <<<<<<<< .../ar0108_failsafe.baf
@@ -1601,6 +1652,24 @@ THEN
 END
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~.../c#st2so2.baf~ 
+
+/* cross-compatibility with component "Sarevok's Sword": we add script to remove Sarevok's Sword to BG1 area, too */
+ACTION_IF (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~4~) BEGIN
+
+<<<<<<<< .../ar0110_remove_Sarevoks_sword.baf
+/* Sarevok's Sword will be stolen after PC returns from Korlasz' Dungeon */
+IF
+  GlobalGT("bd_plot","GLOBAL",1)
+  Global("C#st_RemoveSwordPCChest","MYAREA",0)
+  HasItem("c#stsrvs","Container1")
+THEN
+  RESPONSE #100
+    ActionOverride("Container1",DestroyItem("c#stsrvs"))
+    SetGlobal("C#st_RemoveSwordPCChest","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L3%.bcs~ ~.../ar0110_remove_Sarevoks_sword.baf~ EVALUATE_BUFFER 
+END //SoD+EET
 
 ////////////////////////////////////////////////////////////////////////
 /* Fenster the Palace Healer Is in the Palace (SoD/EET Only) */
