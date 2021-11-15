@@ -2,7 +2,7 @@ New for v9:
 
 new lines:
 -DIALOGUES.TRA: @200 - @237
--GAME.TRA: @24 - @30
+-GAME.TRA: @24 - @30, @50 + @51
 -setup.tra: @5024 - @5027
 
 new file:
