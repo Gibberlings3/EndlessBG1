@@ -155,10 +155,14 @@ Imoen will remain in the group if she is a party member and will have her origin
 Transition to SoD is done afterwards in the dialogue with Duke Belt, when the PC can say that they will do nothing for a tenday to rest before the next problem needing a hero will surface.
 Changes do not apply to a new SoD game.
 
+Note: This component will most certainly screw Transitions mod as it is not considered there yet (v2.0 and lower). Do not install this component if you were planning on installing Transitions, anyway.
+
 
 15 Fenster the Palace Healer Is in the Palace
 -----------------------------------
 Fenster will be inside the palace ground floor, offering similar healing services like the cleric inside Korlasz' Dungeon.
+
+Note: This component might lead to two Fensters being present if combined with the component from Transitions mod as it is not considered there yet (v2.0 and lower). 
 
 
 16 Captain Corwin Is in the Palace
@@ -211,7 +215,9 @@ COMPATIBILITÉ
 Le mod Endless BG1 définira la variable "Global("C#EndlessBG1", "GLOBAL",1)" dans la guilde des voleurs (après le combat du Palais) pour que les mods (PNJ) sachent que le jeu restera en BG1 après la mort de Sarevok.
 De plus, à partir de la v7, "Global("SarevokBehavior", "GLOBAL",5)" sera réglé sur 5 après la mort de Sarevok.
 
-Le mod est entièrement compatible avec le mod Transitions si Endless BG1 est installé en premier. Note : le mod Transitions écrase beaucoup de composants de BG1 avec ses propres versions du contenu, si la prise en compte du contenu d'EBG1 n'est pas explicitement proposée comme choix d'installation. L'interaction Imoen-Duchesse Jannath de EBG1 sera toujours écrasée par le composant principal de Transitions.
+
+Components 1-13 of EndlessBG1 mod sont entièrement compatible avec le mod Transitions si Endless BG1 est installé en premier. Note : le mod Transitions écrase beaucoup de composants de BG1 avec ses propres versions du contenu, si la prise en compte du contenu d'EBG1 n'est pas explicitement proposée comme choix d'installation. 
+Components 14-16 are not considered in Transitions yet (v2.0 and lower). Component 14 is probably incompatible with Transitions. Installing both will probably mess up the game. Also see compatibility notes in the component descriptions.
 
 La quête "Scar's Return" de BG1RE est entièrement jouable après la mort de Sarevok.
 

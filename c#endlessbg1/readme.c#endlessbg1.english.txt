@@ -156,10 +156,14 @@ Imoen will remain in the group if she is a party member and will have her origin
 Transition to SoD is done afterwards in the dialogue with Duke Belt, when the PC can say that they will do nothing for a tenday to rest before the next problem needing a hero will surface.
 Changes do not apply to a new SoD game.
 
+Note: This component will most certainly screw Transitions mod as it is not considered there yet (v2.0 and lower). Do not install this component if you were planning on installing Transitions, anyway.
+
 
 15 Fenster the Palace Healer Is in the Palace
 -----------------------------------
 Fenster will be inside the palace ground floor, offering similar healing services like the cleric inside Korlasz' Dungeon.
+
+Note: This component might lead to two Fensters being present if combined with the component from Transitions mod as it is not considered there yet (v2.0 and lower). 
 
 
 16 Captain Corwin Is in the Palace
@@ -212,7 +216,8 @@ COMPATIBILITY
 The Endless BG1 Mod will set the variable "Global("C#EndlessBG1","GLOBAL",1)" in the thieves guild (after the Palace fight) for (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
 Also, from v7 it will set "Global("SarevokBehavior","GLOBAL",5)" to 5 after Sarevok is dead.
 
-The mod is full compatible with Transitions Mod if Endless BG1 is installed first. Note: Transitions Mod overwrites a lot of components of BG1 with own versions of the content, if considering EBG1's content is not explicitely offered as an install choice. The Imoen-Duke Jannath interaction from EBG1 will always be overwritten by Transitions' main component.
+Components 1-13 of EndlessBG1 mod are fully compatible with Transitions Mod if Endless BG1 is installed first. Note: Transitions Mod overwrites a lot of components of BG1 with own versions of the content, if considering EBG1's content is not explicitely offered as an install choice. 
+Components 14-16 are not considered in Transitions yet (v2.0 and lower). Component 14 is probably incompatible with Transitions. Installing both will probably mess up the game. Also see compatibility notes in the component descriptions.
 
 The bonus quest "Scar's Return" from bg1re is fully playable after Sarevok's death.
 
