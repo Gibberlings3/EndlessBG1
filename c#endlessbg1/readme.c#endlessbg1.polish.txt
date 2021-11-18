@@ -279,7 +279,7 @@ Version 9:
 -New optional component "Fenster the Palace Healer Is in the Palace": Places Fenster into the palace ground floor who will offer temple services.
 -New optional component "Captain Corwin Is in the Palace": Places Corwin into palace ground floor with no notable content.
 -Added line to Hafiz so it doesn't sound like Sarevok is still alive if he's dead.
--Main component: transition to BGII happens via the end cutscene in teh wilderness (like in the original).
+-Main component: direct transition to BGII happens (skip SoD) via the end cutscene in the wilderness (like in the original).
 -cutsom cres other than dukes will be removed in SoD / BGII (for compatibility with mods that reopen the areas).
 
 Version 8:
