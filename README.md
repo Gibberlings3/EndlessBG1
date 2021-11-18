@@ -36,7 +36,7 @@ Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' [S
 
 
 ## LEGAL INFORMATION
-This mod is copyright (c) 2020 jastey.
+This mod is copyright (c) jastey.
 
 This mod accepts bug fixes, compatibility fixes, and translation updates from the community.
 
