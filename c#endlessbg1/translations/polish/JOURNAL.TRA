@@ -48,3 +48,21 @@ Odzyska³em ponownie miecz Sarevoka. Wci¹¿ brakuje mu dawnej mocy, ale przynajmni
 ~Miecz Sarevoka
 
 Odzyska³am ponownie miecz Sarevoka. Wci¹¿ brakuje mu dawnej mocy, ale przynajmniej mogê ju¿ nim w³adaæ.~
+
+/* new for v9 */
+/* #31288 */
+@10012   = ~Afoul of the Law
+
+Sarevok is dead. This chapter of my life is over.~
+/* #31374 */
+@10013   = ~On the Trail of Sarevok
+
+Sarevok is dead. This chapter of my life is over.~
+/* #31400 */
+@10014   = ~Tandem in Extremis
+
+Sarevok is dead. This chapter of my life is over.~
+/* #31416 */
+@10015   = ~The Rise of Sarevok
+
+Sarevok is dead. This chapter of my life is over.~
