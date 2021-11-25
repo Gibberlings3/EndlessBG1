@@ -550,3 +550,22 @@ EXTEND_BOTTOM ~%EBaldursGate_ThievesGuild%.bcs~ ~.../ar0153_add.baf~
 		END
 	END
   BUT_ONLY
+
+/* closing of journal titles to "solved" */
+
+<<<<<<<< .../inlined/journal_handling.tph
+>>>>>>>>
+/* Afoul of the Law */
+OUTER_SET strref_31288 = eet_200000 + 31288
+/* On the Trail of Sarevok */
+OUTER_SET strref_31374 = eet_200000 + 31374
+/* Tandem in Extremis */
+OUTER_SET strref_31400 = eet_200000 + 31400
+/* The Rise of Sarevok */
+OUTER_SET strref_31416 = eet_200000 + 31416
+APPEND_OUTER - ~.../inlined/journal_handling.tph~ 
+"ADD_JOURNAL EXISTING TITLE (#%strref_31288%) @10012 
+ADD_JOURNAL EXISTING TITLE (#%strref_31374%) @10013
+ADD_JOURNAL EXISTING TITLE (#%strref_31400%) @10014
+ADD_JOURNAL EXISTING TITLE (#%strref_31416%) @10015"
+INCLUDE ~.../inlined/journal_handling.tph~

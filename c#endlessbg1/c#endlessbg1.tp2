@@ -798,6 +798,46 @@ COPY_EXISTING ~%CentralBaldursGate%.are~ ~override~
   END
 BUT_ONLY
 
+/* Add Entrance to Korlasz Dungeon to BG Docks: ar1200.are */
+COPY_EXISTING ~%BaldursGateDocks%.are~ ~override~
+  LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
+    INT_VAR
+    fj_type         = 2    //travel
+    fj_box_left     = 1019  //kleinstes x
+    fj_box_top      = 74  //kleinstes y
+    fj_box_right    = 1154  //größtes x
+    fj_box_bottom   = 189   //größtes y
+    fj_cursor_idx   = 28 //stairs
+    fj_vertex_0     = 1030 + (186 << 16)   //kleinstes x +  kleinstes y
+    fj_vertex_1     = 1154 + (189 << 16)   //größtes x + kleinstes y
+    fj_vertex_2     = 1152 + (78 << 16)   //größtes x + größtes y
+    fj_vertex_3     = 1019 + (74 << 16)   //kleinstes x + größtes y
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = C#EBG1_TranBD0120
+    fj_destination_area = EVAL ~bd0120~
+    fj_destination_name = EVAL ~C#EBG1_Exit0700~ 
+  END
+/* add info trigger for closed entrance */
+  LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
+    INT_VAR
+    fj_type         = 1    //trigger
+    fj_box_left     = 1019  //kleinstes x
+    fj_box_top      = 74  //kleinstes y
+    fj_box_right    = 1154  //größtes x
+    fj_box_bottom   = 189   //größtes y
+    fj_cursor_idx   = 22 //question mark
+    fj_vertex_0     = 1030 + (186 << 16)   //kleinstes x +  kleinstes y
+    fj_vertex_1     = 1154 + (189 << 16)   //größtes x + kleinstes y
+    fj_vertex_2     = 1152 + (78 << 16)   //größtes x + größtes y
+    fj_vertex_3     = 1019 + (74 << 16)   //kleinstes x + größtes y
+    fj_info_point_strref = RESOLVE_STR_REF (@24)
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = c#ebg1korlasz
+//    fj_reg_script   = c#ebg1ko
+  END
+
 
 /* Add Entrance to Korlasz Dungeon to BG city: bd0050.are */
 COPY_EXISTING ~bd0050.are~ ~override~
@@ -1428,24 +1468,27 @@ EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L3%.bcs~ ~.../ar0110_imoen_deactivate.b
 <<<<<<<< .../ar0700_deactivate.baf
 /* deactivate travel trigger */
 IF
-	Global("C#EBG1_ChangeTriggerKD","%CentralBaldursGate%",0)
+	OR(2)
+		Global("C#EBG1_KorlaszQuest","GLOBAL",0)
+		Global("C#EBG1_KorlaszQuest","GLOBAL",99)
+	Global("C#EBG1_ChangeTriggerKD","MYAREA",0)
 THEN
 	RESPONSE #100
 		TriggerActivation("c#ebg1korlasz",TRUE)
 		TriggerActivation("C#EBG1_TranBD0120",FALSE)
-		SetGlobal("C#EBG1_ChangeTriggerKD","%CentralBaldursGate%",1)
+		SetGlobal("C#EBG1_ChangeTriggerKD","MYAREA",1)
 END
 
 /* activate travel trigger */
 IF
 	GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)
 	GlobalLT("C#EBG1_KorlaszQuest","GLOBAL",99)
-	GlobalLT("C#EBG1_ChangeTriggerKD","%CentralBaldursGate%",2)
+	GlobalLT("C#EBG1_ChangeTriggerKD","MYAREA",2)
 THEN
 	RESPONSE #100
 		TriggerActivation("c#ebg1korlasz",FALSE)
 		TriggerActivation("C#EBG1_TranBD0120",TRUE)
-		SetGlobal("C#EBG1_ChangeTriggerKD","%CentralBaldursGate%",2)
+		SetGlobal("C#EBG1_ChangeTriggerKD","MYAREA",2)
 END
 
 /* Increase quest variable if Player1 leaves Korlasz' Dungeon after finishing the quest so cres inside bd0120.are will be gone */
@@ -1471,6 +1514,34 @@ END
 >>>>>>>>
 EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_deactivate.baf~ EVALUATE_BUFFER 
 
+<<<<<<<< .../ar1200_deactivate.baf
+/* deactivate travel trigger */
+IF
+	OR(2)
+		Global("C#EBG1_KorlaszQuest","GLOBAL",0)
+		Global("C#EBG1_KorlaszQuest","GLOBAL",99)
+	Global("C#EBG1_ChangeTriggerKD","MYAREA",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("c#ebg1korlasz",TRUE)
+		TriggerActivation("C#EBG1_TranBD0120",FALSE)
+		SetGlobal("C#EBG1_ChangeTriggerKD","MYAREA",1)
+END
+
+/* activate travel trigger */
+IF
+	GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)
+	GlobalLT("C#EBG1_KorlaszQuest","GLOBAL",99)
+	GlobalLT("C#EBG1_ChangeTriggerKD","MYAREA",2)
+THEN
+	RESPONSE #100
+		TriggerActivation("c#ebg1korlasz",FALSE)
+		TriggerActivation("C#EBG1_TranBD0120",TRUE)
+		SetGlobal("C#EBG1_ChangeTriggerKD","MYAREA",2)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%BaldursGateDocks%.bcs~ ~.../ar1200_deactivate.baf~ EVALUATE_BUFFER 
+
 
 /* SoD part: Ironthrone HQ area bd0050 */
 /* travel trigger should only be available if Korlasz' Dungeon was done in BG1 */
@@ -1478,12 +1549,12 @@ EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_deactivate.baf~ EVALUATE_BU
 /* deactivate travel trigger for new SoD game */
 IF
 	Global("C#EBG1_KorlaszQuest","GLOBAL",0)
-	Global("C#EBG1_CloseKorlaszDungeon","MYAREA",0)
+	Global("C#EBG1_ChangeTriggerKD","MYAREA",0)
 THEN
 	RESPONSE #100
 		TriggerActivation("C#EBG1_TranBD0120",FALSE)
 		TriggerActivation("c#ebg1korlasz",FALSE)
-		SetGlobal("C#EBG1_CloseKorlaszDungeon","MYAREA",1)
+		SetGlobal("C#EBG1_ChangeTriggerKD","MYAREA",1)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~bd0050.bcs~ ~.../bd0050_traveltrigger.baf~ EVALUATE_BUFFER
