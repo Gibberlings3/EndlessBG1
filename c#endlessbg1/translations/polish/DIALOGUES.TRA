@@ -165,7 +165,7 @@
 /* korlasz_dungeon_bg1.d */
 /* lines @200 - @202 are the same as  @0 - @2 from ajantisbg1/.../ajantisbg1_transitions.tra */
 @200  = ~To by³ zaszczyt walczyæ u twojego boku przeciwko tym bandytom. Uda³o nam siê powstrzymaæ nadchodz¹c¹ wojnê. Moje zadanie dobieg³o koñca. Powinienem powróciæ teraz do domu i stawiæ siê w Najszlachetniejszym Zakonie Promiennego Serca. Z³o¿ê tam raport opisuj¹cy ostatnie wydarzenia i twoj¹ w nich rolê. Wspomnê te¿... ekhem... o moim udziale w tym wszystkim i mam nadziejê, ¿e wiedza i doœwiadczenie, które posiad³em wystarcz¹, abym zosta³ pe³noprawnym rycerzem. Dziêkujê ci za po³¹czenie swoich si³ ze mn¹. ¯egnaj!~
-@201  = ~Obawia³em siê, ¿e ten czas kiedyœ nadejdzie, ale muszê siê po¿egnaæ. <CHARNAME>, wykona³em misjê zlecon¹ przez Najszlachetniejszy Zakon Promiennego Serca: wojna zosta³a powstrzymana a Sarevok jest pokonany. Bêdê musia³ z³o¿yæ raport w Zakonie, ale najpierw planujê zatrzymaæ siê w Waterdeep, tak jak to uzgodniliœmy. Nic mnie nie powstrzyma przed uzyskaniem odpowiedzi moich rodziców w sprawie naszych zaœlubin, zw³aszcza teraz, gdy nasz wróg nie ¿yje a pokój powróci³ na te ziemie. Nie mogê siê doczekaæ rozmowy z nimi, moje kochanie. Powiem im o mojej wielkiej mi³oœci, któr¹ da¿ê do ciebie.~
+@201  = ~Obawia³em siê, ¿e ten czas kiedyœ nadejdzie, ale muszê siê po¿egnaæ. <CHARNAME>, wykona³em misjê zlecon¹ przez Najszlachetniejszy Zakon Promiennego Serca: wojna zosta³a powstrzymana a Sarevok jest pokonany. Bêdê musia³ z³o¿yæ raport w Zakonie, ale najpierw planujê zatrzymaæ siê w Waterdeep, tak jak to uzgodniliœmy. Nic mnie nie powstrzyma przed uzyskaniem odpowiedzi moich rodziców w sprawie naszych zaœlubin, zw³aszcza teraz, gdy nasz wróg nie ¿yje a pokój powróci³ na te ziemie. Nie mogê siê doczekaæ rozmowy z nimi, moje kochanie. Powiem im o mojej wielkiej mi³oœci, któr¹ ciebie da¿ê.~
 @202  = ~Z ciê¿kim sercem ciê opuszczam. Bêdê ciê informowa³ o wszystkim tak czêsto, jak tylko bêdê móg³. I czy to bêdzie Waterdeep, Athkatla, czy jeszcze inne miejsce, b¹dŸ pewna, ¿e przybêdê tam dla ciebie lub bêdê ciê wyczekiwa³, bez znaczenia gdzie ponownie dane nam bêdzie siê spotkaæ. ¯egnaj „bohaterko Wrót Baldura”. *uœmiecha siê* <CHARNAME>, rozkoszuj siê wdziêcznoœci¹ ludzi, tak d³ugo, jak d³ugo s¹ sk³onni ci j¹ okazywaæ. Zas³u¿y³aœ na te pochwa³y.~
 @203  = ~Imoen, ksiê¿na Jannath chcia³aby z tob¹ porozmawiaæ zanim pójdziecie.~
 @204  = ~Imoen, chcia³abym z tob¹ porozmawiaæ zanim pójdziecie. PodejdŸ tu na chwilê.~
@@ -186,9 +186,9 @@
         ~Zas³u¿y³aœ na ten odpoczynek. Rozgoœæ siê na ostatnim piêtrze pa³acu.~
 @216  = ~<CHARNAME>, chyba pójdê w³asn¹ drog¹. ¯egnaj.~
 @217  = ~<CHARNAME>, to dla mnie ostatnia przeja¿d¿ka, przynajmniej na jakiœ czas. By³o naprawdê œwietnie i w ogóle, jednak teraz muszê zaznaæ trochê luksusu.~
-@218  = ~Znosi³em twoje osobliwe czyny wystarczaj¹co d³ugo, <CHARNAME>, ale to ostatnia krypta, do której ktokolwiek mnie zaci¹gn¹³, wliczaj¹c ciebie.~
+@218  = ~Znosi³em twoje osobliwe czyny wystarczaj¹co d³ugo, <CHARNAME>, ale to ostatnia krypta, do której ktokolwiek mnie zaci¹gn¹³, wliczaj¹c równie¿ ciebie.~
 @219  = ~Wkrótce wyruszê, ¿eby przekonaæ siê, jakie zadanie mój patron dla mnie przygotowa³.~
-@220  = ~Ooo taak, spanie i NICNIEROBIENIE, to brzmi œwietnie! Chocia¿... mo¿e pójdê na to szkolenie z magii, które mi zaoferowa³a Ksiê¿na Jannath. <CHARNAME>, œpiochu, idŸ na zas³u¿ony odpoczynek, a mn¹ siê nie martw.~
+@220  = ~Ooo taak, spanie i nicnierobienie, to brzmi œwietnie! Chocia¿... mo¿e pójdê na to szkolenie z magii, które mi zaoferowa³a ksiê¿na Jannath. <CHARNAME>, œpiochu, idŸ na zas³u¿ony odpoczynek, a mn¹ siê nie martw.~
 @221  = ~Koleny raz udowodni³eœ, ¿e jesteœ bohaterem tego miasta. Mamy u ciebie d³ug nie do sp³acenia. Jakie masz teraz plany?~
         ~Koleny raz udowodni³aœ, ¿e jesteœ bohaterk¹ tego miasta. Mamy u ciebie d³ug nie do sp³acenia. Jakie masz teraz plany?~
 /* @222 - @225 are the same as in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
@@ -220,5 +220,5 @@
 @235  = ~Przeby³eœ d³ug¹ drogê. Obiecaliœmy Gorionowi, ¿e siê tob¹ zaopiekujemy, jednak spokojnie da³byœ radê bez naszej pomocy. Od teraz to my bêdziemy ciê wspieraæ, zw³aszcza a¿ebyœ nie uleg³ swojemu dziedzictwu.~
         ~Przeby³aœ d³ug¹ drogê. Obiecaliœmy Gorionowi, ¿e siê tob¹ zaopiekujemy, jednak spokojnie da³abyœ radê bez naszej pomocy. Od teraz to my bêdziemy ciê wspieraæ, zw³aszcza a¿ebyœ nie uleg³a swojemu dziedzictwu.~
 @236  = ~G-Gorion by³by dumny z twojego postêpku. P-pójdziemy z tob¹ i p-pomo¿emy ci we wszystkim.~
-@237  = ~Ooo taak, spanie i NICNIEROBIENIE, to brzmi œwietnie! Ale z doœwiadczenia wiem, ¿e bogowie nam na to nie pozwol¹...~
+@237  = ~Ooo taak, spanie i nicnierobienie, to brzmi œwietnie! Ale z doœwiadczenia wiem, ¿e bogowie nam na to nie pozwol¹...~
 
