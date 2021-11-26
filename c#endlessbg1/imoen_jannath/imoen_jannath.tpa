@@ -177,7 +177,7 @@ ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.ar
   // Transferring items from BG1 area palace containers
 IF
   Global("C#st_HeroOfBG","GLOBAL",1)
-  Global("C#st_HeroTransferItemsIM", "MYAREA", 0)
+  Global("C#st_TransferItemsIM", "MYAREA", 0)
 THEN
   RESPONSE #100
     MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container4","BD0103*Imoen_equipment")

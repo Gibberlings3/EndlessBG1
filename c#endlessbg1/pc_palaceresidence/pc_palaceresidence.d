@@ -123,3 +123,24 @@ EscapeArea()~ JOURNAL @10003/* ~My Personal Chest in the Ducal Palace
 
 The chest on the far left in the northwest room on the top floor of the Ducal Palace is my personal one, everything I'll put in there will stay inside as long as I take residence in the Palace.~ */ EXIT
 END
+
+
+
+/* helper cre for PC's bed */
+
+BEGIN c#ebg1bd
+
+IF ~True()~ THEN pcs_bed
+SAY @350  /* ~This comfortable bed offers luxury you never found in Candlekeep.~ */
+++ @351 /* ~You put yourself to bed for a full night's sleep (8 hours).~ */ DO ~SetGlobal("C#EBG1_TalkToPC","LOCALS",1) RestParty()~ EXIT 
+++ @352 /* ~You spend the time until midnight.~ */ DO ~DayNight(MIDNIGHT) SetGlobal("C#EBG1_TalkToPC","LOCALS",1) StartMovie("RESTINN")~ EXIT  
+++ @353 /* ~You spend the time until eleven at night.~ */ DO ~DayNight(23) SetGlobal("C#EBG1_TalkToPC","LOCALS",1) StartMovie("RESTINN")~ EXIT  
+++ @354 /* ~You spend the time until midday.~ */ DO ~DayNight(NOON) SetGlobal("C#EBG1_TalkToPC","LOCALS",1) StartMovie("RESTINN")~ EXIT  
+++ @355 /* ~You spend the time until eleven at noon.~ */ DO ~DayNight(11) SetGlobal("C#EBG1_TalkToPC","LOCALS",1) StartMovie("RESTINN")~ EXIT  
+++ @356 /* ~You spend the time until ten at noon.~ */ DO ~DayNight(10) SetGlobal("C#EBG1_TalkToPC","LOCALS",1) StartMovie("RESTINN")~ EXIT 
+++ @357 /* ~You spend the time until dawn starts (6 am).~ */ DO ~DayNight(DAWN_START) SetGlobal("C#EBG1_TalkToPC","LOCALS",1) StartMovie("RESTINN")~ EXIT  
+++ @358 /* ~You spend the time until dawn ends (7 am).~ */ DO ~DayNight(DAWN_END) SetGlobal("C#EBG1_TalkToPC","LOCALS",1) StartMovie("RESTINN")~ EXIT  
+++ @359 /* ~You spend the time until dusk starts (9 pm).~ */ DO ~DayNight(DUSK_START) SetGlobal("C#EBG1_TalkToPC","LOCALS",1) StartMovie("RESTINN")~ EXIT  
+++ @360 /* ~You spend the time until dusk ends (10 pm).~ */ DO ~DayNight(DUSK_END) SetGlobal("C#EBG1_TalkToPC","LOCALS",1) StartMovie("RESTINN")~ EXIT      
+++ @361 /* ~You turn away from the bed.~ */ DO ~SetGlobal("C#EBG1_TalkToPC","LOCALS",1)~ EXIT
+END

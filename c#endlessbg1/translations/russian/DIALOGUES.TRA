@@ -183,3 +183,18 @@
 @235  = ~[Jaheira]You came a long way. We promised Gorion to watch over you, and you outgrew any help we could give you to fight your foes. From now on, it will be we watching you so you will not succumb to your heritage.~
 @236  = ~[Khalid]G-Gorion would be proud of your achievements. We will come with you and help with any t-task that may arise.~
 @237  = ~Ooh yes, sleeping and doing *nothing*, that sounds great! Although... talking from experience, I don't think the gods will let us!~
+
+/* pc_palaceresidence.d */
+/* new for v9 */
+@350  = ~This comfortable bed offers luxury you never found in Candlekeep.~
+@351  = ~You put yourself to bed for a full night's sleep (8 hours).~
+@352  = ~You spend the time until midnight.~
+@353  = ~You spend the time until eleven at night.~
+@354  = ~You spend the time until midday.~
+@355  = ~You spend the time until eleven at noon.~
+@356  = ~You spend the time until ten at noon.~
+@357  = ~You spend the time until dawn starts (6 am).~
+@358  = ~You spend the time until dawn ends (7 am).~
+@359  = ~You spend the time until dusk starts (9 pm).~
+@360  = ~You spend the time until dusk ends (10 pm).~
+@361  = ~You turn away from the bed.~

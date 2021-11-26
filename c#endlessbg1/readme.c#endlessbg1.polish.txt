@@ -174,7 +174,6 @@ Changes do not apply to a new SoD game.
 Note: This component will most certainly screw Transitions mod as it is not considered there yet (v2.0 and lower). Do not install this component if you were planning on installing Transitions, anyway.
 
 
-
 15 Fenster the Palace Healer Is in the Palace
 -----------------------------------
 Fenster will be inside the palace ground floor, offering similar healing services like the cleric inside Korlasz' Dungeon.
@@ -280,7 +279,10 @@ Version 9:
 -New optional component "Captain Corwin Is in the Palace": Places Corwin into palace ground floor with no notable content.
 -Added line to Hafiz so it doesn't sound like Sarevok is still alive if he's dead.
 -Main component: all unsolved journal titles will be closed.
--Main component (EET): direct transition to BGII happens (skip SoD) via the end cutscene in the wilderness (like in the original).
+-Main component: Dilos and Benjy in FF headquarters should have a line if talked to after Sarevok's death.
+-Main component: companions will give farewell speech upon transition to BGII.
+-Main component (EET): direct transition to BGII (skip SoD) happens via the end cutscene in the wilderness (like in the original).
+-More Flavor to Hero of Baldur's Gate: PC's bed in BG1 will have option to rest full night or until a certain hour of the day.
 -cutsom cres other than dukes will be removed in SoD / BGII (for compatibility with mods that reopen the areas).
 
 Version 8:
