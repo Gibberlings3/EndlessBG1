@@ -94,22 +94,24 @@
 @23 = ~Разведчик Пламенного Кулака~ /* male*/
 
 /* new for v9 */
-@24 = ~The name craftfully caved into ornamented flagstones identifies this as the Korlasz family crypt entrance. It is well closed and magically protected.~
-@25 = ~Greetings, hero. I am Fenster, the palace cleric.~
-@26 = ~How can I be of service?~
-@27 = ~Let me see what you have.~
-@28 = ~Nothing right now.~
-@29 = ~With pleasure.~
-@30 = ~I am not available for services while I tend to Imoen. Please ask for divine help elsewhere.~
+@24 = ~Искусно выбитые на стене из песчаника имена указывают на то, что это вход в семейный склеп семьи Корлаз. Он надежно закрыт и защищен магией.~
+@25 = ~Приветствую, герой. Я - Фенстер, дворцовый священник.~ ~Приветствую, героиня. Я - Фенстер, дворцовый священник.~
+@26 = ~Чему могу служить?~
+@27 = ~Покажи мне, что у тебя есть.~
+@28 = ~Пока ничем.~
+@29 = ~С удовольствием.~
+@30 = ~Пока я ухаживаю за Имоен, я ничем не могу помочь. Тебе придется искать божественную помощь где-то еще.~
 //@31: name taken from #64284
 @31 = ~Korlasz's Family Tomb~
 @32 = ~<CHARNAME>'s Bed~
 
+
 /* sarevok_cleanup_more.tpa */
 /* #18345 changed */
-@50  = ~There's quite a bit to say, I don't really know if I have the time to go into all of the details. I used to live at Candlekeep with my father Gorion. A little while back we were forced to flee. Someone was out there who really wanted me dead. In trying to kill me, he... killed my dad.~
+@50  = ~Мне есть что рассказать, но я не знаю, достаточно ли у меня времени, чтобы вдаваться во все подробности. Мое детство прошло в Кендлкипе, мы жили там с моим отцом Горионом. Не так давно мы были вынуждены бежать оттуда. Один человек очень желал моей смерти. Пытаясь убить меня, он... убил моего отца.~
 /* #18351 changed */
-@51  = ~I am sorry to bring back such painful memories. I wish to help you, and in doing so, end these dreams that plague me. Here, take this. Goodbye now. Perhaps we shall meet again.~
+@51  = ~Сожалею, что пробудил в тебе столь болезненные воспоминания. Я хочу помочь тебе и, тем самым, избавиться от этих снов, которые мучают меня. Вот, возьми это. А теперь прощай. Может быть, мы еще встретимся.~
+
 @52  = ~Ah, <CHARNAME>! I am so relieved that the hubbub is over. It was a bad feeling, being ordered to fight you, after seeing how Duke Eltan trusted you the way he did before Angelo took over...~
 @53  = ~And thank you, *thank you* for saving our commander.~
 @54  = ~We will mourn our losses while we gather what is left after Sarevok and his minions besmirched the Flaming Fist like they did, making us his tools. Thank you for saving this city, hero.~
