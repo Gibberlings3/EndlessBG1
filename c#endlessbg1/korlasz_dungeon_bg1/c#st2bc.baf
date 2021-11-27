@@ -1,0 +1,21 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([30.0],0)
+		Wait(2)
+		ActionOverride(Player2,LeaveAreaLUA("%CentralBaldursGate%","",[909.3140],W))
+		ActionOverride(Player3,LeaveAreaLUA("%CentralBaldursGate%","",[986.3193],W))
+		ActionOverride(Player4,LeaveAreaLUA("%CentralBaldursGate%","",[976.3128],W))
+		ActionOverride(Player5,LeaveAreaLUA("%CentralBaldursGate%","",[1074.3170],W))
+		ActionOverride(Player6,LeaveAreaLUA("%CentralBaldursGate%","",[1065.3094],W))
+		LeaveAreaLUAPanic("%CentralBaldursGate%","",[917.3201],W)
+		LeaveAreaLUA("%CentralBaldursGate%","",[917.3201],W)
+		MultiPlayerSync()
+		FadeFromColor([30.0],0)
+		MoveViewPoint([917.3201],INSTANT)
+		Wait(2)
+		EndCutSceneMode()
+END
+

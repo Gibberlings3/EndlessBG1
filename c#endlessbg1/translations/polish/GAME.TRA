@@ -98,7 +98,10 @@ Nie mo¿e u¿ywaæ:
 @27 = ~Poka¿, co tam masz.~
 @28 = ~Nijak w tej chwili.~
 @29 = ~Z przyjemnoœci¹.~
-@30 = ~Opiekujê siê teraz Imoen i nie mogê ciê teraz obs³u¿yæ. Poproœ o œwiadczenia gdzieœ indziej.~
+@30 = ~Opiekujê siê teraz Imoen i nie mogê ciê obs³u¿yæ. Poproœ o œwiadczenia gdzieœ indziej.~
+//@31: name taken from #64284
+@31 = ~Grobowiec rodziny Korlasz~
+@32 = ~<CHARNAME>'s Bed~
 
 /* sarevok_cleanup_more.tpa */
 /* #18345 changed */
@@ -106,4 +109,8 @@ Nie mo¿e u¿ywaæ:
        ~Sporo jest do opowiadania i nie wiem, doprawdy, czy mam czas na zag³êbianie siê w szczegó³y. ¯y³am w Candlekeep z moim ojcem, Gorionem. Nie tak dawno musieliœmy stamt¹d uciekaæ. By³ to ktoœ, komu bardzo zale¿a³o na mojej œmierci. Próbuj¹c zabiæ mnie... zdo³a³ zg³adziæ tylko mojego ojca.~
 /* #18351 changed */
 @51  = ~Przepraszam, ¿e musia³em przywo³aæ bolesne wspomnienia. Chcê ci pomóc, a przez to skoñczyæ z nêkaj¹cymi mnie snami. WeŸ to, proszê. Teraz ¿egnaj, mo¿e siê jeszcze spotkamy.~
+@52  = ~Ah, <CHARNAME>! I am so relieved that the hubbub is over. It was a bad feeling, being ordered to fight you, after seeing how Duke Eltan trusted you the way he did before Angelo took over...~
+@53  = ~And thank you, *thank you* for saving our commander.~
+@54  = ~We will mourn our losses while we gather what is left after Sarevok and his minions besmirched the Flaming Fist like they did, making us his tools. Thank you for saving this city, hero.~
+@55  = ~Seems fighting you wasn't the right thing to do after all. Well, who would have thought that Angelo and Sarevok would play such a wrong game. It seems you saved us from dark times, indeed.~
 

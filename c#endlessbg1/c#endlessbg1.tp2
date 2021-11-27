@@ -786,6 +786,7 @@ COPY_EXISTING ~%CentralBaldursGate%.are~ ~override~
     fj_name             = c#ebg1korlasz
 //    fj_reg_script   = c#ebg1ko
   END
+/* no longer needed
 /* add entrance point from bd0120 */
   LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
     INT_VAR
@@ -796,6 +797,7 @@ COPY_EXISTING ~%CentralBaldursGate%.are~ ~override~
     fj_structure_type = entrance
     fj_name           = C#EBG1_Exit0120
   END
+*/
 BUT_ONLY
 
 /* Add Entrance to Korlasz Dungeon to BG Docks: ar1200.are */
@@ -889,6 +891,40 @@ COPY_EXISTING ~bd0050.are~ ~override~
   END
 BUT_ONLY
 
+/* Korlasz crypt bd0120 */
+/* patch bdrope.bcs so it doesn't initiate Imoen's dialogue */
+COPY_EXISTING ~bdrope.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+/* cases for Imoen in party */
+		SPRINT textToReplace ~\(See("imoen2?")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE ~%textToReplace%~ ~\1 Global("C#EBG1_KorlaszQuest","GLOBAL",0)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+
+<<<<<<<< .../bdrope-et.baf
+/* patch bdrope.bcs so it teleports the group out */
+IF
+	Clicked([ANYONE])
+	NearLocation(LastTrigger,790,1660,12)
+	Global("C#EBG1_ChangeRopeTrigger","MYAREA",2) 
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutScene("c#st2bc")
+END
+>>>>>>>>
+EXTEND_TOP ~bdrope.bcs~ ~.../bdrope-et.baf~ EVALUATE_BUFFER
+
+/* cutscene out of Korlasz dungeon in bdrope.bcs */
+COMPILE ~c#endlessbg1/korlasz_dungeon_bg1/c#st2bc.baf~ EVALUATE_BUFFER
+
 /* Add Travel points and Entrance point to Koralsz' Crypt bd0120.are */
 COPY_EXISTING ~bd0120.are~ ~override~
 /* travel region to SoD-area bd0050*/
@@ -910,6 +946,7 @@ COPY_EXISTING ~bd0120.are~ ~override~
     fj_destination_area = EVAL ~bd0050~
     fj_destination_name = EVAL ~C#EBG1_Exit0120~ 
   END
+/* ## replace this with a teleporting script - in case EndlessBG1 gets installed late, game will not crash.
 /* travel region to BG1-area ar0700 */
   LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
     INT_VAR
@@ -929,6 +966,7 @@ COPY_EXISTING ~bd0120.are~ ~override~
     fj_destination_area = EVAL ~%CentralBaldursGate%~
     fj_destination_name = EVAL ~C#EBG1_Exit0120~ 
   END
+*/
   LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
     INT_VAR
     fj_loc_x       = 920    //x
@@ -1133,10 +1171,10 @@ EXTEND_TOP ~bd0120.BCS~ ~c#endlessbg1/korlasz_dungeon_bg1/c#ebg1_kd_bg1_bd0120.b
 
 /* deactivate travel triggers */
 IF
-	GlobalLT("C#EBG1_ChangeRopeTrigger","MYAREA",0)
+	Global("C#EBG1_ChangeRopeTrigger","MYAREA",0)
 THEN
 	RESPONSE #100
-		TriggerActivation("C#EBG1_TranAR0700",FALSE)
+//##		TriggerActivation("C#EBG1_TranAR0700",FALSE)
 		TriggerActivation("C#EBG1_TranBD0050",FALSE)
 		SetGlobal("C#EBG1_ChangeRopeTrigger","MYAREA",1)
 END
@@ -1204,6 +1242,7 @@ THEN
 END
 
 /* change rope trigger so player can leave the dungeon */
+
 /* exit to AR0700.are */
 IF
 	GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)
@@ -1212,9 +1251,9 @@ IF
 	GlobalLT("C#EBG1_ChangeRopeTrigger","MYAREA",2)
 THEN
 	RESPONSE #100
-		DisplayStringHead("C#EBG1_TranAR0700",%eet_2%59576)  // A sturdy rope hanging down into the tomb offers the only viable exit from the house of the dead.
-		TriggerActivation("Rope",FALSE)
-		TriggerActivation("C#EBG1_TranAR0700",TRUE)
+		DisplayStringHead("C#EBG1_TranBD0050",%eet_2%59576)  // A sturdy rope hanging down into the tomb offers the only viable exit from the house of the dead.
+//##		TriggerActivation("Rope",FALSE)
+//##		TriggerActivation("C#EBG1_TranAR0700",TRUE)
 		SetGlobal("C#EBG1_ChangeRopeTrigger","MYAREA",2)
 END
 
@@ -1225,7 +1264,8 @@ IF
 	GlobalLT("C#EBG1_ChangeRopeTrigger","MYAREA",3)
 THEN
 	RESPONSE #100
-		TriggerActivation("C#EBG1_TranAR0700",FALSE)
+//##		TriggerActivation("C#EBG1_TranAR0700",FALSE)
+		TriggerActivation("Rope",FALSE)
 		TriggerActivation("C#EBG1_TranBD0050",TRUE)
 		SetGlobal("C#EBG1_ChangeRopeTrigger","MYAREA",3)
 END
@@ -1238,7 +1278,8 @@ IF
 THEN
 	RESPONSE #100
 		TriggerActivation("C#EBG1_TranBD0050",FALSE)
-		TriggerActivation("C#EBG1_TranAR0700",TRUE)
+		TriggerActivation("Rope",TRUE)
+//##		TriggerActivation("C#EBG1_TranAR0700",TRUE)
 		SetGlobal("C#EBG1_ChangeRopeTrigger","MYAREA",4)
 END
 >>>>>>>>
@@ -1367,7 +1408,8 @@ COPY_EXISTING ~cutskip.BCS~ ~override~
 			REPLACE_TEXTUALLY ~%textToReplace%~ ~
 		OpenDoor("door07")
 		SmallWait(11)
-		FadeFromColor([10.0],0)~
+		FadeFromColor([10.0],0)
+		EndCutSceneMode()~
 			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
 		END ELSE BEGIN
 			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
@@ -1439,31 +1481,28 @@ BUT_ONLY
 EXTEND_TOP ~bd0130.BCS~ ~c#endlessbg1/korlasz_dungeon_bg1/c#ebg1_imo_bd0130.baf~ EVALUATE_BUFFER
 
 
-/* Imoen should not be present twice: deactivate her in the Palace if she is in Korlasz' Dungeon */
-<<<<<<<< .../ar0110_imoen_deactivate.baf
-/* move Imoen here if not in party */
+/* Imoen should not be present twice: deactivate her elsewhere if she is also in Korlasz' Dungeon */
+<<<<<<<< .../imoen_deactivate.baf
 IF
 	Global("C#EBG1_ImoenIsInKD","GLOBAL",1)
-	InMyArea("%IMOEN_DV%")
 	!InParty("%IMOEN_DV%")
 	Global("C#EBG1_DeactivateImoen","MYAREA",0)
 THEN
 	RESPONSE #100
-        	ActionOverride("%IMOEN_DV%",Deactivate(Myself))  
+        	Deactivate(Myself)
 		SetGlobal("C#EBG1_DeactivateImoen","MYAREA",1)
 END
 IF
 	Global("C#EBG1_ImoenIsInKD","GLOBAL",2)
-	InMyArea("%IMOEN_DV%")
 	!InParty("%IMOEN_DV%")
 	Global("C#EBG1_DeactivateImoen","MYAREA",1)
 THEN
 	RESPONSE #100
-        	ActionOverride("%IMOEN_DV%",Activate(Myself))  
+        	Activate(Myself)
 		SetGlobal("C#EBG1_DeactivateImoen","MYAREA",2)
 END
 >>>>>>>>
-EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L3%.bcs~ ~.../ar0110_imoen_deactivate.baf~ EVALUATE_BUFFER 
+EXTEND_BOTTOM ~%IMOEN_BCS%.bcs~ ~.../imoen_deactivate.baf~ EVALUATE_BUFFER 
 
 <<<<<<<< .../ar0700_deactivate.baf
 /* deactivate travel trigger */
@@ -1488,6 +1527,7 @@ THEN
 	RESPONSE #100
 		TriggerActivation("c#ebg1korlasz",FALSE)
 		TriggerActivation("C#EBG1_TranBD0120",TRUE)
+		AddMapNote([%mapnote_coordinates%],@31)
 		SetGlobal("C#EBG1_ChangeTriggerKD","MYAREA",2)
 END
 
@@ -1495,7 +1535,6 @@ END
 IF
 	Global("C#EBG1_KorlaszQuest","GLOBAL",2)
 	InMyArea(Player1)
-	AreaCheck("%CentralBaldursGate%")
 THEN
 	RESPONSE #100
 		SetGlobal("BDSH_Imoen_Floor","GLOBAL",4)
@@ -1512,35 +1551,12 @@ THEN
         	SetGlobal("C#EBG1_ImoenIsInKD","GLOBAL",2)
 END
 >>>>>>>>
+OUTER_SPRINT ~mapnote_coordinates~ ~1090.3180~
 EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_deactivate.baf~ EVALUATE_BUFFER 
 
-<<<<<<<< .../ar1200_deactivate.baf
-/* deactivate travel trigger */
-IF
-	OR(2)
-		Global("C#EBG1_KorlaszQuest","GLOBAL",0)
-		Global("C#EBG1_KorlaszQuest","GLOBAL",99)
-	Global("C#EBG1_ChangeTriggerKD","MYAREA",0)
-THEN
-	RESPONSE #100
-		TriggerActivation("c#ebg1korlasz",TRUE)
-		TriggerActivation("C#EBG1_TranBD0120",FALSE)
-		SetGlobal("C#EBG1_ChangeTriggerKD","MYAREA",1)
-END
-
-/* activate travel trigger */
-IF
-	GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)
-	GlobalLT("C#EBG1_KorlaszQuest","GLOBAL",99)
-	GlobalLT("C#EBG1_ChangeTriggerKD","MYAREA",2)
-THEN
-	RESPONSE #100
-		TriggerActivation("c#ebg1korlasz",FALSE)
-		TriggerActivation("C#EBG1_TranBD0120",TRUE)
-		SetGlobal("C#EBG1_ChangeTriggerKD","MYAREA",2)
-END
->>>>>>>>
-EXTEND_BOTTOM ~%BaldursGateDocks%.bcs~ ~.../ar1200_deactivate.baf~ EVALUATE_BUFFER 
+/* we repeat all in Docks area, also in case Player changes area too quickly */
+OUTER_SPRINT ~mapnote_coordinates~ ~1090.108~
+EXTEND_BOTTOM ~%BaldursGateDocks%.bcs~ ~.../ar0700_deactivate.baf~ EVALUATE_BUFFER 
 
 
 /* SoD part: Ironthrone HQ area bd0050 */
@@ -1555,6 +1571,16 @@ THEN
 		TriggerActivation("C#EBG1_TranBD0120",FALSE)
 		TriggerActivation("c#ebg1korlasz",FALSE)
 		SetGlobal("C#EBG1_ChangeTriggerKD","MYAREA",1)
+END
+
+/* set Mapnote */
+IF
+	GlobalGT("C#EBG1_KorlaszQuest","GLOBAL",0)
+	Global("C#EBG1_AddMapNoteKD","MYAREA",0)
+THEN
+	RESPONSE #100
+		AddMapNote([1200.160],@31)
+		SetGlobal("C#EBG1_AddMapNoteKD","MYAREA",1)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~bd0050.bcs~ ~.../bd0050_traveltrigger.baf~ EVALUATE_BUFFER
@@ -1673,7 +1699,7 @@ END
 IF
 	AreaCheck("%NBaldursGate_DucalPalace_L3%")
 	InMyArea("%IMOEN_DV%")
-	Global("C#EBG1_MoveImoenStuff","MYAREA",1)
+	GlobalLT("C#EBG1_MoveImoenStuff","MYAREA",2)
 THEN
 	RESPONSE #100
 		SetInterrupt(FALSE)

@@ -80,7 +80,30 @@ END //APPEND
 
 /* Benjy and Dilos in FF Headquarters: do not turn hostile after scene in Ducal Palace */
 REPLACE_STATE_TRIGGER BENJY 0 ~Global("DukeThanks","GLOBAL",0)~
+REPLACE_STATE_TRIGGER FLAMBG 0 ~OR(2) !Global("Chapter","GLOBAL",7) !Global("DukeThanks","GLOBAL",0)~
 ADD_STATE_TRIGGER FLAMBG 5 ~Global("DukeThanks","GLOBAL",0)~
+
+/* prevent journal entry about rising tension with Amn */
+EXTEND_BOTTOM flambg 6
+IF ~GlobalGT("DukeThanks","GLOBAL",0)~ THEN EXIT
+END
+ 
+CHAIN
+IF WEIGHT #-1 ~GlobalGT("DukeThanks","GLOBAL",0)
+Global("C#st_DilosThanks","MYAREA",0)~ THEN FLAMBG after_Sarevok
+@52 /* ~Ah, <CHARNAME>! I am so relieved that the hubbub is over. It was a bad feeling, being ordered to fight you, after seeing how Duke Eltan trusted you the way he did before Angelo took over...~ */
+== FLAMBG IF ~GlobalGT("BroughtEltan","GLOBAL",0)~ THEN @53 /* ~And thank you, *thank you* for saving our commander.~ */
+== FLAMBG @54 /* ~We will mourn our losses while we gather what is left after Sarevok and his minions besmirched the Flaming Fist like they did, making us his tools. Thank you for saving this city, hero.~ */
+END
+IF ~~ THEN DO ~SetGlobal("C#st_DilosThanks","MYAREA",1)~ EXIT
+
+APPEND BENJY
+IF ~GlobalGT("DukeThanks","GLOBAL",0)~ THEN all_done
+SAY @55 /* ~Seems fighting you wasn't the right thing to do after all. Well, who would have thought that Angelo and Sarevok would play such a wrong game. It seems you saved us from dark times, indeed.~ */
+IF ~~ THEN EXIT
+END
+END //APPEND
+
 
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~.../cleanup_more.d~

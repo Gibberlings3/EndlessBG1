@@ -23,7 +23,10 @@ OR(2)
 Global("C#EBG1_IntermediateDialogue","LOCALS",1) Global("bd_plot","global",10)
 OR(2)
 AreaCheck("bd0120")
-AreaCheck("bd0130")~
+AreaCheck("bd0130")
+/* not after Korlasz is defeated */
+!Dead("bdkorlas")  // Korlasz
+!Global("BD_KORLASZ_SURRENDER","GLOBAL",1)~
 ADD_TRANS_ACTION BDIMOEN BEGIN 9 END BEGIN END ~SetGlobal("C#EBG1_IntermediateDialogue","LOCALS",2)~
 
 
@@ -117,6 +120,15 @@ IF ~~ THEN BEGIN bhaal_research_02
   SAY @16
 IF ~~ THEN DO ~SetGlobal("C#EBG1_BhaalResearchKD","GLOBAL",2)~
 EXIT
+END
+
+/* additional dialogue state in case Korlasz is defeated but PC didn't leave the crypt yet. */
+IF ~AreaCheck("bd0120")
+Global("bd_plot","global",40)
+!InParty(Myself)
+Global("C#EBG1_ImoenIsInKD","GLOBAL",1)~ THEN BEGIN done
+  SAY #64148 /* ~Thank you, gods, it's done!~ [BD64148] */
+  IF ~~ THEN EXIT
 END
 
 END //APPEND

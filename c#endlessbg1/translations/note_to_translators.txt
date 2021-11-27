@@ -1,9 +1,12 @@
 New for v9:
 
-new lines:
--DIALOGUES.TRA: @200 - @237
--GAME.TRA: @24 - @30, @50 + @51
+ new lines:
+-DIALOGUES.TRA: @200 - @237, @350-@361
+-GAME.TRA: @24 - @32, @50 - @55
+-JOURNAL.tra: @10012 - @10015
 -setup.tra: @5024 - @5027
 
+-readme: description of components 14-16
+
 new file:
--IMOEN_IN_GROUP_KD_EBG1.TRA
+-IMOEN_IN_GROUP_KD_EBG1.TRA 

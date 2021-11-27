@@ -137,49 +137,64 @@
 
 /* korlasz_dungeon_bg1.d */
 /* lines @200 - @202 are the same as  @0 - @2 from ajantisbg1/.../ajantisbg1_transitions.tra */
-@200  = ~It was an honor to cleanse this place from the bandit threat and the rising war with you. My task here is done. I shall return home to call on the Order of the Radiant Heart. I will report the happenings and your part in it. I, ahem, will also mention my part in it, and hope I will be found worthy to receive knighthood. I thank you for combining forces with me. Farewell!~
-@201  = ~<CHARNAME>, I fear time has come to say good bye. The war is stopped, Sarevok is defeated, the task the Order gave me is done. It is time for me to report back, but I will travel to Waterdeep first, as we already agreed upon. Nothing will detain me from seeking my parents' answer concerning our plans for marriage, now that our foe is defeated and peace has come back to the lands, at last. I am so looking foreward to talking to them, <CHARNAME>, my love. Talking to them and telling them of the love I hold for you.~
-@202  = ~My heart aches to leave you. I will send you messages about my whereabouts as often as I can. And be it Waterdeep, Athkatla, or here that we meet again, be assured I will come for you - or await you, no matter where we are destined to be reunited. Farewell, 'Heroine of Baldur's Gate' (smiles). Relish the people's gratitude and praise while they are still willing to give it, <CHARNAME>. You earned it.~
-@203  = ~Imoen - Duke Jannath wants to talk to you before you go.~
-@204  = ~Imoen, child, I will talk to you before you go. Come here for a moment.~
-@205  = ~Me? Okay!~
-@206  = ~Duke Jannath is determined to see Imoen before you go. I am sure she will also take care of your friend's current condition.~
-@207  = ~I need to talk to Imoen before you go. I will call for Fenster to see to her current... condition.~
-@208  = ~Imoen, your childhood friend, was prepared by Duke Jannath to guide you as best as possible. She will await you there.~
-@209  = ~Please, return to the family crypt of Korlasz and help defeat the last follower of Sarevok.~
-@210  = ~<CHARNAME>, Hero of Baldur's Gate. You return victorious! Not only Sarevok himself, but also all of Sarevok's followers are dealt with.~
-@211  = ~Honestly, I need a break. I can feel the next problem brooding. I'll just go rest and do nothing for a tenday so I'll be prepared for whatever is coming.~
-@212  = ~There is still a lot to do and discover. I'll be around.~
-@213  = ~I will take my leave from the city and the Sword Coast before the next world threatening desaster arises. I'll try going south, away from whatever the city of Baldur's Gate might ail in the near or further future.~
-@214  = ~A hero is always busy. Whoever receives your aid can call themselves lucky. Enjoy your time, hero.~
-@215  = ~A well earned rest. Make yourself at home on the top floor of the palace as much as you like.~
-@216  = ~I will make my own path now. Fare well, <CHARNAME>.~
-@217  = ~I'll be off, <CHARNAME>. It was great and all, but I'll go for a time of luxury for a while.~
-@218  = ~I've endured your idiosyncrasies quite long enough, <CHARNAME>, but this was the last tomb you, or anyone, lured me into.~
-@219  = ~I will depart and see what tasks my patron has in store for me.~
-@220  = ~Ooh yes, sleeping and doing *nothing*, that sounds great! Although... I think I'll take Duke Jannath up on her offer to train me in magic, <CHARNAME>. You go and take your well-earned rest, sleepyhead!~
-@221  = ~You have proven to be the city's hero, and we are in your debt forever. What will you do now?~
+@200  = ~Для меня было честью вместе с тобой очистить этот край от бандитской угрозы и потушить искры разгоравшейся войны. Мой долг здесь выполнен. Я вернусь домой и обращусь к Ордену Сияющего Сердца. Я отчитаюсь о произошедшем и о твоей роли в этих событиях. Ещё я упомяну, кхм, о своем скромном вкладе и буду надеяться, что меня посчитают достойным рыцарства. Благодарю тебя за то, что мы объединили силы. Прощай!~
+@201  = ~<CHARNAME>, боюсь, настала пора прощаться. Война окончена, Саревок побежден, и задача, порученная мне Орденом, выполнена. Мне нужно вернуться и отчитаться, но сначала я посещу Вотердип, как мы и договаривались. Ничто не задержит меня от того, чтобы узнать ответ моих родителей по поводу наших планов пожениться. Наш враг повержен, и мир наконец-то вернулся в эти земли. Мне уже не терпится поговорить с ними, <CHARNAME>, любовь моя. Поговорить с ними о моей к тебе любви.~
+@202  = ~Мое сердце разрывается от того, что я должен тебя покинуть. Я буду постоянно писать тебе, где я нахожусь. Где бы мы ни оказались - в Вотердипе, Аткатле или в любом другом месте - будь уверена - я приду к тебе... или буду ждать твоего появления, ведь нам суждено быть вместе. Прощай, "Героиня Врат Балдура". (улыбается) Не стесняйся принимать благодарность народа, <CHARNAME>, пока они готовы дарить ее. Ты это заслужила.~
+@203  = ~Имоен, герцогиня Джаннат хочет поговорить с тобой, пока ты не ушла.~
+@204  = ~Имоен, дитя, я хочу с тобой поговорить. Подойди ко мне на минуту.~
+@205  = ~Я? Ладно!~
+@206  = ~Герцогиня Джаннат намерена встретиться с Имоен, пока вы еще здесь. Она, наверное, хочет узнать об ее самочувствии.~
+@207  = ~Мне нужно поговорить с Имоен, пока вы не ушли. Я позову Фенстера, чтобы он... ее осмотрел.~
+@208  = ~Герцогиня Джаннат подготовила Имоен, твою подругу детства, для твоего сопровождения. Она будет ждать внутри.~
+@209  = ~Прошу, вернись в фамильную гробницу Корлаз и помоги одолеть последнюю последовательницу Саревока.~
+@210  = ~<CHARNAME>, герой Врат Балдура, ты вернулся с победой! Уничтожен не только Саревок, но и вся его свора.~ ~<CHARNAME>, героиня Врат Балдура, ты вернулась с победой! Уничтожен не только Саревок, но и вся его свора.~
+@211  = ~Боги, мне нужен отдых. Я уже чувствую, как за горизонтом меня ждут очередные проблемы. Схожу, отдохну дней десять, и буду готов встретить угрозу с новыми силами.~ ~Боги, мне нужен отдых. Я уже чувствую, как за горизонтом меня ждут очередные проблемы. Схожу, отдохну дней десять, и буду готова встретить угрозу с новыми силами.~
+@212  = ~Мне нужно изучить ещё много мест. Если что, я буду в окрестностях.~
+@213  = ~Я собираюсь покинуть город и Побережье Меча, пока здесь не возникла новая угроза миру. Отправлюсь на юг, подальше от подарков судьбы, которые мне могут выкинуть Врата Балдура.~
+@214  = ~У героев не бывает выходных. Те, кто получит твою помощь, могут считать себя счастливчиками. Наслаждайся своим путешествием.~
+@215  = ~Ты давно заслуживаешь отдыха. Можешь считать своим домом верхний этаж Дворца.~
+@216  = ~Я начну свой собственный путь. Прощай, <CHARNAME>.~
+@217  = ~Я тебя покину, <CHARNAME>. Твоя компания была прелестной, но я хочу немного пожить в роскоши.~
+@218  = ~Я долго терпел твои причуды, <CHARNAME>, но это будет последняя гробница, в которую ты, или кто-либо еще, меня затянешь.~
+@219  = ~Я ухожу. Я должен узнать, чего от меня хочет мой покровитель.~
+@220  = ~О-о-о, да! Спать и *ничего* не делать! Отличный план, <CHARNAME>! Хотя... наверное, я приму предложение герцогини Джаннат и буду учиться магии. А ты можешь наслаждаться заслуженным отдыхом, соня!~
+@221  = ~Все в городе считают тебя героем, и мы будем вечно тебе благодарны. Что ты собираешься делать дальше?~
 /* @222 - @225 are the same as in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
-@222  = ~<CHARNAME> found a lot of old tomes and research and stuff!~
-@223  = ~Here it is, Duke Liia. Look at the size of that pile!~
-@224  = ~I thank you for the tomes Imoen gave me. Here, take these for compensation.~
-@225  = ~I am very interested in these old tomes you found in Korlasz' family crypt for my research. Please hand them to me as soon as you can spare them, <CHARNAME>.~
+@222  = ~<CHARNAME> нашел огромную стопку древних книг!~ ~<CHARNAME> нашла огромную стопку древних книг!~
+@223  = ~Держите, герцогиня Лия. Только посмотрите, сколько их!~
+@224  = ~Я благодарю тебя за книги, которые передала мне Имоен. Вот, это будет достойной компенсацией.~
+@225  = ~Для моих исследований мне очень бы пригодились древние книги, которые ты нашел в гробнице семьи Корлаз. Пожалуйста, одолжи их мне, когда у тебя появится возможность, <CHARNAME>.~ ~Для моих исследований мне очень бы пригодились древние книги, которые ты нашла в гробнице семьи Корлаз. Пожалуйста, одолжи их мне, когда у тебя появится возможность, <CHARNAME>.~
 
-@226  = ~You found tomes about Bhaal in Korlasz' possessions. May I have them for my own research?~
-@227  = ~Of course. Here you are.~
-@228  = ~No, I'd like to hold on to them myself.~
+@226  = ~Среди вещей Корлаз ты нашел книги о Баале. Могу ли я взять их для изучения?~
+@227  = ~Конечно, вот они.~
+@228  = ~Нет, я придержу их при себе.~
 
 /* @229 is the same as @229 in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
-@229  = ~I thank you. Take these for compensation.~
+@229  = ~Спасибо. Вот, это будет достойной компенсацией.~
 
-@230  = ~I see. Please give them to me as soon as you can spare them.~
-@231  = ~I am very interested in studying these kind of old tomes.~
+@230  = ~Понятно. Пожалуйста, одолжи их мне, когда у тебя появится возможность.~
+@231  = ~Я бы очень хотела изучить эти древние книги.~
 
 /* @232 is the same as @232 in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
-@232  = ~Here is resaerch about necromancy and Bhaal I found in Korlasz' family crypt. I believe you would have an interest in these.~
+@232  = ~В гробнице семьи Корлаз я нашел книги о некромантии и Баале. Я думаю, они могут тебя заитересовать.~ ~В гробнице семьи Корлаз я нашла книги о некромантии и Баале. Я думаю, они могут тебя заитересовать.~
 
-@233  = ~[Dynaheir]A mighty Bhaalspawn you became. Your journey is not over, and so is not ours, either.~
-@234  = ~[Minsc]There will be more evil to kick, and Boo said that this is something Minsc should look foreward to.~
-@235  = ~[Jaheira]You came a long way. We promised Gorion to watch over you, and you outgrew any help we could give you to fight your foes. From now on, it will be we watching you so you will not succumb to your heritage.~
-@236  = ~[Khalid]G-Gorion would be proud of your achievements. We will come with you and help with any t-task that may arise.~
-@237  = ~Ooh yes, sleeping and doing *nothing*, that sounds great! Although... talking from experience, I don't think the gods will let us!~
+@233  = ~[Dynaheir]Могучее дитя Баала стоит пред нами. Твой путь еще не подошел к концу, а, значит, и наш тоже.~
+@234  = ~[Minsc]Еще не все зло получило свой заслуженный пинок, а Бу говорит, что Минск скоро получит возможность его отвесить.~
+@235  = ~[Jaheira]Ты прошел долгий путь. Мы пообещали Гориону опекать тебя, но тебе уже давно не нужна наша помощь. С этого момента мы будем следить за тем, чтобы твое наследие не поглотило тебя целиком.~ ~[Jaheira]Ты прошла долгий путь. Мы пообещали Гориону опекать тебя, но тебе уже давно не нужна наша помощь. С этого момента мы будем следить за тем, чтобы твое наследие не поглотило тебя целиком.~
+@236  = ~[Khalid]Горион г-гордился бы твоими успехами. Мы пойдем за тобой и поможем с л-любой задачей.~
+@237  = ~О-о-о, да! Спать и *ничего* не делать! Отличный план, <CHARNAME>! Хотя... судя по всему, боги не дадут нам ни минуты покоя!~
+
+/* pc_palaceresidence.d */
+/* new for v9 */
+@350  = ~This comfortable bed offers luxury you never found in Candlekeep.~
+@351  = ~You put yourself to bed for a full night's sleep (8 hours).~
+@352  = ~You spend the time until midnight.~
+@353  = ~You spend the time until eleven at night.~
+@354  = ~You spend the time until midday.~
+@355  = ~You spend the time until eleven at noon.~
+@356  = ~You spend the time until ten at noon.~
+@357  = ~You spend the time until dawn starts (6 am).~
+@358  = ~You spend the time until dawn ends (7 am).~
+@359  = ~You spend the time until dusk starts (9 pm).~
+@360  = ~You spend the time until dusk ends (10 pm).~
+@361  = ~You turn away from the bed.~
