@@ -1,5 +1,4 @@
 /* @0   = */
-
 @1   = ~Ein Prunkharnisch stellt die prächtigste Rüstung dar, die man sich als Krieger kaufen kann. Sie sieht nicht nur beeindruckend aus, sondern bietet auch den besten Schutz. Die perfekt gearbeiteten Metallplatten sind eng miteinander verbunden und wehren sowohl Schläge als auch Pfeile ab. Die ganze Rüstung ist mit Gravuren und Prägungen verziert. 
 
 Diese Rüstung gehörte Sarevok. Sie ist ungewöhnlich schwer.
@@ -95,13 +94,13 @@ Dieben~
 @23 = ~Späher der Flammenden Faust~ /* male*/
 
 /* new for v9 */
-@24 = ~The name craftfully caved into ornamented flagstones identifies this as the Korlasz family crypt entrance. It is well closed and magically protected.~
-@25 = ~Greetings, hero. I am Fenster, the palace cleric.~
-@26 = ~How can I be of service?~
-@27 = ~Let me see what you have.~
-@28 = ~Nothing right now.~
-@29 = ~With pleasure.~
-@30 = ~I am not available for services while I tend to Imoen. Please ask for divine help elsewhere.~
+@24 = ~Der kunstvoll in die verzierten Steinplatten eingemeißelte Name weist darauf hin, dass es sich um den Eingang zur Gruft der Familie Korlasz handelt. Er ist gut verschlossen und magisch geschützt.~
+@25 = ~Seid gegrüßt, Held der Stadt. Ich bin Fester, der Palastheiler.~ ~Seid gegrüßt, Heldin der Stadt. Ich bin Fester, der Palastheiler.~
+@26 = ~Wie kann ich Euch dienen?~
+@27 = ~Lasst mich sehen, was Ihr habt.~
+@28 = ~Momentan nicht.~
+@29 = ~Sehr gerne.~
+@30 = ~Leider stehe ich nicht mit Tempeldiensten zur Verfügung, solange ich mich um Imoen kümmere. Ihr müsst dafür in einen der Tempel gehen.~
 // @31: name taken from #64284
 @31 = ~Korlasz' Familiengruft~
 @32 = ~<CHARNAME>'s Bett~
