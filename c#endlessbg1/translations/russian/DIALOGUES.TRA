@@ -186,15 +186,15 @@
 
 /* pc_palaceresidence.d */
 /* new for v9 */
-@350  = ~This comfortable bed offers luxury you never found in Candlekeep.~
-@351  = ~You put yourself to bed for a full night's sleep (8 hours).~
-@352  = ~You spend the time until midnight.~
-@353  = ~You spend the time until eleven at night.~
-@354  = ~You spend the time until midday.~
-@355  = ~You spend the time until eleven at noon.~
-@356  = ~You spend the time until ten at noon.~
-@357  = ~You spend the time until dawn starts (6 am).~
-@358  = ~You spend the time until dawn ends (7 am).~
-@359  = ~You spend the time until dusk starts (9 pm).~
-@360  = ~You spend the time until dusk ends (10 pm).~
-@361  = ~You turn away from the bed.~
+@350  = ~Ёта кровать дает ощущение удобства и роскоши, какое вы никогда не чувствовали в  ендлкипе.~
+@351  = ~Ћечь в кровать и приготовитьс€ к полноценному сну. (8 часов)~
+@352  = ~∆дать до полуночи.~
+@353  = ~∆дать до одиннадцати вечера.~
+@354  = ~∆дать до полудн€.~
+@355  = ~∆дать до одиннадцати утра.~
+@356  = ~∆дать до дес€ти утра.~
+@357  = ~∆дать до начала рассвета (шести утра).~
+@358  = ~∆дать до конца рассвета (семи утра).~
+@359  = ~∆дать до начала заката (дев€ти вечера).~
+@360  = ~∆дать до конца заката (дес€ти вечера).~
+@361  = ~ќтойти от кровати.~
