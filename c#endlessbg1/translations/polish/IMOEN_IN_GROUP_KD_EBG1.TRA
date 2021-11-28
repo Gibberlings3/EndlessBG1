@@ -1,21 +1,22 @@
 /* lines @0 - @17 are the same as in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */ 
-@0    = ~Don't look at me like that! I always wanted to sound like I knew more than you. It's just what Duke Jannath said to me like you wouldn't know.~
-@1    = ~What is it with you and Duke Jannath, anyway?~
-@2    = ~Well, uhm... She somehow took a fancy to me ever since we saved the Dukes at Sarevok's coronation. Or non-coronation, to be precise.~
-@3    = ~And, well... she let me try some of the magic spells, and... it's fun! I could really do it! Magic I mean. I did magic!~
-@4    = ~She said she'd help me develop my magical skills, and... I decided that I'll accept the offer. You know, when all this is done.~
-@5    = ~Oh, just so you know - I promised to bring her any arcane scrolls or tomes I could find down here.~
-@6    = ~You did it! I knew you would.~
-@7    = ~I can't believe it might actually be over.~
-@8    = ~We did this together, Imoen.~
-@9    = ~You weren't much help.~
-@10   = ~I know what you mean!~
-@11   = ~Fine by me. There is nothing left to be afraid of, right?~
-@12   = ~The Flaming Fists are gonna head back upstairs using the rope we found. It's just south of here—takes you right up to the entrance.~
-@13   = ~Look at those tomes and books about Bhaal! Duke Jannath would jump for joy if she'd get these! Well, actually she wouldn't, she's too dignified for that, but... Can I take these for her? Please?~
-@14   = ~Sure. I don't know how they could be of use to me.~
-@15   = ~No, I want to keep them for now.~
-@16   = ~Fine, but tell me if you change your mind, alright?~
-@17   = ~Take the research on Bhaal we found for Duke Jannath, Imoen.~
+@0    = ~Nie patrz tak na mnie! Zawsze chcia³am wygl¹daæ na kogoœ, kto wie wiêcej ni¿ ty. Jakbyœ nie wiedzia³<PRO_HESHE>, to w³aœnie to powiedzia³a mi ksiê¿na Jannath.~
+@1    = ~A no w³aœnie, co ciê po³¹czy³o z ksiê¿n¹ Jannath?~
+@2    = ~Wiêc, hmm... Jakoœ mnie polubi³a po tym, jak ich uratowaliœmy podczas koronacji Sarevoka. Albo raczej nie-koronacji, gwoli œcis³oœci.~
+@3    = ~I có¿... pozwoli³a mi popróbowaæ magicznych zaklêæ i... spodoba³o mi siê! Naprawdê mog³abym to robiæ! Magiê znaczy siê. Rzuca³am czary!~
+@4    = ~Powiedzia³a, ¿e pomo¿e mi rozwin¹æ moje magiczne zdolnoœci i... Postanowi³am, ¿e przyjmê ofertê. Wiesz, gdy to wszystko siê skoñczy.~
+@5    = ~Aha, tak, ¿ebyœ wiedzia³<PRO_HESHE> – obieca³am przynieœæ jej wszystkie tajemne zwoje i ksiêgi, które uda nam siê tutaj znaleŸæ.~
+@6    = ~Uda³o ci siê! Wiedzia³am, ¿e dasz radê.~
+@7    = ~Nie mogê uwierzyæ, ¿e to ju¿ naprawdê koniec.~
+@8    = ~Zrobiliœmy to razem, Imoen.~ ~Zrobi³yœmy to razem, Imoen.~
+@9    = ~Nie by³aœ zbyt pomocna.~
+@10   = ~Wiem, co masz na myœli!~
+@11   = ~W porz¹dku. Nie ma siê ju¿ czego obawiaæ, prawda?~
+@12   = ~Najemnicy P³omiennej Piêœci wróc¹ na górê przy pomocy tej liny, któr¹ znaleŸliœmy. To na po³udnie st¹d. Prowadzi wprost do wyjœcia.~ ~Najemnicy P³omiennej Piêœci wróc¹ na górê przy pomocy tej liny, któr¹ znalaz³yœmy. To na po³udnie st¹d. Prowadzi wprost do wyjœcia.~
+@13   = ~Tylko spójrz na te wszystkie tomiszcza i ksiêgi o Bhaalu! Ksiê¿na Jannath a¿ podskoczy z radoœci na ich widok! W³aœciwie to nie podskoczy. Jest na to zbyt dystyngowana. Ale... mogê je dla niej zabraæ? Mogê?~
+@14   = ~Jasne. Mnie siê one nie przydadz¹.~
+@15   = ~Nie, chcia³<PRO_HESHE>bym je na razie zatrzymaæ.~
+@16   = ~W porz¹dku... ale powiesz mi, jakbyœ zmieni³<PRO_HESHE> zdanie, dobra?~
+@17   = ~Mo¿esz zabraæ do ksiê¿nej Jannath wszystkie te studia nad Bhaalem, które znaleŸliœmy, Imoen.~
 
-@200 = ~Climb the rope whenever you are ready to return to the Palace. We will be right behind you.~
+@200 = ~Mo¿esz wspi¹æ siê po linie, gdy tylko bêdziesz gotowy do powrotu do pa³acu. Bêdziemy tu¿ za tob¹.~ 
+       ~Mo¿esz wspi¹æ siê po linie, gdy tylko bêdziesz gotowa do powrotu do pa³acu. Bêdziemy tu¿ za tob¹.~

@@ -8,18 +8,18 @@
 INFORMACJE OGÓLNE:
 
 
-Dla gier na silniku Enhanced Edition, g³ównym zadaniem tej modyfikacji jest umo¿liwienie pozostania w œwiecie BG1 po œmierci Sarevoka. W³aœciwa kontynuacja lub zakoñczenie gry odbywa siê po rozmowie z Ksiêciem Beltem w Pa³acu Ksi¹¿êcym.
+Dla gier na silniku Enhanced Edition, g³ównym zadaniem tej modyfikacji jest umo¿liwienie pozostania w œwiecie BG1 po œmierci Sarevoka. W³aœciwa kontynuacja lub zakoñczenie gry odbywa siê po rozmowie z ksiêciem Beltem w Pa³acu Ksi¹¿êcym.
 
-Dla EET, mod pozwala na przejœcie do BGII z ca³kowitym pominiêciem dodatku Oblê¿enie Smoczej W³óczni/SoD. Opcja ta zosta³a dodana, poniewa¿ by³a ³atwa do dodania a nie dlatego, ¿e powinno siê pomin¹æ dodatek. (Nale¿y mieæ na uwadze to, i¿ mog¹ byæ mody, które oczekuj¹ jakiœ zdarzeñ z dodatku, aby móc je kontynuowaæ w BGII.)
+Dla EET, mod pozwala na przejœcie do BGII z ca³kowitym pominiêciem dodatku Oblê¿enie Smoczej W³óczni/SoD. Opcja ta zosta³a dodana, poniewa¿ by³a ³atwa do dodania, a nie dlatego, ¿e powinno siê pomin¹æ dodatek. (Nale¿y mieæ na uwadze to, i¿ mog¹ byæ mody, które oczekuj¹ jakichœ zdarzeñ z dodatku, aby móc je kontynuowaæ w BGII.)
 
-Dla BGT, g³ówny komponent modyfikacji dodaje do dialogu Ksiêcia Belta kilka pochwa³ dla gracza i usuwa pewne niedopatrzenia dialogów w odniesieniu do Sarevoka po jego œmierci.
+Dla BGT, g³ówny komponent modyfikacji dodaje do dialogu ksiêcia Belta kilka pochwa³ dla gracza i usuwa pewne niedopatrzenia dialogów w odniesieniu do Sarevoka po jego œmierci.
 
-Modyfikacja oferuje tak¿e kilka opcjonalnych komponentów, które dodaj¹ wiêcej smaczków co do sytuacji we Wrotach i przygotowuj¹ œwiat do wydarzeñ z Oblê¿enia Smoczej W³óczni. Dodatkowa zawartoœæ jest inspirowana tym jak wygl¹daj¹ Wrota Baldura w SoD. Te komponenty s¹ dostêpne tylko dla wersji SoD/EET.
+Modyfikacja oferuje tak¿e kilka opcjonalnych komponentów, które dodaj¹ wiêcej smaczków co do sytuacji we Wrotach i przygotowuj¹ œwiat do wydarzeñ z Oblê¿enia Smoczej W³óczni. Dodatkowa zawartoœæ jest inspirowana tym, jak wygl¹daj¹ Wrota Baldura w SoD. Te komponenty s¹ dostêpne tylko dla wersji SoD/EET.
 
 
 OPIS KOMPNENTÓW:
 
-Note: although most components are optional, it is assumed that components get installed in the correct order of their appearance. Do not install later components before earlier ones, as it might mess up functionality.
+Uwaga: pomimo i¿ wiêkszoœæ komponentów jest opcjonalna to zak³ada siê, ¿e instalacja bêdzie w kolejnoœci ich wystêpowania. Nie nale¿y instalowaæ póŸniejszych komponentów z listy przed wczeœniejszymi, gdy¿ mog¹ popsuæ dodawan¹ przez siebie zawartoœæ.
 
 1. Endless BG1: komponent g³ówny (wymagany)
 -----------------------------------
@@ -27,12 +27,12 @@ Note: although most components are optional, it is assumed that components get i
 Dla BG:EE, BG:SoD oraz EET, ten komponent dodaje nastêpuj¹ce elementy:
 
 - Gra nie koñczy siê/nie przenosi do SoD po œmierci Sarevoka. Po filmie prezentuj¹cym œmieræ Sarevoka, gra jest kontynuowana w œwi¹tyni w Podziemnym Mieœcie.
-- Dodaje dodatkowe dialogi dla Ksiê¿nej Jannath (jeœli wci¹¿ ¿yje).
+- Dodaje dodatkowe dialogi z ksiê¿n¹ Jannath (jeœli wci¹¿ ¿yje).
 - Usuwa odniesienia do Sarevoka w rozmowach z mieszkañcami Wrót po jego œmierci. Treœci s¹ delikatn¹ modyfikacj¹ ju¿ istniej¹cych odpowiedzi jednak w odniesieniu do œmierci Sarevoka.
 - Drzwi Pa³acu Ksi¹¿êcego pozostan¹ otwarte.
 - Ksi¹¿ê Belt pozostanie ¿ywy i bêdzie w Pa³acu Ksi¹¿êcym.
 - Ksi¹¿ê Belt og³osi gracza jako Bohatera Wrót Baldura.
-- Podczas rozmowy z Ksiêciem Beltem, gracz mo¿e zdecydowaæ czy:
+- Podczas rozmowy z ksiêciem Beltem, gracz mo¿e zdecydowaæ czy:
     - Pozostanie w œwiecie BG1
     - Opuœci œwiat BG1 i pójdzie dalej zgodnie z instancj¹ gry (dla BG:EE bêdzie to koniec gry; dla SoD/EET: rozpocznie siê kampania SoD).
     - Pominie ca³kowicie dodatek SoD i zacznie BGII (tylko dla EET).
@@ -43,9 +43,9 @@ Dla BGT, ten komponent usuwa pewne niedopatrzenia dialogów w odniesieniu do Sare
 2. Uk³on dla bohatera Wrót Baldura (rezydencja w pa³acu)
 -----------------------------------
 
-Dla wszystkich gier: Ksi¹¿ê Belt oferuje bohaterowi prywatny pokój na trzecim piêtrze pa³acu.
+Dla wszystkich gier: ksi¹¿ê Belt oferuje bohaterowi prywatny pokój na trzecim piêtrze pa³acu.
 
-Dla BGT: komponent dodatkowo dodaje kilka nowych linijek do dialogu z Ksiêciem Beltem okreœlaj¹cych gracza jako bohatera Wrót Baldura.
+Dla BGT: komponent dodatkowo dodaje kilka nowych linijek do dialogu z ksiêciem Beltem okreœlaj¹cych gracza jako bohatera Wrót Baldura.
 
 Pokój na trzecim piêtrze pa³acu, po³o¿ony na pó³nocno-zachodniej stronie, zostanie przypisany dla g³ównego bohatera.
 
@@ -53,7 +53,7 @@ S³u¿ba w pa³acu poinstruuje gracza jak korzystaæ z prywatnej skrzyni (jest to ta
 
 Ten komponent zmienia tak¿e wypowiedzi stra¿ników wewn¹trz pa³acu na coœ bardziej przyjaznego (ochrona w piwnicy nie bêdzie atakowaæ gracza) oraz dodaje przyjaznego stra¿nika przed wejœciem do pa³acu.
 
-Note: if Jarl's Adventure Pack v0.8.0 is installed after Endless BG1, opening the chests will be counted as a theft - in this case, the chests on the 3rd floor of the Palace cannot be used by the group despite the servants stating otherwise.
+Uwaga: jeœli modyfikacja "Jarl's Adventure Pack" w wersji v0.8.0 jest zainstalowana po Endless BG1 to otworzenie skrzynii bêdzie traktowane jako próba kradzie¿y. W takim wypadku skrzynia na trzecim piêtrze Pa³acu Ksi¹¿êcego nie mo¿e byæ wykorzystywana przez grupê, nawet jeœli s³u¿ba twierdzi co innego.
 
 
 3. Krótki publiczny ho³d dla bohatera Wrót Baldura (tylko dla SoD/EET)
@@ -85,34 +85,34 @@ Link do modyfikacji "Sarevok Recovery Mod": http://www.baldursgate-refugium.de/m
 
 Ten komponent dodaje miecz Sarevoka. Miecz jest mo¿liwy do podniesienia po œmierci Sarevoka. Nie mo¿na w³adaæ tym mieczem, jest to tylko przedmiot fabularny.
 
-Dla BGT, miecz Sarevoka zostanie skradziony na koniec labiryntu przez kogoœ, kogo bêdzie mo¿na spotkaæ powtórnie w BGII. (W odniesieniu do tego co mówi d¿in o mieczu w BGII.)
+Dla BGT, miecz Sarevoka zostanie skradziony na koniec labiryntu przez kogoœ, kogo bêdzie mo¿na spotkaæ powtórnie w BGII. (W odniesieniu do tego, co mówi d¿in o mieczu w BGII.)
 
 Dla gier EE, miecz Sarevoka mo¿e zostaæ przekazany dla Ksi¹¿¹t. (W odniesieniu do SoD, gdzie zostaniemy poinformowani o kradzie¿y miecza z pa³acu.)
 
 Uwaga: jeœli zainstalujesz ten komponent i komponent "Umieœæ Miecz Chaosu +2 w ekwipunku Sarevoka" z modyfikacji "BGT Tweaks" to Sarevok upuœci dwa miecze.
 
-6. Imoen i Ksiê¿na Liia Jannath (Imoen otrzymuje rezydencje w pa³acu) 
+6. Imoen i ksiê¿na Liia Jannath (Imoen otrzymuje rezydencje w pa³acu) 
 -----------------------------------
 
-Ten komponent spowoduje, ¿e Ksiê¿na Jannath bêdzie ¿ywa i dostêpna w pa³acu. Ponadto porozmawia trochê z Imoen o mo¿liwoœci rozpoczêcia treningu magicznego.
+Ten komponent spowoduje, ¿e ksiê¿na Jannath bêdzie ¿ywa i dostêpna w pa³acu. Ponadto porozmawia trochê z Imoen o mo¿liwoœci rozpoczêcia treningu magicznego.
 
-Na trzecim piêtrze pa³acu, Imoen otrzyma swój pokój, znajduj¹cy siê w po³udniowo-wschodniej czêœci. Jeœli jest w dru¿ynie, s³u¿ba powita j¹ i powie o w³asnej skrytce, tej najbardziej na lewo w pokoju Imoen ("Skrytka Imoen" w SoD). Skrzynia nie bêdzie zamkniêta. Dla gier EE, zawartoœæ pozosta³ych skrytek zostanie przeniesiona do szafki na drugim poziomie pa³acu. W przypadku SoD/EET, zawartoœæ zostanie automatycznie przeniesiona do "tej samej" skrzyni podczas kampanii SoD.
+Na trzecim piêtrze pa³acu, Imoen otrzyma swój pokój, znajduj¹cy siê w po³udniowo-wschodniej czêœci. Jeœli jest w dru¿ynie, s³u¿ba powita j¹ i powie o w³asnej skrytce, tej najbardziej na lewo w pokoju Imoen ("Skrytka Imoen" w SoD). Skrzynia nie bêdzie zamkniêta. Dla gier EE, zawartoœæ pozosta³ych skrytek zostanie przeniesiona do szafki na drugim poziomie pa³acu. W przypadku SoD/EET zawartoœæ zostanie automatycznie przeniesiona do "tej samej" skrzyni podczas kampanii SoD.
 
 W przypadku gdy Imoen nie by³a w dru¿ynie, bêdzie ona zajmowaæ pokój w Pa³acu Ksi¹¿êcym i powie g³ównemu bohaterowi o swojej skrytce osobiœcie.
 
-OdpowiedŸ Imoen w przypadku wyrzucenia z dru¿yny zosta³a zmieniona w kontekœcie zajmowanej przez ni¹ rezydencji. Po otrzymaniu swojego pokoju, mo¿na wys³aæ Imoen do pa³acu w momencie wyrzucenia jej z dru¿yny. Powinno to byæ kompatybilne z innymi modami typu "wyœlij NPC, aby czeka³ gdzieœ tam". Mo¿na wybraæ równie¿ tradycyjne opcje dialogowe, jeœli gracz nie chce wysy³aæ jej do pa³acu.
+OdpowiedŸ Imoen w przypadku wyrzucenia z dru¿yny zosta³a zmieniona w kontekœcie zajmowanej przez ni¹ rezydencji. Po otrzymaniu swojego pokoju mo¿na wys³aæ Imoen do pa³acu w momencie wyrzucenia jej z dru¿yny. Powinno to byæ kompatybilne z innymi modami typu "wyœlij NPC, aby czeka³ gdzieœ tam". Mo¿na wybraæ równie¿ tradycyjne opcje dialogowe, jeœli gracz nie chce wysy³aæ jej do pa³acu.
 
 
-7. Ksi¹¿ê Eltan w pa³acu 
+7. Ksi¹¿ê Eltan bêdzie w pa³acu 
 -----------------------------------
 
-Po zainstalowaniu tego komponentu, Ksi¹¿ê Eltan tak¿e bêdzie ¿ywy oraz w pa³acu. Ten komponent usuwa tak¿e Ksiêcia Eltana z budynku kapitanatu w przypadku gdyby by³ tam z powodu innych modów tj. bg1re czy bg1ub.
+Po zainstalowaniu tego komponentu, ksi¹¿ê Eltan tak¿e bêdzie ¿ywy oraz w pa³acu. Ten komponent usuwa tak¿e ksiêcia Eltana z budynku kapitanatu w przypadku gdyby by³ tam z powodu innych modów tj. bg1re czy bg1ub.
 
-Aby zapewniæ kompatybilnoœæ z komponentem "Powrót Scara" modyfikacji bg1re, nale¿y zainstalowaæ bg1re w wersji v3.0 lub nowszej. W takim przypadku mo¿na ukoñczyæ a nawet rozpocz¹æ ca³e bonusowe zadanie z bg1re po œmierci Sarevoka poprzez porozmawianie z Ksiêciem Eltanem w pa³acu. Nie ma ju¿ wymogu dotycz¹cego rozpoczêcia zadania przed œmierci¹ Sarevoka.
+Aby zapewniæ kompatybilnoœæ z komponentem "Powrót Scara" modyfikacji bg1re, nale¿y zainstalowaæ bg1re w wersji v3.0 lub nowszej. W takim przypadku mo¿na ukoñczyæ, a nawet rozpocz¹æ ca³e bonusowe zadanie z bg1re po œmierci Sarevoka poprzez porozmawianie z ksiêciem Eltanem w pa³acu. Nie ma ju¿ wymogu dotycz¹cego rozpoczêcia zadania przed œmierci¹ Sarevoka.
 
 Informacja o kompatybilnoœci dla moderów: ten komponent wprowadza nowy plik "C#STELTA.cre", który posiada DV "ELTAN" i plik dialogu "DELATAN2.dlg" z ustawionym stanem na "always true" z linijk¹ "~Uratowa³eœ nas. Miasto jest ci wdziêczne.~" wywo³ywan¹ przez ~Dead("Sarevok")~.
 
-NIE DODAWAJ w swojej modyfikacji opcji dialogowych dla Ksiêcia Eltana mówi¹cych "~Uratowa³eœ nas. Miasto jest ci wdziêczne.~" albo kompatybilnoœæ zostanie zepsuta.
+NIE DODAWAJ w swojej modyfikacji opcji dialogowych dla ksiêcia Eltana mówi¹cych "~Uratowa³eœ nas. Miasto jest ci wdziêczne.~" albo kompatybilnoœæ zostanie zepsuta.
 
 Mo¿esz dodaæ odpowiedzi na to zdanie z EBG1 jeœli nowa modyfikacja bêdzie zainstalowana póŸniej.
 W celu okreœlenia jaki jest numer stanu tego zdania w DELTAN2.dlg, mo¿na wykorzystaæ poni¿szy kod w pliku tp2, wraz ze zmienn¹ %deltan2_70%, która jest wartoœci¹ stanu dialogowego: 
@@ -154,7 +154,7 @@ Skarbnik Ophyllis, znany z SoD, bêdzie w pa³acowych piwnicach. Bêdzie w swoim ma
 12. Komentarz Denkoda w Gildii Z³odziei Cienia o œmierci Sarevoka
 -----------------------------------
 
-Denkod w Gildii Z³odziei Cienia, który powiedzia³ wczeœniej gdzie poszed³ Sarevok, wci¹¿ bêdzie na miejscu i porozmawia z g³ównym bohaterem po jego powrocie z Podziemnego Miasta.
+Denkod w Gildii Z³odziei Cienia, który powiedzia³ wczeœniej, gdzie poszed³ Sarevok, wci¹¿ bêdzie na miejscu i porozmawia z g³ównym bohaterem po jego powrocie z Podziemnego Miasta.
 
 
 13. Pomiñ labirynt z³odziei w drodze powrotnej po zabiciu Sarevoka
@@ -163,27 +163,30 @@ Denkod w Gildii Z³odziei Cienia, który powiedzia³ wczeœniej gdzie poszed³ Sarevo
 Po zabiciu Sarevoka, wyjœcie z Podziemnego Miasta pominie labirynt z³odziei i pozwoli na przejœcie bezpoœrednio do Gildii Z³odziei. Przejœcie do labiryntu zostanie przywrócone po powrotnym wejœciu tamt¹ drog¹.
 
 
-14 Korlasz' Dungeon is in BG1
+14. Krypta Korlasz bêdzie dostêpna w BG1
 -----------------------------------
-This component moves Korlasz' Tomb into the BG1 part of the game. It transports the group into the dungeon after Belt told the PC to come along to hear the details of pursuing Sarevok last follower. 
-The dungeon can be left and entered after that at will, and is also available in SoD (Iron Throne building area).
-Imoen will remain in the group if she is a party member and will have her original SoD dialogues inside the tomb. If she is not in the group, Imoen will be inside the dungeon as a guide like she is in original SoD.
-Transition to SoD is done afterwards in the dialogue with Duke Belt, when the PC can say that they will do nothing for a tenday to rest before the next problem needing a hero will surface.
-Changes do not apply to a new SoD game.
 
-Note: This component will most certainly screw Transitions mod as it is not considered there yet (v2.0 and lower). Do not install this component if you were planning on installing Transitions, anyway.
+Wraz z tym komponentem krypta rodziny Korlasz bêdzie dostêpna ju¿ podczas rozgrywki w Baldur's Gate 1. Dru¿yna zostanie przeniesiona do grobowca zaraz po tym jak g³ówny bohater porozmawia z ksiêciem Beltem o poœcigu za ostatnimi poplecznikami Sarevoka.
+Po rozpoczêciu tego zadania podziemia bêd¹ otwarte, wiêc bêdzie mo¿na do nich wejœæ i z nich wyjœæ w dowolnym momencie. Krypta bêdzie tak¿e dostêpna podczas rozgrywki SoD (lokacja z siedzib¹ ¯elaznego Tronu).
+Wewn¹trz krypty Imoen pozostanie w grupie, o ile do niej nale¿a³a, a jej kwestie dialogowe bêd¹ takie same jak w SoD. Jeœli Imoen nie przynale¿y do dru¿yny, to bêdzie przewodnikiem, tak jak jest to zrealizowane w oryginalnym SoD.
+Aby przejœæ do kampanii SoD, nale¿y porozmawiaæ z ksiêciem Beltem o chêci nierobienia nic przez dziesiêæ dni.
+Zmiany te nie afektuj¹ nowej gry bezpoœrednio w kampanii SoD.
+
+Uwaga: ten komponent z pewnoœci¹ popsuje treœæ modyfikacji Transitions, jako ¿e nie zosta³ on jeszcze tam uwzglêdniony (wersje 2.0 i ni¿sze). Nie instaluj tego komponentu jeœli planujesz instalacjê Transitions.
 
 
-15 Fenster the Palace Healer Is in the Palace
+15. Uzdrowiciel Fenster bêdzie w pa³acu
 -----------------------------------
-Fenster will be inside the palace ground floor, offering similar healing services like the cleric inside Korlasz' Dungeon.
 
-Note: This component might lead to two Fensters being present if combined with the component from Transitions mod as it is not considered there yet (v2.0 and lower). 
+Fenster bêdzie urzêdowa³ na parterze w pa³acu, oferuj¹c podobne us³ugi, jakie oferuje kap³an w krypcie Korlasz.
+
+Uwaga: ten komponent mo¿e spowodowaæ, ¿e bêdzie dwóch Fensterów, jeœli modyfikacja Transitions bêdzie równie¿ zainstalowana. Transitions w wersji 2.0 i ni¿szej jeszcze nie uwzglêdnia tego komponentu.
 
 
-16 Captain Corwin Is in the Palace
+16. Kapitan Corwin bêdzie w pa³acu
 -----------------------------------
-Corwin will be inside the palace ground floor with the Dukes, and has no notable content whatsoever.
+
+Corwin bêdzie przebywaæ na parterze pa³acu, wœród Ksi¹¿¹t. W tej chwili nie ma z ni¹ ¿adnych nowych treœci czy interakcji.
 
 
 INSTALACJA:
@@ -203,7 +206,7 @@ https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-ba
 Instrukcje ogólne (dla systemu Windows, Mac OS X i Linux)
 
 Wypakuj zawartoœæ archiwum z modyfikacj¹ do g³ównego katalogu z gr¹.
-Uwaga: w przypadku Enhanced Edition wa¿ne jest, aby zainstalowaæ modyfikacjê w jêzyku w którym bêdziesz graæ. W innym wypadku, dialogi w grze nie bêd¹ siê pojawiaæ tylko bêd¹ pokazywaæ b³êdy.
+Uwaga: w przypadku Enhanced Edition wa¿ne jest, aby zainstalowaæ modyfikacjê w jêzyku, w którym bêdziesz graæ. W innym wypadku, dialogi w grze nie bêd¹ siê pojawiaæ tylko bêd¹ pokazywaæ b³êdy.
 
 
 Windows
@@ -229,14 +232,14 @@ Jeœli masz problem z instalacj¹ lub znalaz³eœ/aœ b³¹d, proszê zg³oœ to w jednym 
 KOMPATYBILNOŒÆ:
 
 Modyfikacja Endless BG1 ustawia zmienn¹ "Global("C#EndlessBG1","GLOBAL",1)" w Gildii Z³odziei (po walce w pa³acu) dla modyfikacji (np. tych dodaj¹cych NPC) tak aby wiedzia³y, ¿e gra pozostanie w œwiecie BG1 po œmierci Sarevoka.
-Also, from v7 it will set "Global("SarevokBehavior","GLOBAL",5)" to 5 after Sarevok is dead.
+Ponadto, od wersji v7 modyfikacja ustawia zmienn¹ "Global("SarevokBehavior","GLOBAL",5)" na wartoœæ 5 po œmierci Sarevoka.
 
-Modyfikacja jest w pe³ni kompatybilna z modyfikacj¹ Transitions jeœli zosta³a zainstalowana przed Transitions (for v9: Components 1-13). Note: Transitions Mod overwrites a lot of components of BG1 with own versions of the content, if considering EBG1's content is not explicitely offered as an install choice. 
-Components 14-16 are not considered in Transitions yet (v2.0 and lower). Component 14 is probably incompatible with Transitions. Installing both will probably mess up the game. Also see compatibility notes in the component descriptions.
+Komponenty 1-13 tej modyfikacji s¹ w pe³ni kompatybilne z modyfikacj¹ Transitions jeœli zosta³y one zainstalowane przed Transitions.
+Komponenty 14-16 nie s¹ jeszcze wspierane w po³¹czeniu z Transitions (v2.0 i wersje nowsze). Natomiast komponent 14 prawdopodobnie jest w ca³oœci niekompatybilny z Transitions. Instalacja tych komponentów wraz z Transitions mo¿e popsuæ grê. Wiêcej informacji znajduje siê w opisie poszczególnych komponentów.
 
-The bonus quest "Scar's Return" from bg1re is fully playable after Sarevok's death.
+Dodatkowe zadanie "Scar's Return" modyfikacji bg1re mo¿e byæ w pe³ni rozegrane po œmierci Sarevoka.
 
-If Jarl's Adventure Pack v0.8.0 is installed, opening the chests on the 3rd floor of the Palace will be counted as a theft - in this case, the chests cannot be used by the group despite the servants stating otherwise.
+Uwaga: jeœli modyfikacja "Jarl's Adventure Pack" w wersji v0.8.0 jest zainstalowana po Endless BG1 to otworzenie skrzynii bêdzie traktowane jako próba kradzie¿y. W takim wypadku skrzynia na trzecim piêtrze Pa³acu Ksi¹¿êcego nie mo¿e byæ wykorzystywana przez grupê, nawet jeœli s³u¿ba twierdzi co innego.
 
 
 
@@ -263,7 +266,7 @@ Near Infinity - https://github.com/Argent77/NearInfinity/releases/latest
 WeiDU - http://www.weidu.org
 grepWin - http://tools.stefankueng.com/grepWin.html
 
-Modding communities, tutorials and technical assistance:
+Fora moderskie, samouczki i pomoc techniczna:
 
 Kerzenburgforum - https://www.baldurs-gate.de/index.php
 The Gibberlings Three - http://gibberlings3.net
@@ -293,16 +296,16 @@ Version 8:
 -added globally unique LABELs to support Project Infinity
 
 Version 7:
-- Polish translation added by Roberciiik.
-- Sarevok's armor should not be usable by Mages/sorcerers.
-- missed line in duke_eltan.d traified.
-- Dukes should not turn hostile when PC returns into Palace after killing Sarevok on EE patch 2.6 beta.
-- afte Sarevok is dead: Duke Eltan is no longer searched for, so the Harbormaster shouldn't refer to him.
-- typo corrections in readme (English).
-- corrected "charset" to "charsets" in tp2.
-- changes to tp2 organization: use of install.mrk so text transformation to utf-8 is only done once; Russian version now uses english setup.tra out of English language folder; added forbid checks for EET_End.
-- corrected doubled cpmvars.tpa entry for "Beregost_House08".
-- clearified the copyright license the mod is published under and provided a link to Tantalus' Mod "Sarevok Recovery Mod".
+-Polish translation added by Roberciiik.
+-Sarevok's armor should not be usable by Mages/sorcerers.
+-missed line in duke_eltan.d traified.
+-Dukes should not turn hostile when PC returns into Palace after killing Sarevok on EE patch 2.6 beta.
+-afte Sarevok is dead: Duke Eltan is no longer searched for, so the Harbormaster shouldn't refer to him.
+-typo corrections in readme (English).
+-corrected "charset" to "charsets" in tp2.
+-changes to tp2 organization: use of install.mrk so text transformation to utf-8 is only done once; Russian version now uses english setup.tra out of English language folder; added forbid checks for EET_End.
+-corrected doubled cpmvars.tpa entry for "Beregost_House08".
+-clearified the copyright license the mod is published under and provided a link to Tantalus' Mod "Sarevok Recovery Mod".
 
 Version 6.1:
 -Lines in ffhealer.tpa and refugees_sod.tpa traified
@@ -360,7 +363,7 @@ Version 1
 -first public release
 
 
-INFORMACJE O LICENCJI
+INFORMACJE O LICENCJI:
 
 ==========================================================================
 
