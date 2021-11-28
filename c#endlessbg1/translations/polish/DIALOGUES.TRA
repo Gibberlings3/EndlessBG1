@@ -196,7 +196,7 @@
 @223  = ~Tutaj s¹, ksiê¿no Jannath. Proszê spojrzeæ jaki ten stos jest wielki!~
 @224  = ~Chcia³am ci podziêkowaæ za materia³y, które Imoen mi przekaza³a. Proszê, przyjmij to jako rekompensatê.~
 @225  = ~<CHARNAME>, jestem wielce zainteresowana tymi ksiêgami, które znalaz³eœ w krypcie Korlasz. Potrzebujê ich do w³asnych badañ. Proszê, przeka¿ mi je, gdy tylko nie bêdziesz ich ju¿ potrzebowa³.~
-       ~<CHARNAME>, jestem wielce zainteresowana tymi ksiêgami, które znalaz³aœ w krypcie Korlasz. Potrzebujê ich do w³asnych badañ. Proszê, przeka¿ mi je, gdy tylko nie bêdziesz ich ju¿ potrzebowa³a.~ 
+        ~<CHARNAME>, jestem wielce zainteresowana tymi ksiêgami, które znalaz³aœ w krypcie Korlasz. Potrzebujê ich do w³asnych badañ. Proszê, przeka¿ mi je, gdy tylko nie bêdziesz ich ju¿ potrzebowa³a.~ 
 
 @226  = ~Znalaz³eœ materia³y traktuj¹ce o Bhaalu. Wiem, ¿e by³y w posiadaniu Korlasz. Czy móg³byœ mi je przekazaæ? Wspomóg³byœ moje badania.~
         ~Znalaz³aœ materia³y traktuj¹ce o Bhaalu. Wiem, ¿e by³y w posiadaniu Korlasz. Czy mog³abyœ mi je przekazaæ? Wspomog³abyœ moje badania.~
@@ -224,15 +224,15 @@
 
 /* pc_palaceresidence.d */
 /* new for v9 */
-@350  = ~This comfortable bed offers luxury you never found in Candlekeep.~
-@351  = ~You put yourself to bed for a full night's sleep (8 hours).~
-@352  = ~You spend the time until midnight.~
-@353  = ~You spend the time until eleven at night.~
-@354  = ~You spend the time until midday.~
-@355  = ~You spend the time until eleven at noon.~
-@356  = ~You spend the time until ten at noon.~
-@357  = ~You spend the time until dawn starts (6 am).~
-@358  = ~You spend the time until dawn ends (7 am).~
-@359  = ~You spend the time until dusk starts (9 pm).~
-@360  = ~You spend the time until dusk ends (10 pm).~
-@361  = ~You turn away from the bed.~
+@350  = ~To luksusowe ³ó¿ko oferuje wygodê, której nigdy nie uda³o ci siê zaznaæ w Candlekeep.~
+@351  = ~Po³ó¿ siê do ³ó¿ka na oœmiogodzinny odpoczynek.~
+@352  = ~Œpij do pó³nocy.~
+@353  = ~Œpij do jedenastej w nocy.~
+@354  = ~Œpij do po³udnia.~
+@355  = ~Œpij do jedenastej rano.~
+@356  = ~Œpij do dziesi¹tej rano.~
+@357  = ~Œpij do œwitu (szósta rano).~
+@358  = ~Œpij do koñcówki œwitu (siódma rano).~
+@359  = ~Œpij do zmierzchu (dziewi¹ta wieczorem).~
+@360  = ~Œpij do koñcówki zmierzchu (dziesi¹ta wieczorem).~
+@361  = ~Nie korzystaj z ³ó¿ka.~
