@@ -23,6 +23,7 @@
 
 /* new for v9: splitted line 13 */
 @14  = ~Folgt mir bitte, die Soldaten der Flammenden Faust werden Euch zum Versteck von Sarevoks letzter Anhängerin führen.~
+@15  = ~So, großer Held. Wie wär's mit einer kleinen Pause und Zeit zum Überlegen, wo wir von hier aus hin wollen?~ ~So, großer Heldin. Wie wär's mit einer kleinen Pause und Zeit zum Überlegen, wo wir von hier aus hin wollen?~
 
 /* pc_palaceresidence.d */
 @20  = ~Seid gegrüßt, <CHARNAME>. Bitte verlasst den Keller, Ihr solltet Euch hier nicht aufhalten.~

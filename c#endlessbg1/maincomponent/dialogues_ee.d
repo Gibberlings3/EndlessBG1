@@ -120,4 +120,16 @@ END
 
 END //APPEND
 
-
+/* direct BGII transition - give Imoen a different line */
+APPEND bdimoen
+IF WEIGHT #-1
+~GlobalGT("C#EBG1_DirectBG2Transition","GLOBAL",0)
+AreaCheck("bd6100")
+GlobalLT("bd_plot","global",675)
+~ THEN BEGIN 129 // from:
+  SAY @15  /* ~So, great hero. How about having a little stop and thinking about where to go from here?~ */
+  IF ~~ THEN DO ~SetGlobal("bd_plot","global",675)
+DestroyItem("imoenhp1")
+~ EXIT
+END
+END //APPEND

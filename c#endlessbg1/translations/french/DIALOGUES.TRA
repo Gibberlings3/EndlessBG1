@@ -20,6 +20,7 @@
 
 /* new for v9: splitted line 13 */
 @14  = ~Suivez-moi s'il vous plaît, les soldats du Poing Enflammé vont vous guider à la cachette des derniers serviteurs de Sarevok.~ ~Suivez-moi s'il vous plaît, les soldats du Poing Enflammé vont vous guider à la cachette des derniers serviteurs de Sarevok.~
+@15  = ~So, great hero. How about having a little stop and thinking about where to go from here?~
 
 /* pc_palaceresidence.d */
 @20 = ~Salutations, <CHARNAME>. Je dois vous demander de quitter le cellier, vous ne devriez pas être ici.~
