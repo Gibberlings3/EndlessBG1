@@ -247,6 +247,7 @@ CREDITS:
 
 Acifer: pomys³y.
 BeamDog / Overhaul Games: za stworzenie SoD sk¹d czerpano pomys³y na now¹ zawartoœæ dla tego moda.
+Garanda: idea to give CHARNAME's bed in the palace a "rest" function.
 Lauriel: ideas to move Korlasz' Dungeon into BG1 and place Fenster into the palace, from her mod Transitions.
 Tantalus: pliki BAM przedmiotów Sarevoka. Pliki BAM wziête z modyfikacji Tantalus o nazwie "Sarevok Recovery Mod", na licencji "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 

@@ -228,6 +228,7 @@ CREDITS
 
 Acifer: ideas.
 BeamDog / Overhaul Games: for creating SoD where most additional content ideas for this mod resulted from.
+Garanda: idea to give CHARNAME's bed in the palace a "rest" function.
 Lauriel: ideas to move Korlasz' Dungeon into BG1 and place Fenster into the palace, from her mod Transitions.
 Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons": CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
