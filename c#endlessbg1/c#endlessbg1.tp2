@@ -747,14 +747,15 @@ FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
 
 /* define new campaign name to SoD will lead to bd0103 */
+ACTION_IF GAME_IS ~bgee~ BEGIN
 APPEND ~CAMPAIGN.2DA~ ~
 C#STSD         BDBALDUR    -1      1          BDBANTER       *              SODMAREA       74       -1        NPCLVLDS      *          BDDIALOG       sodsave          C#EBG1ST       STRTGOLD       *           SODWEAP      BDSTWEAP       *              *             BGMAP          BDBALDUR       1              0xFFFFFFFF     1          SODCIN01           PARTY          SODINTER       SODYEARS      SODREPUTATI      SODCLTXT       SODRACE~
-
-/*
+END
+ACTION_IF GAME_IS ~eet~ BEGIN
 /* EET */
 APPEND ~CAMPAIGN.2DA~ ~
 C#STSD         BDBALDUR    -1      1          BDBANTER       *              MASTAREA       152      -1        *          BDPARTY        BDDIALOG       save             C#EBG1ST       STRTGOLD       *         SODWEAP      BDSTWEAP       *              *              BGMAP          BDBALDUR       1              0xFFFFFFFF     1          SODCIN01           PARTY          SODINTER       SODYEARS        REPUTATI      SODCLTXT       SODRACE~
-*/
+END
 
 /* change starting area */
 COPY ~c#endlessbg1/korlasz_dungeon_bg1/c#ebg1st.2da~ ~override~
