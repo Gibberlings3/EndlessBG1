@@ -91,7 +91,7 @@ Avec ce composant installé, la duchesse Jannath sera en vie et à l'intérieur 
 Imoen aura à sa disposition une chambre au sud-est du dernier étage du palais. Si elle se trouve dans le groupe, un serviteur viendra lui souhaiter la bienvenue et lui dire qu'elle a un coffre personnel qui sera celui le plus à l'ouest de sa chambre ("Le coffre d'Imoen" dans SoD). Le coffre sera déverrouillé. Pour les jeux EE, le contenu de la plupart des coffres sera déplacé un étage plus bas dans les tiroirs du premier étage du palais. Pour SoD/EET, le contenu sera automatiquement déplacé dans le "même" coffre de la campagne de SoD.
 
 Au cas où Imoen ne se trouve pas dans le groupe, elle sera dans sa nouvelle résidence dans le dernier étage du palais et parlera elle-même de son coffre.
-Le dialogue du renvoi d'Imoen du groupe a été altéré, en lien avec sa nouvelle résidence: après avoir reçu sa nouvelle chambre, Imoen peut être envoyée au palais lorsqu'elle est renvoyée du groupe. Cela devrait être compatible avec les autres mods "envoyer le PNJ attendre quelque part" (Cela fait appelle à un dialogue intermédiaire qui reviendra au dialogue initial si le PC ne veut pas qu'elle attende au Palais).
+Le dialogue du renvoi d'Imoen du groupe a été altéré, en lien avec sa nouvelle résidence: après avoir reçu sa nouvelle chambre, Imoen peut être envoyée au palais lorsqu'elle est renvoyée du groupe. Cela devrait être compatible avec les autres mods "envoyer le PNJ attendre quelque part" (Cela fait appel à un dialogue intermédiaire qui reviendra au dialogue initial si le PC ne veut pas qu'elle attende au Palais).
 
 
 7 Le Duc Eltan se trouve au palais.
@@ -147,27 +147,27 @@ Denkod dans la guilde des voleurs, qui donne l'information d'où Sarevok allait,
 Après la mort de Sarevok, quitter Ombreville emmènera directement dans la guilde des voleurs, en passant la partie du labyrinthe. Après avoir pris cette direction une fois, les entrées redeviennent utilisables normalement, et le labyrinthe peut être à nouveau visité. 
 
 
-14 Korlasz' Dungeon is in BG1
+14 Le donjon de Korlaz se trouve dans BG1
 -----------------------------------
-This component moves Korlasz' Tomb into the BG1 part of the game. It transports the group into the dungeon after Belt told the PC to come along to hear the details of pursuing Sarevok last follower. 
-The dungeon can be left and entered after that at will, and is also available in SoD (Iron Throne building area).
-Imoen will remain in the group if she is a party member and will have her original SoD dialogues inside the tomb. If she is not in the group, Imoen will be inside the dungeon as a guide like she is in original SoD.
-Transition to SoD is done afterwards in the dialogue with Duke Belt, when the PC can say that they will do nothing for a tenday to rest before the next problem needing a hero will surface.
-Changes do not apply to a new SoD game.
+Ce composant place la tombe de Korlasz la partie du jeu de BG1. L'entrée transporte le groupe dans le donjon après que Belt ait dit au PC de venir pour entendre les détails de la poursuite des derniers serviteurs de Sarevok. 
+Il est ensuite possible de quitter et d'entrer dans le donjon à volonté, qui est aussi disponible dans SoD (dans la zone du bâtiment du Trône de Fer).
+Imoen restera dans le groupe si elle faisait partie du groupe précédemment, et aura ses dialogues originaux de SoD à l'intérieur de la tombe. Si elle ne fait pas partie du groupe, Imoen se trouvera dans le donjon agissant en tant que guide comme dans la partie originale de SoD.
+La transition vers SoD se fait après le dialogue avec le duc Belt, quand le joueur annoncera qu'il ne fera rien et se reposera pendant les jours à venir, à moins qu'un nouveau problème apparaisse et nécessite l'intervention d'un héros.
+Ces changements ne s'appliquent pas à une nouvelle partie de SoD.
 
-Note: This component will most certainly screw Transitions mod as it is not considered there yet (v2.0 and lower). Do not install this component if you were planning on installing Transitions, anyway.
+Note : Ce composant n'est pas encore reconnu par le mod Transitions (v2.0 et inférieur), et risque de faire planter votre jeu. N'installez pas ce composant si vous aviez l'intention d'installer Transitions.
 
 
-15 Fenster the Palace Healer Is in the Palace
+15 Fenster le soigneur du palais se trouve au palais
 -----------------------------------
-Fenster will be inside the palace ground floor, offering similar healing services like the cleric inside Korlasz' Dungeon.
+Fenster sera à l'intérieur du palais au rez-de-chaussée, offrant des services de soigneur similaire à ceux du clerc dans le donjon de Korlasz.
 
-Note: This component might lead to two Fensters being present if combined with the component from Transitions mod as it is not considered there yet (v2.0 and lower). 
+Note : Ce composant risque d'amener la présence de deux Fenster dans le palais s'il est combiné avec le mod Transitions (v2.0 et inférieur), car Transitions ne reconnait pas la présence de ce composant. 
 
 
-16 Captain Corwin Is in the Palace
+16 Le Capitaine Corwin se trouve au palais
 -----------------------------------
-Corwin will be inside the palace ground floor with the Dukes, and has no notable content whatsoever.
+Corwin sera à l'intérieur du palais au rez-de-chaussée avec les ducs et n'a pas de contenu particulier pour le moment.
 
 
 
@@ -216,8 +216,8 @@ Le mod Endless BG1 définira la variable "Global("C#EndlessBG1", "GLOBAL",1)" da
 De plus, à partir de la v7, "Global("SarevokBehavior", "GLOBAL",5)" sera réglé sur 5 après la mort de Sarevok.
 
 
-Components 1-13 of EndlessBG1 mod sont entièrement compatible avec le mod Transitions si Endless BG1 est installé en premier. Note : le mod Transitions écrase beaucoup de composants de BG1 avec ses propres versions du contenu, si la prise en compte du contenu d'EBG1 n'est pas explicitement proposée comme choix d'installation. 
-Components 14-16 are not considered in Transitions yet (v2.0 and lower). Component 14 is probably incompatible with Transitions. Installing both will probably mess up the game. Also see compatibility notes in the component descriptions.
+Les composants 1 à 13 du mod EndlessBG1 sont entièrement compatible avec le mod Transitions si Endless BG1 est installé en premier. Note : le mod Transitions écrase beaucoup de composants de BG1 avec ses propres versions du contenu, si la prise en compte du contenu d'EBG1 n'est pas explicitement proposée comme choix d'installation. 
+Les composants 14 à 16 ne sont pas reconnus dans le mod Transitions pour le moment (v2.0 et inférieur). Le composant 14 est probablement incompatible avec Transitions. Installer ces deux composants avec le mod Transitions risque de rendre votre jeu instable. Voir les notes de compatibilité dans la description des composants.
 
 La quête "Scar's Return" de BG1RE est entièrement jouable après la mort de Sarevok.
 
@@ -228,7 +228,6 @@ CREDITS
 
 Acifer: idées.
 BeamDog / Overhaul Games: pour avoir crée SoD d'où vient la majorité des idées de contenu additionnel pour ce mod.
-Garanda: idea to give CHARNAME's bed in the palace a "rest" function.
 Lauriel: ideas to move Korlasz' Dungeon into BG1 and place Fenster into the palace, from her mod Transitions.
 Tantalus: BAMs des objets uniques de Sarevok. Les BAMs ont été récupérés depuis le mod de Tantalus "Sarevok Recovery Mod", licencié sous "Creative Commons": CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
@@ -266,7 +265,7 @@ Version 9:
 -Main component: all unsolved journal titles will be closed.
 -Main component: Dilos and Benjy in FF headquarters should have a line if talked to after Sarevok's death.
 -Main component: companions will give farewell speech upon transition to BGII.
--Main component (EET): direct transition to BGII (skip SoD) happens via the end cutscene in the wilderness (like in the original).
+-Main component (EET): for direct transition to BGII (skip SoD), Imoen, Minsc, Jaheira will not have theyir equipment at the beginning of BGII.
 -More Flavor to Hero of Baldur's Gate: PC's bed in BG1 will have option to rest full night or until a certain hour of the day.
 -cutsom cres other than dukes will be removed in SoD / BGII (for compatibility with mods that reopen the areas).
 

@@ -99,7 +99,7 @@ InParty("SHARTEEL") Detect("SHARTEEL") !StateCheck("SHARTEEL",CD_STATE_NOTVALID)
 == baelothj IF ~InParty("BAELOTH") Detect("BAELOTH") !StateCheck("BAELOTH",CD_STATE_NOTVALID)~ THEN #%eet_2%57923 /* Consider this my curtain call. */
 == %IMOEN_JOINED% IF ~InParty("%IMOEN_DV%") Detect("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @237 /* Ooh yes, sleeping and doing *nothing*, that sounds great! Although... talking from experience, I don't think the gods will let us!~ */
 END
-IF ~~ THEN DO ~SetGlobal("C#EBG1_DirectBG2Transition","GLOBAL",1) ActionOverride("BELT",TakePartyItem("c#stsrvs"))
+IF ~~ THEN DO ~ActionOverride("BELT",TakePartyItem("c#stsrvs"))
 ActionOverride("BELT",DestroyItem("c#stsrvs")) 
 %move_to_bg2%~ EXIT
 
@@ -120,16 +120,4 @@ END
 
 END //APPEND
 
-/* direct BGII transition - give Imoen a different line */
-APPEND bdimoen
-IF WEIGHT #-1
-~GlobalGT("C#EBG1_DirectBG2Transition","GLOBAL",0)
-AreaCheck("bd6100")
-GlobalLT("bd_plot","global",675)
-~ THEN BEGIN 129 // from:
-  SAY @15  /* ~So, great hero. How about having a little stop and thinking about where to go from here?~ */
-  IF ~~ THEN DO ~SetGlobal("bd_plot","global",675)
-DestroyItem("imoenhp1")
-~ EXIT
-END
-END //APPEND
+

@@ -266,7 +266,8 @@ Version 9:
 -Main component: all unsolved journal titles will be closed.
 -Main component: Dilos and Benjy in FF headquarters should have a line if talked to after Sarevok's death.
 -Main component: companions will give farewell speech upon transition to BGII.
--Main component (EET): direct transition to BGII (skip SoD) happens via the end cutscene in the wilderness (like in the original).
+
+-Main component (EET): for direct transition to BGII (skip SoD), Imoen, Minsc, Jaheira will not have theyir equipment at the beginning of BGII.
 -More Flavor to Hero of Baldur's Gate: PC's bed in BG1 will have option to rest full night or until a certain hour of the day.
 -cutsom cres other than dukes will be removed in SoD / BGII (for compatibility with mods that reopen the areas).
 

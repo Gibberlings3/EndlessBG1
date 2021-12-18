@@ -83,13 +83,12 @@ ACTION_IF (GAME_IS ~eet~) THEN BEGIN
  OUTER_SPRINT ~start_bg1end_sod_cutscene~ ~ClearAllActions()
 		StartCutSceneMode()
 		StartCutScene("c#st2sod")~
- OUTER_SPRINT ~move_to_bg2~ ~SetGlobal("chapter","global",13)
-ClearAllActions()
+ OUTER_SPRINT ~move_to_bg2~ ~ClearAllActions()
+SetGlobal("ENDOFBG1","GLOBAL",1)
+SetGlobal("C#EBG1_DirectBG2Transition","GLOBAL",1)
 //CreateCreatureObject("K#TELBGT",Player1,0,0,0)
 StartCutSceneMode()
-RestParty()
-SmallWait(2)
-StartCutSceneEx("bdcut61",TRUE)~
+StartCutSceneEx("c#ebg122",TRUE)~
  OUTER_SPRINT ~bdresurr~ ~bdresurr~
  OUTER_SPRINT ~bddispel~ ~bddispel~
  OUTER_SPRINT ~clearcld~ ~clearcld~
@@ -222,122 +221,6 @@ ACTION_IF GAME_IS ~bgt~ THEN BEGIN
 /* I put the erase journals here so I don't have to split and add several script blocks. */
   INCLUDE ~c#endlessbg1/maincomponent/journalerase_bgt.tpa~
 END
-
-/* Patch bd6200.bcs so default party is handled while fade to black and "bd_plot" is not set */
-
-COPY_EXISTING ~bd6200.BCS~ ~override~
-	DECOMPILE_AND_PATCH BEGIN
-		SPRINT textToReplace ~\(GlobalLT("bd_plot","global",660)\)~
-		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
-		PATCH_IF (num_matches > 0) BEGIN
-			REPLACE_TEXTUALLY ~%textToReplace%~ ~Global("C#EBG1_DirectBG2Transition","GLOBAL",0)
-	\1~
-			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
-		END ELSE BEGIN
-			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
-		END
-	END
-BUT_ONLY
-
-/* patch direct BGII transition to bd6200.bcs */
-<<<<<<<< .../bd6200_bg1tobg2.baf
-IF
-	Global("chapter","global",13)
-	Global("C#EBG1_DirectBG2Transition","GLOBAL",2)
-	Global("C#EBG1_DisplePC","bd6200",0)  
-THEN
-	RESPONSE #0
-		SetGlobal("C#EBG1_DisplePC","bd6200",1)  
-		ReallyForceSpellDeadRES("bdrejuve",Player1) 
-		Continue()
-END
-
-IF
-	Global("C#EBG1_DirectBG2Transition","GLOBAL",2)
-THEN
-	RESPONSE #100  
-		ActionOverride("IMOEN2",SetGlobal("K#PartySoD","LOCALS",1))
-		SmallWait(1)
-		MoveGlobal("BD6200","Imoen2",[775.705])  // Imoen
-		ApplySpellRES("bdresurr","Imoen2")  // No such index
-		SmallWait(1)
-		ActionOverride("Imoen2",Face(E))
-		ApplySpellRES("bdrejuve","Imoen2")  // No such index
-		ChangeEnemyAlly("Imoen2",NEUTRAL)  // Imoen
-		ChangeSpecifics("Imoen2",ALLIES)  // Imoen
-		ActionOverride("Imoen2",ChangeAIScript("BDIMOEN",OVERRIDE))
-		ActionOverride("Imoen2",ChangeAIScript("",CLASS))
-		ActionOverride("Imoen2",ChangeAIScript("",RACE))
-		ActionOverride("Imoen2",ChangeAIScript("",GENERAL))
-		ActionOverride("Imoen2",ChangeAIScript("",DEFAULT))
-		ActionOverride("Imoen2",SetDialog("BDIMOEN"))
-		SetGlobal("C#EBG1_DirectBG2Transition","GLOBAL",3)
-		Wait(1)
-		StartCutSceneMode()
-		StartCutSceneEx("bdcut64x",TRUE)
-END
->>>>>>>>
-
-EXTEND_BOTTOM ~bd6200.BCS~ ~.../bd6200_bg1tobg2.baf~ EVALUATE_BUFFER
-
-/* patch bdcut61.bcs so it can be used for transition to BGII */
-
-COPY_EXISTING ~bdcut61.BCS~ ~override~
-	DECOMPILE_AND_PATCH BEGIN
-		SPRINT textToReplace ~\(IF[%newline%]*True()[%newline%]*THEN[%newline%]*RESPONSE[%newline%]*#100[%newline%]*CutSceneId(Player1)[%newline%]*Wait(1)\)~
-		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
-		PATCH_IF (num_matches > 0) BEGIN
-			REPLACE_TEXTUALLY ~%textToReplace%~ ~IF
-	Global("C#EBG1_DirectBG2Transition","GLOBAL",0)
-THEN
-	RESPONSE #100
-		CutSceneId(Player1)
-		Wait(1)~
-			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
-		END ELSE BEGIN
-			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
-		END
-	END
-BUT_ONLY
-
-/* patch direct BGII transition to bdcut61.bcs */
-<<<<<<<< .../bdcut61_bg1tobg2.baf
-IF
-	Global("C#EBG1_DirectBG2Transition","GLOBAL",1)
-THEN
-	RESPONSE #100
-		CutSceneId(Player1)
-		Wait(1)
-		SetGlobal("C#EBG1_DirectBG2Transition","GLOBAL",2)
-		ActionOverride(Player2,LeaveAreaLUA("bd6200","",[315.1390],S))
-		ActionOverride(Player3,LeaveAreaLUA("bd6200","",[315.1390],S))
-		ActionOverride(Player4,LeaveAreaLUA("bd6200","",[315.1390],S))
-		ActionOverride(Player5,LeaveAreaLUA("bd6200","",[315.1390],S))
-		ActionOverride(Player6,LeaveAreaLUA("bd6200","",[315.1390],S))
-		LeaveAreaLUAPanic("bd6200","",[315.1390],SW)
-		LeaveAreaLUA("bd6200","",[315.1390],SW)
-		MultiPlayerSync()
-		Wait(1)
-		EndCutSceneMode()
-END
->>>>>>>>
-
-EXTEND_BOTTOM ~bdcut61.BCS~ ~.../bdcut61_bg1tobg2.baf~ EVALUATE_BUFFER
-//%IMOEN_DV%
-
-/* make sure Imoen talks with the correct dialogue after joining the group at the end of SoD */
-COPY_EXISTING ~bdcut65.BCS~ ~override~
-	DECOMPILE_AND_PATCH BEGIN
-		SPRINT textToReplace ~\(ActionOverride("IMOEN2?",\)StartDialogNoSet(Player1))~
-		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
-		PATCH_IF (num_matches > 0) BEGIN
-			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 StartDialogOverride("bdimoen",Player1)~
-			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
-		END ELSE BEGIN
-			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
-		END
-	END
-BUT_ONLY
 
 
 ////////////////////////////////////////////////////////////////////////
