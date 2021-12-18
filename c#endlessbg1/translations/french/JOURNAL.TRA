@@ -40,18 +40,18 @@ J'ai récupéré l'épée de Sarevok. Il lui manque encore la majorité de ses pouvoir
 
 /* new for v9 */
 /* #31288 */
-@10012   = ~Afoul of the Law
+@10012   = ~Démêlés avec la justice
 
-Sarevok is dead. This chapter of my life is over.~
+Sarevok est mort. Ce chapitre de ma vie est terminé.~
 /* #31374 */
-@10013   = ~On the Trail of Sarevok
+@10013   = ~Sur la piste de Sarevok
 
-Sarevok is dead. This chapter of my life is over.~
+Sarevok est mort. Ce chapitre de ma vie est terminé.~
 /* #31400 */
-@10014   = ~Tandem in Extremis
+@10014   = ~Doublé in Extremis
 
-Sarevok is dead. This chapter of my life is over.~
+Sarevok est mort. Ce chapitre de ma vie est terminé.~
 /* #31416 */
-@10015   = ~The Rise of Sarevok
+@10015   = ~L'ascension de Sarevok
 
-Sarevok is dead. This chapter of my life is over.~
+Sarevok est mort. Ce chapitre de ma vie est terminé.~

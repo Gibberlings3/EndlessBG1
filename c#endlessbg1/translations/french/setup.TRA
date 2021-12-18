@@ -30,10 +30,10 @@
 @5023 = ~Ce mod doit etre installe avant EET_End sur une installation EET.~
 
 /* new for v9 */
-@5024  = ~Korlasz' Dungeon is in BG1~
-@5025  = ~Imoen4Ever's "Imoen remains in the group in Korlasz' dungeon" needs to be deinstalled for this.~
-@5026  = ~Fenster the Palace Healer Is in the Palace~
-@5027  = ~Captain Corwin Is in the Palace~
+@5024  = ~Le donjon de Korlaz se trouve dans BG1~
+@5025  = ~Le composant "Imoen remains in the group in Korlasz' dungeon" de Imoen4Ever doit etre desinstalle pour ce composant.~
+@5026  = ~Fenster le soigneur du palais se trouve dans le palais~
+@5027  = ~Le Capitaine Corwin se trouve dans le palais~
 
 
 // WeiDU prompts
