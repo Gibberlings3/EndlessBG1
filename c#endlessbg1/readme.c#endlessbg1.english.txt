@@ -228,8 +228,8 @@ CREDITS
 
 Acifer: ideas.
 BeamDog / Overhaul Games: for creating SoD where most additional content ideas for this mod resulted from.
-Garanda: idea to give CHARNAME's bed in the palace a "rest" function.
 Lauriel: ideas to move Korlasz' Dungeon into BG1 and place Fenster into the palace, from her mod Transitions.
+Shodead: idea to give CHARNAME's bed in the palace a "rest" function.
 Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons": CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
 Translations:
@@ -266,7 +266,6 @@ Version 9:
 -Main component: all unsolved journal titles will be closed.
 -Main component: Dilos and Benjy in FF headquarters should have a line if talked to after Sarevok's death.
 -Main component: companions will give farewell speech upon transition to BGII.
-
 -Main component (EET): for direct transition to BGII (skip SoD), Imoen, Minsc, Jaheira will not have theyir equipment at the beginning of BGII.
 -More Flavor to Hero of Baldur's Gate: PC's bed in BG1 will have option to rest full night or until a certain hour of the day.
 -cutsom cres other than dukes will be removed in SoD / BGII (for compatibility with mods that reopen the areas).
