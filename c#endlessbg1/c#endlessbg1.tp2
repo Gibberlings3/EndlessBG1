@@ -8,7 +8,7 @@
 BACKUP ~c#endlessbg1/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/~ //jastey
 
-VERSION ~9pre~
+VERSION ~9~
 
 README ~c#endlessbg1/readme.c#endlessbg1.%LANGUAGE%.txt~ ~c#endlessbg1/readme.c#endlessbg1.english.txt~
 
@@ -221,6 +221,24 @@ ACTION_IF GAME_IS ~bgt~ THEN BEGIN
 /* I put the erase journals here so I don't have to split and add several script blocks. */
   INCLUDE ~c#endlessbg1/maincomponent/journalerase_bgt.tpa~
 END
+
+
+/* ##
+
+/* make sure Imoen talks with the correct dialogue after joining the group at the end of SoD */
+COPY_EXISTING ~bdcut65.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(ActionOverride("IMOEN2?",\)StartDialogNoSet(Player1))~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1 StartDialogOverride("bdimoen",Player1)~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+*/
 
 
 ////////////////////////////////////////////////////////////////////////
