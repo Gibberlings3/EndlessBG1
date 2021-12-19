@@ -18,6 +18,8 @@ Dazu gibt es mehrere optionale Komponenten, die der ganzen Situation mehr Leben 
 
 BESCHREIBUNG
 
+Wichtiger Hinweis: Auch wenn die meisten Komponenten optional sind, geht der Inhalt davon aus, dass Komponenten in der entsprechenden Reihenfolge installiert werden, wie sie in der Mod angeboten werden. Instaliert nie spätere Komponenten vor früheren, da es die Funktionalität im Spiel zerstören könnte.
+
 1. Hauptkomponente (muss für alle anderen installiert sein)
 -----------------------------------
 Für BG:EE, BG:SoD und EET fügt diese Komponente folgendes ein:
@@ -135,6 +137,29 @@ Denkod in der Diebesgilde, der auf dem Weg in die Unterstadt dem/der HC sagte, w
 Nachdem Sarevok besiegt ist, wird mit dieser Komponente der Ausgang aus der Unterstdt so verändert, dass er beim Verlassen sofort in die Diebesgilde führt. Dies ist nur einmal, danach werden die normalen Wege wieder freigeschaltet, so dass das Labyrinth danach wieder normal besucht werden kann.
 
 
+14 Korlasz' Dungeon ist in BG1
+-----------------------------------
+Diese Komponente verschiebt Korlasz' Krypta in den BG1-Teil des Spiels. Die Gruppe wird in den Dungeon transferiert, wenn der HC im Gespräch mit Herzog Belt bereit ist, Sarevoks letzte Anhängerin zu stellen. Der Dungeon kann dann nach Belieben verlassen und wieder betreten werden, und ist auch in SoD erreichbar (in der Gegend mit dem Eisenthrongebäude). 
+Imoen bleibt im Dungeon in der Gruppe, wenn sie ein Gruppenmitglied ist, und spricht ihre originalen Dialoge im Dungeon wie im Originalspiel. Wenn sie nicht in der Gruppe ist, dann wird sie wie im originalen SoD als Guide im Dungeon anwesend sein. 
+Der Übergang zu SoD ist dann nach dem Bekämpfen von Korlasz im Dialog mit Herzog Belt, wenn der HC ihm sagt, dass er nun einen Zehntag gar nichts machen wird, um für das nächste Problem, dass einen Helden benötigt, bereit zu sein.
+Ein neu gestartetes SoD-Spiel ist nicht von den Änderungen betroffen.
+
+Hinweis: Diese Komponente ist in der Transitions-Mod noch nicht berücksichtigt (v2.0 and lower) und ist mit großer wahrscheinlich nicht mit der Transitions-Mod kompatibel. 
+
+
+15 Fester der Palastkleriker ist im Palast
+-----------------------------------
+Fester wird im Erdgeschoss des Palastes sein, und ähnliche Tempeldienste wie die Klerikerin in Korlasz' Krypta anbieten. 
+
+Hinweis: Diese Komponente ist in der Transitions-Mod noch nicht berücksichtigt (v2.0 and lower) und könnte dazu führen, dass zwei Festers im Palast erscheinen. 
+
+
+16 Hauptmann Corwin ist im Palast
+-----------------------------------
+Diese Komponente platziert Corwin ins Erdgeschoss des Palastes mit absolut keinem erwähnenswerten Inhalt.
+
+
+
 
 INSTALLATION
 
@@ -180,7 +205,8 @@ COMPATIBILITY
 The Endless BG1 Mod will set the variable "Global("C#EndlessBG1","GLOBAL",1)" in the thieves maze for (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
 Also, from v7 it will set "Global("SarevokBehavior","GLOBAL",5)" to 5 after Sarevok is dead.
 
-Die Mod ist kompatibel mit Transitions. Endless BG1 Mod muss vor Transitions installiert werden. Note: Transitions overwrites a lot of components of BG1 with own versions of the content, if considering EBG1's content is not explicitely offered as an install choice. The Imoen-Duke Jannath interaction from EBG1 will always be overwritten by Transitions' main component.
+Die Komponenten 1-13 der Mod sind kompatibel mit Transitions. Endless BG1 Mod muss vor Transitions installiert werden. Note: Transitions overwrites a lot of components of BG1 with own versions of the content, if considering EBG1's content is not explicitely offered as an install choice. 
+Components 14-16 are not considered in Transitions yet (v2.0 and lower). Component 14 is probably incompatible with Transitions. Installing both will probably mess up the game. Also see compatibility notes in the component descriptions.
 
 The bonus quest "Scar's Return" from bg1re is fully playable after Sarevok's death.
 
@@ -192,6 +218,8 @@ CREDITS
 
 Acifer: ideas.
 BeamDog / Overhaul Games: for creating SoD where most additional content ideas for this mod resulted from.
+Lauriel: ideas to move Korlasz' Dungeon into BG1 and place Fenster into the palace, from her mod Transitions.
+Shodead: idea to give CHARNAME's bed in the palace a "rest" function.
 Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
 Translations:
@@ -219,6 +247,19 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 9:
+-New optional component "Korlasz' Dungeon is in BG1": moves Koralsz' Tomb into BG1 after Sarevok's death. Transition to SoD / BGII after it is done.
+-New optional component "Fenster the Palace Healer Is in the Palace": Places Fenster into the palace ground floor who will offer temple services.
+-New optional component "Captain Corwin Is in the Palace": Places Corwin into palace ground floor with no notable content.
+-Added line to Hafiz so it doesn't sound like Sarevok is still alive if he's dead.
+-Main component: all unsolved journal titles will be closed.
+-Main component: Dilos and Benjy in FF headquarters should have a line if talked to after Sarevok's death.
+-Main component: companions will give farewell speech upon transition to BGII.
+
+-Main component (EET): for direct transition to BGII (skip SoD), Imoen, Minsc, Jaheira will not have theyir equipment at the beginning of BGII.
+-More Flavor to Hero of Baldur's Gate: PC's bed in BG1 will have option to rest full night or until a certain hour of the day.
+-cutsom cres other than dukes will be removed in SoD / BGII (for compatibility with mods that reopen the areas).
 
 Version 8:
 -French translation added.

@@ -1,0 +1,24 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([30.0],0)
+		Wait(2)
+		ActionOverride(Player2,LeaveAreaLUA("bd0120","",[728.1602],E))
+		ActionOverride(Player3,LeaveAreaLUA("bd0120","",[776.1602],E))
+		ActionOverride(Player4,LeaveAreaLUA("bd0120","",[776.1744],NE))
+		ActionOverride(Player5,LeaveAreaLUA("bd0120","",[840.1746],NE))
+		ActionOverride(Player6,LeaveAreaLUA("bd0120","",[824.1782],NE))
+		LeaveAreaLUAPanic("bd0120","",[905.1615],0)
+		LeaveAreaLUA("bd0120","",[905.1615],0)
+		MultiPlayerSync()
+		SetGlobal("SOD_fromimport","global",2) //prevent a lot of stuff
+		SetGlobal("BD0120_START","GLOBAL",1) //prevent some stuff
+		SetGlobal("bd_leaving2_ot","GLOBAL",8) //prevent farewell blurbs
+		Wait(1)
+		MoveViewPoint([905.1615],INSTANT)
+		Wait(2)
+		EndCutSceneMode()
+END
+

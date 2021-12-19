@@ -7,7 +7,7 @@ INTERJECT LIIA %liia_victory% c#st_LiiaThanks
 == LIIA IF ~InParty("%IMOEN_DV%") See("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @54 /* ~Imoen, I think you have a talent for magic. I might want to talk to you later, young friend.~ */
 == ~%IMOEN_JOINED%~ IF ~InParty("%IMOEN_DV%") See("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @55 /* ~Me? Uhm... fine!~ */
 END
-IF ~~ THEN EXIT
+COPY_TRANS LIIA %liia_victory%
 IF ~Global("C#st_HeroOfBG","GLOBAL",0)~ THEN EXTERN %BELT% %belt_victory%
 
 

@@ -1,5 +1,79 @@
 /* more flavor to PC being Hero of Baldur's Gate (includes Residence in the Palace) */
 
+/* scripts and helper cre for PC's "bed" */
+<<<<<<<< .../inlined/c#ebg1bd.baf
+/* script of PC's "bed" */
+IF
+	Clicked([ANYONE])
+	Global("C#st_HeroOfBG","GLOBAL",1)  
+THEN
+	RESPONSE #100
+		CreateCreatureImpassable("c#ebg1bd",[234.386],0) 
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@350)
+END
+
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~.../inlined/c#ebg1bd.baf~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
+
+<<<<<<<< .../inlined/c#ebg1b2.baf
+/* script for bed helper cre */
+IF
+	See([PC])
+	Global("C#EBG1_TalkToPC","LOCALS",0)
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END
+
+IF
+	OR(2)
+		!See([PC])
+		Global("C#EBG1_TalkToPC","LOCALS",1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~.../inlined/c#ebg1b2.baf~ 
+
+/* Helper cre for PC's bed */
+COPY ~c#endlessbg1/pc_palaceresidence/c#ebg1bd.cre~ ~override/c#ebg1bd.cre~
+    SAY NAME1 @32 // ~<CHARNAME>'s Bed~
+    SAY NAME2 @32 // ~<CHARNAME>'s Bed~
+    WRITE_ASCII 0x280 ~c#ebg1bd~ #32 // set DV
+    WRITE_ASCII 0x2cc ~c#ebg1bd~ #8 // set dialogue file
+    WRITE_EVALUATED_ASCII 0x248 ~c#ebg1b2~ #8   // Override script  
+
+/* add trigger point to PC's bed */
+/* add info trigger for closed entrance */
+COPY_EXISTING ~%NBaldursGate_DucalPalace_L3%.are~ ~override~
+  LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
+    INT_VAR
+    fj_type         = 1    //trigger
+    fj_box_left     = 163  //kleinstes x
+    fj_box_top      = 299  //kleinstes y
+    fj_box_right    = 305  //größtes x
+    fj_box_bottom   = 456   //größtes y
+    fj_cursor_idx   = 22 //question mark
+    fj_vertex_0     = 250 + (456 << 16)   
+    fj_vertex_1     = 305 + (419 << 16)   
+    fj_vertex_2     = 305 + (358 << 16)   
+    fj_vertex_3     = 219 + (299 << 16)   
+    fj_vertex_4     = 163 + (340 << 16)   
+    fj_vertex_5     = 164 + (395 << 16)   
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = c#ebg1pcsbed
+    fj_reg_script   = c#ebg1bd
+  END
+BUT_ONLY
+
 /* PC servant on the top floor of the palace and mapnote */
 
 COPY_EXISTING ~servan.cre~ ~override/c#stsrv1.cre~
@@ -17,6 +91,17 @@ THEN
         	CreateCreature("c#stsrv1",[491.308],6)
 		AddMapNote([80.440],@9)
 		SetGlobal("C#st_SpawnServant","MYAREA",1)
+END
+
+IF
+	OR(2) GlobalGT("ENDOFBG1","GLOBAL",0) GlobalGT("bd_plot","global",40)
+	Exists("c#stsrv1")
+	GlobalLT("C#st_SpawnServant","MYAREA",2)
+THEN
+	RESPONSE #100
+		ActionOverride("c#stsrv1",DestroySelf())
+		SmallWait(1)
+		SetGlobal("C#st_SpawnServant","MYAREA",2)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L3%.bcs~ ~.../ar0110_add_extended.baf~ EVALUATE_BUFFER 
@@ -124,15 +209,6 @@ THEN
   RESPONSE #100
     MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container1","BD0103*PlayerChest00")
     SetGlobal("C#st_HeroTransferItemsPC", "MYAREA", 1)
-END
-
-/* Sarevok's Sword will be stolen */
-IF
-  Global("C#st_HeroTransferItemsPC", "MYAREA", 1)
-THEN
-  RESPONSE #100
-    ActionOverride("PlayerChest00",DestroyItem("c#stsrvs"))
-    SetGlobal("C#st_HeroTransferItemsPC", "MYAREA", 2)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~bd0103.bcs~ ~.../bd0103_container_pc.baf~ EVALUATE_BUFFER 

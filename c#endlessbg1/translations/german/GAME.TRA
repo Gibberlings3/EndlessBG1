@@ -1,5 +1,4 @@
 /* @0   = */
-
 @1   = ~Ein Prunkharnisch stellt die prächtigste Rüstung dar, die man sich als Krieger kaufen kann. Sie sieht nicht nur beeindruckend aus, sondern bietet auch den besten Schutz. Die perfekt gearbeiteten Metallplatten sind eng miteinander verbunden und wehren sowohl Schläge als auch Pfeile ab. Die ganze Rüstung ist mit Gravuren und Prägungen verziert. 
 
 Diese Rüstung gehörte Sarevok. Sie ist ungewöhnlich schwer.
@@ -93,3 +92,25 @@ Dieben~
 @21 = ~Flüchtling~ /* male*/
 @22 = ~Heiler der Flammenden Faust~ /* male*/
 @23 = ~Späher der Flammenden Faust~ /* male*/
+
+/* new for v9 */
+@24 = ~Der kunstvoll in die verzierten Steinplatten eingemeißelte Name weist darauf hin, dass es sich um den Eingang zur Gruft der Familie Korlasz handelt. Er ist gut verschlossen und magisch geschützt.~
+@25 = ~Seid gegrüßt, Held der Stadt. Ich bin Fester, der Palastheiler.~ ~Seid gegrüßt, Heldin der Stadt. Ich bin Fester, der Palastheiler.~
+@26 = ~Wie kann ich Euch dienen?~
+@27 = ~Lasst mich sehen, was Ihr habt.~
+@28 = ~Momentan nicht.~
+@29 = ~Sehr gerne.~
+@30 = ~Leider stehe ich nicht mit Tempeldiensten zur Verfügung, solange ich mich um Imoen kümmere. Ihr müsst dafür in einen der Tempel gehen.~
+// @31: name taken from #64284
+@31 = ~Korlasz' Familiengruft~
+@32 = ~<CHARNAME>'s Bett~
+
+/* sarevok_cleanup_more.tpa */
+/* #18345 changed */
+@50  = ~Es gibt einiges zu sagen. Ich weiß nicht recht, ob ich die Zeit habe, auf alle Einzelheiten einzugehen. Ich lebte früher mit meinem Vater Gorion in Kerzenburg. Vor einiger Zeit mussten wir fliehen. Es gab jemanden, der unbedingt meinen Tod wollte. Bei dem Versuch, mich zu töten … tötete er meinen Vater.~
+/* #18351 changed */
+@51  = ~Es tut mir leid, dass ich solch schmerzliche Erinnerungen wachrufe. Ich möchte Euch helfen und gleichzeitig diesen Träumen, die mich plagen, ein Ende setzen. Hier, nehmt das. Nun lebt wohl. Vielleicht werden wir uns wieder treffen.~
+@52  = ~Ah, <CHARNAME>! Ich bin so froh, dass der Spuk vorbei ist. Es war kein schönes Gefühl den Befehl zu erhalten, Euch anzugreifen, nachdem Herzog Eltan Euch vorher so vertraut hat, bevor Angelo übernommen hat...~
+@53  = ~Und danke, *danke*, dass Ihr unseren Kommandanten gerettet habt.~
+@54  = ~Wir haben eine Menge Verluste zu betrauern, während wir uns wieder zusammenraufen, nachdem Sarevok und seine Schergen die Flammende Faust und damit uns zu seinen Handlangern degradiert hatte. Habt Dank dass Ihr diese Stadt gerettet habt, Held von Baldurs Tor.~ ~Wir haben eine Menge Verluste zu betrauern, während wir uns wieder zusammenraufen, nachdem Sarevok und seine Schergen die Flammende Faust und damit uns zu seinen Handlangern degradiert hatte. Habt Dank dass Ihr diese Stadt gerettet habt, Heldin von Baldurs Tor.~
+@55  = ~Anscheinend war es doch nicht das Richtige, gegen Euch zu kämpfen. Wer hätte gedacht, dass Angelo und Sarevok so ein falsches Spiel spielen würden. Ihr habt uns wohl vor sehr dunklen Zeiten bewahrt.~

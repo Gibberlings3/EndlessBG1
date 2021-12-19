@@ -1,48 +1,69 @@
-APPEND BELT
-IF WEIGHT #-1
-~Dead("Sarevok") Global("C#st_HeroOfBG","GLOBAL",0)
-Global("C#st_HeroCutScene","GLOBAL",0)
-OR(2)
-InMyArea(Player1)
-IsGabber(Player1)~ victory
-SAY @0 /* ~<CHARNAME>, you were successful! You defeated Sarevok who conspired against the city, the Sword Coast, even Amn - for his own dark goals and purpose.~ */
-IF ~~ THEN + victory_01
+I_C_T3 BELT %belt_ebg1_13% C#EBG1_Belt_EBG1_13
+== BELT IF ~InParty("%IMOEN_DV%") InMyArea("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+OR(2) !InMyArea("LIIA") StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @203 /* ~Imoen - Duke Jannath wants to talk to you before you go.~ */
+== LIIA IF ~InParty("%IMOEN_DV%") InMyArea("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+InMyArea("LIIA") !StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @204  /* ~Imoen, child, I will talk to you before you go. Come here for a moment.~ */
+== ~%IMOEN_JOINED%~ IF ~InParty("%IMOEN_DV%") See("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @205 /* ~Me? Er... okay!~ */
+== BELT IF ~InPartyAllowDead("%IMOEN_DV%") OR(2) Dead("%IMOEN_DV%") StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+OR(2) !InMyArea("LIIA") StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @206 /* ~Duke Jannath is determined to see Imoen before you go. I am sure she will also take care of your friend's current condition.~ */
+== LIIA IF ~InPartyAllowDead("%IMOEN_DV%") OR(2) Dead("%IMOEN_DV%") StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+InMyArea("LIIA") !StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @207 /* ~I need to talk to Imoen before you go. I will call for Fenster to see to her current... condition.~ */
+== BELT IF ~!InParty("%IMOEN_DV%")~ THEN @208 /* ~Imoen, your childhood friend, was prepared by Duke Jannath to guide you as best as possible. She will await you there.~ */
 END
 
-IF ~~ THEN victory_01
-SAY @1 /* ~You opened our eyes to the deceit and saved us from a great peril while we remained blind to the threat. By the power bestowed upon me as Duke of the Council of Four of this city I herewith name you "Hero of Baldur's Gate"! In the name of the city let me express our deepest gratitude!~ */
-IF ~~ THEN DO ~SetGlobal("C#st_HeroOfBG","GLOBAL",1)~ + victory_02
-END
-
-IF WEIGHT #-1
-~Dead("Sarevok") Global("C#st_HeroOfBG","GLOBAL",1)
-Global("C#EBG1_KorlaszQuest","GLOBAL",0)~ THEN victory_02
-SAY @2 /* ~<CHARNAME>, Hero of Baldur's Gate. Are you ready to combine forces with the Flaming Fist and go against the last followers of Sarevok?~ */
-+ ~%bgee_only%~ + @3 /* ~"Hero of Baldur's Gate", now that has a pleasant ring to it. Tell me what you need me to do.~ */ + bg1_end
-+ ~%sod%~ + @4 /* ~Yes, I am ready and I will start right away. Send me wherever you need me.~ */ + sod
-+ ~%eet_only%~ + @5 /* ~Actually, I had enough of fulfilling a role. I won't be a lackey to you or anyone. I'll leave Baldur's Gate and look for my fate elsewhere. Fare well.~ */ DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",99)~ + start_bg2
-++ @6 /* ~Not right away. I have a few things to finish first.~ */ + roam_bg1
-END
-
-IF ~~ THEN bg1_end
-SAY @7 /* ~The city is in your debt, Hero of Baldur's Gate. Please follow me, I will tell you what we know.~ */
-IF ~~ THEN DO ~%start_bg1end_sod_cutscene%~ EXIT
-END
-
-IF ~~ THEN sod
-SAY @13 /* ~The city is in your debt, Hero of Baldur's Gate.~  */ 
-= @14 /* ~Please follow me, the Flaming Fist soldiers will guide you to the hide-out of Sarevok's last follower.~ */
-IF ~~ THEN DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",99)
+EXTEND_BOTTOM BELT %belt_ebg1_14%
+IF ~~ THEN DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",1)
 ActionOverride("BELT",TakePartyItem("c#stsrvs"))
-ActionOverride("BELT",DestroyItem("c#stsrvs")) 
-%start_bg1end_sod_cutscene%~ EXIT
+ActionOverride("BELT",DestroyItem("c#stsrvs"))
+ClearAllActions()
+StartCutSceneMode()
+StartCutSceneEx("c#st2kd",FALSE)~ EXIT
 END
 
+APPEND BELT
+
+IF WEIGHT #-1
+~OR(2) Global("C#EBG1_KorlaszQuest","GLOBAL",1)
+Global("C#EBG1_KorlaszQuest","GLOBAL",2)~ THEN waiting_korlasz
+SAY @209 /* ~Please, return to the family crypt of Korlasz and help defeat the last follower of Sarevok.~ */
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN remain_in_bg1
+SAY @214 /* ~A hero is always busy. Whoever receives your aid can call themselves lucky. Enjoy your time, hero.~ */
+IF ~~ THEN EXIT
+END
+
+IF WEIGHT #-1
+~Global("C#EBG1_KorlaszQuest","GLOBAL",4)~ THEN farewell_2
+SAY @221 /* You have proven to be the city's hero, and we are in your debt forever. What will you do now?~ */
++ ~%sod%~ + @211 /* ~Honestly, I need a break. I can feel the next problem brooding. I'll just go rest and do nothing for a tenday so I'll be prepared for whatever is coming.~ */ DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",5)~ + sod_trn
+++ @212 /* ~There is still a lot to do and discover. I'll be around.~ */ + remain_in_bg1
++ ~%eet_only%~ + @213 /* ~I will take my leave from the city and the Sword Coast before the next world threatening desaster arises. I'll try going south, away from whatever the city of Baldur's Gate might ail in the near or further future.~ */ DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",5)~ + %belt_ebg1_8%
+END
 END //APPEND
 
 CHAIN
-IF ~~ THEN BELT start_bg2
-@8 /* ~I see. Still, the city is in your debt. Fare well, Hero of Baldur's Gate.~ */
+IF WEIGHT #-1
+~Global("C#EBG1_KorlaszQuest","GLOBAL",3)~ THEN BELT cleared_korlasz_dungeon
+@210 /* ~<CHARNAME>, Hero of Baldur's Gate. You return victorious! Not only Sarevok himself, but also all of Sarevok's followers are dealt with.~ */
+DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",4)~
+== %IMOEN_JOINED% IF ~OR(2) PartyHasItem("BDSHBHR") GlobalGT("C#EBG1_BhaalResearchKD","GLOBAL",1)
+InParty("%IMOEN_DV%") InMyArea("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @222 /* ~<CHARNAME> found a lot of old tomes and research and stuff!~ */
+== %IMOEN_JOINED% IF ~GlobalGT("C#EBG1_BhaalResearchKD","GLOBAL",2)
+InParty("%IMOEN_DV%") InMyArea("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
+InMyArea("LIIA") !StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @223 /* ~Here it is, Duke Liia. Look at the size of that pile!~ */
+== LIIA IF ~GlobalGT("C#EBG1_BhaalResearchKD","GLOBAL",2) GlobalLT("C#EBG1_BhaalResearchKD","GLOBAL",5)
+InMyArea("LIIA") !StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @224 /* ~I thank you for the tomes Imoen gave me. Here, take these for compensation.~ */ DO ~GiveItemCreate("SCRL07",Player1,2,0,0) SetGlobal("C#EBG1_BhaalResearchKD","GLOBAL",6)~
+== LIIA IF ~OR(2) PartyHasItem("BDSHBHR") GlobalGT("C#EBG1_BhaalResearchKD","GLOBAL",1)
+GlobalLT("C#EBG1_BhaalResearchKD","GLOBAL",4)
+InMyArea("LIIA") !StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @225 /* ~I am very interested in these old tomes you found in Korlasz' family crypt for my research. Please hand them to me as soon as you can spare them, <CHARNAME>.~ */ DO ~SetGlobal("C#EBG1_BhaalResearchKD","GLOBAL",5)~
+END
+IF ~~ THEN EXTERN BELT farewell_2
+
+CHAIN
+IF ~~ THEN BELT sod_trn
+@215 /* ~A well earned rest. Make yourself at home on the top floor of the palace as much as you like.~ */
 == %AJANTIS_JOINED% IF ~InParty("AJANTIS") Detect("AJANTIS") !StateCheck("AJANTIS",CD_STATE_NOTVALID)
 !Global("X#AjantisRomanceActive","GLOBAL",2)~ THEN @200
 == %AJANTIS_JOINED% IF ~InParty("AJANTIS") Detect("AJANTIS") !StateCheck("AJANTIS",CD_STATE_NOTVALID)
@@ -57,11 +78,14 @@ Global("X#AjantisRomanceActive","GLOBAL",2)~ THEN @202
 == %GARRICK_JOINED% IF ~InParty("GARRICK") Detect("GARRICK") !StateCheck("GARRICK",CD_STATE_NOTVALID)~ THEN #%eet_2%57818 /* Now that we've finished up with Korlasz, I'll be leaving you to seek employment at the nearest public house that will have me. Perhaps the Elfsong... */
 == %ALORA_JOINED% IF ~InParty("ALORA") Detect("ALORA") !StateCheck("ALORA",CD_STATE_NOTVALID)~ THEN #%eet_2%70027 /* There are so many new folk in the city now—I'm going to spend some time with them. */
 == %ALORA_JOINED% IF ~InParty("ALORA") Detect("ALORA") !StateCheck("ALORA",CD_STATE_NOTVALID)~ THEN #%eet_2%57805 /* Hey, if the palace butler asks where that vase is, tell him I have no idea what he's talking about. */
-== %DYNAHEIR_JOINED% IF ~InParty("DYNAHEIR") Detect("DYNAHEIR") !StateCheck("DYNAHEIR",CD_STATE_NOTVALID)~ THEN @233 /* [Dynaheir]A mighty Bhaalspawn you became. Your journey is not over, and so is not ours, either. */
-== %MINSC_JOINED% IF ~InParty("MINSC") Detect("MINSC") !StateCheck("MINSC",CD_STATE_NOTVALID)~ THEN @234 /* [Minsc]There will be more evil to kick, and Boo said that this is something Minsc should look foreward to. */
+== %DYNAHEIR_JOINED% IF ~InParty("DYNAHEIR") Detect("DYNAHEIR") !StateCheck("DYNAHEIR",CD_STATE_NOTVALID)~ THEN #%eet_2%51910 /* I have learned much during our time together. It is past time I communicated that knowledge to my sisters. */
+== %MINSC_JOINED% IF ~InParty("MINSC") Detect("MINSC") !StateCheck("MINSC",CD_STATE_NOTVALID)~ THEN #%eet_2%51911 /* The friendship of Minsc and Boo travels with you. */
+== %MINSC_JOINED% IF ~InParty("MINSC") Detect("MINSC") !StateCheck("MINSC",CD_STATE_NOTVALID)~ THEN #%eet_2%70026 /* You cannot see it, but it is always there. And sometimes smells of lemons. */
 == %BRANWEN_JOINED% IF ~InParty("BRANWEN") Detect("BRANWEN") !StateCheck("BRANWEN",CD_STATE_NOTVALID)~ THEN @216 /* I will make my own path now. Fare well, <CHARNAME>. */
-== %JAHEIRA_JOINED% IF ~InParty("JAHEIRA") Detect("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN @235 /* [Jaheira]You came a long way. We promised Gorion to watch over you, and you outgrew any help we could give you to fight your foes. From now on, it will be we watching you so you will not succumb to your heritage. */
-== %KHALID_JOINED% IF ~InParty("KHALID") Detect("KHALID") !StateCheck("KHALID",CD_STATE_NOTVALID)~ THEN @236 /* [Khalid]G-Gorion would be proud of your achievements. We will come with you and help with any t-task that may arise. */
+== %JAHEIRA_JOINED% IF ~InParty("JAHEIRA") Detect("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)~ THEN #%eet_2%64921 /* Sarevok and all his servants are dead, and you are not. I think I have fulfilled my promise to Gorion. */
+== %JAHEIRA_JOINED% IF ~InParty("JAHEIRA") Detect("JAHEIRA") !StateCheck("JAHEIRA",CD_STATE_NOTVALID)
+IfValidForPartyDialog("khalid")~ THEN #%eet_2%51922 /* Now that the servants of Sarevok have finally been eliminated, we can spend more time together, Khalid. */
+== %KHALID_JOINED% IF ~InParty("KHALID") Detect("KHALID") !StateCheck("KHALID",CD_STATE_NOTVALID)~ THEN #%eet_2%51923 /* That s-sounds wonderful. */
 == %KAGAIN_JOINED% IF ~InParty("KAGAIN") Detect("KAGAIN") !StateCheck("KAGAIN",CD_STATE_NOTVALID)~ THEN #%eet_2%57899 /* Best I be heading back to my shop soon, I think. */
 == %KAGAIN_JOINED% IF ~InParty("KAGAIN") Detect("KAGAIN") !StateCheck("KAGAIN",CD_STATE_NOTVALID)~ THEN #%eet_2%57820 /* This has been profitable and I suppose enjoyable enough, <CHARNAME>, but these dolts are beginning to wear me out. */
 == %FALDORN_JOINED% IF ~InParty("FALDORN") Detect("FALDORN") !StateCheck("FALDORN",CD_STATE_NOTVALID)~ THEN #%eet_2%57816 /* There are too many people in the city now. It's... unnatural. It is time I returned to the Cloakwood—in truth, it is past time. */
@@ -79,7 +103,6 @@ InParty("ELDOTH") Detect("ELDOTH") !StateCheck("ELDOTH",CD_STATE_NOTVALID)~ THEN
 == %SKIE_JOINED% IF ~InParty("SKIE") Detect("SKIE") !StateCheck("SKIE",CD_STATE_NOTVALID)
 InParty("ELDOTH") Detect("ELDOTH") !StateCheck("ELDOTH",CD_STATE_NOTVALID)~ THEN #%eet_2%57815 /* Uhhh... All right. I think. */
 == %QUAYLE_JOINED% IF ~InParty("QUAYLE") Detect("QUAYLE") !StateCheck("QUAYLE",CD_STATE_NOTVALID)~ THEN #%eet_2%57826 /* You are amusing enough, <CHARNAME>, but you attract idiots like a corpse does flies. They give me a headache. */
-== %QUAYLE_JOINED% IF ~InParty("QUAYLE") Detect("QUAYLE") !StateCheck("QUAYLE",CD_STATE_NOTVALID)~ THEN #%eet_2%67353 /* Fascinating as this has been, I will have to leave soon. I've a trip south planned—I'll be taking over a family business of sorts. */
 == %YESLICK_JOINED% IF ~InParty("YESLICK") Detect("YESLICK") !StateCheck("YESLICK",CD_STATE_NOTVALID)~ THEN #%eet_2%57838 /* The Iron Throne is no more and the Orothair's honor is restored. */
 == %YESLICK_JOINED% IF ~InParty("YESLICK") Detect("YESLICK") !StateCheck("YESLICK",CD_STATE_NOTVALID)~ THEN #%eet_2%57919 /* Now, perhaps, I can rest—or try to, at least. Come morning, I shall leave, <CHARNAME>. */
 == %KIVAN_JOINED% IF ~InParty("KIVAN") Detect("KIVAN") !StateCheck("KIVAN",CD_STATE_NOTVALID)~ THEN #%eet_2%57822 /* Tazok is dead, Deheriana avenged. It's been too long since I was amongst the trees of Shilmista. I yearn to return home. */
@@ -97,27 +120,77 @@ InParty("SHARTEEL") Detect("SHARTEEL") !StateCheck("SHARTEEL",CD_STATE_NOTVALID)
 == dornj IF ~InParty("DORN") Detect("DORN") !StateCheck("DORN",CD_STATE_NOTVALID)~ THEN @219 /* I will depart and see what tasks my patron has in store for me. */
 == baelothj IF ~InParty("BAELOTH") Detect("BAELOTH") !StateCheck("BAELOTH",CD_STATE_NOTVALID)~ THEN #%eet_2%57920 /* I've enjoyed our association, <CHARNAME>, but it's increasingly apparent my ambitions aren't adequately accommodated by Baldur's Gate. */
 == baelothj IF ~InParty("BAELOTH") Detect("BAELOTH") !StateCheck("BAELOTH",CD_STATE_NOTVALID)~ THEN #%eet_2%57923 /* Consider this my curtain call. */
-== %IMOEN_JOINED% IF ~InParty("%IMOEN_DV%") Detect("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @237 /* Ooh yes, sleeping and doing *nothing*, that sounds great! Although... talking from experience, I don't think the gods will let us!~ */
+== %IMOEN_JOINED% IF ~InParty("%IMOEN_DV%") Detect("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @220 /* Ooh yes, sleeping and doing *nothing*, that sounds great! Although... I think I'll take Duke Jannath up on her offer to train me in magic, <CHARNAME>. You go and take your well-earned rest, sleepyhead!~ */
 END
-IF ~~ THEN DO ~ActionOverride("BELT",TakePartyItem("c#stsrvs"))
-ActionOverride("BELT",DestroyItem("c#stsrvs")) 
-%move_to_bg2%~ EXIT
+IF ~~ THEN DO ~SetInterrupt(FALSE)
+ClearAllActions()
+StartCutSceneMode()
+StartCutSceneEx("c#st2so2",TRUE)
+SetInterrupt(TRUE)~ EXIT
 
-APPEND BELT
-
-IF ~~ THEN roam_bg1
-SAY @9 /* ~Very well. We will concentrate our forces on finding all of Sarevok's followers and will hope you will join our efforts soon. Until then, enjoy your stay.~ */
-IF ~~ THEN EXIT
-END
-
+/* Korlasz in Palace Prison */
+APPEND bdkorlas
 IF WEIGHT #-1
-~%BGT_VAR%
-Dead("Sarevok")
-!IsGabber(Player1) !InMyArea(Player1)~ victory_npc
-SAY @12 /* ~Greetings to you as well, companion of <CHARNAME>.~ */
+~AreaCheck("%NBaldursGate_DucalPalace_Cellar%")~ THEN prison_bg1
+SAY #%eet_2%55681 /* ~Everything was going to be different. Sarevok was going to change the world. I gave everything to his cause, and YOU destroyed it all.~ [BD55681] */
 IF ~~ THEN EXIT
 END
-
 END //APPEND
 
+/* Give the tomes to Duke Jannath if not given to Imoen already: BG1 */
+
+INTERJECT LIIA %liia_victory% C#EBG1_LIIA_EBG1_victory
+== LIIA IF ~PartyHasItem("BDSHBHR")~ THEN @226 /* ~You found tomes about Bhaal in Korlasz' possessions. May I have them for my own research?~ */
+END
+++ @227 /* ~Of course. Here you are.~ */ + give_tomes
+++ @228 /* ~No, I'd like to hold on to them myself.~ */ + keep_tomes
+
+APPEND LIIA
+IF ~~ THEN give_tomes
+SAY @229 /* ~I thank you. Take these for compensation.~ */
+IF ~~ THEN DO ~SetGlobal("C#EBG1_BhaalResearchKD","GLOBAL",6)
+GiveItemCreate("SCRL07",Player1,2,0,0)
+ActionOverride(Player1,DestroyItem("BDSHBHR"))
+ActionOverride(Player2,DestroyItem("BDSHBHR"))
+ActionOverride(Player3,DestroyItem("BDSHBHR"))
+ActionOverride(Player4,DestroyItem("BDSHBHR"))
+ActionOverride(Player5,DestroyItem("BDSHBHR"))
+ActionOverride(Player6,DestroyItem("BDSHBHR"))~ + end_tomes
+END
+
+IF ~~ THEN keep_tomes
+SAY @230 /* ~I see. Please give them to me as soon as you can spare them.~ */
+IF ~~ THEN DO ~SetGlobal("C#EBG1_BhaalResearchKD","GLOBAL",5)~ + end_tomes
+END
+
+IF ~~ THEN end_tomes
+SAY @231 /* ~I am very interested in studying these kind of old tomes.~ */
+COPY_TRANS LIIA %liia_victory%
+END
+END //APPEND
+
+/* Give the tomes to Duke Jannath if not given to Imoen already: SoD */
+
+EXTEND_BOTTOM BDLIIA 13
++ ~PartyHasItem("BDSHBHR")~ + @232 /* ~Here is resaerch about necromancy and Bhaal I found in Korlasz' family crypt. I believe you would have an interest in these.~ */ + bhaal_reserach_kd
+END
+
+APPEND bdliia
+IF ~~ THEN bhaal_reserach_kd
+SAY @231 /* ~I am very interested in studying these kind of old tomes.~ */
+IF ~~ THEN + bhaal_reserach_kd_01
+END
+
+IF ~~ THEN bhaal_reserach_kd_01
+SAY @229 /* ~I thank you. Take these for compensation.~ */
+IF ~~ THEN DO ~SetGlobal("C#EBG1_BhaalResearchKD","GLOBAL",6)
+GiveItemCreate("SCRL07",Player1,2,0,0)
+ActionOverride(Player1,DestroyItem("BDSHBHR"))
+ActionOverride(Player2,DestroyItem("BDSHBHR"))
+ActionOverride(Player3,DestroyItem("BDSHBHR"))
+ActionOverride(Player4,DestroyItem("BDSHBHR"))
+ActionOverride(Player5,DestroyItem("BDSHBHR"))
+ActionOverride(Player6,DestroyItem("BDSHBHR"))~ EXIT
+END
+END //APPEND 
 

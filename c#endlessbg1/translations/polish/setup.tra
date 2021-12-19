@@ -3,7 +3,7 @@
 @5002   = ~Uklon dla bohatera Wrot Baldura (rezydencja w palacu)~
 @5003   = ~Endless BG1: wymagany jest komponent glowny~
 @5004   = ~Imoen i Ksiezna Liia Jannath (Imoen otrzymuje rezydencje w palacu)~
-@5005   = ~Ksiaze Eltan w palacu~
+@5005   = ~Ksiaze Eltan bedzie w palacu~
 @5006   = ~Uzdrowiciel Plomiennej Piesci przyjdzie do swiatyni w Podziemnym Miescie~
 @5007   = ~Spotkanie z Elminsterem~
 @5008   = ~Unikatowe wyposazenie Sarevoka~
@@ -13,13 +13,13 @@
 @5012   = ~Ten komponent jest kompatybilny tylko z SoD i EET.~
 @5013   = ~Ten komponent jest kompatybilny tylko z BG:EE, SoD, BGT, i EET.~
 @5014   = ~Miecz Sarevoka~
-@5015   = ~Wersja od jastey~
+@5015   = ~Wersja autorska jastey~
 @5016   = ~Wersja przywrocona z dialogow BG1~
 
 /* new for v3 */
 @5017   = ~Pomin labirynt zlodziei w drodze powrotnej po zabiciu Sarevoka~
 @5018   = ~Krotki publiczny hold dla bohatera Wrot Baldura~
-@5019   = ~Komponent "Endless BG1: Uklon dla bohatera Wrot Baldura" jest wymagany przez ten komponent~
+@5019   = ~Komponent "Uklon dla bohatera Wrot Baldura" jest wymagany przez ten komponent~
 
 /* new for v5 */
 @5020  = ~Komponent "Duke Eltan's Spare Minute" modyfikacji bg1re musi byc zainstalowany po EBG1.~
@@ -28,3 +28,9 @@
 
 /* new for v7 */
 @5023  = ~Ten mod musi zostac zainstalowany przed EET_End w przypadku instalacji EET.~
+
+/* new for v9 */
+@5024  = ~Krypta Korlasz bedzie dostepna w BG1~
+@5025  = ~Komponent "Imoen 4 Ever w SoD: Imoen pozostaje w druzynie w kryptach Korlasz" modyfikacji Imoen 4 Ever musi zostac odinstalowany przed instalacja tego komponentu.~
+@5026  = ~Uzdrowiciel Fenster bedzie w palacu~
+@5027  = ~Kapitan Corwin bedzie w palacu~

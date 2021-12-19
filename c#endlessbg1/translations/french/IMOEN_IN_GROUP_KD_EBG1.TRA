@@ -1,0 +1,22 @@
+/* lines @0 - @17 are the same as in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */ 
+
+@0    = ~Ne me regarde pas comme ça ! J'ai toujours voulu donner l'impression d'en savoir plus que toi. C'est juste ce que m'a dit la duchesse Jannath, au cas où tu n'étais pas au courant.~
+@1    = ~Qu'est ce qui se passe entre la duchesse Jannath et toi d'ailleurs ?~
+@2    = ~À vrai dire, heu... Elle s'est un peu prise d'affection pour moi depuis que nous avons sauvé les ducs lors du couronnement de Sarevok. Ou plutôt, lors de l'annulation de son couronnement.~
+@3    = ~Et, bon... Elle m'a laissé essayer de lancer quelques sorts, et... C'est génial ! J'y suis vraiment arrivée ! J'ai réussi à utiliser la magie !~
+@4    = ~Elle m'a dit qu'elle pourrait m'apprendre à maîtriser la magie, et... J'ai décidé d'accepter son offre. Enfin, quand on en aura fini avec tout ça.~
+@5    = ~Oh, il faut que tu saches, je lui ai promis de lui rapporter tous les parchemins ou tomes arcaniques que je pourrais trouver ici.~
+@6    = ~Tu as réussi ! Je n'en ai pas douté un seul instant.~
+@7    = ~Je n'arrive pas à croire que ce soit enfin fini.~
+@8    = ~Nous avons réussi ensemble, Imoen.~
+@9    = ~Tu n'as pas été d'une grande aide.~
+@10   = ~J'adore quand tu dis ça !~
+@11   = ~Si tu le dis. Il n'y a plus rien à craindre de toute façon, n'est-ce pas ?~
+@12   = ~Le Poing Enflammé va remonter en utilisant la corde qu'on a trouvée. C'est juste au sud d'ici et ça nous ramène directement à l'entrée.~
+@13   = ~Regarde ces livres et ces tomes sur Bhaal ! La duchesse Jannath va sauter de joie en les voyant ! Quoique, elle est trop digne pour ça, mais... Est-ce que je peux les prendre pour elle, s'il te plaît ?~
+@14   = ~Tu peux les prendre. Je ne vois vraiment pas comment ces recherches pourraient m'être utiles.~
+@15   = ~Non, je préfère les garder pour le moment.~
+@16   = ~D'accord, mais préviens-moi si tu changes d'avis, d'accord ?~
+@17   = ~Imoen, emporte les recherches sur Bhaal, tu pourras les donner à la duchesse Jannath.~
+
+@200 = ~Grimpe à la corde quand tu seras prêt à retourner au Palais. On sera juste derrière toi.~ ~Grimpe à la corde quand tu seras prête à retourner au Palais. On sera juste derrière toi.~

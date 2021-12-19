@@ -8,11 +8,24 @@ COPY_EXISTING ~BDOPHYLL.cre~ ~override/c#stophl.cre~
 /* spawn Ophyllis the Treasurer */
 IF
   Global("C#st_HeroOfBG","GLOBAL",1)
+  !Exists("bdophyll")
+  !Exists("c#stophl")
   Global("C#st_OphyllisSpawn", "MYAREA",0)
 THEN
   RESPONSE #100
         	CreateCreature("c#stophl",[1237.897],5)
     		SetGlobal("C#st_OphyllisSpawn", "MYAREA",1)
+END
+
+IF
+	OR(3) Dead("bdophyll") GlobalGT("ENDOFBG1","GLOBAL",0) GlobalGT("bd_plot","global",40)
+	Exists("c#stophl")
+	GlobalLT("C#st_OphyllisSpawn","MYAREA",2)
+THEN
+	RESPONSE #100
+		ActionOverride("c#stophl",DestroySelf())
+		SmallWait(1)
+		SetGlobal("C#st_OphyllisSpawn","MYAREA",2)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_Cellar%.bcs~ ~.../ar0111_ophyllis_add.baf~ EVALUATE_BUFFER 

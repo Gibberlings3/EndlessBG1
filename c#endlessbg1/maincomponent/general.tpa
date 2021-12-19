@@ -56,6 +56,10 @@ THEN
 		SetGlobal("C#st_BG1End","GLOBAL",1)
 		SetGlobal("SarevokBehavior","GLOBAL",5)
 		TriggerActivation("Door0123",TRUE)
+		AddJournalEntry(@10012,QUEST_DONE)
+		AddJournalEntry(@10013,QUEST_DONE)
+		AddJournalEntry(@10014,QUEST_DONE)
+		AddJournalEntry(@10015,QUEST_DONE)
 		Wait(2)
 		FadeToColor([30.0],0)
 		Wait(2)
@@ -137,6 +141,60 @@ COPY_EXISTING ~bdsodtrn.BCS~ ~override~
 BUT_ONLY
 
 END //SoD + EET
+
+/* EET: direct transition to BGII - cutscene into bd6100.are */
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+<<<<<<<< .../c#ebg122.baf
+
+IF
+	!AreaCheck("bd6100")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([40.0],0)
+		DisableAI(Player1,TRUE)
+		DisableAI(Player2,TRUE)
+		DisableAI(Player3,TRUE)
+		DisableAI(Player4,TRUE)
+		DisableAI(Player5,TRUE)
+		DisableAI(Player6,TRUE)
+		SmallWait(5)
+		ActionOverride(Player2,LeaveAreaLUA("bd6100","",[535.340],SE))
+		ActionOverride(Player3,LeaveAreaLUA("bd6100","",[565.280],SE))
+		ActionOverride(Player4,LeaveAreaLUA("bd6100","",[505.300],SE))
+		ActionOverride(Player5,LeaveAreaLUA("bd6100","",[535.230],SE))
+		ActionOverride(Player6,LeaveAreaLUA("bd6100","",[470.270],SE))
+		LeaveAreaLUAPanic("bd6100","",[600.330],SE)
+		LeaveAreaLUA("bd6100","",[600.330],SE)
+		MultiPlayerSync()
+		Wait(1)
+		SetGlobal("bd_finale","bd6100",6)
+		EndCutSceneMode()
+		CreateCreatureObject("K#TELBGT",Player1,0,0,0)
+END
+
+>>>>>>>>
+
+COMPILE EVALUATE_BUFFER ~.../c#ebg122.baf~
+
+
+/* make sure Imoen, Minsk and Jaheira do not have their BG1 equipment at the beginning of BGII */
+COPY_EXISTING ~AR0602.BCS~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(ActionOverride("K#ImportContainer",TakeCreatureItems(Player6,ALL))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~\1
+ActionOverride("K#ImportContainer",TakeCreatureItems("Imoen2",ALL))
+ActionOverride("K#ImportContainer",TakeCreatureItems("Jaheira",ALL))
+ActionOverride("K#ImportContainer",TakeCreatureItems("Minsc",ALL))~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+	END
+BUT_ONLY
+END //eet
 
 
 /* N Baldurs Gate: open entrance to Palace */

@@ -29,6 +29,12 @@
 /* new for v7 */
 @5023 = ~Ce mod doit etre installe avant EET_End sur une installation EET.~
 
+/* new for v9 */
+@5024  = ~Le donjon de Korlaz se trouve dans BG1~
+@5025  = ~Le composant "Imoen remains in the group in Korlasz' dungeon" de Imoen4Ever doit etre desinstalle pour ce composant.~
+@5026  = ~Fenster le soigneur du palais se trouve dans le palais~
+@5027  = ~Le Capitaine Corwin se trouve dans le palais~
+
 
 // WeiDU prompts
 @-1000= "Le mod %TP2_FILE_NAME% contient"

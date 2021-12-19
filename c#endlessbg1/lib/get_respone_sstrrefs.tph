@@ -1,0 +1,33 @@
+// Returns all response strrefs for a given state as an array.
+DEFINE_PATCH_FUNCTION GET_RESPONSE_STRREFS
+INT_VAR
+  state = 0
+RET
+  strrefs  // returns number of array elements
+RET_ARRAY
+  strrefs  // indexed array with response strrefs
+BEGIN
+  SET strrefs = 0
+  SET $strrefs(~0~) = "-1" // workaround for WeiDU bug
+
+  READ_ASCII 0 sig (8)
+  PATCH_IF (~%sig%~ STR_EQ ~DLG V1.0~) BEGIN
+    READ_LONG 0x08 num_states
+    READ_LONG 0x0c ofs_states
+    READ_LONG 0x14 ofs_responses
+    PATCH_IF (state >= 0 && state < num_states) BEGIN
+      SET ofs = ofs_states + (state * 16)
+      READ_LONG (ofs + 4) idx_response
+      READ_LONG (ofs + 8) num_response
+      FOR (idx = 0; idx < num_response; ++idx) BEGIN
+        SET ofs = ofs_responses + (idx_response + idx) * 32
+        PATCH_IF ((BYTE_AT ofs) & BIT0) BEGIN   // has text?
+          SET $strrefs(~%strrefs%~) = LONG_AT (ofs + 4)
+        END ELSE BEGIN
+          SET $strrefs(~%strrefs%~) = "-1"
+        END
+        SET strrefs += 1
+      END
+    END
+  END
+END

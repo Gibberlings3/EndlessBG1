@@ -12,10 +12,10 @@
 @5  = ~W³aœciwie to mam doœæ spe³niania cudzych zachcianek. Nie bêdê twoim lokajem ani nikogo innego. Opuszczam Wrota Baldura poszukaæ swojego przeznaczenia gdzieœ indziej. ¯egnam.~
       ~W³aœciwie to mam doœæ spe³niania cudzych zachcianek. Nie bêdê twoj¹ s³u¿¹c¹ ani nikogo innego. Opuszczam Wrota Baldura poszukaæ swojego przeznaczenia gdzieœ indziej. ¯egnam.~
 @6  = ~Nie w tej chwili. Muszê najpierw poza³atwiaæ kilka spraw.~
-@7  = ~Miasto jest ci d³u¿ne, bohaterze Wrót Baldura. Proszê za mn¹, powiem ci wszystko co wiemy.~
-      ~Miasto jest ci d³u¿ne, bohaterko Wrót Baldura. Proszê za mn¹, powiem ci wszystko co wiemy.~
-@8  = ~Rozumiem. Mimo wszystko miasto ma u ciebie d³ug. Bywaj zdrów, bohaterze Wrót Baldura.~
-      ~Rozumiem. Mimo wszystko miasto ma u ciebie d³ug. Bywaj zdrów, bohaterko Wrót Baldura.~
+@7  = ~Miasto jest ci d³u¿ne, bohaterze Wrót Baldura. Proszê za mn¹, powiem ci wszystko, co wiemy.~
+      ~Miasto jest ci d³u¿ne, bohaterko Wrót Baldura. Proszê za mn¹, powiem ci wszystko, co wiemy.~
+@8  = ~Rozumiem. Mimo wszystko miasto ma u ciebie d³ug wdziêcznoœci. Bywaj zdrów, bohaterze Wrót Baldura.~
+      ~Rozumiem. Mimo wszystko miasto ma u ciebie d³ug wdziêcznoœci. Bywaj zdrów, bohaterko Wrót Baldura.~
 @9  = ~Bardzo dobrze, w tym czasie skoncentrujemy nasze si³y na szukaniu pozosta³ych zwolenników Sarevoka. Mam nadziejê, ¿e do³¹czysz do nas nied³ugo. Do tego czasu, korzystaj ze swojego pobytu tutaj.~
 @10 = ~Dziêkujê ci za pokonanie Sarevoka, <CHARNAME>!~
 
@@ -24,8 +24,11 @@
 @12 = ~Pozdrawiam równie¿ ciebie, <GABBER>.~
 
 /* new for v3: changed line 7 */
-@13  = ~Miasto jest ci d³u¿ne, bohaterze Wrót Baldura. Proszê za mn¹, ¿o³nierze P³omiennej Piêœci poprowadz¹ ciê do kryjówki jednego ze zwolenników Sarevoka.~
-       ~Miasto jest ci d³u¿ne, bohaterko Wrót Baldura. Proszê za mn¹, ¿o³nierze P³omiennej Piêœci poprowadz¹ ciê do kryjówki jednego ze zwolenników Sarevoka.~
+@13  = ~Miasto jest ci d³u¿ne, bohaterze Wrót Baldura.~ ~Miasto jest ci d³u¿ne, bohaterko Wrót Baldura.~
+
+/* new for v9: splitted line 13 */
+@14  = ~Proszê za mn¹, ¿o³nierze P³omiennej Piêœci poprowadz¹ ciê do kryjówki jednego ze zwolenników Sarevoka.~
+       ~Proszê za mn¹, ¿o³nierze P³omiennej Piêœci poprowadz¹ ciê do kryjówki jednego ze zwolenników Sarevoka.~
 
 /* pc_palaceresidence.d */
 @20  = ~Witaj, <CHARNAME>. Proszê opuœciæ piwnicê, nie powinieneœ tutaj schodziæ.~ ~Witaj, <CHARNAME>. Proszê opuœciæ piwnicê, nie powinnaœ tutaj schodziæ.~
@@ -96,7 +99,7 @@
 @82  = ~Tak, zrób to proszê.~
 @83  = ~Nie dziêki, sam sobie z tym poradzê.~
        ~Nie dziêki, sama sobie z tym poradzê.~
-@84  = ~To by³ wspania³y czyn dla miasta. Wróæ do pa³acu i porozmawiaj z Ksiêciem, na pewno chce ci podziêkowaæ. Bywaj zdrów.~
+@84  = ~To by³ wspania³y czyn dla miasta. Wróæ do pa³acu i porozmawiaj z ksiêciem, na pewno chce ci podziêkowaæ. Bywaj zdrów.~
 @85  = ~Z przyjemnoœci¹. Nie ruszaj siê przez chwilê...~
 @86  = ~To powinno za³atwiæ sprawê.~
 
@@ -141,7 +144,7 @@
 
 /* denkod.d */
 @140  = ~Wróci³eœ!~ ~Wróci³aœ!~
-@141  = ~Muszê to powiedzieæ ale uwa¿aj z noszeniem tego. Przez chwilê pomyœla³em, ¿e to by³ on! Prawie wyci¹gn¹³em mój sztylet, nie k³amiê.~
+@141  = ~Muszê to powiedzieæ ale uwa¿aj z noszeniem tego. Przez chwilê pomyœla³em, ¿e to on! Prawie wyci¹gn¹³em mój sztylet, nie k³amiê.~
 @142  = ~Z reszt¹ nie uwierzysz co tu siê wydarzy³o kilka minut temu. Najemnicy P³omiennej Piêœci najpierw przeszli przez gildiê, ignoruj¹c nas wszystkich, a nastêpnie tak samo szybko wyszli.~
 @143  = ~Wygl¹da na to, ¿e impreza na dole siê skoñczy³a, hê? Wykoñczy³eœ tego uzbrojonego jegomoœcia, czy on te¿ zaraz tu przyjdzie? Zamierzam zmieniæ miejscówkê na spokojniejsz¹, przynajmniej na razie. Za du¿y tutaj ruch jak na mój gust.~
         ~Wygl¹da na to, ¿e impreza na dole siê skoñczy³a, hê? Wykoñczy³aœ tego uzbrojonego jegomoœcia, czy on te¿ zaraz tu przyjdzie? Zamierzam zmieniæ miejscówkê na spokojniejsz¹, przynajmniej na razie. Za du¿y tutaj ruch jak na mój gust.~
@@ -153,8 +156,83 @@
 @153 = ~Co jeœli nie zechcê oddaæ tobie mojego z³ota?~
 @154 = ~Wiem kim jesteœ. Mi³ego dnia.~
 @155 = ~O, jest w rzeczy samej. Haha. Ksi¹¿êta ufaj¹ mi bezgranicznie. Wiedz¹, ¿e nigdy nie wzi¹³bym czegokolwiek ze skarbca dla w³asnej korzyœci!~
-@156 = ~Obawiam siê, ¿e to rozkaz Ksi¹¿¹t. Po za tym, nikt maszeruj¹cy u boku P³omiennej Piêœci nie powinien martwiæ siê o swoje bagactwa. Jeœli mam byæ szczery, to myœlê, ¿e Ksi¹¿êtom spodoba³ siê pomys³ ograniczenia wydawania z³ota na nieoficjalne wizyty w knajpach, ekhm.~
+@156 = ~Obawiam siê, ¿e to rozkaz Wielkich Ksi¹¿¹t. Po za tym, nikt maszeruj¹cy u boku P³omiennej Piêœci nie powinien martwiæ siê o swoje bagactwa. Jeœli mam byæ szczery, to myœlê, ¿e Ksi¹¿êtom spodoba³ siê pomys³ ograniczenia wydawania z³ota na nieoficjalne wizyty w knajpach, ekhm.~
 @157 = ~W takim razie przechowam twoje z³oto. Nie ma na tê chwilê powodów do zmartwienia. Haha, muszê przygotowaæ siê na przyjêcie twojego z³ota, gdy¿ informacja o tym przysz³a do mnie dos³ownie chwilê temu.~
 @158 = ~Porozmawiamy, gdy ju¿ do³¹czysz do P³omiennej Piêœci. Do tego czasu, ¿yczê zdrowia.~
 @159 = ~Pozdrowienia, <CHARNAME>. Jeœli szukasz Ophyllisa, to powinien byæ w swoim biurze.~
 
+
+/* korlasz_dungeon_bg1.d */
+/* lines @200 - @202 are the same as  @0 - @2 from ajantisbg1/.../ajantisbg1_transitions.tra */
+@200  = ~To by³ zaszczyt walczyæ u twojego boku przeciwko tym bandytom. Uda³o nam siê powstrzymaæ nadchodz¹c¹ wojnê. Moje zadanie dobieg³o koñca. Powinienem powróciæ teraz do domu i stawiæ siê w Najszlachetniejszym Zakonie Promiennego Serca. Z³o¿ê tam raport opisuj¹cy ostatnie wydarzenia i twoj¹ w nich rolê. Wspomnê te¿... ekhem... o moim udziale w tym wszystkim i mam nadziejê, ¿e wiedza i doœwiadczenie, które posiad³em wystarcz¹, abym zosta³ pe³noprawnym rycerzem. Dziêkujê ci za po³¹czenie swoich si³ ze mn¹. ¯egnaj!~
+@201  = ~Obawia³em siê, ¿e ten czas kiedyœ nadejdzie, ale muszê siê po¿egnaæ. <CHARNAME>, wykona³em misjê zlecon¹ przez Najszlachetniejszy Zakon Promiennego Serca: wojna zosta³a powstrzymana a Sarevok jest pokonany. Bêdê musia³ z³o¿yæ raport w Zakonie, ale najpierw planujê zatrzymaæ siê w Waterdeep, tak jak to uzgodniliœmy. Nic mnie nie powstrzyma przed uzyskaniem odpowiedzi moich rodziców w sprawie naszych zaœlubin, zw³aszcza teraz, gdy nasz wróg nie ¿yje a pokój powróci³ na te ziemie. Nie mogê siê doczekaæ rozmowy z nimi, moje kochanie. Powiem im o mojej wielkiej mi³oœci, któr¹ ciebie da¿ê.~
+@202  = ~Z ciê¿kim sercem ciê opuszczam. Bêdê ciê informowa³ o wszystkim tak czêsto, jak tylko bêdê móg³. I czy to bêdzie Waterdeep, Athkatla, czy jeszcze inne miejsce, b¹dŸ pewna, ¿e przybêdê tam dla ciebie lub bêdê ciê wyczekiwa³, bez znaczenia gdzie ponownie dane nam bêdzie siê spotkaæ. ¯egnaj „bohaterko Wrót Baldura”. *uœmiecha siê* <CHARNAME>, rozkoszuj siê wdziêcznoœci¹ ludzi, tak d³ugo, jak d³ugo s¹ sk³onni ci j¹ okazywaæ. Zas³u¿y³aœ na te pochwa³y.~
+@203  = ~Imoen, ksiê¿na Jannath chcia³aby z tob¹ porozmawiaæ zanim pójdziecie.~
+@204  = ~Imoen, chcia³abym z tob¹ porozmawiaæ zanim pójdziecie. PodejdŸ tu na chwilê.~
+@205  = ~¯e ja? No jasne!~
+@206  = ~Ksiê¿na Jannath nalega na spotkanie z Imoen zanim pójdziecie. Jestem pewny, ¿e zadba ona tak¿e o obecny stan twojej przyjació³ki.~
+@207  = ~Pragnê porozmawiaæ z Imoen zanim pójdziecie. Wezwê Fenstera, aby zaj¹³ siê... jej obecnym stanem.~
+@208  = ~Twoja przyjació³ka z dzieciñstwa, Imoen, by³a szkolona przez ksiê¿n¹ Jannath i powinna ciê wspomóc w tym zadaniu najlepiej jak potrafi. Bêdzie tam na ciebie czekaæ.~
+@209  = ~ZejdŸ proszê do krypty Korlasz i pomó¿ P³omiennej Piêœci pokonaæ ostatnich zwolenników Sarevoka.~
+@210  = ~<CHARNAME>, nasz bohaterze, wracasz w chwale! Poradzi³eœ sobie nie tylko z samym Sarevokiem, ale tak¿e z jego wszystkimi poplecznikami.~
+        ~<CHARNAME>, nasza bohaterko, wracasz w chwale! Poradzi³aœ sobie nie tylko z samym Sarevokiem, ale tak¿e z jego wszystkimi poplecznikami.~
+@211  = ~Jeœli mam byæ szczery to chyba potrzebujê chwili wytchnienia. Ju¿ czujê, jak kolejny problem gdzieœ kr¹¿y. Chcê siê wyspaæ i nie robiæ nic przez najbli¿szy dziesiêciodzieñ. Cokolwiek nadejdzie, to bêdê przygotowany.~
+        ~Jeœli mam byæ szczera to chyba potrzebujê chwili wytchnienia. Ju¿ czujê, jak kolejny problem gdzieœ kr¹¿y. Chcê siê wyspaæ i nie robiæ nic przez najbli¿szy dziesiêciodzieñ. Cokolwiek nadejdzie, to bêdê przygotowana.~
+@212  = ~Wci¹¿ mam tu sporo do zrobienia i odkrycia. Bêdê siê krêciæ w pobli¿u.~
+@213  = ~Po¿egnam siê z miastem i ca³ym Wybrze¿em Mieczy, zanim nadejdzie kolejny zagra¿aj¹cy œwiatu kataklizm. Mo¿e spróbujê udaæ siê na po³udnie, gdzie bêdê z dala od bol¹czek nêkaj¹cych Wrota Baldura.~
+@214  = ~Bohaterowie s¹ zawsze zapracowani. Wszyscy, którzy otrzymaj¹ twoje wsparcie, bêd¹ mogli nazywaæ siebie szczêœciarzami. Baw siê dobrze, bohaterze.~
+        ~Bohaterowie s¹ zawsze zapracowani. Wszyscy, którzy otrzymaj¹ twoje wsparcie, bêd¹ mogli nazywaæ siebie szczêœciarzami. Baw siê dobrze, bohaterko.~
+@215  = ~Zas³u¿y³eœ na ten odpoczynek. Rozgoœæ siê na ostatnim piêtrze pa³acu.~
+        ~Zas³u¿y³aœ na ten odpoczynek. Rozgoœæ siê na ostatnim piêtrze pa³acu.~
+@216  = ~<CHARNAME>, chyba pójdê w³asn¹ drog¹. ¯egnaj.~
+@217  = ~<CHARNAME>, to dla mnie ostatnia przeja¿d¿ka, przynajmniej na jakiœ czas. By³o naprawdê œwietnie i w ogóle, jednak teraz muszê zaznaæ trochê luksusu.~
+@218  = ~Znosi³em twoje osobliwe czyny wystarczaj¹co d³ugo, <CHARNAME>, ale to ostatnia krypta, do której ktokolwiek mnie zaci¹gn¹³, wliczaj¹c równie¿ ciebie.~
+@219  = ~Wkrótce wyruszê, ¿eby przekonaæ siê, jakie zadanie mój patron dla mnie przygotowa³.~
+@220  = ~Ooo taak, spanie i nicnierobienie, to brzmi œwietnie! Chocia¿... mo¿e pójdê na to szkolenie z magii, które mi zaoferowa³a ksiê¿na Jannath. <CHARNAME>, œpiochu, idŸ na zas³u¿ony odpoczynek, a mn¹ siê nie martw.~
+@221  = ~Koleny raz udowodni³eœ, ¿e jesteœ bohaterem tego miasta. Mamy u ciebie d³ug nie do sp³acenia. Jakie masz teraz plany?~
+        ~Koleny raz udowodni³aœ, ¿e jesteœ bohaterk¹ tego miasta. Mamy u ciebie d³ug nie do sp³acenia. Jakie masz teraz plany?~
+/* @222 - @225 are the same as in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@222  = ~<CHARNAME> znalaz³ pe³no starych ksi¹¿ek i opracowañ i innych g³upstw!~ ~<CHARNAME> znalaz³a pe³no starych ksi¹¿ek i opracowañ i innych g³upstw!~ 
+@223  = ~Tutaj s¹, ksiê¿no Jannath. Proszê spojrzeæ jaki ten stos jest wielki!~
+@224  = ~Chcia³am ci podziêkowaæ za materia³y, które Imoen mi przekaza³a. Proszê, przyjmij to jako rekompensatê.~
+@225  = ~<CHARNAME>, jestem wielce zainteresowana tymi ksiêgami, które znalaz³eœ w krypcie Korlasz. Potrzebujê ich do w³asnych badañ. Proszê, przeka¿ mi je, gdy tylko nie bêdziesz ich ju¿ potrzebowa³.~
+        ~<CHARNAME>, jestem wielce zainteresowana tymi ksiêgami, które znalaz³aœ w krypcie Korlasz. Potrzebujê ich do w³asnych badañ. Proszê, przeka¿ mi je, gdy tylko nie bêdziesz ich ju¿ potrzebowa³a.~ 
+
+@226  = ~Znalaz³eœ materia³y traktuj¹ce o Bhaalu. Wiem, ¿e by³y w posiadaniu Korlasz. Czy móg³byœ mi je przekazaæ? Wspomóg³byœ moje badania.~
+        ~Znalaz³aœ materia³y traktuj¹ce o Bhaalu. Wiem, ¿e by³y w posiadaniu Korlasz. Czy mog³abyœ mi je przekazaæ? Wspomog³abyœ moje badania.~
+@227  = ~Jasne. Proszê, tutaj s¹.~
+@228  = ~No niestety. Chcia³bym jest zatrzymaæ dla siebie.~ ~No niestety. Chcia³abym jest zatrzymaæ dla siebie.~
+
+/* @229 is the same as @229 in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@229  = ~Dziêkujê. Proszê, przyjmij to jako rekompensatê.~
+
+@230  = ~Rozumiem. Proszê, przeka¿ mi je, gdy tylko nie bêdziesz ich ju¿ potrzebowa³.~
+        ~Rozumiem. Proszê, przeka¿ mi je, gdy tylko nie bêdziesz ich ju¿ potrzebowa³a.~
+@231  = ~Jestem wielce zainteresowana tymi ksiêgami, zw³aszcza ¿e mog¹ byæ bardzo stare.~
+
+/* @232 is the same as @232 in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@232  = ~Mam tutaj badania na temat nekromancji i Bhaala, które znalaz³em w grobowcu rodziny Korlasz. Myœlê, ¿e mog¹ ci siê przys³u¿yæ.~
+        ~Mam tutaj badania na temat nekromancji i Bhaala, które znalaz³am w grobowcu rodziny Korlasz. Myœlê, ¿e mog¹ ci siê przys³u¿yæ.~
+
+@233  = ~Silnym dzieciêciem Bhaala waœæ siê sta³. Twoja podró¿ siê nie skoñczy³a, wiêc i nasza tak¿e nie.~
+        ~Silnym dzieciêciem Bhaala waœæ siê sta³a. Twoja podró¿ siê nie skoñczy³a, wiêc i nasza tak¿e nie.~
+@234  = ~Bêdzie tam wiêcej z³a do skopania! Boo powiedzia³, ¿e to w³aœnie coœ za czym Minsc powinien siê rozgl¹daæ.~
+@235  = ~Przeby³eœ d³ug¹ drogê. Obiecaliœmy Gorionowi, ¿e siê tob¹ zaopiekujemy, jednak spokojnie da³byœ radê bez naszej pomocy. Od teraz to my bêdziemy ciê wspieraæ, zw³aszcza a¿ebyœ nie uleg³ swojemu dziedzictwu.~
+        ~Przeby³aœ d³ug¹ drogê. Obiecaliœmy Gorionowi, ¿e siê tob¹ zaopiekujemy, jednak spokojnie da³abyœ radê bez naszej pomocy. Od teraz to my bêdziemy ciê wspieraæ, zw³aszcza a¿ebyœ nie uleg³a swojemu dziedzictwu.~
+@236  = ~G-Gorion by³by dumny z twojego postêpku. P-pójdziemy z tob¹ i p-pomo¿emy ci we wszystkim.~
+@237  = ~Ooo taak, spanie i nicnierobienie, to brzmi œwietnie! Ale z doœwiadczenia wiem, ¿e bogowie nam na to nie pozwol¹...~
+
+/* pc_palaceresidence.d */
+/* new for v9 */
+@350  = ~To luksusowe ³ó¿ko oferuje wygodê, której nigdy nie uda³o ci siê zaznaæ w Candlekeep.~
+@351  = ~Po³ó¿ siê do ³ó¿ka na oœmiogodzinny odpoczynek.~
+@352  = ~Œpij do pó³nocy.~
+@353  = ~Œpij do jedenastej w nocy.~
+@354  = ~Œpij do po³udnia.~
+@355  = ~Œpij do jedenastej rano.~
+@356  = ~Œpij do dziesi¹tej rano.~
+@357  = ~Œpij do œwitu (szósta rano).~
+@358  = ~Œpij do koñcówki œwitu (siódma rano).~
+@359  = ~Œpij do zmierzchu (dziewi¹ta wieczorem).~
+@360  = ~Œpij do koñcówki zmierzchu (dziesi¹ta wieczorem).~
+@361  = ~Nie korzystaj z ³ó¿ka.~

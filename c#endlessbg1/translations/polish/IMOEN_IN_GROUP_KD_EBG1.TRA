@@ -1,0 +1,22 @@
+/* lines @0 - @17 are the same as in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */ 
+@0    = ~Nie patrz tak na mnie! Zawsze chcia³am wygl¹daæ na kogoœ, kto wie wiêcej ni¿ ty. Jakbyœ nie wiedzia³<PRO_HESHE>, to w³aœnie to powiedzia³a mi ksiê¿na Jannath.~
+@1    = ~A no w³aœnie, co ciê po³¹czy³o z ksiê¿n¹ Jannath?~
+@2    = ~Wiêc, hmm... Jakoœ mnie polubi³a po tym, jak ich uratowaliœmy podczas koronacji Sarevoka. Albo raczej nie-koronacji, gwoli œcis³oœci.~
+@3    = ~I có¿... pozwoli³a mi popróbowaæ magicznych zaklêæ i... spodoba³o mi siê! Naprawdê mog³abym to robiæ! Magiê znaczy siê. Rzuca³am czary!~
+@4    = ~Powiedzia³a, ¿e pomo¿e mi rozwin¹æ moje magiczne zdolnoœci i... Postanowi³am, ¿e przyjmê ofertê. Wiesz, gdy to wszystko siê skoñczy.~
+@5    = ~Aha, tak, ¿ebyœ wiedzia³<PRO_HESHE> – obieca³am przynieœæ jej wszystkie tajemne zwoje i ksiêgi, które uda nam siê tutaj znaleŸæ.~
+@6    = ~Uda³o ci siê! Wiedzia³am, ¿e dasz radê.~
+@7    = ~Nie mogê uwierzyæ, ¿e to ju¿ naprawdê koniec.~
+@8    = ~Zrobiliœmy to razem, Imoen.~ ~Zrobi³yœmy to razem, Imoen.~
+@9    = ~Nie by³aœ zbyt pomocna.~
+@10   = ~Wiem, co masz na myœli!~
+@11   = ~W porz¹dku. Nie ma siê ju¿ czego obawiaæ, prawda?~
+@12   = ~Najemnicy P³omiennej Piêœci wróc¹ na górê przy pomocy tej liny, któr¹ znaleŸliœmy. To na po³udnie st¹d. Prowadzi wprost do wyjœcia.~ ~Najemnicy P³omiennej Piêœci wróc¹ na górê przy pomocy tej liny, któr¹ znalaz³yœmy. To na po³udnie st¹d. Prowadzi wprost do wyjœcia.~
+@13   = ~Tylko spójrz na te wszystkie tomiszcza i ksiêgi o Bhaalu! Ksiê¿na Jannath a¿ podskoczy z radoœci na ich widok! W³aœciwie to nie podskoczy. Jest na to zbyt dystyngowana. Ale... mogê je dla niej zabraæ? Mogê?~
+@14   = ~Jasne. Mnie siê one nie przydadz¹.~
+@15   = ~Nie, chcia³<PRO_HESHE>bym je na razie zatrzymaæ.~
+@16   = ~W porz¹dku... ale powiesz mi, jakbyœ zmieni³<PRO_HESHE> zdanie, dobra?~
+@17   = ~Mo¿esz zabraæ do ksiê¿nej Jannath wszystkie te studia nad Bhaalem, które znaleŸliœmy, Imoen.~
+
+@200 = ~Mo¿esz wspi¹æ siê po linie, gdy tylko bêdziesz gotowy do powrotu do pa³acu. Bêdziemy tu¿ za tob¹.~ 
+       ~Mo¿esz wspi¹æ siê po linie, gdy tylko bêdziesz gotowa do powrotu do pa³acu. Bêdziemy tu¿ za tob¹.~

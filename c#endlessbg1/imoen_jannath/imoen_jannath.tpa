@@ -60,8 +60,22 @@ THEN
 		SetGlobal("C#st_SpawnServant2","MYAREA",2)
 END
 
+/* despawn servant in SoD / BGII */
+IF
+	OR(2) GlobalGT("ENDOFBG1","GLOBAL",0) GlobalGT("bd_plot","global",40)
+	Exists("c#stsrv2")
+	GlobalLT("C#st_SpawnServant2","MYAREA",3)
+THEN
+	RESPONSE #100
+		ActionOverride("c#stsrv2",DestroySelf())
+		SmallWait(1)
+		SetGlobal("C#st_SpawnServant2","MYAREA",3)
+		Continue()
+END
+
 /* move Imoen here if not in party */
 IF
+	!GlobalGT("ENDOFBG1","GLOBAL",0) !GlobalGT("bd_plot","global",40) //not in SoD/BGII
 	Global("C#st_HeroOfBG","GLOBAL",1)
 	!InPartyAllowDead("%IMOEN_DV%")
 	!Dead("%IMOEN_DV%")
@@ -163,7 +177,7 @@ ACTION_IF ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~bd0103.ar
   // Transferring items from BG1 area palace containers
 IF
   Global("C#st_HeroOfBG","GLOBAL",1)
-  Global("C#st_HeroTransferItemsIM", "MYAREA", 0)
+  Global("C#st_TransferItemsIM", "MYAREA", 0)
 THEN
   RESPONSE #100
     MoveContainerContents("%NBaldursGate_DucalPalace_L3%*Container4","BD0103*Imoen_equipment")

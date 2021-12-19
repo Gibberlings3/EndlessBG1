@@ -1,0 +1,28 @@
+
+/* move Imoen as in the original game if not in group */
+IF
+	Global("C#st_ImoenInGroupKD","GLOBAL",0)
+	Global("C#EBG1_ImoenMoveInCrypt","GLOBAL",1)
+	Global("C#EBG1_ImoenMoveInCrypt_120","BD0120",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#EBG1_ImoenMoveInCrypt_120","BD0120",1)
+		ActionOverride("%IMOEN_DV%",JumpToPoint([1770.1520]))
+		ActionOverride("%IMOEN_DV%",Face(N))
+		SetInterrupt(TRUE)
+END
+
+IF
+	Global("C#st_ImoenInGroupKD","GLOBAL",0)
+	Global("C#EBG1_ImoenMoveInCrypt","GLOBAL",2)
+	GlobalLT("C#EBG1_ImoenMoveInCrypt_120","BD0120",2)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#EBG1_ImoenMoveInCrypt_120","BD0120",2)
+		ActionOverride("%IMOEN_DV%",JumpToPoint([1545.700]))
+		ActionOverride("%IMOEN_DV%",Face(NE))
+		SetInterrupt(TRUE)
+END
+

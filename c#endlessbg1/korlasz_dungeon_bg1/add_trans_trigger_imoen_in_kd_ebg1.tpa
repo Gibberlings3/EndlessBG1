@@ -1,0 +1,86 @@
+/* ADD_TRANS_TRIGGER for specific reply options for Imoen_in_group_KD.d */
+
+<<<<<<<< .../inlined/ebg1_BDIMOEN.d
+/* #63960 ~I'm more concerned about you. How have you been doing these last few weeks?~ */
+ADD_TRANS_TRIGGER BDIMOEN 9 ~!InParty("%IMOEN_DV%")~ DO %responses_9% //9
+
+/* #65051 ~How have you been doing these last few weeks?~ */
+ADD_TRANS_TRIGGER BDIMOEN 12 ~!InParty("%IMOEN_DV%")~ DO %responses_12% //9
+
+/* #70436 ~Duke Jannath sent you here seeking magical papers or books, did she not? I found these in Korlasz's room.~ */
+ADD_TRANS_TRIGGER BDIMOEN 33 ~!InParty("%IMOEN_DV%")~ DO %responses_33% //1
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  ~%eet_2%63960~ => 1
+  ~%eet_2%65051~ => 1
+  ~%eet_2%70436~ => 1
+END
+  
+COPY_EXISTING ~BDIMOEN.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 9 12 33 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/ebg1_BDIMOEN.d~
+
+/* One reply option in Duke Jannath's dialogue needs to be restricted: */
+<<<<<<<< .../inlined/ebg1_BDLIIA.d
+/* #56051 ~That's why she was reluctant to assist in rooting out Sarevok's minions...~ */
+ADD_TRANS_TRIGGER BDLIIA 24 ~Global("C#st_ImoenInGroupKD","GLOBAL",0)~ DO%responses_24% //0
+>>>>>>>>
+
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  ~%eet_2%56051~ => 1
+END
+  
+COPY_EXISTING ~BDLIIA.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 24 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices "IF ~False()~"
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+// Variables response_39, response_70
+// are now initialized and can be used in the .d file
+COMPILE EVAL ~.../inlined/ebg1_BDLIIA.d~
+
+

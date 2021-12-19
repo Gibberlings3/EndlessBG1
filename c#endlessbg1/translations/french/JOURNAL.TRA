@@ -37,3 +37,21 @@ Apparemment, l'épée de Sarevok a été volée dans le Palais ducal par ses derniers
 @10011 = ~L'épée de Sarevok
 
 J'ai récupéré l'épée de Sarevok. Il lui manque encore la majorité de ses pouvoirs, mais au moins, elle est désormais maniable.~
+
+/* new for v9 */
+/* #31288 */
+@10012   = ~Démêlés avec la justice
+
+Sarevok est mort. Ce chapitre de ma vie est terminé.~
+/* #31374 */
+@10013   = ~Sur la piste de Sarevok
+
+Sarevok est mort. Ce chapitre de ma vie est terminé.~
+/* #31400 */
+@10014   = ~Doublé in Extremis
+
+Sarevok est mort. Ce chapitre de ma vie est terminé.~
+/* #31416 */
+@10015   = ~L'ascension de Sarevok
+
+Sarevok est mort. Ce chapitre de ma vie est terminé.~

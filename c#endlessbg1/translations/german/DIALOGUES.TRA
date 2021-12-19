@@ -1,4 +1,4 @@
-/* dialogues.d */
+/* dialogues_ee.d */
 @0  = ~<CHARNAME>, Ihr wart erfolgreich! Ihr habt Sarevok besiegt, der für seine eigenen, düsteren Ziele gegen unsere Stadt intrigierte, gegen die Schwertküste - sogar gegen Amn!~
 @1  = ~Während wir uns an der Nase herumführen ließen, habt Ihr uns die Augen geöffnet und uns vor einem schrecklichen Übel bewahrt. Bei der Macht, die meine Stellung als Herzog und Mitglied des Konzils mir verleiht, ernenne ich Euch hiermit zum Helden von Baldurs Tor! Im Namen der Stadt spreche ich Euch unseren tiefsten Dank aus.~ ~Während wir uns an der Nase herumführen ließen, habt Ihr uns die Augen geöffnet und uns vor einem schrecklichen Übel bewahrt. Bei der Macht, die meine Stellung als Herzog und Mitglied des Konzils mir verleiht, ernenne ich Euch hiermit zur Heldin von Baldurs Tor! Im Namen der Stadt spreche ich Euch unseren tiefsten Dank aus.~
 @2  = ~<CHARNAME>, Held von Balurs Tor. Seid Ihr beeit, Euch mit der Flammenden Faust zusammenzuschließen und den letzten Anhängern Sarevoks nachzuspüren?~
@@ -9,14 +9,20 @@
 @7  = ~Die Stadt steht tief in Eurer Schuld, Held von Baldurs Tor. Folgt mir bitte, ich werde Euch sagen, was wir wissen.~
 @8  = ~Ich verstehe. Dennoch steht die Stadt tief in Eurer Schuld. Lebt wohl, Held von Baldurs Tor.~
 @9  = ~Nun gut. Wir werden unsere Suche nach den letzten Anhängern von Sarevok intensivieren und hoffen, dass Ihr Euch uns bald anschließt. Bis dahin, genießt Euren Aufenthalt!~
+/* dialogues.d */
 @10 = ~Wir danken Euch, dass Ihr Sarevok besiegt habt, <CHARNAME>!~
 
 /* new for v2 */
+/* dialogues.d */
 @11 = ~Seid gegrüßt, Kampfgefährte von <CHARNAME>. Auch Euch gilt unser Dank.~
+/* dialogues_ee.d */
 @12 = ~Seid gegrüßt, Kampfgefährte von <CHARNAME>.~
 
-/* new for v3: changed line 7 */
-@13  = ~Die Stadt steht tief in Eurer Schuld, Held von Baldurs Tor. Folgt mir bitte, die Soldaten der Flammenden Faust werden Euch zum Versteck von Sarevoks letztem Anhänger führen.~
+/* new for v3: changed line 7 for SoD [again splitted in v9] */
+@13  = ~Die Stadt steht tief in Eurer Schuld, Held von Baldurs Tor.~
+
+/* new for v9: splitted line 13 */
+@14  = ~Folgt mir bitte, die Soldaten der Flammenden Faust werden Euch zum Versteck von Sarevoks letzter Anhängerin führen.~
 
 /* pc_palaceresidence.d */
 @20  = ~Seid gegrüßt, <CHARNAME>. Bitte verlasst den Keller, Ihr solltet Euch hier nicht aufhalten.~
@@ -132,3 +138,65 @@
 @158 = ~Wenn ich soweit bin sage ich Euch bescheid. Bis dahin lebt wohl!~
 @159 = ~Seid gegrüßt, <CHARNAME>. Wen Ihr Ophyllis sucht, der sollte im Büro sein.~
 
+/* korlasz_dungeon_bg1.d */
+/* lines @200 - @202 are the same as  @0 - @2 from ajantisbg1/.../ajantisbg1_transitions.tra */
+@200  = ~Es war mir eine Ehre, mit Euch die Schwertküste von der Banditenplage zu befreien und den drohenden Krieg zu verhindern. Meine Aufgabe hier ist getan. Ich werde nun meinem Orden des Strahlenden Herzens Bericht erstatten von Euren Taten - und auch von meinen, in der Hoffnung, dass ich nun die Voraussetzungen erfüllt habe, um zum Ritter geschlagen zu werden. Ich danke Euch, dass wir uns zusammengetan haben. Lebt wohl!~
+@201  = ~<CHARNAME>, ich fürchte, nun ist die Zeit gekommen, dass wir zumindest zeitweise getrennte Wege gehen. Die Aufgabe, die der Orden mir gab, ist erfüllt. Ich werde nun zurückkehren und Bericht erstatten von Euren Taten - und auch von meinen, in der Hoffnung, dass ich nun die Voraussetzungen erfüllt habe, um zum Ritter geschlagen zu werden. Aber zuvor werde ich nach Tiefwasser zu meiner Familie reisen, wie wir es besprochen haben. Ich freue mich so darauf, ihnen von Euch zu erzählen, und von der Liebe, die ich für Euch empfinde!~
+@202  = ~Mein Herz wird schwer, wenn ich an die Zeit denke, die wir nun getrennt sein werden. So häufig wie möglich werde ich Euch Bericht über meinen Fortschritt zukommen lassen. Und sei es Tiefwasser, Atkatla oder hier, dass wir uns wiedersehen, seid versichert, dass ich auf Euch warten und zu Euch eilen werde, wenn Ihr in der Nähe seid. Lebt wohl, "Heldin von Baldurs Tor" (lächelt). Genießt die Lobpreisungen der Leute, solange sie noch willig sind, sie Euch zu gewähren. Ihr habt es Euch verdient.~
+@203  = ~Imoen - Herzogin Jannath möchte mit Euch sprechen, bevor Ihr geht.~
+@204  = ~Imoen, Kind, ich möchte mit Euch sprechen, bevor Ihr geht. Kommt einen Moment her.~
+@205  = ~Mit mir? Na gut!~
+@206  = ~Herzogin Jannath ist entschlossen, Imoen noch einmal zu sehen, bevor Ihr geht. Ich bin mir sicher, dass sie sich auch um den momentanen, unglücklichen Zustand Eurer Freundin kümmern wird.~
+@207  = ~Ich möchte mit Imoen sprechen, bevor Ihr geht. Ich werde Fester beauftragen, ihren momentanen... Zustand zu beheben.~
+@208  = ~Imoen, Eure Freundin aus Kindheitstagen, wurde von Herzogin Jannath so gut es geht vorbereitet, um Euch durch die Gruft zu geleiten. Sie erwartet Euch dort.~
+@209  = ~Bitte kehrt zurück zur Familiengruft der Korlasz' und helft, die letzte Anhängerin von Sarevok zu besiegen.~
+@210  = ~<CHARNAME>, Held von Baldurs Tor. Ihr kehrt erfolgreich zurück! Nicht nur Sarevok selbst, sondern auch alle seine Anhänger besiegt.~
+@211  = ~Ich brauche wirklich eine kleine Pause. Ich fühle schon, wie das nächste Problem sich anbahnt. Ich werde mich zurückziehen und einen Zehntag einfach gar nichts machen, um auf was auch immer kommen mag vorbereitet zu sein.~
+@212  = ~Es gibt noch immer viel zu tun und zu entdecken. Ich werde in der Nähe bleiben.~
+@213  = ~Ich werde mich von der Stadt und der Schwertküste verabschieden, bevor die nächste weltbedrohende Katastrophe eintritt. Ich werde es im Süden versuchen, weg von allem, was die Stadt Baldurs Tor in naher oder ferner Zukunft heimsuchen könnte.~
+@214  = ~Ein Held ist immer beschäftigt. Wer Eure Hilfe erhält, kann sich glücklich schätzen. Genießt Eure Zeit, Held von Baldurs Tor.~ ~Ein Held ist immer beschäftigt. Wer Eure Hilfe erhält, kann sich glücklich schätzen. Genießt Eure Zeit, Heldin von Baldurs Tor.~
+@215  = ~Eine wohlverdiente Ruhe. Seht das oberste Stockwerk des Palastes nach Belieben als Eure Heimstädte an.~
+@216  = ~Ich werde nun meinen eigenen Weg gehen. Lebt wohl, <CHARNAME>.~
+@217  = ~Ich bin dann mal weg, <CHARNAME>. Es war toll und alles, aber mich zieht es erstmal wieder zu einem etwas luxuriöserem Leben.~
+@218  = ~Ich habe Eure Eigenarten lange genug erduldet, <CHARNAME>, aber dies war die letzte Gruft, in die Ihr oder ein anderer mich hineingelockt hat.~
+@219  = ~Ich werde gehen und sehen, welche Aufgaben meine Schutzgottheit für mich vorgesehen hat.~
+@220  = ~Ooh ja, schlafen und *nichts* tun, das klingt gut! Obwohl... ich glaube, ich nehme Herzogin Liias Angebot an, mich in Magie zu trainieren, <CHARNAME>. Geh du mal und genieße die wohlverdiente Ruhe, Schlafmütze!~
+@221  = ~Ihr habt bewiesen, dass Ihr den Titel Held von Baldurs Tor verdient, und wir werden für immer in Eurer Schuld stehen. Was habt Ihr nun vor?~ ~Ihr habt bewiesen, dass Ihr den Titel Heldin von Baldurs Tor verdient, und wir werden für immer in Eurer Schuld stehen. Was habt Ihr nun vor?~
+/* @222 - @225 are the same as in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@222  = ~<CHARNAME> hat einen Berg an alten Büchern und Forschung und so gefunden!~
+@223  = ~Hier, nehmt, Herzogin Liia. Ist das nicht ein unglaublich dicker Stapel?!~
+@224  = ~Ich danke Euch für die Aufzeichnungen, die Imoen mir gegeben hat. Nehmt dies als Ausgleich für Eure Mühen.~
+@225  = ~Ich bin sehr an den alten Aufzeichnungen interessiert, die Ihr in Korlasz' Familiengruft gefunden habt. Bitte überlasst sie mir, sobald Ihr Euch von ihnen trennen könnt, <CHARNAME>.~
+
+@226  = ~Ihr habt Aufzeichnungen über Bhaal unter Korlasz' Besitztümern gefunden. Kann ich diese für meine eigenen Nachforschungen haben?~
+@227  = ~Natürlich. Hier, nehmt.~
+@228  = ~Nein, ich würde sie gerne noch behalten.~
+
+/* @229 is the same as @229 in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@229  = ~Ich danke Euch. Nehmt dies als Ausgleich für Eure Mühen.~
+
+@230  = ~Ich verstehe. Bitte gebt sie mir, sobald Ihr Euch von ihnen trennen könnt.~
+@231  = ~Ich bin sehr an solch alten Aufzeichnungen interessiert.~
+
+/* @232 is the same as @232 in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@232  = ~Hier sind die Unterlagen über Nekromantie und Bhaal, die ich in Korlasz' Gruft gefunden habe. Ihr seid daran interessiert, soweit ich weiß.~
+@233  = ~[Dynaheir]Ihr seid ein mächtiges Bhaalkind geworden. Eure Reise ist nicht beendet, und daher ist es auch unsere noch nicht.~
+@234  = ~[Minsc]Es wird noch viel Böses geben, das einen Tritt benötigt. Boo sagt, dass Minsk sich darauf freuen soll.~
+@235  = ~[Jaheira]Ihr seid einen weiten Weg gegangen. Wir haben Gorion versprochen, auf Euch achtzugeben, und Ihr seid aus jeder Hilfe herausgewachsen, die wir Euch beim Bekämpfen von Gegnern gewähren können. Von nun an wird es unsere Aufgabe sein sicherzustellen, dass Ihr nicht Eurem göttlichen Erbe nachgebt.~
+@236  = ~[Khalid]G-Gorion wäre stolz auf Eure Erfolge. Wir werden Euch begleiten und bei allem helfen, das sich noch auftun wird.~
+@237  = ~Ooh ja, schlafen und *nichts* tun, das klingt gut! Obwohl... die Erfahrung sagt mir, dass die Götter uns das nicht tun lassen werden.~
+
+/* pc_palaceresidence.d */
+/* new for v9 */
+@350  = ~Dieses komfortable Bett bietet einen Luxus, den Ihr in Kerzenburg nie gehabt habt.~
+@351  = ~Ihr legt Euch für eine volle Nachtruhe nieder (8 Stunden).~
+@352  = ~Ihr verbringt die Zeit bis Mitternacht.~
+@353  = ~Ihr verbringt die Zeit bis 23 Uhr.~
+@354  = ~Ihr verbringt die Zeit bis Mittag.~
+@355  = ~Ihr verbringt die Zeit bis 11 Uhr.~
+@356  = ~Ihr verbringt die Zeit bis 10 Uhr.~
+@357  = ~Ihr verbringt die Zeit bis zum Beginn des Sonnenaufgangs (6 Uhr).~
+@358  = ~Ihr verbringt die Zeit bis zum Ende des Sonnenaufgangs (7 Uhr).~
+@359  = ~Ihr verbringt die Zeit bis zum Beginn des Sonnenuntergangs (21 Uhr).~
+@360  = ~Ihr verbringt die Zeit bis zum Ende des Sonnenuntergangs (22 Uhr).~
+@361  = ~Ihr geht vom Bett weg.~

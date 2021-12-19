@@ -81,3 +81,25 @@ Non utilisable par :
 @21 = ~Réfugié~ /* mâle*/
 @22 = ~Soigneur du Poing Enflammé~ /* mâle*/
 @23 = ~Éclaireur du Poing Enflammé~ /* mâle*/
+
+/* new for v9 */
+@24 = ~Le nom creusé artisanalement dans les dalles ornementales indique qu'il s'agit de l'entrée de la crypte de la famille de Korlasz. L'entrée est scellée et protégée par de la magie.~
+@25 = ~Salutations, héros. Je suis Fenster, le clerc du palais.~ ~Salutations, héroïne. Je suis Fenster, le clerc du palais.~
+@26 = ~En quoi puis-je vous aider ?~
+@27 = ~Puis-je avoir accès à vos services ?~
+@28 = ~Je n'ai besoin de rien pour le moment.~
+@29 = ~Avec plaisir.~
+@30 = ~Je ne peux pas vous proposer mes services tant que je m'occupe d'Imoen. Si vous avez besoin d'une assistance divine, demandez ailleurs.~
+//@31: name taken from #64284
+@31 = ~Tombe de la famille de Korlasz~
+@32 = ~Lit de <CHARNAME>~
+
+/* sarevok_cleanup_more.tpa */
+/* #18345 changed */
+@50  = ~Il y a beaucoup à dire et je ne pense pas vraiment avoir le temps d'entrer dans les détails. Je vivais à Château-Suif avec mon père Gorion. Il y a peu de temps, nous avons été forcés de fuir. Quelqu'un m'attendait à l'extérieur des murs et voulait me voir mort. Mon père a été tué en me protégeant.~
+/* #18351 changed */
+@51  = ~Je suis désolé de raviver des souvenirs douloureux. Je souhaite vous aider, et ce faisant, en finir avec ces rêves qui me hantent. Tenez, prenez ceci. Peut-être nous reverrons nous. Au revoir.~
+@52  = ~Ah, <CHARNAME> ! Je suis soulagé que tout soit enfin rentré dans l'ordre. Après avoir vu la confiance que le duc Eltan avait placé en vous, je me sentais terriblement mal d'avoir à suivre les ordres d'Angelo concernant votre arrestation...~
+@53  = ~Dans tous les cas, merci, merci beaucoup d'avoir sauvé notre commandant.~
+@54  = ~Nous pleurerons nos pertes pendant que nous rassemblons ce qu'il nous reste. Après que Sarevok et ses serviteurs aient souillé le Poing Enflammé en se servant de nous comme des pantins, il va nous falloir du temps pour s'en remettre. Dans tous les cas, merci pour avoir sauvé cette ville, héros.~ ~Nous pleurerons nos pertes pendant que nous rassemblons ce qu'il nous reste. Après que Sarevok et ses serviteurs aient souillé le Poing Enflammé en se servant de nous comme des pantins, il va nous falloir du temps pour s'en remettre. Dans tous les cas, merci pour avoir sauvé cette ville, héroïne.~
+@55  = ~On dirait que se battre contre vous n'était pas vraiment une bonne idée. Hé bien, je n'aurais jamais cru qu'Angelo et Sarevok ne jouaient pas franc-jeu. On dirait que vous nous avez tirés d'une bien sombre histoire.~

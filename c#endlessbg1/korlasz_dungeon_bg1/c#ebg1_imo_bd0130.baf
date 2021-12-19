@@ -1,0 +1,95 @@
+
+
+/* Imoen died while in group: FF soldiers will head on to the exit by themselves */
+
+IF 
+	OR(2)
+		Dead("bdkorlas")
+		Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+	Dead("%IMOEN_DV%")
+	Global("C#st_ImoenInGroupKD","GLOBAL",1)
+	GlobalLT("BDSH_Imoen_Floor","GLOBAL",3)
+	CombatCounter(0)
+	!TriggerOverride("Imoen_final_talk",Range([EVILCUTOFF],30))
+THEN
+	RESPONSE #100
+		AddXPObject(Player1,5000)
+		AddXPObject(Player2,5000)
+		AddXPObject(Player3,5000)
+		AddXPObject(Player4,5000)
+		AddXPObject(Player5,5000)
+		AddXPObject(Player6,5000)
+		SetGlobal("BDSH_Imoen_Floor","GLOBAL",3)
+		SetGlobal("BDSH_Rope","GLOBAL",1)
+		ActionOverride("BDFF1000",EscapeAreaObject("Tranbd0120rope"))
+		ActionOverride("BDFF1001",EscapeAreaObject("Tranbd0120rope"))
+		ActionOverride("BDFF1002",EscapeAreaObject("Tranbd0120rope"))
+END
+
+IF
+	Global("C#st_ImoenInGroupKD","GLOBAL",0)
+	Global("C#EBG1_ImoenMoveInCrypt","GLOBAL",3)
+	Global("C#EBG1_ImoenMoveInCrypt_130","BD0130",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#EBG1_ImoenMoveInCrypt_130","BD0130",1)
+		ActionOverride("%IMOEN_DV%",JumpToPoint([1955.1075]))
+		ActionOverride("%IMOEN_DV%",Face(S))
+		SetInterrupt(TRUE)
+END
+
+IF
+	Global("C#st_ImoenInGroupKD","GLOBAL",0)
+	Global("C#EBG1_ImoenMoveInCrypt","GLOBAL",4)
+	GlobalLT("C#EBG1_ImoenMoveInCrypt_130","BD0130",2)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#EBG1_ImoenMoveInCrypt_130","BD0130",2)
+		ActionOverride("%IMOEN_DV%",JumpToPoint([3015.1890]))
+		ActionOverride("%IMOEN_DV%",Face(SE))
+		SetInterrupt(TRUE)
+END
+
+
+IF
+	Global("C#st_ImoenInGroupKD","GLOBAL",0)
+	Global("C#EBG1_ImoenMoveInCrypt","GLOBAL",5)
+	GlobalLT("C#EBG1_ImoenMoveInCrypt_130","BD0130",3)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#EBG1_ImoenMoveInCrypt_130","BD0130",3)
+		ActionOverride("%IMOEN_DV%",JumpToPoint([1830.2390]))
+		ActionOverride("%IMOEN_DV%",Face(SE))
+		SetInterrupt(TRUE)
+END
+
+IF
+	Global("C#st_ImoenInGroupKD","GLOBAL",0)
+	Global("C#EBG1_ImoenMoveInCrypt","GLOBAL",6)
+	GlobalLT("C#EBG1_ImoenMoveInCrypt_130","BD0130",4)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#EBG1_ImoenMoveInCrypt_130","BD0130",4)
+		ActionOverride("%IMOEN_DV%",JumpToPoint([970.1435]))
+		ActionOverride("%IMOEN_DV%",Face(N))
+		SetInterrupt(TRUE)
+END
+
+IF
+	Global("C#st_ImoenInGroupKD","GLOBAL",0)
+	Global("C#EBG1_ImoenMoveInCrypt","GLOBAL",7)
+	GlobalLT("C#EBG1_ImoenMoveInCrypt_130","BD0130",5)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#EBG1_ImoenMoveInCrypt_130","BD0130",5)
+		ActionOverride("%IMOEN_DV%",JumpToPoint([1000.1060]))
+		ActionOverride("%IMOEN_DV%",Face(N))
+		SetInterrupt(TRUE)
+END
+
+

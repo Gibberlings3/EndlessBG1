@@ -15,8 +15,11 @@
 @11 = ~Merci à vous aussi, compagnons de <CHARNAME>.~
 @12 = ~Salutations à vous aussi, compagnons de <CHARNAME>.~
 
-/* new for v3: changed line 7 */
-@13 = ~La ville vous doit une fière chandelle, Héros. Suivez-moi s'il vous plaît, les soldats du Poing Enflammé vont vous guider à la cachette des derniers serviteurs de Sarevok.~ ~La ville vous doit une fière chandelle, Héroïne. Suivez-moi s'il vous plaît, les soldats du Poing Enflammé vont vous guider à la cachette des derniers serviteurs de Sarevok.~
+/* new for v3: changed line 7 for SoD [again splitted in v9] */
+@13 = ~La ville vous doit une fière chandelle, Héros.~ ~La ville vous doit une fière chandelle, Héroïne.~
+
+/* new for v9: splitted line 13 */
+@14  = ~Suivez-moi s'il vous plaît, les soldats du Poing Enflammé vont vous guider à la cachette des derniers serviteurs de Sarevok.~ ~Suivez-moi s'il vous plaît, les soldats du Poing Enflammé vont vous guider à la cachette des derniers serviteurs de Sarevok.~
 
 /* pc_palaceresidence.d */
 @20 = ~Salutations, <CHARNAME>. Je dois vous demander de quitter le cellier, vous ne devriez pas être ici.~
@@ -110,7 +113,7 @@
 @123 = ~Ils nous ont demandé de les rejoindre, et ensuite ils ont commencé à tout saccager... Nous avons fui avec le peu que nous pouvions emporter.~
 @124 = ~Ils ont entièrement détruit le village – et je ne veux même pas imaginer ce qu'ils ont fait aux villageois qui n'ont pas eu le temps de fuir !~
 @125 = ~« Rejoignez-nous ! Rejoignez-nous, dans une croisade pleine de pillage et de meurtres ! » Ces meurtriers voulaient qu'on les rejoigne ! Je me suis enfui aussi vite que j'ai pu.~
-@126 = ~Mamaaaaaaaan ! Un étranger me parle !!~
+@126 = ~Mamaaaaaaaan ! Un étranger me parle !!~ ~Mamaaaaaaaan ! Une étrangère me parle !!~
 @127 = ~J'ai perdu ma poupée sur le chemin...~
 @128 = ~Je veux rentrer à la maison.~
 
@@ -131,3 +134,69 @@
 @157 = ~Je vais garder votre or en sécurité. Aucune raison de s'inquiéter, je maîtrise parfaitement la situation ! Je vais préparer l'endroit où sera gardé votre or, j'ai reçu les informations à ce propos il y a quelques instants.~
 @158 = ~Je viendrai vous voir une fois que vous vous serez décidé à rejoindre le Poing Enflammé dans leur chasse. Au revoir !~ ~Je viendrai vous voir une fois que vous vous serez décidée à rejoindre le Poing Enflammé dans leur chasse. Au revoir !~
 @159 = ~Salutations, <CHARNAME>. Si vous cherchez Ophyllis, il doit être dans le bureau.~
+
+
+/* korlasz_dungeon_bg1.d */
+/* lines @200 - @202 are the same as  @0 - @2 from ajantisbg1/.../ajantisbg1_transitions.tra */
+@200  = ~Ce fut un honneur de purifier cet endroit avec vous de la menace des bandits et de la guerre qui se préparait. Ma tâche ici est terminée. Je vais retourner chez moi et répondre à l'appel de l'Ordre du Cœur Radieux. J'irai faire mon rapport suite aux événements qui se sont produits ici, ainsi que votre implication dans ces derniers. Je parlerai également de mon implication, et j'espère que je serai jugé digne de recevoir le titre de chevalier. Je vous remercie d'avoir joint vos forces aux miennes. Adieu !~
+@201  = ~<CHARNAME>, je crains que l'heure ne soit venue pour nous de faire nos adieux. La guerre est arrêtée, Sarevok est vaincu, la mission que l'Ordre m'a confié est faite. Il est temps pour moi de faire mon rapport, mais je voyagerai vers Eauprofonde en premier, comme nous l'avons convenu. Rien ne m'empêchera d'obtenir la réponse de mes parents concernant notre projet de mariage, maintenant que nos ennemis sont vaincus et que la paix est enfin revenue sur ces terres. J'ai tellement hâte de leur parler, <CHARNAME>, mon amour, et de leur avouer l'amour que je te porte.~
+@202  = ~Mon cœur souffre à l'idée de devoir te quitter. Je t'enverrai des lettres sur mes allées et venues aussi souvent que je le pourrais. Et que ce soit Eauprofonde, Athkatla, ou ici que nous nous retrouvions, sois assuré que je viendrai te trouver, ou que je t'attendrais, peu importe l'endroit où nous sommes destinés à nous retrouver. Adieu, « Héros de la Porte de Baldur » (en souriant). Profite de la gratitude et des louanges du peuple tant qu'il est encore prêt à les donner, <CHARNAME>. Tu le mérites.~ ~Mon cœur souffre à l'idée de devoir te quitter. Je t'enverrai des lettres sur mes allées et venues aussi souvent que je le pourrais. Et que ce soit Eauprofonde, Athkatla, ou ici que nous nous retrouvions, sois assurée que je viendrai te trouver, ou que je t'attendrai, peu importe l'endroit où nous sommes destinés à nous retrouver. Adieu, « Héroïne de la Porte de Baldur » (en souriant). Profite de la gratitude et des louanges du peuple tant qu'il est encore prêt à les donner, <CHARNAME>. Tu le mérites.~
+@203  = ~Imoen, la duchesse Jannath souhaite vous parler avant que vous ne partiez.~
+@204  = ~Imoen, ma jeune enfant, je dois te parler avant que tu ne partes. Viens me voir un instant.~
+@205  = ~Moi ? D'accord !~
+@206  = ~La duchesse Jannath est déterminée à voir Imoen avant que vous partiez. Je suis sûr qu'elle prendra soin de votre amie.~
+@207  = ~Je dois parler à Imoen avant que vous ne partiez. Je vais appeler Fenster pour qu'il s'occupe d'elle.~
+@208  = ~Imoen, votre amie d'enfance, a été entraînée par la duchesse Jannath pour vous guider du mieux possible. Elle vous attendra là-bas.~
+@209  = ~Je vous en prie, retournez à la crypte de la famille de Korlasz et aidez-nous à vaincre la dernière servante de Sarevok.~
+@210  = ~<CHARNAME>, Héros de la Porte de Baldur. Vous êtes de retour, victorieux ! Non seulement Sarevok est hors d'état de nuire, mais tous ses serviteurs le sont également.~ ~<CHARNAME>, Héroïne de la Porte de Baldur. Vous êtes de retour, victorieuse ! Non seulement Sarevok est hors d'état de nuire, mais tous ses serviteurs le sont également.~
+@211  = ~Honnêtement, j'ai besoin de me détendre. Je sens déjà le prochain problème arriver. Je vais juste aller me reposer et ne rien faire pendant un bon moment, ainsi, je serais prêt à faire face à n'importe quoi.~ ~Honnêtement, j'ai besoin de me détendre. Je sens déjà le prochain problème arriver. Je vais juste aller me reposer et ne rien faire pendant un bon moment, ainsi, je serais prête à faire face à n'importe quoi.~
+@212  = ~Il me reste encore beaucoup à faire. Je serais dans les parages.~
+@213  = ~Je vais quitter la ville et la Côte des Épées avant que la prochaine fin du monde ne fasse surface. Je vais partir vers le sud, loin de tout ce qui pourrait se passer dans la Porte de Baldur, dans un futur proche comme lointain.~
+@214  = ~Un héros ne s'ennuie jamais. Peu importe qui reçoit votre aide, il peut se considérer chanceux. Profitez-en bien, héros.~ ~Une héroïne ne s'ennuie jamais. Peu importe qui reçoit votre aide, il peut se considérer chanceux. Profitez-en bien, héroïne.~
+@215  = ~Un repos bien mérité. Vous pouvez faire comme chez vous au dernier étage du palais.~
+@216  = ~Je vais tracer ma propre voie maintenant. Adieu, <CHARNAME>.~
+@217  = ~Je vais partir, <CHARNAME>. C'était génial et tout ça, mais maintenant, je vais m'accorder un peu de bon temps.~
+@218  = ~J'ai enduré tes excentricités assez longtemps comme ça, <CHARNAME>. C'était la dernière fois que quelqu'un m'emmenait dans une tombe.~
+@219  = ~Je vais partir et voir quelles tâches mon protecteur me réserve.~
+@220  = ~Oh génial, dormir et ne rien faire, j'adore ça ! Cela dit... Je pense que je vais accepter l'offre de la duchesse Jannath concernant mon entraînement à la magie, <CHARNAME>. Va profiter de ton repos, le paresseux !~ ~Oh génial, dormir et ne rien faire, j'adore ça ! Cela dit... Je pense que je vais accepter l'offre de la duchesse Jannath concernant mon entraînement à la magie, <CHARNAME>. Va profiter de ton repos, la paresseuse !~
+@221  = ~Vous avez fait vos preuves en tant que héros de la ville, et nous vous serons à jamais redevable. Qu'allez-vous faire dorénavant ?~ ~Vous avez fait vos preuves en tant qu'héroïne de la ville, et nous vous serons à jamais redevable. Qu'allez-vous faire dorénavant ?~
+/* @222 - @225 are the same as in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@222  = ~<CHARNAME> a trouvé des vieux livres, des recherches et plein d'autres choses !~
+@223  = ~Les voilà, duchesse Liia. Regardez la taille de cette pile !~
+@224  = ~Je vous remercie pour les tomes qu'Imoen m'a donnée. Tenez, prenez ceci en compensation.~
+@225  = ~Je suis très intéressée par ces vieux tomes que vous avez trouvé dans la tombe de la famille de Korlasz pour mes recherches. Je vous prie de bien vouloir me les donner dès que vous pourrez vous en passer, <CHARNAME>.~
+
+@226  = ~Vous avez trouvé des tomes contenant des informations sur Bhaal dans les affaires de Korlasz. Puis-je les avoir pour mes recherches ?~
+@227  = ~Bien sûr. Les voilà.~
+@228  = ~Non, je préfère les garder pour moi.~
+
+/* @229 is the same as @229 in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@229  = ~Je vous remercie. Prenez ceci en compensation.~
+
+@230  = ~Je vois. Mais je vous en prie, apportez-les moi dès que vous pourrez vous en passer.~
+@231  = ~Étudier ce type de vieux tomes m'intéresse énormément.~
+
+/* @232 is the same as @232 in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@232  = ~Voici des recherches sur la nécromancie et contenant des informations sur Bhaal que j'ai trouvé dans la tombe de la famille de Korlasz. Il me semble que vous y portez un certain intérêt.~
+
+@233  = ~[Dynahéir]Tu es maintenant un enfant de Bhaal très puissant. Mais ton voyage n'est pas terminé, et le notre non plus d'ailleurs.~
+@234  = ~[Minsc]Il reste encore des serviteurs du mal à qui il faut botter les fesses, et Boo dit que Minsc doit continuer à se charger d'eux !~
+@235  = ~[Jaheira]Tu as parcouru un long chemin. Nous avons promis à Gorion de veiller sur toi, mais tu as dépassé nos espérances en matière de survie. À partir de maintenant, nous surveillerons surtout que tu ne succombes pas à ton héritage maléfique.~
+@236  = ~[Khalid]G-Gorion serait fier de vos exploits. Nous viendrons avec vous, et vous aiderons face à n'importe quel obstacle qui p-pourrait survenir.~
+@237  = ~Oh génial, dormir et ne rien faire, j'adore ça ! Bien que... Je crois que les dieux ne nous laisseront pas faire, et je parle par expérience.~
+
+
+/* pc_palaceresidence.d */
+/* new for v9 */
+@350  = ~Ce lit confortable est d'un luxe incomparable à ceux de Château-Suif.~
+@351  = ~Vous vous mettez au lit pour vous reposer et passer une bonne nuit de sommeil (8 heures).~
+@352  = ~Vous passez le temps jusqu'à minuit.~
+@353  = ~Vous passez le temps jusqu'à onze heures du soir.~
+@354  = ~Vous passez le temps jusqu'à midi.~
+@355  = ~Vous passez le temps jusqu'à onze heures du matin.~
+@356  = ~Vous passez le temps jusqu'à dix heures du matin.~
+@357  = ~Vous passez le temps jusqu'à ce que l'aube se lève (6 heures).~
+@358  = ~Vous passez le temps jusqu'à ce que l'aube se termine (7 heures).~
+@359  = ~Vous passez le temps jusqu'au début du crépuscule (21 heures).~
+@360  = ~Vous passez le temps jusqu'à la fin du crépuscule (22 heures).~
+@361  = ~Vous vous détournez du lit.~
