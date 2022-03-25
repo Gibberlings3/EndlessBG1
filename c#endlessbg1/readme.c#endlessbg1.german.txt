@@ -141,6 +141,8 @@ Nachdem Sarevok besiegt ist, wird mit dieser Komponente der Ausgang aus der Unte
 -----------------------------------
 Diese Komponente verschiebt Korlasz' Krypta in den BG1-Teil des Spiels. Die Gruppe wird in den Dungeon transferiert, wenn der HC im Gespräch mit Herzog Belt bereit ist, Sarevoks letzte Anhängerin zu stellen. Der Dungeon kann dann nach Belieben verlassen und wieder betreten werden, und ist auch in SoD erreichbar (in der Gegend mit dem Eisenthrongebäude). 
 Imoen bleibt im Dungeon in der Gruppe, wenn sie ein Gruppenmitglied ist, und spricht ihre originalen Dialoge im Dungeon wie im Originalspiel. Wenn sie nicht in der Gruppe ist, dann wird sie wie im originalen SoD als Guide im Dungeon anwesend sein. 
+
+Alle originalen NPCs verwenden ihren normalen SoD Joined-Dialogu und SoD OVERRIDE Script in Korlasz' Dungeon wie hier beschrieben: https://www.gibberlings3.net/forums/topic/34948-how-to-original-npc-scripts-and-dialogue-in-korlasz-tomb-and-compatibility-with-endlessbg1-and-transitions-community-effort/
 Der Übergang zu SoD ist dann nach dem Bekämpfen von Korlasz im Dialog mit Herzog Belt, wenn der HC ihm sagt, dass er nun einen Zehntag gar nichts machen wird, um für das nächste Problem, dass einen Helden benötigt, bereit zu sein.
 Ein neu gestartetes SoD-Spiel ist nicht von den Änderungen betroffen.
 
@@ -247,6 +249,12 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 10:
+-PC now gets keyring when visiting Korlasz' Tomb for the first time.
+-Original NPCs use SoD joined dialogue inside Korlasz' Crypt always.
+-Updated install order syntax for Project Infinity.
+-Updated description of component 14 in the readme.
 
 Version 9:
 -New optional component "Korlasz' Dungeon is in BG1": moves Koralsz' Tomb into BG1 after Sarevok's death. Transition to SoD / BGII after it is done.

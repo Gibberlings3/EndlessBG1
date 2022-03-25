@@ -83,6 +83,8 @@ IF
 THEN
 	RESPONSE #100
         	MoveGlobal("%NBaldursGate_DucalPalace_L3%","%IMOEN_DV%",[1016.704]) 
+		ActionOverride("%IMOEN_DV%",SetDialog("%IMOEN_JOINED%"))
+		ActionOverride("%IMOEN_DV%",ChangeAIScript("%IMOEN_BCS%",OVERRIDE))
 		ApplySpellRES("%bddispel%","%IMOEN_DV%")  
 		SetGlobal("C#st_SpawnServant2","MYAREA",1)
 END

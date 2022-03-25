@@ -152,6 +152,7 @@ Après la mort de Sarevok, quitter Ombreville emmènera directement dans la guil
 Ce composant place la tombe de Korlasz la partie du jeu de BG1. L'entrée transporte le groupe dans le donjon après que Belt ait dit au PC de venir pour entendre les détails de la poursuite des derniers serviteurs de Sarevok. 
 Il est ensuite possible de quitter et d'entrer dans le donjon à volonté, qui est aussi disponible dans SoD (dans la zone du bâtiment du Trône de Fer).
 Imoen restera dans le groupe si elle faisait partie du groupe précédemment, et aura ses dialogues originaux de SoD à l'intérieur de la tombe. Si elle ne fait pas partie du groupe, Imoen se trouvera dans le donjon agissant en tant que guide comme dans la partie originale de SoD.
+All original NPCs will use their normal SoD joined dialogue and SoD OVERRIDE scripts inside Korlasz' Dungeon as pointed out here: https://www.gibberlings3.net/forums/topic/34948-how-to-original-npc-scripts-and-dialogue-in-korlasz-tomb-and-compatibility-with-endlessbg1-and-transitions-community-effort/
 La transition vers SoD se fait après le dialogue avec le duc Belt, quand le joueur annoncera qu'il ne fera rien et se reposera pendant les jours à venir, à moins qu'un nouveau problème apparaisse et nécessite l'intervention d'un héros.
 Ces changements ne s'appliquent pas à une nouvelle partie de SoD.
 
@@ -257,6 +258,12 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 10:
+-PC now gets keyring when visiting Korlasz' Tomb for the first time.
+-Original NPCs use SoD joined dialogue inside Korlasz' Crypt always.
+-Updated install order syntax for Project Infinity.
+-Updated description of component 14 in the readme.
 
 Version 9:
 -New optional component "Korlasz' Dungeon is in BG1": moves Koralsz' Tomb into BG1 after Sarevok's death. Transition to SoD / BGII after it is done.

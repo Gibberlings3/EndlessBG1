@@ -184,6 +184,8 @@
 @236  = ~[Khalid]Горион г-гордился бы твоими успехами. Мы пойдем за тобой и поможем с л-любой задачей.~
 @237  = ~О-о-о, да! Спать и *ничего* не делать! Отличный план, <CHARNAME>! Хотя... судя по всему, боги не дадут нам ни минуты покоя!~
 
+@238  = ~Take this as well. It is no powerful magic item, but it will come in handy - a hero needs to have their keys ready not to lose cucial time due to such a trivial thing.~
+
 /* pc_palaceresidence.d */
 /* new for v9 */
 @350  = ~Эта кровать дает ощущение удобства и роскоши, какое вы никогда не чувствовали в Кендлкипе.~

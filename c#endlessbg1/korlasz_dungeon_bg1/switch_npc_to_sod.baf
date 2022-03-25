@@ -1,0 +1,307 @@
+/* the game expects the original NPCs to speak with their SoD dlg inside Korlasz' Dungeon so we change them (and also the scripts to prevent BG1 dialogues to fire while the group is inside) - while in BG1 only (checks for "Global("SOD_fromimport","global",2)" which will be set to "1" upon transition to real SoD campaign) and to "0" for direct BGII transition (after Korlasz Tomb is done)  */
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("%IMOEN_DV%")  // Imoen
+	InPartyAllowDead("%IMOEN_DV%")
+	GlobalLT("C#EBG1_imoen_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("%IMOEN_DV%",SetDialog("BDIMOEN"))
+		SetGlobal("C#EBG1_imoen_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("dynaheir")  // Dynaheir
+	GlobalLT("C#EBG1_dynaheir_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("dynaheir",SetDialog("bddynahj"))
+		SetGlobal("C#EBG1_dynaheir_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("minsc")  // Minsc
+	GlobalLT("C#EBG1_minsc_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("minsc",SetDialog("bdminscj"))
+		SetGlobal("C#EBG1_minsc_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("rasaad")  // Rasaad
+	GlobalLT("C#EBG1_Rasaad_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Rasaad",SetDialog("bdRasaaj"))
+		SetGlobal("C#EBG1_Rasaad_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Viconia")  // Viconia
+	GlobalLT("C#EBG1_Viconia_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Viconia",SetDialog("bdViconj"))
+		SetGlobal("C#EBG1_Viconia_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Safana")  // Safana
+	GlobalLT("C#EBG1_Safana_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Safana",SetDialog("bdSafanj"))
+		SetGlobal("C#EBG1_Safana_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Edwin")  // Edwin
+	GlobalLT("C#EBG1_Edwin_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Edwin",SetDialog("bdEdwinj"))
+		SetGlobal("C#EBG1_Edwin_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Jaheira")  // Jaheira
+	GlobalLT("C#EBG1_Jaheira_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Jaheira",SetDialog("bdJaheij"))
+		SetGlobal("C#EBG1_Jaheira_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Khalid")  // Khalid
+	GlobalLT("C#EBG1_Khalid_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Khalid",SetDialog("bdKhalij"))
+		SetGlobal("C#EBG1_Khalid_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Dorn")  // Dorn
+	GlobalLT("C#EBG1_Dorn_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Dorn",SetDialog("bdDornj"))
+		SetGlobal("C#EBG1_Dorn_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Neera")  // Neera
+	GlobalLT("C#EBG1_Neera_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Neera",SetDialog("bdNeeraj"))
+		SetGlobal("C#EBG1_Neera_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Baeloth")  // Baeloth
+	GlobalLT("C#EBG1_Baeloth_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Baeloth",SetDialog("bdBaeloj"))
+		SetGlobal("C#EBG1_Baeloth_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Ajantis")  // Ajantis
+	GlobalLT("C#EBG1_Ajantis_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Ajantis",SetDialog("bdAjantj"))
+		SetGlobal("C#EBG1_Ajantis_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Alora")  // Alora
+	GlobalLT("C#EBG1_Alora_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Alora",SetDialog("bdAloraj"))
+		SetGlobal("C#EBG1_Alora_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Branwen")  // Statue
+	GlobalLT("C#EBG1_Branwen_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Branwen",SetDialog("bdBranwj"))
+		SetGlobal("C#EBG1_Branwen_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Coran")  // Coran
+	GlobalLT("C#EBG1_Coran_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Coran",SetDialog("bdCoranj"))
+		SetGlobal("C#EBG1_Coran_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Eldoth")  // Eldoth
+	GlobalLT("C#EBG1_Eldoth_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Eldoth",SetDialog("bdEldotj"))
+		SetGlobal("C#EBG1_Eldoth_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Faldorn")  // Faldorn
+	GlobalLT("C#EBG1_Faldorn_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Faldorn",SetDialog("bdFaldoj"))
+		SetGlobal("C#EBG1_Faldorn_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Garrick")  // Garrick
+	GlobalLT("C#EBG1_Garrick_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Garrick",SetDialog("bdGarrij"))
+		SetGlobal("C#EBG1_Garrick_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Kagain")  // Kagain
+	GlobalLT("C#EBG1_Kagain_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Kagain",SetDialog("bdKagaij"))
+		SetGlobal("C#EBG1_Kagain_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Kivan")  // Kivan
+	GlobalLT("C#EBG1_Kivan_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Kivan",SetDialog("bdKivanj"))
+		SetGlobal("C#EBG1_Kivan_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Montaron")  // Montaron
+	GlobalLT("C#EBG1_Montaron_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Montaron",SetDialog("bdMontaj"))
+		SetGlobal("C#EBG1_Montaron_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Quayle")  // Quayle
+	GlobalLT("C#EBG1_Quayle_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Quayle",SetDialog("bdQuaylj"))
+		SetGlobal("C#EBG1_Quayle_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	OR(2)
+		InMyArea("Shar-Teel")
+		InMyArea("SharTeel")  // Shar-Teel
+	GlobalLT("C#EBG1_SharTeel_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Shar-Teel",SetDialog("bdSharTj"))
+		ActionOverride("SharTeel",SetDialog("bdSharTj"))
+		SetGlobal("C#EBG1_SharTeel_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Skie")  // Skie
+	GlobalLT("C#EBG1_Skie_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Skie",SetDialog("bdSkiej"))
+		SetGlobal("C#EBG1_Skie_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Tiax")  // Tiax
+	GlobalLT("C#EBG1_Tiax_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Tiax",SetDialog("bdTiaxj"))
+		SetGlobal("C#EBG1_Tiax_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Xan")  // Xan
+	GlobalLT("C#EBG1_Xan_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Xan",SetDialog("bdXanj"))
+		SetGlobal("C#EBG1_Xan_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Xzar")  // Xzar
+	GlobalLT("C#EBG1_Xzar_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Xzar",SetDialog("bdXzarj"))
+		SetGlobal("C#EBG1_Xzar_to_sod","global",2)
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Yeslick")  // Yeslick
+	GlobalLT("C#EBG1_Yeslick_to_sod","global",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Yeslick",SetDialog("bdYeslij"))
+		SetGlobal("C#EBG1_Yeslick_to_sod","global",2)
+END
+
+/* Also add invisible cre to reset it if save was loaded. */
+IF
+	InMyArea(Player1)
+	Global("SOD_fromimport","global",2)
+	Global("C#EBG1_spawn_helper","MYAREA",0)
+THEN
+	RESPONSE #100		
+		SetGlobal("C#EBG1_spawn_helper","MYAREA",1)
+		CreateCreature("c#ebg1hc",[0.0],0)
+END
+

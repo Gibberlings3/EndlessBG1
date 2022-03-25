@@ -1,0 +1,296 @@
+/* the game expects the original NPCs to speak with their SoD dlg inside Korlasz' Dungeon so we change them (and also the scripts to prevent BG1 dialogues to fire while the group is inside) - while in BG1 only (checks for "Global("SOD_fromimport","global",2)" which will be set to "1" upon transition to real SoD campaign) and to "0" for direct BGII transition (after Korlasz Tomb is done)  */
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("%IMOEN_DV%")  // Imoen
+	InPartyAllowDead("%IMOEN_DV%")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("%IMOEN_DV%",SetDialog("BDIMOEN"))
+		ActionOverride("%IMOEN_DV%",ChangeAIScript("BDIMOEN",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("dynaheir")  // Dynaheir
+THEN
+	RESPONSE #100		
+		CutSceneId(Player1)
+		ActionOverride("dynaheir",SetDialog("bddynahj"))
+		ActionOverride("dynaheir",ChangeAIScript("bddynahe",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("minsc")  // Minsc
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("minsc",SetDialog("bdminscj"))
+		ActionOverride("minsc",ChangeAIScript("bdminsc",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("rasaad")  // Rasaad
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Rasaad",SetDialog("bdRasaaj"))
+		ActionOverride("Rasaad",ChangeAIScript("bdrasaad",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Viconia")  // Viconia
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Viconia",SetDialog("bdViconj"))
+		ActionOverride("Viconia",ChangeAIScript("bdviconi",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Safana")  // Safana
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Safana",SetDialog("bdSafanj"))
+		ActionOverride("Safana",ChangeAIScript("bdsafana",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Edwin")  // Edwin
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Edwin",SetDialog("bdEdwinj"))
+		ActionOverride("Edwin",ChangeAIScript("bdedwin",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Jaheira")  // Jaheira
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Jaheira",SetDialog("bdJaheij"))
+		ActionOverride("Jaheira",ChangeAIScript("bdjaheir",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Khalid")  // Khalid
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Khalid",SetDialog("bdKhalij"))
+		ActionOverride("Khalid",ChangeAIScript("bdkhalid",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Dorn")  // Dorn
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Dorn",SetDialog("bdDornj"))
+		ActionOverride("Dorn",ChangeAIScript("bddorn",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Neera")  // Neera
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Neera",SetDialog("bdNeeraj"))
+		ActionOverride("Neera",ChangeAIScript("bdneera",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Baeloth")  // Baeloth
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Baeloth",SetDialog("bdBaeloj"))
+		ActionOverride("Baeloth",ChangeAIScript("bdbaelot",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Ajantis")  // Ajantis
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Ajantis",SetDialog("bdAjantj"))
+		ActionOverride("Ajantis",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Alora")  // Alora
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Alora",SetDialog("bdAloraj"))
+		ActionOverride("Alora",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Branwen")  // Statue
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Branwen",SetDialog("bdBranwj"))
+		ActionOverride("Branwen",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Coran")  // Coran
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Coran",SetDialog("bdCoranj"))
+		ActionOverride("Coran",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Eldoth")  // Eldoth
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Eldoth",SetDialog("bdEldotj"))
+		ActionOverride("Eldoth",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Faldorn")  // Faldorn
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Faldorn",SetDialog("bdFaldoj"))
+		ActionOverride("Faldorn",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Garrick")  // Garrick
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Garrick",SetDialog("bdGarrij"))
+		ActionOverride("Garrick",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Kagain")  // Kagain
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Kagain",SetDialog("bdKagaij"))
+		ActionOverride("Kagain",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Kivan")  // Kivan
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Kivan",SetDialog("bdKivanj"))
+		ActionOverride("Kivan",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Montaron")  // Montaron
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Montaron",SetDialog("bdMontaj"))
+		ActionOverride("Montaron",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Quayle")  // Quayle
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Quayle",SetDialog("bdQuaylj"))
+		ActionOverride("Quayle",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	OR(2)
+		InMyArea("Shar-Teel")
+		InMyArea("SharTeel")  // Shar-Teel
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Shar-Teel",SetDialog("bdSharTj"))
+		ActionOverride("Shar-Teel",ChangeAIScript("",OVERRIDE))
+		ActionOverride("SharTeel",SetDialog("bdSharTj"))
+		ActionOverride("SharTeel",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Skie")  // Skie
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Skie",SetDialog("bdSkiej"))
+		ActionOverride("Skie",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Tiax")  // Tiax
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Tiax",SetDialog("bdTiaxj"))
+		ActionOverride("Tiax",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Xan")  // Xan
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Xan",SetDialog("bdXanj"))
+		ActionOverride("Xan",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Xzar")  // Xzar
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Xzar",SetDialog("bdXzarj"))
+		ActionOverride("Xzar",ChangeAIScript("",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Yeslick")  // Yeslick
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Yeslick",SetDialog("bdYeslij"))
+		ActionOverride("Yeslick",ChangeAIScript("",OVERRIDE))
+END
