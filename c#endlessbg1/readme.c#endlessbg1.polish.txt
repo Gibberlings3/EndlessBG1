@@ -166,10 +166,10 @@ Po zabiciu Sarevoka, wyjœcie z Podziemnego Miasta pominie labirynt z³odziei i po
 14. Krypta Korlasz bêdzie dostêpna w BG1
 -----------------------------------
 
-Wraz z tym komponentem krypta rodziny Korlasz bêdzie dostêpna ju¿ podczas rozgrywki w Baldur's Gate 1. Dru¿yna zostanie przeniesiona do grobowca zaraz po tym jak g³ówny bohater porozmawia z ksiêciem Beltem o poœcigu za ostatnimi poplecznikami Sarevoka.
+Wraz z tym komponentem krypta rodziny Korlasz bêdzie dostêpna ju¿ podczas rozgrywki w Baldur's Gate 1. Dru¿yna zostanie przeniesiona do grobowca w momencie, gdy g³ówny bohater porozmawia z ksiêciem Beltem o poœcigu za ostatnimi poplecznikami Sarevoka.
 Po rozpoczêciu tego zadania podziemia bêd¹ otwarte, wiêc bêdzie mo¿na do nich wejœæ i z nich wyjœæ w dowolnym momencie. Krypta bêdzie tak¿e dostêpna podczas rozgrywki SoD (lokacja z siedzib¹ ¯elaznego Tronu).
 Wewn¹trz krypty Imoen pozostanie w grupie, o ile do niej nale¿a³a, a jej kwestie dialogowe bêd¹ takie same jak w SoD. Jeœli Imoen nie przynale¿y do dru¿yny, to bêdzie przewodnikiem, tak jak jest to zrealizowane w oryginalnym SoD.
-All original NPCs will use their normal SoD joined dialogue and SoD OVERRIDE scripts inside Korlasz' Dungeon as pointed out here: https://www.gibberlings3.net/forums/topic/34948-how-to-original-npc-scripts-and-dialogue-in-korlasz-tomb-and-compatibility-with-endlessbg1-and-transitions-community-effort/
+Wszyscy oryginalni NPC wypowiedz¹ swoj¹ standardow¹ powitaln¹ kwestiê z dodatku SoD i bêd¹ korzystaæ ze skrypotów z katalogu Override wewn¹trz Krypty Korlasz (wiêcej o tym mo¿na przeczytaæ tutaj: https://www.gibberlings3.net/forums/topic/34948-how-to-original-npc-scripts-and-dialogue-in-korlasz-tomb-and-compatibility-with-endlessbg1-and-transitions-community-effort/).
 Aby przejœæ do kampanii SoD, nale¿y porozmawiaæ z ksiêciem Beltem o chêci nierobienia nic przez dziesiêæ dni.
 Zmiany te nie afektuj¹ nowej gry bezpoœrednio w kampanii SoD.
 
