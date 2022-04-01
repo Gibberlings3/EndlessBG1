@@ -1382,7 +1382,7 @@ EXTEND_TOP ~bd0130.BCS~ ~c#endlessbg1/korlasz_dungeon_bg1/c#ebg1_imo_bd0130.baf~
 /* the game expects the original NPCs to speak with their SoD dlg inside Korlasz' Dungeon so we change them (and also the scripts to prevent BG1 dialogues to fire while the group is inside) back and forth. - while in BG1 only: script checks for "Global("SOD_fromimport","global",2)" (which will be set to "1" upon transition to real SoD campaign and to "0" for direct BGII transition after Korlasz Tomb is done)  */
 /* change to SoD dialogue and scripts */
 /* add the first change to bdintro.bcs so beginnings cutscene in bd0120.are does not hickup */
-EXTEND_TOP ~bdintro.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_npc_to_sod_cutscene.baf~ EVALUATE_BUFFER 
+EXTEND_TOP ~bdintro.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_dlgs/switch_npc_to_sod_cutscene.baf~ EVALUATE_BUFFER 
 /* script for invisible helper cre */
 <<<<<<<< .../c#ebg1hc.baf
 
@@ -1438,7 +1438,7 @@ END
 >>>>>>>>
 COMPILE ~.../c#ebg1hc.baf~ EVALUATE_BUFFER
 /* invisible helper cre */
-COPY ~c#endlessbg1/korlasz_dungeon_bg1/c#ebg1hc.cre~ ~override/c#ebg1hc.cre~ //
+COPY ~c#endlessbg1/korlasz_dungeon_bg1/switch_dlgs/c#ebg1hc.cre~ ~override/c#ebg1hc.cre~ //
    SAY NAME1 ~~ 
    SAY NAME2 ~~ 
 WRITE_EVALUATED_ASCII 0x280 ~c#ebg1hc~ #8   // Death variable
@@ -1447,12 +1447,12 @@ WRITE_EVALUATED_ASCII 0x248 ~c#ebg1hc~ #8   // Override script
 WRITE_EVALUATED_ASCII 0x260 ~~ #8   // General script
 
 /* add script blocks to bd0120.bcs and bd0130.bcs in case group revisits Korlasz crypt later. */
-EXTEND_BOTTOM ~bd0120.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_npc_to_sod.baf~ EVALUATE_BUFFER
-EXTEND_BOTTOM ~bd0130.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_npc_to_sod.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bd0120.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_dlgs/switch_npc_to_sod.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bd0130.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_dlgs/switch_npc_to_sod.baf~ EVALUATE_BUFFER
 
 /* change back to BG1 ones */
 /* we just patch this to the cutscne that teleports the group out of the dungeon */
-EXTEND_TOP ~c#st2bc.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_npc_to_bg1_cutscene.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~c#st2bc.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_dlgs/switch_npc_to_bg1_cutscene.baf~ EVALUATE_BUFFER
 
 
 
