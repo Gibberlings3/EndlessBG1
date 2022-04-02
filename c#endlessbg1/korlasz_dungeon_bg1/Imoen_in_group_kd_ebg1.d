@@ -17,19 +17,6 @@ END
 
 /* ADD_TRANS_TRIGGER BDIMOEN 9 ~!InParty("%IMOEN_DV%")~ DO 9 */
 
-/* turn this into Dialogue */
-REPLACE_STATE_TRIGGER BDIMOEN 9 ~GlobalLT("C#EBG1_IntermediateDialogue","LOCALS",2)
-OR(2)
-Global("C#EBG1_IntermediateDialogue","LOCALS",1) Global("bd_plot","global",10)
-OR(2)
-AreaCheck("bd0120")
-AreaCheck("bd0130")
-/* not after Korlasz is defeated */
-!Dead("bdkorlas")  // Korlasz
-!Global("BD_KORLASZ_SURRENDER","GLOBAL",1)~
-ADD_TRANS_ACTION BDIMOEN BEGIN 9 END BEGIN END ~SetGlobal("C#EBG1_IntermediateDialogue","LOCALS",2)~
-
-
 /* ADD_TRANS_TRIGGER BDIMOEN 12 ~!InParty("%IMOEN_DV%")~ DO 9 */
 
 EXTEND_BOTTOM BDIMOEN 9 12 

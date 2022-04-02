@@ -19,7 +19,7 @@ Il y a plusieurs composants optionnels qui donnent plus de prestige pour le PJ e
 
 DESCRIPTION
 
-Note: although most components are optional, it is assumed that components get installed in the correct order of their appearance. Do not install later components before earlier ones, as it might mess up functionality.
+Note : bien que la plupart des composants soient optionnels, il est supposé que ces composants sont installés dans leur ordre d'apparition lors de l'installation. N'installez pas les derniers composants avant les premiers car cela pourrait perturber le bon fonctionnement du mod.
 
 1 Composant principal (requis)
 -----------------------------------
@@ -33,7 +33,7 @@ Pour BG:EE, BG:SoD, et EET, ce composant ajoute les fonctionnalités suivantes :
 - Le Duc Belt nommera le PJ "Héros de la Porte de Baldur".
 - Dans les dialogues avec le Duc Belt, le joueur peut décider de :
 	- rester dans le monde de BG1
-	- quitter le monde de BG1 (BG:EE: Fin du jeu, SoD/EET: début de la campagne de SoD)
+	- quitter le monde de BG1 (BG:EE : Fin du jeu, SoD/EET : début de la campagne de SoD)
 	- (uniquement pour EET) complètement passer SoD et commencer BG2 directement.
 
 Pour BGT, ce composant supprime certains éléments faisant référence à Sarevok après sa mort. 
@@ -45,11 +45,11 @@ Pour toutes les installations, le Duc Belt donne au PJ des quartiers au dernier 
 
 Pour BGT, ce composant ajoute également d'autres lignes de dialogue au Duc Belt après la défaite de Sarevok, reflétant le PJ comme étant le Héros de la Porte de Baldur.
 
-La pièce au nord-ouest du dernier étage du palais se retrouve assignée au PJ. Un domestique sera là pour donner accès au PJ à un coffre personnel: c'est le "même" que celui dans SoD qui permet de transférer ses objets au premier camp. Ce coffre (le plus à l'ouest de la pièce) sera déverrouillé. Pour SoD/EET, le contenu sera déplacé dans le "même" coffre de la campagne de SoD (in bd0103.are) automatiquement. Pour les jeux EE, tous les coffres dans la nouvelle résidence du PJ seront vidés, et les contenus seront dans les tiroirs du premier étage du palais.
+La pièce au nord-ouest du dernier étage du palais se retrouve assignée au PJ. Un domestique sera là pour donner accès au PJ à un coffre personnel : c'est le "même" que celui dans SoD qui permet de transférer ses objets au premier camp. Ce coffre (le plus à l'ouest de la pièce) sera déverrouillé. Pour SoD/EET, le contenu sera déplacé dans le "même" coffre de la campagne de SoD (in bd0103.are) automatiquement. Pour les jeux EE, tous les coffres dans la nouvelle résidence du PJ seront vidés, et les contenus seront dans les tiroirs du premier étage du palais.
 
 Ce composant change aussi les dialogues des gardes à l'intérieur du palais afin qu'ils soient plus amicaux envers le PJ (les gardes dans le cellier ne seront plus hostiles) et ajoute des gardes amicaux devant le palais également. 
 
-Note: Si "Jarl's Adventure Pack" v0.8.0 est installé après Endless BG1, ouvrir les coffres sera considéré comme du vol - dans ce cas, les coffres du dernier étage du palais ne pourront pas être utilisés par le groupe malgré que le serviteur dise l'inverse. Installez Jarl's Adventure Pack avant Endless BG1 pour ne pas avoir ce problème.
+Note : Si "Jarl's Adventure Pack" v0.8.0 est installé après Endless BG1, ouvrir les coffres sera considéré comme du vol - dans ce cas, les coffres du dernier étage du palais ne pourront pas être utilisés par le groupe malgré que le serviteur dise l'inverse. Installez Jarl's Adventure Pack avant Endless BG1 pour ne pas avoir ce problème.
 
 
 3 Court hommage au Héros (SoD/EET Uniquement)
@@ -61,7 +61,7 @@ Avec ce composant, la nomination du PJ en tant que "Héros de la Porte de Baldur
 
 4 Les objets uniques de Sarevok
 -----------------------------------
-Ce composant ajoute des objets uniques à Sarevok, qu'il laissera tomber lors de sa mort: une armure et un casque.
+Ce composant ajoute des objets uniques à Sarevok, qu'il laissera tomber lors de sa mort : une armure et un casque.
 
 L'armure donne une classe d'armure de -1,  30% de résistance à la magie, et pèse 70 livres.
 
@@ -69,8 +69,8 @@ Le casque donne 5% de résistance à la magie.
 
 Sarevok laissera tomber ces objets lors de sa mort. Ils pourront être ramassés à ce moment. 
 
-Les BAMs pour l'armure et le casque ont été crées par Tantalus pour son mod "Sarevok Recovery Mod", sous licence "Creative Commons": CC BY-NC-SA 3.0. ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
-Lien vers "Sarevok Recovery Mod" par Tantalus: http://www.baldursgate-refugium.de/mods/sarevok-wiederherstellung/ 
+Les BAMs pour l'armure et le casque ont été crées par Tantalus pour son mod "Sarevok Recovery Mod", sous licence "Creative Commons" : CC BY-NC-SA 3.0. ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
+Lien vers "Sarevok Recovery Mod" par Tantalus : http://www.baldursgate-refugium.de/mods/sarevok-wiederherstellung/ 
 
 
 5 L'épée de Sarevok
@@ -81,7 +81,7 @@ Pour BGT, l'épée de Sarevok sera volée à la sortie du labyrinthe par quelqu'
 
 Pour les jeux EE, l'épée de Sarevok peut être donnée aux ducs. (En lien avec les événements de SoD lorsqu'il est dit que l'épée à été volée au palais ducal) 
 
-Note: Si vous avez installé ce composant et "Put Sword of Chaos +2 in Sarevok's inventory" depuis BGT Tweaks, Sarevok laissera tomber deux épées.
+Note : Si vous avez installé ce composant et "Put Sword of Chaos +2 in Sarevok's inventory" depuis BGT Tweaks, Sarevok laissera tomber deux épées.
 
 
 6 Imoen et la duchesse Jannath (Imoen réside à l’intérieur du palais)
@@ -91,7 +91,7 @@ Avec ce composant installé, la duchesse Jannath sera en vie et à l'intérieur 
 Imoen aura à sa disposition une chambre au sud-est du dernier étage du palais. Si elle se trouve dans le groupe, un serviteur viendra lui souhaiter la bienvenue et lui dire qu'elle a un coffre personnel qui sera celui le plus à l'ouest de sa chambre ("Le coffre d'Imoen" dans SoD). Le coffre sera déverrouillé. Pour les jeux EE, le contenu de la plupart des coffres sera déplacé un étage plus bas dans les tiroirs du premier étage du palais. Pour SoD/EET, le contenu sera automatiquement déplacé dans le "même" coffre de la campagne de SoD.
 
 Au cas où Imoen ne se trouve pas dans le groupe, elle sera dans sa nouvelle résidence dans le dernier étage du palais et parlera elle-même de son coffre.
-Le dialogue du renvoi d'Imoen du groupe a été altéré, en lien avec sa nouvelle résidence: après avoir reçu sa nouvelle chambre, Imoen peut être envoyée au palais lorsqu'elle est renvoyée du groupe. Cela devrait être compatible avec les autres mods "envoyer le PNJ attendre quelque part" (Cela fait appel à un dialogue intermédiaire qui reviendra au dialogue initial si le PC ne veut pas qu'elle attende au Palais).
+Le dialogue du renvoi d'Imoen du groupe a été altéré, en lien avec sa nouvelle résidence : après avoir reçu sa nouvelle chambre, Imoen peut être envoyée au palais lorsqu'elle est renvoyée du groupe. Cela devrait être compatible avec les autres mods "envoyer le PNJ attendre quelque part" (Cela fait appel à un dialogue intermédiaire qui reviendra au dialogue initial si le PC ne veut pas qu'elle attende au Palais).
 
 
 7 Le Duc Eltan se trouve au palais.
@@ -100,11 +100,11 @@ Avec ce composant installé, le Duc Eltan sera vivant et se trouvera au palais. 
 
 En ce qui concerne la compatibilité avec la quête de BG1RE "Scar's Return", EBG1 est entièrement compatible avec le mod BG1RE v3.0 ou plus. Vous pouvez compléter et même commencer la quête "Scar's return" du mod BG1RE après la mort de Sarevok en parlant au Duc Eltan à l'intérieur du palais. Il n'y a plus besoin de commencer cette quête avant la mort de Sarevok.
 
-Note pour les modders en ce qui concerne la compatibilité: ce composant ajoute un fichier cre "C#STELTA.cre" qui contient le DV "ELTAN" et le dialogue "DELTAN2.dlg" avec un état de dialogue "always true" en ce qui concerne la ligne "~Vous nous avez sauvés. La ville entière vous est reconnaissante.~", qui se déclenche par ~Dead("Sarevok")~.
+Note pour les modders en ce qui concerne la compatibilité : ce composant ajoute un fichier cre "C#STELTA.cre" qui contient le DV "ELTAN" et le dialogue "DELTAN2.dlg" avec un état de dialogue "always true" en ce qui concerne la ligne "~Vous nous avez sauvés. La ville entière vous est reconnaissante.~", qui se déclenche par ~Dead("Sarevok")~.
 
 N'ajoutez PAS une ligne qui dit "~Vous nous avez sauvés. La ville entière vous est reconnaissante.~" avec votre propre mod pour le Duc Eltan, ou la compatibilité ne fonctionnera plus.
 
-Vous pouvez ajouter des options de réponses à cette ligne si votre mod s'installe après EBG1. Pour déterminer le numéro d'état de cette ligne dans DELTAN2.DLG, utilisez le code suivant dans le tp2, avec %deltan2_70% étant la variable dans l'état de dialogue: 
+Vous pouvez ajouter des options de réponses à cette ligne si votre mod s'installe après EBG1. Pour déterminer le numéro d'état de cette ligne dans DELTAN2.DLG, utilisez le code suivant dans le tp2, avec %deltan2_70% étant la variable dans l'état de dialogue : 
 
 //----code pour déterminer le numéro d'état---
 // Get state for DELTAN2 %deltan2_70% 
@@ -116,15 +116,15 @@ OUTER_SET deltan2_70 = STATE_WHICH_SAYS 70 IN ~c#endlessbg1/translations/%s/DIAL
 
 8 Arrivée du Poing Enflammé après le combat final
 -----------------------------------
-Après que Sarevok et ses trois serviteurs dans le temple d'Ombreville sont vaincus, un soigneur et un éclaireur du Poing Enflammé viendront dans le temple pour emmener les corps. Ils offrent aussi la possibilité de soigner et ressusciter les membres du groupe, en plus de désamorcer les pièges sur le symbole de Bhaal. (note: cela n'inclut pas les zones de déclenchement d'apparition des Horreurs Guerrières sur les côtés du temple). Le joueur peut refuser cette offre. 
+Après que Sarevok et ses trois serviteurs dans le temple d'Ombreville sont vaincus, un soigneur et un éclaireur du Poing Enflammé viendront dans le temple pour emmener les corps. Ils offrent aussi la possibilité de soigner et ressusciter les membres du groupe, en plus de désamorcer les pièges sur le symbole de Bhaal. (note : cela n'inclut pas les zones de déclenchement d'apparition des Horreurs Guerrières sur les côtés du temple). Le joueur peut refuser cette offre. 
 
 
 9 Elminster fait une apparition
 -----------------------------------
 Elminster apparaîtra une fois de plus devant le palais.
-Il y a deux possibilités d'installation: 
-1 - Version de Jastey (comme dans la première version de EBG1) (note du traducteur: Ces lignes de dialogues sont plus cohérentes avec BG:EE + SoD et EET)
-2 - Texte de BG1 restauré (cette version restaure des lignes de dialogues inutilisées de BG1) (note du traducteur: Ces lignes de dialogues sont plus cohérentes avec BG:EE et BGT)
+Il y a deux possibilités d'installation : 
+1 - Version de Jastey (comme dans la première version de EBG1) (note du traducteur : Ces lignes de dialogues sont plus cohérentes avec BG:EE + SoD et EET)
+2 - Texte de BG1 restauré (cette version restaure des lignes de dialogues inutilisées de BG1) (note du traducteur : Ces lignes de dialogues sont plus cohérentes avec BG:EE et BGT)
 
 
 10 Les premiers réfugiés arrivent à la Porte de Baldur (SoD/EET uniquement)
@@ -152,6 +152,7 @@ Après la mort de Sarevok, quitter Ombreville emmènera directement dans la guil
 Ce composant place la tombe de Korlasz la partie du jeu de BG1. L'entrée transporte le groupe dans le donjon après que Belt ait dit au PC de venir pour entendre les détails de la poursuite des derniers serviteurs de Sarevok. 
 Il est ensuite possible de quitter et d'entrer dans le donjon à volonté, qui est aussi disponible dans SoD (dans la zone du bâtiment du Trône de Fer).
 Imoen restera dans le groupe si elle faisait partie du groupe précédemment, et aura ses dialogues originaux de SoD à l'intérieur de la tombe. Si elle ne fait pas partie du groupe, Imoen se trouvera dans le donjon agissant en tant que guide comme dans la partie originale de SoD.
+Tous les PNJ d'origine utiliseront leurs dialogues de SoD pour rejoindre le groupe, ainsi que les scripts de SoD OVERRIDE à l'intérieur du donjon de Korlasz, comme indiqué ici : https://www.gibberlings3.net/forums/topic/34948-how-to-original-npc-scripts-and-dialogue-in-korlasz-tomb-and-compatibility-with-endlessbg1-and-transitions-community-effort/
 La transition vers SoD se fait après le dialogue avec le duc Belt, quand le joueur annoncera qu'il ne fera rien et se reposera pendant les jours à venir, à moins qu'un nouveau problème apparaisse et nécessite l'intervention d'un héros.
 Ces changements ne s'appliquent pas à une nouvelle partie de SoD.
 
@@ -173,28 +174,28 @@ Corwin sera à l'intérieur du palais au rez-de-chaussée avec les ducs et n'a p
 
 INSTALLATION
 
-NOTE: Si vous avez déjà installé le mod, supprimez-le avant d'extraire une nouvelle version. Pour cela: désinstallez tous les composants installés précédemment via le setup, et supprimez le dossier du mod ainsi que les exécutables. 
+NOTE : Si vous avez déjà installé le mod, supprimez-le avant d'extraire une nouvelle version. Pour cela : désinstallez tous les composants installés précédemment via le setup, et supprimez le dossier du mod ainsi que les exécutables. 
 
 Quand vous installez ou désinstallez le mod, ne fermez pas la fenêtre DOS en cliquant sur la croix ! Au lieu de ça, appuyez sur "entrer" quand cela est demandé.
 
 
 BG:EE
-Si vous utilisez SoD depuis GoG ou Steam, vous devez préparer votre jeu avec DLC Merger ou modmerge avant d'installer n'importe quel mod:
+Si vous utilisez SoD depuis GoG ou Steam, vous devez préparer votre jeu avec DLC Merger ou modmerge avant d'installer n'importe quel mod :
 DLC Merger par argent77 :
 https://forums.beamdog.com/discussion/71305/mod-dlc-merger-merge-steam-gog-sod-dlc-or-custom-dlcs-with-the-main-game
 
-modmerge (en cas de doute, utilisez le DLC Merger à la place):
+modmerge (en cas de doute, utilisez le DLC Merger à la place) :
 https://forums.beamdog.com/discussion/50441/modmerge-merge-your-steam-gog-zip-based-dlc-into-something-weidu-nearinfinity-dltcep-can-use/p1
 
  
 Général (Windows, Mac OS X, and Linux)
 
 Extrayez le contenu de l'archive du mod dans le dossier de votre jeu. 
-NOTE: Pour les Enhanced Edition, il est important d'installer les mods dans le langage que vous utilisez dans le jeu. Autrement, les dialogues provenant des mods seront affichés sous forme de messages d'erreurs.
+NOTE : Pour les Enhanced Edition, il est important d'installer les mods dans le langage que vous utilisez dans le jeu. Autrement, les dialogues provenant des mods seront affichés sous forme de messages d'erreurs.
 
 
 Windows
-Après extraction, vous devriez trouver dans votre dossier de jeu: un dossier "c#endlessbg1" et un fichier "setup-c#endlessbg1.exe". Pour installer le mod, double-cliquez sur setup-c#endlessbg1.exe et suivez les instructions à l'écran.
+Après extraction, vous devriez trouver dans votre dossier de jeu : un dossier "c#endlessbg1" et un fichier "setup-c#endlessbg1.exe". Pour installer le mod, double-cliquez sur setup-c#endlessbg1.exe et suivez les instructions à l'écran.
 Lancez setup-c#endlessbg1.exe dans votre dossier de jeu pour réinstaller, désinstaller ou changer des composants.
 
 Mac OS X
@@ -204,9 +205,9 @@ Linux
 Extrayez le contenu du mod dans le dossier de votre jeu que vous souhaitez modifier. Téléchargez la dernière version de WeiDU pour Linux depuis https://github.com/WeiDUorg/weidu/releases et copiez WeiDU et WeInstall vers /usr/bin. Ensuite, ouvrez un terminal et accédez au répertoire d'installation de BG(2), exécutez "tolower" et répondez Y aux deux questions. Vous pouvez éviter d'exécuter la deuxième option (linux.ini) si vous l'avez déjà exécutée une fois dans le même répertoire. Si vous n'êtes pas sûr, lancer tolower et choisir les deux options est la meilleure solution. 
 Exécutez WeInstall c#endlessbg1 dans votre dossier de jeu pour installer le mod. Exécutez ensuite le Wine BGMain.exe et commencez à jouer.
 
-NOTE: BG(II):EE sont des jeux qui sont mis à jour régulièrement. Sachez qu'à chaque nouvelle mise à jour, votre jeu ne reconnaîtra plus les mods installés ! Si vous êtes au milieu d'une partie avec des mods, il est préférable de retarder la mise à jour car même après avoir réinstallé les mods, vous ne pourrez peut-être pas continuer avec vos anciennes sauvegardes. 
+NOTE : BG(II):EE sont des jeux qui sont mis à jour régulièrement. Sachez qu'à chaque nouvelle mise à jour, votre jeu ne reconnaîtra plus les mods installés ! Si vous êtes au milieu d'une partie avec des mods, il est préférable de retarder la mise à jour car même après avoir réinstallé les mods, vous ne pourrez peut-être pas continuer avec vos anciennes sauvegardes. 
 
-Si vous avez des problèmes d'installation ou rencontrez des bugs, veuillez poster votre rapport de bug dans sur le forum.
+Si vous avez des problèmes d'installation ou rencontrez des bugs, veuillez poster votre rapport de bug sur le forum.
 
 
 
@@ -230,9 +231,11 @@ Acifer: idées.
 BeamDog / Overhaul Games: pour avoir crée SoD d'où vient la majorité des idées de contenu additionnel pour ce mod.
 Lauriel: ideas to move Korlasz' Dungeon into BG1 and place Fenster into the palace, from her mod Transitions.
 Shodead: idea to give CHARNAME's bed in the palace a "rest" function.
+Taimon: coding help.
 Tantalus: BAMs des objets uniques de Sarevok. Les BAMs ont été récupérés depuis le mod de Tantalus "Sarevok Recovery Mod", licencié sous "Creative Commons": CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
 Translations:
+Aristo: Polish (proofreading)
 Austin, Arkie & Arcanecoast.ru and yota13: Russian
 Roberciiik: Polish
 Gwendolyne, Machiavélique, and Shodead: French
@@ -257,6 +260,13 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 10:
+-PC now gets keyring when visiting Korlasz' Tomb for the first time.
+-Original NPCs use SoD joined dialogue inside Korlasz' Crypt always.
+-Main component: reinserted variable checks from Transitions mod for compatibility.
+-Updated install order syntax for Project Infinity.
+-Updated description of component 14 in the readme.
 
 Version 9:
 -New optional component "Korlasz' Dungeon is in BG1": moves Koralsz' Tomb into BG1 after Sarevok's death. Transition to SoD / BGII after it is done.

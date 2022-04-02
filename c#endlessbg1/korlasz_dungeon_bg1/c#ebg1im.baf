@@ -206,30 +206,3 @@ THEN
 	RESPONSE #100
 		StartDialogOverride("bdimoen",Player1)
 END
-
-/* intermediate dialogue, since I can't add to the PIDs. */
-IF
-	Global("C#EBG1_bd_plot","global",10)
-	Global("C#EBG1_IntermediateDialogue","LOCALS",0)
-	PartyHasItem("BDSHBHR")
-	!StateCheck(Myself,STATE_INVISIBLE)
-	InParty(Myself) 
-	See(Player1) 
-	!StateCheck(Myself,CD_STATE_NOTVALID)
-	!StateCheck(Player1,CD_STATE_NOTVALID)
-	CombatCounter(0)
-THEN
-	RESPONSE #100
-		SetGlobal("C#EBG1_IntermediateDialogue","LOCALS",1)
-END
-
-IF
-	InParty(Myself) 
-	See(Player1) 
-	!StateCheck(Myself,CD_STATE_NOTVALID)
-	!StateCheck(Player1,CD_STATE_NOTVALID)
-	Global("C#EBG1_IntermediateDialogue","LOCALS",1)
-THEN
-	RESPONSE #100
-		StartDialogOverride("bdimoen",Player1)
-END

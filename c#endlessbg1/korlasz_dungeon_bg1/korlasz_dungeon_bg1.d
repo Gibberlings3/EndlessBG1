@@ -9,10 +9,12 @@ OR(2) !InMyArea("LIIA") StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @206 /* ~Duke
 == LIIA IF ~InPartyAllowDead("%IMOEN_DV%") OR(2) Dead("%IMOEN_DV%") StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)
 InMyArea("LIIA") !StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @207 /* ~I need to talk to Imoen before you go. I will call for Fenster to see to her current... condition.~ */
 == BELT IF ~!InParty("%IMOEN_DV%")~ THEN @208 /* ~Imoen, your childhood friend, was prepared by Duke Jannath to guide you as best as possible. She will await you there.~ */
+== BELT @238  
 END
 
 EXTEND_BOTTOM BELT %belt_ebg1_14%
 IF ~~ THEN DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",1)
+SetGlobal("C#EBG1_KorlaszDungeon_BG1","GLOBAL",1) //check variable for other mods
 ActionOverride("BELT",TakePartyItem("c#stsrvs"))
 ActionOverride("BELT",DestroyItem("c#stsrvs"))
 ClearAllActions()
@@ -39,7 +41,8 @@ IF WEIGHT #-1
 SAY @221 /* You have proven to be the city's hero, and we are in your debt forever. What will you do now?~ */
 + ~%sod%~ + @211 /* ~Honestly, I need a break. I can feel the next problem brooding. I'll just go rest and do nothing for a tenday so I'll be prepared for whatever is coming.~ */ DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",5)~ + sod_trn
 ++ @212 /* ~There is still a lot to do and discover. I'll be around.~ */ + remain_in_bg1
-+ ~%eet_only%~ + @213 /* ~I will take my leave from the city and the Sword Coast before the next world threatening desaster arises. I'll try going south, away from whatever the city of Baldur's Gate might ail in the near or further future.~ */ DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",5)~ + %belt_ebg1_8%
++ ~%eet_only%~ + @213 /* ~I will take my leave from the city and the Sword Coast before the next world threatening desaster arises. I'll try going south, away from whatever the city of Baldur's Gate might ail in the near or further future.~ */ DO ~SetGlobal("SOD_fromimport","global",0)
+SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",5)~ + %belt_ebg1_8%
 END
 END //APPEND
 

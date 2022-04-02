@@ -1,0 +1,326 @@
+/* change dialogues and scripts back to BG1 ones for original games after leaving Korlasz' Dungeon - while in BG1 only (checks for "Global("SOD_fromimport","global",2)" which will be set to "1" upon transition to real soD campaign) and to "0" for direct BGII transition (after Korlasz tombis done) */
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("%IMOEN_DV%")  // Imoen
+	InPartyAllowDead("%IMOEN_DV%")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("%IMOEN_DV%",SetDialog("%IMOEN_JOINED%"))
+		ActionOverride("%IMOEN_DV%",ChangeAIScript("%IMOEN_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("dynaheir")  // Dynaheir
+	InPartyAllowDead("dynaheir")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("dynaheir",SetDialog("%DYNAHEIR_JOINED%"))
+		ActionOverride("dynaheir",ChangeAIScript("%DYNAHEIR_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("minsc")  // Minsc
+	InPartyAllowDead("minsc")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("minsc",SetDialog("%MINSC_JOINED%"))
+		ActionOverride("minsc",ChangeAIScript("5MINSC_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("rasaad")  // Rasaad
+	InPartyAllowDead("rasaad")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Rasaad",SetDialog("%RASAAD_JOINED%"))
+		ActionOverride("Rasaad",ChangeAIScript("%RASAAD_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Viconia")  // Viconia
+	InPartyAllowDead("Viconia")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Viconia",SetDialog("%VICONIA_JOINED%"))
+		ActionOverride("Viconia",ChangeAIScript("%VICONIA_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Safana")  // Safana
+	InPartyAllowDead("Safana")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Safana",SetDialog("%SAFANA_JOINED%"))
+		ActionOverride("Safana",ChangeAIScript("%SAFANA_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Edwin")  // Edwin
+	InPartyAllowDead("Edwin")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Edwin",SetDialog("%EDWIN_JOINED%"))
+		ActionOverride("Edwin",ChangeAIScript("%EDWIN_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Jaheira")  // Jaheira
+	InPartyAllowDead("Jaheira")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Jaheira",SetDialog("%JAHEIRA_JOINED%"))
+		ActionOverride("Jaheira",ChangeAIScript("%JAHEIRA_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Khalid")  // Khalid
+	InPartyAllowDead("Khalid")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Khalid",SetDialog("%KHALID_JOINED%"))
+		ActionOverride("Khalid",ChangeAIScript("%KHALID_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Dorn")  // Dorn
+	InPartyAllowDead("Dorn")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Dorn",SetDialog("%DORN_JOINED%"))
+		ActionOverride("Dorn",ChangeAIScript("%DORN_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Neera")  // Neera
+	InPartyAllowDead("Neera")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Neera",SetDialog("%NEERA_JOINED%"))
+		ActionOverride("Neera",ChangeAIScript("%NEERA_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Baeloth")  // Baeloth
+	InPartyAllowDead("Baeloth")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Baeloth",SetDialog("BAELOTHJ"))
+		ActionOverride("Baeloth",ChangeAIScript("BAELOTH",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Ajantis")  // Ajantis
+	InPartyAllowDead("Ajantis")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Ajantis",SetDialog("%AJANTIS_JOINED%"))
+		ActionOverride("Ajantis",ChangeAIScript("%AJANTIS_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Alora")  // Alora
+	InPartyAllowDead("Alora")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Alora",SetDialog("%ALORA_JOINED%"))
+		ActionOverride("Alora",ChangeAIScript("%ALORA_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Branwen")  // Statue
+	InPartyAllowDead("Branwen")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Branwen",SetDialog("%BRANWEN_JOINED%"))
+		ActionOverride("Branwen",ChangeAIScript("%BRANWEN_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Coran")  // Coran
+	InPartyAllowDead("Coran")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Coran",SetDialog("%CORAN_JOINED%"))
+		ActionOverride("Coran",ChangeAIScript("%CORAN_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Eldoth")  // Eldoth
+	InPartyAllowDead("Eldoth")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Eldoth",SetDialog("%ELDOTH_JOINED%"))
+		ActionOverride("Eldoth",ChangeAIScript("%ELDOTH_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Faldorn")  // Faldorn
+	InPartyAllowDead("Faldorn")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Faldorn",SetDialog("%FALDORN_JOINED%"))
+		ActionOverride("Faldorn",ChangeAIScript("%FALDORN_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Garrick")  // Garrick
+	InPartyAllowDead("Garrick")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Garrick",SetDialog("%GARRICK_JOINED%"))
+		ActionOverride("Garrick",ChangeAIScript("%GARRICK_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Kagain")  // Kagain
+	InPartyAllowDead("Kagain")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Kagain",SetDialog("%KAGAIN_JOINED%"))
+		ActionOverride("Kagain",ChangeAIScript("%KAGAIN_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Kivan")  // Kivan
+	InPartyAllowDead("Kivan")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Kivan",SetDialog("%KIVAN_JOINED%"))
+		ActionOverride("Kivan",ChangeAIScript("%KIVAN_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Montaron")  // Montaron
+	InPartyAllowDead("Montaron")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Montaron",SetDialog("%MONTARON_JOINED%"))
+		ActionOverride("Montaron",ChangeAIScript("%MONTARON_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Quayle")  // Quayle
+	InPartyAllowDead("Quayle")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Quayle",SetDialog("%QUAYLE_JOINED%"))
+		ActionOverride("Quayle",ChangeAIScript("%QUAYLE_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	OR(2)
+		InMyArea("Shar-Teel")
+		InMyArea("SharTeel")  // Shar-Teel
+	OR(2)
+		InPartyAllowDead("Shar-Teel")
+		InPartyAllowDead("SharTeel") 
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Shar-Teel",SetDialog("%HARTEEL_JOINED%"))
+		ActionOverride("Shar-Teel",ChangeAIScript("%SHARTEEL_BCS%",OVERRIDE))
+		ActionOverride("SharTeel",SetDialog("%HARTEEL_JOINED%"))
+		ActionOverride("SharTeel",ChangeAIScript("%SHARTEEL_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Skie")  // Skie
+	InPartyAllowDead("Skie")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Skie",SetDialog("%SKIE_JOINED%"))
+		ActionOverride("Skie",ChangeAIScript("%SKIE_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Tiax")  // Tiax
+	InPartyAllowDead("Tiax")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Tiax",SetDialog("%TIAX_JOINED%"))
+		ActionOverride("Tiax",ChangeAIScript("%TIAX_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Xan")  // Xan
+	InPartyAllowDead("Xan")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Xan",SetDialog("%XAN_JOINED%"))
+		ActionOverride("Xan",ChangeAIScript("%XAN_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Xzar")  // Xzar
+	InPartyAllowDead("Xzar")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Xzar",SetDialog("%XZAR_JOINED%"))
+		ActionOverride("Xzar",ChangeAIScript("%XZAR_BCS%",OVERRIDE))
+END
+
+IF
+	Global("SOD_fromimport","global",2)
+	InMyArea("Yeslick")  // Yeslick
+	InPartyAllowDead("Yeslick")
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Yeslick",SetDialog("%YESLICK_JOINED%"))
+		ActionOverride("Yeslick",ChangeAIScript("%YESLICK_BCS%",OVERRIDE))
+END

@@ -188,6 +188,8 @@
 @236  = ~[Khalid]G-Gorion would be proud of your achievements. We will come with you and help with any t-task that may arise.~
 @237  = ~Ooh yes, sleeping and doing *nothing*, that sounds great! Although... talking from experience, I don't think the gods will let us!~
 
+@238  = ~Take this as well. It is no powerful magic item, but it will come in handy - a hero needs to have their keys ready not to lose crucial time due to such a trivial thing.~
+
 /* pc_palaceresidence.d */
 /* new for v9 */
 @350  = ~This comfortable bed offers luxury you never found in Candlekeep.~

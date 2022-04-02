@@ -8,7 +8,7 @@
 BACKUP ~c#endlessbg1/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/~ //jastey
 
-VERSION ~9~
+VERSION ~10~
 
 README ~c#endlessbg1/readme.c#endlessbg1.%LANGUAGE%.txt~ ~c#endlessbg1/readme.c#endlessbg1.english.txt~
 
@@ -565,9 +565,6 @@ ACTION_IF GAME_IS ~bgt~ THEN BEGIN
   OUTER_SPRINT ~Door7246~ ~Door7246~
 END
 
-
-
-
 /* add travel trigger directly into Thieves Guild */
 COPY_EXISTING ~%Undercity%.are~ ~override~
   LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
@@ -684,19 +681,6 @@ COPY_EXISTING ~bdsodtrn.BCS~ ~override~
 	END
 BUT_ONLY
 
-/* set detection variable for other mods 
-Global("C#EBG1_KorlaszDungeon_BG1","GLOBAL",1) */
-<<<<<<<< .../ebg1_kd_detection.baf
-IF
-	Global("SOD_fromimport","global",2)
-	Global("C#EBG1_KorlaszDungeon_BG1","GLOBAL",0)
-THEN
-	RESPONSE #100
-		SetGlobal("C#EBG1_KorlaszDungeon_BG1","GLOBAL",1)
-END
->>>>>>>>
-EXTEND_BOTTOM ~%Undercity%.bcs~ ~.../ebg1_kd_detection.baf~ EVALUATE_BUFFER 
-EXTEND_TOP ~bd0120.bcs~ ~.../ebg1_kd_detection.baf~ EVALUATE_BUFFER 
 
 /* Add Entrance to Korlasz Dungeon to BG city: ar0700.are */
 COPY_EXISTING ~%CentralBaldursGate%.are~ ~override~
@@ -737,18 +721,6 @@ COPY_EXISTING ~%CentralBaldursGate%.are~ ~override~
     fj_name             = c#ebg1korlasz
 //    fj_reg_script   = c#ebg1ko
   END
-/* no longer needed
-/* add entrance point from bd0120 */
-  LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
-    INT_VAR
-    fj_loc_x       = 925    //x
-    fj_loc_y       = 3158   //y
-    fj_orientation = 6
-    STR_VAR
-    fj_structure_type = entrance
-    fj_name           = C#EBG1_Exit0120
-  END
-*/
 BUT_ONLY
 
 /* Add Entrance to Korlasz Dungeon to BG Docks: ar1200.are */
@@ -868,7 +840,7 @@ THEN
 	RESPONSE #100
 		ClearAllActions()
 		StartCutSceneMode()
-		StartCutScene("c#st2bc")
+		StartCutSceneEx("c#st2bc",TRUE)
 END
 >>>>>>>>
 EXTEND_TOP ~bdrope.bcs~ ~.../bdrope-et.baf~ EVALUATE_BUFFER
@@ -897,27 +869,6 @@ COPY_EXISTING ~bd0120.are~ ~override~
     fj_destination_area = EVAL ~bd0050~
     fj_destination_name = EVAL ~C#EBG1_Exit0120~ 
   END
-/* ## replace this with a teleporting script - in case EndlessBG1 gets installed late, game will not crash.
-/* travel region to BG1-area ar0700 */
-  LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
-    INT_VAR
-    fj_type         = 2    //travel
-    fj_box_left     = 750  //kleinstes x
-    fj_box_top      = 1528  //kleinstes y
-    fj_box_right    = 810  //größtes x
-    fj_box_bottom   = 1683   //größtes y
-    fj_cursor_idx   = 28 //stairs
-    fj_vertex_0     = 756 + (1683 << 16)   //kleinstes x +  kleinstes y
-    fj_vertex_1     = 810 + (1681 << 16)   //größtes x + kleinstes y
-    fj_vertex_2     = 804 + (1532 << 16)   //größtes x + größtes y
-    fj_vertex_3     = 750 + (1528 << 16)   //kleinstes x + größtes y
-    STR_VAR
-    fj_structure_type   = region
-    fj_name             = C#EBG1_TranAR0700
-    fj_destination_area = EVAL ~%CentralBaldursGate%~
-    fj_destination_name = EVAL ~C#EBG1_Exit0120~ 
-  END
-*/
   LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
     INT_VAR
     fj_loc_x       = 920    //x
@@ -928,6 +879,7 @@ COPY_EXISTING ~bd0120.are~ ~override~
     fj_name           = C#EBG1_Exit0700
   END
 BUT_ONLY
+
 
 /* cutscene into Korlasz dungeon in Belt's dialogue */
 COMPILE ~c#endlessbg1/korlasz_dungeon_bg1/c#st2kd.baf~ EVALUATE_BUFFER
@@ -1049,7 +1001,7 @@ COPY_EXISTING ~BDFF1002.dlg~ ~override~
 BUT_ONLY
 
 COMPILE ~c#endlessbg1/korlasz_dungeon_bg1/Imoen_in_group_kd_ebg1.d~ EVALUATE_BUFFER
-EXTEND_BOTTOM ~%IMOEN_BCS%.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/c#ebg1im.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdimoen.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/c#ebg1im.baf~ EVALUATE_BUFFER
 
 //bd0120.BCS
 COPY_EXISTING ~bd0120.BCS~ ~override~
@@ -1125,7 +1077,6 @@ IF
 	Global("C#EBG1_ChangeRopeTrigger","MYAREA",0)
 THEN
 	RESPONSE #100
-//##		TriggerActivation("C#EBG1_TranAR0700",FALSE)
 		TriggerActivation("C#EBG1_TranBD0050",FALSE)
 		SetGlobal("C#EBG1_ChangeRopeTrigger","MYAREA",1)
 END
@@ -1203,8 +1154,6 @@ IF
 THEN
 	RESPONSE #100
 		DisplayStringHead("C#EBG1_TranBD0050",%eet_2%59576)  // A sturdy rope hanging down into the tomb offers the only viable exit from the house of the dead.
-//##		TriggerActivation("Rope",FALSE)
-//##		TriggerActivation("C#EBG1_TranAR0700",TRUE)
 		SetGlobal("C#EBG1_ChangeRopeTrigger","MYAREA",2)
 END
 
@@ -1215,7 +1164,6 @@ IF
 	GlobalLT("C#EBG1_ChangeRopeTrigger","MYAREA",3)
 THEN
 	RESPONSE #100
-//##		TriggerActivation("C#EBG1_TranAR0700",FALSE)
 		TriggerActivation("Rope",FALSE)
 		TriggerActivation("C#EBG1_TranBD0050",TRUE)
 		SetGlobal("C#EBG1_ChangeRopeTrigger","MYAREA",3)
@@ -1230,7 +1178,6 @@ THEN
 	RESPONSE #100
 		TriggerActivation("C#EBG1_TranBD0050",FALSE)
 		TriggerActivation("Rope",TRUE)
-//##		TriggerActivation("C#EBG1_TranAR0700",TRUE)
 		SetGlobal("C#EBG1_ChangeRopeTrigger","MYAREA",4)
 END
 >>>>>>>>
@@ -1430,6 +1377,83 @@ COPY_EXISTING ~bd0130.BCS~ ~override~
 BUT_ONLY
 
 EXTEND_TOP ~bd0130.BCS~ ~c#endlessbg1/korlasz_dungeon_bg1/c#ebg1_imo_bd0130.baf~ EVALUATE_BUFFER
+
+
+/* the game expects the original NPCs to speak with their SoD dlg inside Korlasz' Dungeon so we change them (and also the scripts to prevent BG1 dialogues to fire while the group is inside) back and forth. - while in BG1 only: script checks for "Global("SOD_fromimport","global",2)" (which will be set to "1" upon transition to real SoD campaign and to "0" for direct BGII transition after Korlasz Tomb is done)  */
+/* change to SoD dialogue and scripts */
+/* add the first change to bdintro.bcs so beginnings cutscene in bd0120.are does not hickup */
+EXTEND_TOP ~bdintro.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_dlgs/switch_npc_to_sod_cutscene.baf~ EVALUATE_BUFFER 
+/* script for invisible helper cre */
+<<<<<<<< .../c#ebg1hc.baf
+
+/* remove in case it's a leftover */
+IF
+	OR(3)
+		!Global("SOD_fromimport","global",2)
+		GlobalGT("bd_plot","global",40) //SoD started
+		GlobalGT("chapter","GLOBAL",11) //BGII started
+THEN
+	RESPONSE #100		
+		SetGlobal("C#EBG1_spawn_helper","MYAREA",0)
+		DestroySelf()
+END
+IF
+	OnCreation()
+	InMyArea(Player1)
+	Global("SOD_fromimport","global",2)
+THEN
+	RESPONSE #100		
+		SetInterrupt(FALSE)
+		SetGlobal("C#EBG1_imoen_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_dynaheir_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_minsc_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Rasaad_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Viconia_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Safana_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Edwin_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Jaheira_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Khalid_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Dorn_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Neera_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Baeloth_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Ajantis_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Alora_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Branwen_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Coran_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Eldoth_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Faldorn_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Garrick_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Kagain_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Kivan_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Montaron_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Quayle_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_SharTeel_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Skie_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Tiax_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Xan_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Xzar_to_sod","MYAREA",1)
+		SetGlobal("C#EBG1_Yeslick_to_sod","MYAREA",1)
+		SetInterrupt(TRUE)
+END
+>>>>>>>>
+COMPILE ~.../c#ebg1hc.baf~ EVALUATE_BUFFER
+/* invisible helper cre */
+COPY ~c#endlessbg1/korlasz_dungeon_bg1/switch_dlgs/c#ebg1hc.cre~ ~override/c#ebg1hc.cre~ //
+   SAY NAME1 ~~ 
+   SAY NAME2 ~~ 
+WRITE_EVALUATED_ASCII 0x280 ~c#ebg1hc~ #8   // Death variable
+WRITE_EVALUATED_ASCII 0x2cc ~c#ebg1hc~ #8   // dialogue
+WRITE_EVALUATED_ASCII 0x248 ~c#ebg1hc~ #8   // Override script
+WRITE_EVALUATED_ASCII 0x260 ~~ #8   // General script
+
+/* add script blocks to bd0120.bcs and bd0130.bcs in case group revisits Korlasz crypt later. */
+EXTEND_BOTTOM ~bd0120.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_dlgs/switch_npc_to_sod.baf~ EVALUATE_BUFFER
+EXTEND_BOTTOM ~bd0130.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_dlgs/switch_npc_to_sod.baf~ EVALUATE_BUFFER
+
+/* change back to BG1 ones */
+/* we just patch this to the cutscne that teleports the group out of the dungeon */
+EXTEND_TOP ~c#st2bc.bcs~ ~c#endlessbg1/korlasz_dungeon_bg1/switch_dlgs/switch_npc_to_bg1_cutscene.baf~ EVALUATE_BUFFER
+
 
 
 /* Imoen should not be present twice: deactivate her elsewhere if she is also in Korlasz' Dungeon */

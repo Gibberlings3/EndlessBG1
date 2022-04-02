@@ -153,6 +153,8 @@ After Sarevok's Death, the exit of the Undercity will skip the Thieves' Maze onc
 This component moves Korlasz' Tomb into the BG1 part of the game. It transports the group into the dungeon after Belt told the PC to come along to hear the details of pursuing Sarevok last follower. 
 The dungeon can be left and entered after that at will, and is also available in SoD (Iron Throne building area).
 Imoen will remain in the group if she is a party member and will have her original SoD dialogues inside the tomb. If she is not in the group, Imoen will be inside the dungeon as a guide like she is in original SoD.
+
+All original NPCs will use their normal SoD joined dialogue and SoD OVERRIDE scripts inside Korlasz' Dungeon as pointed out here: https://www.gibberlings3.net/forums/topic/34948-how-to-original-npc-scripts-and-dialogue-in-korlasz-tomb-and-compatibility-with-endlessbg1-and-transitions-community-effort/
 Transition to SoD is done afterwards in the dialogue with Duke Belt, when the PC can say that they will do nothing for a tenday to rest before the next problem needing a hero will surface.
 Changes do not apply to a new SoD game.
 
@@ -230,10 +232,12 @@ Acifer: ideas.
 BeamDog / Overhaul Games: for creating SoD where most additional content ideas for this mod resulted from.
 Lauriel: ideas to move Korlasz' Dungeon into BG1 and place Fenster into the palace, from her mod Transitions.
 Shodead: idea to give CHARNAME's bed in the palace a "rest" function.
+Taimon: coding help.
 Tantalus: BAMs of Sarevok unique items. The BAMs where taken out of Tantalus' Mod "Sarevok Recovery Mod", licensed under "Creative Commons": CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
 Translations:
-Austin, Arkie & Arcanecoast.ru, and yota13: Russian
+Aristo: Polish (proofreading)
+Austin, Arkie & Arcanecoast.ru and yota13: Russian
 Roberciiik: Polish
 Gwendolyne, Machiavélique, and Shodead: French
 Proofreading of English version & readme: Lauriel, Mike1072, Roberciiik
@@ -257,6 +261,13 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 10:
+-PC now gets keyring when visiting Korlasz' Tomb for the first time.
+-Original NPCs use SoD joined dialogue inside Korlasz' Crypt always.
+-Main component: reinserted variable checks from Transitions mod for compatibility.
+-Updated install order syntax for Project Infinity.
+-Updated description of component 14 in the readme.
 
 Version 9:
 -New optional component "Korlasz' Dungeon is in BG1": moves Koralsz' Tomb into BG1 after Sarevok's death. Transition to SoD / BGII after it is done.

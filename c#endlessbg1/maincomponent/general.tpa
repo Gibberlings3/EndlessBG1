@@ -142,7 +142,7 @@ BUT_ONLY
 
 END //SoD + EET
 
-/* EET: direct transition to BGII - cutscene into bd6100.are */
+/* EET: direct transition to BGII - cutscene into bd6100.are for technical reasons */
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
 <<<<<<<< .../c#ebg122.baf
 

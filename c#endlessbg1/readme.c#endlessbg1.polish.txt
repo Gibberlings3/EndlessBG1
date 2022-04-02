@@ -166,9 +166,10 @@ Po zabiciu Sarevoka, wyjœcie z Podziemnego Miasta pominie labirynt z³odziei i po
 14. Krypta Korlasz bêdzie dostêpna w BG1
 -----------------------------------
 
-Wraz z tym komponentem krypta rodziny Korlasz bêdzie dostêpna ju¿ podczas rozgrywki w Baldur's Gate 1. Dru¿yna zostanie przeniesiona do grobowca zaraz po tym jak g³ówny bohater porozmawia z ksiêciem Beltem o poœcigu za ostatnimi poplecznikami Sarevoka.
+Wraz z tym komponentem krypta rodziny Korlasz bêdzie dostêpna ju¿ podczas rozgrywki w Baldur's Gate 1. Dru¿yna zostanie przeniesiona do grobowca w momencie, gdy g³ówny bohater porozmawia z ksiêciem Beltem o poœcigu za ostatnimi poplecznikami Sarevoka.
 Po rozpoczêciu tego zadania podziemia bêd¹ otwarte, wiêc bêdzie mo¿na do nich wejœæ i z nich wyjœæ w dowolnym momencie. Krypta bêdzie tak¿e dostêpna podczas rozgrywki SoD (lokacja z siedzib¹ ¯elaznego Tronu).
 Wewn¹trz krypty Imoen pozostanie w grupie, o ile do niej nale¿a³a, a jej kwestie dialogowe bêd¹ takie same jak w SoD. Jeœli Imoen nie przynale¿y do dru¿yny, to bêdzie przewodnikiem, tak jak jest to zrealizowane w oryginalnym SoD.
+Wszyscy oryginalni NPC wypowiedz¹ swoj¹ standardow¹ powitaln¹ kwestiê z dodatku SoD i bêd¹ korzystaæ ze skrypotów z katalogu Override wewn¹trz Krypty Korlasz (wiêcej o tym mo¿na przeczytaæ tutaj: https://www.gibberlings3.net/forums/topic/34948-how-to-original-npc-scripts-and-dialogue-in-korlasz-tomb-and-compatibility-with-endlessbg1-and-transitions-community-effort/).
 Aby przejœæ do kampanii SoD, nale¿y porozmawiaæ z ksiêciem Beltem o chêci nierobienia nic przez dziesiêæ dni.
 Zmiany te nie afektuj¹ nowej gry bezpoœrednio w kampanii SoD.
 
@@ -249,9 +250,11 @@ Acifer: pomys³y.
 BeamDog / Overhaul Games: za stworzenie SoD sk¹d czerpano pomys³y na now¹ zawartoœæ dla tego moda.
 Lauriel: ideas to move Korlasz' Dungeon into BG1 and place Fenster into the palace, from her mod Transitions.
 Shodead: idea to give CHARNAME's bed in the palace a "rest" function.
+Taimon: coding help.
 Tantalus: pliki BAM przedmiotów Sarevoka. Pliki BAM wziête z modyfikacji Tantalus o nazwie "Sarevok Recovery Mod", na licencji "Creative Commons" von Nicolas Peters. Lizenz: CC BY-NC-SA 3.0 ( https://creativecommons.org/licenses/by-nc-sa/3.0/ )
 
 Translations:
+Aristo: Polish (proofreading)
 Austin, Arkie & Arcanecoast.ru and yota13: Russian
 Roberciiik: Polish
 Gwendolyne, Machiavélique, and Shodead: French
@@ -276,6 +279,13 @@ Spellhold Studios - http://www.shsforums.net/
 
 
 HISTORIA ZMIAN:
+
+Version 10:
+-PC now gets keyring when visiting Korlasz' Tomb for the first time.
+-Original NPCs use SoD joined dialogue inside Korlasz' Crypt always.
+-Main component: reinserted variable checks from Transitions mod for compatibility.
+-Updated install order syntax for Project Infinity.
+-Updated description of component 14 in the readme.
 
 Version 9:
 -New optional component "Korlasz' Dungeon is in BG1": moves Koralsz' Tomb into BG1 after Sarevok's death. Transition to SoD / BGII after it is done.
