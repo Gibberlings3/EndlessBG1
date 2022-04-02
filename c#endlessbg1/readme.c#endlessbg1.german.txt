@@ -255,6 +255,7 @@ HISTORY
 Version 10:
 -PC now gets keyring when visiting Korlasz' Tomb for the first time.
 -Original NPCs use SoD joined dialogue inside Korlasz' Crypt always.
+-Main component: reinserted variable checks from Transitions mod for compatibility.
 -Updated install order syntax for Project Infinity.
 -Updated description of component 14 in the readme.
 
