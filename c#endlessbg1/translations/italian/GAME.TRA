@@ -1,0 +1,103 @@
+/* @0   =  */
+@1 = ~La cotta di piastre completa è la migliore armatura che un combattente possa acquistare, tanto per l'aspetto quanto per il tipo di protezione. Le piastre, perfettamente collegate le une alle altre, sono inclinate in modo da deviare frecce e colpi; l'intero completo è decorato con intarsi e ricami.
+
+Questa armatura insolitamente pesante apparteneva a Sarevok.
+
+STATISTICHE:
+
+Classe Armatura: -1
+Peso: 70
+Richiede: 15 Forza
+Non utilizzabile da:
+ Bardo
+ Druido
+ Ladro~
+@2 = ~La cotta di piastre completa è la migliore armatura che un combattente possa acquistare, tanto per l'aspetto quanto per il tipo di protezione. Le piastre, perfettamente collegate le une alle altre, sono inclinate in modo da deviare frecce e colpi; l'intero completo è decorato con intarsi e ricami.
+
+Questa armatura insolitamente pesante apparteneva a Sarevok. È incantata per fornire protezione contro la magia.
+
+STATISTICHE:
+   +30% Resistenza alla magia
+
+Classe Armatura: -1
+Peso: 70
+Richiede: 15 Forza
+Non utilizzabile da:
+ Bardo
+ Druido
+ Ladro~
+@3 = ~Cotta di Piastre di Sarevok~
+@4 = ~Elmo di Sarevok~
+@5 = ~Spada di Sarevok~
+@6 = ~Questa classe di elmi decorativi, fatti di cuoio rinforzato o di metallo, copre il volto e la testa. Fessure per gli occhi e fori per respirare sono altamente consigliati.
+
+Questo elmo apparteneva a Sarevok.
+
+STATISTICHE:
+
+Bonus di Classe Armatura: Nessuno
+Speciale:  Protegge dai colpi critici
+Peso: 2
+Non utilizzabile da:
+ Mago
+ Bardo
+ Ladro~
+@7 = ~Questa classe di elmi decorativi, fatti di cuoio rinforzato o di metallo, copre il volto e la testa. Fessure per gli occhi e fori per respirare sono altamente consigliati.
+
+Questo elmo apparteneva a Sarevok. È incantato per fornire protezione contro la magia.
+
+STATISTICHE:
+
+Bonus di Classe Armatura: Nessuno
+Speciale:  Protegge dai colpi critici
+   +5% Resistenza alla magia
+Peso: 2
+Non utilizzabile da:
+ Mago
+ Bardo
+ Ladro~
+@8 = ~Questa è la spada di Sarevok. Per quanto tu possa provare, non sei in grado di brandirla. Sembra che la magia di questa spada sia stata indebolita e sigillata quando Sarevok è morto.~
+@9 = ~Scrigno di <CHARNAME>~
+@10 = ~Scrigno di Imoen~
+
+/* nuovo per la v2 */
+//#9774 modificato
+@12 = ~Quel fetente di Sarevok era veramente malvagio, eccome se lo era! Ha assassinato Scar ed Entar, e ha cercato di ammazzare tanti altri! Merita la morte, e grazie a <CHARNAME> è arrivata in fretta!~
+//#9778 cambiato
+@13 = ~È spaventoso! E pensare che Sarevok era arrivato così vicino a portare a buon fine i suoi piani sanguinari. Sono felice che <CHARNAME> lo abbia rintracciato e consegnato alla giustizia. Deve servire da esempio, in modo che altri pazzi non tentino di fare lo stesso.~
+//#9781 cambiato
+@14 = ~Ciò che ha fatto Sarevok è imperdonabile! Sono contento che <CHARNAME> abbia trovato quella feccia, prima che potesse fare altro male.~
+//#9852 modificato
+@15 = ~Questa, poi! Riesci a credere alla faccia tosta di quel Sarevok? Dopo che gli avevamo dato tutti la nostra fiducia, si è rivelato essere il più infimo tra i malvagi. Sono felice che sia stato catturato e punito.~
+//#9854 cambiato
+@16 = ~Non sei forse <CHARNAME>? Tu e i tuoi compagni rispondete alla descrizione. Bene, a nome di coloro che rappresento, desidero ringraziarvi per il vostro operato. Se non fosse stato per il vostro valore... Tremo al pensiero di cosa sarebbe accaduto in caso di guerra contro l'Amn. Grazie per aver catturato quel malvagio di Sarevok e per aver messo fine a questo pandemonio!~
+//#9855 cambiato
+@17 = ~Si sta spargendo a macchia d'olio! Tutti parlano di ciò che è successo a palazzo. Da ciò che ho sentito, quel Sarevok non è nobile come vorrebbe farci credere. Ha cercato di fare ammazzare gli altri Duchi in modo da potersi impadronire della città.~
+
+/* nuovo per la v7 */
+@20 = ~Profuga~ /* femmina*/
+@21 = ~Profugo~ /* maschio*/
+@22 = ~Guaritore del Pugno Fiammante~ /* maschio*/
+@23 = ~Esploratore del Pugno Fiammante~ /* maschio*/
+
+/* nuovo per la v9 */
+@24 = ~Il nome inciso ad arte nelle lastre ornamentali identifica questo ingresso della cripta della famiglia Korlasz. È ben chiusa e protetta magicamente.~
+@25 = ~Saluti, eroe. Sono Fenster, il chierico di palazzo.~
+@26 = ~Come posso esserti utile?~
+@27 = ~Faccia vedere cos'hai.~
+@28 = ~Nulla al momento.~
+@29 = ~Con piacere.~
+@30 = ~Non sono disponibile per i servizi mentre mi occupo di Imoen. Ti prego di chiedere l'aiuto divino altrove.~
+//@31: nome preso da #64284
+@31 = ~Tomba della Famiglia di Korlasz~
+@32 = ~Letto di <CHARNAME>~
+
+/* sarevok_cleanup_more.tpa */
+/* #18345 cambiato */
+@50 = ~C'è parecchio da dire, ma non credo proprio di avere il tempo per entrare nei dettagli. Ho vissuto a Candlekeep con mio padre Gorion. Poco tempo fa siamo stati costretti a scappare. Sembra che ci sia qualcuno che mi vuole morto. Nel tentativo di uccidere me, lui... ha ucciso mio padre.~
+/* #18351 modificato */
+@51 = ~Mi spiace averti fatto rievocare ricordi tanto dolorosi. Desidero aiutarti e, nel mentre, porre anche fine ai sogni che mi perseguitano. Ecco, prendi questo. Addio ora. Forse ci incontreremo di nuovo.~
+@52 = ~Ah, <CHARNAME>! Sono sollevato dal fatto che tutto sia finalmente tornato alla normalità. Dopo aver visto la fiducia che il duca Eltan aveva riposto in voi, mi sono sentito in colpa per aver dovuto seguire gli ordini di Angelo riguardo al vostro arresto...~
+@53 = ~E grazie, *grazie* per aver salvato il nostro comandante.~
+@54 = ~Piangeremo le nostre perdite mentre raccogliamo ciò che è rimasto dopo che Sarevok e i suoi scagnozzi hanno infangato il Pugno Fiammante, rendendoci suoi strumenti. Grazie per aver salvato questa città, eroe.~ ~Piangeremo le nostre perdite mentre raccogliamo ciò che è rimasto dopo che Sarevok e i suoi scagnozzi hanno infangato il Pugno Fiammante, rendendoci suoi strumenti. Grazie per aver salvato questa città, eroina.~
+@55 = ~Sembra che combattere contro di te non fosse la cosa giusta da fare, dopo tutto. Beh, chi avrebbe mai pensato che Angelo e Sarevok avrebbero agito in modo così sporco. Sembra che tu ci abbia salvato da tempi bui, davvero.~
