@@ -257,6 +257,7 @@ Translations:
 Aristo: Polish (proofreading)
 Austin, Arkie & Arcanecoast.ru and yota13: Russian
 Roberciiik: Polish
+improb@bile: Italian
 Gwendolyne, Machiavélique, and Shodead: French
 Proofreading of English version & readme: Lauriel, Mike1072, Roberciiik
 
@@ -279,6 +280,9 @@ Spellhold Studios - http://www.shsforums.net/
 
 
 HISTORIA ZMIAN:
+
+Version 11:
+-Italian version added.
 
 Version 10:
 -PC now gets keyring when visiting Korlasz' Tomb for the first time.
