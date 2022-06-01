@@ -1,0 +1,36 @@
+@5000 = ~Questa mod e' compatibile solo con BG:EE, SoD, BGT e EET.~
+@5001 = ~Endless BG1: Componente principale (richiesto)~
+@5002 = ~Approfondimento storia dell'eroe di Baldur's Gate (include la residenza del PC all'interno del palazzo)~
+@5003 = ~Endless BG1: Componente principale e' necessario per questo componente~
+@5004 = ~Imoen e la Duchessa Jannath (Imoen risiede nel palazzo)~
+@5005 = ~Il Duca Eltan e' a Palazzo~
+@5006 = ~Pugno Fiammante dopo il combattimento finale~
+@5007 = ~Elminster fa la sua comparsa~
+@5008 = ~Oggetti unici di Sarevok~
+@5009 = ~I primi profughi arrivano a Baldur's Gate~
+@5010 = ~Ophyllis il tesoriere e' nei sotterranei del Palazzo~
+@5011 = ~Denkod nella Gilda dei Ladri commenta la morte di Sarevok~
+@5012 = ~Questo componente e' compatibile solo con SoD e EET.~
+@5013 = ~Questo componente e' compatibile solo con BG:EE, SoD, BGT e EET.~
+@5014 = ~Spada di Sarevok~
+@5015 = ~Versione di Jastey~
+@5016 = ~Testo BG1 ripristinato~
+
+/* nuovo per la v3 */
+@5017 = ~Saltare il labirinto dei ladri dopo la morte di Sarevok~
+@5018 = ~Breve tributo pubblico all'eroe~
+@5019 = ~Endless BG1: il componente "Approfondimento storia dell'eroe di Baldur's Gate" è necessario per questo componente~
+
+/* nuovo per la v5 */
+@5020 = ~Il componente di bg1re "Duke Eltan's Spare Minute" deve essere installato dopo ebg1.~
+@5021 = ~ebg1 deve essere installato prima di Transitions.~
+@5022 = ~Questo componente di ebg1 è già sostituito da Transitions.~
+
+/* nuovo per la v7 */
+@5023 = ~Questa mod deve essere installata prima di EET_End nella vostra installazione EET.~
+
+/* nuovo per la v9 */
+@5024 = ~Il Dungeon di Korlasz è in BG1~
+@5025 = ~Imoen4Ever "Imoen rimane nel gruppo nel dungeon di Korlasz" deve essere disinstallato per questo.~
+@5026 = ~Fenster il Guaritore del Palazzo è nel Palazzo~
+@5027 = ~Capitano Corwin è nel Palazzo~

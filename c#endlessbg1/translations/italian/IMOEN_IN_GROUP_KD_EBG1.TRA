@@ -1,0 +1,22 @@
+/* lines @0 - @17 are the same as in "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */ 
+
+@0 = ~Non guardarmi così! Ho sempre voluto dare l'impressione di saperne più di te. È solo quello che mi ha detto la Duchessa Jannath, come se tu non lo sapessi.~
+@1 = ~Che cosa c'è tra te e la Duchessa Jannath, comunque? ~
+@2 = ~Beh, uhm... In qualche modo si è appassionata a me da quando abbiamo salvato i duchi all'incoronazione di Sarevok. O non incoronazione, per essere precisi.~
+@3 = ~E, beh... mi ha fatto provare alcuni incantesimi e... è divertente! Potrei farlo davvero! Magia intendo. Ho fatto della magia!~
+@4 = ~Ha detto che mi avrebbe aiutato a sviluppare le mie capacità magiche, e... ho deciso che accetterò l'offerta. Sai, quando tutto questo sarà finito.~
+@5 = ~Oh, giusto perché tu lo sappia... ho promesso di portarle tutte le pergamene arcane o i tomi che riuscirò a trovare quaggiù.~
+@6 = ~L'hai fatto! Sapevo che l'avresti fatto.~
+@7 = ~Non riesco a credere che possa davvero essere finita.~
+@8 = ~Lo abbiamo fatto insieme, Imoen.~
+@9 = ~Non sei stata di grande aiuto.~
+@10 = ~So cosa vuoi dire!~
+@11 = ~Per me va bene. Non c'è più nulla di cui aver paura, giusto?~
+@12 = ~I Pugni Fiammanti torneranno di sopra usando la corda che abbiamo trovato. È proprio a sud di qui: ti porta dritto all'ingresso.~
+@13 = ~Guarda quei tomi e libri su Bhaal! La Duchessa Jannath farebbe i salti di gioia se li avesse! Beh, in realtà non lo farebbe, è troppo dignitosa per farlo, ma... posso prenderli per lei? Per favore?~
+@14 = ~Certo. Non so come possano essermi utili.~
+@15 = ~No, voglio tenerli per ora.~
+@16 = ~Va bene, ma dimmi se cambierai idea, d'accordo?~
+@17 = ~Prendi le ricerche su Bhaal che abbiamo trovato per la Duchessa Jannath, Imoen.~
+
+@200 = ~Sali sulla corda quando sei pronto a tornare a Palazzo. Saremo proprio dietro di te.~

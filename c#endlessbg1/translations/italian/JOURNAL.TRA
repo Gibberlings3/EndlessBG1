@@ -1,0 +1,58 @@
+/* journal entries */
+@10000 = ~La Spada di Sarevok
+
+Un Djinn si è manifestato subito dopo aver lasciato la città sotterranea e mi ha portato via la spada di Sarevok! Ha detto che deve obbedire al "suo padrone". Chi può avere interesse a prendere la spada di Sarevok? Sembra che ci siano ancora persone che lo seguono... o che vogliono approfittare del suo potere.~
+@10001 = ~La Spada di Sarevok
+
+Ho consegnato la Spada di Sarevok ai Duchi. La considerano un simbolo del suo potere e vogliono tenerla lontana da qualsiasi seguace volesse vederla come un oggetto di valore simbolico del loro leader caduto Sarevok.~
+@10002 = ~Il mio Alloggio nel Palazzo Ducale
+
+Sono stato nominato "Eroe di Baldur's Gate" e mi è stato offerto un alloggio all'ultimo piano del Palazzo Ducale.~ ~Il mio Alloggio nel Palazzo Ducale
+
+Sono stato nominato "Eroina di Baldur's Gate" e mi è stato offerto un alloggio all'ultimo piano del Palazzo Ducale.~
+@10003 = ~Il Mio Scrigno Personale nel Palazzo Ducale 
+
+Il forziere all'estrema sinistra nella stanza a nord-ovest all'ultimo piano del Palazzo Ducale è il mio scrigno personale, tutto ciò che metterò lì dentro rimarrà al suo interno finché risiederò nel Palazzo.~
+@10004 = ~Scrigno Personale di Imoen nel Palazzo Ducale 
+
+Il forziere all'estrema sinistra nella stanza sud-est all'ultimo piano del Palazzo Ducale è quello di Imoen, tutto ciò che vi metteremo dentro rimarrà al suo interno finché risiederemo nel Palazzo.~
+@10005 = ~Imoen è nel Palazzo Ducale
+
+Imoen risiede nel Palazzo Ducale, all'ultimo piano. La troverò lì se voglio che venga di nuovo con me.~
+@10006 = ~Un Altro Incontro con Elminster
+
+E ancora una volta Elminster fa la sua comparsa dopo la morte di Sarevok. Finalmente vedo chiaramente che ha sempre saputo del mio retaggio. Non so perché Elminster e Gorion abbiano pensato che fosse una buona idea parlare per enigmi e non dirmelo chiaramente. Elminster sembrava molto interessato a come avrei affrontato questa situazione e in cosa mi sarei trasformato... un pensiero che non posso che condividere.~
+@10007 = ~Profughi dall'Estremo Nord
+
+Dei profughi stanno arrivando a Baldur's Gate, raccontando di alcuni eventi brutali molto a nord, nell'Alta Brughiera. FAttorie fattorie e piccoli villaggi sono stati bruciati.~
+@10008 = ~La Spada di Sarevok
+
+Il Duca Belt mi ha chiesto di consegnargli la Spada di Sarevok. I Duchi la considerano un simbolo del potere di Sarevok e vogliono tenerla lontana da qualsiasi seguace volesse vederla come un oggetto di valore simbolico del loro leader caduto.~
+
+@10009 = ~La Spada di Sarevok~
+
+/* nuovo per la v3 */
+@10010 = ~La Spada di Sarevok
+
+A quanto pare, la Spada di Sarevok è stata rubata dal Palazzo Ducale dai suoi ultimi seguaci e venduta ad Athkatla! Alla faccia di chi la custodisce bene. Che sfortuna!~
+@10011 = ~La Spada di Sarevok
+
+Ho ottenuto di nuovo la Spada di Sarevok. Le manca ancora gran parte del suo potere precedente, ma almeno ora posso brandirla.~
+
+/* nuovo per la v9 */
+/* #31288 */
+@10012 = ~Contrasto con la Legge
+
+Sarevok è morto. Questo capitolo della mia vita è finito.~
+/* #31374 */
+@10013 = ~Sulle Tracce di Sarevok
+
+Sarevok è morto. Questo capitolo della mia vita è finito.~
+/* #31400 */
+@10014 = ~Tandem in Extremis
+
+Sarevok è morto. Questo capitolo della mia vita è finito.~
+/* #31416 */
+@10015 = ~L'Ascesa di Sarevok
+
+Sarevok è morto. Questo capitolo della mia vita è finito.~
