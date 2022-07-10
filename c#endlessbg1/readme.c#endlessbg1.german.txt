@@ -254,6 +254,9 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 12:
+-Fixed install error on BG:EE.
+
 
 
 Version 11:

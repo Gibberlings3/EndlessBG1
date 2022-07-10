@@ -8,7 +8,7 @@
 BACKUP ~c#endlessbg1/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/~ //jastey
 
-VERSION ~11~
+VERSION ~12~
 
 README ~c#endlessbg1/readme.c#endlessbg1.%LANGUAGE%.txt~ ~c#endlessbg1/readme.c#endlessbg1.english.txt~
 
@@ -54,6 +54,8 @@ ACTION_IF (GAME_IS ~bgee~ AND NOT FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
  OUTER_SPRINT ~BELT~ ~BELT~
   OUTER_SET BGTIMOENPState0 = 0 
   OUTER_SET BGTIMOENPState4 = 4
+  OUTER_SPRINT ~eet_2~ ~~
+OUTER_SET eet_200000 = GAME_IS ~eet~ ? 200000 : 0
 END
 
 /* custom definitions: sod */
