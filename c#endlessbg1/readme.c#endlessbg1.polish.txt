@@ -281,6 +281,9 @@ Spellhold Studios - http://www.shsforums.net/
 
 HISTORIA ZMIAN:
 
+Version 13:
+-Winski should not be gone before the PC went for Sarevok in the Undercity Temple.
+
 Version 12:
 -Fixed install error on BG:EE.
 

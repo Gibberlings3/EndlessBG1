@@ -453,7 +453,7 @@ COPY_EXISTING ~voleta.cre~ ~override~
 IF
 	Exists("WINSKI2")  // Winski
 	InMyArea("WINSKI2")
-	GlobalGT("SarevokBehavior","GLOBAL",0)
+	Dead("Sarevok")
 THEN
 	RESPONSE #100
 		ActionOverride("WINSKI2",DestroySelf())
