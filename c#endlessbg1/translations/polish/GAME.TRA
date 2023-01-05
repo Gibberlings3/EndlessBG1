@@ -9,9 +9,9 @@ Klasa Pancerza: -1
 Waga: 70
 Wymagana si³a: 15
 Nie mo¿e u¿ywaæ:
- Bard
  Druid
- Z³odziej~
+ Z³odziej
+ Bard~
 @2   = ~Najlepsza (i najciê¿sza) zbroja, jak¹ wojownik mo¿e zdobyæ - zarówno pod wzglêdem wygl¹du, jak i ochrony, któr¹ zapewnia. Jej znakomicie dopasowane, po³¹czone elementy z litego metalu s¹ specjalnie modelowane, by jak najlepiej odbija³y tak uderzenia broni ró¿nego typu, jak i strza³y. Zwykle zbroja tego rodzaju jest bogato zdobiona - artystycznie grawerowana i upiêkszana ró¿nymi dodatkami.
 
 Ten niezwykle ciê¿ki pancerz nale¿a³ do Sarevoka. Magiczne ulepszenia zapewniaj¹ ochronê przeciwko magii.
@@ -24,9 +24,9 @@ Specjalne:
 Waga: 70
 Wymagana si³a: 15
 Nie mo¿e u¿ywaæ:
- Bard
  Druid
- Z³odziej~
+ Z³odziej
+ Bard~
 @3   = ~Pe³na zbroja p³ytowa Sarevoka~
 @4   = ~He³m Sarevoka~
 @5   = ~Miecz Chaosu Sarevoka~
@@ -42,8 +42,8 @@ Specjalne:
 Waga: 2
 Nie mo¿e u¿ywaæ:
  Mag
- Bard
- Z³odziej~
+ Z³odziej
+ Bard~
 @7   = ~Ten ozdobny typ he³mu wykonany jest z utwardzanej skóry lub ¿elaza i zakrywa twarz i g³owê. Zazwyczaj jest równie¿ wyposa¿ony w ochronê nosa.
 
 Ten he³m nale¿a³ do Sarevoka. Magiczne ulepszenia zapewniaj¹ ochronê przeciwko magii.
@@ -57,8 +57,8 @@ Specjalne:
 Waga: 2
 Nie mo¿e u¿ywaæ:
  Mag
- Bard
- Z³odziej~
+ Z³odziej
+ Bard~
 
 @8   = ~Jest to miecz Sarevoka. Jakkolwiek próbujesz, nie jesteœ w stanie nim w³adaæ. Wygl¹da na to, ¿e miecz zosta³ magicznie zapieczêtowany po œmierci Sarevoka.~
 @9   = ~Twoja skrytka~
