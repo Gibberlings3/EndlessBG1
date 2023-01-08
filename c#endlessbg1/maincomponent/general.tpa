@@ -248,7 +248,7 @@ THEN
 	RESPONSE #100
 		ApplySpellRES("%bddispel%","BELT")  
 		SmallWait(1)
-		ActionOverride("BELT",JumpToPoint([735.371])
+		ActionOverride("BELT",JumpToPoint([735.371]))
 		ActionOverride("BELT",Face(0))
 		SmallWait(1)
 		Continue()
