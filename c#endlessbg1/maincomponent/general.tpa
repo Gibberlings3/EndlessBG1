@@ -179,7 +179,7 @@ COMPILE EVALUATE_BUFFER ~.../c#ebg122.baf~
 
 
 /* make sure Imoen, Minsk and Jaheira do not have their BG1 equipment at the beginning of BGII */
-COPY_EXISTING ~AR0602.BCS~ ~override~
+COPY_EXISTING ~K#TELBGT.bcs~ ~override~
 	DECOMPILE_AND_PATCH BEGIN
 		SPRINT textToReplace ~\(ActionOverride("K#ImportContainer",TakeCreatureItems(Player6,ALL))\)~
 		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
