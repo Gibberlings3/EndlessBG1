@@ -281,6 +281,12 @@ Spellhold Studios - http://www.shsforums.net/
 
 HISTORIA ZMIAN:
 
+Version 14:
+-Polish version: Fixed "Usable By" order 
+-Insert missing right bracket in general.tpa
+-Sarevok's armor and helmet should give "Protection from Magic" items.
+-(EET): improved compatibility with NPC_EE )imoen, Minsc, and Jaheira should keep their tomes in ID).
+
 Version 13:
 -Winski should not be gone before the PC went for Sarevok in the Undercity Temple.
 
