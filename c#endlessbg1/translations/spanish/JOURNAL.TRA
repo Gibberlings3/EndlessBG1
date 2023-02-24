@@ -1,0 +1,58 @@
+/* entradas de diario */
+@10000 = ~La Espada de Sarevok
+
+Un Djinn se manifestó justo después de que abandonara la ciudad subterránea y me arrebató la espada de Sarevok. Dijo que tenía que obedecer a "su amo". ¿Quién podría tener interés en tomar la espada de Sarevok? Parece que aún hay gente que lo sigue... O que quiere beneficiarse de su poder.~
+@10001 = ~La Espada de Sarevok
+
+He entregado la Espada de Sarevok a los Duques. La consideran un símbolo de su poder y desean mantenerlo alejado de cualquier seguidor que lo considere un objeto de valor simbólico de su líder caído Sarevok.~
+@10002 = ~Mis aposentos en el Palacio Ducal
+
+He sido nombrado "Héroe de Baldur's Gate" y me han ofrecido alojamiento en el último piso del Palacio Ducal.~ ~Mis aposentos en el Palacio Ducal
+
+He sido nombrada "Heroína de Baldur's Gate" y me han ofrecido alojamiento en el último piso del Palacio Ducal.~
+@10003 = ~Mi cofre personal en el Palacio Ducal 
+
+El cofre del extremo izquierdo de la sala noroeste del último piso del Palacio Ducal es mi cofre personal, todo lo que ponga ahí permanecerá en él mientras resida en el Palacio.~
+@10004 = ~El cofre personal de Imoen en el Palacio Ducal 
+
+El cofre del extremo izquierdo de la sala sureste de la última planta del Palacio Ducal es el cofre personal de Imoen, todo lo que metamos ahí permanecerá en él mientras residamos en el Palacio.~
+@10005 = ~Imoen está en el Palacio Ducal
+
+Imoen reside en el Palacio Ducal, en el último piso. La encontraré allí si quiero que vuelva conmigo.~
+@10006 = ~Otro Encuentro con Elminster
+
+Y de nuevo Elminster hizo su aparición tras la muerte de Sarevok, y por fin veo claro que siempre ha sabido de mi herencia. No sé por qué Elminster y Gorion pensaron que era buena idea hablar en acertijos y no decírmelo claramente. Elminster parecía muy interesado en cómo me enfrentaría a esta situación y en qué me convertiría... Un pensamiento con el que sólo puedo estar de acuerdo.~
+@10007 = ~Refugiados del lejano norte
+
+Refugiados estan llegando a Puerta de Baldur, hablando sobre algunos acontecimientos brutales al norte en Páramo Alto. Se han quemando granjas y pequeñas aldeas.~
+@10008 = ~La Espada de Sarevok
+
+El Duque Belt me pidió que le diera la Espada de Sarevok. Los Duques la ven como un símbolo del poder de Sarevok y desean mantenerla alejada de cualquier seguidor que lo considere un objeto de valor simbólico de su líder caído.~
+
+@10009 = ~La Espada de Sarevok~
+
+/* nuevo para v3 */
+@10010 = ~La Espada de Sarevok
+
+Al parecer, la Espada de Sarevok fue robada del Palacio Ducal por sus últimos seguidores y vendida a Athkatla. Parece que no supieron custodiarla bien. ¡Mala suerte!~
+@10011 = ~La Espada de Sarevok
+
+He obtenido la Espada de Sarevok de nuevo. Aún le falta mucho de su antiguo poder, pero al menos ahora puedo manejarla.~
+
+/* nuevo para v9 */
+/* #31288 */
+@10012 = ~Contrario a la Ley
+
+Sarevok está muerto. Este capítulo de mi vida ha terminado.~
+/* #31374 */
+@10013 = ~Tras la pista de Sarevok
+
+Sarevok está muerto. Este capítulo de mi vida ha terminado.~
+/* #31400 */
+@10014 = ~Tandem in Extremis
+
+Sarevok está muerto. Este capítulo de mi vida ha terminado.~
+/* #31416 */
+@10015 = ~El Ascenso de Sarevok
+
+Sarevok está muerto. Este capítulo de mi vida ha terminado.~

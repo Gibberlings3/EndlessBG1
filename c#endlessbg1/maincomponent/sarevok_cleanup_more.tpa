@@ -155,7 +155,7 @@ END
 
 /* compatibility with Jarl's Adventure Pack - Nila */
 ACTION_IF FILE_EXISTS_IN_GAME ~JA#NILA.bcs~ THEN BEGIN
-  EXTEND_BOTTOM ~JA#NILA.bcs~ ~override/c#stdstr.baf~
+  EXTEND_BOTTOM ~JA#NILA.bcs~ ~.../c#stdstr.baf~ EVALUATE_BUFFER //~override/c#stdstr.bcs~
 END
 
 

@@ -1,0 +1,21 @@
+/* las líneas @0 - @17 son las mismas que en "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@0 = ~¡No me miréis así! Siempre quise dar la impresión de que sabía más que vos. Es lo que me dijo la duquesa Jannath, como si no lo supierais.~
+@1 = ~¿Qué pasa con vos y la Duquesa Jannath?~
+@2 = ~Bueno, uhm... De alguna manera se ha encariñado conmigo desde que salvamos a los duques en la coronación de Sarevok. O la no coronación, para ser precisos.~
+@3 = ~Y, bueno... ella me dejó probar algunos de los hechizos mágicos, y... ¡es divertido! ¡Realmente podría hacerlo! Magia quiero decir. ¡Hice magia!~
+@4 = ~Ella dijo que me ayudaría a desarrollar mis habilidades mágicas, y... He decidido que voy a aceptar la oferta. Ya sabéis, cuando todo esto termine.~
+@5 = ~Oh, para que lo sepáis - Prometí traerle cualquier pergamino arcano o tomo que pudiera encontrar aquí.~
+@6 = ~¡Lo hicisteis! Sabía que lo haríais.~
+@7 = ~No puedo creer que esto haya terminado.~
+@8 = ~Lo hicimos juntos, Imoen.~
+@9 = ~No fuiste de mucha ayuda.~
+@10 = ~¡Sé lo que queréis decir!~
+@11 = ~Por mí está bien. No hay nada que temer, ¿verdad?~
+@12 = ~Los del Puño Llameante volverán arriba usando la cuerda que encontramos. Está justo al sur de aquí - te lleva directamente a la entrada.~
+@13 = ~¡Mirad esos tomos y libros sobre Bhaal! La Duquesa Jannath saltaría de alegría si los consiguiera. Bueno, en realidad no lo haría, es demasiado digna para eso, pero... ¿Puedo tomar estos para ella? ¿Por favor?~
+@14 = ~Claro. No sé cómo podrían serme útiles.~
+@15 = ~No, quiero quedármelos por ahora.~
+@16 = ~Bien, pero decidme si cambiáis de opinión, ¿de acuerdo?~
+@17 = ~Tomad la investigación sobre Bhaal que encontramos para la Duquesa Jannath, Imoen.~
+
+@200 = ~Escalad la cuerda cuando estéis listos para regresar al palacio. Estaremos detrás de vos.~

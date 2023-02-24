@@ -240,6 +240,7 @@ Austin, Arkie & Arcanecoast.ru and yota13: Russian
 Roberciiik: Polish
 Gwendolyne, Machiavélique, and Shodead: French
 improb@bile: Italian
+Inueb and ElGamerViejuno: Spanish
 Proofreading of English version & readme: Lauriel, Mike1072, Roberciiik
 
 
@@ -262,11 +263,16 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 15:
+-Spanish version added, by Inueb and ElGamerViejuno.
+-Correct script name extension for script patching (compatibility code for JAP).
+
 Version 14:
 -Polish version: Fixed "Usable By" order 
 -Insert missing right bracket in general.tpa
--Sarevok's armor and helmet should give "Protection from Magic" items.
--(EET): improved compatibility with NPC_EE )imoen, Minsc, and Jaheira should keep their tomes in ID).
+-Sarevok's armor and helmet should give "Protection from Magic" icons.
+-(EET): improved compatibility with NPC_EE (imoen, Minsc, and Jaheira should keep their tomes in ID).
+
 
 Version 13:
 -Winski should not be gone before the PC went for Sarevok in the Undercity Temple.
