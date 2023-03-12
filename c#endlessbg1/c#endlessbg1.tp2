@@ -106,7 +106,7 @@ ACTION_IF GAME_IS ~bgt~ THEN BEGIN
  OUTER_SPRINT ~bgee_only~ ~False()~
  OUTER_SPRINT ~sod~ ~False()~
  OUTER_SPRINT ~eet_only~ ~False()~
- OUTER_SPRINT ~start_bg1end_sod_cutscene~ ~False()~
+ OUTER_SPRINT ~start_bg1end_sod_cutscene~ ~~
  OUTER_SPRINT ~move_to_bg2~ ~~
  OUTER_SPRINT ~bdresurr~ ~sppr712~ //resurrection
  OUTER_SPRINT ~bddispel~ ~spin866~
