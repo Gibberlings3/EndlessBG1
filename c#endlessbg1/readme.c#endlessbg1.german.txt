@@ -254,6 +254,10 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 16:
+-(BGT) Corrected wrong value for "start_bg1end_sod_cutscene" (by Ychap).
+-Install order syntax for PI now only considers mods that should be installed earlier. Mods that need to be installed after EndlessBG1 are only listed if their own metadata ini-file doesn't include a check.
+
 Version 15:
 -Spanish version added, by Inueb and ElGamerViejuno.
 -Correct script name extension for script patching (compatibility code for JAP).
