@@ -1,0 +1,12 @@
+IF
+	GlobalGT("SarevokBehavior","GLOBAL",0)
+	Global("IvanneStoryTold","GLOBAL",0)
+	Global("TalkedToIvanne","GLOBAL",0)// bg1ub
+	Global("C#EBG1_EraseJournIvanne","MYAREA",0)
+THEN
+	RESPONSE #100
+		EraseJournalEntry(27178)
+		EraseJournalEntry(27177)
+		SetGlobal("C#EBG1_EraseJournIvanne","MYAREA",1)
+END
+
