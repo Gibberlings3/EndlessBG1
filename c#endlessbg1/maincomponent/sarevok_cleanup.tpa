@@ -1,3 +1,17 @@
+/* NBaldursGate: Sorrel */
+<<<<<<<< .../ar0200_add.baf
+IF
+	Exists("SORREL")  // Sorrel
+	InMyArea("SORREL")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ActionOverride("SORREL",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NBaldursGate%.bcs~ ~.../ar0200_add.baf~
+
+
 /* NW Baldur's Gate : Sugar */
 <<<<<<<< .../ar0100_add.baf
 IF
@@ -268,6 +282,21 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0700_add.baf~
+
+
+/* NBaldursGate_ThreeOldKegs_L1: Delthyr */
+<<<<<<<< .../ar0119_add.baf
+IF
+	Exists("Delthyr")  // Delthyr
+	InMyArea("Delthyr")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ActionOverride("Delthyr",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%CentralBaldursGate%.bcs~ ~.../ar0119_add.baf~
+
 
 /* E Baldur's Gate : Delthyr, Herschel, Tamoko */
   COPY_EXISTING ~%EBaldursGate%.bcs~ ~override~
