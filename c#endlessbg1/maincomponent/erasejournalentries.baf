@@ -1,12 +1,12 @@
 IF
 	GlobalGT("SarevokBehavior","GLOBAL",0)
-	Global("IvanneStoryTold","GLOBAL",0)
-	Global("TalkedToIvanne","GLOBAL",0)// bg1ub
-	Global("C#EBG1_EraseJournIvanne","MYAREA",0)
+	Global("C#EBG1_EraseJournEntries","MYAREA",0)
 THEN
 	RESPONSE #100
-		EraseJournalEntry(27178)
-		EraseJournalEntry(27177)
-		SetGlobal("C#EBG1_EraseJournIvanne","MYAREA",1)
+		EraseJournalEntry(%eet_2%27178) //Ivanne
+		EraseJournalEntry(%eet_2%27177) //Ivanne
+		EraseJournalEntry(%eet_2%%eet_0%9703) //Sorrel
+		EraseJournalEntry(%eet_2%%eet_0%9704) //Sorrel
+		SetGlobal("C#EBG1_EraseJournEntries","MYAREA",1)
 END
 
