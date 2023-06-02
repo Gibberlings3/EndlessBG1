@@ -215,15 +215,63 @@ If you have installation problems or encounter any bugs, please post your bug re
 
 COMPATIBILITY
 
-The Endless BG1 Mod will set the variable "Global("C#EndlessBG1","GLOBAL",1)" in the thieves guild (after the Palace fight) for (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
-Also, from v7 it will set "Global("SarevokBehavior","GLOBAL",5)" to 5 after Sarevok is dead.
-
 Components 1-13 of EndlessBG1 mod are fully compatible with Transitions Mod if Endless BG1 is installed first. Note: Transitions Mod overwrites a lot of components of BG1 with own versions of the content, if considering EBG1's content is not explicitely offered as an install choice. 
 Components 14-16 are not considered in Transitions yet (v2.0 and lower). Component 14 is probably incompatible with Transitions. Installing both will probably mess up the game. Also see compatibility notes in the component descriptions.
 
 The bonus quest "Scar's Return" from bg1re is fully playable after Sarevok's death.
 
 If Jarl's Adventure Pack v0.8.0 is installed, opening the chests on the 3rd floor of the Palace will be counted as a theft - in this case, the chests cannot be used by the group despite the servants stating otherwise.
+
+Compatibility note for modder:
+The Endless BG1 Mod will set the variable "Global("C#EndlessBG1","GLOBAL",1)" in the thieves guild (after the Palace fight) for (NPC) mods to know that the game will remain in BG1 after Sarevok's death.
+Also, from v7 it will set "Global("SarevokBehavior","GLOBAL",5)" to 5 after Sarevok is dead.
+For mods that integrate BG1NPCs into SoD by letting them continue with their BG1 cre (for example like Ajantis BG1 does), please note that the component "Korlasz' Dungeon in BG1" sets the NPCs dialogue and OVERRIDE script to their original SoD ones like it is done in the original bdintro.bcs. This means that NPCs who do not have an SoD script (i.e. all NPCs that do not reappear in SoD as a compagnion: Ajantis, Alora, Branwen, Coran, Faldorn, Garrick, Kagain, Kivan, Montaron, Quayle, Shar-Teel, Skie, Tiax, Xan, Xzar, Yeslick) do get their OVERRIDE script set to nothing (ChangeAIScript("",OVERRIDE)). If you want the acording NPC to have a script in Korlasz' Dungeon nontheless, you need to patch not only bdintro.bcs but also bd0120.bcs and bd0130.bcs where EndlessBG1 adds the resetting of SoD-dlg and bcs to. As an example, this is what I do in AjantisBG1:
+
+----------------------------------
+/* Crossmod with EndlessBG1 "Korlasz Tomb in BG1 */
+ACTION_IF (MOD_IS_INSTALLED ~c#endlessbg1.tp2~ ~14~) BEGIN
+
+/* make sure Ajantis' SoD override script is used in Korlasz' Crypt */
+COPY_EXISTING ~bd0120.bcs~ ~override~
+DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(ActionOverride("Ajantis",ChangeAIScript("",OVERRIDE))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~ActionOverride("Ajantis",ChangeAIScript("BDAJANTI",OVERRIDE))~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+END
+BUT_ONLY_IF_IT_CHANGES
+COPY_EXISTING ~bd0130.bcs~ ~override~
+DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(ActionOverride("Ajantis",ChangeAIScript("",OVERRIDE))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~ActionOverride("Ajantis",ChangeAIScript("BDAJANTI",OVERRIDE))~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+END
+BUT_ONLY_IF_IT_CHANGES
+/* this might not be needed here since you'll have to patch bdintro.bcs anyway for your NPC mod */
+COPY_EXISTING ~bdintro.bcs~ ~override~
+DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(ActionOverride("Ajantis",ChangeAIScript("",OVERRIDE))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~ActionOverride("Ajantis",ChangeAIScript("BDAJANTI",OVERRIDE))~
+			PATCH_PRINT ~Patching: %num_matches% matches found in %SOURCE_FILESPEC% for REPLACE_TEXTUALLY: %textToReplace%~
+		END ELSE BEGIN
+			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
+		END
+END
+BUT_ONLY_IF_IT_CHANGES
+
+END //~c#endlessbg1.tp2~ ~14~
+------------------------------------
 
 
 CREDITS
@@ -265,10 +313,11 @@ Spellhold Studios			http://www.shsforums.net/
 HISTORY
 
 Version 17:
--Korlasz' Crypt in BG1: NPCs should use their SoD scripts while inside the crypt.
+-Korlasz' Crypt in BG1: NPCs should always use their SoD scripts while inside the crypt.
 -Duke Jannath should not ask for the tomes if Imoen already gave them to her.
 -More cleanup after Sarevok: Delthyr in ThreeOldKegs, Sorrel in NBaldursGate.
--Journal entries that make no more sense after Sarevok was defeated should be closed or erased (work in progress).
+-Journal entries that make no more sense after Sarevok's defeat should be closed or erased (work in progress).
+-Added compatibility note to readme for "BG1 NPCs in SoD"-Mods and dlg/bcs handling for "Korlasz' Dungeon in BG1": NPCs get their SoD dialogue and script assigned. If BG1 NPCs do not have an original SoD script they would have to be patched accordingly if a mod requires them to have one.
 
 Version 16:
 -(BGT) Corrected wrong value for "start_bg1end_sod_cutscene" (by Ychap).
