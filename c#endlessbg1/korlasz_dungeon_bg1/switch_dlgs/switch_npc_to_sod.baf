@@ -8,6 +8,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("%IMOEN_DV%",SetDialog("BDIMOEN"))
+		ActionOverride("%IMOEN_DV%",ChangeAIScript("BDIMOEN",OVERRIDE))
 		SetGlobal("C#EBG1_imoen_to_sod","MYAREA",2)
 END
 
@@ -18,6 +19,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("dynaheir",SetDialog("bddynahj"))
+		ActionOverride("dynaheir",ChangeAIScript("bddynahe",OVERRIDE))
 		SetGlobal("C#EBG1_dynaheir_to_sod","MYAREA",2)
 END
 
@@ -28,6 +30,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("minsc",SetDialog("bdminscj"))
+		ActionOverride("minsc",ChangeAIScript("bdminsc",OVERRIDE))
 		SetGlobal("C#EBG1_minsc_to_sod","MYAREA",2)
 END
 
@@ -38,6 +41,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Rasaad",SetDialog("bdRasaaj"))
+		ActionOverride("Rasaad",ChangeAIScript("bdrasaad",OVERRIDE))
 		SetGlobal("C#EBG1_Rasaad_to_sod","MYAREA",2)
 END
 
@@ -48,6 +52,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Viconia",SetDialog("bdViconj"))
+		ActionOverride("Viconia",ChangeAIScript("bdviconi",OVERRIDE))
 		SetGlobal("C#EBG1_Viconia_to_sod","MYAREA",2)
 END
 
@@ -58,6 +63,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Safana",SetDialog("bdSafanj"))
+		ActionOverride("Safana",ChangeAIScript("bdsafana",OVERRIDE))
 		SetGlobal("C#EBG1_Safana_to_sod","MYAREA",2)
 END
 
@@ -68,6 +74,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Edwin",SetDialog("bdEdwinj"))
+		ActionOverride("Edwin",ChangeAIScript("bdedwin",OVERRIDE))
 		SetGlobal("C#EBG1_Edwin_to_sod","MYAREA",2)
 END
 
@@ -78,6 +85,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Jaheira",SetDialog("bdJaheij"))
+		ActionOverride("Jaheira",ChangeAIScript("bdjaheir",OVERRIDE))
 		SetGlobal("C#EBG1_Jaheira_to_sod","MYAREA",2)
 END
 
@@ -88,6 +96,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Khalid",SetDialog("bdKhalij"))
+		ActionOverride("Khalid",ChangeAIScript("bdkhalid",OVERRIDE))
 		SetGlobal("C#EBG1_Khalid_to_sod","MYAREA",2)
 END
 
@@ -98,6 +107,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Dorn",SetDialog("bdDornj"))
+		ActionOverride("Dorn",ChangeAIScript("bddorn",OVERRIDE))
 		SetGlobal("C#EBG1_Dorn_to_sod","MYAREA",2)
 END
 
@@ -108,6 +118,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Neera",SetDialog("bdNeeraj"))
+		ActionOverride("Neera",ChangeAIScript("bdneera",OVERRIDE))
 		SetGlobal("C#EBG1_Neera_to_sod","MYAREA",2)
 END
 
@@ -118,6 +129,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Baeloth",SetDialog("bdBaeloj"))
+		ActionOverride("Baeloth",ChangeAIScript("bdbaelot",OVERRIDE))
 		SetGlobal("C#EBG1_Baeloth_to_sod","MYAREA",2)
 END
 
@@ -128,6 +140,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Ajantis",SetDialog("bdAjantj"))
+		ActionOverride("Ajantis",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Ajantis_to_sod","MYAREA",2)
 END
 
@@ -138,6 +151,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Alora",SetDialog("bdAloraj"))
+		ActionOverride("Alora",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Alora_to_sod","MYAREA",2)
 END
 
@@ -148,6 +162,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Branwen",SetDialog("bdBranwj"))
+		ActionOverride("Branwen",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Branwen_to_sod","MYAREA",2)
 END
 
@@ -158,6 +173,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Coran",SetDialog("bdCoranj"))
+		ActionOverride("Coran",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Coran_to_sod","MYAREA",2)
 END
 
@@ -168,6 +184,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Eldoth",SetDialog("bdEldotj"))
+		ActionOverride("Eldoth",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Eldoth_to_sod","MYAREA",2)
 END
 
@@ -178,6 +195,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Faldorn",SetDialog("bdFaldoj"))
+		ActionOverride("Faldorn",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Faldorn_to_sod","MYAREA",2)
 END
 
@@ -188,6 +206,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Garrick",SetDialog("bdGarrij"))
+		ActionOverride("Garrick",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Garrick_to_sod","MYAREA",2)
 END
 
@@ -198,6 +217,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Kagain",SetDialog("bdKagaij"))
+		ActionOverride("Kagain",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Kagain_to_sod","MYAREA",2)
 END
 
@@ -208,6 +228,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Kivan",SetDialog("bdKivanj"))
+		ActionOverride("Kivan",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Kivan_to_sod","MYAREA",2)
 END
 
@@ -218,6 +239,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Montaron",SetDialog("bdMontaj"))
+		ActionOverride("Montaron",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Montaron_to_sod","MYAREA",2)
 END
 
@@ -228,6 +250,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Quayle",SetDialog("bdQuaylj"))
+		ActionOverride("Quayle",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Quayle_to_sod","MYAREA",2)
 END
 
@@ -240,7 +263,9 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Shar-Teel",SetDialog("bdSharTj"))
+		ActionOverride("Shar-Teel",ChangeAIScript("",OVERRIDE))
 		ActionOverride("SharTeel",SetDialog("bdSharTj"))
+		ActionOverride("SharTeel",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_SharTeel_to_sod","MYAREA",2)
 END
 
@@ -251,6 +276,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Skie",SetDialog("bdSkiej"))
+		ActionOverride("Skie",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Skie_to_sod","MYAREA",2)
 END
 
@@ -261,6 +287,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Tiax",SetDialog("bdTiaxj"))
+		ActionOverride("Tiax",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Tiax_to_sod","MYAREA",2)
 END
 
@@ -271,6 +298,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Xan",SetDialog("bdXanj"))
+		ActionOverride("Xan",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Xan_to_sod","MYAREA",2)
 END
 
@@ -281,6 +309,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Xzar",SetDialog("bdXzarj"))
+		ActionOverride("Xzar",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Xzar_to_sod","MYAREA",2)
 END
 
@@ -291,6 +320,7 @@ IF
 THEN
 	RESPONSE #100
 		ActionOverride("Yeslick",SetDialog("bdYeslij"))
+		ActionOverride("Yeslick",ChangeAIScript("",OVERRIDE))
 		SetGlobal("C#EBG1_Yeslick_to_sod","MYAREA",2)
 END
 

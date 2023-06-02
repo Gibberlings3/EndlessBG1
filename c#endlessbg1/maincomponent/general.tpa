@@ -310,3 +310,9 @@ EXTEND_BOTTOM ~%EBaldursGate_ThievesGuild%.bcs~ ~.../ar0146_detection_add.baf~ E
 /* give winski2.cre DV (same as Bg1NPC Project) */
 COPY_EXISTING ~winski2.cre~ ~override~
   WRITE_ASCII 0x280 ~winski2~ #32
+
+
+
+/* erase open journal entries */
+
+EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L1%.bcs~ ~c#endlessbg1/maincomponent/erasejournalentries.baf~ EVALUATE_BUFFER 

@@ -30,7 +30,7 @@ THEN
 	RESPONSE #100
 		CutSceneId(Player1)
 		ActionOverride("minsc",SetDialog("%MINSC_JOINED%"))
-		ActionOverride("minsc",ChangeAIScript("5MINSC_BCS%",OVERRIDE))
+		ActionOverride("minsc",ChangeAIScript("%MINSC_BCS%",OVERRIDE))
 END
 
 IF

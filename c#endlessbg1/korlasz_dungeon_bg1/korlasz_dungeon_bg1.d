@@ -58,7 +58,7 @@ InParty("%IMOEN_DV%") InMyArea("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_N
 InMyArea("LIIA") !StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @223 /* ~Here it is, Duke Liia. Look at the size of that pile!~ */
 == LIIA IF ~GlobalGT("C#EBG1_BhaalResearchKD","GLOBAL",2) GlobalLT("C#EBG1_BhaalResearchKD","GLOBAL",5)
 InMyArea("LIIA") !StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @224 /* ~I thank you for the tomes Imoen gave me. Here, take these for compensation.~ */ DO ~GiveItemCreate("SCRL07",Player1,2,0,0) SetGlobal("C#EBG1_BhaalResearchKD","GLOBAL",6)~
-== LIIA IF ~OR(2) PartyHasItem("BDSHBHR") GlobalGT("C#EBG1_BhaalResearchKD","GLOBAL",1)
+== LIIA IF ~PartyHasItem("BDSHBHR")
 GlobalLT("C#EBG1_BhaalResearchKD","GLOBAL",4)
 InMyArea("LIIA") !StateCheck("LIIA",CD_STATE_NOTVALID)~ THEN @225 /* ~I am very interested in these old tomes you found in Korlasz' family crypt for my research. Please hand them to me as soon as you can spare them, <CHARNAME>.~ */ DO ~SetGlobal("C#EBG1_BhaalResearchKD","GLOBAL",5)~
 END
