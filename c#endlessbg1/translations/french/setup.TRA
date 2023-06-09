@@ -35,6 +35,9 @@
 @5026  = ~Fenster le soigneur du palais se trouve dans le palais~
 @5027  = ~Le Capitaine Corwin se trouve dans le palais~
 
+/* new for v17.1 */
+@5028  = ~Modmerge or argent77's DLC Merger is required before mods can be installed on this game.~
+
 
 // WeiDU prompts
 @-1000= "Le mod %TP2_FILE_NAME% contient"

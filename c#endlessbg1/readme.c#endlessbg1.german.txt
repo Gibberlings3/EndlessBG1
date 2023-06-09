@@ -303,6 +303,9 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 17.1:
+-All lines in tp2 should be in tra files.
+
 Version 17:
 -Korlasz' Crypt in BG1: NPCs should always use their SoD scripts while inside the crypt.
 -Duke Jannath should not ask for the tomes if Imoen already gave them to her.
