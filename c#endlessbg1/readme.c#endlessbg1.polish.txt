@@ -226,23 +226,28 @@ Uruchom WeInstall c#endlessbg1 w folderze z gr¹, aby zainstalowaæ modyfikacjê. N
  
 
 Uwaga: Gry BG(II):EE s¹ wci¹¿ aktywnie rozwijane. Nale¿y pamiêtaæ, ¿e ka¿dy patch lub aktualizacja gry zepsuje aktualn¹ instalacjê modyfikacji!
-Jeœli w trakcie gry postanowisz zainstalowaæ aktualizacjê gry a nastêpnie przeinstalowaæ modyfikacje, stare zapisy gry mog¹ nie dzia³aæ poprawnie.
+Jeœli w trakcie gry postanowisz zainstalowaæ aktualizacjê gry, a nastêpnie przeinstalowaæ modyfikacje, stare zapisy gry mog¹ nie dzia³aæ poprawnie.
 Jeœli masz problem z instalacj¹ lub znalaz³eœ/aœ b³¹d, proszê zg³oœ to w jednym z w¹tków na forum.
 
 
 KOMPATYBILNOŒÆ:
 
-Komponenty 1-13 tej modyfikacji s¹ w pe³ni kompatybilne z modyfikacj¹ Transitions jeœli zosta³y one zainstalowane przed Transitions.
+Komponenty 1-13 tej modyfikacji s¹ w pe³ni kompatybilne z modyfikacj¹ Transitions, jeœli zosta³y one zainstalowane przed Transitions.
 Komponenty 14-16 nie s¹ jeszcze wspierane w po³¹czeniu z Transitions (v2.0 i wersje nowsze). Natomiast komponent 14 prawdopodobnie jest w ca³oœci niekompatybilny z Transitions. Instalacja tych komponentów wraz z Transitions mo¿e popsuæ grê. Wiêcej informacji znajduje siê w opisie poszczególnych komponentów.
 
 Dodatkowe zadanie "Scar's Return" modyfikacji bg1re mo¿e byæ w pe³ni rozegrane po œmierci Sarevoka.
 
 Uwaga: jeœli modyfikacja "Jarl's Adventure Pack" w wersji v0.8.0 jest zainstalowana po Endless BG1 to otworzenie skrzynii bêdzie traktowane jako próba kradzie¿y. W takim wypadku skrzynia na trzecim piêtrze Pa³acu Ksi¹¿êcego nie mo¿e byæ wykorzystywana przez grupê, nawet jeœli s³u¿ba twierdzi co innego.
 
-Compatibility note for modder:
-Modyfikacja Endless BG1 ustawia zmienn¹ "Global("C#EndlessBG1","GLOBAL",1)" w Gildii Z³odziei (po walce w pa³acu) dla modyfikacji (np. tych dodaj¹cych NPC) tak aby wiedzia³y, ¿e gra pozostanie w œwiecie BG1 po œmierci Sarevoka.
+Informacje o kompatybilnoœci dla modderów:
+Modyfikacja Endless BG1 ustawia zmienn¹ "Global("C#EndlessBG1","GLOBAL",1)" w Gildii Z³odziei (po walce w pa³acu), dziêki czemu modyfikacje (np. takie dodaj¹ce NPC) bêd¹ wiedzia³y, ¿e gra pozostanie w œwiecie BG1 po œmierci Sarevoka.
 Ponadto, od wersji v7 modyfikacja ustawia zmienn¹ "Global("SarevokBehavior","GLOBAL",5)" na wartoœæ 5 po œmierci Sarevoka.
-For mods that integrate BG1NPCs into SoD by letting them continue with their BG1 cre (for example like Ajantis BG1 does), please note that the component "Korlasz' Dungeon in BG1" sets the NPCs dialogue and OVERRIDE script to their original SoD ones like it is done in the original bdintro.bcs. This means that NPCs who do not have an SoD script (i.e. all NPCs that do not reappear in SoD as a compagnion: Ajantis, Alora, Branwen, Coran, Faldorn, Garrick, Kagain, Kivan, Montaron, Quayle, Shar-Teel, Skie, Tiax, Xan, Xzar, Yeslick) do get their OVERRIDE script set to nothing (ChangeAIScript("",OVERRIDE)). If you want the acording NPC to have a script in Korlasz' Dungeon nontheless, you need to patch not only bdintro.bcs but also bd0120.bcs and bd0130.bcs where EndlessBG1 adds the resetting of SoD-dlg and bcs to. As an example, this is what I do in AjantisBG1:
+
+W przypadku modyfikacji, które pozwalaj¹ na pozostanie NPCów w dru¿ynie w trakcie przygód z dodatku SoD (np. AjantisBG1), nale¿y zauwa¿yæ, ¿e komponent "Krypta Korlasz bêdzie dostêpna w BG1" ustawia OVERRIDE skrypt i plik dialogu na ten z SoD, tak jak ma to miejsce w niezmodowanym bdintro.bcs.
+To oznacza, ¿e dla wszystkich NPCów, którzy nie maj¹ swojego skryptu w SoD (wszyscy co nie pojawiaj¹ siê w SoD, na przyk³ad: Ajantis, Alora, Branwen, Coran, Faldorn, Garrick, Kagain, Kivan, Montaron, Quayle, Shar-Teel, Skie, Tiax, Xan, Xzar, Yeslick), zostanie przypisana pusta wartoœæ (ChangeAIScript("",OVERRIDE)).
+Jeœli chcesz, ¿eby NPC mia³ poprawny skrypt w Krypcie Korlasz, musisz wykonaæ patch nie tylko na bdintro.bcs, ale tak¿e bd0120.bcs i bd0130.bcs, gdzie EndlessBG1 dodaje równie¿ swoje resetowanie tych wartoœci.
+
+Poni¿ej przyk³ad, jak zosta³o to zrobione z modyfikacj¹ AjantisBG1:
 
 ----------------------------------
 /* Crossmod with EndlessBG1 "Korlasz Tomb in BG1 */
