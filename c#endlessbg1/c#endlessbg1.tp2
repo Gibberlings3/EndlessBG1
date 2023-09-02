@@ -8,7 +8,7 @@
 BACKUP ~c#endlessbg1/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/~ //jastey
 
-VERSION ~17.1pre~
+VERSION ~18~
 
 README ~c#endlessbg1/readme.c#endlessbg1.%LANGUAGE%.txt~ ~c#endlessbg1/readme.c#endlessbg1.english.txt~
 
@@ -222,6 +222,9 @@ For BGT, this adds some lines to Belt's dialogue and more cleanup of references 
 COMPILE EVALUATE_BUFFER ~c#endlessbg1/maincomponent/dialogues.d~
 
 ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+
+ADD_JOURNAL TITLE (@10018) @10016 @10017 USING ~c#endlessbg1/translations/%s/JOURNAL.tra~
+
   /* prevent end of BG1, open up Palace etc. */
   INCLUDE ~c#endlessbg1/maincomponent/general.tpa~
   /* "clean up" of Sarevok references (is already included in BGT or not relevant) */
@@ -267,7 +270,7 @@ REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only comp
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
-ADD_JOURNAL @10002 @10003 USING ~c#endlessbg1/translations/%s/dialogues.tra~
+ADD_JOURNAL @10002 @10003 USING ~c#endlessbg1/translations/%s/JOURNAL.tra~
 
 INCLUDE ~c#endlessbg1/pc_palaceresidence/pc_palaceresidence.tpa~
 
@@ -355,7 +358,7 @@ REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only comp
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
-ADD_JOURNAL TITLE (@10009) @10001 @10008 @10010 @10011 USING ~c#endlessbg1/translations/%s/dialogues.tra~
+ADD_JOURNAL TITLE (@10009) @10001 @10008 @10010 @10011 USING ~c#endlessbg1/translations/%s/JOURNAL.tra~
 
 INCLUDE ~c#endlessbg1/sarevok_sword/sarevok_sword.tpa~
 
@@ -429,7 +432,7 @@ REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only comp
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
-ADD_JOURNAL @10004 @10005 USING ~c#endlessbg1/translations/%s/dialogues.tra~
+ADD_JOURNAL @10004 @10005 USING ~c#endlessbg1/translations/%s/JOURNAL.tra~
 
 INCLUDE ~c#endlessbg1/imoen_jannath/imoen_jannath.tpa~
 
@@ -497,7 +500,7 @@ REQUIRE_PREDICATE (GAME_IS ~eet bgee bgt~) @5013 /* ~This component is only comp
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
-ADD_JOURNAL @10006 USING ~c#endlessbg1/translations/%s/dialogues.tra~
+ADD_JOURNAL @10006 USING ~c#endlessbg1/translations/%s/JOURNAL.tra~
 
 INCLUDE ~c#endlessbg1/elminster/elminster.tpa~
 COMPILE EVALUATE_BUFFER ~c#endlessbg1/elminster/elminster.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
@@ -523,7 +526,7 @@ REQUIRE_PREDICATE ((GAME_IS ~eet~) OR (GAME_IS ~bgee~ AND FILE_EXISTS_IN_GAME ~b
 FORBID_COMPONENT ~EET_end.tp2~ ~0~ @5023
 FORBID_COMPONENT ~EET_end.tp2~ ~1~ @5023
 
-ADD_JOURNAL @10007 USING ~c#endlessbg1/translations/%s/dialogues.tra~
+ADD_JOURNAL @10007 USING ~c#endlessbg1/translations/%s/JOURNAL.tra~
 
 INCLUDE ~c#endlessbg1/refugees_sod/refugees_sod.tpa~
 COMPILE EVALUATE_BUFFER ~c#endlessbg1/refugees_sod/refugees_sod.d~ USING ~c#endlessbg1/translations/%s/dialogues.tra~
@@ -1927,7 +1930,7 @@ END
 /* Remove in SoD/BGII */
 IF
 	OR(2) GlobalGT("ENDOFBG1","GLOBAL",0) GlobalGT("bd_plot","global",40)
-	Exists("C#STFENS")
+	Exists("C#STCORW")
 	GlobalLT("C#st_PlaceCorwin","MYAREA",2)
 THEN
 	RESPONSE #100

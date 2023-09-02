@@ -55,3 +55,12 @@ Sarevok ist tot. Dieses Kapitel meines Lebens ist Vergangenheit.~
 @10015   = ~Der Aufstieg Sarevoks
 
 Sarevok ist tot. Dieses Kapitel meines Lebens ist Vergangenheit.~
+
+/* new for v18 */
+@10016   = ~Zurück zum Palast
+
+Sarevok ist besiegt. Ich sollte zum Palast zurückkehren und mit den Herzögen sprechen.~
+@10017   = ~Zurück zum Palast
+
+Sobald ich mit allem fertig bin, sollte ich zum Palast zurückkehren und mit den Herzögen sprechen, ob sie weiterführende Pläne mit mir haben.~
+@10018   = ~Zurück zum Palast~

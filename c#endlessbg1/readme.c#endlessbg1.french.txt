@@ -284,7 +284,8 @@ Tantalus: BAMs des objets uniques de Sarevok. Les BAMs ont été récupérés de
 
 Translations:
 Aristo: Polish (proofreading)
-Austin, Arkie & Arcanecoast.ru and yota13: Russian
+Austin, Arkie & Arcanecoast.ru and yota13: Russian (v17)
+Ulpian: Russian (v18)
 Roberciiik: Polish
 Gwendolyne, Machiavélique, and Shodead: French
 improb@bile: Italian
@@ -311,7 +312,14 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
-Version 17.1:
+Version 18:
+-Revised Russian version, by Ulpian.
+-"Duke Eltan Is in the Palace": the mod added Duke Eltan will be removed after BG1 is finished to clear the area for mods that reopen the palace in EET(BGII).
+-Duke Eltan's body will be silently removed after Sarevok was defeated in case it wasn't brought to the Harbor master, either by the FF healers in Undercity or upon reentering the palace.
+-Corrected path to journal entries for ADD_JOURNAL.
+-Harbour master should not accept Eltan's body after Sarevok is defeated.
+-Corwin should be removed after BG1 is over (fixed typo in script).
+-(BG:EE, EET) Better journal handling after Sarevok is defeated.
 -All lines in tp2 should be in tra files.
 
 Version 17:

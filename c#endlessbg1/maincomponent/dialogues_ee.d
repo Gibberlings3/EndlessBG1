@@ -6,7 +6,7 @@ OR(2)
 InMyArea(Player1)
 IsGabber(Player1)~ victory
 SAY @0 /* ~<CHARNAME>, you were successful! You defeated Sarevok who conspired against the city, the Sword Coast, even Amn - for his own dark goals and purpose.~ */
-IF ~~ THEN + victory_01
+IF ~~ THEN DO ~EraseJournalEntry(@10016)~ + victory_01
 END
 
 IF ~~ THEN victory_01
@@ -21,18 +21,20 @@ SAY @2 /* ~<CHARNAME>, Hero of Baldur's Gate. Are you ready to combine forces wi
 + ~%bgee_only%~ + @3 /* ~"Hero of Baldur's Gate", now that has a pleasant ring to it. Tell me what you need me to do.~ */ + bg1_end
 + ~%sod% !Global("#L_BG1SarevokDead","GLOBAL",1)~ + @4 /* ~Yes, I am ready and I will start right away. Send me wherever you need me.~ */ + sod
 + ~%eet_only% !Global("#L_BG1SarevokDead","GLOBAL",1)~ + @5 /* ~Actually, I had enough of fulfilling a role. I won't be a lackey to you or anyone. I'll leave Baldur's Gate and look for my fate elsewhere. Fare well.~ */ DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",99)~ + start_bg2
-+ ~!Global("#L_BG1SarevokDead","GLOBAL",1)~ + @6 /* ~Not right away. I have a few things to finish first.~ */ + roam_bg1
++ ~!Global("#L_BG1SarevokDead","GLOBAL",1)~ + @6 /* ~Not right away. I have a few things to finish first.~ */ DO ~AddJournalEntry(@10017,QUEST)~ + roam_bg1
 END
 
 IF ~~ THEN bg1_end
 SAY @7 /* ~The city is in your debt, Hero of Baldur's Gate. Please follow me, I will tell you what we know.~ */
-IF ~~ THEN DO ~%start_bg1end_sod_cutscene%~ EXIT
+IF ~~ THEN DO ~EraseJournalEntry(@10017)
+%start_bg1end_sod_cutscene%~ EXIT
 END
 
 IF ~~ THEN sod
 SAY @13 /* ~The city is in your debt, Hero of Baldur's Gate.~  */ 
 = @14 /* ~Please follow me, the Flaming Fist soldiers will guide you to the hide-out of Sarevok's last follower.~ */
-IF ~~ THEN DO ~SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",99)
+IF ~~ THEN DO ~EraseJournalEntry(@10017)
+SetGlobal("C#EBG1_KorlaszQuest","GLOBAL",99)
 ActionOverride("BELT",TakePartyItem("c#stsrvs"))
 ActionOverride("BELT",DestroyItem("c#stsrvs")) 
 %start_bg1end_sod_cutscene%~ EXIT
@@ -99,7 +101,8 @@ InParty("SHARTEEL") Detect("SHARTEEL") !StateCheck("SHARTEEL",CD_STATE_NOTVALID)
 == baelothj IF ~InParty("BAELOTH") Detect("BAELOTH") !StateCheck("BAELOTH",CD_STATE_NOTVALID)~ THEN #%eet_2%57923 /* Consider this my curtain call. */
 == %IMOEN_JOINED% IF ~InParty("%IMOEN_DV%") Detect("%IMOEN_DV%") !StateCheck("%IMOEN_DV%",CD_STATE_NOTVALID)~ THEN @237 /* Ooh yes, sleeping and doing *nothing*, that sounds great! Although... talking from experience, I don't think the gods will let us!~ */
 END
-IF ~~ THEN DO ~ActionOverride("BELT",TakePartyItem("c#stsrvs"))
+IF ~~ THEN DO ~EraseJournalEntry(@10017)
+ActionOverride("BELT",TakePartyItem("c#stsrvs"))
 ActionOverride("BELT",DestroyItem("c#stsrvs")) 
 %move_to_bg2%~ EXIT
 
