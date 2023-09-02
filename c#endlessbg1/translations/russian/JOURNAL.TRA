@@ -58,10 +58,10 @@
 Саревок мертв. Эта глава моей жизни закрыта.~
 
 /* new for v18 */
-@10016   = ~Return to the Palace
+ @10016 = ~Возвращение во Дворец
 
-Sarevok is defeated. I should return to the Ducal Palace and talk to the Dukes.~
-@10017   = ~Return to the Palace
+Саревок повержен. Теперь нужно вернуться во Дворец и поговорить с герцогами.~
+@10017 = ~Возвращение во Дворец
 
-As soon as I am ready, I should talk to the Dukes about whatever they want me to do now.~
-@10018   = ~Return to the Palace~
+Как только все будет готово, мне следует поговорить с герцогами о том, чего они хотят от меня в данный момент.~
+@10018 = ~Возвращение во Дворец~ 
