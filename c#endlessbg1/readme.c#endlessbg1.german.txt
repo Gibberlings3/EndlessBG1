@@ -311,7 +311,7 @@ Version 18:
 -Corrected path to journal entries for ADD_JOURNAL.
 -Harbour master should not accept Eltan's body after Sarevok is defeated.
 -Corwin should be removed after BG1 is over (fixed typo in script).
--(BG:EE, EET) Better journal handling after Sarevok is defeated.
+-(BG:EE, EET) Better journal handling after Sarevok is defeated. Translations of new lines by yota13 (Russian), Roberciiik (Polish), Frenzgyn (Italian), JohnBob (French), ElGamerViejuno (Spanisch).
 -All lines in tp2 should be in tra files.
 
 Version 17:
