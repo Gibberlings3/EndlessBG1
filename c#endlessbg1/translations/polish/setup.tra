@@ -34,3 +34,6 @@
 @5025  = ~Komponent "Imoen 4 Ever w SoD: Imoen pozostaje w druzynie w kryptach Korlasz" modyfikacji Imoen 4 Ever musi zostac odinstalowany przed instalacja tego komponentu.~
 @5026  = ~Uzdrowiciel Fenster bedzie w palacu~
 @5027  = ~Kapitan Corwin bedzie w palacu~
+
+/* new for v18 */
+@5028  = ~Modmerge or argent77's DLC Merger is required before mods can be installed on this game.~

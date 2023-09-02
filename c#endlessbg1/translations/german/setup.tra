@@ -34,3 +34,6 @@
 @5025  = ~Imoen4Evers "Imoen bleibt in Korlasz' Crypta in der Gruppe" darf (und muss) nicht installiert sein.~
 @5026  = ~Fester der Palastkleriker ist im Palast~
 @5027  = ~Hauptmann Corwin ist im Palast~
+
+/* new for v18 */
+@5028  = ~Modmerge or argent77's DLC Merger is required before mods can be installed on this game.~

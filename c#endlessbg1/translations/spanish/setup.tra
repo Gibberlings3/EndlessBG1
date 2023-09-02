@@ -34,3 +34,6 @@
 @5025 = ~Imoen4Ever's "Imoen permanece en el grupo en la mazmorra de Korlasz" necesita ser desinstalado para esto.~
 @5026 = ~Fenster el sacerdote de palacio está en el palacio~
 @5027 = ~La capitana Corwin está en el palacio~
+
+/* new for v18 */
+@5028  = ~Modmerge or argent77's DLC Merger is required before mods can be installed on this game.~

@@ -55,3 +55,12 @@ Sarevok est mort. Ce chapitre de ma vie est terminé.~
 @10015   = ~L'ascension de Sarevok
 
 Sarevok est mort. Ce chapitre de ma vie est terminé.~
+
+/* new for v18 */
+@10016   = ~Return to the Palace
+
+Sarevok is defeated. I should return to the Ducal Palace and talk to the Dukes.~
+@10017   = ~Return to the Palace
+
+As soon as I am ready, I should talk to the Dukes about whatever they want me to do now.~
+@10018   = ~Return to the Palace~

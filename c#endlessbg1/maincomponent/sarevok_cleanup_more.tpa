@@ -162,6 +162,7 @@ END
 /* afte Sarevok is dead: Duke Eltan is no longer searched for, so the Harbormaster shouldn't refer to him. */
 
 <<<<<<<< ...inlined/harbor_eltan.d
+ADD_STATE_TRIGGER HARBOR 9 ~!Dead("Sarevok")~
 ADD_STATE_TRIGGER HARBOR 10 ~OR(2) Dead("Sarevok")~ UNLESS ~Dead("Sarevok")~
 ADD_STATE_TRIGGER HARBOR 11 ~!Dead("Sarevok")~
 >>>>>>>>

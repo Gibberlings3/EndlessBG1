@@ -14,9 +14,14 @@ END
 
 IF ~~ THEN duke_priest_01
 SAY @84 /* ~You did a great deed for the city. Return to the Palace and speak to the Dukes, they wish to thank you. Fare well.~ */
-IF ~~ THEN DO ~ActionOverride("c#stsdp2",MoveToPoint([900.1150])) 
+IF ~~ THEN DO ~SetInterrupt(FALSE)
+ActionOverride("c#stsdp2",TakePartyItem("MISC55"))
+ActionOverride("c#stsdp2",DestroyItem("MISC55"))
+ActionOverride("c#stsdp2",MoveToPoint([900.1150])) 
+ActionOverride("c#stsdp2",DestroySelf())
 ActionOverride("c#stsdpr",MoveToPoint([910.1150]))
-ActionOverride("c#stsdp2",DestroySelf()) ActionOverride("c#stsdpr",DestroySelf())~ EXIT
+ActionOverride("c#stsdpr",DestroySelf())
+SetInterrupt(TRUE)~ EXIT
 END 
 
 IF ~~ THEN duke_priest_02

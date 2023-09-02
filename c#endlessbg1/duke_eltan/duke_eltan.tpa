@@ -1,5 +1,6 @@
 /* Create cre for Duke Eltan in Palace after Sarevok's Death */
 COPY_EXISTING ~DELTAN.cre~ ~override/C#STELTA.cre~
+  WRITE_EVALUATED_ASCII 0x248 ~C#STELTA~ #8   // class script
   WRITE_EVALUATED_ASCII 0x250 ~SHOUT~ #8   // class script
   WRITE_EVALUATED_ASCII 0x268 ~WTASIGHT~ #8   // default script
   WRITE_EVALUATED_ASCII 0x2cc ~DELTAN2~ #8   // dialogue
@@ -37,9 +38,25 @@ THEN
 	RESPONSE #100
 		SetGlobal("C#st_SpawnEltan","MYAREA",1)
 END
+
 >>>>>>>>
 EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L1%.bcs~ ~.../ar0108_add_eltan.baf~ EVALUATE_BUFFER 
-	
+
+/* Duke Eltan will despawn if BG1 is over (for EET) */
+<<<<<<<< .../C#STELTA.baf
+/* Remove in SoD/BGII */
+IF
+	OR(2) GlobalGT("ENDOFBG1","GLOBAL",0) GlobalGT("bd_plot","global",40)
+	AreaCheck("%NBaldursGate_DucalPalace_L1%")
+	GlobalLT("C#st_SpawnEltan","MYAREA",2)
+THEN
+	RESPONSE #100
+		SetGlobal("C#st_SpawnEltan","MYAREA",2)
+		DestroySelf()
+END
+>>>>>>>>
+COMPILE ~.../C#STELTA.baf~ EVALUATE_BUFFER 
+
 /* compatibility with bg1ub and bg1re: remove Duke Eltan from the Harbormaster's Building after Sarevok's Death. Duke Eltan will be in the Palace, ground floor. Scar's appearance from "Scar's Return" will play there, too, if quest advanced to this point. 
 This is probably no longer necessary for bg1re v3.0 */
 

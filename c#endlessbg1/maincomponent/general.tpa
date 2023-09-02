@@ -70,8 +70,33 @@ THEN
 END
 
 >>>>>>>>
-
 EXTEND_TOP ~%Undercity_TempleofBhaal%.BCS~ ~.../ar0125-et.baf~ EVALUATE_BUFFER
+
+/* more journal entries for EE */
+ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
+<<<<<<<< .../ar0125_ee.baf
+IF
+	Dead("Sarevok")  // Armored Figure (Sarevok)
+	OR(2)
+		Dead("GALDOR")   //Angelo
+		!Exists("GALDOR")   //Angelo
+	OR(2)
+		Dead("SEMAJ")    // Semaj
+		!Exists("SEMAJ")    // Semaj
+	OR(2)
+		Dead("Tazok")    //Tazok
+		!Exists("Tazok")    //Tazok
+	Global("C#st_BG1EndJournalEE","MYAREA",0)
+THEN
+	RESPONSE #100
+		EraseJournalEntry(%eet_2%31475) 
+		AddJournalEntry(@10016,QUEST)
+		SetGlobal("C#st_BG1EndJournalEE","MYAREA",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%Undercity_TempleofBhaal%.BCS~ ~.../ar0125_ee.baf~ EVALUATE_BUFFER
+END
+
 
 /* BG:EE: game ends - new cutscene */
 ACTION_IF (GAME_IS ~bgee~ AND NOT FILE_EXISTS_IN_GAME ~bd0103.are~) THEN BEGIN
@@ -260,6 +285,23 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("C#st_RearrangeDukes","MYAREA",1)
+END
+
+/* Remove Duke Eltan's Body in case the player didn't bring him to the harbor master */
+IF
+	PartyHasItem("MISC55")
+	Global("C#st_RemoveMisc55","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BD0120_START","GLOBAL",1)
+		SetGlobal("BDAI_RESET_TIMERS","GLOBAL",1)
+		ActionOverride(Player1,DestroyItem("MISC55"))
+		ActionOverride(Player2,DestroyItem("MISC55"))
+		ActionOverride(Player3,DestroyItem("MISC55"))
+		ActionOverride(Player4,DestroyItem("MISC55"))
+		ActionOverride(Player5,DestroyItem("MISC55"))
+		ActionOverride(Player6,DestroyItem("MISC55"))
+		SetGlobal("C#st_RemoveMisc55","MYAREA",1)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L1%.bcs~ ~.../ar0108_add.baf~ EVALUATE_BUFFER 

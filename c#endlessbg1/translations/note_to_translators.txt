@@ -1,8 +1,7 @@
-new lines for v10:
+new lines for v18:
 
-in DIALOGUES.TRA:
-@238
+JOURNAL.TRA
+@10016 - @10018
 
-Readme: Added paragraph to description of component 14:
-"
-All original NPCs will use their normal SoD joined dialogue and SoD OVERRIDE scripts inside Korlasz' Dungeon as pointed out here: https://www.gibberlings3.net/forums/topic/34948-how-to-original-npc-scripts-and-dialogue-in-korlasz-tomb-and-compatibility-with-endlessbg1-and-transitions-community-effort/"
+setup.tra
+@5028
