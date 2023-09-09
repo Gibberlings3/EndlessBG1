@@ -335,6 +335,9 @@ Spellhold Studios - http://www.shsforums.net/
 
 HISTORIA ZMIAN:
 
+Version 18.1:
+-(BG:EE, EET) Translations of new lines added for Italian (by Frenzgyn) and French (by JohnBob), too.
+
 Version 18:
 -Revised Russian version, by Ulpian.
 -"Duke Eltan Is in the Palace": the mod added Duke Eltan will be removed after BG1 is finished to clear the area for mods that reopen the palace in EET(BGII).

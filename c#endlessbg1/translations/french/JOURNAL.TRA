@@ -57,10 +57,11 @@ Sarevok est mort. Ce chapitre de ma vie est terminé.~
 Sarevok est mort. Ce chapitre de ma vie est terminé.~
 
 /* new for v18 */
-@10016   = ~Return to the Palace
+@10016 = ~Retour au Palais Ducal
+ 
+Sarevok est enfin vaincu. Je dois retourner au Palais Ducal afin de m'entretenir avec les Grands-Ducs.~
+@10017 = ~Retour au Palais Ducal
+ 
+Les Grands-Ducs m'attendent pour discuter de la suite des événements.~
 
-Sarevok is defeated. I should return to the Ducal Palace and talk to the Dukes.~
-@10017   = ~Return to the Palace
-
-As soon as I am ready, I should talk to the Dukes about whatever they want me to do now.~
-@10018   = ~Return to the Palace~
+@10018 = ~Retour au Palais Ducal~ 
