@@ -1,206 +1,206 @@
 /* dialogues_ee.d */
-@0 = ~<CHARNAME>, ¡Lo habéis conseguido! Habéis derrotado a Sarevok, quien conspiró contra la ciudad de la Costa de la Espada, incluso contra Amn, por sus oscuros objetivos y propósitos.~
-@1 = ~Abristeis nuestros ojos al engaño y nos salvasteis de un gran peligro mientras permanecíamos ciegos ante tal amenaza. Por el poder que me ha sido otorgado como Duque del Consejo de los Cuatro de esta ciudad, yo os nombro "Héroe de Puerta de Baldur". En nombre de la ciudad, permíteme expresarte nuestra más profunda gratitud.~ ~Abristeis nuestros ojos al engaño y nos salvasteis de un gran peligro mientras permanecíamos ciegos ante tal amenaza. Por el poder que me ha sido otorgado como Duque del Consejo de los Cuatro de esta ciudad, yo os nombro "Heroína de Puerta de Baldur". En nombre de la ciudad, permíteme expresarte nuestra más profunda gratitud.~
-@2 = ~<CHARNAME>, Héroe de Puerta de Baldur, ¿estáis listo para combinar fuerzas con el Puño Llameante e ir contra los últimos seguidores de Sarevok?~ ~<CHARNAME>, Heroína de Puerta de Baldur, ¿estáis lista para combinar fuerzas con el Puño Llameante e ir contra los últimos seguidores de Sarevok?~
-@3 = ~"Héroe de Puerta de Baldur", eso si que suena bien. Decidme que necesitáis que haga.~ ~"Heroína de Puerta de Baldur", eso si que suena bien. Decidme que necesitáis que haga.~
-@4 = ~Si, estoy listo y comenzare de inmediato. Envíadme a donde me necesitéis.~ ~Si, estoy lista y comenzare de inmediato. Envíadme a donde me necesitéis.~
-@5 = ~En realidad, ya tuve suficiente de cumplir un papel. No seré un lacayo tuyo ni de nadie. Dejo Puerta de Baldur para buscar mi destino en otra parte. Que os vaya bien.~
+@0 = ~<CHARNAME>, VocÃª conseguiu isso! VocÃª derrotou Sarevok, que conspirou contra a cidade da Costa da Espada, incluindo Amn, por seus objetivos e propÃ³sitos sombrios.~
+@1 = ~Abristeis nuestros ojos al engaÃ±o y nos salvasteis de un gran peligro mientras permanecÃ­amos ciegos ante tal amenaza. Por el poder que me ha sido otorgado como Duque del Consejo de los Cuatro de esta ciudad, yo os nombro "HÃ©roe de Puerta de Baldur". En nombre de la ciudad, permÃ­teme expresarte nuestra mÃ¡s profunda gratitud.~ ~Abristeis nuestros ojos al engaÃ±o y nos salvasteis de un gran peligro mientras permanecÃ­amos ciegos ante tal amenaza. Por el poder que me ha sido otorgado como Duque del Consejo de los Cuatro de esta ciudad, yo os nombro "HeroÃ­na de Puerta de Baldur". En nombre de la ciudad, permÃ­teme expresarte nuestra mÃ¡s profunda gratitud.~
+@2 = ~<CHARNAME>, HÃ©roe de Puerta de Baldur, Â¿estÃ¡is listo para combinar fuerzas con el PuÃ±o Llameante e ir contra los Ãºltimos seguidores de Sarevok?~ ~<CHARNAME>, HeroÃ­na de Puerta de Baldur, Â¿estÃ¡is lista para combinar fuerzas con el PuÃ±o Llameante e ir contra los Ãºltimos seguidores de Sarevok?~
+@3 = ~"HÃ©roe de Puerta de Baldur", eso si que suena bien. Decidme que necesitÃ¡is que haga.~ ~"HeroÃ­na de Puerta de Baldur", eso si que suena bien. Decidme que necesitÃ¡is que haga.~
+@4 = ~Si, estoy listo y comenzare de inmediato. EnvÃ­adme a donde me necesitÃ©is.~ ~Si, estoy lista y comenzare de inmediato. EnvÃ­adme a donde me necesitÃ©is.~
+@5 = ~En realidad, ya tuve suficiente de cumplir un papel. No serÃ© un lacayo tuyo ni de nadie. Dejo Puerta de Baldur para buscar mi destino en otra parte. Que os vaya bien.~
 @6 = ~No de inmediato. Tengo algunas cosas que terminar primero.~
-@7 = ~La ciudad esta en deuda contigo, Héroe de Puerta de Baldur. Por favor, seguidme, os diré lo que sabemos.~ ~La ciudad esta en deuda contigo, Heroína de Puerta de Baldur. Por favor, seguidme, os diré lo que sabemos.~
-@8 = ~Ya veo. Aún así, la ciudad esta en deuda con vos. Que os vaya bien, Heroe de Puerta de Baldur.~ ~Ya veo. Aún así, la ciudad esta en deuda con vos. Que os vaya bien, Heroína de Puerta de Baldur.~
-@9 = ~Muy bien. Concentraremos nuestras fuerzas en encontrar a todos los seguidores de Sarevok y esperamos que pronto os unáis a nuestros esfuerzos. Hasta entonces, disfrutad de vuestra estancia.~
+@7 = ~La ciudad esta en deuda contigo, HÃ©roe de Puerta de Baldur. Por favor, seguidme, os dirÃ© lo que sabemos.~ ~La ciudad esta en deuda contigo, HeroÃ­na de Puerta de Baldur. Por favor, seguidme, os dirÃ© lo que sabemos.~
+@8 = ~Ya veo. AÃºn asÃ­, la ciudad esta en deuda con vos. Que os vaya bien, Heroe de Puerta de Baldur.~ ~Ya veo. AÃºn asÃ­, la ciudad esta en deuda con vos. Que os vaya bien, HeroÃ­na de Puerta de Baldur.~
+@9 = ~Muy bien. Concentraremos nuestras fuerzas en encontrar a todos los seguidores de Sarevok y esperamos que pronto os unÃ¡is a nuestros esfuerzos. Hasta entonces, disfrutad de vuestra estancia.~
 
 /* dialogues.d */ 
-@10 = ~¡Gracias por derrotar a Sarevok, <CHARNAME>!~
+@10 = ~Â¡Gracias por derrotar a Sarevok, <CHARNAME>!~
 
 /* nuevo para v2 */
 /* dialogues.d */
-@11 = ~Mi agradecimiento para vos también, compañero de <CHARNAME>.~ ~Mi agradecimiento para vos también, compañera de <CHARNAME>.~
+@11 = ~Mi agradecimiento para vos tambiÃ©n, compaÃ±ero de <CHARNAME>.~ ~Mi agradecimiento para vos tambiÃ©n, compaÃ±era de <CHARNAME>.~
 
 /* dialogues_ee.d */
-@12 = ~Saludos a vos también, compañero de <CHARNAME>.~ ~Saludos a vos también, compañera de <CHARNAME>.~
+@12 = ~Saludos a vos tambiÃ©n, compaÃ±ero de <CHARNAME>.~ ~Saludos a vos tambiÃ©n, compaÃ±era de <CHARNAME>.~
 
-/* nuevo para v3: cambiada la línea 7 para SoD [de nuevo dividida en v9] */
-@13 = ~La ciudad está en deuda con vos, Héroe de Puerta de Baldur.~ ~La ciudad está en deuda con vos, Heroína de Puerta de Baldur.~
+/* nuevo para v3: cambiada la lÃ­nea 7 para SoD [de nuevo dividida en v9] */
+@13 = ~La ciudad estÃ¡ en deuda con vos, HÃ©roe de Puerta de Baldur.~ ~La ciudad estÃ¡ en deuda con vos, HeroÃ­na de Puerta de Baldur.~
 
-/* nuevo para v9: línea 13 dividida */
-@14 = ~Por favor, seguidme, los soldados del Puño Llameante os guiarán hasta el escondite del última seguidora de Sarevok.~
+/* nuevo para v9: lÃ­nea 13 dividida */
+@14 = ~Por favor, seguidme, los soldados del PuÃ±o Llameante os guiarÃ¡n hasta el escondite del Ãºltima seguidora de Sarevok.~
 
 /* pc_palaceresidence.d */
-@20 = ~Saludos, <CHARNAME>. Por favor, abandonad el sótano, no deberíais estar aquí.~
+@20 = ~Saludos, <CHARNAME>. Por favor, abandonad el sÃ³tano, no deberÃ­ais estar aquÃ­.~
 @21 = ~Saludos, <CHARNAME>.~
-@22 = ~Saludos, Héroe de Puerta de Baldur.~ ~Saludos, Heroína de Puerta de Baldur.~
+@22 = ~Saludos, HÃ©roe de Puerta de Baldur.~ ~Saludos, HeroÃ­na de Puerta de Baldur.~
 @23 = ~Entra, <CHARNAME>. Los Duques desean hablar con vos.~
 /* BG:EE: #7548 */
 @24 = ~Entrad directamente.~
 /* BG:EE: #7550 */
-@25 = ~Moveos amigos, sólo aseguraos de no causar problemas.~ 
+@25 = ~Moveos amigos, sÃ³lo aseguraos de no causar problemas.~ 
 /* BG:EE: #9010 */
-@26 = ~Hay otras cosas que debo atender ahora. Buenos días.~
+@26 = ~Hay otras cosas que debo atender ahora. Buenos dÃ­as.~
 /* BG:EE: #5157 */
-@27 = ~Así que nos encontramos de nuevo. Lo siento, pero no tengo tiempo para hablar con vos.~
+@27 = ~AsÃ­ que nos encontramos de nuevo. Lo siento, pero no tengo tiempo para hablar con vos.~
 /* BG:EE: #7477 */
-@28 = ~Haced lo que queráis, e id donde os plazca.~
+@28 = ~Haced lo que querÃ¡is, e id donde os plazca.~
 /* BG:EE: #9340 */
-@29 = ~Soy un orgulloso miembro del Puño Llameante. Nuestro cuartel general está en Puerta de Baldur, aunque también operamos en Beregost y el Brazo Amigo. Estamos bastante preocupados por la repentina escasez del hierro. Muchos piensan que la nación de Amn se está preparando para la guerra contra nuestra gran ciudad. Si este fuera el caso, no sé lo bien que nos iría, careciendo de un recurso tan importante como el hierro.~
-@30 = ~¡Bienvenido, Héroe de Puerta de Baldur! Esta habitación os servirá de residencia mientras permanezcáis en la ciudad. He preparado todo y espero que sea de vuestro agrado. Los Duques quieren que os diga que el cofre en el extremo izquierdo de la habitación sera para vuestro uso personal, y todo lo que pongáis dentro se quedará allí mientras toméis residencia aquí. Hemos vaciado los cofres y trasladado todo al piso de abajo, pero si hemos pasado algo por alto, sentiros libre de tratarlo como si fuera vuestro. ¡Que tengáis una buena estancia y gracias por salvar la ciudad!~ ~¡Bienvenida, Heroína de Puerta de Baldur! Esta habitación os servirá de residencia mientras permanezcáis en la ciudad. He preparado todo y espero que sea de vuestro agrado. Los Duques quieren que os diga que el cofre en el extremo izquierdo de la habitación sera para vuestro uso personal, y todo lo que pongáis dentro se quedará allí mientras toméis residencia aquí. Hemos vaciado los cofres y trasladado todo al piso de abajo, pero si hemos pasado algo por alto, sentiros libre de tratarlo como si fuera vuestro. ¡Que tengáis una buena estancia y gracias por salvar la ciudad!~
+@29 = ~Soy un orgulloso miembro del PuÃ±o Llameante. Nuestro cuartel general estÃ¡ en Puerta de Baldur, aunque tambiÃ©n operamos en Beregost y el Brazo Amigo. Estamos bastante preocupados por la repentina escasez del hierro. Muchos piensan que la naciÃ³n de Amn se estÃ¡ preparando para la guerra contra nuestra gran ciudad. Si este fuera el caso, no sÃ© lo bien que nos irÃ­a, careciendo de un recurso tan importante como el hierro.~
+@30 = ~Â¡Bienvenido, HÃ©roe de Puerta de Baldur! Esta habitaciÃ³n os servirÃ¡ de residencia mientras permanezcÃ¡is en la ciudad. He preparado todo y espero que sea de vuestro agrado. Los Duques quieren que os diga que el cofre en el extremo izquierdo de la habitaciÃ³n sera para vuestro uso personal, y todo lo que pongÃ¡is dentro se quedarÃ¡ allÃ­ mientras tomÃ©is residencia aquÃ­. Hemos vaciado los cofres y trasladado todo al piso de abajo, pero si hemos pasado algo por alto, sentiros libre de tratarlo como si fuera vuestro. Â¡Que tengÃ¡is una buena estancia y gracias por salvar la ciudad!~ ~Â¡Bienvenida, HeroÃ­na de Puerta de Baldur! Esta habitaciÃ³n os servirÃ¡ de residencia mientras permanezcÃ¡is en la ciudad. He preparado todo y espero que sea de vuestro agrado. Los Duques quieren que os diga que el cofre en el extremo izquierdo de la habitaciÃ³n sera para vuestro uso personal, y todo lo que pongÃ¡is dentro se quedarÃ¡ allÃ­ mientras tomÃ©is residencia aquÃ­. Hemos vaciado los cofres y trasladado todo al piso de abajo, pero si hemos pasado algo por alto, sentiros libre de tratarlo como si fuera vuestro. Â¡Que tengÃ¡is una buena estancia y gracias por salvar la ciudad!~
 
 /* ceremony_sod.d */
-@40 = ~¡Por favor, seguidme!~
+@40 = ~Â¡Por favor, seguidme!~
 @41 = ~<CHARNAME> de Candelero!~
-@42 = ~¡Con el título vienen aposentos oficiales para vos en el tercer nivel del Palacio Ducal! Los sirvientes os ayudarán a instalaros tan pronto como estéis listo. ¡Todos, alabad a nuestro Héroe de Puerta de Baldur!~ ~¡Con el título vienen aposentos oficiales para vos en el tercer nivel del Palacio Ducal! Los sirvientes os ayudarán a instalaros tan pronto como estéis listo. ¡Todos, alabad a nuestra Heroína de Puerta de Baldur!~
+@42 = ~Â¡Con el tÃ­tulo vienen aposentos oficiales para vos en el tercer nivel del Palacio Ducal! Los sirvientes os ayudarÃ¡n a instalaros tan pronto como estÃ©is listo. Â¡Todos, alabad a nuestro HÃ©roe de Puerta de Baldur!~ ~Â¡Con el tÃ­tulo vienen aposentos oficiales para vos en el tercer nivel del Palacio Ducal! Los sirvientes os ayudarÃ¡n a instalaros tan pronto como estÃ©is listo. Â¡Todos, alabad a nuestra HeroÃ­na de Puerta de Baldur!~
 
 /* imoen_jannath.d */
-@50 = ~¡Quien hubiera pensado que era un conspirador tan malvado! Y casi lo convertimos en Duque... Nos salvasteis a todos, y estamos en deuda con vos, <CHARNAME>, ¡Héroe de Puerta de Baldur! Te mereces el titulo.~ ~¡Quien hubiera pensado que era un conspirador tan malvado! Y casi lo convertimos en Duque... Nos salvasteis a todos, y estamos en deuda con vos, <CHARNAME>, ¡Heroína de Puerta de Baldur! Os merecéis el título.~
-@51 = ~¡Eso suena tan impresionante! "Héroe de Puerta de Baldur".~ ~¡Eso suena tan impresionante! "Heroína de Puerta de Baldur".~
-@52 = ~¡Si tan solo hubiera podido utilizar magia, entonces lo hubieramos derribado aún más rápido!~
-@53 = ~¿Magia, dices? Hmm...~
-@54 = ~Imoen, creo que tenéis talento para la magia. Puede que quiera hablar con vos más tarde, joven amiga.~
-@55 = ~¿Yo? Uhm... ¡bien!~
-@56 = ~¡Bienvenido, Héroe de Puerta de Baldur! Y bienvenida, Imoen. Esta habitacion será vuestra residencia mientras permanezcáis en la ciudad, Imoen - con saludos de la Duquesa Jannath.~ ~¡Bienvenida, Heroína de Puerta de Baldur! Y bienvenida, Imoen. Esta habitacion será vuestra residencia mientras permanezcáis en la ciudad, Imoen - con saludos de la Duquesa Jannath.~
-@57 = ~...¿Mía? ¡Oh, wow! ¡Gracias!~
-@58 = ~Vos también tenéis un cofre propio, Imoen. Es el que está en el extremo izquierdo de la habitación. Todo lo que pongáis dentro os quedará allí mientras viváis aquí. ¡Que tengáis una buena estancia!~
-@59 = ~¡<CHARNAME>! "Héroe de Puerta de Baldur", ¿eh? ¡Impresionante! La Duquesa Jannath me ofreció esta habitación, ¡junto con lecciones de magia! ¿Os lo imagináis? Estaremos en la misma suite, ¡Vos y yo! Pero preferiría viajar con vos otra vez.~ ~¡<CHARNAME>! "Heroína de Puerta de Baldur", ¿eh? ¡Impresionante! La Duquesa Jannath me ofreció esta habitación, ¡junto con lecciones de magia! ¿Os lo imagináis? Estaremos en la misma suite, ¡Vos y yo! Pero preferiría viajar con vos otra vez.~
-@60 = ~El cofre en el extremo izquierdo de la habitación es mío, por cierto. En caso de que necesitéis más espacio para guardar vuestro equipo - dijeron que el cofre sería mío mientras nos quedásemos aquí.~
+@50 = ~Â¡Quien hubiera pensado que era un conspirador tan malvado! Y casi lo convertimos en Duque... Nos salvasteis a todos, y estamos en deuda con vos, <CHARNAME>, Â¡HÃ©roe de Puerta de Baldur! Te mereces el titulo.~ ~Â¡Quien hubiera pensado que era un conspirador tan malvado! Y casi lo convertimos en Duque... Nos salvasteis a todos, y estamos en deuda con vos, <CHARNAME>, Â¡HeroÃ­na de Puerta de Baldur! Os merecÃ©is el tÃ­tulo.~
+@51 = ~Â¡Eso suena tan impresionante! "HÃ©roe de Puerta de Baldur".~ ~Â¡Eso suena tan impresionante! "HeroÃ­na de Puerta de Baldur".~
+@52 = ~Â¡Si tan solo hubiera podido utilizar magia, entonces lo hubieramos derribado aÃºn mÃ¡s rÃ¡pido!~
+@53 = ~Â¿Magia, dices? Hmm...~
+@54 = ~Imoen, creo que tenÃ©is talento para la magia. Puede que quiera hablar con vos mÃ¡s tarde, joven amiga.~
+@55 = ~Â¿Yo? Uhm... Â¡bien!~
+@56 = ~Â¡Bienvenido, HÃ©roe de Puerta de Baldur! Y bienvenida, Imoen. Esta habitacion serÃ¡ vuestra residencia mientras permanezcÃ¡is en la ciudad, Imoen - con saludos de la Duquesa Jannath.~ ~Â¡Bienvenida, HeroÃ­na de Puerta de Baldur! Y bienvenida, Imoen. Esta habitacion serÃ¡ vuestra residencia mientras permanezcÃ¡is en la ciudad, Imoen - con saludos de la Duquesa Jannath.~
+@57 = ~...Â¿MÃ­a? Â¡Oh, wow! Â¡Gracias!~
+@58 = ~Vos tambiÃ©n tenÃ©is un cofre propio, Imoen. Es el que estÃ¡ en el extremo izquierdo de la habitaciÃ³n. Todo lo que pongÃ¡is dentro os quedarÃ¡ allÃ­ mientras vivÃ¡is aquÃ­. Â¡Que tengÃ¡is una buena estancia!~
+@59 = ~Â¡<CHARNAME>! "HÃ©roe de Puerta de Baldur", Â¿eh? Â¡Impresionante! La Duquesa Jannath me ofreciÃ³ esta habitaciÃ³n, Â¡junto con lecciones de magia! Â¿Os lo imaginÃ¡is? Estaremos en la misma suite, Â¡Vos y yo! Pero preferirÃ­a viajar con vos otra vez.~ ~Â¡<CHARNAME>! "HeroÃ­na de Puerta de Baldur", Â¿eh? Â¡Impresionante! La Duquesa Jannath me ofreciÃ³ esta habitaciÃ³n, Â¡junto con lecciones de magia! Â¿Os lo imaginÃ¡is? Estaremos en la misma suite, Â¡Vos y yo! Pero preferirÃ­a viajar con vos otra vez.~
+@60 = ~El cofre en el extremo izquierdo de la habitaciÃ³n es mÃ­o, por cierto. En caso de que necesitÃ©is mÃ¡s espacio para guardar vuestro equipo - dijeron que el cofre serÃ­a mÃ­o mientras nos quedÃ¡semos aquÃ­.~
 
 /* nuevo para v2 */
-@61 = ~Saludos, Imoen. Si encontráis tiempo para entrenar magia, hacérmelo saber.~
-@62 = ~Hola, Imoen. Venid a verme más tarde, ¿queréis?~
+@61 = ~Saludos, Imoen. Si encontrÃ¡is tiempo para entrenar magia, hacÃ©rmelo saber.~
+@62 = ~Hola, Imoen. Venid a verme mÃ¡s tarde, Â¿querÃ©is?~
 @63 = ~Hola, Imoen. Mi oferta de clases de magia sigue en pie, tan pronto como <CHARNAME> pueda prescindir de vos.~
-@64 = ~¿Estáis segura? Podría quedarme en el Palacio y aceptaros la oferta de la Duquesa Jannath.~
-@65 = ~Sí, Imoen, hacedlo.~
-@66 = ~En realidad, me gustaría que esperarais en otro lugar.~
-@67 = ~Mi culpa, quédaos conmigo.~
-@68 = ~¡Lo haré! La Duquesa Jannath se arrepentirá enseguida... No os alejéis mucho, ¿queréis?~
+@64 = ~Â¿EstÃ¡is segura? PodrÃ­a quedarme en el Palacio y aceptaros la oferta de la Duquesa Jannath.~
+@65 = ~SÃ­, Imoen, hacedlo.~
+@66 = ~En realidad, me gustarÃ­a que esperarais en otro lugar.~
+@67 = ~Mi culpa, quÃ©daos conmigo.~
+@68 = ~Â¡Lo harÃ©! La Duquesa Jannath se arrepentirÃ¡ enseguida... No os alejÃ©is mucho, Â¿querÃ©is?~
 
 
 
 /* duke_eltan.d */
-@70 = ~Nos salvasteis. Toda la ciudad está en deuda con vos.~
+@70 = ~Nos salvasteis. Toda la ciudad estÃ¡ en deuda con vos.~
 /* nuevo para v7 */
-@71 = ~Buenos días para vos.~
+@71 = ~Buenos dÃ­as para vos.~
 
 /* ffhealer.d */
-@80 = ~¡<CHARNAME>! Los Duques nos enviaron para velar por vuestro bienestar. Nos encargaremos de los cuerpos de Sarevok y sus secuaces.~
-@81 = ~¿Queréis que os curemos y desarmemos las trampas restantes también?~
-@82 = ~Sí, por favor.~
-@83 = ~No gracias, puedo apañarmelas solo.~
-@84 = ~Habéis hecho una gran obra por la ciudad. Regresad al Palacio y hablad con los Duques, desean agradeceros. Que os vaya bien.~
+@80 = ~Â¡<CHARNAME>! Los Duques nos enviaron para velar por vuestro bienestar. Nos encargaremos de los cuerpos de Sarevok y sus secuaces.~
+@81 = ~Â¿QuerÃ©is que os curemos y desarmemos las trampas restantes tambiÃ©n?~
+@82 = ~SÃ­, por favor.~
+@83 = ~No gracias, puedo apaÃ±armelas solo.~
+@84 = ~HabÃ©is hecho una gran obra por la ciudad. Regresad al Palacio y hablad con los Duques, desean agradeceros. Que os vaya bien.~
 @85 = ~Con mucho gusto. Por favor esperad un momento...~
-@86 = ~Eso debería bastar.~
+@86 = ~Eso deberÃ­a bastar.~
 
 /* elminster.d */
-@90 = ~Nuestros caminos se cruzan una vez mas, joven. Te has enterado de tu herencia divina y no sólo eso, sino que has tenido que matar a uno de tus devotos hermanos. Habéis librado a la Costa de la Espada de un gran mal. La pregunta es, ¿qué camino seguiréis a partir de ahora? ¿Sucumbiréis al mal que corre por vuestras venas? Tened la seguridad de que hay gente buena observando, <CHARNAME>, velando por vos y preparada para lo que sea que hagáis en el futuro, lo mejor que puedo haceros es desearos lo mejor, <CHARNAME>, hijo de Bhaal. Que los dioses os bendigan en todo el camino que os queda por delante.~
+@90 = ~Nuestros caminos se cruzan una vez mas, joven. Te has enterado de tu herencia divina y no sÃ³lo eso, sino que has tenido que matar a uno de tus devotos hermanos. HabÃ©is librado a la Costa de la Espada de un gran mal. La pregunta es, Â¿quÃ© camino seguirÃ©is a partir de ahora? Â¿SucumbirÃ©is al mal que corre por vuestras venas? Tened la seguridad de que hay gente buena observando, <CHARNAME>, velando por vos y preparada para lo que sea que hagÃ¡is en el futuro, lo mejor que puedo haceros es desearos lo mejor, <CHARNAME>, hijo de Bhaal. Que los dioses os bendigan en todo el camino que os queda por delante.~
 
 /* nuevo para v2 */
 //#12741
-@91 = ~¡Hola! Parece que vuestros viajes resultaron para bien después de todo. Sin embargo, no esperéis grandes elogios por el asesinato de Sarevok. Imagino que todo el incidente será silenciado inmediatamente. Sin embargo, tened por seguro, que muchos de los ciudadanos prominentes de los reinos saben de vuestro servicio y os lo agradecen. Una palabra amistosa de advertencia, sin embargo. Esos mismos ciudadanos están vigilando. Procuraos no suponer una amenaza como lo fue vuestro hermano, no sea que otro grupo de jóvenes héroes tenga que ser enviado para ocuparse de vos. Que la suerte os acompañe.~
+@91 = ~Â¡Hola! Parece que vuestros viajes resultaron para bien despuÃ©s de todo. Sin embargo, no esperÃ©is grandes elogios por el asesinato de Sarevok. Imagino que todo el incidente serÃ¡ silenciado inmediatamente. Sin embargo, tened por seguro, que muchos de los ciudadanos prominentes de los reinos saben de vuestro servicio y os lo agradecen. Una palabra amistosa de advertencia, sin embargo. Esos mismos ciudadanos estÃ¡n vigilando. Procuraos no suponer una amenaza como lo fue vuestro hermano, no sea que otro grupo de jÃ³venes hÃ©roes tenga que ser enviado para ocuparse de vos. Que la suerte os acompaÃ±e.~
 //#12742
-@92 = ~Veo que habéis sobrevivido a las pruebas y tribulaciones os han puesto por delante. No puedo deciros que esté muy satisfecho con eso, con vuestro comportamiento en general. La destrucción de Sarevok es un pobre consuelo si estáis decidido a seguir la misma senda homicida. Meditad bien vuestro camino y el destino os espera. Sería una pena que terminarais vuestra vida de la misma manera que vuestro hermano.~
+@92 = ~Veo que habÃ©is sobrevivido a las pruebas y tribulaciones os han puesto por delante. No puedo deciros que estÃ© muy satisfecho con eso, con vuestro comportamiento en general. La destrucciÃ³n de Sarevok es un pobre consuelo si estÃ¡is decidido a seguir la misma senda homicida. Meditad bien vuestro camino y el destino os espera. SerÃ­a una pena que terminarais vuestra vida de la misma manera que vuestro hermano.~
 //#12743
-@93 = ~¡Hola! Un final glorioso para este desagradable asunto, ¿verdad? Sin embargo, no esperéis grandes elogios por vuestros esfuerzos, ya que es probable que este asunto se silencie lo antes posible. Aún así, muchos en el reino saben de vuestra batalla y os tienen en alta estima por ello. Un gran mal ha sido derrotado. Esperemos que otros con esta desafortunada herencia no busquen el mismo camino.~
+@93 = ~Â¡Hola! Un final glorioso para este desagradable asunto, Â¿verdad? Sin embargo, no esperÃ©is grandes elogios por vuestros esfuerzos, ya que es probable que este asunto se silencie lo antes posible. AÃºn asÃ­, muchos en el reino saben de vuestra batalla y os tienen en alta estima por ello. Un gran mal ha sido derrotado. Esperemos que otros con esta desafortunada herencia no busquen el mismo camino.~
 
 /* dialogues_sarevoksword_bgt.d */
-@100 = ~Lo siento mucho, pero tengo que obedecer a mi amo, y quitaros esta espada... Ah, jaja, no estarán muy contentos de ver el estado en que se encuentra. Oh bueno, supongo que ya se en que voy a gastar mi tiempo ahora. Que te vaya bien, <CHARNAME>, tal vez nos volvamos a ver en otras circunstancias.~
+@100 = ~Lo siento mucho, pero tengo que obedecer a mi amo, y quitaros esta espada... Ah, jaja, no estarÃ¡n muy contentos de ver el estado en que se encuentra. Oh bueno, supongo que ya se en que voy a gastar mi tiempo ahora. Que te vaya bien, <CHARNAME>, tal vez nos volvamos a ver en otras circunstancias.~
 
 /* dialogues_sarevoksword_ee.d */
 @110 = ~Primero, dejadme daros la espada de Sarevok, como pedisteis.~
-@111 = ~Hemos notado que Sarevok se vinculó con su espada y la convirtió en un arma muy poderosa.~
-@112 = ~Veo que también tomasteis su armadura. Seguirá siendo vuestra, aunque sólo puedo advertiros que no la useis - aparecer con el mismo atuendo oscuro y amenazador podría levantar desafortunadas sospechas en la gente.~
-@113 = ~Nos gustaría llevarnos la espada y mantenerla a salvo. Si nos la dierais, os estaríamos agradecidos. Os recompensaremos como corresponde, por supuesto.~
-@114 = ~¡En efecto! Yo mismo tengo curiosidad por ver un arma así, poderosa tanto en magia como en valor simbólico para sus seguidores. Oh - pero veo que perdió mucho de su poder, y no es utilizable en el estado actual. Mejor - cualquiera que quiera empuñarla y ponerse en la piel de Sarevok tendrá que pagar mucho oro para que recupere parte de su antiguo poder.~
-@115 = ~Sin embargo, tiene un alto valor simbólico para sus últimos seguidores. Tenemos que guardarla bien, ya que atraerá a muchos ladrones. Gracias, <CHARNAME>, por otorgarnos esta arma y darnos la oportunidad de eliminar este símbolo maligno de estas tierras. Permitidme daros esta espada como compensación, así como esta pequeña suma de oro como pequeña muestra de nuestra gratitud.~
+@111 = ~Hemos notado que Sarevok se vinculÃ³ con su espada y la convirtiÃ³ en un arma muy poderosa.~
+@112 = ~Veo que tambiÃ©n tomasteis su armadura. SeguirÃ¡ siendo vuestra, aunque sÃ³lo puedo advertiros que no la useis - aparecer con el mismo atuendo oscuro y amenazador podrÃ­a levantar desafortunadas sospechas en la gente.~
+@113 = ~Nos gustarÃ­a llevarnos la espada y mantenerla a salvo. Si nos la dierais, os estarÃ­amos agradecidos. Os recompensaremos como corresponde, por supuesto.~
+@114 = ~Â¡En efecto! Yo mismo tengo curiosidad por ver un arma asÃ­, poderosa tanto en magia como en valor simbÃ³lico para sus seguidores. Oh - pero veo que perdiÃ³ mucho de su poder, y no es utilizable en el estado actual. Mejor - cualquiera que quiera empuÃ±arla y ponerse en la piel de Sarevok tendrÃ¡ que pagar mucho oro para que recupere parte de su antiguo poder.~
+@115 = ~Sin embargo, tiene un alto valor simbÃ³lico para sus Ãºltimos seguidores. Tenemos que guardarla bien, ya que atraerÃ¡ a muchos ladrones. Gracias, <CHARNAME>, por otorgarnos esta arma y darnos la oportunidad de eliminar este sÃ­mbolo maligno de estas tierras. Permitidme daros esta espada como compensaciÃ³n, asÃ­ como esta pequeÃ±a suma de oro como pequeÃ±a muestra de nuestra gratitud.~
 
 /* refugees_sod.d */
-@120 = ~Viajamos hasta aquí desde Páramo Alto porque quemaron nuestras granjas. No sabemos quiénes son, sólo que siguen ahí fuera y que su número va en aumento. ¿Nos ayudará Puerta de Baldur? Nunca llegamos tan lejos en el sur, pero no nos sentimos seguros fuera de una gran ciudad.~
-@121 = ~Quemaron todo - después de llevarse todo nuestro ganado. ¿Por qué alguien haría eso?~
-@122 = ~Tantos hombres furiosos, y destruyen todo a su paso. Realmente espero que estemos a salvo aquí en el sur.~
-@123 = ~Nos pidieron que nos uniéramos a ellos, y entonces empezaron a arrasar y matar... Huimos con lo poco que pudimos llevar.~
+@120 = ~Viajamos hasta aquÃ­ desde PÃ¡ramo Alto porque quemaron nuestras granjas. No sabemos quiÃ©nes son, sÃ³lo que siguen ahÃ­ fuera y que su nÃºmero va en aumento. Â¿Nos ayudarÃ¡ Puerta de Baldur? Nunca llegamos tan lejos en el sur, pero no nos sentimos seguros fuera de una gran ciudad.~
+@121 = ~Quemaron todo - despuÃ©s de llevarse todo nuestro ganado. Â¿Por quÃ© alguien harÃ­a eso?~
+@122 = ~Tantos hombres furiosos, y destruyen todo a su paso. Realmente espero que estemos a salvo aquÃ­ en el sur.~
+@123 = ~Nos pidieron que nos uniÃ©ramos a ellos, y entonces empezaron a arrasar y matar... Huimos con lo poco que pudimos llevar.~
 @124 = ~Destruyeron toda la aldea - y no quiero ni saber lo que le hicieron a los aldeanos que no huyeron lo suficientemente pronto.~
-@125 = ~¡Uniros a nosotros! ¡Uniros a nosotros en una cruzada de saqueos y matanzas! ¡Esos asesinos pidieron que nos uniéramos a ellos! Huí tan pronto como pude.~
-@126 = ~¡Maaamaaa! El extraño me está hablando.~
-@127 = ~Perdí mi cachorro en el camino.~
+@125 = ~Â¡Uniros a nosotros! Â¡Uniros a nosotros en una cruzada de saqueos y matanzas! Â¡Esos asesinos pidieron que nos uniÃ©ramos a ellos! HuÃ­ tan pronto como pude.~
+@126 = ~Â¡Maaamaaa! El extraÃ±o me estÃ¡ hablando.~
+@127 = ~PerdÃ­ mi cachorro en el camino.~
 @128 = ~Quiero regresar a casa.~
 
 /* denkod.d */
-@140 = ~¡Habéis vuelto!~
-@141 = ~Tengo que deciros, tened cuidado con usar eso. Por un momento pensé que erais él. Casi saco mi daga, y os la clavo en el pecho.~
-@142 = ~No os vais a creer lo que ha pasado aquí hace unos minutos. Los mercenarios del Puño Llameante, que se paseaban por el gremio y nos ignoraban a todos, primero entraban y luego salían.~
-@143 = ~Parece que el grupo de ahí abajo está acabado, ¿eh? ¿También liquidasteis a ese tipo con armadura, o volverá a pasar por aquí también? Por ahora me iré a un lugar más tranquilo, ¡aquí hay demasiado tráfico para mi gusto!~
+@140 = ~Â¡HabÃ©is vuelto!~
+@141 = ~Tengo que deciros, tened cuidado con usar eso. Por un momento pensÃ© que erais Ã©l. Casi saco mi daga, y os la clavo en el pecho.~
+@142 = ~No os vais a creer lo que ha pasado aquÃ­ hace unos minutos. Los mercenarios del PuÃ±o Llameante, que se paseaban por el gremio y nos ignoraban a todos, primero entraban y luego salÃ­an.~
+@143 = ~Parece que el grupo de ahÃ­ abajo estÃ¡ acabado, Â¿eh? Â¿TambiÃ©n liquidasteis a ese tipo con armadura, o volverÃ¡ a pasar por aquÃ­ tambiÃ©n? Por ahora me irÃ© a un lugar mÃ¡s tranquilo, Â¡aquÃ­ hay demasiado trÃ¡fico para mi gusto!~
 
 /* ophyllis_sod.d */
-@150 = ~¡Oh, <CHARNAME>! Encantado de conoceros. Soy Ophyllis, el tesorero del Palacio Ducal. Os guardaré vuestro oro para cuando os unáis al Puño Llameante en la persecución de los últimos de los seguidores de Sarevok.~
-@151 = ~¿El tesorero del Palacio Ducal? Eso suena como una posición de alta responsabilidad.~
-@152 = ~¿Guardar mi oro? ¿Por qué?~
-@153 = ~¿Qué pasa si no quiero daros mi oro?~
-@154 = ~Sé quién sois. Que tengáis un buen día.~
-@155 = ~¡Oh, así es! Jaja. Los Duques confían en mí sin dudarlo. ¡Saben que nunca tomaría una sola moneda para mi beneficio!~
-@156 = ~Es por orden de los Duques, me temo - nadie marchando con el Puño Llameante debería tener que preocuparse por su riqueza - y para ser honesto, creo que a los Duques les gusta la idea de que los hombres no tengan monedas de sobra para visitas no oficiales a la taberna, ejem.~
-@157 = ~Mantendré vuestro oro a buen recaudo, no hay razón para preocuparos ahora, jaja - Tengo que prepararme para la custodia de vuestro oro, la nota al respecto me llegó hace unos momentos.~
-@158 = ~Iré a veros una vez que os hayáis unido al Puño Llameante en su persecución. ¡Adiós hasta entonces!~
-@159 = ~Saludos, <CHARNAME>. Si estáis aquí para ver a Ophyllis, él debe estar en la oficina.~
+@150 = ~Â¡Oh, <CHARNAME>! Encantado de conoceros. Soy Ophyllis, el tesorero del Palacio Ducal. Os guardarÃ© vuestro oro para cuando os unÃ¡is al PuÃ±o Llameante en la persecuciÃ³n de los Ãºltimos de los seguidores de Sarevok.~
+@151 = ~Â¿El tesorero del Palacio Ducal? Eso suena como una posiciÃ³n de alta responsabilidad.~
+@152 = ~Â¿Guardar mi oro? Â¿Por quÃ©?~
+@153 = ~Â¿QuÃ© pasa si no quiero daros mi oro?~
+@154 = ~SÃ© quiÃ©n sois. Que tengÃ¡is un buen dÃ­a.~
+@155 = ~Â¡Oh, asÃ­ es! Jaja. Los Duques confÃ­an en mÃ­ sin dudarlo. Â¡Saben que nunca tomarÃ­a una sola moneda para mi beneficio!~
+@156 = ~Es por orden de los Duques, me temo - nadie marchando con el PuÃ±o Llameante deberÃ­a tener que preocuparse por su riqueza - y para ser honesto, creo que a los Duques les gusta la idea de que los hombres no tengan monedas de sobra para visitas no oficiales a la taberna, ejem.~
+@157 = ~MantendrÃ© vuestro oro a buen recaudo, no hay razÃ³n para preocuparos ahora, jaja - Tengo que prepararme para la custodia de vuestro oro, la nota al respecto me llegÃ³ hace unos momentos.~
+@158 = ~IrÃ© a veros una vez que os hayÃ¡is unido al PuÃ±o Llameante en su persecuciÃ³n. Â¡AdiÃ³s hasta entonces!~
+@159 = ~Saludos, <CHARNAME>. Si estÃ¡is aquÃ­ para ver a Ophyllis, Ã©l debe estar en la oficina.~
 
 /* korlasz_dungeon_bg1.d */
-/* líneas @200 - @202 son las mismas que @0 - @2 de ajantisbg1/.../ajantisbg1_transitions.tra */
-@200 = ~Ha sido un honor limpiar este lugar de la amenaza de los bandidos y de la creciente guerra con vos. Mi tarea aquí ha terminado. Volveré a casa para llamar a la Orden del Radiante Corazón. Informaré de los sucesos y de vuestra participación en ellos. Yo, ejem, también mencionaré mi parte en ello, y espero que se me considere digno de recibir el título de caballero. Os agradezco por unir fuerzas conmigo. ¡Adiós!~
-@201 = ~<CHARNAME>, me temo que ha llegado el momento de deciros adiós. La guerra ha terminado, Sarevok ha sido derrotado, la tarea que me encomendó la Orden está cumplida. Es hora de que me presente, pero antes viajaré a Aguas Profundas, como ya acordamos. Nada me detendrá de buscar la respuesta de mis padres respecto a nuestros planes de matrimonio, ahora que nuestro enemigo ha sido derrotado y la paz ha vuelto a las tierras, por fin. Tengo tantas ganas de hablar con ellos, <CHARNAME>, mi amor. Hablad con ellos y contarles el amor que siento a por vos.~
-@202 = ~Mi corazón sufre por dejaros. Os enviaré mensajes sobre mi paradero tan a menudo como pueda. Y ya sea en Aguas Profundas, Athkatla, o aquí donde nos volvamos a encontrar, ten por seguro que vendré a por vos - o os esperaré, no importa donde estemos destinados a reunirnos. Adiós, "Heroína de Puerta de Baldur" (sonríe). Disfrutad de la gratitud y los elogios de la gente mientras aún estén dispuestos a dároslos, <CHARNAME>. Os lo habéis ganado.~
-@203 = ~Imoen - La Duquesa Jannath quiere hablaros antes de que os vayáis.~
-@204 = ~Imoen, niña, quiero hablaros antes que os vayáis. Venid aquí un momento.~
-@205 = ~¿Yo? De acuerdo.~
-@206 = ~La Duquesa Jannath está decidida a ver a Imoen antes de os vayais. Estoy seguro de que también se ocupará del estado actual de vuestra amiga.~
-@207 = ~Necesito hablar con Imoen antes de que os vayais. Llamaré a Fenster para que se ocupe de su estado actual.~
-@208 = ~Imoen, vuestra amiga de la infancia, fue preparada por la Duquesa Jannath para guiaros lo mejor posible. Ella os esperará allí.~
-@209 = ~Por favor, regresad a la cripta familiar de Korlasz y ayudad a derrotar a la última seguidora de Sarevok.~
-@210 = ~<CHARNAME>, Héroe de Puerta de Baldur. ¡Volvéis victorioso! No solo el mismo Sarevok, sino tambien todos los seguidores de Sarevok han sido derrotados.~ ~<CHARNAME>, Heroína de Puerta de Baldur. ¡Volvéis victoriosa! No solo el mismo Sarevok, sino tambien todos los seguidores de Sarevok han sido derrotados.~
-@211 = ~Honestamente, necesito un descanso. Puedo sentir el siguiente problema creciendo en las sombras. Descansaré y no haré nada por un tiempo así estaré preparado para lo que venga.~
-@212 = ~Todavía hay mucho que hacer y descubrir. Estaré por aquí.~
-@213 = ~Me iré de la ciudad y de la Costa de la Espada antes de que ocurra la próxima catástrofe que amenace al mundo. Intentaré ir hacia el sur, lejos de lo que la ciudad de Puerta de Baldur pueda sufrir en un futuro cercano o lejano.~
-@214 = ~Un héroe siempre está ocupado. Quien reciba vuestra ayuda puede considerarse afortunado. Disfrutad vuestro tiempo, héroe.~ ~Una heroína siempre está ocupada. Quien reciba vuestra ayuda puede considerarse afortunado. Disfrutad vuestro tiempo, heroína.~
-@215 = ~Un merecido descanso. Sentiros como en casa en el último piso del palacio tanto como queráis.~
+/* lÃ­neas @200 - @202 son las mismas que @0 - @2 de ajantisbg1/.../ajantisbg1_transitions.tra */
+@200 = ~Ha sido un honor limpiar este lugar de la amenaza de los bandidos y de la creciente guerra con vos. Mi tarea aquÃ­ ha terminado. VolverÃ© a casa para llamar a la Orden del Radiante CorazÃ³n. InformarÃ© de los sucesos y de vuestra participaciÃ³n en ellos. Yo, ejem, tambiÃ©n mencionarÃ© mi parte en ello, y espero que se me considere digno de recibir el tÃ­tulo de caballero. Os agradezco por unir fuerzas conmigo. Â¡AdiÃ³s!~
+@201 = ~<CHARNAME>, me temo que ha llegado el momento de deciros adiÃ³s. La guerra ha terminado, Sarevok ha sido derrotado, la tarea que me encomendÃ³ la Orden estÃ¡ cumplida. Es hora de que me presente, pero antes viajarÃ© a Aguas Profundas, como ya acordamos. Nada me detendrÃ¡ de buscar la respuesta de mis padres respecto a nuestros planes de matrimonio, ahora que nuestro enemigo ha sido derrotado y la paz ha vuelto a las tierras, por fin. Tengo tantas ganas de hablar con ellos, <CHARNAME>, mi amor. Hablad con ellos y contarles el amor que siento a por vos.~
+@202 = ~Mi corazÃ³n sufre por dejaros. Os enviarÃ© mensajes sobre mi paradero tan a menudo como pueda. Y ya sea en Aguas Profundas, Athkatla, o aquÃ­ donde nos volvamos a encontrar, ten por seguro que vendrÃ© a por vos - o os esperarÃ©, no importa donde estemos destinados a reunirnos. AdiÃ³s, "HeroÃ­na de Puerta de Baldur" (sonrÃ­e). Disfrutad de la gratitud y los elogios de la gente mientras aÃºn estÃ©n dispuestos a dÃ¡roslos, <CHARNAME>. Os lo habÃ©is ganado.~
+@203 = ~Imoen - La Duquesa Jannath quiere hablaros antes de que os vayÃ¡is.~
+@204 = ~Imoen, niÃ±a, quiero hablaros antes que os vayÃ¡is. Venid aquÃ­ un momento.~
+@205 = ~Â¿Yo? De acuerdo.~
+@206 = ~La Duquesa Jannath estÃ¡ decidida a ver a Imoen antes de os vayais. Estoy seguro de que tambiÃ©n se ocuparÃ¡ del estado actual de vuestra amiga.~
+@207 = ~Necesito hablar con Imoen antes de que os vayais. LlamarÃ© a Fenster para que se ocupe de su estado actual.~
+@208 = ~Imoen, vuestra amiga de la infancia, fue preparada por la Duquesa Jannath para guiaros lo mejor posible. Ella os esperarÃ¡ allÃ­.~
+@209 = ~Por favor, regresad a la cripta familiar de Korlasz y ayudad a derrotar a la Ãºltima seguidora de Sarevok.~
+@210 = ~<CHARNAME>, HÃ©roe de Puerta de Baldur. Â¡VolvÃ©is victorioso! No solo el mismo Sarevok, sino tambien todos los seguidores de Sarevok han sido derrotados.~ ~<CHARNAME>, HeroÃ­na de Puerta de Baldur. Â¡VolvÃ©is victoriosa! No solo el mismo Sarevok, sino tambien todos los seguidores de Sarevok han sido derrotados.~
+@211 = ~Honestamente, necesito un descanso. Puedo sentir el siguiente problema creciendo en las sombras. DescansarÃ© y no harÃ© nada por un tiempo asÃ­ estarÃ© preparado para lo que venga.~
+@212 = ~TodavÃ­a hay mucho que hacer y descubrir. EstarÃ© por aquÃ­.~
+@213 = ~Me irÃ© de la ciudad y de la Costa de la Espada antes de que ocurra la prÃ³xima catÃ¡strofe que amenace al mundo. IntentarÃ© ir hacia el sur, lejos de lo que la ciudad de Puerta de Baldur pueda sufrir en un futuro cercano o lejano.~
+@214 = ~Un hÃ©roe siempre estÃ¡ ocupado. Quien reciba vuestra ayuda puede considerarse afortunado. Disfrutad vuestro tiempo, hÃ©roe.~ ~Una heroÃ­na siempre estÃ¡ ocupada. Quien reciba vuestra ayuda puede considerarse afortunado. Disfrutad vuestro tiempo, heroÃ­na.~
+@215 = ~Un merecido descanso. Sentiros como en casa en el Ãºltimo piso del palacio tanto como querÃ¡is.~
 @216 = ~Ahora voy a hacer mi propio camino. Que os vaya bien, <CHARNAME>.~
 @217 = ~Ya me voy, <CHARNAME>. Fue genial y todo, pero voy a ir a disfrutar de un merecido descanso por un tiempo.~
-@218 = ~He soportado vuestras excentricidades bastante tiempo, <CHARNAME>, pero esta fue la última tumba a la que tú, o cualquier otro me atraiga.~
-@219 = ~Partiré y veré que tareas me tiene reservadas mi protector.~
-@220 = ~Ooh sí, dormir y no hacer *nada*, ¡eso suena genial! Aunque... Creo que aceptaré la oferta de la Duquesa Jannath de entrenarme en la magia, <CHARNAME>. Id a tomar vuestro merecido descanso, dormilón.~
-@221 = ~Habéis demostrado ser el héroe de la ciudad, y estamos en deuda con vos para siempre. ¿Qué haréis ahora?~ ~Habéis demostrado ser la heroína de la ciudad, y estamos en deuda con vos para siempre. ¿Qué haréis ahora?~
+@218 = ~He soportado vuestras excentricidades bastante tiempo, <CHARNAME>, pero esta fue la Ãºltima tumba a la que tÃº, o cualquier otro me atraiga.~
+@219 = ~PartirÃ© y verÃ© que tareas me tiene reservadas mi protector.~
+@220 = ~Ooh sÃ­, dormir y no hacer *nada*, Â¡eso suena genial! Aunque... Creo que aceptarÃ© la oferta de la Duquesa Jannath de entrenarme en la magia, <CHARNAME>. Id a tomar vuestro merecido descanso, dormilÃ³n.~
+@221 = ~HabÃ©is demostrado ser el hÃ©roe de la ciudad, y estamos en deuda con vos para siempre. Â¿QuÃ© harÃ©is ahora?~ ~HabÃ©is demostrado ser la heroÃ­na de la ciudad, y estamos en deuda con vos para siempre. Â¿QuÃ© harÃ©is ahora?~
 /* @222 - @225 son los mismos que en "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
-@222 = ~<CHARNAME>, ¡Encontré un montón de viejos tomos, investigaciones y demás!~
-@223 = ~Aquí está, Duquesa Liia. ¡Mirad el tamaño de esa pila!~
-@224 = ~Os agradezco los tomos que me trajo Imoen. Tomad esto como compensación.~
-@225 = ~Estoy muy interesada en estos viejos tomos que encontraste en la cripta familiar de Korlasz para mi investigación. Por favor, entregádmelos tan pronto como podáis, <CHARNAME>.~
+@222 = ~<CHARNAME>, Â¡EncontrÃ© un montÃ³n de viejos tomos, investigaciones y demÃ¡s!~
+@223 = ~AquÃ­ estÃ¡, Duquesa Liia. Â¡Mirad el tamaÃ±o de esa pila!~
+@224 = ~Os agradezco los tomos que me trajo Imoen. Tomad esto como compensaciÃ³n.~
+@225 = ~Estoy muy interesada en estos viejos tomos que encontraste en la cripta familiar de Korlasz para mi investigaciÃ³n. Por favor, entregÃ¡dmelos tan pronto como podÃ¡is, <CHARNAME>.~
 
-@226 = ~Encontrasteis tomos sobre Bhaal en las posesiones de Korlasz. ¿Puedo tenerlos para mi propia investigación?~
-@227 = ~Por supuesto. Aquí tenéis.~
-@228 = ~No, me gustaría conservarlos.~
+@226 = ~Encontrasteis tomos sobre Bhaal en las posesiones de Korlasz. Â¿Puedo tenerlos para mi propia investigaciÃ³n?~
+@227 = ~Por supuesto. AquÃ­ tenÃ©is.~
+@228 = ~No, me gustarÃ­a conservarlos.~
 
 /* @229 es lo mismo que @229 en "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
-@229 = ~Os doy las gracias. Tomad esto como compensación.~
+@229 = ~Os doy las gracias. Tomad esto como compensaciÃ³n.~
 
-@230 = ~Ya veo. Por favor, dádmelos tan pronto como podáis disponer de ellos.~
+@230 = ~Ya veo. Por favor, dÃ¡dmelos tan pronto como podÃ¡is disponer de ellos.~
 @231 = ~Estoy muy interesado en estudiar este tipo de tomos antiguos.~
 
 /* @232 es lo mismo que @232 en "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
-@232 = ~Aquí hay una investigación sobre nigromancia y Bhaal que encontré en la cripta familiar de Korlasz. Creo que os puede interesar.~
-@233 = ~[Dynaheir]Os habéis convertido en un poderoso hijo de Bhaal. Vuestro viaje no ha concluido aún, y el nuestro tampoco.~
-@234 = ~[Minsc]Habrá más maldad que patear, y Bubú dijo que esto es algo que Minsc debería esperar.~
-@235 = ~[Jaheira]Habéis recorrido un largo camino. Le prometimos a Gorion que velaríamos por vos, y superasteis cualquier ayuda que pudiéramos daros para luchar contra vuestros enemigos. A partir de ahora, seremos nosotros los que os vigilaremos para que no sucumbas ante vuestra herencia.~
-@236 = ~[Khalid]G-Gorion estaría orgulloso de vuestros logros. Iremos con vos y os ayudaremos con cualquier t-tarea que pueda surgir.~
-@237 = ~Ooh sí, dormir y no hacer *nada*, ¡suena genial! Aunque... hablando desde la experiencia, ¡no creo que los dioses nos dejen!~
+@232 = ~AquÃ­ hay una investigaciÃ³n sobre nigromancia y Bhaal que encontrÃ© en la cripta familiar de Korlasz. Creo que os puede interesar.~
+@233 = ~[Dynaheir]Os habÃ©is convertido en un poderoso hijo de Bhaal. Vuestro viaje no ha concluido aÃºn, y el nuestro tampoco.~
+@234 = ~[Minsc]HabrÃ¡ mÃ¡s maldad que patear, y BubÃº dijo que esto es algo que Minsc deberÃ­a esperar.~
+@235 = ~[Jaheira]HabÃ©is recorrido un largo camino. Le prometimos a Gorion que velarÃ­amos por vos, y superasteis cualquier ayuda que pudiÃ©ramos daros para luchar contra vuestros enemigos. A partir de ahora, seremos nosotros los que os vigilaremos para que no sucumbas ante vuestra herencia.~
+@236 = ~[Khalid]G-Gorion estarÃ­a orgulloso de vuestros logros. Iremos con vos y os ayudaremos con cualquier t-tarea que pueda surgir.~
+@237 = ~Ooh sÃ­, dormir y no hacer *nada*, Â¡suena genial! Aunque... hablando desde la experiencia, Â¡no creo que los dioses nos dejen!~
 
-@238 = ~Tomad esto también. No es un objeto mágico poderoso, pero os será útil - un héroe necesita tener sus llaves a mano para no perder tiempo crucial por una cosa tan trivial.~
+@238 = ~Tomad esto tambiÃ©n. No es un objeto mÃ¡gico poderoso, pero os serÃ¡ Ãºtil - un hÃ©roe necesita tener sus llaves a mano para no perder tiempo crucial por una cosa tan trivial.~
 
 /* pc_palaceresidence.d */
 /* nuevo para v9 */
 @350 = ~Esta confortable cama ofrece lujos que nunca encontrasteis en Candelero.~
-@351 = ~Os tumbáis para dormir toda la noche (8 horas).~
-@352 = ~Pasáis el tiempo hasta medianoche.~
-@353 = ~Pasáis el tiempo hasta las once de la noche.~
-@354 = ~Pasáis el tiempo hasta el mediodía.~
-@355 = ~Pasáis el tiempo hasta las once del mediodía.~
-@356 = ~Pasáis el tiempo hasta las diez del mediodía.~
-@357 = ~Pasáis el tiempo hasta que amanecer (6 am).~
-@358 = ~Pasáis el tiempo hasta que termina el amanecer (7 am).~
-@359 = ~Pasáis el tiempo hasta que empieza a anochecer (9 pm).~
-@360 = ~Pasáis el tiempo hasta que termina el crepúsculo (10 pm).~
-@361 = ~Os alejáis de la cama.~
+@351 = ~Os tumbÃ¡is para dormir toda la noche (8 horas).~
+@352 = ~PasÃ¡is el tiempo hasta medianoche.~
+@353 = ~PasÃ¡is el tiempo hasta las once de la noche.~
+@354 = ~PasÃ¡is el tiempo hasta el mediodÃ­a.~
+@355 = ~PasÃ¡is el tiempo hasta las once del mediodÃ­a.~
+@356 = ~PasÃ¡is el tiempo hasta las diez del mediodÃ­a.~
+@357 = ~PasÃ¡is el tiempo hasta que amanecer (6 am).~
+@358 = ~PasÃ¡is el tiempo hasta que termina el amanecer (7 am).~
+@359 = ~PasÃ¡is el tiempo hasta que empieza a anochecer (9 pm).~
+@360 = ~PasÃ¡is el tiempo hasta que termina el crepÃºsculo (10 pm).~
+@361 = ~Os alejÃ¡is de la cama.~
