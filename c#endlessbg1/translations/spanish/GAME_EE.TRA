@@ -1,45 +1,45 @@
-@1 = ~La armadura de placas es la mejor armadura que un guerrero puede comprar, tanto en apariencia como en protecciÛn. Las placas perfectamente ajustadas y entrelazadas est·n especialmente inclinadas para desviar flechas y golpes, y todo el traje est· cuidadosamente adornado con ricos grabados y detalles en relieve. 
+@1 = ~Armadura de placas √© a melhor armadura que um guerreiro pode comprar, tanto em apar√™ncia quanto em prote√ß√£o. As placas perfeitamente ajustadas e interligadas s√£o especialmente anguladas para desviar flechas e golpes, e todo o traje √© cuidadosamente adornado com ricas gravuras e detalhes em relevo.
 
-Esta inusual armadura pesada perteneciÛ a Sarevok.
+Esta armadura pesada incomum pertencia a Sarevok.
 
-CARACTERÕSTICAS:
+CARACTERISTICAS:
 
-Clase de Armadura: -1 (-5 contra cortante, -4 contra perforante y proyectil)
-Requisitos: Fuerza 15
-
-Peso: 70~
-@2 = ~La armadura de placas completa es la mejor armadura que un guerrero puede comprar, tanto en apariencia como en protecciÛn. Las placas perfectamente ajustadas y entrelazadas est·n especialmente inclinadas para desviar flechas y golpes, y todo el traje est· cuidadosamente adornado con ricos grabados y detalles en relieve. 
-
-Esta inusual armadura pesada perteneciÛ a Sarevok. Est· encantada para proteger contra la magia.
-
-CARACTERÕSTICAS:
-
-Aptitudes poseÌdas:
-- Resistencia m·gica: +30%
-
-Clase de Armadura: -1 (-5 contra cortante, -4 contra perforante y proyectil)
-Requisitos: Fuerza 15
+Classe de Armadura: -1 (-5 contra corte, -4 contra perfura√ß√£o e proj√©til)
+Requisitos: For√ßa 15
 
 Peso: 70~
+@2 = ~Armadura completa √© a melhor armadura que um guerreiro pode comprar, tanto em apar√™ncia quanto em prote√ß√£o. As placas perfeitamente ajustadas e interligadas s√£o especialmente anguladas para desviar flechas e golpes, e todo o traje √© cuidadosamente adornado com ricas gravuras e detalhes em relevo.
 
-@6 = ~Esta clase de casco abierto, hecho de cuero reforzado o metal, cubre la mayor parte de la cabeza, excepto la cara y el cuello. Estos cascos suelen proteger la nariz.  
+Esta armadura pesada incomum pertencia a Sarevok. √â encantado para proteger contra magia.
 
-Este casco perteneciÛ a Sarevok.
+CARACTERISTICAS:
 
-CARACTERÕSTICAS:
+Habilidades possu√≠das:
+- Resist√™ncia m√°gica: +30%
 
-Aptitudes poseÌdas:
-- Protege contra golpes crÌticos
+Classe de Armadura: -1 (-5 contra corte, -4 contra perfura√ß√£o e proj√©til)
+Requisitos: For√ßa 15
+
+Peso: 70~
+
+@6 = ~Este tipo de capacete aberto, feito de couro refor√ßado ou metal, cobre a maior parte da cabe√ßa, exceto rosto e pesco√ßo. Esses capacetes geralmente protegem o nariz.
+
+Este capacete pertencia a Sarevok.
+
+CARACTERISTICAS:
+
+Habilidades possu√≠das:
+- Protege contra ataques cr√≠ticos
 
 Peso: 2~
-@7 = ~Esta clase de casco abierto, hecho de cuero reforzado o metal, cubre la mayor parte de la cabeza, excepto la cara y el cuello. Estos cascos suelen proteger la nariz.  
+@7 = ~Este tipo de capacete aberto, feito de couro refor√ßado ou metal, cobre a maior parte da cabe√ßa, exceto rosto e pesco√ßo. Esses capacetes geralmente protegem o nariz.
 
-Este casco perteneciÛ a Sarevok. Est· encantado para proteger contra la magia.
+Este capacete pertencia a Sarevok. √â encantado para proteger contra magia.
 
-CARACTERÕSTICAS:
+CARACTERISTICAS:
 
-Aptitudes poseÌdas:
-- Protege contra golpes crÌticos
-- Resistencia m·gica: +5%
+Habilidades possu√≠das:
+- Protege contra ataques cr√≠ticos
+- Resist√™ncia m√°gica: +5%
 
 Peso: 2~
