@@ -1,70 +1,70 @@
-/* entradas de diario */
-@10000 = ~La Espada de Sarevok
+/* Entrada do di√°rio */
+@10000 = ~A Espada de Sarevok
 
-Un Djinn se manifestÛ justo despuÈs de que abandonara la ciudad subterr·nea y me arrebatÛ la espada de Sarevok. Dijo que tenÌa que obedecer a "su amo". øQuiÈn podrÌa tener interÈs en tomar la espada de Sarevok? Parece que a˙n hay gente que lo sigue... O que quiere beneficiarse de su poder.~
-@10001 = ~La Espada de Sarevok
+Um Djinn se manifestou logo depois que sa√≠ da cidade subterr√¢nea e arrancou de mim a espada de Sarevok. Ele disse que tinha que obedecer "seu mestre". Quem poderia ter interesse em pegar a espada de Sarevok? Parece que ainda existem pessoas que o seguem... Ou que querem se beneficiar de seu poder.~
+@10001 = ~A Espada de Sarevok
 
-He entregado la Espada de Sarevok a los Duques. La consideran un sÌmbolo de su poder y desean mantenerlo alejado de cualquier seguidor que lo considere un objeto de valor simbÛlico de su lÌder caÌdo Sarevok.~
-@10002 = ~Mis aposentos en el Palacio Ducal
+Dei a Espada de Sarevok aos Duques. Eles consideram-no um s√≠mbolo do seu poder e desejam mant√™-lo longe de quaisquer seguidores que o considerem um objecto de valor simb√≥lico para o seu l√≠der ca√≠do Sarevok.~
+@10002 = ~Meus quartos no Pal√°cio Ducal
 
-He sido nombrado "HÈroe de Baldur's Gate" y me han ofrecido alojamiento en el ˙ltimo piso del Palacio Ducal.~ ~Mis aposentos en el Palacio Ducal
+Fui nomeado "Her√≥i do Port√£o de Baldur" e me ofereceram acomoda√ß√£o no √∫ltimo andar do Pal√°cio Ducal. ~ ~Meus aposentos no Pal√°cio Ducal
 
-He sido nombrada "HeroÌna de Baldur's Gate" y me han ofrecido alojamiento en el ˙ltimo piso del Palacio Ducal.~
-@10003 = ~Mi cofre personal en el Palacio Ducal 
+Fui nomeada "Hero√≠na de Baldur's Gate" e me ofereceram acomoda√ß√£o no √∫ltimo andar do Pal√°cio Ducal.~
+@10003 = ~Meu ba√∫ pessoal no Pal√°cio Ducal
 
-El cofre del extremo izquierdo de la sala noroeste del ˙ltimo piso del Palacio Ducal es mi cofre personal, todo lo que ponga ahÌ permanecer· en Èl mientras resida en el Palacio.~
-@10004 = ~El cofre personal de Imoen en el Palacio Ducal 
+O ba√∫ na extremidade esquerda da sala noroeste no √∫ltimo andar do Pal√°cio Ducal √© meu ba√∫ pessoal, qualquer coisa que eu colocar l√° permanecer√° nele enquanto eu residir no Pal√°cio.~
+@10004 = ~ Ba√∫ pessoal de Imoen no Pal√°cio Ducal
 
-El cofre del extremo izquierdo de la sala sureste de la ˙ltima planta del Palacio Ducal es el cofre personal de Imoen, todo lo que metamos ahÌ permanecer· en Èl mientras residamos en el Palacio.~
-@10005 = ~Imoen est· en el Palacio Ducal
+O ba√∫ na extremidade esquerda da sala sudeste no √∫ltimo andar do Pal√°cio Ducal √© o ba√∫ pessoal de Imoen, qualquer coisa que colocarmos l√° permanecer√° nele enquanto residirmos no Pal√°cio.~
+@10005 = ~Imoen est√° no Pal√°cio Ducal
 
-Imoen reside en el Palacio Ducal, en el ˙ltimo piso. La encontrarÈ allÌ si quiero que vuelva conmigo.~
-@10006 = ~Otro Encuentro con Elminster
+Imoen reside no Pal√°cio Ducal, no √∫ltimo andar. Eu a encontrarei l√° se quiser que ela volte para mim.~
+@10006 = ~Outro encontro com Elminster
 
-Y de nuevo Elminster hizo su apariciÛn tras la muerte de Sarevok, y por fin veo claro que siempre ha sabido de mi herencia. No sÈ por quÈ Elminster y Gorion pensaron que era buena idea hablar en acertijos y no decÌrmelo claramente. Elminster parecÌa muy interesado en cÛmo me enfrentarÌa a esta situaciÛn y en quÈ me convertirÌa... Un pensamiento con el que sÛlo puedo estar de acuerdo.~
-@10007 = ~Refugiados del lejano norte
+E novamente Elminster apareceu ap√≥s a morte de Sarevok, e finalmente ficou claro para mim que ele sempre soube da minha heran√ßa. N√£o sei por que Elminster e Gorion acharam uma boa ideia falar por enigmas e n√£o me contar claramente. Elminster parecia muito interessado em como eu lidaria com essa situa√ß√£o e no que eu me tornaria... Um pensamento com o qual s√≥ posso concordar.~
+@10007 = ~Refugiados do Extremo Norte
 
-Refugiados estan llegando a Puerta de Baldur, hablando sobre algunos acontecimientos brutales al norte en P·ramo Alto. Se han quemando granjas y pequeÒas aldeas.~
-@10008 = ~La Espada de Sarevok
+Refugiados est√£o chegando a Baldur's Gate, falando sobre alguns acontecimentos brutais ao norte de Highfell. Fazendas e pequenas aldeias foram queimadas.~
+@10008 = ~A Espada de Sarevok
 
-El Duque Belt me pidiÛ que le diera la Espada de Sarevok. Los Duques la ven como un sÌmbolo del poder de Sarevok y desean mantenerla alejada de cualquier seguidor que lo considere un objeto de valor simbÛlico de su lÌder caÌdo.~
+El Duque Belt me pidi√≥ que le diera la Espada de Sarevok. Los Duques la ven como un s√≠mbolo del poder de Sarevok y desean mantenerla alejada de cualquier seguidor que lo considere un objeto de valor simb√≥lico de su l√≠der ca√≠do.~
 
-@10009 = ~La Espada de Sarevok~
+@10009 = ~A Espada de Sarevok~
 
 /* nuevo para v3 */
-@10010 = ~La Espada de Sarevok
+@10010 = ~A Espada de Sarevok
 
-Al parecer, la Espada de Sarevok fue robada del Palacio Ducal por sus ˙ltimos seguidores y vendida a Athkatla. Parece que no supieron custodiarla bien. °Mala suerte!~
-@10011 = ~La Espada de Sarevok
+A Espada de Sarevok foi aparentemente roubada do Pal√°cio Ducal por seus √∫ltimos seguidores e vendida a Athkatla. Parece que eles n√£o sabiam como proteg√™-lo bem. M√° sorte! ~
+@10011 = ~A Espada de Sarevok
 
-He obtenido la Espada de Sarevok de nuevo. A˙n le falta mucho de su antiguo poder, pero al menos ahora puedo manejarla.~
+Obtive a Espada de Sarevok novamente. Ainda falta muito do seu antigo poder, mas pelo menos agora posso lidar com isso.~
 
 /* nuevo para v9 */
 /* #31288 */
-@10012 = ~Contrario a la Ley
+@10012 = ~Contra a Lei
 
-Sarevok est· muerto. Este capÌtulo de mi vida ha terminado.~
+Sarevok est√° morto. Este cap√≠tulo da minha vida acabou.~
 /* #31374 */
-@10013 = ~Tras la pista de Sarevok
+@10013 = ~Na trilha de Sarevok
 
-Sarevok est· muerto. Este capÌtulo de mi vida ha terminado.~
+Sarevok est√° morto. Este cap√≠tulo da minha vida acabou.~
 /* #31400 */
-@10014 = ~Tandem in Extremis
+@10014 = ~Tandem em Extremis
 
-Sarevok est· muerto. Este capÌtulo de mi vida ha terminado.~
+Sarevok est√° morto. Este cap√≠tulo da minha vida acabou.~
 /* #31416 */
-@10015 = ~El Ascenso de Sarevok
+@10015 = ~A Ascens√£o de Sarevok
 
-Sarevok est· muerto. Este capÌtulo de mi vida ha terminado.~
+Sarevok est√° morto. Este cap√≠tulo da minha vida acabou.~
 
 /* new for v18 */
-@10016 = ~Retorno al Palacio
+@10016 = ~Retorno ao Pal√°cio
 
-Sarevok ha sido derrotado. DeberÌa volver al Palacio Ducal y hablar con los duques.~
-@10017   = ~Retorno al Palacio
+Sarevok foi derrotado. Eu deveria voltar ao Pal√°cio Ducal e conversar com os duques.~
+@10017   = ~Retorne ao Pal√°cio
 
-Tan pronto como estÈ listo, debo hablar con los duques sobre lo que quieren que haga ahora.~ ~Retorno al Palacio
+Assim que estiver pronto, devo falar com os duques sobre o que eles querem que eu fa√ßa.~ ~Retorno ao Pal√°cio
 
-Tan pronto como estÈ lista, debo hablar con los duques sobre lo que quieren que haga ahora.~
+Tan pronto como est√© lista, debo hablar con los duques sobre lo que quieren que haga ahora.~
 @10018   = ~Retorno al Palacio~
-
+ 
