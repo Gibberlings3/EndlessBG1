@@ -264,9 +264,9 @@ IF
 THEN
 	RESPONSE #100
 		CutSceneId(Player1)
-		ActionOverride("Shar-Teel",SetDialog("%HARTEEL_JOINED%"))
+		ActionOverride("Shar-Teel",SetDialog("%SHARTEEL_JOINED%"))
 		ActionOverride("Shar-Teel",ChangeAIScript("%SHARTEEL_BCS%",OVERRIDE))
-		ActionOverride("SharTeel",SetDialog("%HARTEEL_JOINED%"))
+		ActionOverride("SharTeel",SetDialog("%SHARTEEL_JOINED%"))
 		ActionOverride("SharTeel",ChangeAIScript("%SHARTEEL_BCS%",OVERRIDE))
 END
 
