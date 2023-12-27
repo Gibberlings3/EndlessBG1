@@ -1,70 +1,70 @@
-/* Entrada do diário */
-@10000 = ~A Espada de Sarevok
+/* entradas de diario */
+@10000 = ~La Espada de Sarevok
 
-Um Djinn se manifestou logo depois que saí da cidade subterrânea e arrancou de mim a espada de Sarevok. Ele disse que tinha que obedecer "seu mestre". Quem poderia ter interesse em pegar a espada de Sarevok? Parece que ainda existem pessoas que o seguem... Ou que querem se beneficiar de seu poder.~
-@10001 = ~A Espada de Sarevok
+Un Djinn se manifestó justo después de que abandonara la ciudad subterránea y me arrebató la espada de Sarevok. Dijo que tenía que obedecer a "su amo". ¿Quién podría tener interés en tomar la espada de Sarevok? Parece que aún hay gente que lo sigue... O que quiere beneficiarse de su poder.~
+@10001 = ~La Espada de Sarevok
 
-Dei a Espada de Sarevok aos Duques. Eles consideram-no um símbolo do seu poder e desejam mantê-lo longe de quaisquer seguidores que o considerem um objecto de valor simbólico para o seu líder caído Sarevok.~
-@10002 = ~Meus quartos no Palácio Ducal
+He entregado la Espada de Sarevok a los Duques. La consideran un símbolo de su poder y desean mantenerlo alejado de cualquier seguidor que lo considere un objeto de valor simbólico de su líder caído Sarevok.~
+@10002 = ~Mis aposentos en el Palacio Ducal
 
-Fui nomeado "Herói do Portão de Baldur" e me ofereceram acomodação no último andar do Palácio Ducal. ~ ~Meus aposentos no Palácio Ducal
+He sido nombrado "Héroe de Baldur's Gate" y me han ofrecido alojamiento en el último piso del Palacio Ducal.~ ~Mis aposentos en el Palacio Ducal
 
-Fui nomeada "Heroína de Baldur's Gate" e me ofereceram acomodação no último andar do Palácio Ducal.~
-@10003 = ~Meu baú pessoal no Palácio Ducal
+He sido nombrada "Heroína de Baldur's Gate" y me han ofrecido alojamiento en el último piso del Palacio Ducal.~
+@10003 = ~Mi cofre personal en el Palacio Ducal 
 
-O baú na extremidade esquerda da sala noroeste no último andar do Palácio Ducal é meu baú pessoal, qualquer coisa que eu colocar lá permanecerá nele enquanto eu residir no Palácio.~
-@10004 = ~ Baú pessoal de Imoen no Palácio Ducal
+El cofre del extremo izquierdo de la sala noroeste del último piso del Palacio Ducal es mi cofre personal, todo lo que ponga ahí permanecerá en él mientras resida en el Palacio.~
+@10004 = ~El cofre personal de Imoen en el Palacio Ducal 
 
-O baú na extremidade esquerda da sala sudeste no último andar do Palácio Ducal é o baú pessoal de Imoen, qualquer coisa que colocarmos lá permanecerá nele enquanto residirmos no Palácio.~
-@10005 = ~Imoen está no Palácio Ducal
+El cofre del extremo izquierdo de la sala sureste de la última planta del Palacio Ducal es el cofre personal de Imoen, todo lo que metamos ahí permanecerá en él mientras residamos en el Palacio.~
+@10005 = ~Imoen está en el Palacio Ducal
 
-Imoen reside no Palácio Ducal, no último andar. Eu a encontrarei lá se quiser que ela volte para mim.~
-@10006 = ~Outro encontro com Elminster
+Imoen reside en el Palacio Ducal, en el último piso. La encontraré allí si quiero que vuelva conmigo.~
+@10006 = ~Otro Encuentro con Elminster
 
-E novamente Elminster apareceu após a morte de Sarevok, e finalmente ficou claro para mim que ele sempre soube da minha herança. Não sei por que Elminster e Gorion acharam uma boa ideia falar por enigmas e não me contar claramente. Elminster parecia muito interessado em como eu lidaria com essa situação e no que eu me tornaria... Um pensamento com o qual só posso concordar.~
-@10007 = ~Refugiados do Extremo Norte
+Y de nuevo Elminster hizo su aparición tras la muerte de Sarevok, y por fin veo claro que siempre ha sabido de mi herencia. No sé por qué Elminster y Gorion pensaron que era buena idea hablar en acertijos y no decírmelo claramente. Elminster parecía muy interesado en cómo me enfrentaría a esta situación y en qué me convertiría... Un pensamiento con el que sólo puedo estar de acuerdo.~
+@10007 = ~Refugiados del lejano norte
 
-Refugiados estão chegando a Baldur's Gate, falando sobre alguns acontecimentos brutais ao norte de Highfell. Fazendas e pequenas aldeias foram queimadas.~
-@10008 = ~A Espada de Sarevok
+Refugiados estan llegando a Puerta de Baldur, hablando sobre algunos acontecimientos brutales al norte en Páramo Alto. Se han quemando granjas y pequeñas aldeas.~
+@10008 = ~La Espada de Sarevok
 
 El Duque Belt me pidió que le diera la Espada de Sarevok. Los Duques la ven como un símbolo del poder de Sarevok y desean mantenerla alejada de cualquier seguidor que lo considere un objeto de valor simbólico de su líder caído.~
 
-@10009 = ~A Espada de Sarevok~
+@10009 = ~La Espada de Sarevok~
 
 /* nuevo para v3 */
-@10010 = ~A Espada de Sarevok
+@10010 = ~La Espada de Sarevok
 
-A Espada de Sarevok foi aparentemente roubada do Palácio Ducal por seus últimos seguidores e vendida a Athkatla. Parece que eles não sabiam como protegê-lo bem. Má sorte! ~
-@10011 = ~A Espada de Sarevok
+Al parecer, la Espada de Sarevok fue robada del Palacio Ducal por sus últimos seguidores y vendida a Athkatla. Parece que no supieron custodiarla bien. ¡Mala suerte!~
+@10011 = ~La Espada de Sarevok
 
-Obtive a Espada de Sarevok novamente. Ainda falta muito do seu antigo poder, mas pelo menos agora posso lidar com isso.~
+He obtenido la Espada de Sarevok de nuevo. Aún le falta mucho de su antiguo poder, pero al menos ahora puedo manejarla.~
 
 /* nuevo para v9 */
 /* #31288 */
-@10012 = ~Contra a Lei
+@10012 = ~Contrario a la Ley
 
-Sarevok está morto. Este capítulo da minha vida acabou.~
+Sarevok está muerto. Este capítulo de mi vida ha terminado.~
 /* #31374 */
-@10013 = ~Na trilha de Sarevok
+@10013 = ~Tras la pista de Sarevok
 
-Sarevok está morto. Este capítulo da minha vida acabou.~
+Sarevok está muerto. Este capítulo de mi vida ha terminado.~
 /* #31400 */
-@10014 = ~Tandem em Extremis
+@10014 = ~Tandem in Extremis
 
-Sarevok está morto. Este capítulo da minha vida acabou.~
+Sarevok está muerto. Este capítulo de mi vida ha terminado.~
 /* #31416 */
-@10015 = ~A Ascensão de Sarevok
+@10015 = ~El Ascenso de Sarevok
 
-Sarevok está morto. Este capítulo da minha vida acabou.~
+Sarevok está muerto. Este capítulo de mi vida ha terminado.~
 
 /* new for v18 */
-@10016 = ~Retorno ao Palácio
+@10016 = ~Retorno al Palacio
 
-Sarevok foi derrotado. Eu deveria voltar ao Palácio Ducal e conversar com os duques.~
-@10017   = ~Retorne ao Palácio
+Sarevok ha sido derrotado. Debería volver al Palacio Ducal y hablar con los duques.~
+@10017   = ~Retorno al Palacio
 
-Assim que estiver pronto, devo falar com os duques sobre o que eles querem que eu faça.~ ~Retorno ao Palácio
+Tan pronto como esté listo, debo hablar con los duques sobre lo que quieren que haga ahora.~ ~Retorno al Palacio
 
 Tan pronto como esté lista, debo hablar con los duques sobre lo que quieren que haga ahora.~
 @10018   = ~Retorno al Palacio~
- 
+
