@@ -163,7 +163,7 @@ Denkod w Gildii Z³odziei Cienia, który powiedzia³ wczeœniej, gdzie poszed³ Sarev
 Po zabiciu Sarevoka, wyjœcie z Podziemnego Miasta pominie labirynt z³odziei i pozwoli na przejœcie bezpoœrednio do Gildii Z³odziei. Przejœcie do labiryntu zostanie przywrócone po powrotnym wejœciu tamt¹ drog¹.
 
 
-14. Krypta Korlasz bêdzie dostêpna w BG1
+14. Krypta Korlasz bêdzie dostêpna w BG1 (tylko SoD/EET)
 -----------------------------------
 
 Wraz z tym komponentem krypta rodziny Korlasz bêdzie dostêpna ju¿ podczas rozgrywki w Baldur's Gate 1. Dru¿yna zostanie przeniesiona do grobowca w momencie, gdy g³ówny bohater porozmawia z ksiêciem Beltem o poœcigu za ostatnimi poplecznikami Sarevoka.
@@ -176,7 +176,7 @@ Zmiany te nie afektuj¹ nowej gry bezpoœrednio w kampanii SoD.
 Uwaga: ten komponent z pewnoœci¹ popsuje treœæ modyfikacji Transitions, jako ¿e nie zosta³ on jeszcze tam uwzglêdniony (wersje 2.0 i ni¿sze). Nie instaluj tego komponentu jeœli planujesz instalacjê Transitions.
 
 
-15. Uzdrowiciel Fenster bêdzie w pa³acu
+15. Uzdrowiciel Fenster bêdzie w pa³acu (tylko SoD/EET)
 -----------------------------------
 
 Fenster bêdzie urzêdowa³ na parterze w pa³acu, oferuj¹c podobne us³ugi, jakie oferuje kap³an w krypcie Korlasz.
@@ -184,7 +184,7 @@ Fenster bêdzie urzêdowa³ na parterze w pa³acu, oferuj¹c podobne us³ugi, jakie of
 Uwaga: ten komponent mo¿e spowodowaæ, ¿e bêdzie dwóch Fensterów, jeœli modyfikacja Transitions bêdzie równie¿ zainstalowana. Transitions w wersji 2.0 i ni¿szej jeszcze nie uwzglêdnia tego komponentu.
 
 
-16. Kapitan Corwin bêdzie w pa³acu
+16. Kapitan Corwin bêdzie w pa³acu (tylko SoD/EET)
 -----------------------------------
 
 Corwin bêdzie przebywaæ na parterze pa³acu, wœród Ksi¹¿¹t. W tej chwili nie ma z ni¹ ¿adnych nowych treœci czy interakcji.
@@ -313,6 +313,8 @@ Roberciiik: Polish
 Gwendolyne, Machiavélique, and Shodead: French
 improb@bile: Italian
 Inueb and ElGamerViejuno: Spanish
+Sauro: Brazilian Portuguese
+
 Proofreading of English version & readme: Lauriel, Mike1072, Roberciiik
 
 
@@ -334,6 +336,11 @@ Spellhold Studios - http://www.shsforums.net/
 
 
 HISTORIA ZMIAN:
+
+Version 19:
+- Brazilian Portuguese translation added, by Sauro
+- fixed install error when JAP is installed.
+- typo %HARTEEL_JOINED% _> "%SHARTEEL_JOINED%"
 
 Version 18.1:
 -(BG:EE, EET) Translations of new lines added for Italian (by Frenzgyn) and French (by JohnBob), too.

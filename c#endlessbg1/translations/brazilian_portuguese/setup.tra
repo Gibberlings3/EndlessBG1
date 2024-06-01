@@ -1,0 +1,39 @@
+@5000 = ~Este mod é compatível apenas com BG:EE, SoD, BGT e EET.~
+@5001 = ~Endless BG1: Componente principal (obrigatório)~
+@5002 = ~Mais sabor de Baldur's Gate Hero (Inclui residência do PC dentro do palácio)~
+@5003 = ~Endless BG1: O componente principal é necessário para este componente~
+@5004 = ~Imoen e Duquesa Jannath (Imoen consegue residência dentro do palácio)~
+@5005 = ~Duque Eltan não está no palácio~
+@5006 = ~A luta final do Flaming Fist~
+@5007 = ~Elminster aparece~
+@5008 = ~Itens exclusivos de Sarevok~
+@5009 = ~Os primeiros refugiados vão para Baldur's Gate~
+@5010 = ~Ophyllis, um tesouro, está dentro do palácio masmorra~
+@5011 = ~Denkod da Guilda dos Ladrões comenta a morte de Sarevok~
+@5012 = ~Este componente é compatível apenas com SoD e EET.~
+@5013 = ~Este componente é compatível apenas com BG:EE, SoD, BGT e EET.~
+@5014 = ~Uma Espada de Sarevok~
+@5015 = ~versão de Jastey~
+@5016 = ~Texto BG1 restaurado~
+
+/* nuevo para v3 */
+@5017 = ~Salte o Labirinto dos Ladrões assim que Sarevok estiver morto~
+@5018 = ~Breve homenagem pública ao Herói~
+@5019 = ~Endless BG1: "Mais sabor de Baldur's Gate Hero" Componente necessário para este componente~
+
+/* nuevo para v5 */
+@5020 = ~O componente bg1re "Duke Eltan's Spare Minute" precisa ser instalado após ebg1.~
+@5021 = ~ebg1 deve ser instalado antes das Transições.~
+@5022 = ~Este componente do ebg1 já foi substituído por Transições.~
+
+/* nuevo para v7 */
+@5023 = ~Este mod deve ser instalado antes do EET_End na instalação do EET.~
+
+/* nuevo para v9 */
+@5024 = ~A masmorra de Korlasz está em BG1~
+@5025 = ~O "Imoen permanece no grupo na masmorra de Korlasz" de Imoen4Ever precisa ser desinstalado para isso.~
+@5026 = ~Fenster, ou sacerdote do palácio, não está no palácio~
+@5027 = ~Capitão Corwin está fora do palácio~
+
+/* new for v18 */
+@5028 = ~Modmerge ou DLC Merger são necessários para instalar mods neste jogo.~

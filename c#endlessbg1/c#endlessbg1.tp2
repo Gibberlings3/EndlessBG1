@@ -8,7 +8,7 @@
 BACKUP ~c#endlessbg1/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/~ //jastey
 
-VERSION ~18.1~
+VERSION ~19~
 
 README ~c#endlessbg1/readme.c#endlessbg1.%LANGUAGE%.txt~ ~c#endlessbg1/readme.c#endlessbg1.english.txt~
 
@@ -126,12 +126,24 @@ ACTION_IF !FILE_EXISTS ~c#endlessbg1/install/c#endlessbg1install.mrk~ BEGIN
 
   ACTION_DEFINE_ARRAY c#noconvert BEGIN setup END
   ACTION_DEFINE_ARRAY c#reload BEGIN game journal END
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY charset_table BEGIN
+    ~english~     => ~cp1252~
+    ~german~      => ~cp1252~
+    ~spanish~     => ~cp1252~
+    ~italian~     => ~cp1252~
+    ~polish~      => ~cp1250~
+    ~russian~     => ~cp1251~
+    ~french~      => ~cp1252~
+    ~brazilian_portuguese~ => ~cp1252~
+    ~schinese~    => ~cp936~
+  END
 
   LAF HANDLE_CHARSETS
     INT_VAR
-      infer_charsets = 1
+      infer_charsets = 0
     STR_VAR
       tra_path = EVAL ~c#endlessbg1/Translations~
+      charset_table
       noconvert_array = c#noconvert
       reload_array = c#reload
   END
@@ -198,6 +210,14 @@ LANGUAGE ~Spanish~
 	 ~c#endlessbg1/Translations/spanish/game.tra~
 	 ~c#endlessbg1/Translations/spanish/journal.tra~
 
+LANGUAGE ~Brazilian Portuguese~
+         ~brazilian_portuguese~   
+         ~c#endlessbg1/Translations/brazilian_portuguese/setup.tra~
+	 ~c#endlessbg1/Translations/brazilian_portuguese/game.tra~
+	 ~c#endlessbg1/Translations/brazilian_portuguese/journal.tra~
+
+
+
 ////////////////////////////////////////////////////////////////////////
 //////
 BEGIN @5001 /* ~Endless BG1: Main Component (Required)~ */ DESIGNATED 0 
@@ -224,6 +244,24 @@ COMPILE EVALUATE_BUFFER ~c#endlessbg1/maincomponent/dialogues.d~
 ACTION_IF GAME_IS ~bgee eet~ THEN BEGIN
 
 ADD_JOURNAL TITLE (@10018) @10016 @10017 USING ~c#endlessbg1/translations/%s/JOURNAL.tra~
+
+/* This script is also needed for BGT /crossmod with JAP) */
+/* define script for cres without DV: DestroySelf() after Sarevok's death */
+<<<<<<<< .../c#stdstr.baf
+
+IF
+	GlobalGT("SarevokBehavior","GLOBAL",0)
+	OR(2)
+	  Dead("Sarevok")
+	  !AreaCheck("%ThievesMaze%")
+THEN
+	RESPONSE #100
+        	DestroySelf()
+END
+
+>>>>>>>>
+
+COMPILE EVALUATE_BUFFER ~.../c#stdstr.baf~
 
   /* prevent end of BG1, open up Palace etc. */
   INCLUDE ~c#endlessbg1/maincomponent/general.tpa~

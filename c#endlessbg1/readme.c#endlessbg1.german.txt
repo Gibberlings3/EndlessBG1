@@ -137,7 +137,7 @@ Denkod in der Diebesgilde, der auf dem Weg in die Unterstadt dem/der HC sagte, w
 Nachdem Sarevok besiegt ist, wird mit dieser Komponente der Ausgang aus der Unterstdt so verändert, dass er beim Verlassen sofort in die Diebesgilde führt. Dies ist nur einmal, danach werden die normalen Wege wieder freigeschaltet, so dass das Labyrinth danach wieder normal besucht werden kann.
 
 
-14 Korlasz' Dungeon ist in BG1
+14 Korlasz' Dungeon ist in BG1 (nur SoD/EET)
 -----------------------------------
 Diese Komponente verschiebt Korlasz' Krypta in den BG1-Teil des Spiels. Die Gruppe wird in den Dungeon transferiert, wenn der HC im Gespräch mit Herzog Belt bereit ist, Sarevoks letzte Anhängerin zu stellen. Der Dungeon kann dann nach Belieben verlassen und wieder betreten werden, und ist auch in SoD erreichbar (in der Gegend mit dem Eisenthrongebäude). 
 Imoen bleibt im Dungeon in der Gruppe, wenn sie ein Gruppenmitglied ist, und spricht ihre originalen Dialoge im Dungeon wie im Originalspiel. Wenn sie nicht in der Gruppe ist, dann wird sie wie im originalen SoD als Guide im Dungeon anwesend sein. 
@@ -149,14 +149,14 @@ Ein neu gestartetes SoD-Spiel ist nicht von den Änderungen betroffen.
 Hinweis: Diese Komponente ist in der Transitions-Mod noch nicht berücksichtigt (v2.0 and lower) und ist mit großer wahrscheinlich nicht mit der Transitions-Mod kompatibel. 
 
 
-15 Fester der Palastkleriker ist im Palast
+15 Fester der Palastkleriker ist im Palast (nur SoD/EET)
 -----------------------------------
 Fester wird im Erdgeschoss des Palastes sein, und ähnliche Tempeldienste wie die Klerikerin in Korlasz' Krypta anbieten. 
 
 Hinweis: Diese Komponente ist in der Transitions-Mod noch nicht berücksichtigt (v2.0 and lower) und könnte dazu führen, dass zwei Festers im Palast erscheinen. 
 
 
-16 Hauptmann Corwin ist im Palast
+16 Hauptmann Corwin ist im Palast (nur SoD/EET)
 -----------------------------------
 Diese Komponente platziert Corwin ins Erdgeschoss des Palastes mit absolut keinem erwähnenswerten Inhalt.
 
@@ -282,6 +282,8 @@ Roberciiik: Polish
 Gwendolyne, Machiavélique, and Shodead: French
 improb@bile: Italian
 Inueb and ElGamerViejuno: Spanish
+Sauro: Brazilian Portuguese
+
 Proofreading of English version & readme: Lauriel, Mike1072, Roberciiik
 
 
@@ -303,6 +305,11 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 19:
+- Brazilian Portuguese translation added, by Sauro
+- fixed install error when JAP is installed.
+- typo %HARTEEL_JOINED% _> "%SHARTEEL_JOINED%"
 
 Version 18.1:
 -(BG:EE, EET) Translations of new lines added for Italian (by Frenzgyn) and French (by JohnBob), too.
