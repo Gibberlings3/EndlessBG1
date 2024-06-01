@@ -306,23 +306,6 @@ END
 >>>>>>>>
 EXTEND_BOTTOM ~%NBaldursGate_DucalPalace_L1%.bcs~ ~.../ar0108_add.baf~ EVALUATE_BUFFER 
 
-/* define script for cres without DV: DestroySelf() after Sarevok's death */
-<<<<<<<< .../c#stdstr.baf
-
-IF
-	GlobalGT("SarevokBehavior","GLOBAL",0)
-	OR(2)
-	  Dead("Sarevok")
-	  !AreaCheck("%ThievesMaze%")
-THEN
-	RESPONSE #100
-        	DestroySelf()
-END
-
->>>>>>>>
-
-COMPILE EVALUATE_BUFFER ~.../c#stdstr.baf~
-
 /* define script for cres without DV: DestroySelf() after Sarevok's demasking in the Ducal Palace */
 <<<<<<<< .../c#stdst2.baf
 

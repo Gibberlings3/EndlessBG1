@@ -1,0 +1,45 @@
+@1 = ~Armadura de placas é a melhor armadura que um guerreiro pode comprar, tanto em aparência quanto em proteção. As placas perfeitamente ajustadas e interligadas são especialmente anguladas para desviar flechas e golpes, e todo o traje é cuidadosamente adornado com ricas gravuras e detalhes em relevo.
+
+Esta armadura pesada incomum pertencia a Sarevok.
+
+CARACTERISTICAS:
+
+Classe de Armadura: -1 (-5 contra corte, -4 contra perfuração e projétil)
+Requisitos: Força 15
+
+Peso: 70~
+@2 = ~Armadura completa é a melhor armadura que um guerreiro pode comprar, tanto em aparência quanto em proteção. As placas perfeitamente ajustadas e interligadas são especialmente anguladas para desviar flechas e golpes, e todo o traje é cuidadosamente adornado com ricas gravuras e detalhes em relevo.
+
+Esta armadura pesada incomum pertencia a Sarevok. É encantado para proteger contra magia.
+
+CARACTERISTICAS:
+
+Habilidades possuídas:
+- Resistência mágica: +30%
+
+Classe de Armadura: -1 (-5 contra corte, -4 contra perfuração e projétil)
+Requisitos: Força 15
+
+Peso: 70~
+
+@6 = ~Este tipo de capacete aberto, feito de couro reforçado ou metal, cobre a maior parte da cabeça, exceto rosto e pescoço. Esses capacetes geralmente protegem o nariz.
+
+Este capacete pertencia a Sarevok.
+
+CARACTERISTICAS:
+
+Habilidades possuídas:
+- Protege contra ataques críticos
+
+Peso: 2~
+@7 = ~Este tipo de capacete aberto, feito de couro reforçado ou metal, cobre a maior parte da cabeça, exceto rosto e pescoço. Esses capacetes geralmente protegem o nariz.
+
+Este capacete pertencia a Sarevok. É encantado para proteger contra magia.
+
+CARACTERISTICAS:
+
+Habilidades possuídas:
+- Protege contra ataques críticos
+- Resistência mágica: +5%
+
+Peso: 2~

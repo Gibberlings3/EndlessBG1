@@ -148,7 +148,7 @@ Denkod in the Thieves' Guild, who told the PC where Sarevok went, will still be 
 After Sarevok's Death, the exit of the Undercity will skip the Thieves' Maze once and lead directly into the Thieves' Guild. After going in that direction once, the normal entrances will be reactivated so that the Thieves' Maze can be visited normally after that. 
 
 
-14 Korlasz' Dungeon is in BG1
+14 Korlasz' Dungeon is in BG1 (SoD/EET Only)
 -----------------------------------
 This component moves Korlasz' Tomb into the BG1 part of the game. It transports the group into the dungeon after Belt told the PC to come along to hear the details of pursuing Sarevok last follower. 
 The dungeon can be left and entered after that at will, and is also available in SoD (Iron Throne building area).
@@ -161,14 +161,14 @@ Changes do not apply to a new SoD game.
 Note: This component will most certainly screw Transitions mod as it is not considered there yet (v2.0 and lower). Do not install this component if you were planning on installing Transitions, anyway.
 
 
-15 Fenster the Palace Healer Is in the Palace
+15 Fenster the Palace Healer Is in the Palace (SoD/EET Only)
 -----------------------------------
 Fenster will be inside the palace ground floor, offering similar healing services like the cleric inside Korlasz' Dungeon.
 
 Note: This component might lead to two Fensters being present if combined with the component from Transitions mod as it is not considered there yet (v2.0 and lower). 
 
 
-16 Captain Corwin Is in the Palace
+16 Captain Corwin Is in the Palace (SoD/EET Only)
 -----------------------------------
 Corwin will be inside the palace ground floor with the Dukes, and has no notable content whatsoever.
 
@@ -291,6 +291,8 @@ Roberciiik: Polish (v18)
 Gwendolyne, Machiavélique, and Shodead, JohnBob (new lines in v18): French
 improb@bile, Frenzgyn (new lines in v18): Italian
 Inueb and ElGamerViejuno: Spanish
+Sauro: Brazilian Portuguese
+
 Proofreading of English version & readme: Lauriel, Mike1072, Roberciiik
 
 
@@ -312,6 +314,11 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 19:
+- Brazilian Portuguese translation added, by Sauro
+- fixed install error when JAP is installed.
+- typo %HARTEEL_JOINED% _> "%SHARTEEL_JOINED%"
 
 Version 18.1:
 -(BG:EE, EET) Translations of new lines added for Italian (by Frenzgyn) and French (by JohnBob), too.

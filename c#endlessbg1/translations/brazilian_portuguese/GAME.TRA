@@ -1,0 +1,108 @@
+/* @0 = */
+@1 = ~A armadura de placas é a melhor armadura que um guerreiro pode comprar, tanto em aparência quanto em proteção. As placas interligadas e perfeitamente ajustadas são especialmente anguladas para desviar flechas e golpes, e todo o traje é cuidadosamente adornado com ricas gravuras e detalhes em relevo.
+
+Esta armadura pesada incomum pertencia a Sarevok.
+
+CARACTERISTICAS:
+
+Classe de Armadura: -1
+Peso: 70
+Requisitos: Força 15
+Não utilizável por:
+  Bardo
+  druida
+  Ladrão ~
+@2 = ~Armadura completa é a melhor armadura que um guerreiro pode comprar, tanto em aparência quanto em proteção. As placas interligadas e perfeitamente ajustadas são especialmente anguladas para desviar flechas e golpes, e todo o traje é cuidadosamente adornado com ricas gravuras e detalhes em relevo.
+
+Esta armadura extraordinariamente pesada pertencia a Sarevok. É encantado para proteger contra magia.
+
+CARACTERISTICAS:
+
+Habilidades possuídas:
+- Resistência mágica: +30%
+
+Classe de Armadura: -1
+Peso: 70
+Requisitos: Força 15
+Não utilizável por:
+  Bardo
+  druida
+  Ladrão ~
+@3 = ~Armadura de Placa Sarevok~
+@4 = ~Capacete Sarevok~
+@5 = ~Espada de Sarevok~
+@6 = ~Este tipo de capacete decorativo, feito de couro reforçado ou metal, cobre o rosto e a cabeça. Aberturas para os olhos e orifícios para respirar são altamente recomendados.
+
+Este capacete pertencia a Sarevok.
+
+CARACTERISTICAS:
+
+Bônus de Classe de Armadura: Nenhum
+Habilidades possuídas:
+- Proteção contra ataques críticos
+Peso: 2
+Não utilizável por:
+  Mágico
+  Bardo
+  Ladrão ~
+@7 = ~Este tipo de capacete decorativo, feito de couro reforçado ou metal, cobre o rosto e a cabeça. Aberturas para os olhos e orifícios para respirar são altamente recomendados.
+
+Este capacete pertencia a Sarevok. É encantado para dar proteção contra magia.
+
+CARACTERISTICAS:
+
+Bônus de Classe de Armadura: Nenhum
+
+Habilidades possuídas:
+- Proteção contra ataques críticos
+- Resistência mágica: +5%
+Peso: 2
+Não utilizável por:
+  Mágico
+  Bardo
+  Ladrão ~
+@8 = ~Esta é a espada de Sarevok. Não importa o que você tente, você não será capaz de manejá-lo. Parece que a magia desta espada foi enfraquecida e selada quando Sarevok morreu.~
+@9 = ~Baú do <CHARNAME>~
+@10 = ~Baú de Imoen~
+
+/* nuevo para v2 */
+//#9774 cambiado
+@12 = ~Aquele fedorento do Sarevok era realmente malvado, ele realmente era! Ele assassinou Scar e Entar e tentou assassinar tantos outros! Ele merecia a morte, e graças a <CHARNAME> ela veio rapidamente!~
+//#9778 cambiado
+@13 = ~É assustador! E pensar que Sarevok esteve tão perto de executar seus planos sanguinários. Estou feliz que <CHARNAME> o localizou e o levou à justiça. Deveria servir de exemplo para que outros malucos não tentem fazer o mesmo.~
+//#9781 cambiado
+@14 = ~O que Sarevok fez é imperdoável! Estou feliz que <CHARNAME> encontrou aquela escória antes que ele pudesse causar mais danos.~
+//#9852 cambiado
+@15 = ~Bem, nunca fiz isso! Você acredita na coragem daquele Sarevok? Depois da confiança que todos depositamos nele, descobrimos que ele nada mais é do que o mais baixo dos vilões. Estou feliz que ele foi pego e punido.~
+//#9854 cambiado
+@16 = ~Você não é <CHARNAME>? Você e seus camaradas se enquadram na descrição. Bem, em nome daqueles que represento, quero agradecer-vos pelas vossas acções. Se não fosse pela sua coragem... estremeço ao pensar no que teria acontecido no caso de uma guerra contra Amn. Obrigado por capturar o vilão Sarevok e impedir seus planos!~
+//#9855 changed
+@17 = ~Está se espalhando como um incêndio! Todo mundo fala sobre o que aconteceu no palácio. Pelo que ouvi, esse Sarevok não é tão nobre quanto ele gostaria que acreditássemos. Ele tentou matar os outros duques para assumir o controle da cidade.~
+
+/* nuevo para v7 */
+@20 = ~Refugiada~ /* mulher*/
+@21 = ~Refugiado~ /* homem*/
+@22 = ~Curador do Punho Flamejante~ /* homem*/
+@23 = ~Flaming Fist Scout~ /* homem*/
+
+/* nuevo para v9 */
+@24 = ~O nome gravado à mão em lajes ornamentadas identifica esta entrada como a cripta da família Korlasz. Está bem fechado e protegido magicamente.~
+@25 = ~Saudações, herói. Eu sou Fenster, o clérigo do palácio.~
+@26 = ~Como posso ajudar você?~
+@27 = ~Deixe-me ver o que você tem.~
+@28 = ~Nada neste momento.~
+@29 = ~Com prazer.~
+@30 = ~Não estou disponível para serviços enquanto cuido de Imoen. Por favor, peça ajuda divina em outro lugar.~
+//@31: nome retirado de #64284
+@31 = ~Túmulo da família Korlasz~
+@32 = ~Cama de <CHARNAME>~
+
+/* sarevok_cleanup_more.tpa */
+/* #18345 cambiado */
+@50 = ~Há muito a dizer, mas acho que não tenho tempo para entrar em detalhes. Eu morava em Candlekeep com meu pai Gorion. Recentemente fomos forçados a fugir. Parece que há alguém que me quer morto. Na tentativa de me matar, ele... matou meu pai.~
+/* #18351 cambiado */
+@51 = ~Sinto muito por trazer de volta memórias tão dolorosas. Quero te ajudar e, nesse processo, também acabar com os sonhos que me assombram. Aqui, pegue isso. Bye Bye. Talvez nos encontremos novamente.~
+@52 = ~Ah, <CHARNAME>! Estou aliviado porque tudo finalmente voltou ao normal. Depois de ver a confiança que o duque Eltan depositou em você, me senti culpado por ter que seguir as ordens de Angelo em relação à sua prisão...~
+@53 = ~E obrigado, *obrigado* por salvar nosso comandante.~
+@54 = ~Lamentaremos nossas perdas enquanto reunimos o que resta depois que Sarevok e seus asseclas contaminaram o Punho Flamejante, tornando-nos suas ferramentas. Obrigado por salvar esta cidade, herói. ~ ~ Lamentaremos nossas perdas enquanto reunimos o que resta depois que Sarevok e seus asseclas contaminaram o Punho Flamejante, tornando-se suas ferramentas. Obrigado por salvar esta cidade, heroína.~
+@55 = ~Parece que brigar com você não foi a coisa certa a se fazer, afinal. Bem, quem poderia imaginar que Angelo e Sarevok agiriam de forma tão suja. Parece que você nos salvou de tempos sombrios, de fato.~

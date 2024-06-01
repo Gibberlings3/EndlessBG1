@@ -1,0 +1,21 @@
+/* las líneas @0 - @17 son las mismas que en "imoen_forever/.../IMOEN_IN_GROUP_KD.TRA". */
+@0 = ~Não me olhe assim! Sempre quis dar a impressão de que sabia mais do que você. Foi isso que a Duquesa Jannath me disse, como se você não soubesse.~
+@1 = ~O que há com você e a Duquesa Jannath?~
+@2 = ~ Bem, uhm... Ele de alguma forma gostou de mim desde que salvamos os duques na coroação de Sarevok. Ou não-coroação, para ser mais preciso.~
+@3 = ~E, bem... ela me deixou tentar alguns feitiços, e... é divertido! Eu realmente poderia fazer isso! Magia, quero dizer. Eu fiz mágica!~
+@4 = ~Ela disse que me ajudaria a desenvolver minhas habilidades mágicas e... decidi que aceitarei a oferta. Você sabe, quando tudo isso acabar.~
+@5 = ~Oh, só para você saber - prometi trazer para ele quaisquer pergaminhos ou tomos arcanos que ele pudesse encontrar aqui.~
+@6 = ~Você conseguiu! Eu sabia que você faria isso.~
+@7 = ~Não acredito que isso acabou.~
+@8 = ~Nós fizemos isso juntos, Imoen.~
+@9 = ~Você não ajudou muito.~
+@10 = ~Eu sei o que você quer dizer!~
+@11 = ~Tudo bem para mim. Não há nada a temer, certo?~
+@12 = ~The Flaming Fist voltará a subir usando a corda que encontramos. Fica ao sul daqui - leva você diretamente para a entrada.~
+@13 = ~Veja aqueles tomos e livros sobre Bhaal! A Duquesa Jannath pularia de alegria se os conseguisse. Bem, na verdade eu não faria isso, ela é muito digna para isso, mas... Posso levar isso para ela? Por favor?~
+@14 = ~Claro. Não sei como eles poderiam ser úteis para mim.~
+@15 = ~Não, quero mantê-los por enquanto.~
+@16 = ~Ok, mas me diga se mudar de ideia, ok?~
+@17 = ~Faça a pesquisa sobre Bhaal que encontramos para a Duquesa Jannath, Imoen.~
+
+@200 = ~Suba na corda quando estiver pronto para retornar ao palácio. Estaremos atrás de você.~

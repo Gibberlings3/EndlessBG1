@@ -147,7 +147,7 @@ Denkod dans la guilde des voleurs, qui donne l'information d'où Sarevok allait,
 Après la mort de Sarevok, quitter Ombreville emmènera directement dans la guilde des voleurs, en passant la partie du labyrinthe. Après avoir pris cette direction une fois, les entrées redeviennent utilisables normalement, et le labyrinthe peut être à nouveau visité. 
 
 
-14 Le donjon de Korlaz se trouve dans BG1
+14 Le donjon de Korlaz se trouve dans BG1 (SoD/EET uniquement)
 -----------------------------------
 Ce composant place la tombe de Korlasz la partie du jeu de BG1. L'entrée transporte le groupe dans le donjon après que Belt ait dit au PC de venir pour entendre les détails de la poursuite des derniers serviteurs de Sarevok. 
 Il est ensuite possible de quitter et d'entrer dans le donjon à volonté, qui est aussi disponible dans SoD (dans la zone du bâtiment du Trône de Fer).
@@ -159,14 +159,14 @@ Ces changements ne s'appliquent pas à une nouvelle partie de SoD.
 Note : Ce composant n'est pas encore reconnu par le mod Transitions (v2.0 et inférieur), et risque de faire planter votre jeu. N'installez pas ce composant si vous aviez l'intention d'installer Transitions.
 
 
-15 Fenster le soigneur du palais se trouve au palais
+15 Fenster le soigneur du palais se trouve au palais (SoD/EET uniquement)
 -----------------------------------
 Fenster sera à l'intérieur du palais au rez-de-chaussée, offrant des services de soigneur similaire à ceux du clerc dans le donjon de Korlasz.
 
 Note : Ce composant risque d'amener la présence de deux Fenster dans le palais s'il est combiné avec le mod Transitions (v2.0 et inférieur), car Transitions ne reconnait pas la présence de ce composant. 
 
 
-16 Le Capitaine Corwin se trouve au palais
+16 Le Capitaine Corwin se trouve au palais (SoD/EET uniquement)
 -----------------------------------
 Corwin sera à l'intérieur du palais au rez-de-chaussée avec les ducs et n'a pas de contenu particulier pour le moment.
 
@@ -290,6 +290,8 @@ Roberciiik: Polish
 Gwendolyne, Machiavélique, and Shodead: French
 improb@bile: Italian
 Inueb and ElGamerViejuno: Spanish
+Sauro: Brazilian Portuguese
+
 Proofreading of English version & readme: Lauriel, Mike1072, Roberciiik
 
 
@@ -311,6 +313,11 @@ Spellhold Studios			http://www.shsforums.net/
 
 
 HISTORY
+
+Version 19:
+- Brazilian Portuguese translation added, by Sauro
+- fixed install error when JAP is installed.
+- typo %HARTEEL_JOINED% _> "%SHARTEEL_JOINED%"
 
 Version 18.1:
 -(BG:EE, EET) Translations of new lines added for Italian (by Frenzgyn) and French (by JohnBob), too.
