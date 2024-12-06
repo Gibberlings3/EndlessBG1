@@ -114,7 +114,7 @@ IF ~AreaCheck("bd0120")
 Global("bd_plot","global",40)
 !InParty(Myself)
 Global("C#EBG1_ImoenIsInKD","GLOBAL",1)~ THEN BEGIN done
-  SAY #64148 /* ~Thank you, gods, it's done!~ [BD64148] */
+  SAY #%eet_2%64148 /* ~Thank you, gods, it's done!~ [BD64148] */
   IF ~~ THEN EXIT
 END
 
