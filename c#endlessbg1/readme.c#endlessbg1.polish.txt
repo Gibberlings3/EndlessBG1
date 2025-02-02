@@ -313,6 +313,7 @@ Roberciiik: Polish
 Gwendolyne, Machiavélique, and Shodead: French
 improb@bile: Italian
 Inueb and ElGamerViejuno: Spanish
+Lzw104522773: Simplified Chinese
 Sauro: Brazilian Portuguese
 
 Proofreading of English version & readme: Lauriel, Mike1072, Roberciiik
@@ -336,6 +337,11 @@ Spellhold Studios - http://www.shsforums.net/
 
 
 HISTORIA ZMIAN:
+
+Version 20:
+- Simplified Chinese version added, by Lzw104522773.
+- (German version) typo corrections, by Ychap.
+- "Korlasz' Dungeon is in BG1": Fixed Imoen's line in EET.
 
 Version 19:
 - Brazilian Portuguese translation added, by Sauro
