@@ -41,7 +41,7 @@
 @28  = ~Ihr könnt alles machen und Euch frei bewegen.~
 /* BG:EE: #9340 */
 @29  = ~Ich bin ein stolzes Mitglied der Flammenden Faust. Unser Hauptquartier ist in Baldurs Tor, obgleich wir auch von Beregost und vom Freundlichen Arm aus operieren. Wir sind recht besorgt über den plötzlichen Mangel an Eisen. Viele glauben, dass die Nation von Amn sich für einen Krieg gegen unsere große Stadt rüstet. Wenn dies der Fall ist, so weiß ich nicht, wie gut wir uns verteidigen können, wenn uns so ein wichtiger Rohstoff wie Eisen fehlt.~
-@30  = ~Willkommen, Held von Baldurs Tor! Dieser Raum wird als Eure Residenz dienen, solange Ihr Euch in der Stadt aufhaltet. Ich habe alles für Eure Ankunft vorbereitet und hoffe, dass Ihr es zu Eurer Zufriedenheit vorfindet. Im Namen der Herzöge soll ich Euch sagen, dass die Truhe ganz links hier im Raum Eure perönliche ist. Alles, was Ihr dort hineintut, wird darin verbleiben. Wir haben die Kisten und Schränke ausgeräumt und den Inhalt nach unten gebracht, solltet Ihr doch noch etwas darin finden, dann nehmt es ruhig, um Eure Vorräte aufzufüllen. Wir wünschen Euch einen angenehmen Aufenthalt und danke nochmal, dass Ihr die Stadt gerettet habt!~
+@30  = ~Willkommen, Held von Baldurs Tor! Dieser Raum wird als Eure Residenz dienen, solange Ihr Euch in der Stadt aufhaltet. Ich habe alles für Eure Ankunft vorbereitet und hoffe, dass Ihr es zu Eurer Zufriedenheit vorfindet. Im Namen der Herzöge soll ich Euch sagen, dass ganz links hier im Raum Eure persönliche Truhe steht. Alles, was Ihr dort hineintut, wird darin verbleiben. Wir haben die Kisten und Schränke ausgeräumt und den Inhalt nach unten gebracht, solltet Ihr doch noch etwas darin finden, dann nehmt es ruhig, um Eure Vorräte aufzufüllen. Wir wünschen Euch einen angenehmen Aufenthalt und danke nochmal, dass Ihr die Stadt gerettet habt!~
 
 /* ceremony_sod.d */
 @40  = ~Bitte folgt mir!~
@@ -133,7 +133,7 @@
 @153 = ~Und was, wenn ich Euch mein Gold nicht geben will?~
 @154 = ~Ich weiß, wer Ihr seid. Schönen Tag.~
 @155 = ~Oh, das ist es! Haha. Die Herzöge vertrauen mir. Sie wissen genau, dass ich mich niemals selbst am Gold anderer bereichern würde!~
-@156 = ~Es ist auf Anweisung der Herzöge, müsst Ihr wissen. Niemand, der im Namen der Stadt Verbrecher jagt soll sich um sein Gold sorgen müssen. Ehrlich gesagt glaube ich, dass es den Herzögen auch ganz recht ist zu wissen, das die Soldaten kein Gold dabei haben um es w#ährend eines Einsatzes in einer Spelunke zu versaufen, ahem.~
+@156 = ~Es ist auf Anweisung der Herzöge, müsst Ihr wissen. Niemand, der im Namen der Stadt Verbrecher jagt soll sich um sein Gold sorgen müssen. Ehrlich gesagt glaube ich, dass es den Herzögen auch ganz recht ist zu wissen, das die Soldaten kein Gold dabei haben um es während eines Einsatzes in einer Spelunke zu versaufen, ahem.~
 @157 = ~Ich werde dann Euer Gold sicher verwahren, aber jetzt müsst Ihr Euch darüber noch nicht den Kopf zerbrechen, haha - ich muss die Aufbewahrung Eures Goldes erst vorbereiten, der Hinweis dazu hat mich gerade eben erst erreicht.~
 @158 = ~Wenn ich soweit bin sage ich Euch bescheid. Bis dahin lebt wohl!~
 @159 = ~Seid gegrüßt, <CHARNAME>. Wen Ihr Ophyllis sucht, der sollte im Büro sein.~
