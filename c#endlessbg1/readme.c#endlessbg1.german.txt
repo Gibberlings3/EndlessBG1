@@ -309,6 +309,7 @@ HISTORY
 
 Version 20:
 - Simplified Chinese version added, by Lzw104522773.
+- Denkod should not loop on first meeting if only main component is installed.
 - (German version) typo corrections, by Ychap.
 - "Korlasz' Dungeon is in BG1": Fixed Imoen's line in EET.
 
