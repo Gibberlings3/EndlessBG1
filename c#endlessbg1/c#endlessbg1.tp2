@@ -216,6 +216,11 @@ LANGUAGE ~Brazilian Portuguese~
 	 ~c#endlessbg1/Translations/brazilian_portuguese/game.tra~
 	 ~c#endlessbg1/Translations/brazilian_portuguese/journal.tra~
 
+LANGUAGE ~Simplified Chinese (translation: Lzw104522773)~
+         ~schinese~   
+         ~c#endlessbg1/Translations/schinese/setup.tra~
+	 ~c#endlessbg1/Translations/schinese/game.tra~
+	 ~c#endlessbg1/Translations/schinese/journal.tra~
 
 
 ////////////////////////////////////////////////////////////////////////
@@ -630,13 +635,13 @@ COPY_EXISTING ~%Undercity%.are~ ~override~
     fj_type         = 2    //travel
     fj_box_left     = 5088  //kleinstes x
     fj_box_top      = 787  //kleinstes y
-    fj_box_right    = 5118  //größtes x
-    fj_box_bottom   = 1130   //größtes y
+    fj_box_right    = 5118  //gr  tes x
+    fj_box_bottom   = 1130   //gr  tes y
     fj_cursor_idx   = 34   //door
     fj_vertex_0     = 5088 + (787 << 16)   //kleinstes x +  kleinstes y
-    fj_vertex_1     = 5088 + (1130 << 16)   //größtes x + kleinstes y
-    fj_vertex_2     = 5118 + (1130 << 16)   //größtes x + größtes y
-    fj_vertex_3     = 5118 + (787 << 16)   //kleinstes x + größtes y
+    fj_vertex_1     = 5088 + (1130 << 16)   //gr  tes x + kleinstes y
+    fj_vertex_2     = 5118 + (1130 << 16)   //gr  tes x + gr  tes y
+    fj_vertex_3     = 5118 + (787 << 16)   //kleinstes x + gr  tes y
     fj_flags        = 0b0000000000000100  //full party required, autosave
     STR_VAR
     fj_structure_type   = region
@@ -747,13 +752,13 @@ COPY_EXISTING ~%CentralBaldursGate%.are~ ~override~
     fj_type         = 2    //travel
     fj_box_left     = 1005  //kleinstes x
     fj_box_top      = 3172  //kleinstes y
-    fj_box_right    = 1150  //größtes x
-    fj_box_bottom   = 3300   //größtes y
+    fj_box_right    = 1150  //gr  tes x
+    fj_box_bottom   = 3300   //gr  tes y
     fj_cursor_idx   = 28 //stairs
     fj_vertex_0     = 1005 + (3300 << 16)   //kleinstes x +  kleinstes y
-    fj_vertex_1     = 1150 + (3299 << 16)   //größtes x + kleinstes y
-    fj_vertex_2     = 1142 + (3172 << 16)   //größtes x + größtes y
-    fj_vertex_3     = 1017 + (3176 << 16)   //kleinstes x + größtes y
+    fj_vertex_1     = 1150 + (3299 << 16)   //gr  tes x + kleinstes y
+    fj_vertex_2     = 1142 + (3172 << 16)   //gr  tes x + gr  tes y
+    fj_vertex_3     = 1017 + (3176 << 16)   //kleinstes x + gr  tes y
     STR_VAR
     fj_structure_type   = region
     fj_name             = C#EBG1_TranBD0120
@@ -766,13 +771,13 @@ COPY_EXISTING ~%CentralBaldursGate%.are~ ~override~
     fj_type         = 1    //trigger
     fj_box_left     = 1005  //kleinstes x
     fj_box_top      = 3172  //kleinstes y
-    fj_box_right    = 1150  //größtes x
-    fj_box_bottom   = 3300   //größtes y
+    fj_box_right    = 1150  //gr  tes x
+    fj_box_bottom   = 3300   //gr  tes y
     fj_cursor_idx   = 22 //question mark
     fj_vertex_0     = 1005 + (3300 << 16)   //kleinstes x +  kleinstes y
-    fj_vertex_1     = 1150 + (3299 << 16)   //größtes x + kleinstes y
-    fj_vertex_2     = 1142 + (3172 << 16)   //größtes x + größtes y
-    fj_vertex_3     = 1017 + (3176 << 16)   //kleinstes x + größtes y
+    fj_vertex_1     = 1150 + (3299 << 16)   //gr  tes x + kleinstes y
+    fj_vertex_2     = 1142 + (3172 << 16)   //gr  tes x + gr  tes y
+    fj_vertex_3     = 1017 + (3176 << 16)   //kleinstes x + gr  tes y
     fj_info_point_strref = RESOLVE_STR_REF (@24)
     STR_VAR
     fj_structure_type   = region
@@ -788,13 +793,13 @@ COPY_EXISTING ~%BaldursGateDocks%.are~ ~override~
     fj_type         = 2    //travel
     fj_box_left     = 1019  //kleinstes x
     fj_box_top      = 74  //kleinstes y
-    fj_box_right    = 1154  //größtes x
-    fj_box_bottom   = 189   //größtes y
+    fj_box_right    = 1154  //gr  tes x
+    fj_box_bottom   = 189   //gr  tes y
     fj_cursor_idx   = 28 //stairs
     fj_vertex_0     = 1030 + (186 << 16)   //kleinstes x +  kleinstes y
-    fj_vertex_1     = 1154 + (189 << 16)   //größtes x + kleinstes y
-    fj_vertex_2     = 1152 + (78 << 16)   //größtes x + größtes y
-    fj_vertex_3     = 1019 + (74 << 16)   //kleinstes x + größtes y
+    fj_vertex_1     = 1154 + (189 << 16)   //gr  tes x + kleinstes y
+    fj_vertex_2     = 1152 + (78 << 16)   //gr  tes x + gr  tes y
+    fj_vertex_3     = 1019 + (74 << 16)   //kleinstes x + gr  tes y
     STR_VAR
     fj_structure_type   = region
     fj_name             = C#EBG1_TranBD0120
@@ -807,13 +812,13 @@ COPY_EXISTING ~%BaldursGateDocks%.are~ ~override~
     fj_type         = 1    //trigger
     fj_box_left     = 1019  //kleinstes x
     fj_box_top      = 74  //kleinstes y
-    fj_box_right    = 1154  //größtes x
-    fj_box_bottom   = 189   //größtes y
+    fj_box_right    = 1154  //gr  tes x
+    fj_box_bottom   = 189   //gr  tes y
     fj_cursor_idx   = 22 //question mark
     fj_vertex_0     = 1030 + (186 << 16)   //kleinstes x +  kleinstes y
-    fj_vertex_1     = 1154 + (189 << 16)   //größtes x + kleinstes y
-    fj_vertex_2     = 1152 + (78 << 16)   //größtes x + größtes y
-    fj_vertex_3     = 1019 + (74 << 16)   //kleinstes x + größtes y
+    fj_vertex_1     = 1154 + (189 << 16)   //gr  tes x + kleinstes y
+    fj_vertex_2     = 1152 + (78 << 16)   //gr  tes x + gr  tes y
+    fj_vertex_3     = 1019 + (74 << 16)   //kleinstes x + gr  tes y
     fj_info_point_strref = RESOLVE_STR_REF (@24)
     STR_VAR
     fj_structure_type   = region
@@ -829,13 +834,13 @@ COPY_EXISTING ~bd0050.are~ ~override~
     fj_type         = 2    //travel
     fj_box_left     = 1110  //kleinstes x
     fj_box_top      = 141  //kleinstes y
-    fj_box_right    = 1217  //größtes x
-    fj_box_bottom   = 245   //größtes y
+    fj_box_right    = 1217  //gr  tes x
+    fj_box_bottom   = 245   //gr  tes y
     fj_cursor_idx   = 28 //stairs
     fj_vertex_0     = 1119 + (245 << 16)   //kleinstes x +  kleinstes y
-    fj_vertex_1     = 1217 + (244 << 16)   //größtes x + kleinstes y
-    fj_vertex_2     = 1214 + (145 << 16)   //größtes x + größtes y
-    fj_vertex_3     = 1110 + (141 << 16)   //kleinstes x + größtes y
+    fj_vertex_1     = 1217 + (244 << 16)   //gr  tes x + kleinstes y
+    fj_vertex_2     = 1214 + (145 << 16)   //gr  tes x + gr  tes y
+    fj_vertex_3     = 1110 + (141 << 16)   //kleinstes x + gr  tes y
     STR_VAR
     fj_structure_type   = region
     fj_name             = C#EBG1_TranBD0120
@@ -848,13 +853,13 @@ COPY_EXISTING ~bd0050.are~ ~override~
     fj_type         = 1    //trigger
     fj_box_left     = 1110  //kleinstes x
     fj_box_top      = 141  //kleinstes y
-    fj_box_right    = 1217  //größtes x
-    fj_box_bottom   = 245   //größtes y
+    fj_box_right    = 1217  //gr  tes x
+    fj_box_bottom   = 245   //gr  tes y
     fj_cursor_idx   = 22 //question mark
     fj_vertex_0     = 1119 + (245 << 16)   //kleinstes x +  kleinstes y
-    fj_vertex_1     = 1217 + (244 << 16)   //größtes x + kleinstes y
-    fj_vertex_2     = 1214 + (145 << 16)   //größtes x + größtes y
-    fj_vertex_3     = 1110 + (141 << 16)   //kleinstes x + größtes y
+    fj_vertex_1     = 1217 + (244 << 16)   //gr  tes x + kleinstes y
+    fj_vertex_2     = 1214 + (145 << 16)   //gr  tes x + gr  tes y
+    fj_vertex_3     = 1110 + (141 << 16)   //kleinstes x + gr  tes y
     fj_info_point_strref = RESOLVE_STR_REF (@24)
     STR_VAR
     fj_structure_type   = region
@@ -914,13 +919,13 @@ COPY_EXISTING ~bd0120.are~ ~override~
     fj_type         = 2    //travel
     fj_box_left     = 750  //kleinstes x
     fj_box_top      = 1528  //kleinstes y
-    fj_box_right    = 810  //größtes x
-    fj_box_bottom   = 1683   //größtes y
+    fj_box_right    = 810  //gr  tes x
+    fj_box_bottom   = 1683   //gr  tes y
     fj_cursor_idx   = 28 //stairs
     fj_vertex_0     = 756 + (1683 << 16)   //kleinstes x +  kleinstes y
-    fj_vertex_1     = 810 + (1681 << 16)   //größtes x + kleinstes y
-    fj_vertex_2     = 804 + (1532 << 16)   //größtes x + größtes y
-    fj_vertex_3     = 750 + (1528 << 16)   //kleinstes x + größtes y
+    fj_vertex_1     = 810 + (1681 << 16)   //gr  tes x + kleinstes y
+    fj_vertex_2     = 804 + (1532 << 16)   //gr  tes x + gr  tes y
+    fj_vertex_3     = 750 + (1528 << 16)   //kleinstes x + gr  tes y
     STR_VAR
     fj_structure_type   = region
     fj_name             = C#EBG1_TranBD0050
