@@ -516,7 +516,7 @@ IF
 	!Global("C#st_DenkodTalk","MYAREA",1)
 	Exists("DENKOD")  // Denkod
 	InMyArea("DENKOD")
-	GlobalGT("SarevokBehavior","GLOBAL",0)
+	Dead("Sarevok")
 THEN
 	RESPONSE #100
 		ActionOverride("DENKOD",DestroySelf())
