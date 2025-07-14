@@ -55,10 +55,11 @@ The chest on the far left in the southeast room on the top floor of the Ducal Pa
 
 /* in case Imoen is not in party, she will be at the top level of the Ducal Palace */
 APPEND %IMOEN_POST%
-IF ~AreaCheck("%NBaldursGate_DucalPalace_L3%")
+IF WEIGHT #-1
+~AreaCheck("%NBaldursGate_DucalPalace_L3%")
 Global("%KICKED_OUT%","LOCALS",1)
 Global("C#st_HeroOfBG","GLOBAL",1) 
-Global("C#st_SpawnServant","MYAREA",1)~ THEN greeting
+Global("C#st_SpawnServant2","MYAREA",1)~ THEN greeting
 SAY @59 /* ~<CHARNAME>! "Hero of Baldur's Gate", huh? Impressive! Duke Jannath offered me this room, together with lessons in magic! Can you imagine? We will be living room by room, you and I! But I'd much prefer just travelling with you again.~ */
 = @60 /* ~The chest at the far left of the room is mine, by the way. In case you need more room to store your things - they said the chest will be mine as long as we stay here.~ */
 IF ~~ THEN DO ~AddJournalEntry(@10005,INFO)

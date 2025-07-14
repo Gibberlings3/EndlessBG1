@@ -316,6 +316,10 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 20.1:
+- If Imoen is not in party and moved into Palace top floor, she should give her according greeting dialogue to the PC.
+- Install order for PI in the .ini was changed to account for Jarl's Adventure Pack v1. Recommended install order is now EndlessBG1 before JAP.
+
 Version 20:
 - Simplified Chinese version added, by Lzw104522773.
 - Denkod should not loop on first meeting if only main component is installed.
@@ -325,7 +329,7 @@ Version 20:
 Version 19:
 - Brazilian Portuguese translation added, by Sauro
 - fixed install error when JAP is installed.
-- typo %HARTEEL_JOINED% _> "%SHARTEEL_JOINED%"
+- typo %HARTEEL_JOINED% -> "%SHARTEEL_JOINED%"
 
 Version 18.1:
 -(BG:EE, EET) Translations of new lines added for Italian (by Frenzgyn) and French (by JohnBob), too.
