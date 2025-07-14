@@ -1,0 +1,103 @@
+/* @0   =  */
+@1   = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection.  The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.  
+
+This unusually heavy armor belonged to Sarevok.
+
+STATISTICS:
+
+Armor Class: -1
+Weight: 70
+Requires: 15 Strength
+Not Usable By:
+ Bard
+ Druid
+ Thief~
+@2   = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection.  The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.  
+
+This unusually heavy armor belonged to Sarevok. It is enchanted to give protection against magic.
+
+STATISTICS:
+   +30% Magic Resistance
+
+Armor Class: -1
+Weight: 70
+Requires: 15 Strength
+Not Usable By:
+ Bard
+ Druid
+ Thief~
+@3   = ~Sarevok's Plate Mail Armor~
+@4   = ~Sarevok's Helmet~
+@5   = ~Sarevok's Sword~
+@6   = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.   
+
+This helmet belonged to Sarevok.
+
+STATISTICS:
+
+Armor Class Bonus:  None
+Special:  Protects Against Critical Hits
+Weight: 2
+Not Usable By:
+ Mage
+ Bard
+ Thief~
+@7   = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.   
+
+This helmet belonged to Sarevok. It is enchanted to give protection against magic.
+
+STATISTICS:
+
+Armor Class Bonus:  None
+Special:  Protects Against Critical Hits
+   +5% Magic Resistance
+Weight: 2
+Not Usable By:
+ Mage
+ Bard
+ Thief~
+@8   = ~This is Sarevok's sword. No matter what you try, you are unable to wield it. It seems the magic of this sword was weakened and sealed when Sarevok died.~
+@9   = ~<CHARNAME>'s chest~
+@10   = ~Imoen's chest~
+
+/* new for v2 */
+//#9774 changed
+@12 = ~That crummy Sarevok was an evil one, yes he was! He murdered Scar, and Entar and tried to kill lots of others! He deserved death, and thanks to <CHARNAME> it came to him quickly!~
+//#9778 changed
+@13 = ~It's so frightening! To think that Sarevok came so close to completing his murderous plans. I am glad <CHARNAME> tracked him down and brought him to justice. Let that be an example to other crazies so they don't try to do what he did.~ 
+//#9781 changed
+@14 = ~What Sarevok did was unforgivable! I am glad <CHARNAME> went after the scum, before he could do any more hurt.~
+//#9852 changed
+@15 = ~Well, I never! Can you believe the nerve of that Sarevok fellow? After the trust we all placed in him, he turns out to be nothing but the basest of villains. I'm glad he was caught and punished.~ 
+//#9854 changed
+@16 = ~Aren't you <CHARNAME>? It's pleasing to have a hero in the city! On behalf of everyone I know, I'd like to thank you for what you've done. If it weren't for your heroics... Well, I shudder to think how a war with Amn would have turned out. Thank you for catching that villainous Sarevok and putting an end to his trouble-making!~
+//#9855 changed
+@17 = ~It's spreading like wildfire! Everyone's talking about what happened at the palace. From what I've heard, that Sarevok fellow wasn't as noble as he'd like us all to believe. He tried to have the other Dukes killed, so that he could take over the city.~
+
+/* new for v7 */
+@20 = ~Refugee~ /* female*/
+@21 = ~Refugee~ /* male*/
+@22 = ~Flaming Fist Healer~ /* male*/
+@23 = ~Flaming Fist Scout~ /* male*/
+
+/* new for v9 */
+@24 = ~The name craftfully caved into ornamented flagstones identifies this as the Korlasz family crypt entrance. It is well closed and magically protected.~
+@25 = ~Greetings, hero. I am Fenster, the palace cleric.~
+@26 = ~How can I be of service?~
+@27 = ~Let me see what you have.~
+@28 = ~Nothing right now.~
+@29 = ~With pleasure.~
+@30 = ~I am not available for services while I tend to Imoen. Please ask for divine help elsewhere.~
+//@31: name taken from #64284
+@31 = ~Korlasz's Family Tomb~
+@32 = ~<CHARNAME>'s Bed~
+
+/* sarevok_cleanup_more.tpa */
+/* #18345 changed */
+@50  = ~There's quite a bit to say, I don't really know if I have the time to go into all of the details. I used to live at Candlekeep with my father Gorion. A little while back we were forced to flee. Someone was out there who really wanted me dead. In trying to kill me, he... killed my dad.~
+/* #18351 changed */
+@51  = ~I am sorry to bring back such painful memories. I wish to help you, and in doing so, end these dreams that plague me. Here, take this. Goodbye now. Perhaps we shall meet again.~
+@52  = ~Ah, <CHARNAME>! I am so relieved that the hubbub is over. It was a bad feeling, being ordered to fight you, after seeing how Duke Eltan trusted you the way he did before Angelo took over...~
+@53  = ~And thank you, *thank you* for saving our commander.~
+@54  = ~We will mourn our losses while we gather what is left after Sarevok and his minions besmirched the Flaming Fist like they did, making us his tools. Thank you for saving this city, hero.~
+@55  = ~Seems fighting you wasn't the right thing to do after all. Well, who would have thought that Angelo and Sarevok would play such a wrong game. It seems you saved us from dark times, indeed.~
