@@ -207,6 +207,7 @@ END
 >>>>>>>>
 EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L2%.bcs~ ~.../ar0612_add.baf~
 
+
 /* Iron Throne, third floor: Kalessia */
 <<<<<<<< .../ar0613_add.baf
 IF
@@ -219,6 +220,7 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L3%.bcs~ ~.../ar0613_add.baf~
+
 
 /* Iron Throne, 4th floor: Wirthing */
 <<<<<<<< .../ar0614_add.baf
@@ -233,6 +235,7 @@ END
 >>>>>>>>
 EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L4%.bcs~ ~.../ar0614_add.baf~
 
+
 /* Iron Throne, 5th floor: Wirthing */
 <<<<<<<< .../ar0615_add.baf
 IF
@@ -245,6 +248,7 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L5%.bcs~ ~.../ar0615_add.baf~
+
 
 /* Iron Throne, ground floor: Pang, Dhanial */
 <<<<<<<< .../ar0616_add.baf
@@ -267,6 +271,20 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~%BaldursGateDocks_IronThrone_L1%.bcs~ ~.../ar0616_add.baf~
+
+
+/* Husam in NE Baldur's Gate ar0300 */
+<<<<<<<< .../ar0300_add.baf
+IF
+	Exists("Husam2")  // Husam
+	InMyArea("Husam2")
+	GlobalGT("SarevokBehavior","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ActionOverride("Husam2",DestroySelf())
+END
+>>>>>>>>
+EXTEND_BOTTOM ~%NEBaldursGate%.bcs~ ~.../ar0300_add.baf~
 
 
 /* Addy in Central Baldur's Gate */

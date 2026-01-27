@@ -307,6 +307,12 @@ Spellhold Studios			http://www.shsforums.net/
 
 HISTORY
 
+Version 20.2:
+- Spanish version revised, by ElGamerViejuno.
+- "Korlasz' Dungeon is in BG1": Fixed incompatibility with EE Fixpack that lead to intro cutscene in Korlasz' Tomb not ending.
+- In case the PC did not talk to him, Husam will no longer be waiting in NE Baldur's Gate after Sarevok is defeated to point the PC to Slythe and Kristin.
+- Added install checks so components "More Flavor to Hero of Baldur's Gate" and "Imoen and Duke Jannath" cannot be installed after component "Extended Law System" from Jarl's Adventure Pack, by Ychap.
+
 Version 20.1:
 - If Imoen is not in party and moved into Palace top floor, she should give her according greeting dialogue to the PC.
 - Install order for PI in the .ini was changed to account for Jarl's Adventure Pack v1. Recommended install order is now EndlessBG1 before JAP.

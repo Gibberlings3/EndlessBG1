@@ -8,7 +8,7 @@
 BACKUP ~c#endlessbg1/backup~
 AUTHOR ~https://www.gibberlings3.net/forums/~ //jastey
 
-VERSION ~20.1~
+VERSION ~20.2~
 
 README ~c#endlessbg1/readme.c#endlessbg1.%LANGUAGE%.txt~ ~c#endlessbg1/readme.c#endlessbg1.english.txt~
 
@@ -1327,8 +1327,25 @@ COPY_EXISTING ~bdintro.BCS~ ~override~
 		END ELSE BEGIN
 			PATCH_WARN ~WARNING: could not find %textToReplace% in %SOURCE_FILESPEC%~
 		END
+/* Account for EE Fixpack. Add EndCutSceneMode() if it is not present */
+		SPRINT textToCheck ~\(EndCutSceneMode()\)~
+		COUNT_REGEXP_INSTANCES ~%textToCheck%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			PATCH_PRINT ~EndCutSceneMode() present in %SOURCE_FILESPEC% - no patch needed~
+		END ELSE BEGIN
+			SPRINT textToReplace ~\(SetAreaScript("",OVERRIDE)\)~
+			COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches_2
+			PATCH_IF (num_matches_2 > 0) BEGIN
+				REPLACE_TEXTUALLY ~%textToReplace%~ ~\1
+					EndCutSceneMode()~
+				PATCH_PRINT ~Patching: Missing EndCutSceneMode() added to %SOURCE_FILESPEC%~
+			END ELSE BEGIN
+				PATCH_WARN ~WARNING: could not add EndCutSceneMode() to %SOURCE_FILESPEC%~
+			END
+		END
 	END
 BUT_ONLY
+
 
 
 <<<<<<<< .../bdintro-et.baf

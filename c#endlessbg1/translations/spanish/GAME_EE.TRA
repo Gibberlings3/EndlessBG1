@@ -1,4 +1,4 @@
-@1 = ~La armadura de placas es la mejor armadura que un guerrero puede comprar, tanto en apariencia como en protección. Las placas perfectamente ajustadas y entrelazadas están especialmente inclinadas para desviar flechas y golpes, y todo el traje está cuidadosamente adornado con ricos grabados y detalles en relieve. 
+@1 = ~La armadura de placas completa es la mejor armadura que un guerrero puede comprar, tanto en apariencia como en protección. Las placas perfectamente ajustadas y entrelazadas están especialmente inclinadas para desviar flechas y golpes, y todo el traje está cuidadosamente adornado con ricos grabados y detalles en relieve. 
 
 Esta inusual armadura pesada perteneció a Sarevok.
 
@@ -7,7 +7,7 @@ CARACTERÍSTICAS:
 Clase de Armadura: -1 (-5 contra cortante, -4 contra perforante y proyectil)
 Requisitos: Fuerza 15
 
-Peso: 70~
+Peso: 70 lbs~
 @2 = ~La armadura de placas completa es la mejor armadura que un guerrero puede comprar, tanto en apariencia como en protección. Las placas perfectamente ajustadas y entrelazadas están especialmente inclinadas para desviar flechas y golpes, y todo el traje está cuidadosamente adornado con ricos grabados y detalles en relieve. 
 
 Esta inusual armadura pesada perteneció a Sarevok. Está encantada para proteger contra la magia.
@@ -15,12 +15,12 @@ Esta inusual armadura pesada perteneció a Sarevok. Está encantada para proteger 
 CARACTERÍSTICAS:
 
 Aptitudes poseídas:
-- Resistencia mágica: +30%
+  Resistencia mágica: +30%
 
 Clase de Armadura: -1 (-5 contra cortante, -4 contra perforante y proyectil)
 Requisitos: Fuerza 15
 
-Peso: 70~
+Peso: 70 lbs~
 
 @6 = ~Esta clase de casco abierto, hecho de cuero reforzado o metal, cubre la mayor parte de la cabeza, excepto la cara y el cuello. Estos cascos suelen proteger la nariz.  
 
@@ -29,9 +29,9 @@ Este casco perteneció a Sarevok.
 CARACTERÍSTICAS:
 
 Aptitudes poseídas:
-- Protege contra golpes críticos
+  Protege contra golpes críticos
 
-Peso: 2~
+Peso: 2 lbs~
 @7 = ~Esta clase de casco abierto, hecho de cuero reforzado o metal, cubre la mayor parte de la cabeza, excepto la cara y el cuello. Estos cascos suelen proteger la nariz.  
 
 Este casco perteneció a Sarevok. Está encantado para proteger contra la magia.
@@ -39,7 +39,7 @@ Este casco perteneció a Sarevok. Está encantado para proteger contra la magia.
 CARACTERÍSTICAS:
 
 Aptitudes poseídas:
-- Protege contra golpes críticos
-- Resistencia mágica: +5%
+  Protege contra golpes críticos
+  Resistencia mágica: +5%
 
-Peso: 2~
+Peso: 2 lbs~
